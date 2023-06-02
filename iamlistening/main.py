@@ -28,7 +28,7 @@ class Listener:
     async def start(self):
         token = settings.bot_token
         channel = settings.bot_channel_id
-        elif settings.discord_webhook_id:
+        if settings.discord_webhook_id:
             print("discord")
         elif settings.matrix_hostname:
             print("matrix")
