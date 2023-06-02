@@ -2,6 +2,20 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.2 (2023-06-02)
+### Fix
+* 🚨 linter ([#12](https://github.com/mraniki/iamlistening/issues/12)) ([`88420a9`](https://github.com/mraniki/iamlistening/commit/88420a96d22fb25060a79ee601236c311d86ce0e))
+* 🚨 linter ([`541d228`](https://github.com/mraniki/iamlistening/commit/541d228c474ee30485f572520c8fd0f0550a8ed2))
+
+### Other
+* :bug: Refactor logger in Listener class. ([`2d1c7ae`](https://github.com/mraniki/iamlistening/commit/2d1c7aeb1584fa81ff688f19b953e6f0e3763f1a))
+* :bug: Refactor logger in Listener class. ([`d07a6cd`](https://github.com/mraniki/iamlistening/commit/d07a6cdf928ed3988b17c327bc9c30b6d1895402))
+* Merge branch 'dev' of git@github.com:mraniki/iamlistening.git ([`6aa9657`](https://github.com/mraniki/iamlistening/commit/6aa96570a089f19a237644c68b34da0974f7e374))
+* :white_check_mark: test ([`6565d47`](https://github.com/mraniki/iamlistening/commit/6565d47081b242e39cab39bc6056281c3832f2cf))
+* Merge branch 'main' into dev ([`b2854a2`](https://github.com/mraniki/iamlistening/commit/b2854a24b8d82227fe6aefde4785d0ef3c483428))
+* Merge branch 'main' into dev ([`cc74259`](https://github.com/mraniki/iamlistening/commit/cc74259580f641c392dbfa7503730ea1c43cb7ed))
+* :construction_worker_man:‍♂️Update ([`8c06b86`](https://github.com/mraniki/iamlistening/commit/8c06b86da9f01a1b54a98992e58ee540e3f56715))
+
 ## v0.1.1 (2023-06-02)
 ### Fix
 * 🎨 code format ([`0c61b3a`](https://github.com/mraniki/iamlistening/commit/0c61b3a4848d3d72dfb76365ec8a32a64f551828))
