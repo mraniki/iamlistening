@@ -90,7 +90,7 @@ class Listener:
 
             await bot.run_until_disconnected()
         else:
-            logger.warning("Check settings")
+            self.logger.warning("Check settings")
             await asyncio.sleep(7200)
 
     async def post_init(self):
