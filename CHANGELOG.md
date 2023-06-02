@@ -2,6 +2,21 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.4 (2023-06-02)
+### Fix
+* ⚡ repeater ([`724b5ec`](https://github.com/mraniki/iamlistening/commit/724b5ece4e9aff04d539ad1984d968238492df79))
+* ♻️ refactor ([`cfc35ea`](https://github.com/mraniki/iamlistening/commit/cfc35ea1e9a20de6cc7b5c526edfefd25f579d5d))
+
+### Other
+* Dev ([#16](https://github.com/mraniki/iamlistening/issues/16)) ([`d3edcea`](https://github.com/mraniki/iamlistening/commit/d3edcea1b28d483b2f82dc10732b6ddcfe2496b8))
+* Dev ([#15](https://github.com/mraniki/iamlistening/issues/15)) ([`519eeb9`](https://github.com/mraniki/iamlistening/commit/519eeb94bcad99937a7d578f208bc54bb3d31f70))
+* :loud_sound: Add logging and sleep to main function ([`413729b`](https://github.com/mraniki/iamlistening/commit/413729be6674c1bda47a2cdd9dd795c5592b6654))
+* Merge branch 'dev' of git@github.com:mraniki/iamlistening.git ([`e234dd3`](https://github.com/mraniki/iamlistening/commit/e234dd31cf0d5874239cb583612c2525575b410f))
+* :zap: Update Listener class name and import in README ([`455650b`](https://github.com/mraniki/iamlistening/commit/455650ba730c7ecf2a3cf5b6cb6505a1d78a2da3))
+* Dev ([#14](https://github.com/mraniki/iamlistening/issues/14)) ([`9f8acca`](https://github.com/mraniki/iamlistening/commit/9f8accab01bc3c9ac4e4e87dd2143b861872bfdc))
+* Merge branch 'dev' of git@github.com:mraniki/iamlistening.git ([`7d4cd99`](https://github.com/mraniki/iamlistening/commit/7d4cd992f6b4d9772d27fca0ee257d9a09ddf5a0))
+* :bug: Refactor logger.error to print in example.py. ([`b4831ef`](https://github.com/mraniki/iamlistening/commit/b4831efdd006e9fd03213f982533d130d88e320a))
+
 ## v0.1.3 (2023-06-02)
 ### Fix
 * 💬 Update README.md with new package description ([#13](https://github.com/mraniki/iamlistening/issues/13)) ([`178a40b`](https://github.com/mraniki/iamlistening/commit/178a40b30b291f19566787e6d5dfca89822edb03))
