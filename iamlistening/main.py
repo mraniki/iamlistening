@@ -20,7 +20,7 @@ from .config import settings
 # 🤖BOT
 
 class Listener:
-    """ i am listening class """
+    """ iamlistening class """
 
     def __init__(
         self,
