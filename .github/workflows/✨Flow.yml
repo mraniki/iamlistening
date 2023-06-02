@@ -8,6 +8,7 @@ on:
   schedule:
     - cron: '42 23 * * 5'
 
+
 jobs:
   lint:
     uses: mraniki/coding_toolset/.github/workflows/🦺Lint.yml@main
