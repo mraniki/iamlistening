@@ -8,16 +8,16 @@ from fastapi import FastAPI
 # DEBUG LEVEL
 logging.basicConfig(level=logging.DEBUG)
 
-from iamlistening import Listener as bot
-
+from iamlistening import Listener
 
 async def main():
     """Main"""
     while True:
         try:
+            bot = Listener()
             print(bot)
             await bot.start()
-            
+
             await asyncio.sleep(7200)
         except Exception as error:
             print(error)
@@ -45,4 +45,4 @@ def health_check():
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8080)
+    uvicorn.run(app, host="0.0.0.0", port=8081)

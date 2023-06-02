@@ -97,7 +97,7 @@ class Listener:
         return
     async def event_action(self, event):
         print(event)
-        return
+        return event
 # async def listener():
 #     """Launch Bot Listener"""
 #     try:
