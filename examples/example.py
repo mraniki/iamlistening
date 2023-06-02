@@ -7,7 +7,7 @@ import logging
 
 import uvicorn
 from fastapi import FastAPI
-from iamlistening import IAL, __version__
+from iamlistening import Listener, __version__
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
@@ -23,7 +23,7 @@ async def main():
     while True:
         try:
 
-            ial = listener()
+            ial = Listener()
             print(ial)
             logger.debug(
                 "iamlistening logger: %s version: %s",
