@@ -32,9 +32,7 @@ class Listener:
             print("discord")
         elif settings.matrix_hostname:
             print("matrix")
-        elif settings.telethon_api_id:
-            print("telethon")
-        elif settings.rocket_chat:
+        elif settings.telethon_api_id or settings.rocket_chat:
             print("telethon")
 # async def listener():
 #     """Launch Bot Listener"""
