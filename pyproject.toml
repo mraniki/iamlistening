@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "iamlistening"
+version = "0.0.0"
+description = "A python package to interact with messaging platform."
+authors = ["mraniki <8766259+mraniki@users.noreply.github.com>"]
+license = "MIT License"
+readme = "README.md"
+keywords = ["discord", "telegram", "bot","messaging","matrix"]
+packages = [
+    {include = "iamlistening"}
+]
+
+
+[tool.poetry.urls]
+"Changelog" =  "https://github.com/mraniki/iamlistening/blob/dev/CHANGELOG.rst"
+"Support" =  "https://github.com/mraniki/iamlistening/discussions"
+"Issues" =  "https://github.com/mraniki/iamlistening/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+asyncio = "*"
+dynaconf = "*"
+
+
+[tool.poetry.dev-dependencies]
+python-semantic-release = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-asyncio = "*"
+pytest-mock = "*"
+coverage = "*"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+testpaths = "tests"
+python_classes = "Test*"
+log_format = "%(asctime)s - %(levelname)s - %(name)s - %(message)s"
+log_level = "DEBUG"
+
+[tool.coverage.run]
+omit = [
+    "tests/*",
+    "examples/*"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_variable = ["pyproject.toml:version","iamlistening/__init__.py:__version__"]
+branch = "main"
+upload_to_pypi = true
+upload_to_release = true
+build_command = "pip install poetry && poetry build"
+commit_parser = "semantic_release.history.emoji_parser"
+use_textual_changelog_sections = true
+major_emoji = "💥"
+minor_emoji = "🥚,🚀,💄,✨"
+patch_emoji = "🎨,🐛,🚑,⚡,🔥,🚨,♻️,🔧,⬆️,🩹,👷,📝,🔒,👽,💬,🥅,✅,🐳,🙈,⚗️,🧐,🔇,🔊"
