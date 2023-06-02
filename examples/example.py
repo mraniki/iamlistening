@@ -17,7 +17,7 @@ async def main():
             await bot.start()
 
         except Exception as error:
-            logger.error(error)
+            print(error)
 
 
 app = FastAPI()
