@@ -2,7 +2,6 @@
 iamlistening Unit Testing
 """
 
-from datetime import datetime
 import pytest
 from iamlistening import Listener
 
@@ -12,7 +11,7 @@ def bot():
     return Listener()
 
 
-@pytest.fixture
+@pytest.mark.asyncio
 async def test_init(bot):
     """return valid order"""
     init = await bot.start()
