@@ -14,7 +14,7 @@ async def main():
     while True:
         try:
             print(bot)
-            bot.start()
+            await bot.start()
 
         except Exception as error:
             logger.error(error)
