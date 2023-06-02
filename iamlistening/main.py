@@ -41,7 +41,7 @@ class Listener:
 
             @bot.event
             async def on_message(message: discord.Message):
-                await self.event(message.content)
+                await self.event_action(message.content)
             await bot.start(settings.bot_token)
         elif settings.matrix_hostname:
             # MATRIX
@@ -62,7 +62,7 @@ class Listener:
 
             @bot.listener.on_message_event
             async def on_matrix_message(room, message):
-                await self.event(message.body)
+                await self.event_action(message.body)
             await bot.api.login()
             bot.api.async_client.callbacks = botlib.Callbacks(
                                                 bot.api.async_client, bot
@@ -86,7 +86,7 @@ class Listener:
 
             @bot.on(events.NewMessage())
             async def telethon(event):
-                await self.event(event.message.message)
+                await self.event_action(event.message.message)
 
             await bot.run_until_disconnected()
         else:
@@ -95,7 +95,7 @@ class Listener:
 
     async def post_init(self):
         return
-    async def event(self, event):
+    async def event_action(self, event):
         print(event)
         return
 # async def listener():

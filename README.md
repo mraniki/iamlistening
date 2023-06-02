@@ -1,12 +1,12 @@
 # I Am Listening
 
-| <img width="200" alt="Logo" src="https://github.com/mraniki/iamlistening/assets/8766259/f76331f6-8821-49eb-8f1c-06aedd8557be"> | A python package to interact with messaging platforms. |
+| <img width="200" alt="Logo" src="https://github.com/mraniki/iamlistening/assets/8766259/f76331f6-8821-49eb-8f1c-06aedd8557be"> | A python package to listen to messaging platforms. |
 | ------------- | ------------- |
-|<br> [![wiki](https://img.shields.io/badge/🪙🗿-wiki-0080ff)](https://talkytrader.gitbook.io/talky/) [![Pypi](https://badgen.net/badge/icon/iamlistening?icon=pypi&label)](https://pypi.org/project/iamlistening/) ![Version](https://img.shields.io/pypi/v/iamlistening)<br>  ![Pypi](https://img.shields.io/pypi/dm/iamlistening)<br> [![Build](https://github.com/mraniki/iamlistening/actions/workflows/%E2%9C%A8Flow.yml/badge.svg)](https://github.com/mraniki/listening/actions/workflows/%E2%9C%A8Flow.yml) [![codecov](https://codecov.io/gh/mraniki/listening/branch/dev/graph/badge.svg)](https://codecov.io/gh/mraniki/listening) | build a client to interact with messaging platform|
+|<br> [![wiki](https://img.shields.io/badge/🪙🗿-wiki-0080ff)](https://talkytrader.gitbook.io/talky/) [![Pypi](https://badgen.net/badge/icon/iamlistening?icon=pypi&label)](https://pypi.org/project/iamlistening/) ![Version](https://img.shields.io/pypi/v/iamlistening)<br>  ![Pypi](https://img.shields.io/pypi/dm/iamlistening)<br> [![Build](https://github.com/mraniki/iamlistening/actions/workflows/%E2%9C%A8Flow.yml/badge.svg)](https://github.com/mraniki/listening/actions/workflows/%E2%9C%A8Flow.yml) [![codecov](https://codecov.io/gh/mraniki/iamlistening/branch/main/graph/badge.svg?token=QZ55U6KQFN)](https://codecov.io/gh/mraniki/iamlistening) | build a client to interact with messaging platform|
 
 Key features:
 
-
+ - support discord, telegram and matrix platform
 
 ## Install
 
@@ -15,7 +15,9 @@ Key features:
 ## How to use it
 
 ```
-
+ from iamlisterning import Listerner
+ 
+ bot = listerner.start()
 ```
 
 ### Example
