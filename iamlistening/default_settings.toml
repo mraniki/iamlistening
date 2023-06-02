@@ -1,0 +1,16 @@
+[default]
+bot_token = ""
+bot_channel_id = ""
+
+telethon_api_id = ""
+telethon_api_hash = ""
+
+matrix_hostname = ""
+matrix_user = ""
+matrix_pass = ""
+
+discord_webhook_id = ""
+discord_webhook_token = ""
+
+[testing]
+VALUE = "On Testing"
