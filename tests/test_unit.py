@@ -13,7 +13,7 @@ def bot():
 
 
 @pytest.fixture
-def test_init(bot):
+async def test_init(bot):
     """return valid order"""
     await bot.start()
 
