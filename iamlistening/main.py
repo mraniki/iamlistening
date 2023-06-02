@@ -6,6 +6,7 @@ __version__ = "0.0.0"
 import os
 import sys
 import asyncio
+import logging 
 
 import apprise
 from apprise import NotifyFormat
