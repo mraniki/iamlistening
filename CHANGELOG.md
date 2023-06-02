@@ -2,6 +2,20 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.1 (2023-06-02)
+### Fix
+* 🎨 code format ([`0c61b3a`](https://github.com/mraniki/iamlistening/commit/0c61b3a4848d3d72dfb76365ec8a32a64f551828))
+
+### Other
+* :recycle:Refactor Listener class to use bot_channel_id instead of cha… ([#11](https://github.com/mraniki/iamlistening/issues/11)) ([`996d555`](https://github.com/mraniki/iamlistening/commit/996d555c1e62ea0950e9b1ea3992e071b9b85d89))
+* Add logging to main.py ([`b782b3d`](https://github.com/mraniki/iamlistening/commit/b782b3def47359d32970a9c8a9e745484e6bc1fc))
+* :recycle:Refactor Listener class to use bot_channel_id instead of channel. ([`9b6df2f`](https://github.com/mraniki/iamlistening/commit/9b6df2f0f1882dc74e0d3c1825df9dd47e06d6ea))
+* :recycle:Refactor Listener class to use bot_channel_id instead of channel. ([`86b67cf`](https://github.com/mraniki/iamlistening/commit/86b67cfd06fd5f1359c6cbac1999cbf3db698782))
+* Merge pull request #10 from mraniki/dev ([`95ce963`](https://github.com/mraniki/iamlistening/commit/95ce963c6bd9f983e05db527a3d69505d0d406f8))
+* :construction_worker_man:‍♂️Update ([`177b887`](https://github.com/mraniki/iamlistening/commit/177b887cd7435874c8a65bd2d08a9b2d01a5bf43))
+* Merge pull request #9 from mraniki/dev ([`d97eee0`](https://github.com/mraniki/iamlistening/commit/d97eee036f42c5f779f6b2a718638fb8f55ca4d2))
+* :white_check_mark: Add assertion to bot initialization test. ([`cdafd65`](https://github.com/mraniki/iamlistening/commit/cdafd651c8fc269d7ab3ec3398be0ccb5b26d8ed))
+
 ## v0.1.0 (2023-06-02)
 ### Feature
 * 👷‍♂️Update ✨Flow.yml ([`f0a072e`](https://github.com/mraniki/iamlistening/commit/f0a072e2f82489a37ca6d56843328b10fff89425))
