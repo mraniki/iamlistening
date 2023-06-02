@@ -1,41 +1,23 @@
 """
-Provides example for FindMyOrder
+Provides example for iamlistening package
 """
 
 import asyncio
-import logging
-
 import uvicorn
 from fastapi import FastAPI
-from iamlistening import Listener, __version__
 
-logging.basicConfig(
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    level="DEBUG"
-)
-
-logger = logging.getLogger(__name__)
-logging.getLogger('iamlistening').setLevel(logging.DEBUG)
+from iamlistening import Listener as bot
 
 
 async def main():
     """Main"""
     while True:
         try:
+            print(bot)
+            await bot.start()
 
-            ial = Listener()
-            print(ial)
-            logger.debug(
-                "iamlistening logger: %s version: %s",
-                __name__,
-                __version__)
-
-                
-
-            await asyncio.sleep(7200)
-
-        except Exception as e:
-            logger.error("error search %s", e)
+        except Exception as error:
+            logger.error(error)
 
 
 app = FastAPI()
