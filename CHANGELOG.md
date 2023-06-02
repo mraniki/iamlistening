@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.3 (2023-06-02)
+### Fix
+* 💬 Update README.md with new package description ([#13](https://github.com/mraniki/iamlistening/issues/13)) ([`178a40b`](https://github.com/mraniki/iamlistening/commit/178a40b30b291f19566787e6d5dfca89822edb03))
+
+### Other
+* :bug: Fix bot start function in example.py file. ([`d1ae078`](https://github.com/mraniki/iamlistening/commit/d1ae078b96de91715fbb462210b815e2ee20c7fb))
+* Update README.md with new package description ([`d8d6cde`](https://github.com/mraniki/iamlistening/commit/d8d6cde7e934fca10ba8af79c3ebb22271e8c3e1))
+
 ## v0.1.2 (2023-06-02)
 ### Fix
 * 🚨 linter ([#12](https://github.com/mraniki/iamlistening/issues/12)) ([`88420a9`](https://github.com/mraniki/iamlistening/commit/88420a96d22fb25060a79ee601236c311d86ce0e))
