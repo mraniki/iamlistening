@@ -20,7 +20,10 @@ packages = [
 python = "^3.10"
 asyncio = "*"
 dynaconf = "*"
-
+apprise= "*"
+telethon= "*"
+py-cord= "*"
+simplematrixbotlib= "*"
 
 [tool.poetry.dev-dependencies]
 python-semantic-release = "*"
