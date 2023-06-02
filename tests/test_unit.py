@@ -15,7 +15,8 @@ def bot():
 @pytest.fixture
 async def test_init(bot):
     """return valid order"""
-    await bot.start()
+    init = await bot.start()
+    assert init is not None
 
 # @pytest.fixture
 # def result_standard_order():
