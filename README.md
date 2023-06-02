@@ -15,9 +15,9 @@ Key features:
 ## How to use it
 
 ```
- from iamlisterning import Listerner
- 
- bot = listerner.start()
+  from iamlistening import Listerner as bot
+  bot.start()
+  
 ```
 
 ### Example

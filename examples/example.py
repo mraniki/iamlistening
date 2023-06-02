@@ -1,10 +1,12 @@
 """
 Provides example for iamlistening package
 """
-
+import logging
 import asyncio
 import uvicorn
 from fastapi import FastAPI
+# DEBUG LEVEL
+logging.basicConfig(level=logging.DEBUG)
 
 from iamlistening import Listener as bot
 
@@ -15,7 +17,8 @@ async def main():
         try:
             print(bot)
             await bot.start()
-
+            
+            await asyncio.sleep(7200)
         except Exception as error:
             print(error)
 
