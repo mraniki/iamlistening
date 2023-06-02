@@ -6,6 +6,7 @@ __version__ = "0.0.0"
 import os
 import sys
 import asyncio
+import logging 
 
 import apprise
 from apprise import NotifyFormat
@@ -27,13 +28,14 @@ class Listener:
         self.logger = logging.getLogger(name="Listener")
     async def start(self):
         token = settings.bot_token
-        channel = settings.channel
+        channel = settings.bot_channel_id
         if settings.discord_webhook_id:
             print("discord")
         elif settings.matrix_hostname:
             print("matrix")
         elif settings.telethon_api_id or settings.rocket_chat:
             print("telethon")
+        return True
 # async def listener():
 #     """Launch Bot Listener"""
 #     try:
