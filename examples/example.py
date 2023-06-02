@@ -10,14 +10,16 @@ logging.basicConfig(level=logging.DEBUG)
 
 from iamlistening import Listener as bot
 
-
 async def main():
     """Main"""
     while True:
         try:
-            print(bot)
-            await bot.start()
-            
+            bot1 = bot()
+            print(bot1)
+            await bot1.start()
+            if (await bot1.repeater()):
+                print("REPEATER TEST")
+
             await asyncio.sleep(7200)
         except Exception as error:
             print(error)
@@ -45,4 +47,4 @@ def health_check():
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8080)
+    uvicorn.run(app, host="0.0.0.0", port=8081)
