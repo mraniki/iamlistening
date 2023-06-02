@@ -27,15 +27,77 @@ class Listener:
     ):
         self.logger = logging.getLogger(name="Listener")
     async def start(self):
-        token = settings.bot_token
-        channel = settings.bot_channel_id
+        # token = settings.bot_token
+        # channel = settings.bot_channel_id
         if settings.discord_webhook_id:
-            print("discord")
+            # DISCORD
+            intents = discord.Intents.default()
+            intents.message_content = True
+            bot = discord.Bot(intents=intents)
+
+            @bot.event
+            async def on_ready():
+                await self.post_init()
+
+            @bot.event
+            async def on_message(message: discord.Message):
+                await self.event(message.content)
+            await bot.start(settings.bot_token)
         elif settings.matrix_hostname:
-            print("matrix")
-        elif settings.telethon_api_id or settings.rocket_chat:
-            print("telethon")
-        return True
+            # MATRIX
+            config = botlib.Config()
+            config.emoji_verify = True
+            config.ignore_unverified_devices = True
+            config.store_path = './config/matrix/'
+            creds = botlib.Creds(
+                        settings.matrix_hostname,
+                        settings.matrix_user,
+                        settings.matrix_pass
+                        )
+            bot = botlib.Bot(creds, config)
+
+            @bot.listener.on_startup
+            async def room_joined(room):
+                await self.post_init()
+
+            @bot.listener.on_message_event
+            async def on_matrix_message(room, message):
+                await self.event(message.body)
+            await bot.api.login()
+            bot.api.async_client.callbacks = botlib.Callbacks(
+                                                bot.api.async_client, bot
+                                                )
+            await bot.api.async_client.callbacks.setup_callbacks()
+            for action in bot.listener._startup_registry:
+                for room_id in bot.api.async_client.rooms:
+                    await action(room_id)
+            await bot.api.async_client.sync_forever(
+                                                    timeout=3000,
+                                                    full_state=True
+                                                )
+        elif settings.telethon_api_id:
+            # TELEGRAM
+            bot = await TelegramClient(
+                        None,
+                        settings.telethon_api_id,
+                        settings.telethon_api_hash
+                        ).start(bot_token=settings.bot_token)
+            await self.post_init()
+
+            @bot.on(events.NewMessage())
+            async def telethon(event):
+                await self.event(event.message.message)
+
+            await bot.run_until_disconnected()
+        else:
+            logger.warning("Check settings")
+            await asyncio.sleep(7200)
+
+    async def post_init(self):
+        return
+    async def event(self, event):
+        print(event)
+        return
 # async def listener():
 #     """Launch Bot Listener"""
 #     try:
