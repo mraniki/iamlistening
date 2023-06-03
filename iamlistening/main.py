@@ -6,7 +6,6 @@ import os
 import sys
 import asyncio
 import logging 
-import threading
 
 import apprise
 from apprise import NotifyFormat
@@ -25,7 +24,6 @@ class Listener:
     def __init__(self):
         self.logger = logging.getLogger("Listener")
         self.latest_message = None
-        self.lock = threading.Lock()
 
     async def start(self):
         """start"""
@@ -93,18 +91,17 @@ class Listener:
             self.logger.warning("Check settings")
             await asyncio.sleep(7200)
 
-    def get_latest_message(self):
+    async def get_latest_message(self):
         """Return the latest message."""
-        with self.lock:
-            self.logger.debug(f"Latest message: {self.latest_message}")
-            return self.latest_message
+        self.logger.debug(f"Latest message: {self.latest_message}")
+        return self.latest_message
 
     async def handle_message(self, message_content):
         """Handle a new message."""
-        with self.lock:
-            self.logger.debug(f"Message received: {message_content}")
-            self.latest_message = message_content
-            self.logger.debug(f"self.latest_message: {self.latest_message}")
+        self.logger.debug(f"Message received: {message_content}")
+        self.latest_message = message_content
+    self.logger.debug(f"self.latest_message: {self.latest_message}")
+        print(self.get_latest_message())
 
     async def post_init(self):
         return
