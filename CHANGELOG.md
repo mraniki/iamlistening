@@ -2,6 +2,19 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.6 (2023-06-03)
+### Fix
+* ✅ unit test ([`6c353b9`](https://github.com/mraniki/iamlistening/commit/6c353b9d0a026108be7487961da43e754e4183d1))
+* 🎨 code format ([`8cf1b40`](https://github.com/mraniki/iamlistening/commit/8cf1b40a02ae07d90357e466854f2622171edfa4))
+* 🔧 config ([`c44d44f`](https://github.com/mraniki/iamlistening/commit/c44d44fea507a39bd58cffdd90d19f9cd3a4036a))
+* ♻️ refactor ([`1ecb7dd`](https://github.com/mraniki/iamlistening/commit/1ecb7dd8affeaee71083b1ba75dc7935d94801a5))
+* 🐛 bug await ([`d1c226f`](https://github.com/mraniki/iamlistening/commit/d1c226f230e9ae5d2a4fc2de65ceb40ff31024b4))
+
+### Other
+* 👂I'm listening ([#18](https://github.com/mraniki/iamlistening/issues/18)) ([`d9f454a`](https://github.com/mraniki/iamlistening/commit/d9f454abf7134e8203dd6fae700e8fa3dd7b9c9e))
+* :white_check_mark: unit test ([`59367c0`](https://github.com/mraniki/iamlistening/commit/59367c03cc3bbddbcce33dda4814d16f1efe38bf))
+* :white_check_mark: unit test ([`f1b96ef`](https://github.com/mraniki/iamlistening/commit/f1b96ef552e6349416afe008ad35718dfd78ddad))
+
 ## v0.1.5 (2023-06-03)
 ### Fix
 * ♻️ refactor ([`8fb9e90`](https://github.com/mraniki/iamlistening/commit/8fb9e90af8123e58edaefc2f785468164c04f873))
