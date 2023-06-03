@@ -1,7 +1,6 @@
 """
  IAmListening Main
 """
-__version__ = "0.0.0"
 
 import os
 import sys
