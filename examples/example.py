@@ -12,12 +12,12 @@ from iamlistening import Listener
 
 async def main():
     """Run main program loop."""
-    bot = Listener()
+    listener = Listener()
     latest_msg = None
     while True:
         try:
-            await bot.start()
-            msg = bot.get_latest_message()
+            await listener.start()
+            msg = await listener.get_latest_message()
             if msg != latest_msg:
                 latest_msg = msg
                 print(f"Latest message: {latest_msg}")
