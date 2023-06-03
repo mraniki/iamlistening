@@ -8,22 +8,22 @@ from fastapi import FastAPI
 # DEBUG LEVEL
 logging.basicConfig(level=logging.DEBUG)
 
-from iamlistening import Listener as bot
+from iamlistening import Listener
 
 async def main():
-    """Main"""
+    """Run main program loop."""
+    listener = Listener()
+    latest_msg = None
     while True:
         try:
-            bot1 = bot()
-            print(bot1)
-            await bot1.start()
-            if (await bot1.repeater()):
-                print("REPEATER TEST")
+            await listener.start()
+            msg = await listener.get_latest_message()
+            if msg != latest_msg:
+                latest_msg = msg
+                print(f"Latest message: {latest_msg}")
 
-            await asyncio.sleep(7200)
-        except Exception as error:
-            print(error)
-
+        except Exception as e:
+            print(e)
 
 app = FastAPI()
 
@@ -32,7 +32,6 @@ app = FastAPI()
 async def start():
     """startup"""
     asyncio.create_task(main())
-
 
 @app.get("/")
 def read_root():
@@ -47,4 +46,4 @@ def health_check():
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8081)
+    uvicorn.run(app, host="0.0.0.0", port=8082)
