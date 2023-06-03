@@ -11,16 +11,19 @@ logging.basicConfig(level=logging.DEBUG)
 from iamlistening import Listener
 
 async def main():
-    """Main"""
+    """Run main program loop."""
+    listener = Listener()
+    latest_msg = None
     while True:
         try:
-            frasier = Listener()
-            print(frasier)
+            await listener.start()
+            msg = listener.get_latest_message()
+            if msg != latest_msg:
+                latest_msg = msg
+                print(f"Latest message: {latest_msg}")
 
-            await frasier.start()
-        except Exception as error:
-            print(error)
-
+        except Exception as e:
+            print(e)
 
 app = FastAPI()
 
@@ -43,4 +46,4 @@ def health_check():
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8081)
+    uvicorn.run(app, host="0.0.0.0", port=8082)
