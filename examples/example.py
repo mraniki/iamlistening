@@ -20,7 +20,7 @@ async def main():
             if (await bot1.repeater()):
                 print("REPEATER TEST")
 
-            await asyncio.sleep(7200)
+            #await asyncio.sleep(7200)
         except Exception as error:
             print(error)
 
