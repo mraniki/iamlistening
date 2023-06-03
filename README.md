@@ -15,8 +15,17 @@ Key features:
 ## How to use it
 
 ```
-  from iamlistening import Listerner as bot
-  bot.start()
+  listener = Listener()
+  task = asyncio.create_task(listener.run_forever())
+  while True:
+    try:
+        msg = await listener.get_latest_message()
+        if msg:
+            print(f"Frasier👂: {msg}")
+
+    except Exception as error:
+        print(error)
+  await task
   
 ```
 

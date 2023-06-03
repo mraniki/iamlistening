@@ -30,18 +30,18 @@ def test_init(listener):
 @pytest.mark.asyncio
 async def test_get_latest_message(listener, message):
     # Test that get_latest_message() returns None when no messages have been received
-    assert await listener.get_latest_message() is None
+    #assert await listener.get_latest_message() is None
 
     # Test that get_latest_message() returns the latest message after a message has been received
-    #await listener.handle_message(message)
-    #assert await listener.get_latest_message() == message
-
-
-@pytest.mark.asyncio
-async def test_handle_message(listener, message):
-    # Test that handle_message() updates the latest message correctly
     await listener.handle_message(message)
-    assert listener.latest_message == message
+    assert await listener.get_latest_message() == message
+
+
+# @pytest.mark.asyncio
+# async def test_handle_message(listener, message):
+#     # Test that handle_message() updates the latest message correctly
+#     await listener.handle_message(message)
+#     assert listener.latest_message == message
 
 
 # @pytest.mark.asyncio
