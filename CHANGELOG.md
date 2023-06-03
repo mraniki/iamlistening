@@ -2,6 +2,20 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.5 (2023-06-03)
+### Fix
+* ♻️ refactor ([`8fb9e90`](https://github.com/mraniki/iamlistening/commit/8fb9e90af8123e58edaefc2f785468164c04f873))
+* ⚗️ experiment ([`d83945b`](https://github.com/mraniki/iamlistening/commit/d83945bee2b6ca4506ea6c3fc56ef6f2a804dc5b))
+
+### Other
+* Dev ([#17](https://github.com/mraniki/iamlistening/issues/17)) ([`8b5276e`](https://github.com/mraniki/iamlistening/commit/8b5276e0d7caf4adbc5d763d134dcf1c65928b02))
+* :alembic:️ experiment ([`9679489`](https://github.com/mraniki/iamlistening/commit/96794896ae92df1a7e87ac4747b0eefdc7ced222))
+* :recycle: refactor ([`b5febc3`](https://github.com/mraniki/iamlistening/commit/b5febc3d614f2de211728fb14053fd65c348b36e))
+* :recycle: refactor ([`f3f9e75`](https://github.com/mraniki/iamlistening/commit/f3f9e7534e0bc3fcc9b1414b306b3e040a6cd7af))
+* :fire: Remove sleep function call in main function. ([`31c9baf`](https://github.com/mraniki/iamlistening/commit/31c9baf3f26dec02625525e2cd117be3775fd700))
+* Merge branch 'dev' of git@github.com:mraniki/iamlistening.git ([`d668f81`](https://github.com/mraniki/iamlistening/commit/d668f8166b4e2640a746615c99beaa355fb0fbc2))
+* :fire: Remove version variable in main.py. ([`5f5a04d`](https://github.com/mraniki/iamlistening/commit/5f5a04dbd05700e224daa08a0e8fc9d3535ffc9c))
+
 ## v0.1.4 (2023-06-02)
 ### Fix
 * ⚡ repeater ([`724b5ec`](https://github.com/mraniki/iamlistening/commit/724b5ece4e9aff04d539ad1984d968238492df79))
