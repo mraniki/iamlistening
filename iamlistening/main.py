@@ -100,7 +100,7 @@ class Listener:
         """Handle a new message."""
         self.logger.debug(f"Message received: {message_content}")
         self.latest_message = message_content
-    self.logger.debug(f"self.latest_message: {self.latest_message}")
+        self.logger.debug(f"self.latest_message: {self.latest_message}")
         print(self.get_latest_message())
 
     async def post_init(self):
