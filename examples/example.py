@@ -5,25 +5,28 @@ import logging
 import asyncio
 import uvicorn
 from fastapi import FastAPI
+
+from iamlistening import Listener
+
+
+
 # DEBUG LEVEL
 logging.basicConfig(level=logging.DEBUG)
 
-from iamlistening import Listener
 
 async def main():
     """Run main program loop."""
     listener = Listener()
-    latest_msg = None
+    task = asyncio.create_task(listener.run_forever())
     while True:
         try:
-            await listener.start()
             msg = await listener.get_latest_message()
-            if msg != latest_msg:
-                latest_msg = msg
-                print(f"Latest message: {latest_msg}")
+            if msg:
+                print(f"Frasier👂: {msg}")
 
-        except Exception as e:
-            print(e)
+        except Exception as error:
+            print(error)
+    await task
 
 app = FastAPI()
 
