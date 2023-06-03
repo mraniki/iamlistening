@@ -8,19 +8,16 @@ from fastapi import FastAPI
 # DEBUG LEVEL
 logging.basicConfig(level=logging.DEBUG)
 
-from iamlistening import Listener as bot
+from iamlistening import Listener
 
 async def main():
     """Main"""
     while True:
         try:
-            bot1 = bot()
-            print(bot1)
-            await bot1.start()
-            if (await bot1.repeater()):
-                print("REPEATER TEST")
+            frasier = Listener()
+            print(frasier)
 
-            #await asyncio.sleep(7200)
+            await frasier.start()
         except Exception as error:
             print(error)
 
@@ -32,7 +29,6 @@ app = FastAPI()
 async def start():
     """startup"""
     asyncio.create_task(main())
-
 
 @app.get("/")
 def read_root():

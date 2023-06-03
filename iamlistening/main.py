@@ -6,6 +6,7 @@ import os
 import sys
 import asyncio
 import logging 
+from functools import wraps
 
 import apprise
 from apprise import NotifyFormat
@@ -21,10 +22,9 @@ from .config import settings
 class Listener:
     """ iamlistening class """
 
-    def __init__(
-        self,
-    ):
-        self.logger = logging.getLogger(name="Listener")
+    def __init__(self):
+        self.logger = logging.getLogger("Listener")
+        self.other_class = OtherClass()
     async def start(self):
         # token = settings.bot_token
         # channel = settings.bot_channel_id
@@ -94,14 +94,24 @@ class Listener:
 
     async def post_init(self):
         return
-    async def event_action(self, event):
-        return await self.repeater(event)
+    @staticmethod
+    def handle_event(func):
+        @wraps(func)
+        async def wrapper(self, *args, **kwargs):
+            event = args[0]
+            if isinstance(event, discord.Message):
+                await self.handle_discord_message(event)
+            elif isinstance(event, botlib.Message):
+                await self.handle_matrix_message(event)
+            elif isinstance(event, events.NewMessage):
+                await self.handle_telegram_message(event.message.message)
+            return await func(self, *args, **kwargs)
+        return wrapper
 
-    async def repeater(self, input=None):
-        if input:
-            print(input)
-            return input
-        
+    @handle_event
+    async def event_action(self, event):
+        print(event)
+        return event 
 # async def notify(msg):
 #     """💬 MESSAGING """
 #     if not msg:
