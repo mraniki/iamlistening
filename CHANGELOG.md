@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.7 (2023-06-04)
+### Fix
+* ⚗️ matrix and telegram verified ([#19](https://github.com/mraniki/iamlistening/issues/19)) ([`ab653f3`](https://github.com/mraniki/iamlistening/commit/ab653f3ab6271128119116957574ad899b315050))
+* ⚗️ matrix and telegram verified ([`4051251`](https://github.com/mraniki/iamlistening/commit/4051251a7e3df6e2868c67912b0883bd08923999))
+
 ## v0.1.6 (2023-06-03)
 ### Fix
 * ✅ unit test ([`6c353b9`](https://github.com/mraniki/iamlistening/commit/6c353b9d0a026108be7487961da43e754e4183d1))
