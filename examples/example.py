@@ -12,7 +12,9 @@ from iamlistening import Listener
 
 # DEBUG LEVEL
 logging.basicConfig(level=logging.DEBUG)
-
+logging.getLogger("discord").setLevel(logging.WARNING)
+logging.getLogger("telethon").setLevel(logging.WARNING)
+logging.getLogger("simplematrixbotlib").setLevel(logging.WARNING)
 
 async def main():
     """Run main program loop."""
@@ -49,4 +51,4 @@ def health_check():
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8080)
+    uvicorn.run(app, host="0.0.0.0", port=8084)
