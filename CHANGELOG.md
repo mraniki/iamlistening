@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.9 (2023-06-05)
+### Fix
+* ⬆️ dependencies ([#21](https://github.com/mraniki/iamlistening/issues/21)) ([`8f1c337`](https://github.com/mraniki/iamlistening/commit/8f1c337517d646aea042c47218f4498b498c36ff))
+* ⬆️ dependencies ([`5b06667`](https://github.com/mraniki/iamlistening/commit/5b0666750221a6fbbdecf2145e679d4bff14393f))
+
+### Other
+* :wrench:  Add renovate.json config file and remove old one ([`fb8b50f`](https://github.com/mraniki/iamlistening/commit/fb8b50fe03eb23115e9944198704f9babc0d491d))
+
 ## v0.1.8 (2023-06-04)
 ### Fix
 * 🔧 config ([#20](https://github.com/mraniki/iamlistening/issues/20)) ([`0b471fd`](https://github.com/mraniki/iamlistening/commit/0b471fd3faff47d885776b7e244112dce0524f6b))
