@@ -2,6 +2,22 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.10 (2023-06-08)
+
+### Fix
+
+* 👷 CI Change ([`3700f4d`](https://github.com/mraniki/iamlistening/commit/3700f4d812a3cd6ed0bdc70e4940bbde12e6b981))
+
+### Other
+
+* :arrow_up: Remove version number from iamlistening in requirements.txt ([`56a3bf0`](https://github.com/mraniki/iamlistening/commit/56a3bf0c63ab1c33716b9c7aedb359542d2a7081))
+* Update renovate.json ([`e947ffb`](https://github.com/mraniki/iamlistening/commit/e947ffbcdbb33feae7943ee5a6bb36659b57e457))
+* Update renovate.json ([`e91bc17`](https://github.com/mraniki/iamlistening/commit/e91bc17d8d1865a0ab76fc16fb0470b5b1b4bb13))
+* Update and rename renovate.json to .github/renovate.json ([`7d8c13d`](https://github.com/mraniki/iamlistening/commit/7d8c13da5c2f49ad5850d426de4a9e85a12048b9))
+* Add renovate.json ([`0487b21`](https://github.com/mraniki/iamlistening/commit/0487b21c935aa3256677d50aecf2c563de8e450f))
+* Delete renovate.json ([`3912647`](https://github.com/mraniki/iamlistening/commit/39126473d12033c55eb06cf7c3312938836e79a0))
+* :arrow_up: dependencies ([`60f1855`](https://github.com/mraniki/iamlistening/commit/60f185512826eef28a39ad79e17c2f449cac6ac1))
+
 ## v0.1.9 (2023-06-05)
 ### Fix
 * ⬆️ dependencies ([#21](https://github.com/mraniki/iamlistening/issues/21)) ([`8f1c337`](https://github.com/mraniki/iamlistening/commit/8f1c337517d646aea042c47218f4498b498c36ff))
