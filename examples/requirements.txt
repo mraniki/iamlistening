@@ -1,3 +1,3 @@
-iamlistening>=0.1.1
+iamlistening
 fastapi
 uvicorn
