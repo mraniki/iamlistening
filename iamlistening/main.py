@@ -114,7 +114,7 @@ class Listener:
             await self.start()
 
     async def post_init(self):
-        return
+        return "bot is online"
 
     def stop(self):
         """Stop the listener."""
