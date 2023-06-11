@@ -12,5 +12,6 @@ matrix_pass = ""
 discord_webhook_id = ""
 discord_webhook_token = ""
 
+iamlistening_enabled = true
 [testing]
 VALUE = "On Testing"
