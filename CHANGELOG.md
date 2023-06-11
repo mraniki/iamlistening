@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.11 (2023-06-11)
+
+### Fix
+
+* 🔧 config ([`0f837bc`](https://github.com/mraniki/iamlistening/commit/0f837bc9910bf40becd3441627cbeba2c2978580))
+
+### Other
+
+* :speech_balloon: added postinit message ([`827d5b7`](https://github.com/mraniki/iamlistening/commit/827d5b77be3d9cf2927a32e8bb6eb28707766c16))
+
 ## v0.1.10 (2023-06-08)
 
 ### Fix
