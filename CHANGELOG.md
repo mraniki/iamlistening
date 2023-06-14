@@ -2,6 +2,22 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.12 (2023-06-14)
+
+### Fix
+
+* 🐳 dockerignore ([`ac39e03`](https://github.com/mraniki/iamlistening/commit/ac39e03074bafeb97382e3aad32b9c6df085d345))
+
+### Other
+
+* Rename requirements.txt to requirements.txt ([`9cbe01c`](https://github.com/mraniki/iamlistening/commit/9cbe01c9d256090946f33a43c7eaf2dad6d4b60f))
+* Update Dockerfile ([`4fd9315`](https://github.com/mraniki/iamlistening/commit/4fd93155fac479a100dd892b823e39a4eb7143e7))
+* Update Dockerfile ([`3c58595`](https://github.com/mraniki/iamlistening/commit/3c58595e19f7c6cb4cc8d62469e9c98c7c13f5c2))
+* Update Dockerfile ([`bba796c`](https://github.com/mraniki/iamlistening/commit/bba796c2f38b3298b32f77d1045082abfcb8d3bd))
+* Merge branch 'main' into dev ([`75a2d54`](https://github.com/mraniki/iamlistening/commit/75a2d54dbbbcbd82a2bee1c0d0759d7147d80e9d))
+* Rename requirements.txt to requirements.txt ([`59d3a15`](https://github.com/mraniki/iamlistening/commit/59d3a15e52406eb34a3699d0a4312790e7555daa))
+* Update config.py ([`6f75580`](https://github.com/mraniki/iamlistening/commit/6f75580e4a87ab908b9e8f30e2eca3b900b76fec))
+
 ## v0.1.11 (2023-06-11)
 
 ### Fix
