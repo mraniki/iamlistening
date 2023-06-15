@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.13 (2023-06-15)
+
+### Fix
+
+* 🔧 config org ([`09396b6`](https://github.com/mraniki/iamlistening/commit/09396b64f29a3800a7a8bd6f3e44b2b89f918a39))
+
 ## v0.1.12 (2023-06-14)
 
 ### Fix
