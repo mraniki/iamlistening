@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.14 (2023-06-16)
+
+### Fix
+
+* ✅ unit test ([`934c468`](https://github.com/mraniki/iamlistening/commit/934c468b4f49a36aab1cea5e5b9ca6f16a178071))
+
 ## v0.1.13 (2023-06-15)
 
 ### Fix
