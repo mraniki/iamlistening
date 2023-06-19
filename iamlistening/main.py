@@ -103,9 +103,7 @@ class Listener:
 
     async def handle_message(self, message_content):
         """Handle a new message."""
-        # self.logger.debug(f"Message received: {message_content}")
         self.latest_message = message_content
-        # self.logger.debug(f"handle_message self.latest_message: {self.latest_message}")
 
 
     async def run_forever(self):
