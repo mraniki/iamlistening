@@ -25,20 +25,22 @@ class Listener:
     
     async def start(self):
         """start"""
-        if settings.discord_webhook_id:
-            # DISCORD
-            intents = discord.Intents.default()
-            intents.message_content = True
-            bot = discord.Bot(intents=intents)
 
-            @bot.event
-            async def on_ready():
-                await self.post_init()
+        if settings.telethon_api_id:
+            # TELEGRAM
+            bot = await TelegramClient(
+                        None,
+                        settings.telethon_api_id,
+                        settings.telethon_api_hash
+                        ).start(bot_token=settings.bot_token)
+            await self.post_init()
 
-            @bot.event
-            async def on_message(message: discord.Message):
-                await self.handle_message(message.content)
-            await bot.start(settings.bot_token)
+            @bot.on(events.NewMessage())
+            async def telethon(event):
+                await self.handle_message(event.message.message)
+
+            await bot.run_until_disconnected()
+
         elif settings.matrix_hostname:
             # MATRIX
             config = botlib.Config()
@@ -71,20 +73,21 @@ class Listener:
                                                     timeout=3000,
                                                     full_state=True
                                                 )
-        elif settings.telethon_api_id:
-            # TELEGRAM
-            bot = await TelegramClient(
-                        None,
-                        settings.telethon_api_id,
-                        settings.telethon_api_hash
-                        ).start(bot_token=settings.bot_token)
-            await self.post_init()
+        elif settings.bot_token:
+            # DISCORD
+            intents = discord.Intents.default()
+            intents.message_content = True
+            bot = discord.Bot(intents=intents)
 
-            @bot.on(events.NewMessage())
-            async def telethon(event):
-                await self.handle_message(event.message.message)
+            @bot.event
+            async def on_ready():
+                await self.post_init()
 
-            await bot.run_until_disconnected()
+            @bot.event
+            async def on_message(message: discord.Message):
+                await self.handle_message(message.content)
+            await bot.start(settings.bot_token)
+
         else:
             self.logger.warning("Check settings")
             await asyncio.sleep(7200)
@@ -96,7 +99,6 @@ class Listener:
                 if self.latest_message is not None:
                     msg = self.latest_message
                     self.latest_message = None
-                    # self.logger.debug(f"Latest message: {msg}")
                     return msg
 
             await asyncio.sleep(0.1)
