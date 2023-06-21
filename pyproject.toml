@@ -17,17 +17,16 @@ packages = [
 "Issues" =  "https://github.com/mraniki/iamlistening/issues"
 
 [tool.poetry.dependencies]
-python = "^3.11"
-#asyncio = "*"
-dynaconf = "*"
-telethon= "*"
-py-cord= "*"
-simplematrixbotlib= "*"
+python = "^3.10"
+dynaconf = "^3.1.12"
+telethon= "^1.28.5"
+py-cord= "^2.4.1"
+simplematrixbotlib= "^2.9.0"
 
 [tool.poetry.dev-dependencies]
-python-semantic-release = "*"
-pytest = "*"
-pytest-cov = "*"
+python-semantic-release = "^7.34.3"
+pytest = "^7.0"
+pytest-cov = "^4.1"
 pytest-asyncio = "*"
 pytest-mock = "*"
 coverage = "*"
@@ -57,6 +56,6 @@ upload_to_release = true
 build_command = "pip install poetry && poetry build"
 commit_parser = "semantic_release.history.emoji_parser"
 use_textual_changelog_sections = true
-major_emoji = "💥"
-minor_emoji = "🥚,🚀,💄,✨"
-patch_emoji = "🎨,🐛,🚑,⚡,🔥,🚨,♻️,🔧,⬆️,🩹,👷,📝,🔒,👽,💬,🥅,✅,🐳,🙈,⚗️,🧐,🔇,🔊"
+major_emoji = "BREAKING,💥,:boom:"
+minor_emoji = "feat,🥚,:egg:,🚀,:rocket:,💄,:lipstick:,✨,:sparkles:"
+patch_emoji = "fix,Update,🎨,:art:,🐛,:bug:,🚑,⚡,:zap:,🔥,:fire:,🚨,:rotating_light:,♻️,:recycle:,🔧,:wrench:,⬆️,:arrow_up:,🩹,👷,📝,🔒,:lock:,👽,:alien:,💬,🥅,✅,:white_check_mark:,🐳,:whale:,🙈,⚗️,🧐,🔇,:mute:,🔊:volume:"
