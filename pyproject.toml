@@ -17,10 +17,9 @@ packages = [
 "Issues" =  "https://github.com/mraniki/iamlistening/issues"
 
 [tool.poetry.dependencies]
-python = "^3.10"
-asyncio = "*"
+python = "^3.11"
+#asyncio = "*"
 dynaconf = "*"
-apprise= "*"
 telethon= "*"
 py-cord= "*"
 simplematrixbotlib= "*"
