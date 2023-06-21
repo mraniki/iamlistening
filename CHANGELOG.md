@@ -2,6 +2,19 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.15 (2023-06-21)
+
+### Fix
+
+* ✅ unit test ([#33](https://github.com/mraniki/iamlistening/issues/33)) ([`a1715d5`](https://github.com/mraniki/iamlistening/commit/a1715d5a99805a5f7b53f1e6ecff8b9336bc9d97))
+* ♻️ refactor ([`7a26652`](https://github.com/mraniki/iamlistening/commit/7a2665278803a51ff153bf2a34840438fd920048))
+* ✅ unit test ([`587c0f7`](https://github.com/mraniki/iamlistening/commit/587c0f775b9179eb474a564c8d397b7e441f6912))
+
+### Other
+
+* Update README.md ([`8dca15d`](https://github.com/mraniki/iamlistening/commit/8dca15dab94ee251893907664ec91a93625817f1))
+* :volume:Removed debug logging statements. ([`bec509a`](https://github.com/mraniki/iamlistening/commit/bec509abe76d7a5f6b6bf4ad59a263af2b1ffc82))
+
 ## v0.1.14 (2023-06-16)
 
 ### Fix
