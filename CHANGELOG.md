@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.16 (2023-06-21)
+
+### Fix
+
+* ⬆️ Update pyproject.toml ([#35](https://github.com/mraniki/iamlistening/issues/35)) ([`320c51b`](https://github.com/mraniki/iamlistening/commit/320c51b0aff55562b9e2ef70a66034262c75a232))
+
+### Other
+
+* Update pyproject.toml ([`d5b70a1`](https://github.com/mraniki/iamlistening/commit/d5b70a136b4262d24322988f42f4d7a1959a202a))
+
 ## v0.1.15 (2023-06-21)
 
 ### Fix
