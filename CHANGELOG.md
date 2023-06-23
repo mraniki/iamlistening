@@ -2,6 +2,22 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.17 (2023-06-23)
+
+### Fix
+
+* 📝 doc ([#37](https://github.com/mraniki/iamlistening/issues/37)) ([`8092540`](https://github.com/mraniki/iamlistening/commit/80925403fbda7b915fae030c025c49bbafd33a6e))
+* 📝 doc ([`ded5b24`](https://github.com/mraniki/iamlistening/commit/ded5b24c358e1d6f55683ae27a3b36598e673df9))
+* ⬆️ dep update ([#36](https://github.com/mraniki/iamlistening/issues/36)) ([`3dd5328`](https://github.com/mraniki/iamlistening/commit/3dd5328ee6f6c03689872f298563e77b853356ce))
+* :memo: readthedocs ([`9c83aab`](https://github.com/mraniki/iamlistening/commit/9c83aab202e4f89e2fc7fc1f108e0fdcf3c8a3d0))
+* :memo: docs ([`b1fa67c`](https://github.com/mraniki/iamlistening/commit/b1fa67c08040051e0a9cd348b6d435395a67d549))
+* :arrow_up: dep update ([`2cd55e3`](https://github.com/mraniki/iamlistening/commit/2cd55e3a59d1d092df1580c3add66fc3d4089add))
+* :arrow_up:dep update ([`05f173a`](https://github.com/mraniki/iamlistening/commit/05f173a2ffe99bdb9334cef8b131a9c9e0f4ca53))
+
+### Other
+
+* Merge branch 'main' into dev ([`df06e31`](https://github.com/mraniki/iamlistening/commit/df06e31bad66af845ac66f16545153d01eb88bc2))
+
 ## v0.1.16 (2023-06-21)
 
 ### Fix
