@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.1 (2023-06-25)
+
+### Fix
+
+* Update dependabot.yml with commit message prefix ([#38](https://github.com/mraniki/iamlistening/issues/38)) ([`871f55e`](https://github.com/mraniki/iamlistening/commit/871f55ec2c9e3934ad0b8e88c83b3f8323ba4179))
+* Update dependabot.yml with commit message prefix ([`8aa5397`](https://github.com/mraniki/iamlistening/commit/8aa5397f6a2ac32340fcd290a70aa75f243ae388))
+
 ## v0.2.0 (2023-06-25)
 
 ### Feature
