@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "iamlistening"
-version = "0.2.0"
+version = "0.2.1"
 description = "A python package to interact with messaging platform."
 authors = ["mraniki <8766259+mraniki@users.noreply.github.com>"]
 license = "MIT License"
