@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.0 (2023-06-25)
+
+### Feature
+
+* Update ✨Flow.yml ([`7b77fdf`](https://github.com/mraniki/iamlistening/commit/7b77fdff5f7fb62d5b66f3e310be47cf7f162565))
+
 ## v0.1.17 (2023-06-23)
 
 ### Fix
