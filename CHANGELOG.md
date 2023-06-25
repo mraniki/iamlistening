@@ -2,6 +2,17 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.2 (2023-06-25)
+
+### Fix
+
+* 👷‍♂️‍♂️Flow.yml ([#39](https://github.com/mraniki/iamlistening/issues/39)) ([`d474043`](https://github.com/mraniki/iamlistening/commit/d474043a912aba1fc5c82b6ad04b2d1262e927bd))
+
+### Other
+
+* Merge branch 'dev' of git@github.com:mraniki/iamlistening.git ([`be4c385`](https://github.com/mraniki/iamlistening/commit/be4c385cae22a02ae1426455275fb31778763d40))
+* :construction_worker_man:‍♂️Flow.yml ([`0662bfa`](https://github.com/mraniki/iamlistening/commit/0662bfaefacb35ba88ec8f85c8927b88b3447c28))
+
 ## v0.2.1 (2023-06-25)
 
 ### Fix
