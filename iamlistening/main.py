@@ -11,7 +11,7 @@ from telethon import TelegramClient, events
 import simplematrixbotlib as botlib
 
 from .config import settings
-
+from iamlistening import version
 
 class Listener:
     """ 👂 Listener class """
