@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.4 (2023-07-03)
+
+### Fix
+
+* 🔧  config cleanup ([`be5c1a3`](https://github.com/mraniki/iamlistening/commit/be5c1a3f36231fef15695e610d7f6cea132ed019))
+
 ## v0.2.3 (2023-06-26)
 
 ### Fix
