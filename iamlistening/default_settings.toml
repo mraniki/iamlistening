@@ -1,16 +1,15 @@
-###############################################################################
-###                           DEFAULT SETTINGS                              ###
-###############################################################################
+#########################################################
+###                  DEFAULT SETTINGS                 ###
+#########################################################
 # Any of those settings can be overwritten by the user.
 # To overwrite a setting, create a settings.toml
-# or load the settings from .env file.
+# or load the settings from .env file or vars.
 # As an example, to disable the iamlistening object:
 # settings.toml
 # [default]
 # iamlistening_enabled = false
 
 [default]
-
 iamlistening_enabled = true
 bot_token = ""
 bot_channel_id = ""
@@ -21,11 +20,7 @@ matrix_user = ""
 matrix_pass = ""
 
 
-
-
-
 [testing]
-
 VALUE = "On Testing"
 iamlistening_enabled = true
 bot_token = ""
