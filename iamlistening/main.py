@@ -11,7 +11,7 @@ from telethon import TelegramClient, events
 import simplematrixbotlib as botlib
 
 from .config import settings
-
+from iamlistening import __version__
 
 class Listener:
     """ 👂 Listener class """
@@ -119,3 +119,6 @@ class Listener:
     def stop(self):
         """Stop the listener."""
         self.stopped = True
+
+    async def get_info(self):
+        return f"{__class__.__name__} {__version__}\n"
