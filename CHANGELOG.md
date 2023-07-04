@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.6 (2023-07-04)
+
+### Fix
+
+* ⚡ added getinfo And docs ([#40](https://github.com/mraniki/iamlistening/issues/40)) ([`08aa9af`](https://github.com/mraniki/iamlistening/commit/08aa9af221d600edab1e8b4710636fb85eeeb63a))
+* :bug: Add version import to main.py ([`e1aea26`](https://github.com/mraniki/iamlistening/commit/e1aea26be95b61079778aa29e21facfe5f8ebf6b))
+* :bug: Add version import to main.py ([`e0ca5b7`](https://github.com/mraniki/iamlistening/commit/e0ca5b719bd5d5ae5999199c66eeec386ae4142d))
+* ⚡ added getinfo ([`1285163`](https://github.com/mraniki/iamlistening/commit/12851638b8cdd4de8baad250211c3fb7d846a6e8))
+* 📝  Doc config ([`19bca85`](https://github.com/mraniki/iamlistening/commit/19bca85f26c194520016c2eefa47d08b435deff2))
+
 ## v0.2.5 (2023-07-03)
 
 ### Fix
