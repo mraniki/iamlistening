@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.7 (2023-07-06)
+
+### Fix
+
+* Update README.md ([`460b636`](https://github.com/mraniki/iamlistening/commit/460b636a22ac523246182aab9ab7c9a78515d22a))
+
 ## v0.2.6 (2023-07-04)
 
 ### Fix
