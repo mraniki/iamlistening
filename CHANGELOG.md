@@ -2,6 +2,15 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.8 (2023-07-07)
+
+### Fix
+
+* 📝 readmydocs updated config ([#41](https://github.com/mraniki/iamlistening/issues/41)) ([`00a5254`](https://github.com/mraniki/iamlistening/commit/00a525438e90abe00c4de412bb942ecd2f3d0d2b))
+* :memo: pyproject doc related update ([`94ce41e`](https://github.com/mraniki/iamlistening/commit/94ce41e0ed3824b896c1beb13fd42b3f7368e0c6))
+* :memo: readmydocs updated config ([`4d6c81a`](https://github.com/mraniki/iamlistening/commit/4d6c81a20ff3c2c154fcc3c6a656e30a6a555796))
+* 📝 readmydocs updated config ([`d7090f8`](https://github.com/mraniki/iamlistening/commit/d7090f8ef2d62c202fad54df413ee5caf87141b0))
+
 ## v0.2.7 (2023-07-06)
 
 ### Fix
