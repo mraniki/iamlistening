@@ -2,6 +2,28 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.0 (2023-07-10)
+
+### Fix
+
+* 📝 Documentation structure ([#43](https://github.com/mraniki/iamlistening/issues/43)) ([`73f5f00`](https://github.com/mraniki/iamlistening/commit/73f5f00ac1fe70598cf1bb55c26be89ad8babbce))
+* Update pyproject.toml ([`ca3f06d`](https://github.com/mraniki/iamlistening/commit/ca3f06dd61d0b7344a8fb4814bdce973d52a0aa0))
+* Update test_unit.py ([`de30d4d`](https://github.com/mraniki/iamlistening/commit/de30d4d97a9e5fa0fd22ff8da8b8fda0533f03c2))
+* ✅  fix ([`0fa4269`](https://github.com/mraniki/iamlistening/commit/0fa426939e98e2a4eb0d7ec5413653b8ceb67709))
+* ✅  fix incorrrect test ([`85e2f30`](https://github.com/mraniki/iamlistening/commit/85e2f309717e6a417e958eedfb9d1d6090917c0b))
+* 🐛 incorrect href link in readme doc badge ([`e2db34e`](https://github.com/mraniki/iamlistening/commit/e2db34e0ac244f43a1e054c54470ded70be71e78))
+* ✅ unit coverage extension ([`45c6107`](https://github.com/mraniki/iamlistening/commit/45c610731f5874d29d86b91694e9f28fa0a2403a))
+* ✅ increasing test coverage ([`f819721`](https://github.com/mraniki/iamlistening/commit/f819721d5d13ec736113d619b31ff1cab8ff7daa))
+* ✅  cleanup and settings alignment ([`dcda0f7`](https://github.com/mraniki/iamlistening/commit/dcda0f709d2d2c8ed9119735294a7775cd2016f3))
+* 📝 doc badge udpate ([`5f349d5`](https://github.com/mraniki/iamlistening/commit/5f349d584cae90d9606bc53c0ea291a08db4084d))
+* 📝 Documentation structure ([`5ab5dd1`](https://github.com/mraniki/iamlistening/commit/5ab5dd1b1d2117cbbc4892515beb4af69a061314))
+* 📝 Documentation structure ([`25c3429`](https://github.com/mraniki/iamlistening/commit/25c342917e9265d485514edce207ee5d4a3e7539))
+
+### Breaking
+
+* 💥 breaking code cleanup an initial version ([`f6a136b`](https://github.com/mraniki/iamlistening/commit/f6a136b533ee34433bcd269b9bb4bdae2282fbf6))
+* 💥 breaking code cleanup an initial version ([`f6a136b`](https://github.com/mraniki/iamlistening/commit/f6a136b533ee34433bcd269b9bb4bdae2282fbf6))
+
 ## v0.2.8 (2023-07-07)
 
 ### Fix
