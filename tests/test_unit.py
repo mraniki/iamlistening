@@ -116,8 +116,8 @@ async def test_start_method():
     # Create an instance of the Listener class
     listener = Listener()
 
-    with patch('your_module.TelegramClient', telegram_client_mock):
-        with patch('your_module.post_init', post_init_mock):
+    with patch('telethon.TelegramClient', telegram_client_mock):
+        with patch('Listener.post_init', post_init_mock):
             # Set the settings before calling the start method
             listener.settings = settings
 
