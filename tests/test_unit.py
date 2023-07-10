@@ -132,3 +132,14 @@ async def test_start_method():
     )
     bot_client_mock.start.assert_called_with(bot_token=settings['bot_token'])
     post_init_mock.assert_awaited_once()
+
+@pytest.mark.asyncio
+async def test_listener_telegram():
+    listener_test = Listener()
+    print(listener_test)
+    assert listener_test is not None
+    assert isinstance(listener_test, Listener)
+    await listener_test.handle_message("hello")
+    msg = await listener_test.get_latest_message()
+    print(msg)
+    assert msg == "hello"
