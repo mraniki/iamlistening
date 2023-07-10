@@ -22,7 +22,7 @@ class Listener:
         self.loop = asyncio.get_event_loop()
         self.lock = threading.Lock()
         self.stopped = False
-    
+
     async def start(self):
         """start"""
 
