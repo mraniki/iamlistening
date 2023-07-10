@@ -4,7 +4,7 @@ iamlistening Unit Testing
 
 import pytest
 import asyncio
-from unittest.mock import patch
+from unittest.mock import patch, AsyncMock, MagicMock
 
 from iamlistening import Listener
 from iamlistening.config import settings
@@ -97,3 +97,38 @@ async def test_get_latest_message(frasier, message):
     await frasier.handle_message(message)
     assert await frasier.get_latest_message() == message
 
+@pytest.mark.asyncio
+async def test_start_method():
+    # Mock the necessary dependencies
+    settings = {
+        'telethon_api_id': 'your_telethon_api_id',
+        'telethon_api_hash': 'your_telethon_api_hash',
+        'bot_token': 'your_bot_token'
+    }
+
+    bot_client_mock = AsyncMock()
+    telegram_client_mock = MagicMock(return_value=bot_client_mock)
+
+    # Replace the post_init method with the mocked implementation
+    async def post_init_mock():
+        pass
+
+    # Create an instance of the Listener class
+    listener = Listener()
+
+    with patch('your_module.TelegramClient', telegram_client_mock):
+        with patch('your_module.post_init', post_init_mock):
+            # Set the settings before calling the start method
+            listener.settings = settings
+
+            # Call the start method
+            await listener.start()
+
+    # Assert the expected behavior
+    telegram_client_mock.assert_called_with(
+        None,
+        settings['telethon_api_id'],
+        settings['telethon_api_hash']
+    )
+    bot_client_mock.start.assert_called_with(bot_token=settings['bot_token'])
+    post_init_mock.assert_awaited_once()
