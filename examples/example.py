@@ -1,20 +1,10 @@
 """
 Provides example for iamlistening package
 """
-import logging
 import asyncio
 import uvicorn
 from fastapi import FastAPI
-
 from iamlistening import Listener
-
-
-
-# DEBUG LEVEL
-logging.basicConfig(level=logging.DEBUG)
-logging.getLogger("discord").setLevel(logging.WARNING)
-logging.getLogger("telethon").setLevel(logging.WARNING)
-logging.getLogger("simplematrixbotlib").setLevel(logging.WARNING)
 
 async def main():
     """Run main program loop."""
@@ -37,6 +27,7 @@ app = FastAPI()
 async def start():
     """startup"""
     asyncio.create_task(main())
+
 
 @app.get("/")
 def read_root():

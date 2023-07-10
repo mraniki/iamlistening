@@ -10,6 +10,7 @@
 # iamlistening_enabled = false
 
 [default]
+VALUE = "On Default"
 iamlistening_enabled = true
 bot_token = ""
 bot_channel_id = ""
