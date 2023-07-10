@@ -4,12 +4,17 @@ iamlistening Unit Testing
 
 import pytest
 import asyncio
-from unittest.mock import Mock, AsyncMock, patch, MagicMock
+from unittest.mock import patch
 
 from iamlistening import Listener
 from iamlistening.config import settings
 
-@pytest.fixture
+
+@pytest.fixture(scope="session", autouse=True)
+def set_test_settings():
+    settings.configure(FORCE_ENV_FOR_DYNACONF="testing")
+
+@pytest.fixture(name="frasier")
 def listener():
     return Listener()
 
@@ -22,6 +27,11 @@ def event_loop():
     loop = asyncio.new_event_loop()
     yield loop
     loop.close()
+
+@pytest.mark.asyncio
+async def test_fixture(frasier):
+    assert frasier is not None
+    assert settings.VALUE == "On Testing"
 
 # Mock the settings module
 @pytest.fixture()
@@ -67,7 +77,7 @@ def mock_matrix_fixture():
     return Settings()
 
 
-def test_init(listener):
+def test_init(frasier):
     assert listener is not None
 
 def test_discord(mock_discord):
@@ -83,7 +93,7 @@ def test_matrix(mock_matrix):
     assert listener is not None
 
 @pytest.mark.asyncio
-async def test_get_latest_message(listener, message):
-    await listener.handle_message(message)
-    assert await listener.get_latest_message() == message
+async def test_get_latest_message(frasier, message):
+    await frasier.handle_message(message)
+    assert await frasier.get_latest_message() == message
 
