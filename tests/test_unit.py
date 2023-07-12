@@ -4,8 +4,8 @@ iamlistening Unit Testing
 
 import pytest
 import asyncio
-from unittest.mock import patch
-
+from unittest.mock import AsyncMock, patch
+from telethon import TelegramClient
 from iamlistening import Listener
 from iamlistening.config import settings
 
@@ -97,6 +97,16 @@ async def test_get_latest_message(frasier, message):
     await frasier.handle_message(message)
     assert await frasier.get_latest_message() == message
 
+@pytest.mark.asyncio
+async def test_telegram_function():
+    TelegramClient = AsyncMock()
+    TelegramClient.run_until_disconnected = AsyncMock()
+    listener = Listener()
+    assert listener is not None
+    assert isinstance(listener, Listener)
+    assert TelegramClient.assert_called_once
+    assert TelegramClient.run_until_disconnected.assert_called_once
+    
 # @pytest.mark.asyncio
 # async def test_start_method():
 #     # Mock the necessary dependencies
