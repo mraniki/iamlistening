@@ -33,12 +33,14 @@ async def test_fixture(listener):
     assert listener is not None
     assert settings.VALUE == "On Testing"
 
-
-def test_init(listener):
+@pytest.mark.asyncio
+async def test_init(listener):
     assert listener is not None
-    result = listener.get_info_listener()
-    result is not None
-
+    result = await listener.get_info_listener()
+    print("results: ",result)
+    result is not None 
+    assert "ℹ️" in result
+    assert "Listener" in result
 
 @pytest.mark.asyncio
 async def test_get_latest_message(listener, message):
