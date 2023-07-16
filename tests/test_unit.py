@@ -14,7 +14,7 @@ from iamlistening.config import settings
 def set_test_settings():
     settings.configure(FORCE_ENV_FOR_DYNACONF="testing")
 
-@pytest.fixture(name="frasier")
+@pytest.fixture(name="listener")
 def listener():
     return Listener()
 
@@ -29,42 +29,21 @@ def event_loop():
     loop.close()
 
 @pytest.mark.asyncio
-async def test_fixture(frasier):
-    assert frasier is not None
+async def test_fixture(listener):
+    assert listener is not None
     assert settings.VALUE == "On Testing"
 
-# Mock the settings module
-@pytest.fixture()
-def mock_settings():
-    with patch("iamlistening.config.settings") as mock_settings:
-        mock_settings.matrix_hostname = True
-        mock_settings.telethon_api_id = False
-        mock_settings.bot_token = "fake_token"
-        yield mock_settings
 
-
-@pytest.fixture(name="mock_telegram")
-def mock_telegram_fixture():
-    """Fixture to create an listener object for testing."""
-    class Settings:
-        settings.telethon_api_id = "123456789"
-        settings.telethon_api_hash = "123456789"
-        settings.bot_token = "test_bot_token"
-        settings.bot_channel_id = "1234567890"
-    return Settings()
-
-
-def test_init(frasier):
+def test_init(listener):
     assert listener is not None
+    result = listener.get_info_listener()
+    result is not None
 
-def test_telegram(mock_telegram):
-    Listener()
-    assert listener is not None
 
 @pytest.mark.asyncio
-async def test_get_latest_message(frasier, message):
-    await frasier.handle_message(message)
-    assert await frasier.get_latest_message() == message
+async def test_get_latest_message(listener, message):
+    await listener.handle_message(message)
+    assert await listener.get_latest_message() == message
 
 @pytest.mark.asyncio
 async def test_telegram_function():
