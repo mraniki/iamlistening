@@ -28,6 +28,7 @@ class Listener:
 
         if settings.telethon_api_id:
             # TELEGRAM
+            self.logger.debug("Telegram setup")
             bot = await TelegramClient(
                         None,
                         settings.telethon_api_id,
@@ -43,6 +44,7 @@ class Listener:
 
         elif settings.matrix_hostname:
             # MATRIX
+            self.logger.debug("Matrix setup")
             config = botlib.Config()
             config.emoji_verify = True
             config.ignore_unverified_devices = True
@@ -75,6 +77,7 @@ class Listener:
                                                 )
         elif settings.bot_token:
             # DISCORD
+            self.logger.debug("Discord setup")
             intents = discord.Intents.default()
             intents.message_content = True
             bot = discord.Bot(intents=intents)
