@@ -31,3 +31,25 @@ telethon_api_hash = "1234556"
 matrix_hostname = ""
 matrix_user = ""
 matrix_pass = ""
+
+[testingdiscord]
+VALUE = "On Testing Discord"
+iamlistening_enabled = true
+bot_token = "1234556"
+bot_channel_id = "1234556"
+telethon_api_id = ""
+telethon_api_hash = ""
+matrix_hostname = ""
+matrix_user = ""
+matrix_pass = ""
+
+[testingmatrix]
+VALUE = "On Testing Matrix"
+iamlistening_enabled = true
+bot_token = "1234556"
+bot_channel_id = "1234556"
+telethon_api_id = ""
+telethon_api_hash = ""
+matrix_hostname = "123456789"
+matrix_user = "123456789"
+matrix_pass = "123456789"

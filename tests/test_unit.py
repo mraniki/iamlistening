@@ -42,14 +42,6 @@ def mock_settings():
         mock_settings.bot_token = "fake_token"
         yield mock_settings
 
-@pytest.fixture(name="mock_discord")
-def mock_discord_fixture():
-    """Fixture to create an listener object for testing."""
-    class Settings:
-        settings.bot_token = "test_bot_token"
-        settings.bot_channel_id = "1234567890"
-        settings.ping = "8.8.8.8"
-    return Settings()
 
 @pytest.fixture(name="mock_telegram")
 def mock_telegram_fixture():
@@ -62,30 +54,10 @@ def mock_telegram_fixture():
     return Settings()
 
 
-@pytest.fixture(name="mock_matrix")
-def mock_matrix_fixture():
-    """Fixture to create an listener object for testing."""
-    class Settings:
-        settings.matrix_hostname = "123456789"
-        settings.matrix_user = "123456789"
-        settings.matrix_pass = "123456789"
-        settings.bot_token = "test_bot_token"
-        settings.bot_channel_id = "1234567890"
-    return Settings()
-
-
 def test_init(frasier):
     assert listener is not None
 
-def test_discord(mock_discord):
-    Listener()
-    assert listener is not None
-
 def test_telegram(mock_telegram):
-    Listener()
-    assert listener is not None
-
-def test_matrix(mock_matrix):
     Listener()
     assert listener is not None
 
@@ -119,16 +91,16 @@ async def test_listener_telegram():
 
 @pytest.mark.asyncio
 async def test_listener_run():
+    start = AsyncMock()
+    listener_test = Listener()
+    await listener_test.run_forever(max_iterations=1)
+    assert start.assert_awaited_once()
+
+
+@pytest.mark.asyncio
+async def test_listener_run_error():
     with pytest.raises(errors.ApiIdInvalidError):
         start = AsyncMock()
         listener_test = Listener()
         await listener_test.run_forever(max_iterations=1)
         assert start.assert_awaited_once()
-
-
-@pytest.mark.asyncio
-async def test_listener_discord_run(mock_discord):
-    start = AsyncMock()
-    listener_test = Listener()
-    await listener_test.run_forever(max_iterations=1)
-    assert start.assert_awaited_once()
