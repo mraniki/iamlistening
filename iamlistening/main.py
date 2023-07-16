@@ -111,7 +111,8 @@ class Listener:
     async def run_forever(self, max_iterations=None):
         """Run the listener for a specified number of iterations or until stopped."""
         iteration = 0
-        while not self.stopped and (max_iterations is None or iteration < max_iterations):
+        while not self.stopped and (
+            max_iterations is None or iteration < max_iterations):
             await self.start()
             iteration += 1
 
