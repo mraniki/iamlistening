@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.1 (2023-07-15)
+
+### Fix
+
+* Update main.py ([`4528e27`](https://github.com/mraniki/iamlistening/commit/4528e276f8d8f88775ef2ac11ce6675c96172019))
+
 ## v1.0.0 (2023-07-10)
 
 ### Fix

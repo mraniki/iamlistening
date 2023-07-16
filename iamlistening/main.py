@@ -122,5 +122,6 @@ class Listener:
         """Stop the listener."""
         self.stopped = True
 
-    async def get_info(self):
+    async def get_info_listener(self):
         return (f"ℹ️ {__class__.__name__} {__version__}\n")
+
