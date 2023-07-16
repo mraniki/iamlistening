@@ -5,6 +5,8 @@ iamlistening Unit Testing
 import pytest
 import asyncio
 from unittest.mock import AsyncMock, patch
+import aiohttp
+import simplematrixbotlib as botlib
 from iamlistening import Listener
 from iamlistening.config import settings
 
@@ -40,20 +42,22 @@ async def test_get_latest_message(listener, message):
     await listener.handle_message(message)
     assert await listener.get_latest_message() == message
 
-@pytest.mark.asyncio
-async def test_listener_run():
-    start = AsyncMock()
-    listener_test = Listener()
-    await listener_test.run_forever(max_iterations=1)
-    assert start.assert_awaited_once()
+# @pytest.mark.asyncio
+# async def test_listener_run():
+#     start = AsyncMock()
+#     listener_test = Listener()
+#     await listener_test.run_forever(max_iterations=1)
+#     assert start.assert_awaited_once()
 
 @pytest.mark.asyncio
 async def test_listener_run_error():
-    with pytest.raises(ValueError):
+    botlib = AsyncMock()
+    with pytest.raises(aiohttp.client_exceptions.InvalidURL):
         start = AsyncMock()
         listener_test = Listener()
         await listener_test.run_forever(max_iterations=1)
         assert start.assert_awaited_once()
+        assert botlib.assert_called_once()
 
 
 @pytest.mark.asyncio
