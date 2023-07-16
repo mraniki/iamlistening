@@ -108,10 +108,13 @@ class Listener:
         self.latest_message = message_content
 
 
-    async def run_forever(self):
-        """Run the listener forever."""
-        while not self.stopped:
+    async def run_forever(self, max_iterations=None):
+        """Run the listener for a specified number of iterations or until stopped."""
+        iteration = 0
+        while not self.stopped and (
+            max_iterations is None or iteration < max_iterations):
             await self.start()
+            iteration += 1
 
     async def post_init(self):
         return "bot is online"
@@ -120,5 +123,6 @@ class Listener:
         """Stop the listener."""
         self.stopped = True
 
-    # async def get_info(self):
-    #     return f"{__class__.__name__} {__version__}\n"
+    async def get_info_listener(self):
+        return (f"ℹ️ {__class__.__name__} {__version__}\n")
+

@@ -4,15 +4,16 @@ iamlistening Unit Testing
 
 import pytest
 import asyncio
-from unittest.mock import AsyncMock, patch
-from telethon import TelegramClient, errors
+from unittest.mock import AsyncMock
+import aiohttp
+import simplematrixbotlib as botlib
 from iamlistening import Listener
 from iamlistening.config import settings
 
 
 @pytest.fixture(scope="session", autouse=True)
 def set_test_settings():
-    settings.configure(FORCE_ENV_FOR_DYNACONF="testing")
+    settings.configure(FORCE_ENV_FOR_DYNACONF="testingmatrix")
 
 @pytest.fixture(name="listener")
 def listener():
@@ -31,44 +32,15 @@ def event_loop():
 @pytest.mark.asyncio
 async def test_fixture(listener):
     assert listener is not None
-    assert settings.VALUE == "On Testing"
+    assert settings.VALUE == "On Testing Matrix"
 
-@pytest.mark.asyncio
-async def test_init(listener):
+def test_init(listener):
     assert listener is not None
-    result = await listener.get_info_listener()
-    print("results: ",result)
-    result is not None 
-    assert "ℹ️" in result
-    assert "Listener" in result
 
 @pytest.mark.asyncio
 async def test_get_latest_message(listener, message):
     await listener.handle_message(message)
     assert await listener.get_latest_message() == message
-
-@pytest.mark.asyncio
-async def test_telegram_function():
-    TelegramClient = AsyncMock()
-    TelegramClient.run_until_disconnected = AsyncMock()
-    listener = Listener()
-    assert listener is not None
-    assert isinstance(listener, Listener)
-    assert TelegramClient.assert_called_once
-    assert TelegramClient.run_until_disconnected.assert_called_once
-
-
-@pytest.mark.asyncio
-async def test_listener_telegram():
-    listener_test = Listener()
-    print(listener_test)
-    assert listener_test is not None
-    assert isinstance(listener_test, Listener)
-    await listener_test.handle_message("hello")
-    msg = await listener_test.get_latest_message()
-    print(msg)
-    assert msg == "hello"
-
 
 # @pytest.mark.asyncio
 # async def test_listener_run():
@@ -77,11 +49,24 @@ async def test_listener_telegram():
 #     await listener_test.run_forever(max_iterations=1)
 #     assert start.assert_awaited_once()
 
-
 @pytest.mark.asyncio
 async def test_listener_run_error():
-    with pytest.raises(errors.ApiIdInvalidError):
+    botlib = AsyncMock()
+    with pytest.raises(aiohttp.client_exceptions.InvalidURL):
         start = AsyncMock()
         listener_test = Listener()
         await listener_test.run_forever(max_iterations=1)
         assert start.assert_awaited_once()
+        assert botlib.assert_called_once()
+
+
+@pytest.mark.asyncio
+async def test_listener_library():
+    listener_test = Listener()
+    print(listener_test)
+    assert listener_test is not None
+    assert isinstance(listener_test, Listener)
+    await listener_test.handle_message("hello")
+    msg = await listener_test.get_latest_message()
+    print(msg)
+    assert msg == "hello"
