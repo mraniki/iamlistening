@@ -2,6 +2,28 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.0 (2023-07-16)
+
+### Feature
+
+* 🥚help message ([`3b9fdd3`](https://github.com/mraniki/iamlistening/commit/3b9fdd3c0fc8f7b830b4d9dc80fa1ef107aac35d))
+
+### Fix
+
+* ✅ added unit test ([#45](https://github.com/mraniki/iamlistening/issues/45)) ([`7b108df`](https://github.com/mraniki/iamlistening/commit/7b108df4b8b4434648aac09c49f568e0f9b4d676))
+* ✅ test coverage ([`4aaa6da`](https://github.com/mraniki/iamlistening/commit/4aaa6da7a1a499eeb470ba5ff159b8390c83d86e))
+* 🚨 linter ([`3b97f32`](https://github.com/mraniki/iamlistening/commit/3b97f32df9a5552504bcc5759ea824028c67bafc))
+* ✅ cleanup ([`047b08f`](https://github.com/mraniki/iamlistening/commit/047b08ff267e17891708d6a5888753cebf5bffb3))
+* ✅  increase unit test coverage ([`210097b`](https://github.com/mraniki/iamlistening/commit/210097b96776021f95e9995bd821d7215f1c33f6))
+* ✅ updated setting usage and unit test ([`5ba1f7b`](https://github.com/mraniki/iamlistening/commit/5ba1f7b7ab9bfc12534ad589dea941b9208239b6))
+* ✅  unit test ([`e5110e6`](https://github.com/mraniki/iamlistening/commit/e5110e673300149785f930b1a1dbbe9b2c0a0e69))
+* ✅ added unit test ([`8651539`](https://github.com/mraniki/iamlistening/commit/8651539da10cc61f7a63852f55143fcd21fc3b2e))
+* ✅  cleanup import ([`881816b`](https://github.com/mraniki/iamlistening/commit/881816b4ec47e48df4028679df44e88272f8bc40))
+
+### Other
+
+* Merge branch 'main' into dev ([`e6ee5cb`](https://github.com/mraniki/iamlistening/commit/e6ee5cb8898b76777d378f5c97fe44dc811687e5))
+
 ## v1.0.1 (2023-07-15)
 
 ### Fix
