@@ -5,7 +5,7 @@ iamlistening Unit Testing
 import pytest
 import asyncio
 from unittest.mock import AsyncMock, patch
-from telethon import TelegramClient
+from telethon import TelegramClient, errors
 from iamlistening import Listener
 from iamlistening.config import settings
 
@@ -37,7 +37,6 @@ async def test_fixture(frasier):
 @pytest.fixture()
 def mock_settings():
     with patch("iamlistening.config.settings") as mock_settings:
-        mock_settings.discord_webhook_id = False
         mock_settings.matrix_hostname = True
         mock_settings.telethon_api_id = False
         mock_settings.bot_token = "fake_token"
@@ -47,8 +46,6 @@ def mock_settings():
 def mock_discord_fixture():
     """Fixture to create an listener object for testing."""
     class Settings:
-        settings.discord_webhook_id = "12345678901"
-        settings.discord_webhook_token = "1234567890"
         settings.bot_token = "test_bot_token"
         settings.bot_channel_id = "1234567890"
         settings.ping = "8.8.8.8"
@@ -106,42 +103,7 @@ async def test_telegram_function():
     assert isinstance(listener, Listener)
     assert TelegramClient.assert_called_once
     assert TelegramClient.run_until_disconnected.assert_called_once
-    
-# @pytest.mark.asyncio
-# async def test_start_method():
-#     # Mock the necessary dependencies
-#     settings = {
-#         'telethon_api_id': 'your_telethon_api_id',
-#         'telethon_api_hash': 'your_telethon_api_hash',
-#         'bot_token': 'your_bot_token'
-#     }
 
-#     bot_client_mock = AsyncMock()
-#     telegram_client_mock = MagicMock(return_value=bot_client_mock)
-
-#     # Replace the post_init method with the mocked implementation
-#     async def post_init_mock():
-#         pass
-
-#     # Create an instance of the Listener class
-#     listener = Listener()
-
-#     with patch('telethon.TelegramClient', telegram_client_mock):
-#         with patch('iamlistening.Listener.post_init', post_init_mock):
-#             # Set the settings before calling the start method
-#             listener.settings = settings
-
-#             # Call the start method
-#             await listener.start()
-
-#     # Assert the expected behavior
-#     telegram_client_mock.assert_called_with(
-#         None,
-#         settings['telethon_api_id'],
-#         settings['telethon_api_hash']
-#     )
-#     bot_client_mock.start.assert_called_with(bot_token=settings['bot_token'])
-#     post_init_mock.assert_awaited_once()
 
 @pytest.mark.asyncio
 async def test_listener_telegram():
@@ -153,3 +115,20 @@ async def test_listener_telegram():
     msg = await listener_test.get_latest_message()
     print(msg)
     assert msg == "hello"
+
+
+@pytest.mark.asyncio
+async def test_listener_run():
+    with pytest.raises(errors.ApiIdInvalidError):
+        start = AsyncMock()
+        listener_test = Listener()
+        await listener_test.run_forever(max_iterations=1)
+        assert start.assert_awaited_once()
+
+
+@pytest.mark.asyncio
+async def test_listener_discord_run(mock_discord):
+    start = AsyncMock()
+    listener_test = Listener()
+    await listener_test.run_forever(max_iterations=1)
+    assert start.assert_awaited_once()
