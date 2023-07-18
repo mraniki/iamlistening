@@ -43,7 +43,7 @@ exclude = [
   ".github/*",
   "docs/*",
 ]
-ignore = ["E401","F401"]
+ignore = ["E401","F401","F811"]
 format = "github"
 
 
