@@ -97,6 +97,8 @@ upload_to_vcs_release = true
 version_variables = ["pyproject.toml:version","iamlistening/__init__.py:__version__"]
 build_command = "pip install poetry && poetry build"
 commit_parser = "emoji"
+
+[tool.semantic_release.commit_parser_options]
 major_tags = [
     "BREAKING",
     "💥",
