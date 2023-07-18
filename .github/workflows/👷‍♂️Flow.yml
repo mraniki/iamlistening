@@ -1,12 +1,10 @@
-name: 👷‍♂️Flow
+name: 👷Flow
 
 on:
   push:
     branches: ["main"]
   pull_request:
   workflow_dispatch:
- # schedule:
- #   - cron: '42 23 * * 5'
 
 
 jobs:
@@ -25,10 +23,6 @@ jobs:
     needs: [lint]
     uses: mraniki/coding_toolset/.github/workflows/🐍Build.yml@main
     secrets: inherit
-  prerelease:
-    needs: [build]
-    uses: mraniki/coding_toolset/.github/workflows/🥷Prerelease.yml@main 
-    secrets: inherit
   release:
     needs: [build]
     uses: mraniki/coding_toolset/.github/workflows/📦Release.yml@main
@@ -37,6 +31,3 @@ jobs:
     needs: [release]
     uses: mraniki/coding_toolset/.github/workflows/🐳Docker.yml@main
     secrets: inherit
-  # deploy:
-  #   needs: [docker]
-  #   uses: mraniki/coding_toolset/.github/workflows/☁️Deploy.yml@main
