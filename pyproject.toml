@@ -29,15 +29,15 @@ py-cord= "^2.4.1"
 simplematrixbotlib= "^2.9.0"
 
 
-[tool.poetry.dev-dependencies]
-python-semantic-release = "^8.0.0"
+[tool.poetry.group.dev.dependencies]
+python-semantic-release = "^8.0.1"
 ruff = "^0.0.278"
 
 [tool.ruff]
 select = [
   "E",  # pycodestyle
   "F",  # pyflakes
-#   "I",  # isort
+  "I",  # isort
 ]
 exclude = [
   ".github/*",
@@ -46,6 +46,12 @@ exclude = [
 ignore = ["E401","F401","F811"]
 format = "github"
 
+[tool.pylint.exceptions]
+overgeneral-exceptions = [
+    "builtins.BaseException",
+    "builtins.Exception",
+    "builtins.RuntimeError",
+]
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.0"
