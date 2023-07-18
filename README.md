@@ -14,14 +14,14 @@
     <td>
       <a href="https://pypi.org/project/iamlistening/"><img src="https://img.shields.io/pypi/v/iamlistening?style=for-the-badge&logo=PyPI&logoColor=white"></a><br>
       <a href="https://pypi.org/project/iamlistening/"><img src="https://img.shields.io/pypi/dm/iamlistening?style=for-the-badge&logo=PyPI&logoColor=white&label=pypi&labelColor=grey"></a><br>
-      <a href="https://github.com/mraniki/iamlistening/"><img src="https://img.shields.io/github/actions/workflow/status/mraniki/iamlistening/%F0%9F%91%B7%E2%80%8D%E2%99%82%EF%B8%8FFlow.yml?style=for-the-badge&logo=GitHub&logoColor=white"></a><br>
+      <a href="https://github.com/mraniki/iamlistening/"><img src="https://img.shields.io/github/actions/workflow/status/mraniki/iamlistening/%F0%9F%91%B7Flow.yml?style=for-the-badge&logo=GitHub&logoColor=white"></a><br>
    <a href="https://talky.readthedocs.io/"><img src="https://readthedocs.org/projects/iamlistening/badge/?version=latest&style=for-the-badge"></a><br>
    <a href="https://codebeat.co/projects/github-com-mraniki-iamlistening-main"><img src="https://codebeat.co/badges/4085334e-4590-41f6-a70c-69e9a2641c79"/></a><br>
    <a href="https://codecov.io/gh/mraniki/iamlistening"> <img src="https://codecov.io/gh/mraniki/iamlistening/branch/main/graph/badge.svg?token=QZ55U6KQFN"/></a><br>
     </td>
     <td align="left"> 
        A python package to listen to messaging platforms,<br>
-       such as discord, telegram and matrix 
+       such as discord, telegram and matrix.
     </td>
      
   </tr>
@@ -34,17 +34,13 @@
         listener = Listener()
         task = asyncio.create_task(listener.run_forever())
         while True:
-          try:
-              msg = await listener.get_latest_message()
-              if msg:
-                  print(f"Frasier👂: {msg}"
-          except Exception as error:
-              print(error)
+          msg = await listener.get_latest_message()
+          if msg:
+            print(f"Frasier👂: {msg}"
         await task
 </code>
 </pre>
 
 <h5>Example</h5>
 
-https://github.com/mraniki/iamlistening/blob/52db0f4c194fe9edd12f48199737b4e1c73f7194/examples/example.py#L1-L54
-
+https://github.com/mraniki/iamlistening/blob/dcc5dad8887300e34d66d1e36635479ad3b54685/examples/example.py#L1

@@ -2,9 +2,12 @@
 Provides example for iamlistening package
 """
 import asyncio
+
 import uvicorn
 from fastapi import FastAPI
+
 from iamlistening import Listener
+
 
 async def main():
     """Run main program loop."""
