@@ -34,17 +34,13 @@
         listener = Listener()
         task = asyncio.create_task(listener.run_forever())
         while True:
-          try:
-              msg = await listener.get_latest_message()
-              if msg:
-                  print(f"Frasier👂: {msg}"
-          except Exception as error:
-              print(error)
+          msg = await listener.get_latest_message()
+          if msg:
+            print(f"Frasier👂: {msg}"
         await task
 </code>
 </pre>
 
 <h5>Example</h5>
 
-https://github.com/mraniki/iamlistening/blob/52db0f4c194fe9edd12f48199737b4e1c73f7194/examples/example.py#L1-L54
-
+https://github.com/mraniki/iamlistening/blob/dcc5dad8887300e34d66d1e36635479ad3b54685/examples/example.py#L1
