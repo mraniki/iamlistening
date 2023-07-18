@@ -100,13 +100,13 @@ commit_parser = "emoji"
 major_tags = [
     "BREAKING",
     "💥",
-    ":boom:"
+    ":boom:",
   ]
 minor_tags = ["feat",
     "🥚",":egg:",
     "🚀",":rocket:",
     "💄",":lipstick:",
-    "✨",":sparkles:"
+    "✨",":sparkles:",
 ]
 patch_tags = ["fix","bump","Update",
     "🎨",":art:",
@@ -131,5 +131,5 @@ patch_tags = ["fix","bump","Update",
     "⚗️",":alembic:",
     "🧐",":monocle_face:",
     "🔇",":mute:",
-    "🔊",":volume:"
+    "🔊",":volume:",
 ]
