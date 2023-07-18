@@ -108,6 +108,7 @@ minor_tags = ["feat",
     "💄",":lipstick:",
     "✨",":sparkles:",
 ]
+
 patch_tags = ["fix","bump","Update",
     "🎨",":art:",
     "🐛",":bug:",
