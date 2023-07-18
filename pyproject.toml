@@ -30,7 +30,7 @@ simplematrixbotlib= "^2.9.0"
 
 
 [tool.poetry.dev-dependencies]
-python-semantic-release = "^7.34.3"
+python-semantic-release = "^8.0.1"
 
 
 [tool.poetry.group.test.dependencies]
