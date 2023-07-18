@@ -30,7 +30,21 @@ simplematrixbotlib= "^2.9.0"
 
 
 [tool.poetry.dev-dependencies]
-python-semantic-release = "^7.34.3"
+python-semantic-release = "^8.0.0"
+ruff = "^0.0.278"
+
+[tool.ruff]
+select = [
+  "E",  # pycodestyle
+  "F",  # pyflakes
+#   "I",  # isort
+]
+exclude = [
+  ".github/*",
+  "docs/*",
+]
+ignore = ["E401","F401"]
+format = "github"
 
 
 [tool.poetry.group.test.dependencies]
