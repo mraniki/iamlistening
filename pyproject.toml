@@ -92,6 +92,7 @@ omit = [
     "*/config.py"
 ]
 
+
 [tool.semantic_release]
 upload_to_vcs_release = true
 version_variables = ["pyproject.toml:version","iamlistening/__init__.py:__version__"]
