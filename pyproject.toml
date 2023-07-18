@@ -93,7 +93,7 @@ omit = [
 ]
 
 [tool.semantic_release]
-version_variable = ["pyproject.toml:version","iamlistening/__init__.py:__version__"]
+version_variables = ["pyproject.toml:version","iamlistening/__init__.py:__version__"]
 build_command = "pip install poetry && poetry build"
 commit_parser = "emoji"
 major_tags = "BREAKING,💥,:boom:"
