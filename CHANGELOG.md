@@ -2,6 +2,15 @@
 
 
 
+## v1.1.2 (2023-07-18)
+
+### :zap:
+
+* :zap: ci update (#60) ([`8ccc47e`](https://github.com/mraniki/iamlistening/commit/8ccc47e567140a962860bdb1909294e1aab6f6eb))
+
+* :zap: ci update ([`e9d8112`](https://github.com/mraniki/iamlistening/commit/e9d81125f07683829ab23072043b1820954476a1))
+
+
 ## v1.1.1 (2023-07-18)
 
 ### :bug:
