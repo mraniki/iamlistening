@@ -2,10 +2,12 @@
 iamlistening Unit Testing
 """
 
-import pytest
 import asyncio
 from unittest.mock import AsyncMock, patch
+
+import pytest
 from telethon import TelegramClient, errors
+
 from iamlistening import Listener
 from iamlistening.config import settings
 

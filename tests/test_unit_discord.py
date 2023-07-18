@@ -2,10 +2,12 @@
 iamlistening Unit Testing
 """
 
-import pytest
 import asyncio
 from unittest.mock import AsyncMock
+
+import pytest
 from discord import errors
+
 from iamlistening import Listener
 from iamlistening.config import settings
 

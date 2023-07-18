@@ -7,11 +7,13 @@ import logging
 import threading
 
 import discord
-from telethon import TelegramClient, events
 import simplematrixbotlib as botlib
+from telethon import TelegramClient, events
+
+from iamlistening import __version__
 
 from .config import settings
-from iamlistening import __version__
+
 
 class Listener:
     """ 👂 Listener class """
