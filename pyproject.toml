@@ -10,7 +10,10 @@ description = "A python package to interact with messaging platform."
 authors = ["mraniki <8766259+mraniki@users.noreply.github.com>"]
 license = "MIT License"
 readme = "README.md"
-keywords = ["discord", "telegram", "bot","messaging","matrix"]
+keywords = [
+    "bot","messaging",
+    "discord", "telegram","matrix",
+    ]
 packages = [
     {include = "iamlistening"}
 ]
