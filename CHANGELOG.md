@@ -2,6 +2,15 @@
 
 
 
+## v1.1.5 (2023-07-19)
+
+### 👷
+
+* 👷 CI Change for semantic (#63) ([`dccfe1e`](https://github.com/mraniki/iamlistening/commit/dccfe1e2a2353cbf46b1c13692247409963ae16f))
+
+* 👷 CI Change for semantic ([`ee15d9a`](https://github.com/mraniki/iamlistening/commit/ee15d9a6ead44c80021358682be1dc684e072377))
+
+
 ## v1.1.4 (2023-07-19)
 
 ### ⬆️
