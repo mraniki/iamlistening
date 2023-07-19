@@ -2,6 +2,15 @@
 
 
 
+## v1.1.6 (2023-07-19)
+
+### 💬
+
+* 💬  tags (#64) ([`cc9d59d`](https://github.com/mraniki/iamlistening/commit/cc9d59dbc4599aa2f1611f2184c50f6d54aefb75))
+
+* 💬  tags ([`1fb3233`](https://github.com/mraniki/iamlistening/commit/1fb3233b22e293db5147b27b043d5c51cec81e7b))
+
+
 ## v1.1.5 (2023-07-19)
 
 ### 👷
