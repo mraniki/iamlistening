@@ -2,6 +2,19 @@
 
 
 
+## v1.1.3 (2023-07-19)
+
+### ⬆️
+
+* ⬆️ 👷 CI Change (#61) ([`e82a5ff`](https://github.com/mraniki/iamlistening/commit/e82a5ff1fa27016c58b5312be751d71210c85a7d))
+
+* ⬆️ 👷 CI Change ([`f97666a`](https://github.com/mraniki/iamlistening/commit/f97666a69e56f58234dbe4cb819d74187e559a31))
+
+### 🚨
+
+* 🚨 linter config ([`44395a6`](https://github.com/mraniki/iamlistening/commit/44395a6158034e0a7b29cf9065b5dd68bdf1831d))
+
+
 ## v1.1.2 (2023-07-18)
 
 ### :zap:
