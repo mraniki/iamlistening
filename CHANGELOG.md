@@ -2,6 +2,15 @@
 
 
 
+## v1.1.4 (2023-07-19)
+
+### ⬆️
+
+* ⬆️ renovate exclude req (#62) ([`ae3f8c4`](https://github.com/mraniki/iamlistening/commit/ae3f8c41e1c8942d8c3e48adb0f7c6ace9e07410))
+
+* ⬆️ renovate exclude req ([`318212c`](https://github.com/mraniki/iamlistening/commit/318212c7fb8d112b587f4e1c030da12e3746bc4a))
+
+
 ## v1.1.3 (2023-07-19)
 
 ### ⬆️
