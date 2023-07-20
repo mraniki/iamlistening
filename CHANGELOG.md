@@ -2,6 +2,19 @@
 
 
 
+## v1.1.7 (2023-07-20)
+
+### Update
+
+* Update Requirements ([`13541e1`](https://github.com/mraniki/iamlistening/commit/13541e1841d2126485bdbb484bedc70272f93ce6))
+
+### 🔧
+
+* 🔧  config alignment (#65) ([`0fdc4e3`](https://github.com/mraniki/iamlistening/commit/0fdc4e32ca9c99d9d9483dfd6fbf6d257782cb2b))
+
+* 🔧  config alignment ([`f31a3b4`](https://github.com/mraniki/iamlistening/commit/f31a3b4e3e5287e162d17d7e28df300d56ec3a9c))
+
+
 ## v1.1.6 (2023-07-19)
 
 ### 💬
