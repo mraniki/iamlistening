@@ -23,7 +23,10 @@ telethon_api_hash = ""
 matrix_hostname = ""
 matrix_user = ""
 matrix_pass = ""
-iamlistening_commands = "/help"
+rocket_chat_server = ""
+rocket_chat_user_id = ""
+rocket_chat_auth_token = ""
+
 
 
 
@@ -71,6 +74,9 @@ telethon_api_hash = "1234556"
 matrix_hostname = ""
 matrix_user = ""
 matrix_pass = ""
+rocket_chat_server = ""
+rocket_chat_user_id = ""
+rocket_chat_auth_token = ""
 
 [testingdiscord]
 VALUE = "On Testing Discord"
@@ -82,6 +88,9 @@ telethon_api_hash = ""
 matrix_hostname = ""
 matrix_user = ""
 matrix_pass = ""
+rocket_chat_server = ""
+rocket_chat_user_id = ""
+rocket_chat_auth_token = ""
 
 [testingmatrix]
 VALUE = "On Testing Matrix"
@@ -93,3 +102,20 @@ telethon_api_hash = ""
 matrix_hostname = "123456789"
 matrix_user = "123456789"
 matrix_pass = "123456789"
+rocket_chat_server = ""
+rocket_chat_user_id = ""
+rocket_chat_auth_token = ""
+
+[testingrocketchat]
+VALUE = "On Testing RocketChat"
+iamlistening_enabled = true
+bot_token = "1234556"
+bot_channel_id = "1234556"
+telethon_api_id = ""
+telethon_api_hash = ""
+matrix_hostname = ""
+matrix_user = ""
+matrix_pass = ""
+rocket_chat_server = ""
+rocket_chat_user_id = ""
+rocket_chat_auth_token = ""
