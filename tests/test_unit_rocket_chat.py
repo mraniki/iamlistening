@@ -34,7 +34,7 @@ def event_loop():
 @pytest.mark.asyncio
 async def test_fixture(listener):
     assert listener is not None
-    assert settings.VALUE == "On Testing Rocketchat"
+    assert settings.VALUE == "On Testing RocketChat"
 
 def test_init(listener):
     assert listener is not None
