@@ -10,7 +10,8 @@ import discord
 import simplematrixbotlib as botlib
 from telethon import TelegramClient, events
 
-from iamlistening import __version__
+from iamlistening import __version__, platform
+from iamlistening.platform import RockerChatHandler
 
 from .config import settings
 
@@ -77,6 +78,11 @@ class Listener:
                                                     timeout=3000,
                                                     full_state=True
                                                 )
+        elif settings.rocket_chat_server:
+            # ROCKET CHAT
+            rocket_chat_handler = RockerChatHandler()
+            await rocket_chat_handler.start()
+
         elif settings.bot_token:
             # DISCORD
             self.logger.debug("Discord setup")
