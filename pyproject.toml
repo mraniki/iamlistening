@@ -12,7 +12,7 @@ license = "MIT License"
 readme = "README.md"
 keywords = [
     "bot","messaging",
-    "discord", "telegram","matrix",
+    "discord", "telegram","matrix","rocket chat",
     ]
 packages = [
     {include = "iamlistening"}
@@ -140,5 +140,5 @@ patch_tags = ["fix","bump","Update",
     "⚗️",":alembic:",
     "🧐",":monocle_face:",
     "🔇",":mute:",
-    "🔊",":volume:",
+    "🔊",":loud:",
 ]

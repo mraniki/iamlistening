@@ -23,7 +23,7 @@ async def main():
             print(error)
     await task
 
-app = FastAPI()
+app = FastAPI() 
 
 
 @app.on_event("startup")

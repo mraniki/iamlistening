@@ -4,7 +4,6 @@ Rocket Chat  🚀
 from rocketchat_API.rocketchat import RocketChat
 
 from iamlistening.config import settings
-from iamlistening.main import Listener
 
 
 class RockerChatHandler():
