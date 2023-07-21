@@ -9,7 +9,6 @@ from iamlistening.config import settings
 class MatrixHandler():
 
     async def start(self):
-        self.logger.debug("Matrix setup")
         config = botlib.Config()
         config.emoji_verify = True
         config.ignore_unverified_devices = True
