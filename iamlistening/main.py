@@ -10,11 +10,10 @@ import discord
 import simplematrixbotlib as botlib
 from telethon import TelegramClient, events
 
-from iamlistening import __version__, platform
-from iamlistening.platform import RockerChatHandler
+from iamlistening import __version__
 
 from .config import settings
-
+from .platform import RockerChatHandler, TelegramHandler
 
 
 class Listener:
@@ -36,7 +35,10 @@ class Listener:
 
         if settings.telethon_api_id:
             # TELEGRAM
-            self.platform = ListenerTelegram()
+            telegram_handler = TelegramHandler()
+            await telegram_handler.start()
+
+
         elif settings.matrix_hostname:
             # MATRIX
 
@@ -78,7 +80,19 @@ class Listener:
 
         elif settings.bot_token:
             # DISCORD
-            self.platform = ListenerMatrix()
+            self.logger.debug("Discord setup")
+            intents = discord.Intents.default()
+            intents.message_content = True
+            bot = discord.Bot(intents=intents)
+
+            @bot.event
+            async def on_ready():
+                await self.post_init()
+
+            @bot.event
+            async def on_message(message: discord.Message):
+                await self.handle_message(message.content)
+            await bot.start(settings.bot_token)
         
         self.platform.start_client()
         if self.platform.start_client():
