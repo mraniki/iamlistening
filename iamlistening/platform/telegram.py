@@ -1,5 +1,5 @@
 """
-Rocket Chat  🚀
+Telegram 🔵
 """
 from telethon import TelegramClient, events
 

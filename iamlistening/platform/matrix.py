@@ -1,5 +1,5 @@
 """
-Matrix Chat 
+Matrix ⚫ 
 """
 import simplematrixbotlib as botlib
 

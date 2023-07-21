@@ -1,5 +1,5 @@
 """
-Discord  🚀
+Discord  🟣
 """
 import discord
 
