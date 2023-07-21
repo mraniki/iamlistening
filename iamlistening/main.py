@@ -16,6 +16,7 @@ from iamlistening.platform import RockerChatHandler
 from .config import settings
 
 
+
 class Listener:
     """ 👂 Listener class """
 
@@ -25,28 +26,20 @@ class Listener:
         self.loop = asyncio.get_event_loop()
         self.lock = threading.Lock()
         self.stopped = False
+        self.platform = None
+
+    async def get_info_listener(self):
+        return (f"ℹ️ {__class__.__name__} {__version__}\n")
 
     async def start(self):
         """start"""
 
         if settings.telethon_api_id:
             # TELEGRAM
-            self.logger.debug("Telegram setup")
-            bot = await TelegramClient(
-                        None,
-                        settings.telethon_api_id,
-                        settings.telethon_api_hash
-                        ).start(bot_token=settings.bot_token)
-            await self.post_init()
-
-            @bot.on(events.NewMessage())
-            async def telethon(event):
-                await self.handle_message(event.message.message)
-
-            await bot.run_until_disconnected()
-
+            self.platform = ListenerTelegram()
         elif settings.matrix_hostname:
             # MATRIX
+
             self.logger.debug("Matrix setup")
             config = botlib.Config()
             config.emoji_verify = True
@@ -85,23 +78,15 @@ class Listener:
 
         elif settings.bot_token:
             # DISCORD
-            self.logger.debug("Discord setup")
-            intents = discord.Intents.default()
-            intents.message_content = True
-            bot = discord.Bot(intents=intents)
-
-            @bot.event
-            async def on_ready():
-                await self.post_init()
-
-            @bot.event
-            async def on_message(message: discord.Message):
-                await self.handle_message(message.content)
-            await bot.start(settings.bot_token)
-
+            self.platform = ListenerMatrix()
+        
+        self.platform.start_client()
+        if self.platform.start_client():
+            await self.get_info_listener()
         else:
             self.logger.warning("Check settings")
             await asyncio.sleep(7200)
+    
 
     async def get_latest_message(self):
         """Return the latest message."""
@@ -133,7 +118,3 @@ class Listener:
     def stop(self):
         """Stop the listener."""
         self.stopped = True
-
-    async def get_info_listener(self):
-        return (f"ℹ️ {__class__.__name__} {__version__}\n")
-
