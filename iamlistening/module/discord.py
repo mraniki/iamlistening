@@ -1,9 +1,11 @@
 """
 Discord  🚀
 """
+import discord
+
 from iamlistening.config import settings
 from iamlistening.main import Listener
-import discord
+
 
 class ListenerDiscord(Listener):
 

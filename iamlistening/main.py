@@ -36,9 +36,14 @@ class Listener:
         elif settings.bot_token:
             # DISCORD
             self.platform = ListenerMatrix()
+        
+        self.platform.start_client()
+        if self.platform.start_client():
+            await self.get_info_listener()
         else:
             self.logger.warning("Check settings")
             await asyncio.sleep(7200)
+    
 
     async def get_latest_message(self):
         """Return the latest message."""

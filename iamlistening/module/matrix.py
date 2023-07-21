@@ -1,9 +1,11 @@
 """
 Matrix Chat 
 """
+import simplematrixbotlib as botlib
+
 from iamlistening.config import settings
 from iamlistening.main import Listener
-import simplematrixbotlib as botlib
+
 
 class ListenerMatrix(Listener):
 
