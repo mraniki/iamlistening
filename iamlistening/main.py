@@ -6,8 +6,15 @@ import asyncio
 import logging
 import threading
 
-from iamlistening import __version__
-from iamlistening.config import settings
+import discord
+import simplematrixbotlib as botlib
+from telethon import TelegramClient, events
+
+from iamlistening import __version__, platform
+from iamlistening.platform import RockerChatHandler
+
+from .config import settings
+
 
 
 class Listener:
@@ -32,7 +39,43 @@ class Listener:
             self.platform = ListenerTelegram()
         elif settings.matrix_hostname:
             # MATRIX
-            self.platform = ListenerDiscord()
+
+            self.logger.debug("Matrix setup")
+            config = botlib.Config()
+            config.emoji_verify = True
+            config.ignore_unverified_devices = True
+            config.store_path = './config/matrix/'
+            creds = botlib.Creds(
+                        settings.matrix_hostname,
+                        settings.matrix_user,
+                        settings.matrix_pass
+                        )
+            bot = botlib.Bot(creds, config)
+
+            @bot.listener.on_startup
+            async def room_joined(room):
+                await self.post_init()
+
+            @bot.listener.on_message_event
+            async def on_matrix_message(room, message):
+                await self.handle_message(message.body)
+            await bot.api.login()
+            bot.api.async_client.callbacks = botlib.Callbacks(
+                                                bot.api.async_client, bot
+                                                )
+            await bot.api.async_client.callbacks.setup_callbacks()
+            for action in bot.listener._startup_registry:
+                for room_id in bot.api.async_client.rooms:
+                    await action(room_id)
+            await bot.api.async_client.sync_forever(
+                                                    timeout=3000,
+                                                    full_state=True
+                                                )
+        elif settings.rocket_chat_server:
+            # ROCKET CHAT
+            rocket_chat_handler = RockerChatHandler()
+            await rocket_chat_handler.start()
+
         elif settings.bot_token:
             # DISCORD
             self.platform = ListenerMatrix()
