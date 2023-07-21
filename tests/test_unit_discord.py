@@ -10,6 +10,7 @@ from discord import errors
 
 from iamlistening import Listener
 from iamlistening.config import settings
+from iamlistening.platform.discord import DiscordHandler
 
 
 @pytest.fixture(scope="session", autouse=True)

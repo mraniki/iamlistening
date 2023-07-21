@@ -6,10 +6,6 @@ import asyncio
 import logging
 import threading
 
-import discord
-import simplematrixbotlib as botlib
-from telethon import TelegramClient, events
-
 from iamlistening import __version__
 
 from .config import settings

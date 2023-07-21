@@ -7,10 +7,10 @@ from unittest.mock import AsyncMock
 
 import aiohttp
 import pytest
-import simplematrixbotlib as botlib
 
 from iamlistening import Listener
 from iamlistening.config import settings
+from iamlistening.platform.rocket_chat import RockerChatHandler
 
 
 @pytest.fixture(scope="session", autouse=True)
