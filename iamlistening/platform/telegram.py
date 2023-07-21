@@ -4,12 +4,10 @@ Rocket Chat  🚀
 from telethon import TelegramClient, events
 
 from iamlistening.config import settings
-from iamlistening.main import Listener
 
 
 class TelegramHandler():
     async def start(self):
-        self.logger.debug("Telegram setup")
         bot = await TelegramClient(
                     None,
                     settings.telethon_api_id,

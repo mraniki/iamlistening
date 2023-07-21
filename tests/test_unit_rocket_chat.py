@@ -15,7 +15,7 @@ from iamlistening.config import settings
 
 @pytest.fixture(scope="session", autouse=True)
 def set_test_settings():
-    settings.configure(FORCE_ENV_FOR_DYNACONF="testingmatrix")
+    settings.configure(FORCE_ENV_FOR_DYNACONF="testingrocketchat")
 
 @pytest.fixture(name="listener")
 def listener():
@@ -34,7 +34,7 @@ def event_loop():
 @pytest.mark.asyncio
 async def test_fixture(listener):
     assert listener is not None
-    assert settings.VALUE == "On Testing Matrix"
+    assert settings.VALUE == "On Testing Rocketchat"
 
 def test_init(listener):
     assert listener is not None

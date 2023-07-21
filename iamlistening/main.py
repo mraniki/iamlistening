@@ -13,7 +13,12 @@ from telethon import TelegramClient, events
 from iamlistening import __version__
 
 from .config import settings
-from .platform import RockerChatHandler, TelegramHandler
+from .platform import (
+    DiscordHandler,
+    MatrixHandler,
+    RockerChatHandler,
+    TelegramHandler,
+)
 
 
 class Listener:
@@ -25,7 +30,7 @@ class Listener:
         self.loop = asyncio.get_event_loop()
         self.lock = threading.Lock()
         self.stopped = False
-        self.platform = None
+        self.handler = None
 
     async def get_info_listener(self):
         return (f"ℹ️ {__class__.__name__} {__version__}\n")
@@ -38,41 +43,10 @@ class Listener:
             telegram_handler = TelegramHandler()
             await telegram_handler.start()
 
-
         elif settings.matrix_hostname:
             # MATRIX
-
-            self.logger.debug("Matrix setup")
-            config = botlib.Config()
-            config.emoji_verify = True
-            config.ignore_unverified_devices = True
-            config.store_path = './config/matrix/'
-            creds = botlib.Creds(
-                        settings.matrix_hostname,
-                        settings.matrix_user,
-                        settings.matrix_pass
-                        )
-            bot = botlib.Bot(creds, config)
-
-            @bot.listener.on_startup
-            async def room_joined(room):
-                await self.post_init()
-
-            @bot.listener.on_message_event
-            async def on_matrix_message(room, message):
-                await self.handle_message(message.body)
-            await bot.api.login()
-            bot.api.async_client.callbacks = botlib.Callbacks(
-                                                bot.api.async_client, bot
-                                                )
-            await bot.api.async_client.callbacks.setup_callbacks()
-            for action in bot.listener._startup_registry:
-                for room_id in bot.api.async_client.rooms:
-                    await action(room_id)
-            await bot.api.async_client.sync_forever(
-                                                    timeout=3000,
-                                                    full_state=True
-                                                )
+            matrix_handler = MatrixHandler()
+            await matrix_handler.start()
         elif settings.rocket_chat_server:
             # ROCKET CHAT
             rocket_chat_handler = RockerChatHandler()
@@ -80,23 +54,9 @@ class Listener:
 
         elif settings.bot_token:
             # DISCORD
-            self.logger.debug("Discord setup")
-            intents = discord.Intents.default()
-            intents.message_content = True
-            bot = discord.Bot(intents=intents)
+            discord_handler = DiscordHandler()
+            await discord_handler.start()
 
-            @bot.event
-            async def on_ready():
-                await self.post_init()
-
-            @bot.event
-            async def on_message(message: discord.Message):
-                await self.handle_message(message.content)
-            await bot.start(settings.bot_token)
-        
-        self.platform.start_client()
-        if self.platform.start_client():
-            await self.get_info_listener()
         else:
             self.logger.warning("Check settings")
             await asyncio.sleep(7200)
