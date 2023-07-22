@@ -34,7 +34,7 @@ simplematrixbotlib= "^2.9.0"
 
 [tool.poetry.group.dev.dependencies]
 python-semantic-release = "^8.0.1"
-ruff = "^0.0.278"
+ruff = "^0.0.280"
 
 [tool.ruff]
 select = [
