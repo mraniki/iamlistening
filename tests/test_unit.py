@@ -10,7 +10,6 @@ from telethon import TelegramClient, errors
 
 from iamlistening import Listener
 from iamlistening.config import settings
-from iamlistening.platform.telegram import TelegramHandler
 
 
 @pytest.fixture(scope="session", autouse=True)

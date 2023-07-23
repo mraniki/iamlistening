@@ -11,7 +11,6 @@ import simplematrixbotlib as botlib
 
 from iamlistening import Listener
 from iamlistening.config import settings
-from iamlistening.platform.matrix import MatrixHandler
 
 
 @pytest.fixture(scope="session", autouse=True)

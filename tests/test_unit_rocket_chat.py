@@ -11,7 +11,6 @@ from rocketchat_API.rocketchat import RocketChat
 
 from iamlistening import Listener
 from iamlistening.config import settings
-from iamlistening.platform.rocket_chat import RockerChatHandler
 
 
 @pytest.fixture(scope="session", autouse=True)
