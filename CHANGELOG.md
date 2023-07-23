@@ -2,6 +2,93 @@
 
 
 
+## v2.0.0 (2023-07-23)
+
+### :white_check_mark:
+
+* :white_check_mark: corrected ([`d354538`](https://github.com/mraniki/iamlistening/commit/d3545386b64cf9b4beb1ea6a3ffa186aa8c9d7b2))
+
+### Other
+
+* &#39;Refactored by Sourcery&#39; ([`3241f64`](https://github.com/mraniki/iamlistening/commit/3241f642085feb68db934f37a4292e6b2da09368))
+
+* 67 simplify the structure for modular chat module approach (#71) ([`1e678fe`](https://github.com/mraniki/iamlistening/commit/1e678fe38c2d5f598f6b4be84857ea258bf4cf39))
+
+* Dev (#70) ([`fe2824f`](https://github.com/mraniki/iamlistening/commit/fe2824fa46abe77879a4e0c38c2da7a86ecdbc82))
+
+* Merge branch &#39;67-simplify-the-structure-for-modular-chat-module-approach&#39; into dev ([`86c8cae`](https://github.com/mraniki/iamlistening/commit/86c8caebbc864513aecc7114cc96757921734a23))
+
+* start_client function ([`eefb813`](https://github.com/mraniki/iamlistening/commit/eefb81308ee3ed5233a56159f2ad773ff942405d))
+
+### Update
+
+* Update Requirements ([`6e01e7c`](https://github.com/mraniki/iamlistening/commit/6e01e7cdcd6bad5c56efe3e72738247d5591ab08))
+
+* Update Requirements ([`2d87bea`](https://github.com/mraniki/iamlistening/commit/2d87bea0e34fb96915698758774df391ef264fd3))
+
+* Update Requirements ([`52de369`](https://github.com/mraniki/iamlistening/commit/52de3690b335839703d1bac0496c03780a948f65))
+
+### ♻️
+
+* ♻️ Extracting platform specific code ([`cc772db`](https://github.com/mraniki/iamlistening/commit/cc772db3dd9596e436c594315e9d009a6f0082e3))
+
+* ♻️ Refactoring only for Discord ([`b9f39c9`](https://github.com/mraniki/iamlistening/commit/b9f39c9835f09d9e87ef6a6fe366da2716c27e8b))
+
+* ♻️ ([`6c9a272`](https://github.com/mraniki/iamlistening/commit/6c9a2720c04665a0467924feaca248e95f3baaf4))
+
+### ⚗️
+
+* ⚗️ experiment with discord ([`3964c90`](https://github.com/mraniki/iamlistening/commit/3964c9043f449cd927975fe8d73be229649b8dd1))
+
+### ✅
+
+* ✅ corrected ([`be8abb6`](https://github.com/mraniki/iamlistening/commit/be8abb647c438323a9fbbaeab576793be5ebc859))
+
+* ✅ updated rocketchat unit test ([`b16bad2`](https://github.com/mraniki/iamlistening/commit/b16bad20250f2e23a9bb673b56d06c4e21ff44b8))
+
+* ✅ updated unit test ([`5d9c2d3`](https://github.com/mraniki/iamlistening/commit/5d9c2d3c9b9408b5b5f1c6c7857cca6657823175))
+
+* ✅ unit test error ([`880e8b3`](https://github.com/mraniki/iamlistening/commit/880e8b3ec39421f117ba30ce5b021a79f1c4eb56))
+
+* ✅ reorg for unit testing ([`550aa8e`](https://github.com/mraniki/iamlistening/commit/550aa8e74fed1210a9891abdad5c4110242bf860))
+
+* ✅ rocket chat unit test ([`1bdce96`](https://github.com/mraniki/iamlistening/commit/1bdce961738a66ec015f55aa38dc9653480b5209))
+
+### 🎨
+
+* 🎨 cleanup ([`29e98fe`](https://github.com/mraniki/iamlistening/commit/29e98fe6ea79e0255c88162032584af3daf1583d))
+
+* 🎨 ([`80d91cd`](https://github.com/mraniki/iamlistening/commit/80d91cd17883c79e1ff66c9d4b1a6224ba4100eb))
+
+### 🐛
+
+* 🐛 logger ([`b02b061`](https://github.com/mraniki/iamlistening/commit/b02b0618f23bef6e225f554f5a4836388053ad20))
+
+### 💥
+
+* 💥 breaking: new structure + rocket chat (#72) (#75) (#76) ([`605ad6d`](https://github.com/mraniki/iamlistening/commit/605ad6d24df2cf3e08cd925e8b35e8461ef261b8))
+
+* 💥 breaking: new structure + rocket chat (#72) (#75) ([`a8001c0`](https://github.com/mraniki/iamlistening/commit/a8001c0d1ea1db948ae97a25f5351acc412f4028))
+
+* 💥 breaking: new structure + rocket chat (#72) ([`ab28085`](https://github.com/mraniki/iamlistening/commit/ab280851707ff55e0f27fbebecdbe1ec0a4a3cf9))
+
+* 💥 breaking: new structure + rocket chat (Sourcery refactored) (#74) ([`5a1d21c`](https://github.com/mraniki/iamlistening/commit/5a1d21c0242ba9c2f98582fd6b9d2788fb329b28))
+
+* 💥 breaking Reorg for telegram ([`526f4a9`](https://github.com/mraniki/iamlistening/commit/526f4a96ef6d7b46f36a77d29721d0b46a8e4efd))
+
+* 💥 breaking: new structure ([`dba0398`](https://github.com/mraniki/iamlistening/commit/dba0398511828dc730dc6baed876513248368ce0))
+
+### 🚀
+
+* 🚀 new version ([`f87ba96`](https://github.com/mraniki/iamlistening/commit/f87ba9645180cbbe010f5b49db04717a0fb3f0c4))
+
+### 🥚
+
+* 🥚 basic rocket chat integration (#69) ([`c384142`](https://github.com/mraniki/iamlistening/commit/c3841429ef1d414f143af3633ddeea6fd635fe12))
+
+* 🥚 basic rocket chat integration ([`c831ab2`](https://github.com/mraniki/iamlistening/commit/c831ab27c64c7f8a153b7c545d6c4bb1c811b0ac))
+
+
 ## v1.1.7 (2023-07-20)
 
 ### Update
@@ -361,7 +448,7 @@
 
 ## v0.1.15 (2023-06-21)
 
-### :volume:
+### Other
 
 * :volume:Removed debug logging statements. ([`bec509a`](https://github.com/mraniki/iamlistening/commit/bec509abe76d7a5f6b6bf4ad59a263af2b1ffc82))
 
