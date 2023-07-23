@@ -153,4 +153,3 @@ class Listener:
     async def start_rocket_chat(self):
         """Start the RocketChat handler."""
         self.logger.debug("RocketChat setup")
-        pass
