@@ -6,15 +6,15 @@ import asyncio
 import logging
 import threading
 
+import discord
+import simplematrixbotlib as botlib
+from telethon import TelegramClient, events
+
 from iamlistening import __version__
 
 from .config import settings
-from .platform import (
-    DiscordHandler,
-    MatrixHandler,
-    RockerChatHandler,
-    TelegramHandler,
-)
+
+# from .platform import discord, matrix, rocket_chat, telegram
 
 
 class Listener:
@@ -26,38 +26,74 @@ class Listener:
         self.loop = asyncio.get_event_loop()
         self.lock = threading.Lock()
         self.stopped = False
-        self.handler = None
 
     async def get_info_listener(self):
         return (f"ℹ️ {__class__.__name__} {__version__}\n")
 
     async def start(self):
-        """start"""
+        """Start the listener."""
+        self.logger.info("connect setup")
+
 
         if settings.telethon_api_id:
             # TELEGRAM
-            telegram_handler = TelegramHandler()
-            await telegram_handler.start()
+            self.logger.debug("Telegram setup")
+            bot = await TelegramClient(
+                        None,
+                        settings.telethon_api_id,
+                        settings.telethon_api_hash
+                        ).start(bot_token=settings.bot_token)
+            await self.post_init()
+
+            @bot.on(events.NewMessage())
+            async def telethon(event):
+                await self.handle_message(event.message.message)
+
+            await bot.run_until_disconnected()
 
         elif settings.matrix_hostname:
             # MATRIX
-            matrix_handler = MatrixHandler()
-            await matrix_handler.start()
-        elif settings.rocket_chat_server:
-            # ROCKET CHAT
-            rocket_chat_handler = RockerChatHandler()
-            await rocket_chat_handler.start()
+            self.logger.debug("Matrix setup")
+            config = botlib.Config()
+            config.emoji_verify = True
+            config.ignore_unverified_devices = True
+            config.store_path = './config/matrix/'
+            creds = botlib.Creds(
+                        settings.matrix_hostname,
+                        settings.matrix_user,
+                        settings.matrix_pass
+                        )
+            bot = botlib.Bot(creds, config)
+
+            @bot.listener.on_startup
+            async def room_joined(room):
+                await self.post_init()
+
+            @bot.listener.on_message_event
+            async def on_matrix_message(room, message):
+                await self.handle_message(message.body)
+            await bot.api.login()
+            bot.api.async_client.callbacks = botlib.Callbacks(
+                                                bot.api.async_client, bot
+                                                )
+            await bot.api.async_client.callbacks.setup_callbacks()
+            for action in bot.listener._startup_registry:
+                for room_id in bot.api.async_client.rooms:
+                    await action(room_id)
+            await bot.api.async_client.sync_forever(
+                                                    timeout=3000,
+                                                    full_state=True
+                                                )
 
         elif settings.bot_token:
-            # DISCORD
-            discord_handler = DiscordHandler()
-            await discord_handler.start()
+            await self.start_discord()
+            # await discord.start_discord(self)
 
         else:
             self.logger.warning("Check settings")
             await asyncio.sleep(7200)
     
-
+ 
     async def get_latest_message(self):
         """Return the latest message."""
         while True:
@@ -88,3 +124,19 @@ class Listener:
     def stop(self):
         """Stop the listener."""
         self.stopped = True
+
+    async def start_discord(self):
+        """Start the Discord handler."""
+        self.logger.debug("Discord setup")
+        intents = discord.Intents.default()
+        intents.message_content = True
+        bot = discord.Bot(intents=intents)
+
+        @bot.event
+        async def on_ready():
+            await self.post_init()
+
+        @bot.event
+        async def on_message(message: discord.Message):
+            await self.handle_message(message.content)
+        await bot.start(settings.bot_token)
