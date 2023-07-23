@@ -12,7 +12,7 @@ license = "MIT License"
 readme = "README.md"
 keywords = [
     "bot","messaging",
-    "discord", "telegram","matrix",
+    "discord", "telegram","matrix","rocket chat",
     ]
 packages = [
     {include = "iamlistening"}
@@ -30,7 +30,8 @@ dynaconf = "^3.1.12"
 telethon= "^1.28.5"
 py-cord= "^2.4.1"
 simplematrixbotlib= "^2.9.0"
- 
+rocketchat-API= "^1.30.0"
+
 
 [tool.poetry.group.dev.dependencies]
 python-semantic-release = "^8.0.1"
@@ -139,5 +140,5 @@ patch_tags = ["fix","bump","Update",
     "⚗️",":alembic:",
     "🧐",":monocle_face:",
     "🔇",":mute:",
-    "🔊",":volume:",
+    "🔊",":loud:",
 ]
