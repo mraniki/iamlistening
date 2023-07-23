@@ -34,7 +34,7 @@ class Listener:
     async def start(self):
         """Start the listener."""
         if settings.telethon_api_id:
-            self.start_telegram()
+            await self.start_telegram()
 
         elif settings.matrix_hostname:
             await self.start_matrix()

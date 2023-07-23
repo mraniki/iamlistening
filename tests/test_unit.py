@@ -83,7 +83,7 @@ async def test_listener_telegram():
 @pytest.mark.asyncio
 async def test_listener_run_error():
     with pytest.raises(errors.ApiIdInvalidError):
-        start = AsyncMock()
+        start_telegram = AsyncMock()
         listener_test = Listener()
         await listener_test.run_forever(max_iterations=1)
-        assert start.assert_awaited_once()
+        assert start_telegram.assert_awaited_once()
