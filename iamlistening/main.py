@@ -14,6 +14,7 @@ from iamlistening import __version__
 
 from .config import settings
 
+# from .platform.discord import start_discord
 # from .platform import discord, matrix, rocket_chat, telegram
 
 
@@ -32,9 +33,6 @@ class Listener:
 
     async def start(self):
         """Start the listener."""
-        self.logger.info("connect setup")
-
-
         if settings.telethon_api_id:
             # TELEGRAM
             self.logger.debug("Telegram setup")
@@ -87,7 +85,7 @@ class Listener:
 
         elif settings.bot_token:
             await self.start_discord()
-            # await discord.start_discord(self)
+            # await start_discord(self)
 
         else:
             self.logger.warning("Check settings")

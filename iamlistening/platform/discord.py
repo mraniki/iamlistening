@@ -8,7 +8,7 @@ Discord  🟣
 
 # async def start_discord(listener):
 #     """Start the Discord handler."""
-
+#     listener.logger.debug("Discord setup")
 #     intents = discord.Intents.default()
 #     intents.message_content = True
 #     bot = discord.Bot(intents=intents)
