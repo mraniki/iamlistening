@@ -2,32 +2,30 @@
 Provides example for iamlistening package
 """
 import asyncio
-import logging
+import sys
 
 import uvicorn
 from fastapi import FastAPI
+from loguru import logger
 
 from iamlistening import Listener, settings
 
-#  🧐LOGGING
-logging.basicConfig(
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    level=settings.loglevel
-)
+logger.remove()
+logger.add(sys.stderr, level="DEBUG")
+
 
 async def main():
     """Run main program loop."""
     listener = Listener()
-    task = asyncio.create_task(listener.run_forever())
+    await listener.start()
     while True:
         try:
-            msg = await listener.get_latest_message()
+            msg = await listener.handler.get_latest_message()
             if msg:
-                print(f"Frasier👂: {msg}")
+                logger.info(f"Frasier👂: {msg}")
 
         except Exception as error:
-            print(error)
-    await task
+            logger.error(error)
 
 app = FastAPI() 
 
@@ -51,4 +49,4 @@ def health_check():
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8082)
+    uvicorn.run(app, host="0.0.0.0", port=8014)

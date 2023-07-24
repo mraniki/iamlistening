@@ -1,24 +1,33 @@
 """
 Discord  🟣
 """
-# import discord
+import asyncio
 
-# from iamlistening.config import settings
+import discord
+from loguru import logger
+
+from iamlistening.config import settings
+from iamlistening.main import ChatManager
 
 
-# async def start_discord(listener):
-#     """Start the Discord handler."""
+class DiscordHandler(ChatManager):
 
-#     intents = discord.Intents.default()
-#     intents.message_content = True
-#     bot = discord.Bot(intents=intents)
+    def __init__(self):
+        super().__init__()
 
-#     @bot.event
-#     async def on_ready():
-#         await listener.post_init()
+    async def start(self):
+        """Start the Discord handler."""
+        logger.debug("Discord setup")
+        intents = discord.Intents.default()
+        intents.message_content = True
+        bot = discord.Bot(intents=intents)
 
-#     @bot.event
-#     async def on_message(message: discord.Message):
-#         await listener.handle_message(message.content)
+        @bot.event
+        async def on_ready():
+            logger.info("listener is online")
 
-#         await bot.start(settings.bot_token)
+        @bot.event
+        async def on_message(message: discord.Message):
+            await self.handle_message(message.content)
+    
+        await bot.start(settings.bot_token)

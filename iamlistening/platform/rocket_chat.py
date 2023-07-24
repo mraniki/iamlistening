@@ -1,17 +1,27 @@
-# """
-# Rocket Chat  🚀
-# """
-# from rocketchat_API.rocketchat import RocketChat
+"""
+Rocket Chat  🚀
+ WIP
+"""
 
-# from iamlistening.config import settings
+from loguru import logger
+from rocketchat_API.rocketchat import RocketChat
+
+from iamlistening.config import settings
 
 
-# async def start_rocket_chat(listener):
-#     """Start the RocketChat handler."""
+class RocketChatHandler():
 
-#     rocket = RocketChat(
-#         settings.rocket_chat_user,
-#         settings.rocket_chat_auth_token,
-#         settings.rocket_chat_server
-#         )
-#     print(rocket.me().json()) 
+    def __init__(self):
+        super().__init__()
+
+
+    async def start(self):
+        """Start the RocketChat handler."""
+        self.logger.debug("RocketChat setup")
+        rocket = RocketChat(
+            user_id=settings.rocket_chat_user_id, 
+            auth_token=settings.rocket_chat_auth_token, 
+            server_url=settings.rocket_chat_server
+            )
+        
+        self.logger.debug(rocket.channels_list())

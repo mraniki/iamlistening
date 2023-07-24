@@ -24,12 +24,6 @@ def listener():
 def message():
     return "Test message"
 
-@pytest.fixture
-def event_loop():
-    loop = asyncio.new_event_loop()
-    yield loop
-    loop.close()
-
 @pytest.mark.asyncio
 async def test_fixture(listener):
     assert listener is not None
@@ -46,18 +40,19 @@ async def test_init(listener):
 
 @pytest.mark.asyncio
 async def test_get_latest_message(listener, message):
-    await listener.handle_message(message)
-    assert await listener.get_latest_message() == message
+    await listener.start()
+    await listener.handler.handle_message(message)
+    assert await listener.handler.get_latest_message() == message
 
 @pytest.mark.asyncio
 async def test_telegram_function():
-    TelegramClient = AsyncMock()
-    TelegramClient.run_until_disconnected = AsyncMock()
+    bot = AsyncMock()
+    bot.run_until_disconnected = AsyncMock()
     listener = Listener()
     assert listener is not None
     assert isinstance(listener, Listener)
-    assert TelegramClient.assert_called_once
-    assert TelegramClient.run_until_disconnected.assert_called_once
+    assert bot.assert_called_once
+    assert bot.run_until_disconnected.assert_called_once
 
 
 @pytest.mark.asyncio
@@ -66,24 +61,8 @@ async def test_listener_telegram():
     print(listener_test)
     assert listener_test is not None
     assert isinstance(listener_test, Listener)
-    await listener_test.handle_message("hello")
-    msg = await listener_test.get_latest_message()
+    await listener_test.start()
+    await listener_test.handler.handle_message("hello")
+    msg = await listener_test.handler.get_latest_message()
     print(msg)
     assert msg == "hello"
-
-
-# @pytest.mark.asyncio
-# async def test_listener_run():
-#     start = AsyncMock()
-#     listener_test = Listener()
-#     await listener_test.run_forever(max_iterations=1)
-#     assert start.assert_awaited_once()
-
-
-@pytest.mark.asyncio
-async def test_listener_run_error():
-    with pytest.raises(errors.ApiIdInvalidError):
-        start_telegram = AsyncMock()
-        listener_test = Listener()
-        await listener_test.run_forever(max_iterations=1)
-        assert start_telegram.assert_awaited_once()
