@@ -74,16 +74,3 @@ class ChatManager():
     async def handle_message(self, message_content):
         """Handle a new message."""
         self.latest_message = message_content
-
-    async def run_forever(self, max_iterations=None):
-        """Run the listener for 
-        a specified number of iterations 
-        or until stopped."""
-        logger.debug("run_forever")
-        await self.start()
-        iteration = 0
-        while not self.stopped and (
-            max_iterations is None or iteration < max_iterations):
-            await self.get_latest_message()
-            logger.debug(iteration)
-            iteration += 1

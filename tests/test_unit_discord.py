@@ -40,17 +40,9 @@ def test_init(listener):
 
 @pytest.mark.asyncio
 async def test_get_latest_message(listener, message):
-    await listener.handle_message(message)
-    assert await listener.get_latest_message() == message
-
-
-@pytest.mark.asyncio
-async def test_listener_run_error():
-    with pytest.raises(errors.LoginFailure):
-        start = AsyncMock()
-        listener_test = Listener()
-        await listener_test.run_forever(max_iterations=1)
-        assert start.assert_awaited_once()
+    await listener.start()
+    await listener.handler.handle_message(message)
+    assert await listener.handler.get_latest_message() == message
 
 
 @pytest.mark.asyncio
@@ -59,7 +51,8 @@ async def test_listener_library():
     print(listener_test)
     assert listener_test is not None
     assert isinstance(listener_test, Listener)
-    await listener_test.handle_message("hello")
-    msg = await listener_test.get_latest_message()
+    await listener_test.start()
+    await listener_test.handler.handle_message("hello")
+    msg = await listener_test.handler.get_latest_message()
     print(msg)
     assert msg == "hello"
