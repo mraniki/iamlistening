@@ -2,6 +2,47 @@
 
 
 
+## v3.0.0 (2023-07-24)
+
+### :fire:
+
+* :fire: remove old code in readme ([`70ac616`](https://github.com/mraniki/iamlistening/commit/70ac616fc7a8d1460ccda0be4554207b33fb2ac8))
+
+* :fire: remove old code ([`d06dfab`](https://github.com/mraniki/iamlistening/commit/d06dfabc71c9d946d6cd48bda60a6db9905efed7))
+
+### :white_check_mark:
+
+* :white_check_mark: updated unit test ([`87c85bc`](https://github.com/mraniki/iamlistening/commit/87c85bc4f0a1d63ddae8c651741fda4553b09bd0))
+
+### Update
+
+* Update Requirements ([`fd039a1`](https://github.com/mraniki/iamlistening/commit/fd039a1b8f3f5d8547a37dadd2b39e696d630144))
+
+### ♻️
+
+* ♻️ Refactor TG and Matrix ([`fcdab06`](https://github.com/mraniki/iamlistening/commit/fcdab06c9c7c0f19e245bcfd60bdacfd44af9a5b))
+
+### ✅
+
+* ✅ cleanup unit test ([`418aba5`](https://github.com/mraniki/iamlistening/commit/418aba558d9693150a75655ae7c751bb9909144d))
+
+* ✅ updated unit test ([`11b0dcf`](https://github.com/mraniki/iamlistening/commit/11b0dcfaa402d2e5c55817f78c1b6f6a544a6135))
+
+### 🎨
+
+* 🎨 ([`d497678`](https://github.com/mraniki/iamlistening/commit/d49767801250cee07c9259c9b735713518eba7c0))
+
+### 💥
+
+* 💥 Simplify and refactor for future expansion (#79) ([`df6016a`](https://github.com/mraniki/iamlistening/commit/df6016a52774b3799e7d582475453a786ed12019))
+
+* 💥 breaking Large refactor ([`801339d`](https://github.com/mraniki/iamlistening/commit/801339dd100f25e74c53a0a65393f8fefaf6bbd9))
+
+### 🔥
+
+* 🔥 remove stopped flag ([`5b9861b`](https://github.com/mraniki/iamlistening/commit/5b9861bb254d7dd7a6a18581984ea6479e457d3f))
+
+
 ## v2.1.0 (2023-07-24)
 
 ### Update
