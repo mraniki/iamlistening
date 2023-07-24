@@ -3,11 +3,13 @@
 """
 
 import asyncio
-import logging
 import threading
 
 import discord
 import simplematrixbotlib as botlib
+
+# import logging
+from loguru import logger
 from telethon import TelegramClient, events
 
 from iamlistening import __version__
@@ -22,7 +24,8 @@ class Listener:
     """ 👂 Listener class """
 
     def __init__(self):
-        self.logger = logging.getLogger("Listener")
+        self.logger = logger
+        # logging.getLogger("Listener")
         self.latest_message = None
         self.loop = asyncio.get_event_loop()
         self.lock = threading.Lock()
