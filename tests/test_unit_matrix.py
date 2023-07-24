@@ -5,7 +5,6 @@ iamlistening Unit Testing
 import asyncio
 from unittest.mock import AsyncMock
 
-import aiohttp
 import pytest
 import simplematrixbotlib as botlib
 
@@ -24,12 +23,6 @@ def listener():
 @pytest.fixture
 def message():
     return "Test message"
-
-@pytest.fixture
-def event_loop():
-    loop = asyncio.new_event_loop()
-    yield loop
-    loop.close()
 
 @pytest.mark.asyncio
 async def test_fixture(listener):

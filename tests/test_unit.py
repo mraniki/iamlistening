@@ -24,12 +24,6 @@ def listener():
 def message():
     return "Test message"
 
-@pytest.fixture
-def event_loop():
-    loop = asyncio.new_event_loop()
-    yield loop
-    loop.close()
-
 @pytest.mark.asyncio
 async def test_fixture(listener):
     assert listener is not None
