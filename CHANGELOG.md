@@ -2,6 +2,19 @@
 
 
 
+## v2.1.0 (2023-07-24)
+
+### Update
+
+* Update Requirements ([`d6ecce3`](https://github.com/mraniki/iamlistening/commit/d6ecce38dad884a90bae2ea8d039ff7f98782052))
+
+### 🥚
+
+* 🥚 🔊 loguru implementation (#77) ([`09ffe14`](https://github.com/mraniki/iamlistening/commit/09ffe1431a575fb50f76daf7d9ba1800953de050))
+
+* 🥚 🔊 loguru implementation ([`7e35902`](https://github.com/mraniki/iamlistening/commit/7e35902624a1ddb327782baff60c5c8f9ff8b3ee))
+
+
 ## v2.0.0 (2023-07-23)
 
 ### :white_check_mark:
