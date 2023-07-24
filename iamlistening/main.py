@@ -40,9 +40,6 @@ class Listener:
        
         if self.handler:
                 asyncio.create_task(self.handler.start())
-        else:
-            logger.warning("Check settings")
-            await asyncio.sleep(7200)
 
 
 class ChatManager():
@@ -51,10 +48,6 @@ class ChatManager():
         self.lock = asyncio.Lock()
 
     async def start(self):
-        pass
-
-    async def stop(self):
-        """Stop the client."""
         pass
 
     async def get_latest_message(self):

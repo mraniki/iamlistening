@@ -31,11 +31,12 @@ async def test_fixture(listener):
 def test_init(listener):
     assert listener is not None
 
-# @pytest.mark.asyncio
-# async def test_get_latest_message(listener, message):
-#     await listener.start()
-#     await listener.handler.handle_message(message)
-#     assert await listener.handler.get_latest_message() == message
+@pytest.mark.asyncio
+async def test_get_latest_message(listener, message):
+    await listener.start()
+    assert isinstance(listener, Listener)
+    #await listener.handler.handle_message(message)
+    #assert await listener.handler.get_latest_message() == message
 
 
 # @pytest.mark.asyncio
