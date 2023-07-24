@@ -46,13 +46,13 @@ async def test_get_latest_message(listener, message):
 
 @pytest.mark.asyncio
 async def test_telegram_function():
-    TelegramClient = AsyncMock()
-    TelegramClient.run_until_disconnected = AsyncMock()
+    bot = AsyncMock()
+    bot.run_until_disconnected = AsyncMock()
     listener = Listener()
     assert listener is not None
     assert isinstance(listener, Listener)
-    assert TelegramClient.assert_called_once
-    assert TelegramClient.run_until_disconnected.assert_called_once
+    assert bot.assert_called_once
+    assert bot.run_until_disconnected.assert_called_once
 
 
 @pytest.mark.asyncio
