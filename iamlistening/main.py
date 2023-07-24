@@ -42,12 +42,7 @@ class Listener:
             self.handler = DiscordHandler()
        
         if self.handler:
-            try:
-                handler_task = asyncio.create_task(self.handler.start())
-                logger.warning("Handler Started")
-                # await self.handler.run_forever()
-            finally:
-                await self.handler.stop()
+                asyncio.create_task(self.handler.start())
         else:
             logger.warning("Check settings")
             await asyncio.sleep(7200)
