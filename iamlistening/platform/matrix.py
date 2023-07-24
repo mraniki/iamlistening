@@ -28,14 +28,14 @@ class MatrixHandler(ChatManager):
                     settings.matrix_pass
                     )
         bot = botlib.Bot(creds, config)
-
+ 
         @bot.listener.on_startup
         async def room_joined(room):
             logger.info("listener is online")
 
         @bot.listener.on_message_event
         async def on_matrix_message(room, message):
-            return message.body
+            await self.handle_message(message.body)
         await bot.api.login()
         bot.api.async_client.callbacks = botlib.Callbacks(
             bot.api.async_client, bot

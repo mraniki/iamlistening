@@ -31,13 +31,13 @@
 <pre>
 <code>
       from iamlistening import Listener
-        listener = Listener()
-        task = asyncio.create_task(listener.run_forever())
-        while True:
-          msg = await listener.get_latest_message()
+      listener = Listener()
+      await listener.start()
+      while True:
+          msg = await listener.handler.get_latest_message()
           if msg:
-            print(f"Frasier👂: {msg}"
-        await task
+            logger.info(f"Frasier👂: {msg}")
+
 </code>
 </pre>
 

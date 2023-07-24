@@ -25,7 +25,6 @@ class TelegramHandler(ChatManager):
 
         @bot.on(events.NewMessage())
         async def telethon(event):
-            logger.debug(event.message.message)
-            return event.message.message
+            await self.handle_message(event.message.message)
 
         await bot.run_until_disconnected()

@@ -28,7 +28,6 @@ class DiscordHandler(ChatManager):
 
         @bot.event
         async def on_message(message: discord.Message):
-            logger.debug(message.content)
             await self.handle_message(message.content)
     
         await bot.start(settings.bot_token)

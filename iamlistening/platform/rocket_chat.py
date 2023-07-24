@@ -10,6 +10,11 @@ from iamlistening.config import settings
 
 
 class RocketChatHandler():
+
+    def __init__(self):
+        super().__init__()
+
+
     async def start(self):
         """Start the RocketChat handler."""
         self.logger.debug("RocketChat setup")
