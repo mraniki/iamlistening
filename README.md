@@ -41,6 +41,3 @@
 </code>
 </pre>
 
-<h5>Example</h5>
-
-https://github.com/mraniki/iamlistening/blob/dcc5dad8887300e34d66d1e36635479ad3b54685/examples/example.py#L1
