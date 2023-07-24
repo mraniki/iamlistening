@@ -2,6 +2,13 @@
 
 
 
+## v3.0.1 (2023-07-24)
+
+### Update
+
+* ⬆️ Dep: Update ruff requirement from ^0.0.278 to &gt;=0.0.278,&lt;0.0.281 (#78) ([`52563d0`](https://github.com/mraniki/iamlistening/commit/52563d060d2cf6a18d56b0b9b0ea57e847b97cb9))
+
+
 ## v3.0.0 (2023-07-24)
 
 ### :fire:
@@ -17,6 +24,21 @@
 ### Update
 
 * Update Requirements ([`fd039a1`](https://github.com/mraniki/iamlistening/commit/fd039a1b8f3f5d8547a37dadd2b39e696d630144))
+
+* :arrow_up: Dep: Update ruff requirement
+
+Updates the requirements on [ruff](https://github.com/astral-sh/ruff) to permit the latest version.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/BREAKING_CHANGES.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/v0.0.278...v0.0.280)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:development
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://github.com/mraniki/iamlistening/commit/819b3bcd9958408af7993e9120215d9ec0043b19))
 
 ### ♻️
 
