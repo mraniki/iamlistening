@@ -5,10 +5,7 @@
 import asyncio
 import threading
 
-import discord
-import simplematrixbotlib as botlib
 from loguru import logger
-from telethon import TelegramClient, events
 
 from iamlistening import __version__
 
@@ -52,7 +49,6 @@ class ChatManager():
     def __init__(self):
         self.latest_message = None
         self.lock = asyncio.Lock()
-        self.stopped = False
 
     async def start(self):
         pass
