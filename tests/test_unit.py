@@ -37,7 +37,7 @@ async def test_init(listener):
     result is not None 
     assert "ℹ️" in result
     assert "IAmListening" in result
-
+ 
 # @pytest.mark.asyncio
 # async def test_get_latest_message(listener, message):
 #     await listener.start()
