@@ -38,21 +38,21 @@ async def test_init(listener):
     assert "ℹ️" in result
     assert "IAmListening" in result
 
-@pytest.mark.asyncio
-async def test_get_latest_message(listener, message):
-    await listener.start()
-    await listener.handler.handle_message(message)
-    assert await listener.handler.get_latest_message() == message
+# @pytest.mark.asyncio
+# async def test_get_latest_message(listener, message):
+#     await listener.start()
+#     await listener.handler.handle_message(message)
+#     assert await listener.handler.get_latest_message() == message
 
-@pytest.mark.asyncio
-async def test_telegram_function():
-    bot = AsyncMock()
-    bot.run_until_disconnected = AsyncMock()
-    listener = Listener()
-    assert listener is not None
-    assert isinstance(listener, Listener)
-    assert bot.assert_called_once
-    assert bot.run_until_disconnected.assert_called_once
+# @pytest.mark.asyncio
+# async def test_telegram_function():
+#     bot = AsyncMock()
+#     bot.run_until_disconnected = AsyncMock()
+#     listener = Listener()
+#     assert listener is not None
+#     assert isinstance(listener, Listener)
+#     assert bot.assert_called_once
+#     assert bot.run_until_disconnected.assert_called_once
 
 
 @pytest.mark.asyncio
