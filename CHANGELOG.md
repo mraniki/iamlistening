@@ -2,6 +2,39 @@
 
 
 
+## v3.0.2 (2023-07-25)
+
+### Other
+
+* Merge branch &#39;main&#39; into dev ([`9ae4488`](https://github.com/mraniki/iamlistening/commit/9ae4488f08e4973a781ca59d794bac8a98539ae0))
+
+* Create pull_request_template.md ([`825c7e3`](https://github.com/mraniki/iamlistening/commit/825c7e30520fcb1af6eb692e3b8d791a0dc0968c))
+
+### Update
+
+* Update Requirements ([`7fe22e5`](https://github.com/mraniki/iamlistening/commit/7fe22e5031db73c80bc62ad3a1123a336aea2f79))
+
+* Update pull_request_template.md ([`b89d806`](https://github.com/mraniki/iamlistening/commit/b89d806e5931e0b5d05b4fb09e69312fe493b481))
+
+* Update Requirements ([`5776e18`](https://github.com/mraniki/iamlistening/commit/5776e18a7c4e93a9d70464b94a2924e1f05249ab))
+
+### ⚡
+
+* ⚡ Adding ChatManager in init (#80) ([`141b691`](https://github.com/mraniki/iamlistening/commit/141b691a42657b62865d752ea50e81b1faa5ce99))
+
+* ⚡ Adding ChatManager in init ([`1233300`](https://github.com/mraniki/iamlistening/commit/123330034c37035ff547fe21211f6777b7101f8f))
+
+### 🐛
+
+* 🐛 ✅ ([`5e98bd9`](https://github.com/mraniki/iamlistening/commit/5e98bd99cd0abc994c0f442d99963448b5c58e84))
+
+### 🩹
+
+* 🩹 adding handler in init of platform (#81) ([`0e5f87a`](https://github.com/mraniki/iamlistening/commit/0e5f87a0588089f6189f81bdfdf48c1a6cf515e9))
+
+* 🩹 adding handler in initi of platform ([`974c3d2`](https://github.com/mraniki/iamlistening/commit/974c3d24da001462f64db8f3ab0530973099fa16))
+
+
 ## v3.0.1 (2023-07-24)
 
 ### Update
