@@ -38,8 +38,7 @@ class MastodonHandler(ChatManager):
 
     def remove_html_tags(self, text):
         soup = BeautifulSoup(text, "html.parser")
-        cleaned_text = soup.get_text()
-        return cleaned_text
+        return soup.get_text()
 
 
 class MastoListener(StreamListener):
