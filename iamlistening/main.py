@@ -34,6 +34,7 @@ class Listener:
                 self.platform = "matrix"
             elif settings.bot_token:
                 self.platform = "discord"
+        logger.warning(self.platform)
 
     async def start(self):
         """
