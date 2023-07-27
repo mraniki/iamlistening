@@ -5,7 +5,7 @@ from loguru import logger
 from telethon import TelegramClient, events
 
 from iamlistening.config import settings
-from iamlistening.main import ChatManager
+from iamlistening.platform.platform_manager import ChatManager
 
 
 class TelegramHandler(ChatManager):

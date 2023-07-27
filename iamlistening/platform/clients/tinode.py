@@ -9,7 +9,7 @@ import tinode_grpc
 from loguru import logger
 
 from iamlistening.config import settings
-from iamlistening.main import ChatManager
+from iamlistening.platform.platform_manager import ChatManager
 
 
 class TinodeHandler(ChatManager):

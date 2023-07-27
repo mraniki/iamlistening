@@ -8,7 +8,7 @@ import uvicorn
 from fastapi import FastAPI
 from loguru import logger
 
-from iamlistening import Listener, settings
+from iamlistening import Listener
 
 logger.remove()
 logger.add(sys.stderr, level="DEBUG")
@@ -20,6 +20,7 @@ async def main():
     await listener.start()
     while True:
         try:
+            logger.info(f"Info: {listener.get_info_listener()}")
             msg = await listener.handler.get_latest_message()
             if msg:
                 logger.info(f"Frasier👂: {msg}")

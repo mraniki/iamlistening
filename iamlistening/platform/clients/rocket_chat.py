@@ -7,9 +7,10 @@ from loguru import logger
 from rocketchat_API.rocketchat import RocketChat
 
 from iamlistening.config import settings
+from iamlistening.platform.platform_manager import ChatManager
 
 
-class RocketChatHandler():
+class RocketChatHandler(ChatManager):
 
     def __init__(self):
         super().__init__()

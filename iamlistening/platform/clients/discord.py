@@ -7,14 +7,13 @@ import discord
 from loguru import logger
 
 from iamlistening.config import settings
-from iamlistening.main import ChatManager
+from iamlistening.platform.platform_manager import ChatManager
 
 
 class DiscordHandler(ChatManager):
 
     def __init__(self):
         super().__init__()
-
     async def start(self):
         """Start the Discord handler."""
         logger.debug("Discord setup")

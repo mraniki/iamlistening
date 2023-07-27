@@ -10,71 +10,47 @@ from loguru import logger
 from iamlistening import __version__
 
 from .config import settings
+from .platform.platform_manager import PlatformManager
 
 
 class Listener:
+    """
+    Listener Class
+    """
+
     def __init__(self, platform=None):
+        """
+        Initialize the listener.
+        """
         self.logger = logger
-        self.handler = None
         self.platform = platform
+        self.handler = None
+
+        if self.platform is None:
+            if settings.telethon_api_id:
+                self.platform = "telegram"
+            elif settings.matrix_hostname:
+                self.platform = "matrix"
+            elif settings.bot_token:
+                self.platform = "discord"
+
 
     async def get_info_listener(self):
-        return (f"ℹ️ IAmListening v{__version__}\n")
+        """
+        Get information about the listener.
+
+        Returns:
+            str: The information about the listener.
+        """
+        return f"ℹ️ IAmListening v{__version__}\n{self.platform}"
+
 
     async def start(self):
-        """Start the listener."""
-        if settings.telethon_api_id:
-            from .platform.telegram import TelegramHandler
-            self.handler = TelegramHandler()
+        """
+        Start the listener.
+        """
 
-        elif settings.matrix_hostname:
-            from .platform.matrix import MatrixHandler
-            self.handler = MatrixHandler()
-
-        elif settings.bot_token:
-            from .platform.discord import DiscordHandler
-            self.handler = DiscordHandler()
-
-        # elif settings.rocket_chat_server:
-        #     from .platform.rocket_chat import RocketChatHandler
-        #     self.handler = RocketChatHandler()
-        # elif self.platform == "guilded" and settings.bot_token:
-        #     from .platform.guilded import GuildedHandler
-        #     self.handler = GuildedHandler()        
-        # elif self.platform == "mastodon":
-        #     from .platform.mastodon import MastodonHandler
-        #     self.handler = MastodonHandler()
-        # elif self.platform == "revolt":
-        #     from .platform.revolt import RevoltHandler
-        #     self.handler = RevoltHandler()
-        # elif self.platform == "tinode" and settings.bot_token:
-        #     from .tinode import TinodeHandler
-        #     self.handler = TinodeHandler()
-
-
+        self.handler = PlatformManager.get_handler(self.platform)
 
         if self.handler:
-                asyncio.create_task(self.handler.start())
-
-
-class ChatManager():
-    def __init__(self):
-        self.latest_message = None
-        self.lock = asyncio.Lock()
-
-    async def start(self):
-        pass
-
-    async def get_latest_message(self):
-        """Return the latest message."""
-        async with self.lock:
-            if self.latest_message:
-                msg = self.latest_message
-                self.latest_message = None
-                return msg
-
-        await asyncio.sleep(0.1)
-
-    async def handle_message(self, message_content):
-        """Handle a new message."""
-        self.latest_message = message_content
+            asyncio.create_task(await self.handler.start())
