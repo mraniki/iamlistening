@@ -3,6 +3,7 @@ Mastodon 🐘
 """
 import asyncio
 
+from bs4 import BeautifulSoup
 from loguru import logger
 from mastodon import Mastodon, StreamListener
 
@@ -32,8 +33,15 @@ class MastodonHandler(ChatManager):
             run_async=True)
 
     async def broadcast_message(self, status):
-        logger.warning(status)
-        await self.handle_message(status)
+        content = self.remove_html_tags(status)
+        logger.warning(content)
+        await self.handle_message(content)
+
+    def remove_html_tags(self, text):
+        soup = BeautifulSoup(text, "html.parser")
+        cleaned_text = soup.get_text()
+        return cleaned_text
+
 
 class MastoListener(StreamListener):
     def __init__(self,callback):
