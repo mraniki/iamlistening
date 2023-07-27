@@ -18,15 +18,22 @@ VALUE = "On Default"
 iamlistening_enabled = true
 bot_token = ""
 bot_channel_id = ""
+
 telethon_api_id = ""
 telethon_api_hash = ""
+
 matrix_hostname = ""
 matrix_user = ""
 matrix_pass = ""
+
 rocket_chat_server = ""
 rocket_chat_user_id = ""
 rocket_chat_auth_token = ""
 
+guilded_bot_token = ""
+
+mastodon_host = ""
+mastodon_access_token = ""
 
 
 
@@ -77,6 +84,10 @@ matrix_pass = ""
 rocket_chat_server = ""
 rocket_chat_user_id = ""
 rocket_chat_auth_token = ""
+guilded_bot_token = ""
+mastodon_host = ""
+mastodon_bot_auth_token = ""
+
 
 [testingdiscord]
 VALUE = "On Testing Discord"
@@ -91,6 +102,10 @@ matrix_pass = ""
 rocket_chat_server = ""
 rocket_chat_user_id = ""
 rocket_chat_auth_token = ""
+guilded_bot_token = ""
+mastodon_host = ""
+mastodon_bot_auth_token = ""
+
 
 [testingmatrix]
 VALUE = "On Testing Matrix"
@@ -105,6 +120,10 @@ matrix_pass = "123456789"
 rocket_chat_server = ""
 rocket_chat_user_id = ""
 rocket_chat_auth_token = ""
+guilded_bot_token = ""
+mastodon_host = ""
+mastodon_bot_auth_token = ""
+
 
 [testingrocketchat]
 VALUE = "On Testing RocketChat"
@@ -119,3 +138,62 @@ matrix_pass = ""
 rocket_chat_server = "https://demo.rocket.chat"
 rocket_chat_user_id = "1234567890"
 rocket_chat_auth_token = "1234567890"
+guilded_bot_token = ""
+mastodon_host = ""
+mastodon_bot_auth_token = ""
+
+
+[testingguilded]
+VALUE = "On Testing Guilded"
+iamlistening_enabled = true
+platform = "guilded"
+bot_token = ""
+bot_channel_id = ""
+telethon_api_id = ""
+telethon_api_hash = ""
+matrix_hostname = ""
+matrix_user = ""
+matrix_pass = ""
+rocket_chat_server = ""
+rocket_chat_user_id = ""
+rocket_chat_auth_token = ""
+guilded_bot_token = "123456"
+mastodon_host = ""
+mastodon_bot_auth_token = ""
+
+
+[testingmastodon]
+VALUE = "On Testing Mastodon"
+iamlistening_enabled = true
+platform = "mastodon"
+bot_token = ""
+bot_channel_id = ""
+telethon_api_id = ""
+telethon_api_hash = ""
+matrix_hostname = ""
+matrix_user = ""
+matrix_pass = ""
+rocket_chat_server = ""
+rocket_chat_user_id = ""
+rocket_chat_auth_token = ""
+guilded_bot_token = ""
+mastodon_host = ""
+mastodon_bot_auth_token = ""
+
+
+[testingtinode]
+VALUE = "On Testing Tinode"
+iamlistening_enabled = true
+bot_token = ""
+bot_channel_id = ""
+telethon_api_id = ""
+telethon_api_hash = ""
+matrix_hostname = ""
+matrix_user = ""
+matrix_pass = ""
+rocket_chat_server = ""
+rocket_chat_user_id = ""
+rocket_chat_auth_token = ""
+guilded_bot_token = ""
+mastodon_host = ""
+mastodon_bot_auth_token = ""

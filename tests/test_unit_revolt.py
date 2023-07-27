@@ -13,7 +13,7 @@ iamlistening Unit Testing
 
 # @pytest.fixture(scope="session", autouse=True)
 # def set_test_settings():
-#     settings.configure(FORCE_ENV_FOR_DYNACONF="testingrocketchat")
+#     settings.configure(FORCE_ENV_FOR_DYNACONF="testingrevolt")
 
 # @pytest.fixture(name="listener")
 # def listener():
@@ -26,14 +26,14 @@ iamlistening Unit Testing
 # @pytest.mark.asyncio
 # async def test_fixture(listener):
 #     assert listener is not None
-#     assert settings.VALUE == "On Testing RocketChat"
+#     assert settings.VALUE == "On Testing Revolt"
 
 # @pytest.mark.asyncio
 # async def test_get_latest_message(listener, message):
 #     await listener.start()
 #     assert isinstance(listener, Listener)
-    #await listener.handler.handle_message(message)
-    #assert await listener.handler.get_latest_message() == message
+#     #await listener.handler.handle_message(message)
+#     #assert await listener.handler.get_latest_message() == message
 
 
 # @pytest.mark.asyncio

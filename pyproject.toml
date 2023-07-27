@@ -18,11 +18,12 @@ packages = [
     {include = "iamlistening"}
 ]
 
-
 [tool.poetry.urls]
 "Changelog" =  "https://github.com/mraniki/iamlistening/blob/dev/CHANGELOG.rst"
 "Support" =  "https://github.com/mraniki/iamlistening/discussions"
 "Issues" =  "https://github.com/mraniki/iamlistening/issues"
+
+
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -32,11 +33,16 @@ telethon= "^1.28.5"
 py-cord= "^2.4.1"
 simplematrixbotlib= "^2.9.0"
 rocketchat-API= "^1.30.0"
-
+Mastodon.py = "^1.8.1"
+guilded = "^1.9.1"
+tinode_grpc = "^0.22.3"
+revolt.py = "^0.1.11"
 
 [tool.poetry.group.dev.dependencies]
-python-semantic-release = "^8.0.1"
-ruff = ">=0.0.278,<0.0.281"
+python-semantic-release = "^8.0.4"
+ruff = "^0.0.280"
+
+
 
 [tool.ruff]
 select = [

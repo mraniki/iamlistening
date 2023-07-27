@@ -13,7 +13,7 @@ from iamlistening.config import settings
 
 @pytest.fixture(scope="session", autouse=True)
 def set_test_settings():
-    settings.configure(FORCE_ENV_FOR_DYNACONF="testingdiscord")
+    settings.configure(FORCE_ENV_FOR_DYNACONF="testingguilded")
 
 @pytest.fixture(name="listener")
 def listener():
@@ -26,7 +26,8 @@ def message():
 @pytest.mark.asyncio
 async def test_fixture(listener):
     assert listener is not None
-    assert settings.VALUE == "On Testing Discord"
+    assert settings.VALUE == "On Testing Guilded"
+
 
 @pytest.mark.asyncio
 async def test_get_latest_message(listener, message):

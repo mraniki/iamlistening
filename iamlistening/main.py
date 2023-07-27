@@ -13,9 +13,10 @@ from .config import settings
 
 
 class Listener:
-    def __init__(self):
+    def __init__(self, platform=None):
         self.logger = logger
         self.handler = None
+        self.platform = platform
 
     async def get_info_listener(self):
         return (f"ℹ️ IAmListening v{__version__}\n")
@@ -30,14 +31,28 @@ class Listener:
             from .platform.matrix import MatrixHandler
             self.handler = MatrixHandler()
 
-        elif settings.rocket_chat_server:
-            from .platform.rocket_chat import RocketChatHandler
-            self.handler = RocketChatHandler()
-
         elif settings.bot_token:
             from .platform.discord import DiscordHandler
             self.handler = DiscordHandler()
-       
+
+        # elif settings.rocket_chat_server:
+        #     from .platform.rocket_chat import RocketChatHandler
+        #     self.handler = RocketChatHandler()
+        # elif self.platform == "guilded" and settings.bot_token:
+        #     from .platform.guilded import GuildedHandler
+        #     self.handler = GuildedHandler()        
+        # elif self.platform == "mastodon":
+        #     from .platform.mastodon import MastodonHandler
+        #     self.handler = MastodonHandler()
+        # elif self.platform == "revolt":
+        #     from .platform.revolt import RevoltHandler
+        #     self.handler = RevoltHandler()
+        # elif self.platform == "tinode" and settings.bot_token:
+        #     from .tinode import TinodeHandler
+        #     self.handler = TinodeHandler()
+
+
+
         if self.handler:
                 asyncio.create_task(self.handler.start())
 

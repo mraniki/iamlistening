@@ -2,18 +2,18 @@
 iamlistening Unit Testing
 """
 
-# import asyncio
-# from unittest.mock import AsyncMock
+import asyncio
+from unittest.mock import AsyncMock
 
-# import pytest
+import pytest
 
-# from iamlistening import Listener
-# from iamlistening.config import settings
+from iamlistening import Listener
+from iamlistening.config import settings
 
 
 # @pytest.fixture(scope="session", autouse=True)
 # def set_test_settings():
-#     settings.configure(FORCE_ENV_FOR_DYNACONF="testingrocketchat")
+#     settings.configure(FORCE_ENV_FOR_DYNACONF="testingtinode")
 
 # @pytest.fixture(name="listener")
 # def listener():
@@ -26,7 +26,7 @@ iamlistening Unit Testing
 # @pytest.mark.asyncio
 # async def test_fixture(listener):
 #     assert listener is not None
-#     assert settings.VALUE == "On Testing RocketChat"
+#     assert settings.VALUE == "On Testing Tinode"
 
 # @pytest.mark.asyncio
 # async def test_get_latest_message(listener, message):

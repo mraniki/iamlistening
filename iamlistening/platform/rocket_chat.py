@@ -1,6 +1,6 @@
 """
 Rocket Chat  🚀
- WIP
+
 """
 
 from loguru import logger
@@ -18,10 +18,10 @@ class RocketChatHandler():
     async def start(self):
         """Start the RocketChat handler."""
         self.logger.debug("RocketChat setup")
-        rocket = RocketChat(
-            user_id=settings.rocket_chat_user_id, 
-            auth_token=settings.rocket_chat_auth_token, 
-            server_url=settings.rocket_chat_server
-            )
+        # rocket = RocketChat(
+        #     user_id=settings.rocket_chat_user_id, 
+        #     auth_token=settings.rocket_chat_auth_token, 
+        #     server_url=settings.rocket_chat_server
+        #     )
         
-        self.logger.debug(rocket.channels_list())
+        # self.logger.debug(rocket.channels_list())

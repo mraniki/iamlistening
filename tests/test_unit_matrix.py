@@ -29,9 +29,6 @@ async def test_fixture(listener):
     assert listener is not None
     assert settings.VALUE == "On Testing Matrix"
 
-def test_init(listener):
-    assert listener is not None
-
 @pytest.mark.asyncio
 async def test_get_latest_message(listener, message):
     await listener.start()
