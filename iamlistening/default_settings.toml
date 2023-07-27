@@ -16,6 +16,8 @@
 [default]
 VALUE = "On Default"
 iamlistening_enabled = true
+chat_platform= ""
+
 bot_token = ""
 bot_channel_id = ""
 
@@ -25,9 +27,6 @@ telethon_api_hash = ""
 matrix_hostname = ""
 matrix_user = ""
 matrix_pass = ""
-
-
-chat_platform= ""
 
 rocket_chat_server = ""
 rocket_chat_user_id = ""
@@ -132,6 +131,7 @@ mastodon_bot_auth_token = ""
 [testingrocketchat]
 VALUE = "On Testing RocketChat"
 iamlistening_enabled = true
+chat_platform= "rocket_chat"
 bot_token = "1234556"
 bot_channel_id = "1234556"
 telethon_api_id = ""
@@ -139,7 +139,6 @@ telethon_api_hash = ""
 matrix_hostname = ""
 matrix_user = ""
 matrix_pass = ""
-chat_platform= "rocket_chat"
 rocket_chat_server = "https://demo.rocket.chat"
 rocket_chat_user_id = "1234567890"
 rocket_chat_auth_token = "1234567890"
@@ -151,6 +150,7 @@ mastodon_bot_auth_token = ""
 [testingguilded]
 VALUE = "On Testing Guilded"
 iamlistening_enabled = true
+chat_platform= "guilded"
 bot_token = ""
 bot_channel_id = ""
 telethon_api_id = ""
@@ -161,8 +161,7 @@ matrix_pass = ""
 rocket_chat_server = ""
 rocket_chat_user_id = ""
 rocket_chat_auth_token = ""
-chat_platform= "guilded"
-guilded_bot_token = "123456"
+guilded_bot_token = "1212"
 mastodon_host = ""
 mastodon_bot_auth_token = ""
 
@@ -185,6 +184,24 @@ guilded_bot_token = ""
 mastodon_host = ""
 mastodon_bot_auth_token = ""
 
+
+[testingrevolt]
+VALUE = "On Testing Revolt"
+iamlistening_enabled = true
+chat_platform= "revolt"
+bot_token = "1212"
+bot_channel_id = ""
+telethon_api_id = ""
+telethon_api_hash = ""
+matrix_hostname = ""
+matrix_user = ""
+matrix_pass = ""
+rocket_chat_server = ""
+rocket_chat_user_id = ""
+rocket_chat_auth_token = ""
+guilded_bot_token = ""
+mastodon_host = ""
+mastodon_bot_auth_token = ""
 
 [testingtinode]
 VALUE = "On Testing Tinode"

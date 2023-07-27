@@ -15,35 +15,29 @@ from iamlistening.config import settings
 def set_test_settings():
     settings.configure(FORCE_ENV_FOR_DYNACONF="testingguilded")
 
+
+@pytest.mark.asyncio
+async def test_fixture():
+    assert settings.VALUE == "On Testing Guilded"
+
 @pytest.fixture(name="listener")
 def listener():
     return Listener()
 
-@pytest.fixture
+@pytest.fixture(name="message")
 def message():
-    return "Test message"
+    return "hello"
+
 
 @pytest.mark.asyncio
-async def test_fixture(listener):
+async def test_listener(listener, message):
+
     assert listener is not None
-    assert settings.VALUE == "On Testing Guilded"
-
-
-@pytest.mark.asyncio
-async def test_get_latest_message(listener, message):
-    await listener.start()
-    await listener.handler.handle_message(message)
-    assert await listener.handler.get_latest_message() == message
-
-
-@pytest.mark.asyncio
-async def test_listener_library():
-    listener_test = Listener()
-    print(listener_test)
-    assert listener_test is not None
-    assert isinstance(listener_test, Listener)
+    assert isinstance(listener, Listener)
+    assert listener.platform is not None
     await listener_test.start()
-    await listener_test.handler.handle_message("hello")
+    await listener_test.handler.handle_message(message)
     msg = await listener_test.handler.get_latest_message()
     print(msg)
-    assert msg == "hello"
+    assert msg == message
+

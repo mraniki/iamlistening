@@ -16,45 +16,26 @@ from iamlistening.config import settings
 def set_test_settings():
     settings.configure(FORCE_ENV_FOR_DYNACONF="testing")
 
+@pytest.mark.asyncio 
+async def test_fixture():
+    assert settings.VALUE == "On Testing"
+
 @pytest.fixture(name="listener")
 def listener():
     return Listener()
 
-@pytest.fixture
+@pytest.fixture(name="message")
 def message():
-    return "Test message"
+    return "hello"
 
 @pytest.mark.asyncio
-async def test_fixture(listener):
+async def test_listener(listener, message):
+
     assert listener is not None
-    assert settings.VALUE == "On Testing"
-
- 
-# @pytest.mark.asyncio
-# async def test_get_latest_message(listener, message):
-#     await listener.start()
-#     await listener.handler.handle_message(message)
-#     assert await listener.handler.get_latest_message() == message
-
-# @pytest.mark.asyncio
-# async def test_telegram_function():
-#     bot = AsyncMock()
-#     bot.run_until_disconnected = AsyncMock()
-#     listener = Listener()
-#     assert listener is not None
-#     assert isinstance(listener, Listener)
-#     assert bot.assert_called_once
-#     assert bot.run_until_disconnected.assert_called_once
-
-
-@pytest.mark.asyncio
-async def test_listener_telegram():
-    listener_test = Listener()
-    print(listener_test)
-    assert listener_test is not None
-    assert isinstance(listener_test, Listener)
+    assert isinstance(listener, Listener)
+    assert listener.platform is not None
     await listener_test.start()
-    await listener_test.handler.handle_message("hello")
+    await listener_test.handler.handle_message(message)
     msg = await listener_test.handler.get_latest_message()
     print(msg)
-    assert msg == "hello"
+    assert msg == message
