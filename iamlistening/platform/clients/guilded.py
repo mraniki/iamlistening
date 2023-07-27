@@ -33,4 +33,4 @@ class GuildedHandler(ChatManager):
         async def on_message(message):
             await self.handle_message(message.content)
 
-        client.run(settings.guilded_bot_token)
+        client.run(settings.bot_token)

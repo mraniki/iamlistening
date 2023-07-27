@@ -28,9 +28,9 @@ class MatrixHandler(ChatManager):
         config.ignore_unverified_devices = True
         config.store_path = './config/matrix/'
         creds = botlib.Creds(
-                    settings.matrix_hostname,
-                    settings.matrix_user,
-                    settings.matrix_pass
+                    settings.bot_hostname,
+                    settings.bot_user,
+                    settings.bot_pass
                     )
         bot = botlib.Bot(creds, config)
  

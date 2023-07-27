@@ -25,7 +25,3 @@ class TinodeHandler(ChatManager):
         Start the Tinode handler.
         """
         logger.debug("Tinode setup")
-        # client = 
-        logger.info("listener is online")
-
-        # await self.handle_message()
