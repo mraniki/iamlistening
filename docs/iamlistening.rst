@@ -1,5 +1,6 @@
 iamlistening package
 ===================
+.. py:module:: iamlistening
 
 Submodules
 ----------

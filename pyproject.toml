@@ -105,6 +105,8 @@ omit = [
     "*/config.py"
 ]
 
+[tool.bandit]
+exclude_dirs = ["tests"]
 
 [tool.semantic_release]
 upload_to_vcs_release = true

@@ -39,6 +39,7 @@ class PlatformManager:
             handler = TinodeHandler()
 
         if handler is None:
+            logger.error(platform)
             raise Exception("Platform not supported")
 
         return handler
