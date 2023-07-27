@@ -75,6 +75,7 @@ mastodon_access_token = ""
 [testing]
 VALUE = "On Testing"
 iamlistening_enabled = true
+chat_platform= ""
 bot_token = "1234556"
 bot_channel_id = "1234556"
 telethon_api_id = "1234556"
@@ -93,6 +94,7 @@ mastodon_bot_auth_token = ""
 [testingdiscord]
 VALUE = "On Testing Discord"
 iamlistening_enabled = true
+chat_platform= ""
 bot_token = "1234556"
 bot_channel_id = "1234556"
 telethon_api_id = ""
@@ -111,6 +113,7 @@ mastodon_bot_auth_token = ""
 [testingmatrix]
 VALUE = "On Testing Matrix"
 iamlistening_enabled = true
+chat_platform= ""
 bot_token = "1234556"
 bot_channel_id = "1234556"
 telethon_api_id = ""
