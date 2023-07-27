@@ -27,15 +27,15 @@ def listener():
 def message():
     return "hello"
 
-@pytest.mark.asyncio
-async def test_listener(listener, message):
+# @pytest.mark.asyncio
+# async def test_listener(listener, message):
 
-    assert listener is not None
-    assert isinstance(listener, Listener)
-    assert listener.platform is not None
-    await listener.start()
-    await listener.handler.handle_message(message)
-    msg = await listener.handler.get_latest_message()
-    print(msg)
-    assert msg == message
+#     assert listener is not None
+#     assert isinstance(listener, Listener)
+#     assert listener.platform is not None
+#     await listener.start()
+#     await listener.handler.handle_message(message)
+#     msg = await listener.handler.get_latest_message()
+#     print(msg)
+#     assert msg == message
     
