@@ -23,6 +23,7 @@ class Listener:
         Initialize the listener.
         """
         self.logger = logger
+        self.version = __version__
         self.platform = platform
         self.handler = None
 
@@ -33,17 +34,6 @@ class Listener:
                 self.platform = "matrix"
             elif settings.bot_token:
                 self.platform = "discord"
-
-
-    async def get_info_listener(self):
-        """
-        Get information about the listener.
-
-        Returns:
-            str: The information about the listener.
-        """
-        return f"ℹ️ IAmListening v{__version__}\n{self.platform}"
-
 
     async def start(self):
         """
