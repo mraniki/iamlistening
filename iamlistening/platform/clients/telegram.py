@@ -25,8 +25,8 @@ class TelegramHandler(ChatManager):
         logger.debug("Telegram setup")
         bot = await TelegramClient(
                     None,
-                    settings.telethon_api_id,
-                    settings.telethon_api_hash
+                    settings.bot_api_id,
+                    settings.bot_api_hash
                     ).start(bot_token=settings.bot_token)
         logger.info("listener is online")
 

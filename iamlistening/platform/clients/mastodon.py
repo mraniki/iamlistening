@@ -20,8 +20,8 @@ class MastodonHandler(ChatManager):
         super().__init__()
         logger.debug("Mastodon setup")
         self.client = Mastodon(
-            api_base_url= settings.mastodon_host,
-            access_token = settings.mastodon_access_token)
+            api_base_url= settings.bot_hostname,
+            access_token = settings.bot_auth_token)
 
     async def start(self):
         """
