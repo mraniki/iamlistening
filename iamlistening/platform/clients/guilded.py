@@ -13,10 +13,15 @@ from iamlistening.platform.platform_manager import ChatManager
 class GuildedHandler(ChatManager):
 
     def __init__(self):
+        """
+        Initialize the Guilded handler.
+        """
         super().__init__()
 
     async def start(self):
-        """Start the Guilded handler."""
+        """
+        Start the Guilded handler.
+        """
         logger.debug("Guilded setup")
         client = guilded.Client()
 

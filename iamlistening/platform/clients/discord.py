@@ -13,9 +13,16 @@ from iamlistening.platform.platform_manager import ChatManager
 class DiscordHandler(ChatManager):
 
     def __init__(self):
+        """
+        Initialize the Discord handler.
+        """
         super().__init__()
+
     async def start(self):
-        """Start the Discord handler."""
+        """
+        Start the Discord handler.
+        """
+
         logger.debug("Discord setup")
         intents = discord.Intents.default()
         intents.message_content = True

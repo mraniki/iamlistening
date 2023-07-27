@@ -18,13 +18,13 @@ class Listener:
     Listener Class
     """
 
-    def __init__(self, platform=None):
+    def __init__(self, chat_platform=None):
         """
         Initialize the listener.
         """
         self.logger = logger
         self.version = __version__
-        self.platform = platform
+        self.platform = chat_platform or settings.chat_platform
         self.handler = None
 
         if self.platform is None:

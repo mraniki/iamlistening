@@ -11,10 +11,17 @@ from iamlistening.platform.platform_manager import ChatManager
 class TelegramHandler(ChatManager):
 
     def __init__(self):
+        """
+        Initialize the Telegram handler.
+        """
         super().__init__()
 
     async def start(self):
-        """Start the Telegram handler."""
+        """
+        Start the Telegram handler
+        using Telethon.
+        """
+
         logger.debug("Telegram setup")
         bot = await TelegramClient(
                     None,

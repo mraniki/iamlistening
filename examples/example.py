@@ -15,12 +15,14 @@ logger.add(sys.stderr, level="DEBUG")
 
 
 async def main():
-    """Run main program loop."""
+    """
+    Run a listener example
+    """
+
     listener = Listener()
     await listener.start()
     while True:
         try:
-            logger.info(f"Info: {listener.get_info_listener()}")
             msg = await listener.handler.get_latest_message()
             if msg:
                 logger.info(f"Frasier👂: {msg}")

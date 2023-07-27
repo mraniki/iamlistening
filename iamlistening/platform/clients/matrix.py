@@ -13,10 +13,15 @@ from iamlistening.platform.platform_manager import ChatManager
 class MatrixHandler(ChatManager):
 
     def __init__(self):
+        """
+        Initialize the Matrix handler.
+        """
         super().__init__()
 
     async def start(self):
-        """Start the Matrix handler."""
+        """
+        Start the Matrix handler.
+        """
         logger.debug("Matrix setup")
         config = botlib.Config()
         config.emoji_verify = True

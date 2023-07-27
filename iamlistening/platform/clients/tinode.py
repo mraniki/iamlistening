@@ -15,10 +15,15 @@ from iamlistening.platform.platform_manager import ChatManager
 class TinodeHandler(ChatManager):
 
     def __init__(self):
+        """
+        Initialize the RocketChat handler.
+        """
         super().__init__()
 
     async def start(self):
-        """Start the Tinode handler."""
+        """
+        Start the Tinode handler.
+        """
         logger.debug("Tinode setup")
         # client = 
         logger.info("listener is online")

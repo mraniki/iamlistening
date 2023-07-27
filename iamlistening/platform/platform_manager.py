@@ -7,6 +7,10 @@ from loguru import logger
 class PlatformManager:
     @staticmethod
     def get_handler(platform):
+        """
+        Get platform handler.
+        """
+
         handler = None
 
         if platform == "telegram":
@@ -42,11 +46,19 @@ class PlatformManager:
 
 class ChatManager():
     def __init__(self):
+        """
+        Initialize the chat manager.
+        """
+
         self.latest_message = None
         self.lock = asyncio.Lock()
 
 
     async def start(self):
+        """ 
+        Start the chat manager.
+        Specific to the client platform
+        """
         pass
 
     async def get_latest_message(self):

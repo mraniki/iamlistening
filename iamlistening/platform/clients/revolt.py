@@ -13,10 +13,15 @@ from iamlistening.platform.platform_manager import ChatManager
 class RevoltHandler(ChatManager):
 
     def __init__(self):
+        """
+        Initialize the Revolt handler.
+        """
         super().__init__()
 
     async def start(self):
-        """Start the Revolt handler."""
+        """
+        Start the Revolt handler.
+        """
         logger.debug("Revolt setup")
         client = revolt.Client(revolt.utils.client_session(), settings.bot_token)
         await client.start()
