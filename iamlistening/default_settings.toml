@@ -26,6 +26,9 @@ matrix_hostname = ""
 matrix_user = ""
 matrix_pass = ""
 
+
+chat_platform=''
+
 rocket_chat_server = ""
 rocket_chat_user_id = ""
 rocket_chat_auth_token = ""
@@ -34,8 +37,6 @@ guilded_bot_token = ""
 
 mastodon_host = ""
 mastodon_access_token = ""
-
-
 
 
 
