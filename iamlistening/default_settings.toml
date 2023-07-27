@@ -63,7 +63,7 @@ bot_auth_token = ""
 [testing]
 VALUE = "On Testing"
 iamlistening_enabled = true
-chat_platform = ""
+chat_platform = "telegram"
 bot_token = "1234556"
 bot_channel_id = "1234556"
 bot_api_id = "1234556"
@@ -77,7 +77,7 @@ bot_auth_token = ""
 [testingdiscord]
 VALUE = "On Testing Discord"
 iamlistening_enabled = true
-chat_platform= ""
+chat_platform= "discord"
 bot_token = "1234556"
 bot_channel_id = "1234556"
 bot_api_id = ""
@@ -91,7 +91,7 @@ bot_auth_token = ""
 [testingmatrix]
 VALUE = "On Testing Matrix"
 iamlistening_enabled = true
-chat_platform=""
+chat_platform="matrix"
 bot_token = "1234556"
 bot_channel_id = "1234556"
 bot_api_id = ""

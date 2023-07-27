@@ -28,13 +28,7 @@ class Listener:
         self.handler = None
 
         if self.platform is None:
-            if settings.bot_api_id:
-                self.platform = "telegram"
-            elif settings.bot_hostname:
-                self.platform = "matrix"
-            elif settings.bot_token:
-                self.platform = "discord"
-        logger.warning(self.platform)
+            raise Exception("Platform missing")
 
     async def start(self):
         """
