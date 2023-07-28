@@ -9,7 +9,7 @@ import pytest
 from telethon import TelegramClient, errors
 
 from iamlistening import Listener
-#from iamlistening.config import settings
+from iamlistening.config import settings
 
 
 # @pytest.fixture(scope="session", autouse=True)
@@ -31,6 +31,8 @@ def message():
 
 @pytest.mark.asyncio
 async def test_listener(listener):
+    logger.debug(settings.bot_api_id)
+    assert settings.bot_api_id is not None
     assert listener is not None
     assert isinstance(listener, Listener)
     assert listener.platform is not None
