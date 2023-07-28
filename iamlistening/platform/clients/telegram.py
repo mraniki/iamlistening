@@ -9,10 +9,14 @@ from iamlistening.platform.platform_manager import ChatManager
 
 
 class TelegramHandler(ChatManager):
+    """
+    Telegram Handler
+    """
 
     def __init__(self):
         """
         Initialize the Telegram handler.
+
         """
         super().__init__()
 
@@ -32,6 +36,9 @@ class TelegramHandler(ChatManager):
 
         @bot.on(events.NewMessage())
         async def telethon(event):
+            """
+            Handle new messages
+            """
             await self.handle_message(event.message.message)
 
         await bot.run_until_disconnected()

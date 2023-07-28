@@ -14,6 +14,8 @@ Clients
 TelegramHandler
 ---------------
 .. autoclass:: TelegramHandler
+    :members:
+    :inherited-members:
 
 MatrixHandler
 -------------
