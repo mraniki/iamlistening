@@ -5,6 +5,11 @@ IAMLISTENING
 ===========
 .. py:module:: iamlistening
 
+iamlistening is a module to connect to instant messaging platforms and listen to messages.
+Supported platforms are listed under <09_clients>
+
+
+
 .. image:: https://user-images.githubusercontent.com/8766259/242846519-f76331f6-8821-49eb-8f1c-06aedd8557be.jpeg
    :align: right
    :width: 50
@@ -13,38 +18,25 @@ IAMLISTENING
 .. toctree::
     :caption: Introduction
     
+    IAMLISTENING <self>
     01_getting_started
-    02_Listener
+    02_listener
 
 .. toctree::
-    :caption: Supported Platforms
+    :caption: Platforms
     
-    09_platforms
+    08_platform_manager
+    09_clients
 
-.. toctree::
-    :caption: More Info
+
     
-    iamlistening
-
-
-.. iamlistening class
-.. ==================
-.. * :doc:`iamlistening <iamlistening:iamlistening>`
-
-
-.. Indices and tables
-.. ==================
-
-.. * :ref:`genindex`
-.. * :ref:`modindex`
-.. * :ref:`search`
-
-
 Talky
-==================
+=====
+.. toctree::
+        :caption: Talkytrader
+        
+        `Talkytrader <talkytrader:index>`
+
+
 * :doc:`Talkytrader <talkytrader:index>`
-.. * :doc:`findmyorder <findmyorder:index>`
-.. * :doc:`DXSP <DXSP:index>`
-.. * :doc:`IamListening <iamlistening:index>`
-.. * :doc:`TalkyTrend <TalkyTrend:index>`
-.. * `Talkytrader <https://talkytrader.github.io/wiki>`
+

@@ -50,7 +50,7 @@ source_suffix = ['.rst', '.md']
 # -- Napoleon Settings -----------------------------------------------------
 napoleon_google_docstring = True
 napoleon_numpy_docstring = False
-napoleon_include_init_with_doc = False
+napoleon_include_init_with_doc = True
 napoleon_include_private_with_doc = False
 napoleon_include_special_with_doc = False
 napoleon_use_admonition_for_examples = False
@@ -61,7 +61,7 @@ napoleon_use_param = True
 napoleon_use_rtype = True
 napoleon_use_keyword = True
 autodoc_member_order = 'bysource'
-add_module_names = False
+add_module_names = True
 
 master_doc = 'index'
 
@@ -104,7 +104,7 @@ html_show_sourcelink = False
 
 html_theme_options = {
     # Tab name for entire site. (Default: "Site")
-    #'navbar_site_name': "Table of Contents",
+    'navbar_site_name': "Table of Contents",
 
     # A list of tuples containing pages or urls to link to.
     # Valid tuples should be in the following forms:
@@ -113,20 +113,27 @@ html_theme_options = {
     #    (name, "http://example.com", True) # arbitrary absolute url
     # Note the "1" or "True" value above as the third argument to indicate
     # an arbitrary url.
-    # 'navbar_links': [
-    #     ("_menu", "Essentials", [
-    #         ("TalkyTrader", "index"),
-    #         ("_divider", ),
-    #         ("_menu", "Installation", "home/installation", [
-    #             ("Local Walkthrough", "home/guides/local"),
-    #             ("Docker Walkthrough", "home/guides/docker"),
-    #         ]),
-    #         ("Environment Variables", "home/environmental"),
-    #         ("Knowledgebase/FAQ", "home/kb"),
-    #         ]),
-    #     ("_divider", ),
-    #     ("Bugs/Issues", "https://github.com/mraniki/tt/issues"),
-    #     ],
+    'navbar_links': [
+        ("_menu", "Getting Started", [
+            ("TalkyTrader", "talkytrader:index"),
+            ]),
+        ("_menu", "Plugins", [
+        ("iamlistening", "iamlistening:index"),
+        ("_divider", ),
+        ("findmyorder", "findmyorder:index"),
+        ("ccxt", "ccxt:index"),
+        ("dxsp", "dxsp:index"),
+        ("_divider", ),
+        ("talkytrend", "talkytrend:index"),     
+        ]),
+        ("_menu", "Config", [
+            ("Examples", "https://talky.readthedocs.io/index.html"),
+            ]),
+        ("_menu", "more",[
+            ("Bugs/Issues", "https://github.com/mraniki/tt/issues"),
+
+            ("Need Help", "https://github.com/mraniki/tt/discussions"),
+        ])],
 
     # Render the next and previous page links in navbar. (Default: true)
     'navbar_sidebarrel': False,

@@ -6,17 +6,17 @@ from loguru import logger
 
 class PlatformManager:
     @staticmethod
-    def get_handler(platform):
+    def get_handler(platform="telegram"):
         """
         Get platform handler.
+        
+
+
         """
 
         handler = None
 
-        if platform == "telegram":
-            from .clients.telegram import TelegramHandler
-            handler = TelegramHandler()
-        elif platform == "matrix":
+        if platform == "matrix":
             from .clients.matrix import MatrixHandler
             handler = MatrixHandler()
         elif platform == "discord":
@@ -37,6 +37,10 @@ class PlatformManager:
         elif platform == "tinode":
             from .clients.tinode import TinodeHandler
             handler = TinodeHandler()
+        else:
+            from .clients.telegram import TelegramHandler
+            handler = TelegramHandler()
+
 
         if handler is None:
             logger.error(platform)

@@ -14,13 +14,24 @@ from .platform.platform_manager import PlatformManager
 
 
 class Listener:
+
     """
-    Listener Class
+    Listener Class for IAmListening.
+
     """
 
     def __init__(self, chat_platform=None):
         """
         Initialize the listener.
+
+        Args:
+            chat_platform (str): The platform to use
+
+
+        Raises:
+            Exception: Platform missing
+
+
         """
         self.logger = logger
         self.version = __version__
@@ -33,6 +44,10 @@ class Listener:
     async def start(self):
         """
         Start the listener.
+
+        self.handler = PlatformManager.get_handler(self.platform)
+        if self.platform if None it is defaulted to telegram handler
+
         """
 
         self.handler = PlatformManager.get_handler(self.platform)

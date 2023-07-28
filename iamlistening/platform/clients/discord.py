@@ -15,12 +15,15 @@ class DiscordHandler(ChatManager):
     def __init__(self):
         """
         Initialize the Discord handler.
+
+
         """
         super().__init__()
 
     async def start(self):
         """
         Start the Discord handler.
+        
         """
 
         logger.debug("Discord setup")
