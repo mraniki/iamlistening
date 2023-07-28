@@ -27,9 +27,9 @@ IAMLISTENING
     iamlistening
 
 
-iamlistening class
-==================
-* :doc:`iamlistening <iamlistening:iamlistening>`
+.. iamlistening class
+.. ==================
+.. * :doc:`iamlistening <iamlistening:iamlistening>`
 
 
 .. Indices and tables
