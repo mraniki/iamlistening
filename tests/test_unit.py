@@ -4,13 +4,13 @@ iamlistening Unit Testing
 
 import asyncio
 from unittest.mock import AsyncMock, patch
-from loguru import logger
-import pytest
-#from telethon import TelegramClient, errors
 
+import pytest
+from loguru import logger
+
+#from telethon import TelegramClient, errors
 from iamlistening import Listener
 from iamlistening.config import settings
-
 
 # @pytest.fixture(scope="session", autouse=True)
 # def set_test_settings():
