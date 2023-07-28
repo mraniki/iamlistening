@@ -25,6 +25,7 @@ async def test_fixture():
 def listener():
     return Listener()
 
+
 @pytest.fixture(name="message")
 def message():
     return "hello"
