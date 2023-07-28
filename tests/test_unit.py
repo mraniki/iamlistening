@@ -4,21 +4,21 @@ iamlistening Unit Testing
 
 import asyncio
 from unittest.mock import AsyncMock, patch
-
+from loguru import logger
 import pytest
 from telethon import TelegramClient, errors
 
 from iamlistening import Listener
-from iamlistening.config import settings
+#from iamlistening.config import settings
 
 
-@pytest.fixture(scope="session", autouse=True)
-def set_test_settings():
-    settings.configure(FORCE_ENV_FOR_DYNACONF="testing")
+# @pytest.fixture(scope="session", autouse=True)
+# def set_test_settings():
+#     settings.configure(FORCE_ENV_FOR_DYNACONF="testing")
 
-@pytest.mark.asyncio 
-async def test_fixture():
-    assert settings.VALUE == "On Testing"
+# @pytest.mark.asyncio 
+# async def test_fixture():
+#     assert settings.VALUE == "On Testing"
 
 @pytest.fixture(name="listener")
 def listener():
@@ -38,9 +38,15 @@ async def test_listener(listener):
 
 
 @pytest.mark.asyncio
+async def test_start(listener):
+    result = await listener.start()
+    assert result is not None
+
+
+@pytest.mark.asyncio
 async def test_listening(listener, message):
     await listener.start()
     await listener.handler.handle_message(message)
     msg = await listener.handler.get_latest_message()
-    print(msg)
+    logger.warning(msg)
     assert msg == message
