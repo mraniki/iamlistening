@@ -6,7 +6,7 @@ import asyncio
 from unittest.mock import AsyncMock, patch
 from loguru import logger
 import pytest
-from telethon import TelegramClient, errors
+#from telethon import TelegramClient, errors
 
 from iamlistening import Listener
 from iamlistening.config import settings
