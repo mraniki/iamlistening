@@ -13,6 +13,7 @@ jobs:
     secrets: inherit
   test:
     needs: [lint]
+    environment: dev
     uses: mraniki/coding_toolset/.github/workflows/🧪Test.yml@main
     secrets: inherit
   security:
