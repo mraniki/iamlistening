@@ -7,14 +7,8 @@ Platforms
  
 Platform Manager
 ----------------
-
-
-.. automethod:: PlatformManager.get_handler
-
-
-
+.. autoclass:: PlatformManager
 
 ChatManager Manager
 -------------------
-
-.. automethod:: ChatManager.platform.clients.telegram
+.. autoclass:: ChatManager

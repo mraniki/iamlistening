@@ -102,38 +102,38 @@ html_show_sourcelink = False
 # Theme options are theme-specific and customize the look and feel of a
 # theme further.
 
-html_theme_options = {
-    # Tab name for entire site. (Default: "Site")
-    'navbar_site_name': "Table of Contents",
+# html_theme_options = {
+#     # Tab name for entire site. (Default: "Site")
+#     'navbar_site_name': "Table of Contents",
 
-    # A list of tuples containing pages or urls to link to.
-    # Valid tuples should be in the following forms:
-    #    (name, page)                 # a link to a page
-    #    (name, "/aa/bb", 1)          # a link to an arbitrary relative url
-    #    (name, "http://example.com", True) # arbitrary absolute url
-    # Note the "1" or "True" value above as the third argument to indicate
-    # an arbitrary url.
-    'navbar_links': [
-        ("_menu", "Getting Started", [
-            ("TalkyTrader", "talkytrader:index"),
-            ]),
-        ("_menu", "Plugins", [
-        ("iamlistening", "iamlistening:index"),
-        ("_divider", ),
-        ("findmyorder", "findmyorder:index"),
-        ("ccxt", "ccxt:index"),
-        ("dxsp", "dxsp:index"),
-        ("_divider", ),
-        ("talkytrend", "talkytrend:index"),     
-        ]),
-        ("_menu", "Config", [
-            ("Examples", "https://talky.readthedocs.io/index.html"),
-            ]),
-        ("_menu", "more",[
-            ("Bugs/Issues", "https://github.com/mraniki/tt/issues"),
+#     # A list of tuples containing pages or urls to link to.
+#     # Valid tuples should be in the following forms:
+#     #    (name, page)                 # a link to a page
+#     #    (name, "/aa/bb", 1)          # a link to an arbitrary relative url
+#     #    (name, "http://example.com", True) # arbitrary absolute url
+#     # Note the "1" or "True" value above as the third argument to indicate
+#     # an arbitrary url.
+#     'navbar_links': [
+#         ("_menu", "Getting Started", [
+#             ("TalkyTrader", "talkytrader:index"),
+#             ]),
+#         ("_menu", "Plugins", [
+#         ("iamlistening", "iamlistening:index"),
+#         ("_divider", ),
+#         ("findmyorder", "findmyorder:index"),
+#         ("ccxt", "ccxt:index"),
+#         ("dxsp", "dxsp:index"),
+#         ("_divider", ),
+#         ("talkytrend", "talkytrend:index"),     
+#         ]),
+#         ("_menu", "Config", [
+#             ("Examples", "https://talky.readthedocs.io/index.html"),
+#             ]),
+#         ("_menu", "more",[
+#             ("Bugs/Issues", "https://github.com/mraniki/tt/issues"),
 
-            ("Need Help", "https://github.com/mraniki/tt/discussions"),
-        ])],
+#             ("Need Help", "https://github.com/mraniki/tt/discussions"),
+#         ])],
 
     # Render the next and previous page links in navbar. (Default: true)
     'navbar_sidebarrel': False,
