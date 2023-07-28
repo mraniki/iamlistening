@@ -43,7 +43,7 @@ extensions = [
     'notfound.extension'
 
 ]
-
+autoapi_dirs = ['path/', 'iamlistening']
 source_suffix = ['.rst', '.md']
 
 

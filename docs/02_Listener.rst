@@ -6,16 +6,11 @@ Listener
 Listener
 ---------
 
-.. automethod:: iamlistening.main.Listener.__init__
-.. automethod:: iamlistening.main.Listener.start
+.. autoclass:: Listener
 
 
 
 
-Exceptions
-----------
-
-.. automethod:: iamlistening.main.Listener.exception
 
 Config
 --------
