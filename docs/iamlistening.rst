@@ -2,6 +2,12 @@ iamlistening package
 ===================
 .. py:module:: iamlistening
 
+.. toctree::
+   :maxdepth: 4
+
+   iamlistening
+
+
 Submodules
 ----------
 
