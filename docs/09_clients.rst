@@ -13,13 +13,13 @@ Clients
 
 TelegramHandler
 ---------------
-.. autoclass:: TelegramHandler
+.. automethod:: TelegramHandler
     :members:
     :inherited-members:
 
 MatrixHandler
 -------------
-.. autoclass:: MatrixHandler
+.. automethod:: iamlistening.iamlistening.MatrixHandler
 
 MastodonHandler
 ---------------
