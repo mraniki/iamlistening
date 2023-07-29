@@ -47,7 +47,7 @@ async def test_handler():
     start = AsyncMock()
     get_handler = AsyncMock()
     with patch(
-    'iamlistening.listener.handler.start',
+    'listener.handler.start',
     start):
         listener.start()
         get_handler.assert_called_once
