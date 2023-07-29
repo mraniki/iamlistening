@@ -42,24 +42,23 @@ async def test_listener(listener):
 
 
 @pytest.mark.asyncio
-async def test_handler(listener):
+async def test_handler():
+    listener = Listener()
+    start = AsyncMock()
     get_handler = AsyncMock()
     with patch(
-    'iamlistening.platform.platform_manager.PlatformManager.get_handler',
-    get_handler):
-        task = asyncio.create_task(listener.start())
-        await asyncio.gather(task, asyncio.sleep(2))
-        task.cancel()
-        get_handler.assert_awaited
+    'iamlistening.listener.handler.start',
+    start):
+        listener.start()
+        get_handler.assert_called_once
         assert listener.handler is not None
         assert listener.handler.get_latest_message() is not None
 
 
 @pytest.mark.asyncio
 async def test_listening(listener, message):
-    task = asyncio.create_task(listener.start())
+    listener.start()
     await listener.handler.handle_message(message)
     msg = await listener.handler.get_latest_message()
-    task.cancel()
-    logger.warning(msg)
+    logger.debug(msg)
     assert msg == message
