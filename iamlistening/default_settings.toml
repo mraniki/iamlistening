@@ -60,18 +60,18 @@ bot_auth_token = ""
 # for testing purpose.
 # It can be ignored. 
 
-[testingtelegram]
-VALUE = ""
-iamlistening_enabled = true
-chat_platform = ""
-bot_token = ""
-bot_channel_id = ""
-bot_api_id = ""
-bot_api_hash = ""
-bot_hostname = ""
-bot_user = ""
-bot_pass = ""
-bot_auth_token = ""
+# [testingtelegram]
+# VALUE = ""
+# iamlistening_enabled = true
+# chat_platform = ""
+# bot_token = ""
+# bot_channel_id = ""
+# bot_api_id = ""
+# bot_api_hash = ""
+# bot_hostname = ""
+# bot_user = ""
+# bot_pass = ""
+# bot_auth_token = ""
 
 
 [testingdiscord]
