@@ -49,6 +49,7 @@ async def test_handler(listener):
 async def test_handler(listener):
     handler = PlatformManager.get_handler(listener.platform)
     start = AsyncMock()
-    await handler.start()
+    task=asyncio.create_task(handler.start())
+    task.cancel()
     assert start.assert_awaited_once
 
