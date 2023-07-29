@@ -71,4 +71,4 @@ async def test_handler(listener):
         task.cancel()
         get_handler.assert_awaited
         assert listener.handler is not None
-
+        assert listener.handler.get_latest_message() is not None
