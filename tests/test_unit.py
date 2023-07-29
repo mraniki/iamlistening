@@ -63,10 +63,12 @@ async def test_listener(listener):
 async def test_handler(listener):
 
     get_handler = AsyncMock()
-    with patch('iamlistening.platform.platform_manager.PlatformManager.get_handler', get_handler):
+    with patch(
+    'iamlistening.platform.platform_manager.PlatformManager.get_handler',
+    get_handler):
         task = asyncio.create_task(listener.start())
         await asyncio.gather(task, asyncio.sleep(2))
         task.cancel()
         get_handler.assert_awaited
-        assert listerner.handler is not None
+        assert listener.handler is not None
 
