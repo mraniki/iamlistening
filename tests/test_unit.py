@@ -15,7 +15,7 @@ from iamlistening.config import settings
 
 @pytest.fixture(scope="session", autouse=True)
 def set_test_settings():
-    settings.configure(FORCE_ENV_FOR_DYNACONF="testing")
+    settings.configure(FORCE_ENV_FOR_DYNACONF="testingtelegram")
 
 @pytest.mark.asyncio 
 async def test_fixture():
@@ -33,7 +33,6 @@ def message():
 
 @pytest.mark.asyncio
 async def test_listener(listener):
-    logger.debug(settings.value)
     logger.debug(settings.bot_api_id)
     assert settings.bot_api_id is not None
     assert listener is not None
@@ -42,26 +41,8 @@ async def test_listener(listener):
     assert listener.version is not None
 
 
-# @pytest.mark.asyncio
-# async def test_start(listener):
-#     logger.debug(settings.bot_api_id)
-#     result = await listener.start()
-#     assert result is not None
-
-
-# @pytest.mark.asyncio
-# async def test_listening(listener, message):
-#     logger.debug(settings.bot_api_id)
-#     await listener.start()
-#     await listener.handler.handle_message(message)
-#     msg = await listener.handler.get_latest_message()
-#     logger.warning(msg)
-#     assert msg == message
-
-    
 @pytest.mark.asyncio
 async def test_handler(listener):
-
     get_handler = AsyncMock()
     with patch(
     'iamlistening.platform.platform_manager.PlatformManager.get_handler',
@@ -72,3 +53,13 @@ async def test_handler(listener):
         get_handler.assert_awaited
         assert listener.handler is not None
         assert listener.handler.get_latest_message() is not None
+
+
+@pytest.mark.asyncio
+async def test_listening(listener, message):
+    task = asyncio.create_task(listener.start())
+    await listener.handler.handle_message(message)
+    msg = await listener.handler.get_latest_message()
+    task.cancel()
+    logger.warning(msg)
+    assert msg == message
