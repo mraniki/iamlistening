@@ -3,7 +3,7 @@ iamlistening Unit Testing
 """
 
 import asyncio
-from unittest.mock import AsyncMock, patch
+from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 from loguru import logger
@@ -45,11 +45,32 @@ async def test_handler(listener):
     logger.debug(handler)
     assert handler is not None
 
+
 @pytest.mark.asyncio
 async def test_handler(listener):
-    handler = PlatformManager.get_handler(listener.platform)
+    listener.handler = PlatformManager.get_handler(listener.platform)
     start = AsyncMock()
-    task=asyncio.create_task(handler.start())
+    task=asyncio.create_task(listener.handler.start())
     task.cancel()
+    assert listener.handler is not None
     assert start.assert_awaited_once
+    assert callable(listener.handler.handle_message)
 
+
+@pytest.mark.asyncio
+async def test_listener_start(listener):
+    listener.handler = MagicMock()
+    task=asyncio.create_task(listener.start())
+    task.cancel()
+    assert listener.handler.assert_called_once
+    assert callable(listener.handler.handle_message)
+
+
+@pytest.mark.asyncio
+async def test_listening(listener, message):
+    listener.handler = PlatformManager.get_handler(listener.platform)
+    task=asyncio.create_task(listener.handler.start())
+    await listener.handler.handle_message(message)
+    msg = listener.handler.get_latest_message()
+    task.cancel()
+    assert msg == message
