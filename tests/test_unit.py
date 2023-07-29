@@ -41,10 +41,12 @@ async def test_listener(listener):
 
 @pytest.mark.asyncio
 async def test_listener_start(listener):
-    
+    with patch.object(
+        PlatformManager,
+        "get_handler") as mock_get_handler:
         handler = AsyncMock()
         handler.start.return_value = asyncio.Future()
-        get_handler.return_value = handler
+        mock_get_handler.return_value = handler
         task=asyncio.run(listener.start())
         task.cancel()
         assert handler.start.assert_awaited_once()
