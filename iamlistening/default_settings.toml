@@ -61,9 +61,9 @@ bot_auth_token = ""
 # It can be ignored. 
 
 [testingtelegram]
-VALUE = "On Testing"
+VALUE = ""
 iamlistening_enabled = true
-chat_platform = "telegram"
+chat_platform = ""
 bot_token = ""
 bot_channel_id = ""
 bot_api_id = ""
