@@ -60,7 +60,7 @@ bot_auth_token = ""
 # for testing purpose.
 # It can be ignored. 
 
-[testing]
+[testingtelegram]
 VALUE = "On Testing"
 iamlistening_enabled = true
 chat_platform = "telegram"
