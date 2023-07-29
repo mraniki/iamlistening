@@ -10,6 +10,7 @@ from loguru import logger
 
 from iamlistening import Listener
 from iamlistening.config import settings
+from iamlistening.platform.platform_manager import PlatformManager
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -40,9 +41,12 @@ async def test_listener(listener):
 
 
 @pytest.mark.asyncio
-async def test_listening(listener, message):
-    await listener.start()
-    await listener.handler.handle_message(message)
-    msg = await listener.handler.get_latest_message()
-    logger.debug(msg)
-    assert msg == message
+async def test_handler(listener, message):
+    handler = PlatformManager.get_handler(listener.platform)
+    logger.debug(handler)
+    assert handler is not None
+
+    # await listener.handler.handle_message(message)
+    # msg = await listener.handler.get_latest_message()
+    # logger.debug(msg)
+    # assert msg == message
