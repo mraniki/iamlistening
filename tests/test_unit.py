@@ -42,17 +42,11 @@ async def test_listener(listener):
 
 
 @pytest.mark.asyncio
-async def test_handler():
+async def test_handler(listener):
     listener = Listener()
-    start = AsyncMock()
-    get_handler = AsyncMock()
-    with patch(
-    'listener.handler.start',
-    start):
-        await listener.start()
-        get_handler.assert_called_once
-        assert listener.handler is not None
-        assert listener.handler.get_latest_message() is not None
+    await listener.start()
+    assert listener.handler is not None
+    assert listener.handler.get_latest_message() is not None
 
 
 @pytest.mark.asyncio
