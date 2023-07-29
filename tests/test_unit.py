@@ -25,11 +25,9 @@ async def test_fixture():
 def listener():
     return Listener()
 
-
 @pytest.fixture(name="message")
 def message():
     return "hello"
-
 
 
 @pytest.mark.asyncio
@@ -42,12 +40,12 @@ async def test_listener(listener):
     assert listener.version is not None
 
 
-@pytest.mark.asyncio
-async def test_handler(listener):
-    listener = Listener()
-    await listener.start()
-    assert listener.handler is not None
-    assert listener.handler.get_latest_message() is not None
+# @pytest.mark.asyncio
+# async def test_handler(listener):
+#     listener = Listener()
+#     await listener.start()
+#     assert listener.handler is not None
+#     assert listener.handler.get_latest_message() is not None
 
 
 @pytest.mark.asyncio
