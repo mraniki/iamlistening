@@ -54,7 +54,7 @@ class ChatManager():
         """
         Initialize the chat manager.
         """
-
+        # self.bot = None
         self.latest_message = None
         self.lock = asyncio.Lock()
 

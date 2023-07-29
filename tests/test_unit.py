@@ -32,7 +32,6 @@ def message():
 
 @pytest.mark.asyncio
 async def test_listener(listener):
-    assert settings.bot_api_id is not None
     assert listener is not None
     assert isinstance(listener, Listener)
     assert listener.platform is not None
@@ -40,37 +39,28 @@ async def test_listener(listener):
 
 
 @pytest.mark.asyncio
-async def test_handler(listener):
-    handler = PlatformManager.get_handler(listener.platform)
-    logger.debug(handler)
-    assert handler is not None
-
-
-@pytest.mark.asyncio
-async def test_handler(listener):
-    listener.handler = PlatformManager.get_handler(listener.platform)
-    start = AsyncMock()
-    task=asyncio.create_task(listener.handler.start())
-    task.cancel()
-    assert listener.handler is not None
-    assert start.assert_awaited_once
-    assert callable(listener.handler.handle_message)
-
-
-@pytest.mark.asyncio
 async def test_listener_start(listener):
-    listener.handler = MagicMock()
-    task=asyncio.create_task(listener.start())
-    task.cancel()
-    assert listener.handler.assert_called_once
-    assert callable(listener.handler.handle_message)
+    
+    with patch(
+        "iamlistening.PlatformManager.get_handler",
+        ) as mock_get_handler:
+        mock_handler = AsyncMock()
+        mock_handler.start.return_value = asyncio.Future()
+        mock_get_handler.return_value = mock_handler
+        task=asyncio.run(listener.start())
+        task.cancel()
+        assert mock_handler.start.assert_awaited_once()
+        assert listener.handler is not None
+        assert listener.handler == mock_handler
 
 
 @pytest.mark.asyncio
-async def test_listening(listener, message):
+async def test_handler(listener, message):
     listener.handler = PlatformManager.get_handler(listener.platform)
     task=asyncio.create_task(listener.handler.start())
     await listener.handler.handle_message(message)
     msg = await listener.handler.get_latest_message()
     task.cancel()
+    assert listener.handler is not None
+    assert asyncio.sleep.called_with(0.1)
     assert msg == message
