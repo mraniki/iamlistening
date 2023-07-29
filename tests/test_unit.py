@@ -31,6 +31,7 @@ def message():
     return "hello"
 
 
+
 @pytest.mark.asyncio
 async def test_listener(listener):
     logger.debug(settings.bot_api_id)
