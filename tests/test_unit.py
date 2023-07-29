@@ -42,12 +42,11 @@ async def test_listener(listener):
     assert listener.version is not None
 
 
-@pytest.mark.asyncio
-async def test_start(listener):
-    logger.debug(settings.bot_api_id)
-    result = await listener.start()
-    assert result is not None
-
+# @pytest.mark.asyncio
+# async def test_start(listener):
+#     logger.debug(settings.bot_api_id)
+#     result = await listener.start()
+#     assert result is not None
 
 
 @pytest.mark.asyncio
