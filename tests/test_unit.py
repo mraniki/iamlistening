@@ -71,6 +71,6 @@ async def test_listening(listener, message):
     listener.handler = PlatformManager.get_handler(listener.platform)
     task=asyncio.create_task(listener.handler.start())
     await listener.handler.handle_message(message)
-    msg = listener.handler.get_latest_message()
+    msg = await listener.handler.get_latest_message()
     task.cancel()
     assert msg == message
