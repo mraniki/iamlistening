@@ -42,7 +42,7 @@ async def test_listener(listener):
 async def test_listener_start(listener):
     
     with patch(
-        "PlatformManager.get_handler",
+        "iamlistening.platforms.PlatformManager.get_handler",
         ) as mock_get_handler:
         mock_handler = AsyncMock()
         mock_handler.start.return_value = asyncio.Future()
@@ -56,13 +56,11 @@ async def test_listener_start(listener):
 
 @pytest.mark.asyncio
 async def test_handler(listener, message, caplog):
-    TelegramClient = AsyncMock()
     listener.handler = PlatformManager.get_handler(listener.platform)
     task=asyncio.create_task(listener.handler.start())
     await listener.handler.handle_message(message)
     msg = await listener.handler.get_latest_message()
     task.cancel()
-    assert TelegramClient.assert_awaited_once()
     assert listener.handler is not None
     assert "listener is online" in caplog.text
     assert "Telegram setup" in caplog.text
