@@ -8,7 +8,6 @@ from unittest.mock import AsyncMock, patch
 import pytest
 from loguru import logger
 
-#from telethon import TelegramClient, errors
 from iamlistening import Listener
 from iamlistening.config import settings
 
@@ -38,14 +37,6 @@ async def test_listener(listener):
     assert isinstance(listener, Listener)
     assert listener.platform is not None
     assert listener.version is not None
-
-
-# @pytest.mark.asyncio
-# async def test_handler(listener):
-#     listener = Listener()
-#     await listener.start()
-#     assert listener.handler is not None
-#     assert listener.handler.get_latest_message() is not None
 
 
 @pytest.mark.asyncio
