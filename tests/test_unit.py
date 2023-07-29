@@ -49,7 +49,7 @@ async def test_handler():
     with patch(
     'listener.handler.start',
     start):
-        listener.start()
+        await listener.start()
         get_handler.assert_called_once
         assert listener.handler is not None
         assert listener.handler.get_latest_message() is not None
@@ -57,7 +57,7 @@ async def test_handler():
 
 @pytest.mark.asyncio
 async def test_listening(listener, message):
-    listener.start()
+    await listener.start()
     await listener.handler.handle_message(message)
     msg = await listener.handler.get_latest_message()
     logger.debug(msg)
