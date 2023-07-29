@@ -4,9 +4,12 @@
 import os
 
 from dynaconf import Dynaconf
+from loguru import logger
 
 # Define the root path of the project
 ROOT = os.path.dirname(__file__)
+logger.debug(ROOT)
+logger.debug(os.path.dirname(ROOT))
 
 # Load the default settings file
 settings = Dynaconf(
