@@ -47,7 +47,7 @@ async def test_listener_start(listener):
         handler = AsyncMock()
         handler.start.return_value = asyncio.Future()
         mock_get_handler.return_value = handler
-        task=asyncio.run(listener.start())
+        task=asyncio.create_task(listener.start())
         task.cancel()
         assert handler.start.assert_awaited_once()
         assert listener.handler is not None
