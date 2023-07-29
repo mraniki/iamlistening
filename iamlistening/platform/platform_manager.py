@@ -11,7 +11,6 @@ class PlatformManager:
         Get platform handler.
         
 
-
         """
 
         handler = None

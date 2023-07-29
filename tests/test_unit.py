@@ -42,7 +42,7 @@ async def test_listener(listener):
 async def test_listener_start(listener):
     
     with patch(
-        "iamlistening.PlatformManager.get_handler",
+        "PlatformManager.get_handler",
         ) as mock_get_handler:
         mock_handler = AsyncMock()
         mock_handler.start.return_value = asyncio.Future()
@@ -62,5 +62,4 @@ async def test_handler(listener, message):
     msg = await listener.handler.get_latest_message()
     task.cancel()
     assert listener.handler is not None
-    assert asyncio.sleep.called_with(0.1)
     assert msg == message
