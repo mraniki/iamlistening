@@ -27,6 +27,6 @@ settings = Dynaconf(
     load_dotenv=True,
     # Set the environments to True
     environments=True,
-    merge_enabled=True,
+    #merge_enabled=True,
     # Set the default environment
     default_env="default",)
