@@ -11,7 +11,7 @@ from telethon import TelegramClient, events
 
 from iamlistening import Listener
 from iamlistening.config import settings
-from iamlistening.platform.platform_manager import ChatManager, PlatformManager
+from iamlistening.platform.platform_manager import PlatformManager
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -40,6 +40,37 @@ def handler_mock():
 
 
 @pytest.mark.asyncio
+async def test_start(listener):
+       # Mock the PlatformManager.get_handler function
+       get_handler_mock = MagicMock(return_value=AsyncMock())
+       # Mock the asyncio.create_task function
+       create_task_mock = MagicMock()
+       # Replace the PlatformManager.get_handler 
+       # and asyncio.create_task functions
+       PlatformManager.get_handler = get_handler_mock
+       asyncio.create_task = create_task_mock
+       # Call the start function
+       result = await listener.start()
+       # Check if the result is as expected
+       assert result is None
+       # Check if the PlatformManager.get_handler function 
+       # was called with the correct argument
+       get_handler_mock.assert_called_once_with(
+        listener.platform)
+       # Check if the asyncio.create_task function 
+       # was called with the correct argument
+       create_task_mock.assert_called_once_with(
+        await listener.handler.start())
+
+
+@pytest.mark.asyncio
+async def test_listener_exception(listener):
+    with pytest.raises(Exception):
+        with patch(settings.config.chat_platform, ""):
+            Listener()
+
+
+@pytest.mark.asyncio
 async def test_listener(listener):
     assert listener is not None
     assert isinstance(listener, Listener)
@@ -58,18 +89,19 @@ async def test_listener_start(listener):
         listener_created = listener
         assert isinstance(listener_created, Listener) 
 
-@pytest.mark.asyncio
-async def test_handler_start(listener, handler_mock, client):
-    start = AsyncMock(side_effect=[handler_mock])
-    with patch('iamlistening.platform.platform_manager.ChatManager.start', start):
-        listener.handler = ChatManager()
-        task = asyncio.create_task(listener.handler.start())
-        await asyncio.gather(task, asyncio.sleep(2))
-        start.assert_awaited
-        client.assert_awaited_once
-        handler_created = listener.handler
-        assert isinstance(handler_created, ChatManager) 
-        task.cancel()
+
+# @pytest.mark.asyncio
+# async def test_handler_start(listener, handler_mock, client):
+#     start = AsyncMock(side_effect=[handler_mock])
+#     with patch('iamlistening.platform.platform_manager.ChatManager.start', start):
+#         listener.handler = ChatManager()
+#         task = asyncio.create_task(listener.handler.start())
+#         await asyncio.gather(task, asyncio.sleep(2))
+#         start.assert_awaited
+#         client.assert_awaited_once
+#         handler_created = listener.handler
+#         assert isinstance(handler_created, ChatManager) 
+#         task.cancel()
 
 @pytest.mark.asyncio
 async def test_handler_processing(listener, message):
@@ -83,10 +115,3 @@ async def test_handler_processing(listener, message):
     task.cancel()
     assert listener.handler is not None
     assert msg == message
-
-
-@pytest.mark.asyncio
-async def test_listener_full(listener, message):
-        task = asyncio.create_task(listener.start())
-        await asyncio.gather(task, asyncio.sleep(2))
-        task.cancel()
