@@ -18,6 +18,17 @@ from iamlistening.platform.platform_manager import ChatManager, PlatformManager
 def set_test_settings():
     settings.configure(FORCE_ENV_FOR_DYNACONF="testingtelegram")
 
+@pytest.fixture(name="client")
+def client():
+    TelegramClient = AsyncMock()
+    return TelegramClient
+
+@pytest.fixture(name="handler_mock")
+def handler_mock():
+    TelegramHandler = AsyncMock()
+    return TelegramHandler
+
+
 @pytest.mark.asyncio 
 async def test_fixture():
     assert settings.VALUE == "On Testing"
@@ -51,17 +62,17 @@ async def test_listener_start(listener):
         assert isinstance(listener_created, Listener) 
 
 @pytest.mark.asyncio
-async def test_handler_start(listener):
-    TelegramClient = AsyncMock()
-    TelegramHandler = AsyncMock()
-    start = AsyncMock(side_effect=[TelegramHandler])
+async def test_handler_start(listener, handler_mock, client):
+    # TelegramClient = AsyncMock()
+    # TelegramHandler = AsyncMock()
+    start = AsyncMock(side_effect=[handler_mock])
     with patch('iamlistening.platform.platform_manager.ChatManager.start', start):
         listener.handler = ChatManager()
         task = asyncio.create_task(listener.handler.start())
         await asyncio.gather(task, asyncio.sleep(2))
         task.cancel()
         start.assert_awaited
-        TelegramClient.assert_awaited_once
+        client.assert_awaited_once
         handler_created = listener.handler
         assert isinstance(handler_created, ChatManager) 
 
