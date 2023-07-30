@@ -25,4 +25,3 @@ class TinodeHandler(ChatManager):
         Start the Tinode handler.
         """
         logger.debug("Tinode setup")
-        pass
