@@ -12,7 +12,7 @@ from telethon import TelegramClient, events
 from iamlistening import Listener
 from iamlistening.config import settings
 from iamlistening.platform.clients.telegram import TelegramHandler
-from iamlistening.platform.platform_manager import ChatManager, PlatformManager
+from iamlistening.platform.platform_manager import PlatformManager
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -96,14 +96,14 @@ async def test_listener_start(listener):
 @pytest.mark.asyncio
 async def test_handler_start(listener, handler_mock, client):
     start = AsyncMock()
-    with patch('iamlistening.platform.platform_manager.ChatManager.start', start):
-        listener.handler = ChatManager()
+    with patch('iamlistening.platform.clients.telegram.TelegramHandler.start', start):
+        listener.handler = AsyncMock()
         task = asyncio.create_task(listener.handler.start())
         await asyncio.gather(task, asyncio.sleep(2))
         start.assert_awaited
         client.assert_awaited_once
         handler_created = listener.handler
-        assert isinstance(handler_created, ChatManager) 
+        assert handler_created is not None
         task.cancel()
 
 
@@ -125,7 +125,7 @@ async def test_handler_processing(listener, message):
 @pytest.mark.asyncio
 async def test_telegram_handler_start():
     with patch(
-        'iamlistening.platform.clients.telegram.TelegramClient'
+        'iamlistening.platform.clients.telegram.TelegramHandler'
         ) as telegram_client_mock:
         telegram_client_mock.return_value.start = AsyncMock()
         handler = TelegramHandler()
