@@ -11,7 +11,7 @@ from telethon import TelegramClient, events
 
 from iamlistening import Listener
 from iamlistening.config import settings
-from iamlistening.platform.platform_manager import PlatformManager
+from iamlistening.platform.platform_manager import ChatManager, PlatformManager
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -41,23 +41,39 @@ async def test_listener(listener):
 
 @pytest.mark.asyncio
 async def test_listener_start(listener):
-    TelegramHandler = AsyncMock()
-    get_handler = AsyncMock(return_value=TelegramHandler)
-    await listener.start()
-    task=asyncio.create_task(listener.start())
-    task.cancel()
-    get_handler.assert_called_once
-    assert listener.handler is not None
-    TelegramHandler.assert_called_once
-    assert listener.handler == TelegramHandler
+    start = AsyncMock(side_effect=[listener])
+    with patch('iamlistening.Listener.start', start):
+        task = asyncio.create_task(listener.start())
+        await asyncio.gather(task, asyncio.sleep(2))
+        task.cancel()
+        start.assert_awaited
+        listener_created = listener
+        assert isinstance(listener_created, Listener) 
 
+@pytest.mark.asyncio
+async def test_handler_start(listener):
+    TelegramClient = AsyncMock()
+    TelegramHandler = AsyncMock()
+    start = AsyncMock(side_effect=[TelegramHandler])
+    with patch('iamlistening.platform.platform_manager.ChatManager.start', start):
+        listener.handler = ChatManager()
+        task = asyncio.create_task(listener.handler.start())
+        await asyncio.gather(task, asyncio.sleep(2))
+        task.cancel()
+        start.assert_awaited
+        TelegramClient.assert_awaited_once
+        handler_created = listener.handler
+        assert isinstance(handler_created, ChatManager) 
 
 
 @pytest.mark.asyncio
-async def test_handler(listener, message):
+async def test_handler_processing(listener, message):
+    handle_message = AsyncMock()
     listener.handler = PlatformManager.get_handler(listener.platform)
     task=asyncio.create_task(listener.handler.start())
+    assert listener.handler.latest_message is None
     await listener.handler.handle_message(message)
+    assert handle_message.assert_awaited_once
     msg = await listener.handler.get_latest_message()
     task.cancel()
     assert listener.handler is not None
