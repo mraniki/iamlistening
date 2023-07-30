@@ -69,28 +69,26 @@ async def test_listener(listener):
     assert listener.version is not None
 
 
-@pytest.mark.asyncio
-async def test_listener_start(listener):
-    start = AsyncMock(side_effect=[listener])
-    with patch('iamlistening.Listener.start', start):
-        task = asyncio.create_task(listener.start())
-        await asyncio.gather(task, asyncio.sleep(2))
-        task.cancel()
-        start.assert_awaited
-        listener_created = listener
-        assert isinstance(listener_created, Listener) 
-
+# @pytest.mark.asyncio
+# async def test_listener_start(listener):
+#     start = AsyncMock(side_effect=[listener])
+#     with patch('iamlistening.Listener.start', start):
+#         task = asyncio.create_task(listener.start())
+#         await asyncio.gather(task, asyncio.sleep(2))
+#         task.cancel()
+#         start.assert_awaited
+#         listener_created = listener
+#         assert isinstance(listener_created, Listener) 
 
 @pytest.mark.asyncio
 async def test_listener_start(listener):
     start = AsyncMock()
-    with patch('iamlistening.Listener.start', start):
+    with patch('iamlistening.main.Listener.start', start):
         task = asyncio.create_task(listener.start())
-        await asyncio.gather(task, asyncio.sleep(2))
+        await task
         task.cancel()
-        start.assert_awaited
-        listener_created = listener
-        assert isinstance(listener_created, Listener) 
+        start.assert_awaited_once()
+
 
 
 @pytest.mark.asyncio
@@ -99,7 +97,7 @@ async def test_handler_start(listener, handler_mock, client):
     with patch('iamlistening.platform.clients.telegram.TelegramHandler.start', start):
         listener.handler = AsyncMock()
         task = asyncio.create_task(listener.handler.start())
-        await asyncio.gather(task, asyncio.sleep(2))
+        await task
         start.assert_awaited
         client.assert_awaited_once
         handler_created = listener.handler
