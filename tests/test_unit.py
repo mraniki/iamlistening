@@ -82,8 +82,10 @@ async def test_listener(listener):
 
 @pytest.mark.asyncio
 async def test_listener_start(listener):
-    start = asyncio.coroutine(AsyncMock())
-    with patch('iamlistening.main.Listener.start', start):
+    async def start():
+        pass
+
+    with patch('iamlistening.main.Listener.start', AsyncMock(wraps=start)):
         task = asyncio.create_task(listener.start())
         await task
         task.cancel()
@@ -93,7 +95,7 @@ async def test_listener_start(listener):
 
 @pytest.mark.asyncio
 async def test_handler_start(listener, handler_mock, client):
-    start = asyncio.coroutine(AsyncMock())
+    start = AsyncMock()
     with patch('iamlistening.platform.clients.telegram.TelegramHandler.start', start):
         listener.handler = AsyncMock()
         task = asyncio.create_task(listener.handler.start())
