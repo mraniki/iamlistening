@@ -33,12 +33,15 @@ class TelegramHandler(ChatManager):
                     settings.bot_api_hash
                     ).start(bot_token=settings.bot_token)
         logger.info("listener is online")
-
-        @self.bot.on(events.NewMessage())
-        async def telethon(event):
-            """
-            Handle new messages
-            """
-            await self.handle_message(event.message.message)
-
+        self.bot.add_event_handler(
+            self.handle_telegram_message,
+            events.NewMessage)
         await self.bot.run_until_disconnected()
+
+    async def handle_telegram_message(self, event):
+        """
+        Handle new messages
+        """
+        await self.handle_message(event.message.message)
+
+ 
