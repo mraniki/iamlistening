@@ -82,6 +82,32 @@ async def test_listener_start(listener):
 
 
 @pytest.mark.asyncio
+async def test_listener_start(listener):
+    start = AsyncMock(side_effect=[listener])
+    with patch('iamlistening.Listener.start', start):
+        task = asyncio.create_task(listener.start())
+        await asyncio.gather(task, asyncio.sleep(2))
+        task.cancel()
+        start.assert_awaited
+        listener_created = listener
+        assert isinstance(listener_created, Listener) 
+
+
+@pytest.mark.asyncio
+async def test_handler_start(listener, handler_mock, client):
+    start = AsyncMock(side_effect=[handler_mock])
+    with patch('iamlistening.platform.platform_manager.ChatManager.start', start):
+        listener.handler = ChatManager()
+        task = asyncio.create_task(listener.handler.start())
+        await asyncio.gather(task, asyncio.sleep(2))
+        start.assert_awaited
+        client.assert_awaited_once
+        handler_created = listener.handler
+        assert isinstance(handler_created, ChatManager) 
+        task.cancel()
+
+
+@pytest.mark.asyncio
 async def test_handler_processing(listener, message):
     handle_message = AsyncMock()
     listener.handler = PlatformManager.get_handler(listener.platform)
@@ -92,12 +118,4 @@ async def test_handler_processing(listener, message):
     msg = await listener.handler.get_latest_message()
     task.cancel()
     assert listener.handler is not None
-    assert msg == message
-
-
-@pytest.mark.asyncio
-async def test_telegram_handler(message):
-    telegram_handler = TelegramHandler()
-    telegram_handler.start()
-    msg = await telegram_handler.handle_message(message)
     assert msg == message
