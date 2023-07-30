@@ -83,7 +83,7 @@ async def test_listener_start(listener):
 
 @pytest.mark.asyncio
 async def test_listener_start(listener):
-    start = AsyncMock(side_effect=[listener])
+    start = AsyncMock()
     with patch('iamlistening.Listener.start', start):
         task = asyncio.create_task(listener.start())
         await asyncio.gather(task, asyncio.sleep(2))
@@ -95,7 +95,7 @@ async def test_listener_start(listener):
 
 @pytest.mark.asyncio
 async def test_handler_start(listener, handler_mock, client):
-    start = AsyncMock(side_effect=[handler_mock])
+    start = AsyncMock()
     with patch('iamlistening.platform.platform_manager.ChatManager.start', start):
         listener.handler = ChatManager()
         task = asyncio.create_task(listener.handler.start())
