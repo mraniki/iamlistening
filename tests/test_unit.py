@@ -11,8 +11,9 @@ from telethon import TelegramClient, events
 
 from iamlistening import Listener
 from iamlistening.config import settings
-from iamlistening.platform.platform_manager import PlatformManager
 from iamlistening.platform.clients.telegram import TelegramHandler
+from iamlistening.platform.platform_manager import ChatManager, PlatformManager
+
 
 @pytest.fixture(scope="session", autouse=True)
 def set_test_settings():
@@ -41,24 +42,14 @@ def handler_mock():
 
 @pytest.mark.asyncio
 async def test_start(listener):
-       # Mock the PlatformManager.get_handler function
        get_handler_mock = MagicMock(return_value=AsyncMock())
-       # Mock the asyncio.create_task function
-       create_task_mock = AsyncMock()
-       # Replace the PlatformManager.get_handler 
-       # and asyncio.create_task functions
+       create_task_mock = MagicMock()
        PlatformManager.get_handler = get_handler_mock
        asyncio.create_task = create_task_mock
-       # Call the start function
        result = await listener.start()
-       # Check if the result is as expected
        assert result is None
-       # Check if the PlatformManager.get_handler function 
-       # was called with the correct argument
        get_handler_mock.assert_called_once_with(
         listener.platform)
-       # Check if the asyncio.create_task function 
-       # was called with the correct argument
        create_task_mock.assert_called_once_with(
         await listener.handler.start())
 
