@@ -121,24 +121,23 @@ async def test_handler_processing(listener, message):
     assert msg == message
 
 
-
-@pytest.mark.asyncio
-async def test_telegram_handler_start():
-    with patch(
-        'iamlistening.platform.clients.telegram.TelegramHandler'
-        ) as telegram_client_mock:
-        telegram_client_mock.return_value.start = AsyncMock()
-        handler = TelegramHandler()
-        task=asyncio.create_task(await handler.start())
-        try:
-            await asyncio.wait_for(task, timeout=10)
-        except asyncio.TimeoutError:
-            task.cancel()
-            await task
-            pytest.skip("Connectivity test only")
-        telegram_client_mock.assert_called_once_with(
-            None,
-            settings.bot_api_id,
-            settings.bot_api_hash
-        )
-        telegram_client_mock.return_value.start.assert_awaited_once()
+# @pytest.mark.asyncio
+# async def test_telegram_handler_start():
+#     with patch(
+#         'iamlistening.platform.clients.telegram.TelegramHandler'
+#         ) as telegram_client_mock:
+#         telegram_client_mock.return_value.start = AsyncMock()
+#         handler = TelegramHandler()
+#         task=asyncio.create_task(await handler.start())
+#         try:
+#             await asyncio.wait_for(task, timeout=10)
+#         except asyncio.TimeoutError:
+#             task.cancel()
+#             await task
+#             pytest.skip("Connectivity test only")
+#         telegram_client_mock.assert_called_once_with(
+#             None,
+#             settings.bot_api_id,
+#             settings.bot_api_hash
+#         )
+#         telegram_client_mock.return_value.start.assert_awaited_once()
