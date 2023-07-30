@@ -41,15 +41,16 @@ async def test_listener(listener):
 
 @pytest.mark.asyncio
 async def test_listener_start(listener):
-    with patch.object(
-        PlatformManager,
-        "get_handler") as mock_get_handler:
-        handler = AsyncMock()
-        handler.start.return_value = asyncio.Future()
-        mock_get_handler.return_value = handler
-        task=asyncio.create_task(listener.start())
-        task.cancel()
-        assert listener.handler is not None
+    TelegramHandler = AsyncMock()
+    get_handler = AsyncMock(return_value=TelegramHandler)
+    await listener.start()
+    task=asyncio.create_task(listener.start())
+    task.cancel()
+    get_handler.assert_called_once
+    assert listener.handler is not None
+    TelegramHandler.assert_called_once
+    assert listener.handler == TelegramHandler
+
 
 
 @pytest.mark.asyncio
