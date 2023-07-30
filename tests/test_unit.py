@@ -107,6 +107,6 @@ async def test_handler_processing(listener, message):
 @pytest.mark.asyncio
 async def test_telegram_handler(message):
     telegram_handler = TelegramHandler()
-    telegram_handler.start():
+    telegram_handler.start()
     msg = await telegram_handler.handle_message(message)
     assert msg == message
