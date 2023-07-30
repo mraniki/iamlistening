@@ -18,15 +18,6 @@ from iamlistening.platform.platform_manager import ChatManager, PlatformManager
 def set_test_settings():
     settings.configure(FORCE_ENV_FOR_DYNACONF="testingtelegram")
 
-@pytest.fixture(name="client")
-def client():
-    return AsyncMock()
-
-@pytest.fixture(name="handler_mock")
-def handler_mock():
-    return AsyncMock()
-
-
 @pytest.mark.asyncio 
 async def test_fixture():
     assert settings.VALUE == "On Testing"
@@ -38,6 +29,14 @@ def listener():
 @pytest.fixture(name="message")
 def message():
     return "hello"
+
+@pytest.fixture(name="client")
+def client():
+    return AsyncMock()
+
+@pytest.fixture(name="handler_mock")
+def handler_mock():
+    return AsyncMock()
 
 
 @pytest.mark.asyncio
@@ -61,8 +60,6 @@ async def test_listener_start(listener):
 
 @pytest.mark.asyncio
 async def test_handler_start(listener, handler_mock, client):
-    # TelegramClient = AsyncMock()
-    # TelegramHandler = AsyncMock()
     start = AsyncMock(side_effect=[handler_mock])
     with patch('iamlistening.platform.platform_manager.ChatManager.start', start):
         listener.handler = ChatManager()
