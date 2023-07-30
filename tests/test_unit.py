@@ -20,13 +20,11 @@ def set_test_settings():
 
 @pytest.fixture(name="client")
 def client():
-    TelegramClient = AsyncMock()
-    return TelegramClient
+    return AsyncMock()
 
 @pytest.fixture(name="handler_mock")
 def handler_mock():
-    TelegramHandler = AsyncMock()
-    return TelegramHandler
+    return AsyncMock()
 
 
 @pytest.mark.asyncio 
