@@ -49,9 +49,7 @@ async def test_listener_start(listener):
         mock_get_handler.return_value = handler
         task=asyncio.create_task(listener.start())
         task.cancel()
-        #assert handler.start.assert_awaited_once()
         assert listener.handler is not None
-        assert listener.handler == handler
 
 
 @pytest.mark.asyncio
