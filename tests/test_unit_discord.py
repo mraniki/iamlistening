@@ -1,5 +1,5 @@
 """
-iamlistening Unit Testing
+Discord Unit Testing
 """
 
 import asyncio
@@ -16,10 +16,10 @@ from iamlistening.platform.platform_manager import ChatManager, PlatformManager
 def set_test_settings():
     settings.configure(FORCE_ENV_FOR_DYNACONF="testingdiscord")
 
-
 @pytest.mark.asyncio
 async def test_fixture():
     assert settings.VALUE == "On Testing Discord"
+
 
 @pytest.fixture(name="listener")
 def listener():
