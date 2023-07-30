@@ -26,9 +26,6 @@ class PlatformManager:
         elif platform == "discord":
             from .clients.discord import DiscordHandler
             handler = DiscordHandler()
-        elif platform == "rocket_chat":
-            from .clients.rocket_chat import RocketChatHandler
-            handler = RocketChatHandler()
         elif platform == "guilded":
             from .clients.guilded import GuildedHandler
             handler = GuildedHandler()
@@ -38,9 +35,6 @@ class PlatformManager:
         elif platform == "revolt":
             from .clients.revolt import RevoltHandler
             handler = RevoltHandler()
-        elif platform == "tinode":
-            from .clients.tinode import TinodeHandler
-            handler = TinodeHandler()
         else:
             from .clients.telegram import TelegramHandler
             handler = TelegramHandler()
