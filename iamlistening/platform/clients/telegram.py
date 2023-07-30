@@ -27,18 +27,18 @@ class TelegramHandler(ChatManager):
         """
 
         logger.debug("Telegram setup")
-        bot = await TelegramClient(
+        self.bot = await TelegramClient(
                     None,
                     settings.bot_api_id,
                     settings.bot_api_hash
                     ).start(bot_token=settings.bot_token)
         logger.info("listener is online")
 
-        @bot.on(events.NewMessage())
+        @self.bot.on(events.NewMessage())
         async def telethon(event):
             """
             Handle new messages
             """
             await self.handle_message(event.message.message)
 
-        await bot.run_until_disconnected()
+        await self.bot.run_until_disconnected()

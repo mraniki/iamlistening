@@ -29,14 +29,14 @@ class DiscordHandler(ChatManager):
         logger.debug("Discord setup")
         intents = discord.Intents.default()
         intents.message_content = True
-        bot = discord.Bot(intents=intents)
+        self.bot = discord.Bot(intents=intents)
 
-        @bot.event
+        @self.bot.event
         async def on_ready():
             logger.info("listener is online")
 
-        @bot.event
+        @self.bot.event
         async def on_message(message: discord.Message):
             await self.handle_message(message.content)
     
-        await bot.start(settings.bot_token)
+        await self.bot.start(settings.bot_token)

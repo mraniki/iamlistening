@@ -3,6 +3,7 @@ Revolt  🇷
 """
 import asyncio
 
+import aiohttp
 import revolt
 from loguru import logger
 
@@ -23,14 +24,15 @@ class RevoltHandler(ChatManager):
         Start the Revolt handler.
         """
         logger.debug("Revolt setup")
-        client = revolt.Client(revolt.utils.client_session(), settings.bot_token)
-        await client.start()
+        self.bot = revolt.Client(revolt.utils.client_session(), settings.bot_token)
+        logger.debug(self.bot.api_info)
+        await self.bot.start()
 
-        @client.event
-        async def on_ready():
-            logger.info("listener is online")
+        # @self.bot.event
+        # async def on_ready():
+        #     logger.info("listener is online")
 
-        @client.event
+        @self.bot.event
         async def on_message(self, message: revolt.Message):
             await self.handle_message(message.content)
 

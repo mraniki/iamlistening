@@ -19,7 +19,7 @@ class MastodonHandler(ChatManager):
         """
         super().__init__()
         logger.debug("Mastodon setup")
-        self.client = Mastodon(
+        self.bot = Mastodon(
             api_base_url= settings.bot_hostname,
             access_token = settings.bot_auth_token)
 
@@ -28,7 +28,7 @@ class MastodonHandler(ChatManager):
         Start the Mastodon handler.
         """
         logger.info("listener is online")
-        self.streamer = self.client.stream_public(
+        self.streamer = self.bot.stream_public(
             MastoListener(self.broadcast_message),
             run_async=True)
 

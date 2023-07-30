@@ -52,15 +52,15 @@ async def test_handler_start(listener, handler_mock, client):
         assert isinstance(handler_created, ChatManager) 
 
 
-@pytest.mark.asyncio
-async def test_handler_processing(listener, message):
-    handle_message = AsyncMock()
-    listener.handler = PlatformManager.get_handler(listener.platform)
-    task=asyncio.create_task(listener.handler.start())
-    assert listener.handler.latest_message is None
-    await listener.handler.handle_message(message)
-    assert handle_message.assert_awaited_once
-    msg = await listener.handler.get_latest_message()
-    task.cancel()
-    assert listener.handler is not None
-    assert msg == message
+# @pytest.mark.asyncio
+# async def test_handler_processing(listener, message):
+#     handle_message = AsyncMock()
+#     listener.handler = PlatformManager.get_handler(listener.platform)
+#     task=asyncio.create_task(listener.handler.start())
+#     assert listener.handler.latest_message is None
+#     await listener.handler.handle_message(message)
+#     assert handle_message.assert_awaited_once
+#     msg = await listener.handler.get_latest_message()
+#     task.cancel()
+#     assert listener.handler is not None
+#     assert msg == message

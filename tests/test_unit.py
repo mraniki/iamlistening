@@ -65,12 +65,11 @@ async def test_handler_start(listener, handler_mock, client):
         listener.handler = ChatManager()
         task = asyncio.create_task(listener.handler.start())
         await asyncio.gather(task, asyncio.sleep(2))
-        task.cancel()
         start.assert_awaited
         client.assert_awaited_once
         handler_created = listener.handler
         assert isinstance(handler_created, ChatManager) 
-
+        task.cancel()
 
 @pytest.mark.asyncio
 async def test_handler_processing(listener, message):
@@ -84,3 +83,10 @@ async def test_handler_processing(listener, message):
     task.cancel()
     assert listener.handler is not None
     assert msg == message
+
+
+@pytest.mark.asyncio
+async def test_listener_full(listener, message):
+        task = asyncio.create_task(listener.start())
+        await asyncio.gather(task, asyncio.sleep(2))
+        task.cancel()

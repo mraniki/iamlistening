@@ -25,10 +25,10 @@
 #         Start the RocketChat handler.
 #         """
 #         self.logger.debug("RocketChat setup")
-#         bot = RocketChat(
+#         self.bot = RocketChat(
 #             user_id=settings.bot_user, 
 #             auth_token=settings.bot_auth_token, 
 #             server_url=settings.bot_hostname
 #             )
-#         info = bot.info()
+#         info = self.bot.info()
 #         self.logger.debug(info)

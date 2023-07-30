@@ -23,14 +23,14 @@ class GuildedHandler(ChatManager):
         Start the Guilded handler.
         """
         logger.debug("Guilded setup")
-        client = guilded.Client()
+        self.bot = guilded.Client()
 
-        @client.event
+        @self.bot.event
         async def on_ready():
             logger.info("listener is online")
 
-        @client.event
+        @self.bot.event
         async def on_message(message):
             await self.handle_message(message.content)
 
-        client.run(settings.bot_token)
+        self.bot.run(settings.bot_token)
