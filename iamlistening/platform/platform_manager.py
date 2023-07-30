@@ -10,6 +10,11 @@ class PlatformManager:
         """
         Get platform handler.
         
+        Args:
+            platform (str): The platform to use
+
+        Returns:
+            PlatformHandler
 
         """
 
@@ -53,7 +58,6 @@ class ChatManager():
         """
         Initialize the chat manager.
         """
-        # self.bot = None
         self.latest_message = None
         self.lock = asyncio.Lock()
 
@@ -68,6 +72,9 @@ class ChatManager():
     async def get_latest_message(self):
         """
         Return the latest message.
+
+        Args:
+            None
 
         Returns:
             str: The latest message.
