@@ -5,7 +5,6 @@ import os
 
 from dynaconf import Dynaconf
 
-
 # Define the root path of the project
 ROOT = os.path.dirname(__file__)
 
