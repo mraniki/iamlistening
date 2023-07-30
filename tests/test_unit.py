@@ -12,7 +12,7 @@ from telethon import TelegramClient, events
 from iamlistening import Listener
 from iamlistening.config import settings
 from iamlistening.platform.platform_manager import PlatformManager
-
+from iamlistening.platform.clients.telegram import TelegramHandler
 
 @pytest.fixture(scope="session", autouse=True)
 def set_test_settings():
@@ -115,3 +115,12 @@ async def test_handler_processing(listener, message):
     task.cancel()
     assert listener.handler is not None
     assert msg == message
+
+
+@pytest.mark.asyncio
+async def test_telegram_handler(message):
+    telegram_handler = TelegramHandler()
+    loop = asyncio.get_event_loop()
+    async with telegram_handler.start():
+        msg = await telegram_handler.handle_message(message)
+        assert msg == message
