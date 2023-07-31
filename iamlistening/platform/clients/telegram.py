@@ -19,7 +19,7 @@ class TelegramHandler(ChatManager):
 
         """
         super().__init__()
-
+ 
     async def start(self):
         """
         Start the Telegram handler
