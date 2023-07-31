@@ -33,9 +33,9 @@ class PlatformManager:
         elif platform == "mastodon":
             from .clients.mastodon import MastodonHandler
             handler = MastodonHandler()
-        elif platform == "revolt":
-            from .clients.revolt import RevoltHandler
-            handler = RevoltHandler()
+        # elif platform == "revolt":
+        #     from .clients.revolt import RevoltHandler
+        #     handler = RevoltHandler()
 
         return handler
 
