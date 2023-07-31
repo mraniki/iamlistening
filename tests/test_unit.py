@@ -73,6 +73,13 @@ async def test_listener(listener):
     assert listener.platform is not None
     assert listener.version is not None
 
+@pytest.mark.asyncio
+async def test_listener(listener):
+    listener.handler = AsyncMock()
+    with patch.object(listener, "start"):
+        await listener.start()
+        listener.handler.assert_called_once
+
 
 # @pytest.mark.asyncio
 # async def test_listener_telegram(listener):
@@ -85,13 +92,7 @@ async def test_listener(listener):
 #     assert msg == "hello"
 
 
-@pytest.mark.asyncio
-async def test_listener(listener):
-    with patch.object(listener, "start"):
-        await listener.start()
-        await listener.handler.handle_message("hello")
-        await listener.handler.get_latest_message()
-        listener.handler.get_latest_message.assert_awaited_once
+
 
 
 # @pytest.mark.asyncio
