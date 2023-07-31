@@ -28,7 +28,3 @@ async def test_listener_exception():
     with pytest.raises(Exception, match="Platform missing"):
         Listener()   
 
-def test_get_handler_with_unknown_platform():
-    with pytest.raises(Exception, match="Platform not supported"):
-        PlatformManager.get_handler()
-

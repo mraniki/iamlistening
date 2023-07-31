@@ -17,7 +17,6 @@ class PlatformManager:
             PlatformHandler
 
         """
-
         handler = None
         if platform == "telegram":
             from .clients.telegram import TelegramHandler
@@ -37,9 +36,6 @@ class PlatformManager:
         elif platform == "revolt":
             from .clients.revolt import RevoltHandler
             handler = RevoltHandler()
-
-        if handler is None:
-            raise Exception("Platform not supported")
 
         return handler
 
