@@ -81,6 +81,25 @@ async def test_listener(listener):
         listener.handler.assert_called_once
 
 
+@pytest.mark.asyncio
+async def test_listener(listener):
+    listener.handler = AsyncMock()
+    with patch.object(listener, "platform", return_value=None):
+        with pytest.raises(Exception):
+            await listener.start()
+            listener.handler.assert_called_once
+
+
+# @pytest.mark.asyncio
+# async def test_handler(listener):
+#     PlatformManager = AsyncMock()
+#     PlatformManager.get_handler = MagicMock()
+#     listener.handler = PlatformManager.get_handler(listener.platform)
+#     with patch.object(listener, "start"):
+#         await listener.start()
+#         PlatformManager.get_handler.assert_called_once
+
+
 # @pytest.mark.asyncio
 # async def test_listener_telegram(listener):
 #     assert listener is not None
@@ -90,9 +109,6 @@ async def test_listener(listener):
 #     msg = await listener.handler.get_latest_message()
 #     print(msg)
 #     assert msg == "hello"
-
-
-
 
 
 # @pytest.mark.asyncio
