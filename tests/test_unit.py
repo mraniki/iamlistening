@@ -77,6 +77,8 @@ async def test_handler(listener):
     listener.handler = PlatformManager.get_handler(listener.platform)
     with patch.object(listener, "start"):
         await listener.start()
+        assert listener.handler.bot is not None
+        assert listener.handler.latest_message is not None
         PlatformManager.get_handler.assert_called_once
 
 
