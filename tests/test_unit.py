@@ -13,7 +13,7 @@ import iamlistening
 from iamlistening import Listener
 from iamlistening.config import settings
 from iamlistening.platform.clients.telegram import TelegramHandler
-from iamlistening.platform.platform_manager import PlatformManager
+from iamlistening.platform.platform_manager import ChatManager, PlatformManager
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -77,9 +77,18 @@ async def test_handler(listener):
     listener.handler = PlatformManager.get_handler(listener.platform)
     with patch.object(listener, "start"):
         await listener.start()
-        assert listener.handler.bot is not None
-        assert listener.handler.latest_message is not None
         PlatformManager.get_handler.assert_called_once
+
+
+@pytest.mark.asyncio
+async def test_chat_manager(message):
+    handler = ChatManager()
+    assert handler.bot is None
+    assert handler.latest_message is None
+    assert handler.lock is not None
+    await handler.handle_message(message)
+    msg = await handler.get_latest_message()
+    assert msg == message
 
 
 # @pytest.mark.asyncio

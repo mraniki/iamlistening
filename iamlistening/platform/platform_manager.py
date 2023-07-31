@@ -55,7 +55,6 @@ class ChatManager():
         Start the chat manager.
         Specific to the client platform
         """
-        pass
 
     async def get_latest_message(self):
         """
