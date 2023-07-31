@@ -21,14 +21,12 @@ async def main():
 
     listener = Listener()
     await listener.start()
-    while True:
-        try:
-            msg = await listener.handler.get_latest_message()
-            if msg:
-                logger.info(f"Frasier👂: {msg}")
+    while listener.handler.connected:
+        msg = await listener.handler.get_latest_message()
+        if msg:
+            logger.info(f"Frasier👂: {msg}")
+            await listener.handler.handle_iteration_limit()
 
-        except Exception as error:
-            logger.error(error)
 
 app = FastAPI() 
 
@@ -53,3 +51,4 @@ def health_check():
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8015)
+

@@ -9,8 +9,7 @@ import pytest
 
 from iamlistening import Listener
 from iamlistening.config import settings
-from iamlistening.platform.clients.matrix import MatrixHandler
-from iamlistening.platform.platform_manager import PlatformManager
+from iamlistening.platform.chat_manager import ChatManager
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -23,13 +22,6 @@ async def test_fixture():
     assert settings.VALUE == "On Testing Matrix"
 
 
-@pytest.fixture(name="handler")
-def handler_test():
-    return MatrixHandler()
-
-def test_initialization(handler):
-    assert isinstance(handler, MatrixHandler)
-
 @pytest.fixture(name="listener")
 def listener():
     return Listener()
@@ -37,11 +29,6 @@ def listener():
 @pytest.fixture(name="message")
 def message():
     return "hello"
-
-def test_get_handler(listener):
-    assert listener.platform == "matrix"
-    handler = PlatformManager.get_handler(listener.platform)
-    assert isinstance(handler, MatrixHandler)
 
 
 @pytest.mark.asyncio

@@ -8,7 +8,7 @@ from loguru import logger
 from mastodon import Mastodon, StreamListener
 
 from iamlistening.config import settings
-from iamlistening.platform.platform_manager import ChatManager
+from iamlistening.platform.chat_manager import ChatManager
 
 
 class MastodonHandler(ChatManager):

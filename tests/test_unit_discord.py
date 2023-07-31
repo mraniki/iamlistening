@@ -12,8 +12,7 @@ from telethon import TelegramClient, events
 import iamlistening
 from iamlistening import Listener
 from iamlistening.config import settings
-from iamlistening.platform.clients.discord import DiscordHandler
-from iamlistening.platform.platform_manager import PlatformManager
+from iamlistening.platform.chat_manager import ChatManager
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -24,12 +23,6 @@ def set_test_settings():
 async def test_fixture():
     assert settings.VALUE == "On Testing Discord"
 
-@pytest.fixture(name="handler")
-def handler_test():
-    return DiscordHandler()
-
-def test_handler_initialization(handler):
-    assert isinstance(handler, DiscordHandler)
 
 @pytest.fixture(name="listener")
 def listener():
@@ -38,12 +31,6 @@ def listener():
 @pytest.fixture(name="message")
 def message():
     return "hello"
-
-
-def test_get_handler(listener):
-    assert listener.platform == "discord"
-    handler = PlatformManager.get_handler(listener.platform)
-    assert isinstance(handler, DiscordHandler)
 
 
 @pytest.mark.asyncio

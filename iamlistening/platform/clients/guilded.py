@@ -7,7 +7,7 @@ import guilded
 from loguru import logger
 
 from iamlistening.config import settings
-from iamlistening.platform.platform_manager import ChatManager
+from iamlistening.platform.chat_manager import ChatManager
 
 
 class GuildedHandler(ChatManager):

@@ -9,8 +9,7 @@ Revolt Unit Testing
 
 # from iamlistening import Listener
 # from iamlistening.config import settings
-# from iamlistening.platform.clients.revolt import RevoltHandler
-# from iamlistening.platform.platform_manager import PlatformManager
+# from iamlistening.platform.chat_manager import ChatManager
 
 
 # @pytest.fixture(scope="session", autouse=True)

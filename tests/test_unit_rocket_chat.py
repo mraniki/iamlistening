@@ -9,7 +9,7 @@
 
 # from iamlistening import Listener
 # from iamlistening.config import settings
-# from iamlistening.platform.platform_manager import ChatManager, PlatformManager
+# from iamlistening.platform.chat_manager import ChatManager
 
 
 # @pytest.fixture(scope="session", autouse=True)

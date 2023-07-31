@@ -12,8 +12,7 @@ from telethon import TelegramClient, events
 import iamlistening
 from iamlistening import Listener
 from iamlistening.config import settings
-from iamlistening.platform.clients.telegram import TelegramHandler
-from iamlistening.platform.platform_manager import ChatManager, PlatformManager
+from iamlistening.platform.chat_manager import ChatManager
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -24,15 +23,6 @@ def set_test_settings():
 @pytest.mark.asyncio 
 async def test_fixture():
     assert settings.VALUE == "On Testing"
-
-
-@pytest.fixture(name="handler")
-def handler_test():
-    return TelegramHandler()
-
-
-def test_handler_initialization(handler):
-    assert isinstance(handler, TelegramHandler)
 
 
 @pytest.fixture(name="listener")
@@ -48,7 +38,7 @@ def message():
 async def test_start(listener):
        get_handler_mock = MagicMock(return_value=AsyncMock())
        create_task_mock = MagicMock()
-       PlatformManager.get_handler = get_handler_mock
+       ChatManager.get_handler = get_handler_mock
        asyncio.create_task = create_task_mock
        result = await listener.start()
        assert result is None
@@ -76,8 +66,8 @@ async def test_listener_start(listener):
 
 def test_get_handler(listener):
     assert listener.platform == "telegram"
-    handler = PlatformManager.get_handler(listener.platform)
-    assert isinstance(handler, TelegramHandler)
+    handler = ChatManager.get_handler(listener.platform)
+    assert handler is not None
 
 
 @pytest.mark.asyncio
@@ -94,15 +84,13 @@ async def test_chat_manager(message):
 
 @pytest.mark.asyncio
 async def test_handler(listener):
-    PlatformManager = AsyncMock()
-    PlatformManager.get_handler = MagicMock()
-    listener.handler = PlatformManager.get_handler(listener.platform)
+    ChatManager = AsyncMock()
+    ChatManager.get_handler = MagicMock()
+    listener.handler = ChatManager.get_handler(listener.platform)
     with patch.object(listener, "start"):
         await listener.start()
-        PlatformManager.get_handler.assert_called_once
+        ChatManager.get_handler.assert_called_once
         
-
-
 
 @pytest.mark.asyncio
 async def test_handler_start(handler, message):

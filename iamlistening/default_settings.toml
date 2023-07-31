@@ -17,6 +17,7 @@
 VALUE = "On Default"
 iamlistening_enabled = true
 chat_platform = ""
+iteration_limit = -1
 bot_token = ""
 bot_channel_id = ""
 bot_api_id = ""

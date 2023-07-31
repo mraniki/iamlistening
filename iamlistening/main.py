@@ -8,9 +8,8 @@ import threading
 from loguru import logger
 
 from iamlistening import __version__
-
-from .config import settings
-from .platform.platform_manager import PlatformManager
+from iamlistening.config import settings
+from iamlistening.platform.chat_manager import ChatManager
 
 
 class Listener:
@@ -36,7 +35,7 @@ class Listener:
         self.logger = logger
         self.version = __version__
         self.platform = chat_platform or settings.chat_platform
-        self.handler = None
+        self.chat_manager = ChatManager()
 
         if self.platform == "":
             raise Exception("Platform missing")
@@ -45,13 +44,9 @@ class Listener:
         """
         Start the listener.
 
-        self.handler = PlatformManager.get_handler(self.platform)
-        if self.platform if None it is defaulted to telegram handler
-
         """
 
-        self.handler = PlatformManager.get_handler(self.platform)
+        self.handler = self.chat_manager.get_handler(self.platform)
 
         if self.handler:
-            asyncio.create_task(await self.handler.start())
- 
+            asyncio.create_task(self.handler.start())
