@@ -93,6 +93,19 @@ async def test_chat_manager(message):
     sleep.assert_awaited_once
 
 
+def test_telegram_handler_initialization():
+    handler = TelegramHandler()
+    assert isinstance(handler, TelegramHandler)
+
+
+def test_telegram_handler_handle_telegram_message(message):
+    handler = TelegramHandler()
+    handle_message = AsyncMock()
+    await handler.handle_telegram_message(message)
+    handle_message.assert_awaited_once_with(message)
+
+
+
 # @pytest.mark.asyncio
 # async def test_telegram_handler_start():
 #     handler = TelegramHandler()
