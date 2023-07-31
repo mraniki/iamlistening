@@ -6,6 +6,7 @@ import pytest
 
 from iamlistening import Listener
 from iamlistening.config import settings
+from iamlistening.platform.platform_manager import PlatformManager
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -20,4 +21,16 @@ async def test_fixture():
 async def test_listener_exception():
     with pytest.raises(Exception, match="Platform missing"):
         Listener()   
- 
+
+
+@pytest.mark.asyncio
+async def test_listener_exception():
+    with pytest.raises(Exception, match="Platform missing"):
+        Listener()   
+
+
+@pytest.mark.asyncio
+async def test_platform_exception():
+    # with pytest.raises(Exception, match="Platform missing"):
+    handler = PlatformManager.get_handler()
+    assert handler is None

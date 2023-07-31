@@ -6,7 +6,7 @@ from loguru import logger
 
 class PlatformManager:
     @staticmethod
-    def get_handler(platform="telegram"):
+    def get_handler(platform=None):
         """
         Get platform handler.
         
@@ -39,9 +39,7 @@ class PlatformManager:
             from .clients.telegram import TelegramHandler
             handler = TelegramHandler()
 
-
         if handler is None:
-            logger.error(platform)
             raise Exception("Platform not supported")
 
         return handler
