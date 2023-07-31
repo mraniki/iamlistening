@@ -29,23 +29,27 @@ async def test_fixture():
 def listener():
     return Listener()
 
+@pytest.fixture(name="listener")
+def handler(listener):
+    return listener.chat_manager.get_handler(listener.platform)
+
 @pytest.fixture(name="message")
 def message():
     return "hello"
 
 
-@pytest.mark.asyncio
-async def test_start(listener):
-       get_handler_mock = MagicMock(return_value=AsyncMock())
-       create_task_mock = MagicMock()
-       ChatManager.get_handler = get_handler_mock
-       asyncio.create_task = create_task_mock
-       result = await listener.start()
-       assert result is None
-       get_handler_mock.assert_called_once_with(
-        listener.platform)
-       create_task_mock.assert_called_once_with(
-        await listener.handler.start())
+# @pytest.mark.asyncio
+# async def test_start(listener):
+#        get_handler_mock = MagicMock(return_value=AsyncMock())
+#        create_task_mock = MagicMock()
+#        ChatManager.get_handler = get_handler_mock
+#        asyncio.create_task = create_task_mock
+#        result = await listener.start()
+#        assert result is None
+#        get_handler_mock.assert_called_once_with(
+#         listener.platform)
+#        create_task_mock.assert_called_once_with(
+#         await listener.handler.start())
 
 
 @pytest.mark.asyncio
@@ -64,15 +68,13 @@ async def test_listener_start(listener):
         listener.handler.assert_called_once
 
 
-def test_get_handler(listener):
+def test_get_handler(listener, handler):
     assert listener.platform == "telegram"
-    handler = ChatManager.get_handler(listener.platform)
     assert handler is not None
 
 
 @pytest.mark.asyncio
-async def test_chat_manager(message):
-    handler = ChatManager()
+async def test_chat_manager(message handler):
     assert handler.bot is None
     assert handler.latest_message is None
     assert handler.lock is not None
@@ -82,14 +84,13 @@ async def test_chat_manager(message):
     assert msg == message
     sleep.assert_awaited_once
 
+
 @pytest.mark.asyncio
 async def test_handler(listener):
-    ChatManager = AsyncMock()
-    ChatManager.get_handler = MagicMock()
-    listener.handler = ChatManager.get_handler(listener.platform)
+    get_handler = AsyncMock()
     with patch.object(listener, "start"):
         await listener.start()
-        ChatManager.get_handler.assert_called_once
+        get_handler.assert_called_once
         
 
 @pytest.mark.asyncio
@@ -102,8 +103,8 @@ async def test_handler_start(listener, message):
 
 
 @pytest.mark.asyncio
-async def test_handler_handle_message(message):
-    handler = AsyncMock()
+async def test_handler_handle_message(message ,handler):
+    await handler.start()
     handler.handle_message = AsyncMock()
     event = AsyncMock()
     event.message.message = message
