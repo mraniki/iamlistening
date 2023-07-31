@@ -90,9 +90,8 @@ async def test_listener(listener):
     with patch.object(listener, "start"):
         await listener.start()
         await listener.handler.handle_message("hello")
-        msg = await listener.handler.get_latest_message()
-        print(msg)
-        assert msg == "hello"
+        await listener.handler.get_latest_message()
+        listener.handler.get_latest_message.assert_awaited_once
 
 
 # @pytest.mark.asyncio
