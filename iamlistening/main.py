@@ -38,7 +38,7 @@ class Listener:
         self.platform = chat_platform or settings.chat_platform
         self.handler = None
 
-        if self.platform is None:
+        if self.platform == "":
             raise Exception("Platform missing")
 
     async def start(self):
