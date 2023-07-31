@@ -81,15 +81,6 @@ async def test_listener(listener):
         listener.handler.assert_called_once
 
 
-@pytest.mark.asyncio
-async def test_listener(listener):
-    listener.handler = AsyncMock()
-    with patch.object(listener, "platform", return_value=None):
-        with pytest.raises(Exception):
-            await listener.start()
-            listener.handler.assert_called_once
-
-
 # @pytest.mark.asyncio
 # async def test_handler(listener):
 #     PlatformManager = AsyncMock()
