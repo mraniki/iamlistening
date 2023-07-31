@@ -70,14 +70,14 @@ async def test_listener_start(listener):
         listener.handler.assert_called_once
 
 
-# @pytest.mark.asyncio
-# async def test_handler(listener):
-#     PlatformManager = AsyncMock()
-#     PlatformManager.get_handler = MagicMock()
-#     listener.handler = PlatformManager.get_handler(listener.platform)
-#     with patch.object(listener, "start"):
-#         await listener.start()
-#         PlatformManager.get_handler.assert_called_once
+@pytest.mark.asyncio
+async def test_handler(listener):
+    PlatformManager = AsyncMock()
+    PlatformManager.get_handler = MagicMock()
+    listener.handler = PlatformManager.get_handler(listener.platform)
+    with patch.object(listener, "start"):
+        await listener.start()
+        PlatformManager.get_handler.assert_called_once
 
 
 # @pytest.mark.asyncio

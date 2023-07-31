@@ -19,5 +19,5 @@ async def test_fixture():
 @pytest.mark.asyncio
 async def test_listener_exception():
     with pytest.raises(Exception, match="Platform missing"):
-        listener = Listener()   
+        Listener()   
  
