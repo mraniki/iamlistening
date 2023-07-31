@@ -39,6 +39,12 @@ def message():
     return "hello"
 
 
+def test_get_handler(listener):
+    assert listener.platform == "mastodon"
+    handler = PlatformManager.get_handler(listener.platform)
+    assert isinstance(handler, MastodonHandler)
+
+
 @pytest.mark.asyncio
 async def test_handler_start(handler, message):
     task = asyncio.create_task(handler.start())

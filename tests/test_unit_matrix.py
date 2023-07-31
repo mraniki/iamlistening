@@ -38,6 +38,11 @@ def listener():
 def message():
     return "hello"
 
+def test_get_handler(listener):
+    assert listener.platform == "matrix"
+    handler = PlatformManager.get_handler(listener.platform)
+    assert isinstance(handler, MatrixHandler)
+
 
 @pytest.mark.asyncio
 async def test_handler_start(handler, message):

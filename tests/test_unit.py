@@ -74,14 +74,10 @@ async def test_listener_start(listener):
         listener.handler.assert_called_once
 
 
-@pytest.mark.asyncio
-async def test_handler(listener):
-    PlatformManager = AsyncMock()
-    PlatformManager.get_handler = MagicMock()
-    listener.handler = PlatformManager.get_handler(listener.platform)
-    with patch.object(listener, "start"):
-        await listener.start()
-        PlatformManager.get_handler.assert_called_once
+def test_get_handler(listener):
+    assert listener.platform == "telegram"
+    handler = PlatformManager.get_handler(listener.platform)
+    assert isinstance(handler, TelegramHandler)
 
 
 @pytest.mark.asyncio
@@ -96,6 +92,17 @@ async def test_chat_manager(message):
     assert msg == message
     sleep.assert_awaited_once
 
+@pytest.mark.asyncio
+async def test_handler(listener):
+    PlatformManager = AsyncMock()
+    PlatformManager.get_handler = MagicMock()
+    listener.handler = PlatformManager.get_handler(listener.platform)
+    with patch.object(listener, "start"):
+        await listener.start()
+        PlatformManager.get_handler.assert_called_once
+        
+
+
 
 @pytest.mark.asyncio
 async def test_handler_start(handler, message):
@@ -104,7 +111,6 @@ async def test_handler_start(handler, message):
     msg = await handler.get_latest_message()
     task.cancel()
     assert msg == message
-
 
 
 @pytest.mark.asyncio

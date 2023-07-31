@@ -37,6 +37,10 @@ def listener():
 def message():
     return "hello"
 
+def test_get_handler(listener):
+    assert listener.platform == "guilded"
+    handler = PlatformManager.get_handler(listener.platform)
+    assert isinstance(handler, GuildedHandler)
 
 @pytest.mark.asyncio
 async def test_handler_start(handler, message):
