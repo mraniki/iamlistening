@@ -129,15 +129,5 @@ class ChatManager():
         """
         logger.info("listener handler is offline")
         self.is_connected = False
-        self.delete_instance()
+        raise ValueError("handler offline")
 
-    def delete_instance(self):
-        """
-        Delete the instance of the class.
-
-        Returns:
-            None
-        """
-        logger.info("Performing cleanup tasks...")
-        # asyncio.Task.cancel() 
-        del self

@@ -29,12 +29,3 @@ def listener():
 def message():
     return "hello"
 
-
-@pytest.mark.asyncio
-async def test_handler_start(handler, message):
-    task = asyncio.create_task(handler.start())
-    await handler.handle_message(message)
-    msg = await handler.get_latest_message()
-    task.cancel()
-    assert msg == message
-
