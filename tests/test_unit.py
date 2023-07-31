@@ -99,24 +99,25 @@ def test_telegram_handler_initialization():
 
 
 @pytest.mark.asyncio
-async def test_telegram_handler_handle_telegram_message(message):
+async def test_telegram_handler_handle_message(message):
     handler = TelegramHandler()
-    handle_message = AsyncMock()
-    await handler.handle_telegram_message(message)
-    handle_message.assert_awaited_once_with(message)
+    handler.handle_message = AsyncMock()
+    event = AsyncMock()
+    event.message.message = message
+    await handler.handle_telegram_message(event)
+    handler.handle_message.assert_awaited_once_with(message)
 
 
+@pytest.mark.asyncio
+async def test_telegram_handler_start():
+    handler = TelegramHandler()
+    bot = AsyncMock(spec=TelegramClient)
 
-# @pytest.mark.asyncio
-# async def test_telegram_handler_start():
-#     handler = TelegramHandler()
-#     handler.bot = AsyncMock()
-
-#     with patch.object(handler.bot, "start"):
-#         task = asyncio.create_task(handler.start())
-#         await task
-#         handler.bot.start.assert_awaited_once()
-#         task.cancel()
+    with patch.object(handler, "bot"):
+        task = asyncio.create_task(handler.start())
+        await task
+        bot.assert_awaited_once()
+        task.cancel()
 
 
 # @pytest.mark.asyncio
