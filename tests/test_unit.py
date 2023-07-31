@@ -98,7 +98,8 @@ def test_telegram_handler_initialization():
     assert isinstance(handler, TelegramHandler)
 
 
-def test_telegram_handler_handle_telegram_message(message):
+@pytest.mark.asyncio
+async def test_telegram_handler_handle_telegram_message(message):
     handler = TelegramHandler()
     handle_message = AsyncMock()
     await handler.handle_telegram_message(message)
