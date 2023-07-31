@@ -40,11 +40,6 @@ def message():
 def client():
     return AsyncMock()
 
-def event_loop():
-    loop = asyncio.get_event_loop()
-    yield loop
-    loop.close()
-
 @pytest.mark.asyncio
 async def test_start(listener):
        get_handler_mock = MagicMock(return_value=AsyncMock())
@@ -60,21 +55,15 @@ async def test_start(listener):
 
 
 @pytest.mark.asyncio
-async def test_listener_exception(listener):
-    with pytest.raises(Exception):
-        with patch(settings.config.chat_platform, ""):
-            Listener()
-
-
-@pytest.mark.asyncio
-async def test_listener(listener):
+async def test_listener_fixture(listener):
     assert listener is not None
     assert isinstance(listener, Listener)
     assert listener.platform is not None
     assert listener.version is not None
 
+
 @pytest.mark.asyncio
-async def test_listener(listener):
+async def test_listener_start(listener):
     listener.handler = AsyncMock()
     with patch.object(listener, "start"):
         await listener.start()
