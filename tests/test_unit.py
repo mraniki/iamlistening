@@ -20,13 +20,20 @@ from iamlistening.platform.platform_manager import ChatManager, PlatformManager
 def set_test_settings():
     settings.configure(FORCE_ENV_FOR_DYNACONF="testingtelegram")
 
+
 @pytest.mark.asyncio 
 async def test_fixture():
     assert settings.VALUE == "On Testing"
 
-@pytest.fixture(name="handler_mock")
-def handler_mock():
-    return AsyncMock()
+
+@pytest.fixture(name="handler")
+def handler_test():
+    return TelegramHandler()
+
+
+def test_telegram_handler_initialization(handler):
+    assert isinstance(handler, TelegramHandler)
+
 
 @pytest.fixture(name="listener")
 def listener():
@@ -36,9 +43,6 @@ def listener():
 def message():
     return "hello"
 
-@pytest.fixture(name="client")
-def client():
-    return AsyncMock()
 
 @pytest.mark.asyncio
 async def test_start(listener):
@@ -92,51 +96,18 @@ async def test_chat_manager(message):
     assert msg == message
     sleep.assert_awaited_once
 
-
-def test_telegram_handler_initialization():
-    handler = TelegramHandler()
-    assert isinstance(handler, TelegramHandler)
+@pytest.mark.asyncio
+async def test_telegram_handler_start(listener):
+    await listener.start()
+    await listener.handler.handle_message(message)
+    msg = await listener.handler.get_latest_message()
+    assert msg == listener
 
 
 @pytest.mark.asyncio
-async def test_telegram_handler_handle_message(message):
-    handler = TelegramHandler()
+async def test_telegram_handler_handle_message(message, handler):
     handler.handle_message = AsyncMock()
     event = AsyncMock()
     event.message.message = message
     await handler.handle_telegram_message(event)
     handler.handle_message.assert_awaited_once_with(message)
-
-
-@pytest.mark.asyncio
-async def test_telegram_handler_start():
-    handler = TelegramHandler()
-    bot = AsyncMock(spec=TelegramClient)
-
-    with patch.object(handler, "bot"):
-        task = asyncio.create_task(handler.start())
-        await task
-        bot.assert_awaited_once()
-        task.cancel()
-
-
-# @pytest.mark.asyncio
-# async def test_telegram_handler_start():
-#     with patch(
-#         'iamlistening.platform.clients.telegram.TelegramHandler'
-#         ) as telegram_client_mock:
-#         telegram_client_mock.return_value.start = AsyncMock()
-#         handler = TelegramHandler()
-#         task=asyncio.create_task(await handler.start())
-#         try:
-#             await asyncio.wait_for(task, timeout=10)
-#         except asyncio.TimeoutError:
-#             task.cancel()
-#             await task
-#             pytest.skip("Connectivity test only")
-#         telegram_client_mock.assert_called_once_with(
-#             None,
-#             settings.bot_api_id,
-#             settings.bot_api_hash
-#         )
-#         telegram_client_mock.return_value.start.assert_awaited_once()
