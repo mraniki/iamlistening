@@ -19,13 +19,15 @@ class PlatformManager:
         """
 
         handler = None
-
-        if platform == "matrix":
-            from .clients.matrix import MatrixHandler
-            handler = MatrixHandler()
+        if platform == "telegram":
+            from .clients.telegram import TelegramHandler
+            handler = TelegramHandler()
         elif platform == "discord":
             from .clients.discord import DiscordHandler
             handler = DiscordHandler()
+        if platform == "matrix":
+            from .clients.matrix import MatrixHandler
+            handler = MatrixHandler()
         elif platform == "guilded":
             from .clients.guilded import GuildedHandler
             handler = GuildedHandler()
@@ -35,9 +37,6 @@ class PlatformManager:
         elif platform == "revolt":
             from .clients.revolt import RevoltHandler
             handler = RevoltHandler()
-        else:
-            from .clients.telegram import TelegramHandler
-            handler = TelegramHandler()
 
         if handler is None:
             raise Exception("Platform not supported")
