@@ -41,17 +41,9 @@ def message():
 
 
 @pytest.mark.asyncio
-async def test_telegram_handler_start(listener):
+async def test_handler_start(listener):
     await listener.start()
     await listener.handler.handle_message(message)
     msg = await listener.handler.get_latest_message()
     assert msg == listener
 
-
-@pytest.mark.asyncio
-async def test_telegram_handler_handle_message(message, handler):
-    handler.handle_message = AsyncMock()
-    event = AsyncMock()
-    event.message.message = message
-    await handler.handle_telegram_message(event)
-    handler.handle_message.assert_awaited_once_with(message)
