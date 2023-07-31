@@ -86,9 +86,11 @@ async def test_chat_manager(message):
     assert handler.bot is None
     assert handler.latest_message is None
     assert handler.lock is not None
+    sleep = AsyncMock()
     await handler.handle_message(message)
     msg = await handler.get_latest_message()
     assert msg == message
+    sleep.assert_awaited_once
 
 
 # @pytest.mark.asyncio

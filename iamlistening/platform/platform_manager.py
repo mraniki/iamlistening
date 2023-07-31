@@ -72,7 +72,7 @@ class ChatManager():
                 self.latest_message = None
                 return msg
 
-        # await asyncio.sleep(0.1)
+        await asyncio.sleep(0.1)
 
     async def handle_message(self, message_content):
         """
