@@ -27,7 +27,7 @@ async def test_fixture():
 def handler_test():
     return MatrixHandler()
 
-def test_telegram_handler_initialization(handler):
+def test_initialization(handler):
     assert isinstance(handler, MatrixHandler)
 
 @pytest.fixture(name="listener")
@@ -40,10 +40,10 @@ def message():
 
 
 @pytest.mark.asyncio
-async def test_handler_start(listener, message):
-    await listener.start()
-    await listener.handler.handle_message(message)
-    msg = await listener.handler.get_latest_message()
+async def test_handler_start(handler, message):
+    task = asyncio.create_task(handler.start())
+    await handler.handle_message(message)
+    msg = await handler.get_latest_message()
+    task.cancel()
     assert msg == message
-
 
