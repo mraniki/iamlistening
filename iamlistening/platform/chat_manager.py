@@ -138,6 +138,6 @@ class ChatManager():
         Returns:
             None
         """
-        # Add any necessary cleanup logic here
-        print("Performing cleanup tasks...")
+        logger.info("Performing cleanup tasks...")
+        # asyncio.Task.cancel() 
         del self
