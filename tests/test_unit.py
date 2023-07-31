@@ -82,7 +82,7 @@ async def test_telegram_handler_start():
     with patch.object(handler.bot, "start"):
         task = asyncio.create_task(handler.start())
         await task
-        handler.bot.start.assert_called_once()
+        handler.bot.start.assert_awaited_once()
         task.cancel()
 
 
