@@ -90,7 +90,6 @@ async def test_chat_manager(message):
     msg = await handler.get_latest_message()
     assert msg == message
 
-
 # @pytest.mark.asyncio
 # async def test_listener_telegram(listener):
 #     assert listener is not None
