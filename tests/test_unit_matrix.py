@@ -30,4 +30,18 @@ def listener():
 def message():
     return "hello"
 
+@pytest.mark.asyncio
+async def test_listener_start(message):
+    handle_iteration_limit = AsyncMock()
+    check_connected = AsyncMock()
+    listener = Listener()
+    await listener.start()
+    await listener.handler.handle_message(message)
+    msg = await listener.handler.get_latest_message()
+    assert listener.handler is not None
+    assert listener.handler.connected is not None
+    assert listener.platform == "matrix"
+    handle_iteration_limit.assert_awaited
+    check_connected.assert_awaited
+    assert msg == message
 
