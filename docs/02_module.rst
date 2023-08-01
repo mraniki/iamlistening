@@ -18,7 +18,7 @@ ChatManager Class
 .. autosummary::
     :toctree: generated/
 
-   iamlistening.iamlistening.platform.chat_manager.ChatManager
+   iamlistening.platform.chat_manager.ChatManager
 
 
 Client Class
