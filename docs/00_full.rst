@@ -5,5 +5,6 @@ Full
    :toctree: _autosummary
    :template: custom-module-template.rst
    :recursive:
-
-   iamlistening
+   :maxdepth: 4
+   
+   iamlistening.main

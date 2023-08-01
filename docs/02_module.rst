@@ -27,4 +27,4 @@ Client Class
 .. autosummary::
     :toctree: generated/
     
-   iamlistening.platform.clients.telegram.TelegramHandler
+   iamlistening.platform.clients
