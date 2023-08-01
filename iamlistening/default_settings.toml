@@ -29,11 +29,10 @@ bot_auth_token = ""
 
 
 
-
- 
 ########################################
 ###     END OF DEFAULT SETTINGS      ###
 ########################################
+
 
 
 
@@ -45,129 +44,19 @@ bot_auth_token = ""
 #| __| '_ \ / _ \  / _ \ '_ \ / _` |   / / 
 #| |_| | | |  __/ |  __/ | | | (_| |  |_|  
 # \__|_| |_|\___|  \___|_| |_|\__,_|  (_)  
-########################################                                                                                      
-
-
-
-
-
-
-
-
-########################################
-###         TESTING SETTINGS         ###
-########################################
-# Any of those settings are used 
-# for testing purpose.
-# It can be ignored. 
-
-# [testingtelegram]
-# VALUE = ""
-# iamlistening_enabled = true
-# chat_platform = ""
-# bot_token = ""
-# bot_channel_id = ""
-# bot_api_id = ""
-# bot_api_hash = ""
-# bot_hostname = ""
-# bot_user = ""
-# bot_pass = ""
-# bot_auth_token = ""
-
-
-[testingdiscord]
-VALUE = "On Testing Discord"
-iamlistening_enabled = true
-chat_platform= "discord"
-bot_token = "1234556"
-bot_channel_id = "1234556"
-bot_api_id = ""
-bot_api_hash = ""
-bot_hostname = ""
-bot_user = ""
-bot_pass = ""
-bot_auth_token = ""
-
-
-[testingmatrix]
-VALUE = "On Testing Matrix"
-iamlistening_enabled = true
-chat_platform="matrix"
-bot_token = "1234556"
-bot_channel_id = "1234556"
-bot_api_id = ""
-bot_api_hash = ""
-bot_hostname = "https://matrix.org"
-bot_user = "1212"
-bot_pass = "1212"
-bot_auth_token = ""
-
-
-[testingrocketchat]
-VALUE = "On Testing RocketChat"
-iamlistening_enabled = true
-chat_platform= "rocket_chat"
-bot_token = "1234556"
-bot_channel_id = "1234556"
-bot_api_id = ""
-bot_api_hash = ""
-bot_hostname = "https://demo.rocket.chat"
-bot_user = "1212"
-bot_pass = ""
-bot_auth_token = "1212"
-
-
-[testingguilded]
-VALUE = "On Testing Guilded"
-iamlistening_enabled = true
-chat_platform= "guilded"
-bot_token = "1212"
-bot_channel_id = ""
-bot_api_id = ""
-bot_api_hash = ""
-bot_hostname = ""
-bot_user = ""
-bot_pass = ""
-bot_auth_token = ""
-
-
-[testingmastodon]
-VALUE = "On Testing Mastodon"
-iamlistening_enabled = true
-chat_platform= "mastodon"
-bot_token = ""
-bot_channel_id = ""
-bot_api_id = "1234556"
-bot_api_hash = "1234556"
-bot_hostname = ""
-bot_user = ""
-bot_pass = ""
-bot_auth_token = ""
-
-
-[testingrevolt]
-VALUE = "On Testing Revolt"
-iamlistening_enabled = true
-chat_platform= "revolt"
-bot_token = "1212"
-bot_channel_id = ""
-bot_api_id = "1234556"
-bot_api_hash = "1234556"
-bot_hostname = ""
-bot_user = ""
-bot_pass = ""
-bot_auth_token = ""
-
-
-[testingtinode]
-VALUE = "On Testing Tinode"
-iamlistening_enabled = true
-chat_platform= "tinode"
-bot_token = ""
-bot_channel_id = ""
-bot_api_id = "1234556"
-bot_api_hash = "1234556"
-bot_hostname = ""
-bot_user = ""
-bot_pass = ""
-bot_auth_token = ""
+########################################     
+#
+#
+#
+#
+#         __     __       
+#         \ \   / /       
+#          \ \_/ /__  ___ 
+#           \   / _ \/ __|
+#            | |  __/\__ \
+#            |_|\___||___/
+#
+#
+#
+#                   
+########################################     

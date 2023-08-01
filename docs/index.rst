@@ -23,14 +23,3 @@ Supported platforms are listed under :ref:`clients <02_module>`
     02_module
     03_settings
 
-
-Talky
-=====
-.. toctree::
-        :caption: Talkytrader
-        
-        `Talkytrader <talkytrader:index>`
-
-
-* :doc:`Talkytrader <talkytrader:index>`
-
