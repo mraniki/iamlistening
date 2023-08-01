@@ -35,6 +35,7 @@ class Listener:
         self.version = __version__
         self.platform = chat_platform or settings.chat_platform
         self.chat_manager = ChatManager()
+        self.is_connected = True
 
         if self.platform == "":
             raise Exception("Platform missing")
@@ -52,5 +53,6 @@ class Listener:
             if not self.handler.is_connected:
                 task.cancel()
                 self.handler = None
+                self.is_connected = False
                 return
 

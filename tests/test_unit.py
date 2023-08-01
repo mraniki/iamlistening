@@ -3,7 +3,7 @@ iamlistening Unit Testing
 """
 
 import asyncio
-from unittest.mock import AsyncMock, MagicMock, create_autospec, patch
+from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 from loguru import logger
@@ -29,7 +29,7 @@ async def test_fixture():
 def listener():
     return Listener()
 
-@pytest.fixture(name="listener")
+@pytest.fixture(name="handler")
 def handler(listener):
     return listener.chat_manager.get_handler(listener.platform)
 
@@ -74,7 +74,7 @@ def test_get_handler(listener, handler):
 
 
 @pytest.mark.asyncio
-async def test_chat_manager(message handler):
+async def test_chat_manager(message, handler):
     assert handler.bot is None
     assert handler.latest_message is None
     assert handler.lock is not None
@@ -94,16 +94,16 @@ async def test_handler(listener):
         
 
 @pytest.mark.asyncio
-async def test_handler_start(listener, message):
-    task = asyncio.create_task(listener.handler.start())
-    await listener.handler.handle_message(message)
-    msg = await listener.handler.get_latest_message()
+async def test_handler_start(handler, message):
+    task = asyncio.create_task(handler.start())
+    await handler.handle_message(message)
+    msg = await handler.get_latest_message()
     task.cancel()
     assert msg == message
 
 
 @pytest.mark.asyncio
-async def test_handler_handle_message(message ,handler):
+async def test_handler_handle_message(message, handler):
     await handler.start()
     handler.handle_message = AsyncMock()
     event = AsyncMock()
