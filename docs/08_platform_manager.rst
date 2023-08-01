@@ -1,14 +1,9 @@
 Platforms
 ========
-.. py:module:: iamlistening
-.. py:class: ChatManager
-.. py:class: DiscordHandler
-
- 
-Platform Manager
-----------------
-.. autoclass:: PlatformManager
+.. automodule:: iamlistening.platforms.chat_manager
+    :members:
 
 ChatManager Manager
 -------------------
 .. autoclass:: ChatManager
+    :members:
