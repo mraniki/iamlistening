@@ -53,7 +53,6 @@ async def test_listener_start(message):
     assert listener.handler is not None
     assert listener.handler.connected is True
     assert listener.platform == "telegram"
-    assert listener.handler.connected is not None
     handle_iteration_limit.assert_awaited
     check_connected.assert_awaited
     assert msg == message
