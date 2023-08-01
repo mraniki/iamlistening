@@ -7,4 +7,4 @@ Full
    :recursive:
    :maxdepth: 4
    
-   iamlistening.main
+   iamlistening
