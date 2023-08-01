@@ -43,6 +43,18 @@ async def test_listener_fixture(listener):
 
 
 @pytest.mark.asyncio
+async def test_start_handler_not_connected(listener):
+    handler = MagicMock()
+    listener.handler = handler
+    handler.is_connected = False
+    await listener.start()
+    assert handler.is_connected is False
+    assert handler.cancel.called is True
+    assert listener.handler is None
+    assert listener.is_connected is False
+
+
+@pytest.mark.asyncio
 async def test_listener_start(message):
     handle_iteration_limit = AsyncMock()
     check_connected = AsyncMock()
