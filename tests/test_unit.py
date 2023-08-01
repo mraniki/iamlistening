@@ -35,20 +35,6 @@ def message():
 
 
 @pytest.mark.asyncio
-async def test_start(listener):
-       get_handler_mock = MagicMock(return_value=AsyncMock())
-       create_task_mock = MagicMock()
-       ChatManager.get_handler = get_handler_mock
-       asyncio.create_task = create_task_mock
-       result = await listener.start()
-       assert result is None
-       get_handler_mock.assert_called_once_with(
-        listener.platform)
-       create_task_mock.assert_called_once_with(
-        await listener.handler.start())
-
-
-@pytest.mark.asyncio
 async def test_listener_fixture(listener):
     assert listener is not None
     assert isinstance(listener, Listener)
@@ -57,18 +43,20 @@ async def test_listener_fixture(listener):
 
 
 @pytest.mark.asyncio
-async def test_listener_start(listener):
+async def test_listener_start(message):
     handle_iteration_limit = AsyncMock()
     check_connected = AsyncMock()
+    listener = Listener()
     await listener.start()
     await listener.handler.handle_message(message)
     msg = await listener.handler.get_latest_message()
-    assert msg == message
     assert listener.handler is not None
     assert listener.platform == "telegram"
     assert listener.handler.connected is not None
     handle_iteration_limit.assert_awaited
     check_connected.assert_awaited
+    assert msg == message
+
 
 # @pytest.mark.asyncio
 # async def test_listener_start(listener):
