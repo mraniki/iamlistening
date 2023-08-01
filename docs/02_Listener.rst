@@ -1,4 +1,11 @@
 Listener
 ========
+
 .. automodule:: iamlistening.main
-    :members:
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. toctree::
+   :maxdepth: 4
+   :caption: Contents:
