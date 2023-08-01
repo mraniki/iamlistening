@@ -1,6 +1,6 @@
 .. _iamlistening:
-IAMLISTENING
-============
+Module
+======
 .. py:module:: iamlistening
 
 
