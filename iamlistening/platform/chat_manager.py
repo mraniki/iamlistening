@@ -116,10 +116,10 @@ class ChatManager():
         if self.iteration_count != self.iteration_limit:
             await asyncio.sleep(0.1)
             self.iteration_count += 1
-            return
         else:
             await self.disconnected()
-            return
+
+        return
 
 
     async def disconnected(self):
