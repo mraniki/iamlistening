@@ -40,6 +40,14 @@ def test_handler(listener, handler):
     assert handler is not None
 
 @pytest.mark.asyncio
+async def test_handle_iteration_limit(self, listener):
+    await listener.handle_iteration_limit()
+    assert listener.iteration_count == 1
+    listener.iteration_count = 5
+    await listener.handle_iteration_limit()
+
+
+@pytest.mark.asyncio
 async def test_get_handler(listener):
     get_handler = AsyncMock()
     with patch.object(listener, "start"):

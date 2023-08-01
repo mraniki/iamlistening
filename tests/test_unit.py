@@ -41,15 +41,6 @@ async def test_listener_fixture(listener):
     assert listener.platform is not None
     assert listener.version is not None
 
-@pytest.mark.asyncio
-async def test_handle_iteration_limit(self, listener):
-    listener.iteration_limit = 3
-    listener.iteration_count = 0
-    await listener.handle_iteration_limit()
-    assert listener.iteration_count == 1
-    listener.iteration_count = 3
-    await listener.handle_iteration_limit()
-
 
 @pytest.mark.asyncio
 async def test_listener_start(message):
