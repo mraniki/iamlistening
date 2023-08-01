@@ -3,11 +3,15 @@ Listener
 .. py:module:: iamlistening
 
 .. toctree::
-   :maxdepth: 4
-   :caption: Contents:
+   :maxdepth: 6
+
+   iamlistening
+
+
+iamlistening.main module
+-----------------------
 
 .. automodule:: iamlistening.main
    :members:
    :undoc-members:
    :show-inheritance:
-

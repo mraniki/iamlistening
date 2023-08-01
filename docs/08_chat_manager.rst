@@ -1,11 +1,11 @@
-ChatManager Manager
-===================
+Chat Manager
+========
+.. py:module:: iamlistening
+
 .. toctree::
    :maxdepth: 4
-   :caption: Contents:
 
-
-.. automodule:: iamlistening.platforms.chat_manager
+.. automodule:: iamlistening.main.chat_manager
    :members:
    :undoc-members:
    :show-inheritance:

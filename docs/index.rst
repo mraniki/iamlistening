@@ -18,12 +18,14 @@ Supported platforms are listed under clients
 .. toctree::
     :caption: Introduction
     
+
     IAMLISTENING <self>
     01_getting_started
     02_listener
 
+
 .. toctree::
-    :caption: Platforms
+    :caption: Supported Chat Platforms
     
     08_chat_manager
     09_clients
