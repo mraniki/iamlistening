@@ -33,7 +33,7 @@ class DiscordHandler(ChatManager):
 
         @self.bot.event
         async def on_ready():
-            logger.info("listener is online")
+            self.connected()
 
         @self.bot.event
         async def on_message(message: discord.Message):

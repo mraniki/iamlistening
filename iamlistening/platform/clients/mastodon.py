@@ -27,7 +27,7 @@ class MastodonHandler(ChatManager):
         """
         Start the Mastodon handler.
         """
-        logger.info("listener is online")
+        self.connected()
         self.streamer = self.bot.stream_public(
             MastoListener(self.broadcast_message),
             run_async=True)

@@ -36,7 +36,7 @@ class MatrixHandler(ChatManager):
  
         @self.bot.listener.on_startup
         async def room_joined(room):
-            logger.info("listener is online")
+            self.connected()
 
         @self.bot.listener.on_message_event
         async def on_matrix_message(room, message):

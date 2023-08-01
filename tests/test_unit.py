@@ -46,6 +46,7 @@ async def test_listener_fixture(listener):
 async def test_listener_start(message):
     handle_iteration_limit = AsyncMock()
     check_connected = AsyncMock()
+    connected = MagicMock()
     listener = Listener()
     await listener.start()
     await listener.handler.handle_message(message)
@@ -55,5 +56,6 @@ async def test_listener_start(message):
     assert listener.platform == "telegram"
     handle_iteration_limit.assert_awaited
     check_connected.assert_awaited
+    connected.assert_called
     assert msg == message
 

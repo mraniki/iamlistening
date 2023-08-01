@@ -32,7 +32,7 @@ class TelegramHandler(ChatManager):
                     settings.bot_api_id,
                     settings.bot_api_hash
                     ).start(bot_token=settings.bot_token)
-        logger.info("listener is online")
+        self.connected()
         self.bot.add_event_handler(
             self.handle_telegram_message,
             events.NewMessage)

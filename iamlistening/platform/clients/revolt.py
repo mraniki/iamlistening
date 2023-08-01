@@ -30,7 +30,7 @@
 
 #         # @self.bot.event
 #         # async def on_ready():
-#         #     logger.info("listener is online")
+#         #     self.connected()
 
 #         @self.bot.event
 #         async def on_message(self, message: revolt.Message):
