@@ -1,5 +1,5 @@
-Listener
-========
+IAMLISTENING
+============
 .. py:module:: iamlistening
 
 
@@ -17,7 +17,7 @@ ChatManager Class
 .. autosummary::
     :toctree: generated/
 
-   iamlistening.ChatManager
+   iamlistening.iamlistening.platform.chat_manager.ChatManager
 
 
 Client Class
