@@ -22,7 +22,9 @@ author = 'mraniki'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
-    'sphinx.ext.viewcode',
+    'sphinx.ext.intersphinx', 
+    'sphinx.ext.viewcode',  
+    'sphinx_autodoc_typehints', 
     'sphinx.ext.napoleon',
     'sphinx_copybutton',
     'myst_parser',
@@ -31,6 +33,9 @@ extensions = [
     'notfound.extension'
 ]
 
+intersphinx_mapping = {
+    "talky": ("http://talkytrader.github.io/wiki/", None),
+}
 
 # -- Napoleon Settings ------
 
@@ -49,8 +54,11 @@ napoleon_use_keyword = True
 
 autosummary_generate = True
 autoclass_content = 'both'
+html_show_sourcelink = False
+autodoc_inherit_docstrings = True 
+set_type_checking_flag = True 
 autodoc_member_order = 'bysource'
-add_module_names = True
+add_module_names = False
 
 
 master_doc = 'index'

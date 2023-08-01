@@ -81,10 +81,11 @@ optional = true
 [tool.poetry.group.docs.dependencies]
 sphinx = ">=6,<8"
 sphinx_bootstrap_theme = "^0.8.1"
+sphinx-autodoc-typehints = "^1.12.0"
 sphinx-copybutton= "^0.5.2"
 myst-parser = "^2.0.0"
 sphinx-notfound-page = "^0.8.3"
-sphinxext-remoteliteralinclude = "^0.4.0"
+sphinxext-remoteliteralinclude = "^1.24.0"
 sphinx-togglebutton = "*"
 
 
