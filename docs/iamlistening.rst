@@ -27,10 +27,3 @@ iamlistening.main module
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
-
-.. automodule:: iamlistening
-   :members:
-   :undoc-members:
-   :show-inheritance:

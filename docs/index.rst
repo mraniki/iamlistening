@@ -24,14 +24,7 @@ Supported platforms are listed under clients
     02_listener
 
 
-.. toctree::
-    :caption: Supported Chat Platforms
-    
-    08_chat_manager
-    09_clients
 
-
-    
 Talky
 =====
 .. toctree::
