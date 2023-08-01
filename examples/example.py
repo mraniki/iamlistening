@@ -28,7 +28,7 @@ async def main():
             await listener.handler.handle_iteration_limit()
 
 
-app = FastAPI() 
+app = FastAPI()
 
 
 @app.on_event("startup")

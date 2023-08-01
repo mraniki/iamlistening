@@ -26,12 +26,11 @@ class Listener:
         Args:
             chat_platform (str): The platform to use
 
-
         Raises:
             Exception: Platform missing
 
-
         """
+
         self.logger = logger
         self.version = __version__
         self.platform = chat_platform or settings.chat_platform
@@ -49,9 +48,8 @@ class Listener:
         self.handler = self.chat_manager.get_handler(self.platform)
 
         if self.handler:
-            task = asyncio.create_task(self.handler.start())
             try:
-                await task
+                asyncio.create_task(self.handler.start())
             except ValueError:
-                task.cancel()
+                self.handler = None
 

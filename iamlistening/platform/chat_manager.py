@@ -112,6 +112,7 @@ class ChatManager():
         Returns:
             None
         """
+        logger.debug(self.iteration_limit)
         if self.iteration_count != self.iteration_limit:
             await asyncio.sleep(0.1)
             self.iteration_count += 1
@@ -130,4 +131,3 @@ class ChatManager():
         logger.info("listener handler is offline")
         self.is_connected = False
         raise ValueError("handler offline")
-
