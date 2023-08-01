@@ -48,7 +48,7 @@ async def test_start_handler_not_connected(listener):
     listener.handler = handler
     handler.is_connected = False
     await listener.start()
-    assert handler.is_connected is False
+    assert not handler.is_connected
     assert handler.cancel.called is True
     assert listener.handler is None
     assert listener.is_connected is False
