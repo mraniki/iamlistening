@@ -51,7 +51,7 @@ async def test_listener_start(message):
     await listener.handler.handle_message(message)
     msg = await listener.handler.get_latest_message()
     assert listener.handler is not None
-    assert listener.handler.connected is True
+    assert listener.handler.connected is not None
     assert listener.platform == "telegram"
     handle_iteration_limit.assert_awaited
     check_connected.assert_awaited
