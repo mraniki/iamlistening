@@ -17,13 +17,13 @@ ChatManager Class
 .. autosummary::
     :toctree: generated/
 
-   iamlistening.platform.chat_manager.ChatManager
+   iamlistening.ChatManager
 
 
-Clients
--------
+Client Class
+------------
 
 .. autosummary::
     :toctree: generated/
     
-   iamlistening.platform.clients
+   iamlistening.platform.clients.telegram.TelegramHandler

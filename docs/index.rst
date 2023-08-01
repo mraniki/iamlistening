@@ -16,11 +16,9 @@ Supported platforms are listed under :ref:`clients <02_module>`
 
 
 .. toctree::
-    :caption: IAMLISTENING
     :maxdepth: 4
 
     
-    IAMLISTENING <self>
     01_install
     02_module
     03_settings
