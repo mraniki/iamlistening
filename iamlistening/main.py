@@ -48,8 +48,9 @@ class Listener:
         self.handler = self.chat_manager.get_handler(self.platform)
 
         if self.handler:
-            try:
-                asyncio.create_task(self.handler.start())
-            except ValueError:
+            task = asyncio.create_task(self.handler.start())
+            if not self.handler.is_connected:
+                task.cancel()
                 self.handler = None
+                return
 

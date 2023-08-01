@@ -46,7 +46,7 @@ class ChatManager():
         """
         self.platform = None
         self.bot = None
-        self.is_connected = False
+        self.is_connected = True
         self.latest_message = None
         self.lock = asyncio.Lock()
         self.iteration_limit = settings.iteration_limit or -1
@@ -119,6 +119,7 @@ class ChatManager():
             return
         else:
             await self.disconnected()
+            return
 
 
     async def disconnected(self):
@@ -130,4 +131,3 @@ class ChatManager():
         """
         logger.info("listener handler is offline")
         self.is_connected = False
-        raise ValueError("handler offline")
