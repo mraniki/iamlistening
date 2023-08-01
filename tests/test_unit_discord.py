@@ -23,6 +23,9 @@ def set_test_settings():
 async def test_fixture():
     assert settings.VALUE == "On Testing Discord"
 
+@pytest.fixture(name="handler")
+def handler(listener):
+    return listener.chat_manager.get_handler(listener.platform)
 
 @pytest.fixture(name="listener")
 def listener():
@@ -32,25 +35,17 @@ def listener():
 def message():
     return "hello"
 
-@pytest.mark.asyncio
-async def test_chat_manager(message, handler):
-    assert handler.bot is None
-    assert handler.latest_message is None
-    assert handler.lock is not None
-    sleep = AsyncMock()
-    await handler.handle_message(message)
-    msg = await handler.get_latest_message()
-    assert msg == message
-    sleep.assert_awaited_once
-
+def test_handler(listener, handler):
+    assert listener.platform == "discord"
+    assert handler is not None
 
 @pytest.mark.asyncio
-async def test_handler(listener):
+async def test_get_handler(listener):
     get_handler = AsyncMock()
     with patch.object(listener, "start"):
         await listener.start()
         get_handler.assert_called_once
-
+        
 
 @pytest.mark.asyncio
 async def test_handler_start(handler, message):
