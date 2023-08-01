@@ -51,12 +51,15 @@ async def test_listener_start(message):
     await listener.handler.handle_message(message)
     msg = await listener.handler.get_latest_message()
     assert listener.handler is not None
+    assert listener.handler.connected is True
     assert listener.platform == "telegram"
     assert listener.handler.connected is not None
     handle_iteration_limit.assert_awaited
     check_connected.assert_awaited
     assert msg == message
-
+    with patch(listener.handler.is_connected,False):
+        assert listener.connected is False
+        assert listener.handler is None
 
 # @pytest.mark.asyncio
 # async def test_listener_start(listener):

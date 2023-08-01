@@ -54,5 +54,4 @@ class Listener:
                 task.cancel()
                 self.handler = None
                 self.is_connected = False
-                return
 
