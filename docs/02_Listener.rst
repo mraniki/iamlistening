@@ -1,7 +1,7 @@
 Listener
 ========
-.. py:module:: iamlistening
-.. py:class: Listener
+.. automodule:: iamlistening.main
+    :members:
 
 Listener
 ---------
