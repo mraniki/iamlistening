@@ -6,7 +6,7 @@ IAMLISTENING
 .. py:module:: iamlistening
 
 Python module to connect to instant messaging platforms and listen to messages.
-Supported platforms are listed under :ref:`clients <02_module>`
+Supported platforms are listed under :ref:`clients <_iamlistening>`
 
 
 
@@ -16,11 +16,10 @@ Supported platforms are listed under :ref:`clients <02_module>`
 
 
 .. toctree::
-    :maxdepth: 4
+   :maxdepth: 4
 
-    
-    01_install
-    02_module
-    03_settings
-    00_full
+   01_install
+   02_module
+   03_settings
+   00_full
 

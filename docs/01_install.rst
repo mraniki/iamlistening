@@ -17,9 +17,12 @@ Example
 The following example illustrate how to use the module
 
 
-.. :class: dropdown
+```{toggle}
+
 .. rli:: https://raw.githubusercontent.com/mraniki/iamlistening/main/examples/example.py
     :language: python
+
+```
 
 
 
