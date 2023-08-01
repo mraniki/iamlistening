@@ -46,10 +46,3 @@ async def test_get_handler(listener):
         await listener.start()
         get_handler.assert_called_once
         
-
-@pytest.mark.asyncio
-async def test_handler_start(handler, message):
-    await handler.start()
-    await handler.handle_message(message)
-    msg = await handler.get_latest_message()
-    assert msg == message

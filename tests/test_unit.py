@@ -29,10 +29,6 @@ async def test_fixture():
 def listener():
     return Listener()
 
-@pytest.fixture(name="handler")
-def handler(listener):
-    return listener.chat_manager.get_handler(listener.platform)
-
 @pytest.fixture(name="message")
 def message():
     return "hello"
@@ -62,10 +58,24 @@ async def test_listener_fixture(listener):
 
 @pytest.mark.asyncio
 async def test_listener_start(listener):
-    listener.handler = AsyncMock()
-    with patch.object(listener, "start"):
-        await listener.start()
-        listener.handler.assert_called_once
+    handle_iteration_limit = AsyncMock()
+    check_connected = AsyncMock()
+    await listener.start()
+    await listener.handler.handle_message(message)
+    msg = await listener.handler.get_latest_message()
+    assert msg == message
+    assert listener.handler is not None
+    assert listener.platform == "telegram"
+    assert listener.handler.connected is not None
+    handle_iteration_limit.assert_awaited
+    check_connected.assert_awaited
+
+# @pytest.mark.asyncio
+# async def test_listener_start(listener):
+#     listener.handler = AsyncMock()
+#     with patch.object(listener, "start"):
+#         await listener.start()
+#         listener.handler.assert_called_once
 
 
 # @pytest.mark.asyncio
@@ -75,17 +85,12 @@ async def test_listener_start(listener):
 #     assert msg == message
 
 
-def test_handler(listener, handler):
-    assert listener.platform == "telegram"
-    assert handler is not None
-
-
-@pytest.mark.asyncio
-async def test_get_handler(listener):
-    get_handler = AsyncMock()
-    with patch.object(listener, "start"):
-        await listener.start()
-        get_handler.assert_called_once
+# @pytest.mark.asyncio
+# async def test_get_handler(listener):
+#     get_handler = AsyncMock()
+#     with patch.object(listener, "start"):
+#         await listener.start()
+#         get_handler.assert_called_once
         
 
 # @pytest.mark.asyncio
