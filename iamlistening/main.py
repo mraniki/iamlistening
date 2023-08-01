@@ -42,9 +42,22 @@ class Listener:
 
     async def start(self):
         """
-        Start the listener.
+        Asynchronously starts the function.
 
+        This function sets the `handler` attribute using the 
+        `get_handler` method of the `chat_manager` instance. 
+        If a handler is found, it starts the handler using the `start` method. 
+        If the handler is not connected, the task is cancelled, 
+        the `handler` attribute is set to `None`, 
+        and the `is_connected` attribute is set to `False`.
+
+        Parameters:
+            None
+
+        Returns:
+            None
         """
+
 
         self.handler = self.chat_manager.get_handler(self.platform)
 

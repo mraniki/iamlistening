@@ -6,8 +6,6 @@ Settings / Env Vars
 
 Setting available via settings.toml or .env
 
-.. expand::
-   :class: dropdown
     
-    .. rli:: https://raw.githubusercontent.com/mraniki/iamlistening/main/iamlistening/default_settings.toml
-       :language: toml
+.. rli:: https://raw.githubusercontent.com/mraniki/iamlistening/main/iamlistening/default_settings.toml
+   :language: toml

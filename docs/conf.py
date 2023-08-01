@@ -71,6 +71,8 @@ html_theme_options = {
     'source_link_position': "footer",
     'bootswatch_theme': "darkly",
     'navbar_sidebarrel': False,
+    'navbar_pagenav': False,
+    'globaltoc_depth': -1,
     'bootstrap_version': "3",
     'navbar_links': [("Install", "01_install"),
                      ("Module", "02_module"),

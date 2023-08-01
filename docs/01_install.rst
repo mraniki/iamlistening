@@ -16,10 +16,9 @@ Example
 
 The following example illustrate how to use the module
 
-.. note::
-    :class: dropdown
 
-    .. rli:: https://raw.githubusercontent.com/mraniki/iamlistening/main/examples/example.py
+.. rli:: https://raw.githubusercontent.com/mraniki/iamlistening/main/examples/example.py
+    :class: dropdown
     :language: python
 
 
