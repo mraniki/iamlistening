@@ -16,13 +16,11 @@ Supported platforms are listed under clients
 
 
 .. toctree::
-    :caption: Introduction
+    :caption: IAMLISTENING
     
-
-    IAMLISTENING <self>
     01_getting_started
     02_listener
-
+    03_settings
 
 
 Talky

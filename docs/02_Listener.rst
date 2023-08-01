@@ -3,7 +3,7 @@ Listener
 .. py:module:: iamlistening
 
 .. toctree::
-   :maxdepth: 6
+   :maxdepth: 4
 
    iamlistening
 
@@ -21,28 +21,23 @@ Chat Manager
 ------------
 
 
-.. automodule:: iamlistening.main.chat_manager
+.. automodule:: iamlistening.main.platform.chat_manager
    :members:
    :undoc-members:
    :show-inheritance:
 
 
+
 Chat Client Supported
 ---------------------
 
+.. automodule:: iamlistening.platform.clients
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-   .. automodule:: iamlistening.platforms.clients
-      :members:
-      :undoc-members:
-      :show-inheritance:
 
-
-Settings / Env Vars
-===================
-Setting available via settings.toml
-
-.. note::
-   :class: dropdown
-    
-    .. rli:: https://raw.githubusercontent.com/mraniki/iamlistening/main/iamlistening/default_settings.toml
-       :language: toml
+.. automodule:: iamlistening.platform.clients.telegram
+   :members:
+   :undoc-members:
+   :show-inheritance:
