@@ -25,7 +25,7 @@ Supported platforms are listed under clients
 .. toctree::
     :caption: Platforms
     
-    08_platform_manager
+    08_chat_manager
     09_clients
 
 
