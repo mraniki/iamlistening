@@ -21,5 +21,6 @@ Supported platforms are listed under :ref:`clients <_iamlistening>`
    01_install
    02_module
    03_settings
-   00_full
+   
+..   00_full
 
