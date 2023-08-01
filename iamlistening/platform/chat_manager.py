@@ -52,14 +52,7 @@ class ChatManager():
         self.iteration_limit = settings.iteration_limit or -1
         self.iteration_count = 0
 
-    async def check_connected(func):
-        async def wrapper(self, *args, **kwargs):
-            if self.is_connected:
-                await self.connected()
-            return await func(self, *args, **kwargs)
-        return wrapper
-    
-    @check_connected
+
     async def start(self):
         """ 
         Start the chat manager.
@@ -112,7 +105,6 @@ class ChatManager():
         Returns:
             None
         """
-        logger.debug(self.iteration_limit)
         if self.iteration_count != self.iteration_limit:
             await asyncio.sleep(0.1)
             self.iteration_count += 1
@@ -129,5 +121,4 @@ class ChatManager():
         Returns:
             None
         """
-        logger.info("listener handler is offline")
         self.is_connected = False
