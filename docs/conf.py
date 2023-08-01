@@ -198,7 +198,7 @@ html_theme_options = {
 html_static_path = ["_static"]
 
 html_css_files = [
-    "custom.css",
+    # "custom.css",
     "https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/darkly/bootstrap.min.css"
     #"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 ]
@@ -223,5 +223,5 @@ intersphinx_mapping = {
 intersphinx_disabled_reftypes = ["*"]
 
 
-def setup(app):
-    app.add_css_file("custom.css")
+# def setup(app):
+#     app.add_css_file("custom.css")

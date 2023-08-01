@@ -1,7 +1,8 @@
 Listener
 ========
 .. py:module:: iamlistening
-
+.. toctree::
+   :maxdepth: 4
 
 Listener Class
 --------------
@@ -22,3 +23,11 @@ Chat Manager
    :show-inheritance:
 
 
+
+Chat Client Supported
+---------------------
+
+.. automodule:: iamlistening.platform.clients.telegram
+   :members:
+   :undoc-members:
+   :show-inheritance:
