@@ -6,11 +6,9 @@ Getting started
 Installation
 ------------
 
-.. code-block:: bash
+::
     
     pip install iamlistening
-
-
 
 
 Example
