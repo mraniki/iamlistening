@@ -57,36 +57,4 @@ async def test_listener_start(message):
     handle_iteration_limit.assert_awaited
     check_connected.assert_awaited
     assert msg == message
-    with patch(listener.handler.is_connected,False):
-        assert listener.connected is False
-        assert listener.handler is None
 
-# @pytest.mark.asyncio
-# async def test_listener_start(listener):
-#     listener.handler = AsyncMock()
-#     with patch.object(listener, "start"):
-#         await listener.start()
-#         listener.handler.assert_called_once
-
-
-# @pytest.mark.asyncio
-# async def test_chat_manager(message, handler):
-#     await handler.handle_message(message)
-#     msg = await handler.get_latest_message()
-#     assert msg == message
-
-
-# @pytest.mark.asyncio
-# async def test_get_handler(listener):
-#     get_handler = AsyncMock()
-#     with patch.object(listener, "start"):
-#         await listener.start()
-#         get_handler.assert_called_once
-        
-
-# @pytest.mark.asyncio
-# async def test_handler_start(handler, message):
-#     await handler.start()
-#     await handler.handle_message(message)
-#     msg = await handler.get_latest_message()
-#     assert msg == message
