@@ -76,6 +76,9 @@ html_theme_options = {
     'navbar_links': [
         ("Talky", "https://talkytrader.github.io/wiki/",True),
         ("IamListening",  "_iamlistening_index"),
+        ("_menu",  "Plugins",[
+            ("IamListening",  "_iamlistening_index", True ),
+        ]),
         ("Github", "https://github.com/mraniki/tt", True),
     ]
 

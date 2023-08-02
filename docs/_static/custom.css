@@ -14,7 +14,9 @@
     --card-bg: #212529;
    
    }
-
+   a {
+    color: #ffcc00;
+  }
 details {
      background: #292929;
      margin-bottom: 2rem;
