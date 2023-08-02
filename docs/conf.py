@@ -79,7 +79,7 @@ html_theme_options = {
     'source_link_position': "footer",
     'bootswatch_theme': "darkly",
     'navbar_sidebarrel': False,
-    'navbar_pagenav': true,
+    'navbar_pagenav': True,
     'globaltoc_depth': 2,
     'bootstrap_version': "3",
     'navbar_links': [
