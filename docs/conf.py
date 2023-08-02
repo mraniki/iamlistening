@@ -42,7 +42,6 @@ intersphinx_mapping = {
 napoleon_google_docstring = True
 autosummary_generate = True
 autoclass_content = 'both'
-html_show_sourcelink = True
 autodoc_inherit_docstrings = True 
 set_type_checking_flag = True 
 autodoc_member_order = 'bysource'
@@ -62,6 +61,8 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 html_static_path = ["_static"]
 html_logo = '_static/favicon.png'
 html_favicon = '_static/favicon.ico'
+html_copy_source = False
+html_show_sourcelink = False
 
 html_theme_options = {
 
@@ -75,9 +76,10 @@ html_theme_options = {
     'navbar_site_name': "TT",
     'navbar_links': [
         ("Talky", "https://talkytrader.github.io/wiki/",True),
-        ("IamListening",  "_iamlistening_index"),
+        ("IamListening",  "index"),
         ("_menu",  "Plugins",[
-            ("IamListening",  "_iamlistening_index", True ),
+            ("IamListening",  "http://iamlistening.rtfd.io/", True ),
+            ("FindMyOrder",  "http://findmyorder.rtfd.io/", True ),
         ]),
         ("Github", "https://github.com/mraniki/tt", True),
     ]

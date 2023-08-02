@@ -17,6 +17,9 @@
    a {
     color: #ffcc00;
   }
+  a:hover {
+    color: #05C7F2 !important;
+  }
 details {
      background: #292929;
      margin-bottom: 2rem;
@@ -26,6 +29,9 @@ details {
 .navbar {
 background-color: #292929;
 }
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #ffcc00 !important;
+  }
 
 *[id]:before {
   display: block;
