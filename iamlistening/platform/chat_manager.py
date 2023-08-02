@@ -7,7 +7,23 @@ from iamlistening.config import settings
 
 
 class ChatManager():
+    """
+    Chat manager
 
+    Attributes:
+        platform (str): The platform to use
+        bot (object): The bot
+        is_connected (bool): Is the bot connected
+        latest_message (str): The latest message
+        iteration_limit (int): The iteration limit
+        iteration_count (int): The iteration count
+
+    Methods:
+        start(self)
+        get_handler(self)
+        
+
+    """
     @staticmethod
     def get_handler(platform=None):
         """
