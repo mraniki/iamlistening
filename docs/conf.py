@@ -82,9 +82,7 @@ html_theme_options = {
         ("Talky", "https://talkytrader.github.io/wiki/",True),
         ("IamListening",  "index"),
         ("_menu",  "Plugins",[
-            ("IamListening",  "http://iamlistening.rtfd.io/", True ),
-            ("_divider", ),
-            ("FindMyOrder",  "http://findmyorder.rtfd.io/", True ),
+            ("IamListening",  "index"),
         ]),
         ("Github", "https://github.com/mraniki/tt", True),
     ]
