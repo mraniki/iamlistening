@@ -1,7 +1,7 @@
 .. _iamlistening_index:
 
-Talky - Iamlistening
-====================
+Iamlistening
+============
 
 
 | Python module to connect to instant messaging platforms and listen to messages.
