@@ -30,6 +30,7 @@ extensions = [
     'myst_parser',
     'sphinxext.remoteliteralinclude',
     'sphinx_togglebutton',
+    'sphinx_design',
     'notfound.extension'
 ]
 
