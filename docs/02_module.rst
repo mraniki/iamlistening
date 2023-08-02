@@ -1,4 +1,6 @@
 .. _iamlistening:
+.. py:module:: iamlistening
+   
 Module
 ======
 

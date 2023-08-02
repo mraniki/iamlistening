@@ -81,13 +81,66 @@ html_theme_options = {
     'navbar_pagenav': False,
     'globaltoc_depth': 3,
     'bootstrap_version': "3",
-    'navbar_links': [("Install", "01_install"),
-                     ("Module", "02_module"),
-                     ("Settings", "03_settings"),
-                     ("Github", "https://github.com/mraniki/iamlistening", True),
-                     ("Talky", "talky"),
-                     ],
-                     }
+    'navbar_links': [
+        ("Talky", "https://talkytrader.github.io/wiki/",True),
+        ("_menu", "Getting Started", 
+        [
+            ("Docker", "https://talkytrader.github.io/wiki/", True),
+            ("_divider", ),
+            ("Local", "https://talkytrader.github.io/wiki/", True),
+            ]),
+        ("_menu", "Plugins",
+        [
+            ("_menu", "IamListening",
+            [
+                ("Install", "01_install"),
+                ("Module", "02_module"),
+                ("Settings", "03_settings"),   
+                ("Github", "https://github.com/mraniki/iamlistening", True),
+                ]),
+            ("_divider", ),
+            ("_menu", "Helper",
+            [
+                ("Install", "01_install"),
+                ("Module", "02_module"),
+                ("Settings", "03_settings"),   
+                ("Github", "https://github.com/mraniki/iamlistening", True),
+                ]),
+            ("_divider", ),
+            ("_menu", "FindMyOrder",
+            [
+                ("Install", "01_install"),
+                ("Module", "02_module"),
+                ("Settings", "03_settings"),   
+                ("Github", "https://github.com/mraniki/iamlistening", True),
+                ]),
+            ("_menu", "DxSp",
+            [
+                ("Install", "01_install"),
+                ("Module", "02_module"),
+                ("Settings", "03_settings"),   
+                ("Github", "https://github.com/mraniki/iamlistening", True),
+                ]),
+            ("_menu", "CeX",
+            [
+                ("Install", "01_install"),
+                ("Module", "02_module"),
+                ("Settings", "03_settings"),   
+                ("Github", "https://github.com/mraniki/iamlistening", True),
+                ]),
+
+            ("_menu", "TalkyTrend",
+            [
+                ("Install", "01_install"),
+                ("Module", "02_module"),
+                ("Settings", "03_settings"),   
+                ("Github", "https://github.com/mraniki/iamlistening", True),
+                ]),
+            ]),
+        ("Github", "https://github.com/mraniki/tt", True),
+            ],
+
+}
 
 
 def setup(app):

@@ -10,15 +10,20 @@
 :root {
     --body-bg: #303C6C;
     --body-color: #E2E8E4;
-    --body-link-color: #FFCCBB;
+    --body-link-color: #ffcc00;
     --card-bg: #212529;
    
    }
-   details {
+
+details {
      background: #292929;
      margin-bottom: 2rem;
      padding: .5rem 1rem;
    }
+
+.navbar {
+background-color: #292929;
+}
 
 *[id]:before {
   display: block;
