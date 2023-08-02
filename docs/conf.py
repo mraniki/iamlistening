@@ -71,8 +71,8 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 html_theme = "bootstrap"
 html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 html_static_path = ["_static"]
-# html_logo = '_static/favicon.png'
-# html_favicon = '_static/favicon.ico'
+html_logo = '_static/favicon.png'
+html_favicon = '_static/favicon.ico'
 
 html_theme_options = {
     'source_link_position': "footer",

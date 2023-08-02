@@ -6,7 +6,6 @@ Module
    :toctree: _autosummary
    :recursive:
    :members:
-   :show-inheritance:
 
    iamlistening
 
