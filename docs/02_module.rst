@@ -7,5 +7,11 @@ Module
    :recursive:
    :members:
    :show-inheritance:
-   
+   :inherited-members:
+
    iamlistening
+
+   
+      .. autoclass::
+
+
