@@ -3,7 +3,6 @@ Module
 ======
 
 .. autosummary::
-.. autoclass::
    :toctree: _autosummary
    :recursive:
 
