@@ -34,6 +34,8 @@ Client Class
    iamlistening.platform.clients.mastodon.MastodonHandler
 
 
+iamlistening
+============
 
 .. automodule:: iamlistening
     :members:
