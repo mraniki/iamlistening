@@ -79,14 +79,14 @@ html_theme_options = {
     'source_link_position': "footer",
     'bootswatch_theme': "darkly",
     'navbar_sidebarrel': False,
-    'navbar_pagenav': False,
-    'globaltoc_depth': 3,
+    'navbar_pagenav': true,
+    'globaltoc_depth': 2,
     'bootstrap_version': "3",
     'navbar_links': [
         ("Talky", "https://talkytrader.github.io/wiki/",True),
         ("_menu", "Plugins",
         [
-            ("_menu", "index"),
+            ("IamListening", "iamlistening"),
             ("_divider", ),
             ]),
         ("Github", "https://github.com/mraniki/tt", True),
