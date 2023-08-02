@@ -12,7 +12,7 @@ Talky - Iamlistening
    :maxdepth: 4
 
    IAL_01_install
-   IAL_02_module
-   Module Reference <_autosummary/iamlistening>
-   IAL_03_settings
+   IAL_02_settings
+   Module <_autosummary/iamlistening>
+   
 
