@@ -1,10 +1,10 @@
 Full
 ====
 
-.. toctree::
-   :maxdepth: 4
 
-.. automodule:: iamlistening
-   :members:
-   :undoc-members:
-   :show-inheritance:
+.. autosummary::
+   :toctree: _autosummary
+   :template: custom-module-template.rst
+   :recursive:
+
+   iamlistening
