@@ -58,6 +58,7 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 html_theme = "bootstrap"
 html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
+
 html_static_path = ["_static"]
 html_logo = '_static/favicon.png'
 html_favicon = '_static/favicon.ico'
@@ -71,6 +72,8 @@ html_theme_options = {
     'bootstrap_version': "3",
     'globaltoc_depth': 2,
     'globaltoc_includehidden': "true",
+    'navbar_class': "navbar navbar-inverse",
+    
     'navbar_sidebarrel': False,
     'navbar_pagenav': False,
     'navbar_site_name': "TT",
@@ -79,6 +82,7 @@ html_theme_options = {
         ("IamListening",  "index"),
         ("_menu",  "Plugins",[
             ("IamListening",  "http://iamlistening.rtfd.io/", True ),
+            ("_divider", ),
             ("FindMyOrder",  "http://findmyorder.rtfd.io/", True ),
         ]),
         ("Github", "https://github.com/mraniki/tt", True),
