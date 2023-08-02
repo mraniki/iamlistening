@@ -11,6 +11,7 @@ from iamlistening.platform.chat_manager import ChatManager
 class TelegramHandler(ChatManager):
     """
     Telegram Handler
+
     """
 
     def __init__(self):

@@ -27,4 +27,8 @@ Client Class
 .. autosummary::
     :toctree: generated/
     
-   iamlistening.platform.clients.telegram
+   iamlistening.platform.clients.telegram.TelegramHandler
+   iamlistening.platform.clients.discord.DiscordHandler
+   iamlistening.platform.clients.matrix.MatrixHandler
+   iamlistening.platform.clients.guilded.GuildedHandler
+   iamlistening.platform.clients.mastodon.MastodonHandler
