@@ -3,8 +3,8 @@ Module
 ======
 
 .. autosummary::
+.. autoclass::
    :toctree: _autosummary
-   :template: module.rst
    :recursive:
 
    iamlistening
