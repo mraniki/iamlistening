@@ -75,14 +75,9 @@ html_theme_options = {
     'navbar_site_name': "TT",
     'navbar_links': [
         ("Talky", "https://talkytrader.github.io/wiki/",True),
-        ("_menu", "Plugins",
-        [
+        ("_menu", "IamListening", [
             ("IamListening", "IAL_index"),
             ("_divider", ),
-            ("FindMyOrder", "https://talky.readthedocs.io/projects/findmyorder/", True),
-            ("DXSP", "https://talky.readthedocs.io/projects/dxsp/", True),
-            ("_divider", ),
-            ("TalkyTrend", "https://talky.readthedocs.io/projects/talkytrend/", True),
             ]),
         ("Github", "https://github.com/mraniki/tt", True),
     ]
