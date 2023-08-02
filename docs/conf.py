@@ -86,8 +86,12 @@ html_theme_options = {
         ("Talky", "https://talkytrader.github.io/wiki/",True),
         ("_menu", "Plugins",
         [
-            ("IamListening", "iamlistening"),
+            ("IamListening", "index"),
             ("_divider", ),
+            ("FindMyOrder", "https://talky.readthedocs.io/projects/findmyorder/", True),
+            ("DXSP", "https://talky.readthedocs.io/projects/dxsp/", True),
+            ("_divider", ),
+            ("TalkyTrend", "https://talky.readthedocs.io/projects/talkytrend/", True),
             ]),
         ("Github", "https://github.com/mraniki/tt", True),
     ]
