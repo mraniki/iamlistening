@@ -1,6 +1,6 @@
 .. _iamlistening:
 .. py:module:: iamlistening
-   
+
 Module
 ======
 
@@ -10,6 +10,12 @@ Module
    :members:
 
    iamlistening
+
+
+.. automodule:: iamlistening.main
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
 
 

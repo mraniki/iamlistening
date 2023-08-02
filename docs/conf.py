@@ -75,6 +75,7 @@ html_logo = '_static/favicon.png'
 html_favicon = '_static/favicon.ico'
 
 html_theme_options = {
+    'navbar_site_name': "TT",
     'source_link_position': "footer",
     'bootswatch_theme': "darkly",
     'navbar_sidebarrel': False,
@@ -83,62 +84,13 @@ html_theme_options = {
     'bootstrap_version': "3",
     'navbar_links': [
         ("Talky", "https://talkytrader.github.io/wiki/",True),
-        ("_menu", "Getting Started", 
-        [
-            ("Docker", "https://talkytrader.github.io/wiki/", True),
-            ("_divider", ),
-            ("Local", "https://talkytrader.github.io/wiki/", True),
-            ]),
         ("_menu", "Plugins",
         [
-            ("_menu", "IamListening",
-            [
-                ("Install", "01_install"),
-                ("Module", "02_module"),
-                ("Settings", "03_settings"),   
-                ("Github", "https://github.com/mraniki/iamlistening", True),
-                ]),
+            ("_menu", "index"),
             ("_divider", ),
-            ("_menu", "Helper",
-            [
-                ("Install", "01_install"),
-                ("Module", "02_module"),
-                ("Settings", "03_settings"),   
-                ("Github", "https://github.com/mraniki/iamlistening", True),
-                ]),
-            ("_divider", ),
-            ("_menu", "FindMyOrder",
-            [
-                ("Install", "01_install"),
-                ("Module", "02_module"),
-                ("Settings", "03_settings"),   
-                ("Github", "https://github.com/mraniki/iamlistening", True),
-                ]),
-            ("_menu", "DxSp",
-            [
-                ("Install", "01_install"),
-                ("Module", "02_module"),
-                ("Settings", "03_settings"),   
-                ("Github", "https://github.com/mraniki/iamlistening", True),
-                ]),
-            ("_menu", "CeX",
-            [
-                ("Install", "01_install"),
-                ("Module", "02_module"),
-                ("Settings", "03_settings"),   
-                ("Github", "https://github.com/mraniki/iamlistening", True),
-                ]),
-
-            ("_menu", "TalkyTrend",
-            [
-                ("Install", "01_install"),
-                ("Module", "02_module"),
-                ("Settings", "03_settings"),   
-                ("Github", "https://github.com/mraniki/iamlistening", True),
-                ]),
             ]),
         ("Github", "https://github.com/mraniki/tt", True),
-            ],
+    ]
 
 }
 
