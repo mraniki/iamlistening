@@ -6,6 +6,12 @@ Module
 
 Listener Class
 --------------
+.. autosummary::
+    :toctree: generated/
+
+   iamlistening
+
+
 
 .. autosummary::
     :toctree: generated/
@@ -38,6 +44,8 @@ iamlistening
 ============
 
 .. automodule:: iamlistening
-   :members:
-   :undoc-members:
-   :show-inheritance:
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
