@@ -53,14 +53,14 @@ napoleon_use_keyword = True
 
 autosummary_generate = True
 autoclass_content = 'both'
-html_show_sourcelink = False
+html_show_sourcelink = True
 autodoc_inherit_docstrings = True 
 set_type_checking_flag = True 
 autodoc_member_order = 'bysource'
-add_module_names = False
+add_module_names = True
 
 
-master_doc = 'index'
+master_doc = 'IAL_index'
 source_suffix = ['.rst', '.md']
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
@@ -75,18 +75,20 @@ html_logo = '_static/favicon.png'
 html_favicon = '_static/favicon.ico'
 
 html_theme_options = {
-    'navbar_site_name': "TT",
+
     'source_link_position': "footer",
     'bootswatch_theme': "darkly",
-    'navbar_sidebarrel': False,
-    'navbar_pagenav': True,
-    'globaltoc_depth': 2,
     'bootstrap_version': "3",
+    'globaltoc_depth': 2,
+    'globaltoc_includehidden': "true",
+    'navbar_sidebarrel': False,
+    'navbar_pagenav': False,
+    'navbar_site_name': "TT",
     'navbar_links': [
         ("Talky", "https://talkytrader.github.io/wiki/",True),
         ("_menu", "Plugins",
         [
-            ("IamListening", "index"),
+            ("IamListening", "IAL_index"),
             ("_divider", ),
             ("FindMyOrder", "https://talky.readthedocs.io/projects/findmyorder/", True),
             ("DXSP", "https://talky.readthedocs.io/projects/dxsp/", True),

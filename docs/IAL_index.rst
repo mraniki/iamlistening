@@ -10,7 +10,7 @@ Talky - Iamlistening
 .. toctree::
    :maxdepth: 4
 
-   01_install
-   02_module
-   03_settings
+   IAL_01_install
+   IAL_02_module
+   IAL_03_settings
 

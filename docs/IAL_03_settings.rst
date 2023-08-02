@@ -1,8 +1,8 @@
 
+
+
 Settings / Env Vars
 ===================
-.. py:module:: iamlistening
-
 
 Setting available via settings.toml or .env
 

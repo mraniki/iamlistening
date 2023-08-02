@@ -7,6 +7,8 @@ Module
 .. autosummary::
    :toctree: _autosummary
    :recursive:
+   :members:
+   :undoc-members:
 
    iamlistening
 
