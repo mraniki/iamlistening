@@ -1,5 +1,6 @@
 """
 Telegram 🔵
+
 """
 from loguru import logger
 from telethon import TelegramClient, events
@@ -18,6 +19,8 @@ class TelegramHandler(ChatManager):
         """
         Initialize the Telegram handler.
 
+        :param arg: No arguments
+        :return: Initialize the Telegram handler
         """
         super().__init__()
  
