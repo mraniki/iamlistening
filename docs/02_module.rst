@@ -32,3 +32,9 @@ Client Class
    iamlistening.platform.clients.matrix.MatrixHandler
    iamlistening.platform.clients.guilded.GuildedHandler
    iamlistening.platform.clients.mastodon.MastodonHandler
+
+
+
+.. autoclass:: iamlistening.Listener
+    :members:
+    :undoc-members:
