@@ -40,17 +40,6 @@ intersphinx_mapping = {
 # -- Extension configuration ---------------------------------------------------
 
 napoleon_google_docstring = True
-napoleon_include_init_with_doc = True
-napoleon_include_private_with_doc = False
-napoleon_include_special_with_doc = False
-napoleon_use_admonition_for_examples = True
-napoleon_use_admonition_for_notes = True
-napoleon_use_admonition_for_references = True
-napoleon_use_ivar = True
-napoleon_use_param = True
-napoleon_use_rtype = True
-napoleon_use_keyword = True
-
 autosummary_generate = True
 autoclass_content = 'both'
 html_show_sourcelink = True
