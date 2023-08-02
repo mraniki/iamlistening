@@ -38,4 +38,6 @@ iamlistening
 ============
 
 .. automodule:: iamlistening
-    :members:
+   :members:
+   :undoc-members:
+   :show-inheritance:
