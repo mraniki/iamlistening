@@ -49,7 +49,7 @@ autodoc_member_order = 'bysource'
 add_module_names = True
 
 
-master_doc = 'IAL_index'
+master_doc = 'index'
 source_suffix = ['.rst', '.md']
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]

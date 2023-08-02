@@ -1,6 +1,5 @@
 Getting started
 ===============
-.. py:module:: iamlistening
 
 
 Installation
