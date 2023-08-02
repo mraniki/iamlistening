@@ -35,6 +35,5 @@ Client Class
 
 
 
-.. autoclass:: iamlistening.Listener
+.. automodule:: iamlistening
     :members:
-    :undoc-members:
