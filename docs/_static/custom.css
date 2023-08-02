@@ -1,4 +1,16 @@
-/* From https://github.com/twbs/bootstrap/issues/1768 */
+/* From https://github.com/twbs/bootstrap/issues/1768 
+#073BD9
+
+#05C7F2
+
+#05F2F2
+
+#F2DA63
+
+#F2E6A7
+
+
+*/
 *[id]:before {
   display: block;
   content: " ";
