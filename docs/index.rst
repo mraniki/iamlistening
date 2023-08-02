@@ -12,7 +12,8 @@ Iamlistening
    :maxdepth: 4
 
    IAL_01_install
+   Module reference <_autosummary/iamlistening>
    IAL_02_settings
-   Module <_autosummary/iamlistening>
+   
    
 
