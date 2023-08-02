@@ -85,7 +85,7 @@ html_theme_options = {
                      ("Module", "02_module"),
                      ("Settings", "03_settings"),
                      ("Github", "https://github.com/mraniki/iamlistening", True),
-                     ("Talky", "https://talkytrader.github.io/wiki/", True),
+                     ("Talky", "talky"),
                      ],
                      }
 

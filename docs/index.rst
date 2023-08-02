@@ -13,6 +13,4 @@ Talky - Iamlistening
    01_install
    02_module
    03_settings
-   00_full
-
 
