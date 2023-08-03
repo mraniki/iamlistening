@@ -51,7 +51,7 @@ intersphinx_mapping = {
     "talkytrader": ("https://talky.readthedocs.io", None),
     "findmyorder": ("https://findmyorder.readthedocs.io", None),
     "dxsp": ("https://dxsp.readthedocs.io", None),
-    "iamlistening": ("https://talky.readthedocs.io/projects/imalistening/", None),
+    "iamlistening": ("https://iamlistening.rtfd.io/00_index_iamlistening", None),
     "talkytrend": ("https://talkytrend.readthedocs.io", None),
 }
 
@@ -87,9 +87,8 @@ html_theme_options = {
             ("⚙️ Config",  "https://talky.rtfd.io",True),
         ]),
         ("_menu",  "🔌 Plugins",[
-            ("👂 IamListening",  "_iamlistening_index"),
-            ("🔎 IamListening2",  "iamlistening:00_index_iamlistening"),
-            ("🔎 IamListening3",  "iamlistening:_iamlistening_index"),
+            ("👂 IamListening",  "https://iamlistening.rtfd.io/00_index_iamlistening"),
+            ("🔎 FindMyOrder",  "https://iamlistening.rtfd.io/_iamlistening_index"),
             ("⛓️ DXSP",  "https://talky.readthedocs.io/projects/dxsp/",True),
             ("💱 CEX",  "index",True),
             ("💁 Helper",  "index",True),
