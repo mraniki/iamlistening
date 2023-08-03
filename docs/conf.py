@@ -84,7 +84,7 @@ html_static_path = ["_static"]
 html_css_files = [
     "custom.css",
 ]
-html_sidebars = {'sidebar': ['globaltoc.html']}
+# html_sidebars = {'sidebar': ['globaltoc.html']}
 
 html_logo = '_static/favicon.png'
 html_favicon = '_static/favicon.ico'
