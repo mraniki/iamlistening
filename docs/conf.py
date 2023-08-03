@@ -65,7 +65,7 @@ html_css_files = [
     "custom.css",
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 ]
-html_logo = '_static/logo-full.png'
+# html_logo = '_static/logo-full.png'
 html_favicon = '_static/favicon.ico'
 html_copy_source = False
 html_show_sourcelink = False
