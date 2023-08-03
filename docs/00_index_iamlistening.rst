@@ -1,7 +1,7 @@
 .. _iamlistening_index:
 
 ==============
- IamListening
+ IamListening<self>
 ==============
 
 | Python module to connect to instant messaging platforms and listen to messages.
@@ -9,7 +9,7 @@
 
 
 .. toctree::
-   :maxdepth: 5
+   :maxdepth: 4
 
    01_setup
    02_config

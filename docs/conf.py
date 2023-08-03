@@ -69,19 +69,22 @@ html_theme_options = {
 
     'navbar_links': [
         ("TalkyTrader", "https://talkytrader.github.io/wiki/",True),
-        ("_menu",  "Talky",[
-            ("Install",  "https://talky.rtfd.io",True),
-            ("Config",  "https://talky.rtfd.io",True),
+        ("_menu",  "🗿 Talky",[
+            ("🪙 Get started",  "https://talky.rtfd.io",True),
+            ("⚙️ Config",  "https://talky.rtfd.io",True),
         ]),
-        ("_menu",  "Plugins",[
-            ("IamListening",  "https://talky.readthedocs.io/projects/imalistening/",True),
-            ("FindMyOrder",  "https://talky.readthedocs.io/projects/findmyorder/",True),
-            ("DXSP",  "https://talky.readthedocs.io/projects/dxsp/",True),
-            ("CEX",  "index",True),
-            ("Helper",  "index",True),
-            ("Talkytrend",  "https://talky.readthedocs.io/projects/talkytrend/",True),
+        ("_menu",  "🔌 Plugins",[
+            ("👂 IamListening",  "https://talky.readthedocs.io/projects/imalistening/",True),
+            ("🔎 FindMyOrder",  "https://talky.readthedocs.io/projects/findmyorder/",True),
+            ("⛓️ DXSP",  "https://talky.readthedocs.io/projects/dxsp/",True),
+            ("💱 CEX",  "index",True),
+            ("💁 Helper",  "index",True),
+            ("📰 Talkytrend",  "https://talky.readthedocs.io/projects/talkytrend/",True),
         ]),
-        ("&#128025", "https://github.com/mraniki/tt", True),
+        ("_menu",  "More",[
+            ("&#128025 What's new?",  "https://github.com/mraniki/t",True),
+            ("💬 Connect",  "https://talky.rtfd.io",True),
+        ]),
     ]
 
 }

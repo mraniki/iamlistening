@@ -5,7 +5,7 @@ TalkyTrader
 ===========
 
 .. image:: https://i.imgur.com/Q7iDDyB.jpg
-  :width: 400
+  :width: 200
   :alt: logo
   :align: right
 
@@ -16,12 +16,9 @@ TalkyTrader
 
 
 .. toctree::
-   :maxdepth: 5
+   :maxdepth: 4
    
-   00_index
-   01_setup
-   02_config
-   03_module
+   00_index_iamlistening
 
 
 .. raw:: html
