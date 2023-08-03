@@ -53,10 +53,10 @@ html_theme = "bootstrap"
 
 
 html_theme_options = {
-    'navbar_title': "TalkyTrader",
+    'navbar_title': " ",
     'navbar_site_name': "IamListening",
     'navbar_sidebarrel': False,
-    # 'navbar_pagenav_name': "Sections",
+    'navbar_pagenav_name': "Sections",
     'navbar_pagenav': False,
     'globaltoc_depth': 4,
     'globaltoc_includehidden': "true",
@@ -64,17 +64,14 @@ html_theme_options = {
     'navbar_fixed_top': "true",
     'source_link_position': "none",
 
-    'bootswatch_theme': "sandstone",
+    'bootswatch_theme': "darkly",
     'bootstrap_version': "3",
-
-
-    'navbar_sidebarrel': False,
 
     'navbar_links': [
         ("TalkyTrader", "https://talkytrader.github.io/wiki/",True),
         ("_menu",  "Plugins",[
             ("IamListening",  "index"),
-            ("Install",  "IAL_01_install"),
+            ("Install",  "01_setup"),
             ("_divider", ),
         ]),
         ("Github", "https://github.com/mraniki/tt", True),
@@ -89,11 +86,11 @@ html_css_files = [
 ]
 html_sidebars = {'sidebar': ['globaltoc.html']}
 
-# html_logo = '_static/logo-full.png'
+html_logo = '_static/logo-full.png'
 html_favicon = '_static/favicon.ico'
 # html_copy_source = False
 # html_show_sourcelink = False
 
-# def setup(app):
-#     app.add_css_file("custom.css")
+def setup(app):
+    app.add_css_file("custom.css")
 
