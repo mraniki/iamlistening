@@ -74,7 +74,7 @@ html_theme_options = {
             ("Install",  "01_setup"),
             ("_divider", ),
         ]),
-        ("Github", "https://github.com/mraniki/tt", True),
+        ("&#1F419", "https://github.com/mraniki/tt", True),
     ]
 
 }
@@ -86,7 +86,7 @@ html_css_files = [
 ]
 html_sidebars = {'sidebar': ['globaltoc.html']}
 
-html_logo = '_static/logo-full.png'
+html_logo = '_static/favicon.png'
 html_favicon = '_static/favicon.ico'
 # html_copy_source = False
 # html_show_sourcelink = False
