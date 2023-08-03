@@ -56,14 +56,14 @@ html_theme_options = {
     'navbar_title': "TalkyTrader",
     'navbar_site_name': "IamListening",
     'navbar_sidebarrel': False,
-    'navbar_pagenav_name': "Sections",
+    # 'navbar_pagenav_name': "Sections",
     'navbar_pagenav': False,
-    'globaltoc_depth': 1,
+    'globaltoc_depth': 2,
     'globaltoc_includehidden': "true",
-    'navbar_class': "navbar navbar-inverse",
+    'navbar_class': "navbar",
     'navbar_fixed_top': "true",
+    'source_link_position': "none",
 
-    'source_link_position': "nav",
     'bootswatch_theme': "sandstone",
     'bootstrap_version': "3",
 
@@ -87,7 +87,7 @@ html_static_path = ["_static"]
 # html_css_files = [
 #     "custom.css",
 # ]
-html_sidebars = {'sidebar': ['localtoc.html', 'sourcelink.html', 'searchbox.html']}
+html_sidebars = {'sidebar': ['globaltoc.html']}
 
 # html_logo = '_static/logo-full.png'
 html_favicon = '_static/favicon.ico'
