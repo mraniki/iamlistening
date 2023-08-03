@@ -1,32 +1,24 @@
 .. _iamlistening_index:
 
 ============
-Iamlistening
+IamListening
 ============
 
 | Python module to connect to instant messaging platforms and listen to messages.
-| Supported platforms are listed under client
+| Supported platforms are listed under clients
 
 
 Contents
 ========
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
 
    IAL_01_install
    IAL_02_settings
-
-   
-More Info
-=========
-
-.. toctree::
-   :maxdepth: 4
-
    IAL_03_module
-
+   
 
 
 .. raw:: html
