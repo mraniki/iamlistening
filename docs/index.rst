@@ -19,7 +19,7 @@ Documentation
 =============
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    
    iamlistening:00_index_iamlistening
 
@@ -29,16 +29,10 @@ Documentation
    :caption: Contents:
 
 
-  * :doc:`IamListening <https://talky.readthedocs.io/projects/imalistening/00_index_iamlistening>`
+  * `IamListening <https://talky.readthedocs.io/projects/imalistening/00_index_iamlistening>`
 
 
-* :doc:`IamListening <https://talky.readthedocs.io/projects/imalistening/00_index_iamlistening>`
 
-
-- :ref:`sphinx:ref-role`
-- :ref:`:ref: role <sphinx:ref-role>`
-- :doc:`sphinx:usage/extensions/intersphinx`
-- :doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`     
 
 .. raw:: html
 

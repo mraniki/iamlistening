@@ -89,8 +89,8 @@ html_theme_options = {
             ("⚙️ Config",  "https://talky.rtfd.io/01_config",True),
         ]),
         ("_menu",  "🔌 Plugins",[
-            ("👂 IamListening",  "https://iamlistening.rtfd.io/00_index_iamlistening",True),
-            ("🔎 FindMyOrder",  "https://findmyorder.rtfd.io/00_index_findmyorder",True),
+            ("👂 IamListening",  "https://iamlistening.rtfd.io/00_index_iamlistening", True),
+            ("🔎 FindMyOrder",  "https://findmyorder.rtfd.io/00_index_findmyorder", True),
             ("⛓️ DXSP", "https://dxsp.rtfd.io/00_index_dxsp", True),
             ("💱 CEX",  "index",True),
             ("💁 Helper",  "index",True),
