@@ -43,7 +43,7 @@ tinode_grpc = "^0.22.3"
 
 [tool.poetry.group.dev.dependencies]
 python-semantic-release = "^8.0.4"
-ruff = "^0.0.281"
+ruff = "^0.0.282"
 
 
 
