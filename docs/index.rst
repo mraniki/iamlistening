@@ -12,7 +12,7 @@ Table of Contents
 =================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    IAL_01_install
    IAL_02_settings
