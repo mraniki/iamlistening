@@ -55,12 +55,14 @@ html_theme = "bootstrap"
 html_theme_options = {
     'navbar_title': "TalkyTrader",
     'navbar_site_name': "IamListening",
+    'navbar_sidebarrel': False,
     'navbar_pagenav_name': "Sections",
+    'navbar_pagenav': False,
     'globaltoc_depth': 1,
     'globaltoc_includehidden': "true",
-    'navbar_class': "navbar",
+    'navbar_class': "navbar navbar-inverse",
     'navbar_fixed_top': "true",
-    'navbar_pagenav': True,
+
     'source_link_position': "nav",
     'bootswatch_theme': "sandstone",
     'bootstrap_version': "3",

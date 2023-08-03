@@ -1,8 +1,8 @@
 .. _iamlistening_index:
 
-============
-IamListening
-============
+==============
+ IamListening
+==============
 
 | Python module to connect to instant messaging platforms and listen to messages.
 | Supported platforms are listed under clients
