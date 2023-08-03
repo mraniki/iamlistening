@@ -47,12 +47,14 @@ templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 intersphinx_mapping = {
+    "python": ("http://docs.python.org/", None),
     "talkytrader": ("https://talky.readthedocs.io", None),
     "findmyorder": ("https://findmyorder.readthedocs.io", None),
     "dxsp": ("https://dxsp.readthedocs.io", None),
     "iamlistening": ("https://talky.readthedocs.io/projects/imalistening/", None),
     "talkytrend": ("https://talkytrend.readthedocs.io", None),
 }
+
 # -- Options for HTML output -------------------------------------------------
 
 html_theme = "bootstrap"
@@ -99,6 +101,7 @@ html_theme_options = {
     ]
 
 }
+html_show_sphinx = False
 
 
 

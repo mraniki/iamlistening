@@ -23,23 +23,31 @@ Documentation
    :caption: Contents:
 
 
-
-:ref:`_iamlistening_index`_
-
-
-:doc:`IamListening <iamlistening:_iamlistening_index>`
+*  :ref:`_iamlistening_index`_
 
 
-:doc:`IamListening <iamlistening:00_index_iamlistening>`
+* :doc:`IamListening <iamlistening:_iamlistening_index>`
 
 
-:doc:`IamListening <https://talky.readthedocs.io/projects/imalistening/>`
+* :doc:`IamListening <iamlistening:00_index_iamlistening>`
 
 
-:doc:`findmyorder <findmyorder:index>`
+* :doc:`IamListening <https://talky.readthedocs.io/projects/imalistening/>`
 
 
-:doc:`Talkytrader <talkytrader:index>`
+* :doc:`findmyorder <findmyorder:index>`
+
+
+* :doc:`Talkytrader <talkytrader:index>`
+
+
+Online Resources
+----------------
+
+* `Sourcecode repository on GitHub <https://github.com/mraniki/tt/>`_
+
+
+
       
 .. raw:: html
 
