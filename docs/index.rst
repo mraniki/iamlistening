@@ -14,7 +14,7 @@ Iamlistening
 
    IAL_01_install
    IAL_02_settings
-   Module  <_autosummary/iamlistening>
+   .. Module  <_autosummary/iamlistening>
    
 
 
