@@ -54,9 +54,9 @@ html_theme = "bootstrap"
 
 html_theme_options = {
     'navbar_title': " ",
-    'navbar_site_name': "IamListening",
+    'navbar_site_name': "Talky",
     'navbar_sidebarrel': False,
-    'navbar_pagenav_name': "Sections",
+    # 'navbar_pagenav_name': "Sections",
     'navbar_pagenav': False,
     'globaltoc_depth': 4,
     'globaltoc_includehidden': "true",
@@ -71,10 +71,9 @@ html_theme_options = {
         ("TalkyTrader", "https://talkytrader.github.io/wiki/",True),
         ("_menu",  "Plugins",[
             ("IamListening",  "index"),
-            ("Install",  "01_setup"),
             ("_divider", ),
         ]),
-        ("&#1F419", "https://github.com/mraniki/tt", True),
+        ("&#10084", "https://github.com/mraniki/tt", True),
     ]
 
 }
@@ -86,7 +85,7 @@ html_css_files = [
 ]
 # html_sidebars = {'sidebar': ['globaltoc.html']}
 
-html_logo = '_static/favicon.png'
+html_logo = '_static/logo-full.png'
 html_favicon = '_static/favicon.ico'
 # html_copy_source = False
 # html_show_sourcelink = False
