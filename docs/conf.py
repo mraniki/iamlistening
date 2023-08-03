@@ -85,8 +85,8 @@ html_theme_options = {
             ("⚙️ Config",  "https://talky.rtfd.io",True),
         ]),
         ("_menu",  "🔌 Plugins",[
-            ("👂 IamListening",  "iamlistening:00_index_iamlistening",True),
-            ("🔎 FindMyOrder",  "https://talky.readthedocs.io/projects/findmyorder/",True),
+            ("👂 IamListening",  "_iamlistening_index"),
+            ("🔎 FindMyOrder",  "iamlistening:_iamlistening_index",True),
             ("⛓️ DXSP",  "https://talky.readthedocs.io/projects/dxsp/",True),
             ("💱 CEX",  "index",True),
             ("💁 Helper",  "index",True),

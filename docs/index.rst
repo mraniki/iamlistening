@@ -14,13 +14,15 @@ TalkyTrader
 | Place order, inquire your balance and more through plugins.
 | Easily deploy via Docker on self-hosted platform or Paas.
 
+:ref:`_iamlistening_index`
 
-* `Talkytrader <talkytrader:index>`
-* `IamListening <iamlistening:00_index_iamlistening>`
-* `IamListening <https://talky.readthedocs.io/projects/imalistening/>`
+`IamListening <iamlistening:_iamlistening_index>`
+`IamListening <iamlistening:00_index_iamlistening>`
+`IamListening <https://talky.readthedocs.io/projects/imalistening/>`
+
+
 * `findmyorder <findmyorder:index>`
-
-
+* `Talkytrader <talkytrader:index>`
       
 .. raw:: html
 
