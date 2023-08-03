@@ -58,7 +58,7 @@ html_theme_options = {
     'navbar_sidebarrel': False,
     # 'navbar_pagenav_name': "Sections",
     'navbar_pagenav': False,
-    'globaltoc_depth': 2,
+    'globaltoc_depth': 4,
     'globaltoc_includehidden': "true",
     'navbar_class': "navbar",
     'navbar_fixed_top': "true",

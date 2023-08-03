@@ -8,11 +8,8 @@
 | Supported platforms are listed under clients
 
 
-Table of Contents
-=================
-
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 5
 
    01_setup
    02_config
