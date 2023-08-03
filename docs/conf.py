@@ -57,12 +57,17 @@ intersphinx_mapping = {
 
 html_theme = "bootstrap"
 
-
+html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
+html_static_path = ["_static"]
+html_logo = '_static/favicon.png'
+html_favicon = '_static/favicon.ico'
+html_css_files = [
+    "custom.css",
+]
 html_theme_options = {
     'navbar_title': " ",
     'navbar_site_name': "Talky",
     'navbar_sidebarrel': False,
-    # 'navbar_pagenav_name': "Sections",
     'navbar_pagenav': False,
     'globaltoc_depth': 4,
     'globaltoc_includehidden': "true",
@@ -95,15 +100,6 @@ html_theme_options = {
 
 }
 
-html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
-html_static_path = ["_static"]
-html_css_files = [
-    "custom.css",
-]
-
-
-html_logo = '_static/favicon.png'
-html_favicon = '_static/favicon.ico'
 
 
 def setup(app):
