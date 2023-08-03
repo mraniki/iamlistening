@@ -18,12 +18,22 @@ class ChatManager():
         iteration_limit (int): The iteration limit
         iteration_count (int): The iteration count
 
+    Methods:
+        start(self)
+        get_handler(self)
+        
 
     """
     @staticmethod
     def get_handler(platform=None):
         """
         Get platform handler.
+
+        Args:
+            platform (str): The platform to use
+
+        Returns:
+            PlatformHandler
 
         """
         handler = None
@@ -62,7 +72,7 @@ class ChatManager():
     async def start(self):
         """ 
         Start the chat manager.
-
+        Specific to the client platform
         """
 
     def connected(self):
