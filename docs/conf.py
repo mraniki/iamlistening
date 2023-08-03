@@ -68,25 +68,25 @@ html_theme_options = {
     'bootstrap_version': "3",
 
 
-    # 'navbar_sidebarrel': False,
+    'navbar_sidebarrel': False,
 
-    # 'navbar_links': [
-    #     ("TalkyTrader", "https://talkytrader.github.io/wiki/",True),
-    #     ("_menu",  "Plugins",[
-    #         ("IamListening",  "index"),
-    #         ("Install",  "IAL_01_install"),
-    #         ("_divider", ),
-    #     ]),
-    #     ("Github", "https://github.com/mraniki/tt", True),
-    # ]
+    'navbar_links': [
+        ("TalkyTrader", "https://talkytrader.github.io/wiki/",True),
+        ("_menu",  "Plugins",[
+            ("IamListening",  "index"),
+            ("Install",  "IAL_01_install"),
+            ("_divider", ),
+        ]),
+        ("Github", "https://github.com/mraniki/tt", True),
+    ]
 
 }
 
 html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 html_static_path = ["_static"]
-# html_css_files = [
-#     "custom.css",
-# ]
+html_css_files = [
+    "custom.css",
+]
 html_sidebars = {'sidebar': ['globaltoc.html']}
 
 # html_logo = '_static/logo-full.png'
