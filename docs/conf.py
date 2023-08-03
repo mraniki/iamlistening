@@ -34,9 +34,9 @@ extensions = [
     'notfound.extension'
 ]
 
-intersphinx_mapping = {
-    "talky": ("http://talkytrader.github.io/wiki/", None),
-}
+# intersphinx_mapping = {
+#     "talky": ("http://talkytrader.github.io/wiki/", None),
+# }
 
 # -- Extension configuration ---------------------------------------------------
 
@@ -61,7 +61,7 @@ html_theme = "bootstrap"
 html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 html_static_path = ["_static"]
-#html_logo = '_static/logo-full.png'
+html_logo = '_static/logo-full.png'
 html_favicon = '_static/favicon.ico'
 html_copy_source = False
 html_show_sourcelink = False
@@ -74,18 +74,16 @@ html_theme_options = {
     'globaltoc_depth': 2,
     'globaltoc_includehidden': "true",
     'navbar_class': "navbar navbar-inverse",
-    
+    'navbar_pagenav_name': "Sections",
     'navbar_sidebarrel': False,
     'navbar_pagenav': False,
-    'navbar_site_name': "TT",
+    'navbar_site_name': "Table of Contents",
     'navbar_links': [
-        ("Talky", "https://talkytrader.github.io/wiki/",True),
-        ("IamListening",  "index"),
+        ("TalkyTrader", "https://talkytrader.github.io/wiki/",True),
         ("_menu",  "Plugins",[
             ("IamListening",  "index"),
             ("_divider", ),
-            ("IamListening",  "index"),
-            ("_divider", ),
+            ("Install",  "IAL_01_install"),
         ]),
         ("Github", "https://github.com/mraniki/tt", True),
     ]
