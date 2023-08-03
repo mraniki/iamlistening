@@ -14,10 +14,10 @@ Table of Contents
 .. toctree::
    :maxdepth: 2
 
-   IAL_01_install
-   IAL_02_settings
-   IAL_03_module
+   01_setup
+   02_config
    
+
 
 .. raw:: html
 
