@@ -61,6 +61,10 @@ html_theme = "bootstrap"
 html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 html_static_path = ["_static"]
+html_css_files = [
+    "custom.css",
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+]
 html_logo = '_static/logo-full.png'
 html_favicon = '_static/favicon.ico'
 html_copy_source = False
