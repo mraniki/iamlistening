@@ -53,20 +53,21 @@ html_theme = "bootstrap"
 
 
 html_theme_options = {
-    'navbar_title': "Demo",
-    'navbar_site_name': "Site",
-    'navbar_pagenav_name': "Page",
-    'globaltoc_depth': 2,
+    'navbar_title': "TalkyTrader",
+    'navbar_site_name': "IamListening",
+    'navbar_pagenav_name': "Sections",
+    'globaltoc_depth': 1,
     'globaltoc_includehidden': "true",
     'navbar_class': "navbar",
     'navbar_fixed_top': "true",
+    'navbar_pagenav': True,
     'source_link_position': "nav",
     'bootswatch_theme': "sandstone",
     'bootstrap_version': "3",
 
 
     # 'navbar_sidebarrel': False,
-    # 'navbar_pagenav': False,
+
     # 'navbar_links': [
     #     ("TalkyTrader", "https://talkytrader.github.io/wiki/",True),
     #     ("_menu",  "Plugins",[
