@@ -1,9 +1,10 @@
-Getting started
+===============
+Getting Started
 ===============
 
 
 Installation
-------------
+============
 
 ::
     
@@ -11,7 +12,7 @@ Installation
 
 
 Example
--------
+=======
 
 The following example illustrate how to use the module
 

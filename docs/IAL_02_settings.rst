@@ -1,8 +1,8 @@
 
+======
+Config
+======
 
-
-Settings / Env Vars
-===================
 
 Setting available via settings.toml or .env
 
