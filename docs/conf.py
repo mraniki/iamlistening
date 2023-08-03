@@ -71,9 +71,8 @@ html_theme_options = {
         ("TalkyTrader", "https://talkytrader.github.io/wiki/",True),
         ("_menu",  "Plugins",[
             ("IamListening",  "index"),
-            ("_divider", ),
         ]),
-        ("&#10084", "https://github.com/mraniki/tt", True),
+        ("&#Github", "https://github.com/mraniki/tt", True),
     ]
 
 }
