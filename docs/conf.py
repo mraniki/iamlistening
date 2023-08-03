@@ -87,7 +87,6 @@ html_theme_options = {
         ("_menu",  "Plugins",[
             ("IamListening",  "index"),
             ("_divider", ),
-            ("Install",  "IAL_01_install"),
         ]),
         ("Github", "https://github.com/mraniki/tt", True),
     ]
