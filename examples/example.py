@@ -8,26 +8,27 @@ import uvicorn
 from fastapi import FastAPI
 from loguru import logger
 
-from iamlistening import Listener, settings
+from iamlistening import Listener
 
 logger.remove()
 logger.add(sys.stderr, level="DEBUG")
 
 
 async def main():
-    """Run main program loop."""
+    """
+    Run a listener example
+    """
+
     listener = Listener()
     await listener.start()
-    while True:
-        try:
-            msg = await listener.handler.get_latest_message()
-            if msg:
-                logger.info(f"Frasier👂: {msg}")
+    while listener.handler.connected:
+        msg = await listener.handler.get_latest_message()
+        if msg:
+            logger.info(f"Frasier👂: {msg}")
+            await listener.handler.handle_iteration_limit()
 
-        except Exception as error:
-            logger.error(error)
 
-app = FastAPI() 
+app = FastAPI()
 
 
 @app.on_event("startup")
@@ -49,4 +50,5 @@ def health_check():
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8014)
+    uvicorn.run(app, host="0.0.0.0", port=8015)
+

@@ -21,7 +21,7 @@
     </td>
     <td align="left"> 
        A python package to listen to messaging platforms,<br>
-       such as discord, telegram and matrix.
+       such as discord, telegram, matrix, guilded, mastodon, lemmy.
     </td>
      
   </tr>

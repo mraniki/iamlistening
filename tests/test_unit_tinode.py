@@ -1,6 +1,7 @@
 # """
-# RocketChat Testing
+# Tinode Unit Testing
 # """
+
 
 # import asyncio
 # from unittest.mock import AsyncMock
@@ -14,8 +15,9 @@
 
 # @pytest.fixture(scope="session", autouse=True)
 # def set_test_settings():
-#     settings.configure(FORCE_ENV_FOR_DYNACONF="testingrocketchat")
+#     settings.configure(FORCE_ENV_FOR_DYNACONF="testingtinode")
 
 # @pytest.mark.asyncio
 # async def test_fixture():
-#     assert settings.VALUE == "On Testing Rocket Chat"
+#     assert settings.VALUE == "On Testing Tinode"
+

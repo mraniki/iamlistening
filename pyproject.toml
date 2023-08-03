@@ -18,25 +18,34 @@ packages = [
     {include = "iamlistening"}
 ]
 
-
 [tool.poetry.urls]
 "Changelog" =  "https://github.com/mraniki/iamlistening/blob/dev/CHANGELOG.rst"
 "Support" =  "https://github.com/mraniki/iamlistening/discussions"
 "Issues" =  "https://github.com/mraniki/iamlistening/issues"
 
+
+
 [tool.poetry.dependencies]
 python = "^3.10"
 dynaconf = "^3.1.12"
 loguru = "^0.7.0"
+beautifulsoup4 = "^4.12.2"
 telethon= "^1.28.5"
 py-cord= "^2.4.1"
 simplematrixbotlib= "^2.9.0"
 rocketchat-API= "^1.30.0"
+"Mastodon.py" = "^1.8.1"
+"guilded.py" = "^1.9.1"
+tinode_grpc = "^0.22.3"
+"revolt.py" = "^0.1.11"
+
 
 
 [tool.poetry.group.dev.dependencies]
-python-semantic-release = "^8.0.1"
-ruff = ">=0.0.278,<0.0.281"
+python-semantic-release = "^8.0.4"
+ruff = "^0.0.281"
+
+
 
 [tool.ruff]
 select = [
@@ -51,6 +60,7 @@ ignore = ["E401","F401","F811"]
 format = "github"
 fixable = ["ALL"]
 
+
 [tool.pylint.exceptions]
 overgeneral-exceptions = [
     "builtins.BaseException",
@@ -61,7 +71,7 @@ overgeneral-exceptions = [
 [tool.poetry.group.test.dependencies]
 pytest = "^7.0"
 pytest-cov = "^4.1"
-pytest-asyncio = "^0.21.0"
+pytest-asyncio = "^0.21.1"
 pytest-mock = "^3.11.1"
 pytest-loguru = "^0.2.0"
 
@@ -69,14 +79,9 @@ pytest-loguru = "^0.2.0"
 optional = true
 
 [tool.poetry.group.docs.dependencies]
-sphinx = ">=6,<8"
+sphinx = ">=5,<6"
 sphinx_bootstrap_theme = "^0.8.1"
-sphinx-autoapi = "^2.1.1"
-sphinx-copybutton= "^0.5.2"
-myst-parser = "^2.0.0"
-sphinx-notfound-page = "^0.8.3"
 sphinxext-remoteliteralinclude = "^0.4.0"
-sphinx-togglebutton = "*"
 
 
 [tool.pytest.ini_options]
@@ -98,6 +103,8 @@ omit = [
     "*/config.py"
 ]
 
+[tool.bandit]
+exclude_dirs = ["tests"]
 
 [tool.semantic_release]
 upload_to_vcs_release = true

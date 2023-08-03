@@ -3,66 +3,59 @@ iamlistening Unit Testing
 """
 
 import asyncio
-from unittest.mock import AsyncMock, patch
+from unittest.mock import AsyncMock, MagicMock
 
 import pytest
-from telethon import TelegramClient, errors
+from loguru import logger
+from telethon import TelegramClient, events
 
+import iamlistening
 from iamlistening import Listener
 from iamlistening.config import settings
+from iamlistening.platform.chat_manager import ChatManager
 
 
 @pytest.fixture(scope="session", autouse=True)
 def set_test_settings():
-    settings.configure(FORCE_ENV_FOR_DYNACONF="testing")
+    settings.configure(FORCE_ENV_FOR_DYNACONF="testingtelegram")
+
+
+@pytest.mark.asyncio 
+async def test_fixture():
+    assert settings.VALUE == "On Testing"
+
 
 @pytest.fixture(name="listener")
 def listener():
     return Listener()
 
-@pytest.fixture
+@pytest.fixture(name="message")
 def message():
-    return "Test message"
+    return "hello"
+
 
 @pytest.mark.asyncio
-async def test_fixture(listener):
+async def test_listener_fixture(listener):
     assert listener is not None
-    assert settings.VALUE == "On Testing"
-
-@pytest.mark.asyncio
-async def test_init(listener):
-    assert listener is not None
-    result = await listener.get_info_listener()
-    print("results: ",result)
-    result is not None 
-    assert "ℹ️" in result
-    assert "IAmListening" in result
- 
-# @pytest.mark.asyncio
-# async def test_get_latest_message(listener, message):
-#     await listener.start()
-#     await listener.handler.handle_message(message)
-#     assert await listener.handler.get_latest_message() == message
-
-# @pytest.mark.asyncio
-# async def test_telegram_function():
-#     bot = AsyncMock()
-#     bot.run_until_disconnected = AsyncMock()
-#     listener = Listener()
-#     assert listener is not None
-#     assert isinstance(listener, Listener)
-#     assert bot.assert_called_once
-#     assert bot.run_until_disconnected.assert_called_once
+    assert isinstance(listener, Listener)
+    assert listener.platform is not None
+    assert listener.version is not None
 
 
 @pytest.mark.asyncio
-async def test_listener_telegram():
-    listener_test = Listener()
-    print(listener_test)
-    assert listener_test is not None
-    assert isinstance(listener_test, Listener)
-    await listener_test.start()
-    await listener_test.handler.handle_message("hello")
-    msg = await listener_test.handler.get_latest_message()
-    print(msg)
-    assert msg == "hello"
+async def test_listener_start(message):
+    handle_iteration_limit = AsyncMock()
+    check_connected = AsyncMock()
+    connected = MagicMock()
+    listener = Listener()
+    await listener.start()
+    await listener.handler.handle_message(message)
+    msg = await listener.handler.get_latest_message()
+    assert listener.handler is not None
+    assert listener.handler.connected is not None
+    assert listener.platform == "telegram"
+    handle_iteration_limit.assert_awaited
+    check_connected.assert_awaited
+    connected.assert_called
+    assert msg == message
+

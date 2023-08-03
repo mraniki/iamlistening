@@ -8,58 +8,63 @@ import threading
 from loguru import logger
 
 from iamlistening import __version__
-
-from .config import settings
+from iamlistening.config import settings
+from iamlistening.platform.chat_manager import ChatManager
 
 
 class Listener:
-    def __init__(self):
+
+    """
+    Listener Class for IAmListening.
+
+    """
+
+    def __init__(self, chat_platform=None):
+        """
+        Initialize the listener.
+
+        Args:
+            chat_platform (str): The platform to use
+
+        Raises:
+            Exception: Platform missing
+
+        """
+
         self.logger = logger
-        self.handler = None
+        self.version = __version__
+        self.platform = chat_platform or settings.chat_platform
+        self.chat_manager = ChatManager()
+        self.is_connected = True
 
-    async def get_info_listener(self):
-        return (f"ℹ️ IAmListening v{__version__}\n")
+        if self.platform == "":
+            raise Exception("Platform missing")
 
     async def start(self):
-        """Start the listener."""
-        if settings.telethon_api_id:
-            from .platform.telegram import TelegramHandler
-            self.handler = TelegramHandler()
+        """
+        Asynchronously starts the function.
 
-        elif settings.matrix_hostname:
-            from .platform.matrix import MatrixHandler
-            self.handler = MatrixHandler()
+        This function sets the `handler` attribute using the 
+        `get_handler` method of the `chat_manager` instance. 
+        If a handler is found, it starts the handler using the `start` method. 
+        If the handler is not connected, the task is cancelled, 
+        the `handler` attribute is set to `None`, 
+        and the `is_connected` attribute is set to `False`.
 
-        elif settings.rocket_chat_server:
-            from .platform.rocket_chat import RocketChatHandler
-            self.handler = RocketChatHandler()
+        Parameters:
+            None
 
-        elif settings.bot_token:
-            from .platform.discord import DiscordHandler
-            self.handler = DiscordHandler()
-       
+        Returns:
+            None
+        """
+
+
+        self.handler = self.chat_manager.get_handler(self.platform)
+
         if self.handler:
-                asyncio.create_task(self.handler.start())
+            task = asyncio.create_task(self.handler.start())
+            if not self.handler.is_connected:
+                task.cancel()
+                self.handler = None
+                self.is_connected = False
 
-
-class ChatManager():
-    def __init__(self):
-        self.latest_message = None
-        self.lock = asyncio.Lock()
-
-    async def start(self):
-        pass
-
-    async def get_latest_message(self):
-        """Return the latest message."""
-        async with self.lock:
-            if self.latest_message:
-                msg = self.latest_message
-                self.latest_message = None
-                return msg
-
-        await asyncio.sleep(0.1)
-
-    async def handle_message(self, message_content):
-        """Handle a new message."""
-        self.latest_message = message_content

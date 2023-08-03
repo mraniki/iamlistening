@@ -16,27 +16,24 @@
 [default]
 VALUE = "On Default"
 iamlistening_enabled = true
+chat_platform = ""
+iteration_enabled = false
+iteration_limit = -1
 bot_token = ""
 bot_channel_id = ""
-telethon_api_id = ""
-telethon_api_hash = ""
-matrix_hostname = ""
-matrix_user = ""
-matrix_pass = ""
-rocket_chat_server = ""
-rocket_chat_user_id = ""
-rocket_chat_auth_token = ""
+bot_api_id = ""
+bot_api_hash = ""
+bot_hostname = ""
+bot_user = ""
+bot_pass = ""
+bot_auth_token = ""
 
 
 
-
-
-
-
- 
 ########################################
 ###     END OF DEFAULT SETTINGS      ###
 ########################################
+
 
 
 
@@ -48,74 +45,19 @@ rocket_chat_auth_token = ""
 #| __| '_ \ / _ \  / _ \ '_ \ / _` |   / / 
 #| |_| | | |  __/ |  __/ | | | (_| |  |_|  
 # \__|_| |_|\___|  \___|_| |_|\__,_|  (_)  
-########################################                                                                                      
-
-
-
-
-
-
-
-
-########################################
-###         TESTING SETTINGS         ###
-########################################
-# Any of those settings are used 
-# for testing purpose.
-# It can be ignored. 
-
-[testing]
-VALUE = "On Testing"
-iamlistening_enabled = true
-bot_token = "1234556"
-bot_channel_id = "1234556"
-telethon_api_id = "1234556"
-telethon_api_hash = "1234556"
-matrix_hostname = ""
-matrix_user = ""
-matrix_pass = ""
-rocket_chat_server = ""
-rocket_chat_user_id = ""
-rocket_chat_auth_token = ""
-
-[testingdiscord]
-VALUE = "On Testing Discord"
-iamlistening_enabled = true
-bot_token = "1234556"
-bot_channel_id = "1234556"
-telethon_api_id = ""
-telethon_api_hash = ""
-matrix_hostname = ""
-matrix_user = ""
-matrix_pass = ""
-rocket_chat_server = ""
-rocket_chat_user_id = ""
-rocket_chat_auth_token = ""
-
-[testingmatrix]
-VALUE = "On Testing Matrix"
-iamlistening_enabled = true
-bot_token = "1234556"
-bot_channel_id = "1234556"
-telethon_api_id = ""
-telethon_api_hash = ""
-matrix_hostname = "https://matrix.org"
-matrix_user = "123456789"
-matrix_pass = "123456789"
-rocket_chat_server = ""
-rocket_chat_user_id = ""
-rocket_chat_auth_token = ""
-
-[testingrocketchat]
-VALUE = "On Testing RocketChat"
-iamlistening_enabled = true
-bot_token = "1234556"
-bot_channel_id = "1234556"
-telethon_api_id = ""
-telethon_api_hash = ""
-matrix_hostname = ""
-matrix_user = ""
-matrix_pass = ""
-rocket_chat_server = "https://demo.rocket.chat"
-rocket_chat_user_id = "1234567890"
-rocket_chat_auth_token = "1234567890"
+########################################     
+#
+#
+#
+#
+#         __     __       
+#         \ \   / /       
+#          \ \_/ /__  ___ 
+#           \   / _ \/ __|
+#            | |  __/\__ \
+#            |_|\___||___/
+#
+#
+#
+#                   
+########################################     
