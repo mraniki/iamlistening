@@ -60,7 +60,7 @@ html_theme_options = {
     'navbar_class': "navbar",
     'navbar_fixed_top': "true",
     'source_link_position': "nav",
-    'bootswatch_theme': "darkly",
+    'bootswatch_theme': "sandstone",
     'bootstrap_version': "3",
 
 
