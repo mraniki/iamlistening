@@ -72,7 +72,7 @@ html_show_sourcelink = False
 
 html_theme_options = {
 
-    'source_link_position': "footer",
+    'source_link_position': "nav",
     'bootswatch_theme': "darkly",
     'bootstrap_version': "3",
     'globaltoc_depth': 2,
