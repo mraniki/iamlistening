@@ -15,12 +15,12 @@
 }
 
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    color: #222222 !important;
+    background-color: #222222;
   }
 
   a {
     color: #ffcc00;
   }
   a:hover {
-    color: #ffcc00; !important;
+    color: #ffcc00; ;
   }
