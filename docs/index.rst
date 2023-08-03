@@ -15,10 +15,17 @@ TalkyTrader
 | Easily deploy via Docker on self-hosted platform or Paas.
 
 
-:ref:`_iamlistening_index`
+Content
+=======
 
-.. toctree::
-   :maxdepth: 2
+* :doc:`Talkytrader <talkytrader:index>`
+* :doc:`IamListening <iamlistening:00_index_iamlistening>`
+* :doc:`findmyorder <findmyorder:index>`
+* :doc:`DXSP <DXSP:index>`
+* :doc:`TalkyTrend <talkytrend:index>`
+
+
+* `Talkytrader <https://talkytrader.github.io/wiki>`
 
       
 .. raw:: html

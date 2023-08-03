@@ -47,11 +47,11 @@ templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 intersphinx_mapping = {
-    "talkytrader": ("https://talky.readthedocs.io", True),
-    "findmyorder": ("https://findmyorder.readthedocs.io", True),
-    "dxsp": ("https://dxsp.readthedocs.io", True),
-    "iamlistening": ("_iamlistening_index", None),
-    "talkytrend": ("https://talkytrend.readthedocs.io", True),
+    "talkytrader": ("https://talky.readthedocs.io", None),
+    "findmyorder": ("https://findmyorder.readthedocs.io", None),
+    "dxsp": ("https://dxsp.readthedocs.io", None),
+    "iamlistening": ("https://talky.readthedocs.io/projects/imalistening/", None),
+    "talkytrend": ("https://talkytrend.readthedocs.io", None),
 }
 # -- Options for HTML output -------------------------------------------------
 
@@ -80,7 +80,7 @@ html_theme_options = {
             ("⚙️ Config",  "https://talky.rtfd.io",True),
         ]),
         ("_menu",  "🔌 Plugins",[
-            ("👂 IamListening",  "https://talky.readthedocs.io/projects/imalistening/",True),
+            ("👂 IamListening",  "iamlistening:00_index_iamlistening",True),
             ("🔎 FindMyOrder",  "https://talky.readthedocs.io/projects/findmyorder/",True),
             ("⛓️ DXSP",  "https://talky.readthedocs.io/projects/dxsp/",True),
             ("💱 CEX",  "index",True),
@@ -88,7 +88,7 @@ html_theme_options = {
             ("📰 Talkytrend",  "https://talky.readthedocs.io/projects/talkytrend/",True),
         ]),
         ("_menu",  "➕ More",[
-            ("🆕 What's new?",  "https://github.com/mraniki/t",True),
+            ("🆕 What's new?",  "https://github.com/mraniki/tt",True),
             ("💬 Connect",  "https://talky.rtfd.io",True),
         ]),
     ]
