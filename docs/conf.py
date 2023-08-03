@@ -53,6 +53,7 @@ html_theme = "bootstrap"
 
 
 html_theme_options = {
+    'navbar_title': "Demo",
     'navbar_site_name': "Site",
     'navbar_pagenav_name': "Page",
     'globaltoc_depth': 2,
@@ -83,6 +84,8 @@ html_static_path = ["_static"]
 # html_css_files = [
 #     "custom.css",
 # ]
+html_sidebars = {'sidebar': ['localtoc.html', 'sourcelink.html', 'searchbox.html']}
+
 # html_logo = '_static/logo-full.png'
 html_favicon = '_static/favicon.ico'
 # html_copy_source = False
