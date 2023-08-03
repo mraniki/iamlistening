@@ -18,7 +18,11 @@ TalkyTrader
 .. toctree::
    :maxdepth: 4
    
-   00_index_iamlistening
+    talkytrader
+    dxsp
+    iamlistening 
+    findmyorder
+    talkytrend
 
 
 .. raw:: html

@@ -46,7 +46,13 @@ source_suffix = ['.rst', '.md']
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
-
+intersphinx_mapping = {
+    "talkytrader": ("https://talky.readthedocs.io", None),
+    "findmyorder": ("https://findmyorder.readthedocs.io", None),
+    "dxsp": ("https://dxsp.readthedocs.io", None),
+    "iamlistening": ("https://iamlistening.readthedocs.io", None),
+    "talkytrend": ("https://talkytrend.readthedocs.io", None),
+}
 # -- Options for HTML output -------------------------------------------------
 
 html_theme = "bootstrap"
@@ -81,7 +87,7 @@ html_theme_options = {
             ("💁 Helper",  "index",True),
             ("📰 Talkytrend",  "https://talky.readthedocs.io/projects/talkytrend/",True),
         ]),
-        ("_menu",  "More",[
+        ("_menu",  "➕ More",[
             ("&#128025 What's new?",  "https://github.com/mraniki/t",True),
             ("💬 Connect",  "https://talky.rtfd.io",True),
         ]),
