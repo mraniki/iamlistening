@@ -88,7 +88,7 @@ html_theme_options = {
             ("📰 Talkytrend",  "https://talky.readthedocs.io/projects/talkytrend/",True),
         ]),
         ("_menu",  "➕ More",[
-            ("&#128025 What's new?",  "https://github.com/mraniki/t",True),
+            ("🆕 What's new?",  "https://github.com/mraniki/t",True),
             ("💬 Connect",  "https://talky.rtfd.io",True),
         ]),
     ]
@@ -100,12 +100,11 @@ html_static_path = ["_static"]
 html_css_files = [
     "custom.css",
 ]
-# html_sidebars = {'sidebar': ['globaltoc.html']}
+
 
 html_logo = '_static/favicon.png'
 html_favicon = '_static/favicon.ico'
-# html_copy_source = False
-# html_show_sourcelink = False
+
 
 def setup(app):
     app.add_css_file("custom.css")

@@ -1,5 +1,6 @@
 
 
+
 ===========
 TalkyTrader
 ===========
@@ -17,14 +18,9 @@ TalkyTrader
 
 .. toctree::
    :maxdepth: 4
-   
-    talkytrader
-    dxsp
-    iamlistening 
-    findmyorder
-    talkytrend
 
+   :ref:`_iamlistening_index`
 
 .. raw:: html
 
-   <br>
+   <br><br><br><br>
