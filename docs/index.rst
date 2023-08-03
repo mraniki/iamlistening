@@ -8,8 +8,11 @@ Iamlistening
 | Supported platforms are listed under client
 
 
+Contents
+========
+
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 2
 
 
    IAL_01_install
