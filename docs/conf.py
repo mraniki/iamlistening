@@ -3,12 +3,10 @@
 import os
 import sys
 
-# from os.path import abspath, dirname
 import sphinx_bootstrap_theme
 
 sys.path.insert(0, os.path.abspath('../'))
-# path = dirname(abspath(__file__))
-# sys.path.append(path)
+
 
 # -- Project information -----------------------------------------------------
 
@@ -27,9 +25,7 @@ extensions = [
     'sphinxext.remoteliteralinclude',
 ]
 
-# intersphinx_mapping = {
-#     "talky": ("http://talkytrader.github.io/wiki/", None),
-# }
+
 
 # -- Extension configuration ---------------------------------------------------
 
@@ -52,7 +48,7 @@ intersphinx_mapping = {
     "talkytrader": ("https://talky.readthedocs.io", None),
     "findmyorder": ("https://findmyorder.readthedocs.io", None),
     "dxsp": ("https://dxsp.readthedocs.io", None),
-    "iamlistening": ("https://iamlistening.rtfd.io/00_index_iamlistening", None),
+    "iamlistening": ("https://iamlistening.rtfd.io/", None),
     "talkytrend": ("https://talkytrend.readthedocs.io", None),
 }
 
@@ -86,11 +82,11 @@ html_theme_options = {
         ("TalkyTrader", "https://talkytrader.github.io/wiki/",True),
         ("_menu",  "🗿 Talky",[
             ("🪙 Get started",  "https://talky.rtfd.io/01_start",True),
-            ("⚙️ Config",  "https://talky.rtfd.io/01_config",True),
+            ("⚙️ Config",  "https://talky.rtfd.io/02_config",True),
         ]),
         ("_menu",  "🔌 Plugins",[
-            ("👂 IamListening",  "https://iamlistening.rtfd.io/00_index_iamlistening", True),
-            ("🔎 FindMyOrder",  "https://findmyorder.rtfd.io/00_index_findmyorder", True),
+            ("👂 IamListening",  "https://iamlistening.rtfd.io/", True),
+            ("🔎 FindMyOrder",  "https://findmyorder.rtfd.io/", True),
             ("⛓️ DXSP", "https://dxsp.rtfd.io/00_index_dxsp", True),
             ("💱 CEX",  "index",True),
             ("💁 Helper",  "index",True),
