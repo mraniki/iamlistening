@@ -47,11 +47,11 @@ templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 intersphinx_mapping = {
-    "talkytrader": ("https://talky.readthedocs.io", None),
-    "findmyorder": ("https://findmyorder.readthedocs.io", None),
-    "dxsp": ("https://dxsp.readthedocs.io", None),
-    "iamlistening": ("https://iamlistening.readthedocs.io", None),
-    "talkytrend": ("https://talkytrend.readthedocs.io", None),
+    "talkytrader": ("https://talky.readthedocs.io", True),
+    "findmyorder": ("https://findmyorder.readthedocs.io", True),
+    "dxsp": ("https://dxsp.readthedocs.io", True),
+    "iamlistening": ("_iamlistening_index", None),
+    "talkytrend": ("https://talkytrend.readthedocs.io", True),
 }
 # -- Options for HTML output -------------------------------------------------
 

@@ -15,12 +15,12 @@ TalkyTrader
 | Easily deploy via Docker on self-hosted platform or Paas.
 
 
+:ref:`_iamlistening_index`
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 2
 
-   :ref:`_iamlistening_index`
-
+      
 .. raw:: html
 
    <br><br><br><br>
