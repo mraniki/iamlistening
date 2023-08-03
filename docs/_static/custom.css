@@ -6,19 +6,21 @@
 #F2E6A7
 */
 
+
 :root {
 --body-bg: #292929;
 --body-color: #E2E8E4;
---body-link-color: #ffcc00;
---a-link-color: #ffcc00;
---navbar-background-color: #212529;
---nav-link-color: #ffcc00;
---div-link-color: #ffcc00;
---nav-link-hover-color: #F2DA63;
-
---nav-color: #E2E8E4;
-/* --card-bg: #212529; */
-/* --nav-bg-color: #212529; */
-
+--nav-bg-color: #212529;
 
 }
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #222222 !important;
+  }
+
+  a {
+    color: #ffcc00;
+  }
+  a:hover {
+    color: #ffcc00; !important;
+  }
