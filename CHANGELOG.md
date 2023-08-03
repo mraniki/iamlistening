@@ -2,6 +2,721 @@
 
 
 
+## v3.1.0 (2023-08-03)
+
+### :bug:
+
+* :bug: :wrench: ([`ff5cab1`](https://github.com/mraniki/iamlistening/commit/ff5cab10af7327200e543b7a3b7918b81da9674b))
+
+* :bug:troubleshooting ([`b7addde`](https://github.com/mraniki/iamlistening/commit/b7addde10f997a13d7193c09213e185d66430559))
+
+* :bug: chat_platform missing ([`cc09edd`](https://github.com/mraniki/iamlistening/commit/cc09edd2877524ff14799b2bda050d03dacbeb57))
+
+### :fire:
+
+* :fire: remove logger ([`7a6f098`](https://github.com/mraniki/iamlistening/commit/7a6f098189098fe7fb9917e79da4ebcce0a3f2f4))
+
+### :memo:
+
+* :memo: ([`f3de95e`](https://github.com/mraniki/iamlistening/commit/f3de95e770693f0417a4746cd95cae3973ed8f4f))
+
+* :memo: ([`8812492`](https://github.com/mraniki/iamlistening/commit/8812492d24e324e2c0dd10c3e439d18dd2f1cfc9))
+
+* :memo: ([`e049c78`](https://github.com/mraniki/iamlistening/commit/e049c780279b75482e2aec0dcf1e7c432396ddb0))
+
+* :memo: ([`1a5d3ca`](https://github.com/mraniki/iamlistening/commit/1a5d3ca96f67973c719e1b9dc8f09d927f597542))
+
+* :memo: ([`2f87818`](https://github.com/mraniki/iamlistening/commit/2f878189ada2db3dac292dd19ebd4074e41d99b1))
+
+* :memo: ([`1401600`](https://github.com/mraniki/iamlistening/commit/140160002ef40fe9ffea05ef5fe747f13d20819e))
+
+* :memo: ([`61bbb82`](https://github.com/mraniki/iamlistening/commit/61bbb82482f9fb12669339f938bddb1babf2bbfb))
+
+* :memo: ([`d8845ac`](https://github.com/mraniki/iamlistening/commit/d8845ac7b82da3a0556df7a739dd26e1ab815d9c))
+
+* :memo: ([`9a97f0f`](https://github.com/mraniki/iamlistening/commit/9a97f0f43f51f3d8191b89aa2a40071a90a98f1c))
+
+* :memo: ([`a05f513`](https://github.com/mraniki/iamlistening/commit/a05f51364dadcf4da960996339b57b1fa53ec70f))
+
+* :memo: ([`42262c4`](https://github.com/mraniki/iamlistening/commit/42262c41c2d5469e8f8fc2061d250686b81acd45))
+
+* :memo: ([`2716c86`](https://github.com/mraniki/iamlistening/commit/2716c860169302e6a76c89d5bc7a6139702a2ddc))
+
+* :memo: ([`dbe29b7`](https://github.com/mraniki/iamlistening/commit/dbe29b74e63704bc8e385e3edeb05a0d51132852))
+
+* :memo: ([`6eadc1a`](https://github.com/mraniki/iamlistening/commit/6eadc1a890d7d1b80300992f863d7c97daf89669))
+
+* :memo: ([`058ed1a`](https://github.com/mraniki/iamlistening/commit/058ed1a0221f6a61efe5c9a455a380768b8d3430))
+
+* :memo: ([`2538ff4`](https://github.com/mraniki/iamlistening/commit/2538ff4d7b8c576768a2f0bcc9ebe1401866de93))
+
+* :memo: ([`05fd39e`](https://github.com/mraniki/iamlistening/commit/05fd39e354aeaa3a05d53c5783587fe3466ad8b3))
+
+* :memo: ([`2d532c0`](https://github.com/mraniki/iamlistening/commit/2d532c02b25e5349ff7309ab4eecf824f838f42e))
+
+* :memo: ([`387133a`](https://github.com/mraniki/iamlistening/commit/387133adbbaee1e8931e1e152c618120e5412335))
+
+* :memo: ([`bb3233f`](https://github.com/mraniki/iamlistening/commit/bb3233fb412c5e10cb2f7ca13ebea994c370131e))
+
+* :memo: Add new documentation files ([`edd17b8`](https://github.com/mraniki/iamlistening/commit/edd17b8970636ff2fdf725ddd76dfe009e08543a))
+
+### :recycle:
+
+* :recycle: Refactor default chat platform settings and add unit tests ([`2c240fb`](https://github.com/mraniki/iamlistening/commit/2c240fb87e683b199cf8eb4e59954074766726ac))
+
+### :rotating_light:
+
+* :rotating_light: ([`8aa7063`](https://github.com/mraniki/iamlistening/commit/8aa706397c9ca473150137ac68b94199fd91eb42))
+
+* :rotating_light: missed await ([`1e1fc46`](https://github.com/mraniki/iamlistening/commit/1e1fc46c096b542ca4da86daa9e3f40ec3a0413e))
+
+### :white_check_mark:
+
+* :white_check_mark: ([`9410472`](https://github.com/mraniki/iamlistening/commit/94104721add536fabd5c1593192364c3b9c788b8))
+
+* :white_check_mark: Unit Test ([`816a151`](https://github.com/mraniki/iamlistening/commit/816a15187b90cfabe433c6f568386a06d06b69da))
+
+* :white_check_mark: ([`a2b6ba2`](https://github.com/mraniki/iamlistening/commit/a2b6ba24ef8cd98292722a1c07a75966626229ff))
+
+* :white_check_mark: ([`83b85c0`](https://github.com/mraniki/iamlistening/commit/83b85c0f7ab0244528a4a72e18323ea3bb43ad92))
+
+* :white_check_mark: Unit Test added coverage ([`1bcbff0`](https://github.com/mraniki/iamlistening/commit/1bcbff0411320628fc91d361a4490e48311b1990))
+
+* :white_check_mark: ([`29222e5`](https://github.com/mraniki/iamlistening/commit/29222e55c621228960d655e8bbe2a1e29fe2df77))
+
+* :white_check_mark: ([`8ed8641`](https://github.com/mraniki/iamlistening/commit/8ed864176a3e2abdbfe5e94c634545be8377de79))
+
+* :white_check_mark: Unit Test ([`90f5b9f`](https://github.com/mraniki/iamlistening/commit/90f5b9f0f71237219846a5e7f3edc88020159a1d))
+
+* :white_check_mark: Unit Test ([`d13c20c`](https://github.com/mraniki/iamlistening/commit/d13c20c42c2119c880d53c266d6a98a61001705b))
+
+* :white_check_mark: unit test ([`0e76228`](https://github.com/mraniki/iamlistening/commit/0e762288e30b7cbc1b9b45c6539ac288df6340cb))
+
+* :white_check_mark: Unit Test ([`a1a155e`](https://github.com/mraniki/iamlistening/commit/a1a155e851775e6bd65bff82ca7470e420f21b1b))
+
+* :white_check_mark: Unit Test ([`be571d5`](https://github.com/mraniki/iamlistening/commit/be571d5352f1ba26b051de5c62b294e5cf3d5571))
+
+* :white_check_mark: ([`ddee709`](https://github.com/mraniki/iamlistening/commit/ddee70984f4d43e8e924ed38acee6783b28d8d4c))
+
+* :white_check_mark: ([`76f16e4`](https://github.com/mraniki/iamlistening/commit/76f16e4eceebd35159c454565362d5284b859569))
+
+* :white_check_mark:  Add import statement for settings module ([`99b82d5`](https://github.com/mraniki/iamlistening/commit/99b82d500082251ab3b6e7c09ad0515124db53d9))
+
+* :white_check_mark: ([`c67b066`](https://github.com/mraniki/iamlistening/commit/c67b066db4fd30bbdff91b2658d37df313fd5e46))
+
+* :white_check_mark: Unit Test ([`0011ec6`](https://github.com/mraniki/iamlistening/commit/0011ec65055b63b462461307691eb6313e6dad81))
+
+* :white_check_mark: Unit Test ([`1e9eb3c`](https://github.com/mraniki/iamlistening/commit/1e9eb3c2655da06140275fbb34060037dd487a4f))
+
+* :white_check_mark: Unit Test ([`38e6411`](https://github.com/mraniki/iamlistening/commit/38e6411d8d08de53395de894725292a397cb9a82))
+
+* :white_check_mark: ([`3992387`](https://github.com/mraniki/iamlistening/commit/39923877d345c22fb552f1b338b54040e99f4097))
+
+* :white_check_mark: ([`7cfa740`](https://github.com/mraniki/iamlistening/commit/7cfa740810618ae58cd74762d16dcf03d84589d3))
+
+* :white_check_mark: ([`561648f`](https://github.com/mraniki/iamlistening/commit/561648f313b2532a39ca1fac6875ff5e5461afd4))
+
+* :white_check_mark:  Remove unused import statement ([`64d9146`](https://github.com/mraniki/iamlistening/commit/64d9146cb47843add5d1e554b0fc759f9e2f2e8f))
+
+* :white_check_mark: unit test ([`f4ae272`](https://github.com/mraniki/iamlistening/commit/f4ae27255d659f3f814d6e83e1f24ebc684a444b))
+
+* :white_check_mark: unit test ([`4485f9a`](https://github.com/mraniki/iamlistening/commit/4485f9af6a5e6e8e5fcf06bfa87cf8977e837562))
+
+* :white_check_mark: unit test ([`89a493e`](https://github.com/mraniki/iamlistening/commit/89a493e0a4473e3792690f5069deeeaa09942946))
+
+* :white_check_mark:unit test ([`e6ad547`](https://github.com/mraniki/iamlistening/commit/e6ad54747690c77baedc74ae07bfb4c588f9952e))
+
+### :wrench:
+
+* :wrench: env in flow ([`81914fe`](https://github.com/mraniki/iamlistening/commit/81914fe2acbef57ff8686144473f1f00d6a84fea))
+
+* :wrench:env in flow ([`21986e6`](https://github.com/mraniki/iamlistening/commit/21986e6db9342898c3e992c124001f8b326483e6))
+
+* :wrench: Refactor default_settings.toml file ([`5ca453b`](https://github.com/mraniki/iamlistening/commit/5ca453b8d6394f14de73de1ea3e314fa90c6d435))
+
+### Fix
+
+* ♻️ refactoring unit test fixture ([`10732e8`](https://github.com/mraniki/iamlistening/commit/10732e86f885eaca5c2c321338141b7a01116847))
+
+* :white_check_mark: Refactor test_unit.py and update fixtures and tests ([`c3fbf85`](https://github.com/mraniki/iamlistening/commit/c3fbf85e9837bd368120cff897ab6256ebcfc0e2))
+
+* :white_check_mark: Refactor test_unit.py and update fixtures and tests ([`9c62a7b`](https://github.com/mraniki/iamlistening/commit/9c62a7b56588714fc85eb55b0aff0400f95561ad))
+
+### Other
+
+* Merge branch &#39;dev&#39; of git@github.com:mraniki/iamlistening.git ([`f9b5200`](https://github.com/mraniki/iamlistening/commit/f9b520077a5b2f4da4f833dc89c82e3fab8f297a))
+
+* Merge branch &#39;dev&#39; of git@github.com:mraniki/iamlistening.git ([`0a4975f`](https://github.com/mraniki/iamlistening/commit/0a4975f11cb0e97e621c21fd6f6cc82295d26610))
+
+* &#39;Refactored by Sourcery&#39; ([`78b6173`](https://github.com/mraniki/iamlistening/commit/78b61731e8512c05e74b14990e55992c09fe50e6))
+
+* ruff ([`96ecdf3`](https://github.com/mraniki/iamlistening/commit/96ecdf3fcb059bfe49ad2900a80d4b2e4528f2d3))
+
+* &#39;Refactored by Sourcery&#39; ([`78aac67`](https://github.com/mraniki/iamlistening/commit/78aac67735cda362e85c6d31cbadb1a369eb0c75))
+
+* Chat Manager Coverage ([`219f535`](https://github.com/mraniki/iamlistening/commit/219f53541f1640c5fb14936bd020a39a0c8e44a5))
+
+* &#39;Refactored by Sourcery&#39; ([`e41a867`](https://github.com/mraniki/iamlistening/commit/e41a867374b8d44c4a25fd218effd189b3c3914f))
+
+* Merge branch &#39;dev&#39; of git@github.com:mraniki/iamlistening.git ([`362fce3`](https://github.com/mraniki/iamlistening/commit/362fce37c26dea34cff74f5161f8042011c3e58d))
+
+* :construction_worker_man: CI Change test for OP ([`7ed5355`](https://github.com/mraniki/iamlistening/commit/7ed5355f2d6967170de5fc8e7deb96ba8f8d472c))
+
+* :construction_worker_man:‍♂️ ci test ([`f9d2f71`](https://github.com/mraniki/iamlistening/commit/f9d2f7114bde41836ed8795f8ce2b261f48e576d))
+
+* :construction_worker_man:‍♂️ ci test ([`ab4929e`](https://github.com/mraniki/iamlistening/commit/ab4929e9feb8a7172f85a733bfbff2511970ae81))
+
+* :construction_worker_man:‍♂️Remove environment variable from dev workflow ([`2042609`](https://github.com/mraniki/iamlistening/commit/20426090d1ab70a3424fe0fa5df80048611cc4ca))
+
+* :private: secret process ([`1b79a46`](https://github.com/mraniki/iamlistening/commit/1b79a468d9d14f6621056f16bb3acddccf02d150))
+
+* :private: secret process ([`59799a4`](https://github.com/mraniki/iamlistening/commit/59799a44572644441c7c11b244c661bd87771820))
+
+* Merge branch &#39;dev&#39; of git@github.com:mraniki/iamlistening.git ([`4ccc3f8`](https://github.com/mraniki/iamlistening/commit/4ccc3f8af3ab94964898152861f9d51b4a554c51))
+
+* &#39;Refactored by Sourcery&#39; ([`fcb85cc`](https://github.com/mraniki/iamlistening/commit/fcb85ccf87aab8e1028275737bec3c128e35361a))
+
+### Update
+
+* Update conf.py ([`a263374`](https://github.com/mraniki/iamlistening/commit/a263374ba3c23dc134dbd71f1b16b8d0b43a8a37))
+
+* Update Requirements ([`a16bb63`](https://github.com/mraniki/iamlistening/commit/a16bb634ad1777e30ca65b76880d8bdadf7082d5))
+
+* Update Requirements ([`54a7dc6`](https://github.com/mraniki/iamlistening/commit/54a7dc6a92db39f76f0338ab74fa1a02c4e42b79))
+
+* Update Requirements ([`d71df84`](https://github.com/mraniki/iamlistening/commit/d71df843e873d6de52a3d503ee04bbff66c4a427))
+
+* Update Requirements ([`e84533f`](https://github.com/mraniki/iamlistening/commit/e84533f20294c01762e31208db82dfd1a91e90fa))
+
+* Update example.env file ([`c826d0e`](https://github.com/mraniki/iamlistening/commit/c826d0e492f2b40c297d104e688784e8fa91fc73))
+
+* Update example.env file ([`b345cf8`](https://github.com/mraniki/iamlistening/commit/b345cf8cdb411fb966897dd8ddde9187ccc06699))
+
+* Update settings ([`960630b`](https://github.com/mraniki/iamlistening/commit/960630b1c4be4f79a23023595b6436fa920a69af))
+
+* Update config.py ([`2b29f13`](https://github.com/mraniki/iamlistening/commit/2b29f134240611ab6351a94dd53572fb91392cf0))
+
+* Update config.py ([`9731ad8`](https://github.com/mraniki/iamlistening/commit/9731ad8cbe0979e5eb3ea346307cb799d3125572))
+
+* Update config.py ([`6e78379`](https://github.com/mraniki/iamlistening/commit/6e78379ca007df4ab9f46129d8ce9b1cbf6c2378))
+
+* Update test_unit.py ([`8fd9cfe`](https://github.com/mraniki/iamlistening/commit/8fd9cfe4b34ef4a4aed29f78d37f58c29debbf29))
+
+* Update Requirements ([`54ae6af`](https://github.com/mraniki/iamlistening/commit/54ae6afb51379c844981a23994faa66bb56a2c7d))
+
+### ♻️
+
+* ♻️ disconnection process ([`c67e45c`](https://github.com/mraniki/iamlistening/commit/c67e45c49732101f4d3e23547e6e0ca9d41bb640))
+
+* ♻️ shutdown process ([`a8379db`](https://github.com/mraniki/iamlistening/commit/a8379dbdbdca052f0548b1e91447d2c21afdfd78))
+
+* ♻️ disconnected logic ([`1dd28a8`](https://github.com/mraniki/iamlistening/commit/1dd28a8a3a832069a4673d02313cd439221df366))
+
+* ♻️ refactoring +disconnected+handle_iteration_limit ([`7b4dafa`](https://github.com/mraniki/iamlistening/commit/7b4dafa0600dae25bea6d5097b3b07c99d3be855))
+
+* ♻️ refactor telegram handler ([`c2e6ec6`](https://github.com/mraniki/iamlistening/commit/c2e6ec614660530baddadcf02cda821c91c502f4))
+
+* ♻️ refactor and unit test ([`4ef47ab`](https://github.com/mraniki/iamlistening/commit/4ef47ab88bf78b64e8e900ef6959ad8ce86ffe08))
+
+* ♻️ Reorg imports ([`b7361cf`](https://github.com/mraniki/iamlistening/commit/b7361cf1ba04c1cf42ec517fa73f7a327628d9f3))
+
+### ⚡
+
+* ⚡ added bs4 to remove HTML tags ([`e7f2a48`](https://github.com/mraniki/iamlistening/commit/e7f2a48599550eaaf8adde4a76d0c0d601613521))
+
+### ✅
+
+* ✅ Unit Test ([`b56998f`](https://github.com/mraniki/iamlistening/commit/b56998f3eed2b9bf5b579c70f0a6d04ecb28ed8a))
+
+* ✅ Unit Test ([`f64e5c3`](https://github.com/mraniki/iamlistening/commit/f64e5c369e3df0bd2a0a15dd1406b70d3a36624e))
+
+* ✅ Unit Test ([`fb1d748`](https://github.com/mraniki/iamlistening/commit/fb1d748fae51c3a8e76c8f52363052207b0755b3))
+
+* ✅ Unit Test ([`9f449e6`](https://github.com/mraniki/iamlistening/commit/9f449e664abb49da8e9d9edb3cd9fb797a681b2e))
+
+* ✅ Unit Test ([`a4867b1`](https://github.com/mraniki/iamlistening/commit/a4867b1d96c201032e2690c7a3596943a0ba8159))
+
+* ✅ Unit Test ([`eff77fe`](https://github.com/mraniki/iamlistening/commit/eff77fefa04a7fadb2ae494c593e088636b855d2))
+
+* ✅ Unit Test ([`328a392`](https://github.com/mraniki/iamlistening/commit/328a3922c093d52f73f144810a384d68c9997e09))
+
+* ✅ Unit Test ([`933acca`](https://github.com/mraniki/iamlistening/commit/933acca4dd7f2b15c23d890af8e0d22a4f6632ff))
+
+* ✅ Unit Test ([`b60107d`](https://github.com/mraniki/iamlistening/commit/b60107d2561bdcc7d7bc5495ce6c7777397a0880))
+
+* ✅ Unit Test ([`969fd50`](https://github.com/mraniki/iamlistening/commit/969fd50528a368f9bf94a14fd7b4781839b91253))
+
+* ✅ Unit Test ([`53d1771`](https://github.com/mraniki/iamlistening/commit/53d1771c35ff55e1e6b08162f236c145a9cc7b11))
+
+* ✅ Unit Test ([`ab36eae`](https://github.com/mraniki/iamlistening/commit/ab36eae1c7e026891932011326ba3285e7fc000c))
+
+* ✅ Unit Test ([`6150d60`](https://github.com/mraniki/iamlistening/commit/6150d6037732293b3d3191f6d55ac92655cf8ca4))
+
+* ✅ Unit Test ([`6ee444f`](https://github.com/mraniki/iamlistening/commit/6ee444f58e488bc623c754258ec0263ea30677f4))
+
+* ✅ Unit Test ([`a0c50bc`](https://github.com/mraniki/iamlistening/commit/a0c50bcf5147d8cf7fce80b6eb35a65afb0dec79))
+
+* ✅ Unit Test ([`70b1644`](https://github.com/mraniki/iamlistening/commit/70b1644f7d476ee6108a1ff0169158779de1f81d))
+
+* ✅ Unit Test ([`9f47022`](https://github.com/mraniki/iamlistening/commit/9f470224835d481f3bbfd91fa90e81bed240200b))
+
+* ✅ Unit Test added platfrom manager coverage ([`e6fd2ef`](https://github.com/mraniki/iamlistening/commit/e6fd2ef0e456acfc356753f816fcbe037c412d08))
+
+* ✅ Unit Test ([`e77edfb`](https://github.com/mraniki/iamlistening/commit/e77edfbb29eae49b7f5285bfbbe31a8570e8a0a9))
+
+* ✅ Unit Test ([`d85f78e`](https://github.com/mraniki/iamlistening/commit/d85f78e4df7ba35c5b76d2b32008cfb93583d965))
+
+* ✅ Unit Test ([`7fcfa98`](https://github.com/mraniki/iamlistening/commit/7fcfa9849123162cd36d5eb82ecd5f34064287ff))
+
+* ✅ Unit Test ([`a59dc74`](https://github.com/mraniki/iamlistening/commit/a59dc7485fbed15841601ef0945af6c869ad432e))
+
+* ✅ Unit Test ([`28863ce`](https://github.com/mraniki/iamlistening/commit/28863cef0f2b1c00491cd9a27b57e1600b2b9399))
+
+* ✅ Unit Test readding coverage ([`f7c45f6`](https://github.com/mraniki/iamlistening/commit/f7c45f66f58fea22abf9205f30e8e6653aa91223))
+
+* ✅ Unit Test ([`331944d`](https://github.com/mraniki/iamlistening/commit/331944d67189a1eb28c3762043b8d9dc83b7bd8d))
+
+* ✅ Unit Test Telegram ([`53e9828`](https://github.com/mraniki/iamlistening/commit/53e9828b2b2a5c93553ef2d72d445227b26ad54b))
+
+* ✅ Unit Test ([`f5db92f`](https://github.com/mraniki/iamlistening/commit/f5db92ffdad555d09d14e6181052fc5ec81e237c))
+
+* ✅ Unit Test ([`6e3ba32`](https://github.com/mraniki/iamlistening/commit/6e3ba32515f7c73d7680bdd2c8180200eeba9c5b))
+
+* ✅ Unit Test ([`6f5931b`](https://github.com/mraniki/iamlistening/commit/6f5931b848580d4acdaaa37fff216cf58aceaefc))
+
+* ✅ Unit Test ([`31fdb87`](https://github.com/mraniki/iamlistening/commit/31fdb871507464098be914386ea0e15e49f0f958))
+
+* ✅ Unit Test ([`a586428`](https://github.com/mraniki/iamlistening/commit/a58642877005e8c53d9225e39e074d061c0cee7c))
+
+* ✅ Unit Test exception coverage ([`66f10a3`](https://github.com/mraniki/iamlistening/commit/66f10a394e756ceaf258c6e0c80b89cd978a06f5))
+
+* ✅ Unit Test for platformmanager ([`2d6b2ab`](https://github.com/mraniki/iamlistening/commit/2d6b2abd57e395a45f5ba146de35ee58cb3ce797))
+
+* ✅ Unit Test ([`4eacd98`](https://github.com/mraniki/iamlistening/commit/4eacd98fe07442ce21372b5b5aba5d0e205e52e5))
+
+* ✅ Unit Test ([`8513a38`](https://github.com/mraniki/iamlistening/commit/8513a38983ba72ec00eef2ec21c6c87aaed6f44e))
+
+* ✅ Unit Test ([`6c6fc1f`](https://github.com/mraniki/iamlistening/commit/6c6fc1f3b6d408b790007ecdc75003914831f11b))
+
+* ✅ Unit Test ([`412e45c`](https://github.com/mraniki/iamlistening/commit/412e45cce0156f7bb7a6dae916d3789d091c46c0))
+
+* ✅ Unit Test ([`1487df0`](https://github.com/mraniki/iamlistening/commit/1487df0809a73ed5f6350d28a7e05c6e45558852))
+
+* ✅ Unit Test ([`9e1f5c4`](https://github.com/mraniki/iamlistening/commit/9e1f5c4268f38c0eeaf89d68f2e3eea6aa88c86a))
+
+* ✅ Unit Test ([`a7bb9ad`](https://github.com/mraniki/iamlistening/commit/a7bb9ad6a1984d26c25bff885b72d85221377be8))
+
+* ✅ Unit Test ([`70e0298`](https://github.com/mraniki/iamlistening/commit/70e02983e873386c05e37c8cfd4b12280486ddcc))
+
+* ✅ Unit Test ([`0b426b9`](https://github.com/mraniki/iamlistening/commit/0b426b98b909623962d57ea32b51572a9a84d863))
+
+* ✅ Unit Test ([`b0f545b`](https://github.com/mraniki/iamlistening/commit/b0f545b960a9adc86038c1da79bdd7b57cbcd1bf))
+
+* ✅ Unit Test ([`7e88506`](https://github.com/mraniki/iamlistening/commit/7e885069d8340aa2bb8a7471b9a62cddb26bfa4a))
+
+* ✅ Unit Test ([`907da25`](https://github.com/mraniki/iamlistening/commit/907da259fc6cd9bbeef6d8aa3c76d22cdd73b5ca))
+
+* ✅ Unit Test ([`69b7f2c`](https://github.com/mraniki/iamlistening/commit/69b7f2c110bfb1992f735cee3f7591d576e16982))
+
+* ✅ Unit Test ([`6aebccc`](https://github.com/mraniki/iamlistening/commit/6aebccc85763527b67281ebcebf7723f13c5b405))
+
+* ✅ Unit Test ([`76a3877`](https://github.com/mraniki/iamlistening/commit/76a387750e4d9177822c89e3ef39d49508bb9beb))
+
+* ✅ Unit Test ([`2e171f8`](https://github.com/mraniki/iamlistening/commit/2e171f879e379f065e125f5c25e2a66f78eb7a7d))
+
+* ✅ Unit Test ([`b466c03`](https://github.com/mraniki/iamlistening/commit/b466c036ffedd95192d78df9863a48318a550323))
+
+* ✅ Unit Test ([`dbb3a15`](https://github.com/mraniki/iamlistening/commit/dbb3a1519fd7b7f3f189a805736fd553ae464a4f))
+
+* ✅ Unit Test ([`46c10d4`](https://github.com/mraniki/iamlistening/commit/46c10d49a4a792309d9b823eb78ab61766e2861d))
+
+* ✅ Unit Test added coverage ([`60dc895`](https://github.com/mraniki/iamlistening/commit/60dc895ae9b3d2b8d3d5a2b3aba37a90fc0ca856))
+
+* ✅ Unit Test ([`4ec68d4`](https://github.com/mraniki/iamlistening/commit/4ec68d4fa2f629faa258d2f3b9303a3c7e30c569))
+
+* ✅ Unit Test added more clients ([`792fd3c`](https://github.com/mraniki/iamlistening/commit/792fd3c6f0b6c36c467449445e7eb5d0a3a303b7))
+
+* ✅ Unit Test Discord ([`b5a3a02`](https://github.com/mraniki/iamlistening/commit/b5a3a0213decb19c9acd9868024eb3b5932a4f8a))
+
+* ✅ Unit Test ([`4458764`](https://github.com/mraniki/iamlistening/commit/445876425c822a1aa9c4bb8f6063107c25a54c19))
+
+* ✅ Unit Test ([`5032f11`](https://github.com/mraniki/iamlistening/commit/5032f117099158abb31a661cbb72252ce9d64027))
+
+* ✅ Unit Test ([`405338b`](https://github.com/mraniki/iamlistening/commit/405338bf9868e02d8f5176f740a8c82ae8b5c62a))
+
+* ✅ Unit Test ([`f71374e`](https://github.com/mraniki/iamlistening/commit/f71374e52c06a5e522d3cdc2335cf9f0c9e07425))
+
+* ✅ Unit Test ([`84ab627`](https://github.com/mraniki/iamlistening/commit/84ab627c01f33f8dc95a18d96f65af631a710904))
+
+* ✅ Unit Test ([`41d696a`](https://github.com/mraniki/iamlistening/commit/41d696af7469540799cdb6670b0608f2ecc6141f))
+
+* ✅ Unit Test ([`ab8abe1`](https://github.com/mraniki/iamlistening/commit/ab8abe1d98396f49698a28517c6fe885a237fa3a))
+
+* ✅ Unit Test ([`0a81470`](https://github.com/mraniki/iamlistening/commit/0a814706c74506729ce384361db5446ebaf6f6eb))
+
+* ✅ Unit Test ([`789b121`](https://github.com/mraniki/iamlistening/commit/789b121ac95cbf5c6d0ba2aa4446bc6a829ec1a1))
+
+* ✅ Unit Test ([`802d52f`](https://github.com/mraniki/iamlistening/commit/802d52fdab9a3b4dd2c72bd72be217c25c6496ad))
+
+* ✅ Unit Test ([`0f69747`](https://github.com/mraniki/iamlistening/commit/0f69747263fae7af6c66efc5f4abdf339d772399))
+
+* ✅ Unit Test ([`c2a7743`](https://github.com/mraniki/iamlistening/commit/c2a77437ddaf3a00b0b2bd707b117d4111beccd5))
+
+* ✅ Unit Test ([`2a3d0d8`](https://github.com/mraniki/iamlistening/commit/2a3d0d8dda8cbb27b4f24d73b112845d70832b72))
+
+* ✅ Unit Test ([`ded7085`](https://github.com/mraniki/iamlistening/commit/ded7085ac51f6a10a40a8bb8a38741cbc65b753c))
+
+* ✅ Unit Test ([`3d950dc`](https://github.com/mraniki/iamlistening/commit/3d950dc7b268895c350cf843055aab0b439b689b))
+
+### ✨
+
+* ✨ adding framework for more platforms (#83) ([`471a4c4`](https://github.com/mraniki/iamlistening/commit/471a4c44a871af30e8ddb204cc08a72b3511b816))
+
+* ✨ lemmy ♻️  updated import in test 📝 updated docs ([`96b62c7`](https://github.com/mraniki/iamlistening/commit/96b62c75278a0e2e81fb2e7f4585337bae13dee9))
+
+* ✨ adding framework for more platforms (Sourcery refactored) (#89) ([`af58c06`](https://github.com/mraniki/iamlistening/commit/af58c06ae75528056c571777d933a1f2752d1bbb))
+
+* ✨ adding framework for more platforms (Sourcery refactored) (#88) ([`89f88f0`](https://github.com/mraniki/iamlistening/commit/89f88f0f1394e54f203940a96c7be64acb466c06))
+
+* ✨ adding framework for more platforms (Sourcery refactored) (#85) ([`441ffbf`](https://github.com/mraniki/iamlistening/commit/441ffbf288b27ff42b2db2b3b2f4dee05637d6d5))
+
+* ✨ adding framework for more platforms (Sourcery refactored) (#84) ([`9816af4`](https://github.com/mraniki/iamlistening/commit/9816af4e93b3888ca157cb332e926ab92f1f8d7d))
+
+* ✨ initial mastodon streamer  🐘 ([`714f172`](https://github.com/mraniki/iamlistening/commit/714f1722277a70e031a545d4fe17bad00e2020e8))
+
+* ✨ adding framework for more platforms ([`3e48bd7`](https://github.com/mraniki/iamlistening/commit/3e48bd72cba5e8787a6b6ba4df1b7e3fd72b0e8a))
+
+### ⬆️
+
+* ⬆️ ([`bbbae67`](https://github.com/mraniki/iamlistening/commit/bbbae672dc17666f77100abbad5bf685a15bab79))
+
+### 🎨
+
+* 🎨 ([`3d46bf9`](https://github.com/mraniki/iamlistening/commit/3d46bf97e82894b52041c6e5baaca182d9275971))
+
+### 🐛
+
+* 🐛 ([`791f1bd`](https://github.com/mraniki/iamlistening/commit/791f1bd8cae88a022b3771c010c847d3e2f3ef3e))
+
+* 🐛 ([`231093b`](https://github.com/mraniki/iamlistening/commit/231093b9945164cdb3e3becb6b8a1e295ed73815))
+
+* 🐛 missed await ([`35eb364`](https://github.com/mraniki/iamlistening/commit/35eb36426d6adb39bc54a95e7ab5592b887463be))
+
+* 🐛 autoapi.extension ([`1b7fe46`](https://github.com/mraniki/iamlistening/commit/1b7fe466b346ea6ddd66c3fd735f61c35e83e2fb))
+
+* 🐛 conf change ([`747a9e3`](https://github.com/mraniki/iamlistening/commit/747a9e3c9f46c0955d4b3d970c0a1812231231b5))
+
+* 🐛 conf bug ([`7e58b54`](https://github.com/mraniki/iamlistening/commit/7e58b54bba03cc0c7a81bbc06b82197cd57e68ed))
+
+* 🐛 import ([`b0db89e`](https://github.com/mraniki/iamlistening/commit/b0db89e539d0c2983b343c8822ae7464a6be172b))
+
+* 🐛 dependencies ([`968d80a`](https://github.com/mraniki/iamlistening/commit/968d80ab041679f1e7020b8b2ae36b0d82691cd0))
+
+### 👷
+
+* 👷 CI Change test for OP ([`743e0cc`](https://github.com/mraniki/iamlistening/commit/743e0cc39f8875a8db7c535823edd67b36035c5b))
+
+* 👷 CI Change ([`0e65dc6`](https://github.com/mraniki/iamlistening/commit/0e65dc658c38a4428b62ad3772e39f4475d4b816))
+
+* 👷 CI Change ([`24910e1`](https://github.com/mraniki/iamlistening/commit/24910e1ac1e70c2a0c146757be16dc28f3a4bef2))
+
+* 👷 CI Change ([`08894bb`](https://github.com/mraniki/iamlistening/commit/08894bbf40613a1168cab32aea59cf63535b3589))
+
+* 👷 CI Change ([`8fa638e`](https://github.com/mraniki/iamlistening/commit/8fa638e4c4f580e4f9e9d0c13b7269419edaa965))
+
+* 👷 CI Change ([`0b8517d`](https://github.com/mraniki/iamlistening/commit/0b8517dab9eafc4d52466a35fc7f553ddadd9896))
+
+### 💬
+
+* 💬 ([`4b765c8`](https://github.com/mraniki/iamlistening/commit/4b765c89657d0e7b96b7ea59af639fbfc3dbc2c5))
+
+* 💬 ([`0f735f6`](https://github.com/mraniki/iamlistening/commit/0f735f637c6fff974d541250497103bcbdf13784))
+
+* 💬 ([`8097bd4`](https://github.com/mraniki/iamlistening/commit/8097bd4b1f891d22d48ef8c885ef0931d367f337))
+
+### 📝
+
+* 📝 RTD ([`01caa41`](https://github.com/mraniki/iamlistening/commit/01caa41bce094c589658c4053dcb4f64edd38092))
+
+* 📝 RTD update ([`822c707`](https://github.com/mraniki/iamlistening/commit/822c707b9ff83e20ddd4191b806dd3a1e7ccc0ed))
+
+* 📝 RTD initial release ([`410e2aa`](https://github.com/mraniki/iamlistening/commit/410e2aae10da6bb0b905d7b85d2ea183143c2f9e))
+
+* 📝 ([`56783c8`](https://github.com/mraniki/iamlistening/commit/56783c848dc713c129c74e0b6ce5eb23925fe18f))
+
+* 📝 ([`5cf7416`](https://github.com/mraniki/iamlistening/commit/5cf741629284afdcba176b205b2f076b9ed61456))
+
+* 📝 ([`9b467eb`](https://github.com/mraniki/iamlistening/commit/9b467eb090104925da0463832019d2d251ae9b4e))
+
+* 📝 ([`1b2944a`](https://github.com/mraniki/iamlistening/commit/1b2944a36d3011fc4d8d359a000475b40f4f4676))
+
+* 📝 ([`1e75c35`](https://github.com/mraniki/iamlistening/commit/1e75c35c87efdf59ff33bc7fb870d2000611add8))
+
+* 📝 ([`861298c`](https://github.com/mraniki/iamlistening/commit/861298c911cec201568a14a11a9a2e5c6bc67beb))
+
+* 📝 ([`f043ed3`](https://github.com/mraniki/iamlistening/commit/f043ed367afd7041235cb673db7be5a4807917f0))
+
+* 📝 ([`fa013fd`](https://github.com/mraniki/iamlistening/commit/fa013fd3d800b1958c215eef9bde6cf2269f7d69))
+
+* 📝 ([`3f6c511`](https://github.com/mraniki/iamlistening/commit/3f6c5116d15b3ec331aa2ef707adc8ffd4249842))
+
+* 📝 ([`01e9fca`](https://github.com/mraniki/iamlistening/commit/01e9fcac5d5663888709ec41e5cafd9157d3d65e))
+
+* 📝 ([`8e964af`](https://github.com/mraniki/iamlistening/commit/8e964afa1183f82a437c0e4d725a0f655a72b113))
+
+* 📝 ([`815e979`](https://github.com/mraniki/iamlistening/commit/815e97917f6e9acd57a4df6fa6348189a09a672d))
+
+* 📝 ([`f959535`](https://github.com/mraniki/iamlistening/commit/f959535507091506fbb62339e591f30fb495c236))
+
+* 📝 ([`1cf353b`](https://github.com/mraniki/iamlistening/commit/1cf353b1d78445cc14ae7859f954571be1ea0d1f))
+
+* 📝 ([`de38eab`](https://github.com/mraniki/iamlistening/commit/de38eabcaac946a838c85b0a73a1786e24527072))
+
+* 📝 ([`e54991d`](https://github.com/mraniki/iamlistening/commit/e54991db48d6ce98beb783747e34010d3bc20a6c))
+
+* 📝 ([`a543b5b`](https://github.com/mraniki/iamlistening/commit/a543b5b9c9a65d2154d149701ef84d86633b069f))
+
+* 📝 ([`7ad61a1`](https://github.com/mraniki/iamlistening/commit/7ad61a1c5562f1e9d65bf1e0124ea738b44843b6))
+
+* 📝 ([`06e0bba`](https://github.com/mraniki/iamlistening/commit/06e0bba6882f7b4cd913bf671b37d4c8dbb4e0cb))
+
+* 📝 ([`99d7497`](https://github.com/mraniki/iamlistening/commit/99d7497428d11df8fcf0c4c95a754d7bbc2eac4a))
+
+* 📝 ([`8148f38`](https://github.com/mraniki/iamlistening/commit/8148f38c91636c5b8d45af85d3a1685c50f87486))
+
+* 📝 ([`ff3a4ea`](https://github.com/mraniki/iamlistening/commit/ff3a4ea5bed9b0543194b3fdbbc37f67fff4b502))
+
+* 📝 ([`3cf43a0`](https://github.com/mraniki/iamlistening/commit/3cf43a0d21ce868468c9f811e9afe70c1f0556a6))
+
+* 📝 ([`b2e7fe3`](https://github.com/mraniki/iamlistening/commit/b2e7fe33367115134dd618174097d88b707d871b))
+
+* 📝 ([`44c1753`](https://github.com/mraniki/iamlistening/commit/44c175353997b2e3383fd29ae6e2b1bfbc881869))
+
+* 📝 ([`55969f5`](https://github.com/mraniki/iamlistening/commit/55969f52f769d95f4c01eec1506ab5aa0b5fe2c1))
+
+* 📝 ([`759e848`](https://github.com/mraniki/iamlistening/commit/759e8485fe04ab39fc05846fe07bddc02e79a58d))
+
+* 📝 ([`5a2e871`](https://github.com/mraniki/iamlistening/commit/5a2e871d6672665e65861acddea8046050b67a7c))
+
+* 📝 ([`5786c8e`](https://github.com/mraniki/iamlistening/commit/5786c8e20f23c83f96347c52dae599099825b476))
+
+* 📝 ([`be93fa8`](https://github.com/mraniki/iamlistening/commit/be93fa8016bad680e7f45b36604831cb0ac85fd4))
+
+* 📝 ([`4275d2d`](https://github.com/mraniki/iamlistening/commit/4275d2de86cf606acb9ce0130dffaab83163acf0))
+
+* 📝 ([`65de2d6`](https://github.com/mraniki/iamlistening/commit/65de2d6b33c5152421353cc2315f03a7b609dcc7))
+
+* 📝 ([`016e8e2`](https://github.com/mraniki/iamlistening/commit/016e8e2ed574bda06eb305ae1c5a3389dd0c8f8b))
+
+* 📝 ([`37c4c9b`](https://github.com/mraniki/iamlistening/commit/37c4c9b11d7cca3e62e2a1b4789fafaa88b18edb))
+
+* 📝 ([`314b3b8`](https://github.com/mraniki/iamlistening/commit/314b3b843e3dc493c46036dd433b2713021e5868))
+
+* 📝 ([`f8e996f`](https://github.com/mraniki/iamlistening/commit/f8e996f545a3798f8aa1d31267320e5f68c3664a))
+
+* 📝 ([`74f460f`](https://github.com/mraniki/iamlistening/commit/74f460fc2b31274f3ec61b2bd3833e140f631c9b))
+
+* 📝 ([`4d2eb42`](https://github.com/mraniki/iamlistening/commit/4d2eb427de05b4cd5c8a53199dbb3042fb4492aa))
+
+* 📝 ([`ea755f2`](https://github.com/mraniki/iamlistening/commit/ea755f2b8eb7486a213f7ee3fa4b801b01d25d0b))
+
+* 📝 ([`386815c`](https://github.com/mraniki/iamlistening/commit/386815cbd6acc188ffee373edfc89148d718c3e4))
+
+* 📝 ([`adbf8c6`](https://github.com/mraniki/iamlistening/commit/adbf8c6f98034a150df2029893d9e140fc96e7b3))
+
+* 📝 ([`67a7578`](https://github.com/mraniki/iamlistening/commit/67a757845edc04b7da722a0bdb4d57fea97bdfce))
+
+* 📝 ([`b8ddaed`](https://github.com/mraniki/iamlistening/commit/b8ddaed31f0289336b6346f615cd419533d57e7d))
+
+* 📝 ([`707184f`](https://github.com/mraniki/iamlistening/commit/707184ff9ef70cf1c7865daf47435a937d48ab91))
+
+* 📝 ([`45e517d`](https://github.com/mraniki/iamlistening/commit/45e517d82057839b3eeed8c85556e7898d14cb7c))
+
+* 📝 ([`aba5542`](https://github.com/mraniki/iamlistening/commit/aba5542cec4ad57d7e31bdbe4e64296f72368fd9))
+
+* 📝 ([`9abc2f3`](https://github.com/mraniki/iamlistening/commit/9abc2f30bbfa2135c0190bbc5cf6b8ac8f60b478))
+
+* 📝 ([`a558ec7`](https://github.com/mraniki/iamlistening/commit/a558ec7d1e6f54b0fbca3271bfbb8b30db376a33))
+
+* 📝 ([`28586ef`](https://github.com/mraniki/iamlistening/commit/28586ef7b7bae67f6c223099a2a2452e905633a0))
+
+* 📝 ([`7d926b4`](https://github.com/mraniki/iamlistening/commit/7d926b40ecb7347b71b34ca43cdce2ebd7d909a0))
+
+* 📝 ([`eb0dbea`](https://github.com/mraniki/iamlistening/commit/eb0dbea6481775ad15bd903dbab2eb55973ca202))
+
+* 📝 ([`6c2f22f`](https://github.com/mraniki/iamlistening/commit/6c2f22f7c3d38ae25cfc90188de016f65fee95d8))
+
+* 📝 ([`ac0722a`](https://github.com/mraniki/iamlistening/commit/ac0722ad387cdbc35dc80e7de9d973d17b62cd11))
+
+* 📝 ([`c62e991`](https://github.com/mraniki/iamlistening/commit/c62e991af46678726ab1ca03dad8a816b7e35655))
+
+* 📝 ([`724c47c`](https://github.com/mraniki/iamlistening/commit/724c47c8572311635aaf094137c61da2497d62af))
+
+* 📝 ([`91d2798`](https://github.com/mraniki/iamlistening/commit/91d279836282675e12c3396a2541b4ec74d54676))
+
+* 📝 ([`c7c7574`](https://github.com/mraniki/iamlistening/commit/c7c75743d6b4e706aaddcf55db95dcfea085440a))
+
+* 📝 ([`dab3efa`](https://github.com/mraniki/iamlistening/commit/dab3efa88b222b2e96b3e74151dda5e228b94303))
+
+* 📝 ([`8fd7023`](https://github.com/mraniki/iamlistening/commit/8fd7023aca0b2d2cd1444cba117268a82a5029b4))
+
+* 📝 navbar ([`2988488`](https://github.com/mraniki/iamlistening/commit/29884888c4d48f537f1cd50dc6b564565557e850))
+
+* 📝 ([`5a9983f`](https://github.com/mraniki/iamlistening/commit/5a9983fe783ada5f06287aaa1c6f03157126b7ed))
+
+* 📝 ([`988c24b`](https://github.com/mraniki/iamlistening/commit/988c24b161c08f2883227421316c1294f1afcfd1))
+
+* 📝 ([`604f5fb`](https://github.com/mraniki/iamlistening/commit/604f5fb3a6bfb23dae04ce148c388150424049ee))
+
+* 📝 ([`add8363`](https://github.com/mraniki/iamlistening/commit/add8363bd74eac75a24ee1d59be635a57832efcf))
+
+* 📝 ([`1fd958e`](https://github.com/mraniki/iamlistening/commit/1fd958ed44d9b673633d50cc6b7ad478d47333e2))
+
+* 📝 ([`a327441`](https://github.com/mraniki/iamlistening/commit/a327441cf7846688e84c1a5466e535a3010152fa))
+
+* 📝 ([`038091c`](https://github.com/mraniki/iamlistening/commit/038091c2f8c819f5a466e69c5c424d2f6c5a992a))
+
+* 📝 ([`5489fb9`](https://github.com/mraniki/iamlistening/commit/5489fb99362c4f0909584ff0b2c2e56bfb95d622))
+
+* 📝 ([`3a8798f`](https://github.com/mraniki/iamlistening/commit/3a8798fe8f231bd4b796d5b02e9828d5b888990b))
+
+* 📝 ([`747c3c4`](https://github.com/mraniki/iamlistening/commit/747c3c4064451d0f49f7cfb423941986b23567b2))
+
+* 📝 ([`5e137db`](https://github.com/mraniki/iamlistening/commit/5e137dbbe0272c5eb10b37d4407ed1fcef149d5d))
+
+* 📝 ([`2affc33`](https://github.com/mraniki/iamlistening/commit/2affc332fec7c713006367aa0b4ec8443d61f24c))
+
+* 📝 ([`d06d89e`](https://github.com/mraniki/iamlistening/commit/d06d89e4eb41297cc538a1f0f8fe0f3e29a68ec6))
+
+* 📝 ([`107416a`](https://github.com/mraniki/iamlistening/commit/107416a19fa79839ae1add56fe5e32c221cc027c))
+
+* 📝 ([`e2fcbc2`](https://github.com/mraniki/iamlistening/commit/e2fcbc2d79b8a9d9f5261afdc7744a47812b1763))
+
+* 📝 ([`205313c`](https://github.com/mraniki/iamlistening/commit/205313ce12064ea1a112f6a2f23439f9dcdc8717))
+
+* 📝 ([`529e851`](https://github.com/mraniki/iamlistening/commit/529e8516520eb8875055ab93e697a162445be204))
+
+* 📝 ([`17a3a1b`](https://github.com/mraniki/iamlistening/commit/17a3a1b2fc07298b782ff7f147c6a397a30d82fb))
+
+* 📝 ([`8837adf`](https://github.com/mraniki/iamlistening/commit/8837adf78aba3a436873c222e1c581162ee7d956))
+
+* 📝 ([`be249de`](https://github.com/mraniki/iamlistening/commit/be249decdf2c05a8ec70de80f9436fff2dd4434c))
+
+* 📝 ([`2351549`](https://github.com/mraniki/iamlistening/commit/2351549b9b7f02c725ef16c0956983d55a0d3284))
+
+* 📝 ([`6ee1bbf`](https://github.com/mraniki/iamlistening/commit/6ee1bbf3c9751aa3e7433f964a5d48214fc1f1ea))
+
+* 📝 ([`ee7fc86`](https://github.com/mraniki/iamlistening/commit/ee7fc86e11db7df6dd53bd97a4a37f9696d989c4))
+
+* 📝 ([`5de38bd`](https://github.com/mraniki/iamlistening/commit/5de38bd1b5bef209e1f8bb4111ee48622365c5e4))
+
+* 📝 ([`ac4f86a`](https://github.com/mraniki/iamlistening/commit/ac4f86ae13b267bc8c442cd76589dd8857640df3))
+
+* 📝 ([`6ea19e0`](https://github.com/mraniki/iamlistening/commit/6ea19e0a3de98601d367926ad55124a9e2aca837))
+
+* 📝 ([`6e973b0`](https://github.com/mraniki/iamlistening/commit/6e973b006060e3b999acafd8fe76c0fa3b21bdfb))
+
+* 📝 ([`9375f3c`](https://github.com/mraniki/iamlistening/commit/9375f3c6f1cef7459506d3773044a3266c059a5d))
+
+* 📝 ([`82a0bc5`](https://github.com/mraniki/iamlistening/commit/82a0bc566264ffecfd9be63bbc7ccd927e6b68cf))
+
+* 📝 ([`6647f1c`](https://github.com/mraniki/iamlistening/commit/6647f1c629a9c0e5b47eb0790a72e65ba5d6b4e9))
+
+* 📝 ([`13cf5c6`](https://github.com/mraniki/iamlistening/commit/13cf5c63b42c34e46d3177b621540420228e8ef2))
+
+* 📝 ([`02bb7da`](https://github.com/mraniki/iamlistening/commit/02bb7daa567b512df94f67338bb226257fa352a1))
+
+* 📝 ([`903521f`](https://github.com/mraniki/iamlistening/commit/903521fc266384f357e472c19e1398a8487719ee))
+
+* 📝 ([`48ae6e5`](https://github.com/mraniki/iamlistening/commit/48ae6e567d5582e402d1c576540a53ff6ecf8e99))
+
+* 📝 ([`c38a2fc`](https://github.com/mraniki/iamlistening/commit/c38a2fcded3e669c731c3a77c08b87bd2f49049d))
+
+* 📝 ([`9ec4781`](https://github.com/mraniki/iamlistening/commit/9ec478191688906ed2c68eb96204a5fcbd1ea75e))
+
+* 📝 ([`9dd6b25`](https://github.com/mraniki/iamlistening/commit/9dd6b25a2829352dd167e336d66ee83aefb7c8fc))
+
+* 📝 ([`2bdbbd3`](https://github.com/mraniki/iamlistening/commit/2bdbbd3d49f06482f36019769b6c61d76ad81413))
+
+* 📝 ([`77f7a84`](https://github.com/mraniki/iamlistening/commit/77f7a840b83d0c26acb3d74d379cecdd0141ac87))
+
+* 📝 ([`6916460`](https://github.com/mraniki/iamlistening/commit/6916460c6269419eaa05023bc98a59e7c850302b))
+
+* 📝 ([`be948a8`](https://github.com/mraniki/iamlistening/commit/be948a8bd7473e8dea450b9518b2f09d6c39f153))
+
+* 📝 ([`268dd42`](https://github.com/mraniki/iamlistening/commit/268dd42555038f8a51a2f9b2dc2697e5cf0562de))
+
+* 📝 ([`4a3d79c`](https://github.com/mraniki/iamlistening/commit/4a3d79c403ec1a06c5ad1058e8a584ab0865473d))
+
+* 📝 ([`15286e5`](https://github.com/mraniki/iamlistening/commit/15286e54a5cd95c715476fc5f0062d5ec3384ac1))
+
+* 📝 ([`80d7d05`](https://github.com/mraniki/iamlistening/commit/80d7d05a117f7a2460c83737beb52dd674dafdd4))
+
+* 📝 ([`73c5285`](https://github.com/mraniki/iamlistening/commit/73c5285e6e74166e1d38752bdb81e74400bee132))
+
+* 📝 ([`2cc94f8`](https://github.com/mraniki/iamlistening/commit/2cc94f89fd1c722463d8813e78427bbdc0951429))
+
+* 📝 ([`452a77d`](https://github.com/mraniki/iamlistening/commit/452a77db8d1a5b03bc9f5426bff33f48ad844784))
+
+* 📝 ([`7c4d7ef`](https://github.com/mraniki/iamlistening/commit/7c4d7efe6ebb28eaed3405e195b11de2fa767f7c))
+
+* 📝 ([`0ce85ea`](https://github.com/mraniki/iamlistening/commit/0ce85eae44060291de48392ab2519a1b54eff5e8))
+
+* 📝 ([`18f3468`](https://github.com/mraniki/iamlistening/commit/18f346875f44f8e98a8e7d35572fe306b171cb27))
+
+* 📝 docs ([`6227e60`](https://github.com/mraniki/iamlistening/commit/6227e6057e8f4223bf6926a02dc84466593f0e51))
+
+* 📝 docstring test ([`1893076`](https://github.com/mraniki/iamlistening/commit/1893076aa4a71092be077b8563d978b19483b171))
+
+* 📝 RTD ([`025e795`](https://github.com/mraniki/iamlistening/commit/025e795a75ea4136c421352327566633ab8d1246))
+
+* 📝 RTD docs. ([`a286efb`](https://github.com/mraniki/iamlistening/commit/a286efb278b7126421ee2faa55389ab29cb0ba52))
+
+* 📝 docs ([`95248ec`](https://github.com/mraniki/iamlistening/commit/95248ec8ad56e25bdf9d32a1ee6629ea23fbdde1))
+
+* 📝 docs ([`878aeb8`](https://github.com/mraniki/iamlistening/commit/878aeb8f570a186888579c0360140d3a9aa44f1e))
+
+* 📝 docs ([`b8651dc`](https://github.com/mraniki/iamlistening/commit/b8651dccd4b3798578a46eb26b1c58d4efb095d8))
+
+* 📝 Docs ([`28a7e21`](https://github.com/mraniki/iamlistening/commit/28a7e2188afc8984f67145e3ab958f63b56ad08e))
+
+### 🔇
+
+* 🔇 removing the logs ([`8fd268b`](https://github.com/mraniki/iamlistening/commit/8fd268bd5341923a6a72d675f15d79c8dcce9754))
+
+### 🔒
+
+* 🔒 secret process ([`15db542`](https://github.com/mraniki/iamlistening/commit/15db542023b5a94d9c10ff0123520a24f3654d13))
+
+### 🔥
+
+* 🔥 ([`bd8e64a`](https://github.com/mraniki/iamlistening/commit/bd8e64a8d1423ddde46d8b30770d435b986bf28b))
+
+* 🔥 removing tinode/rocket chat ([`d09155b`](https://github.com/mraniki/iamlistening/commit/d09155bcc07c47c94f2c6839f047230454ba764e))
+
+* 🔥 remove getinfo added version attr ([`3beb84d`](https://github.com/mraniki/iamlistening/commit/3beb84dfd6d7cad7e3bc86e6e30bf056f7789707))
+
+### 🔧
+
+* 🔧 iteration_enabled ([`24f260d`](https://github.com/mraniki/iamlistening/commit/24f260d7d6b753c7832ab16393960b1ba79b6844))
+
+* 🔧 config update with chat_platform ([`a23ea22`](https://github.com/mraniki/iamlistening/commit/a23ea2202596d6bd7f302566eee5e8d147027189))
+
+### 🚨
+
+* 🚨 ([`98c5460`](https://github.com/mraniki/iamlistening/commit/98c5460e72bfa5905e36df913da7fb269b9cc1b6))
+
+* 🚨 ([`ee5a59a`](https://github.com/mraniki/iamlistening/commit/ee5a59a5098b74ef7a9a6188e4a1927773fae9f6))
+
+### 🧐
+
+* 🧐 ([`996e709`](https://github.com/mraniki/iamlistening/commit/996e709cc03b7cbcc13a8ee491856abdf6a4f3e7))
+
+* 🧐 ([`3d05f0a`](https://github.com/mraniki/iamlistening/commit/3d05f0a91dc71a8418a0955a26a34a48c42ef368))
+
+* 🧐 ([`2b799b8`](https://github.com/mraniki/iamlistening/commit/2b799b8675fa887e163cac2acf7166cdd36245f7))
+
+
 ## v3.0.2 (2023-07-25)
 
 ### Other
