@@ -83,6 +83,9 @@ html_theme_options = {
         ("IamListening",  "index"),
         ("_menu",  "Plugins",[
             ("IamListening",  "index"),
+            ("_divider", ),
+            ("IamListening",  "index"),
+            ("_divider", ),
         ]),
         ("Github", "https://github.com/mraniki/tt", True),
     ]
