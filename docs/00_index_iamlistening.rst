@@ -10,7 +10,6 @@
 
 .. toctree::
    :maxdepth: 4
-
    01_setup
    02_config
    03_module

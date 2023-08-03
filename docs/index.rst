@@ -20,10 +20,15 @@ Documentation
 
 .. toctree::
    :maxdepth: 2
+   
+   iamlistening:_iamlistening_index
+
+.. toctree::
+   :maxdepth: 2
    :caption: Contents:
 
 
-*  :ref:`_iamlistening_index`_
+*  iamlistening:_iamlistening_index
 
 
 * :doc:`IamListening <iamlistening:_iamlistening_index>`
