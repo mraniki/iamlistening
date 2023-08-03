@@ -63,23 +63,23 @@ html_theme_options = {
     'globaltoc_includehidden': "true",
     'navbar_class': "navbar",
     'navbar_fixed_top': "true",
-    'source_link_position': "none",
+    'source_link_position': "nav",
 
     'bootswatch_theme': "darkly",
     'bootstrap_version': "3",
 
     'navbar_links': [
-        ("TalkyTrader", "https://talkytrader.github.io/wiki/",True),
+        ("TalkyTrader", "https://talkytrader.github.io/wiki/", True),
         ("_menu",  "🗿 Talky",[
-            ("🪙 Get started",  "https://talky.rtfd.io/01_start",True),
-            ("⚙️ Config",  "https://talky.rtfd.io/02_config",True),
+            ("🪙 Get started",  "https://talky.rtfd.io/01_start", True),
+            ("⚙️ Config",  "https://talky.rtfd.io/02_config", True),
         ]),
         ("_menu",  "🔌 Plugins",[
             ("👂 IamListening",  "https://iamlistening.rtfd.io/", True),
-            ("🔎 FindMyOrder",  "https://findmyorder.rtfd.io/", True),
+            ("🔎 FindMyOrder", "https://findmyorder.rtfd.io/", True),
             ("⛓️ DXSP", "https://dxsp.rtfd.io/", True),
-            ("💱 CEX",  "index",True),
-            ("💁 Helper",  "index",True),
+            ("💱 CEX",  "https://talky.rtfd.io", True),
+            ("💁 Helper",  "https://talky.rtfd.io", True),
             ("📰 Talkytrend",  "https://talkytrend.rtfd.io/", True),
         ]),
         ("_menu",  "➕ More",[
