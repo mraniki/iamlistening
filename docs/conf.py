@@ -2,13 +2,13 @@
 
 import os
 import sys
-from os.path import abspath, dirname
 
+# from os.path import abspath, dirname
 import sphinx_bootstrap_theme
 
 sys.path.insert(0, os.path.abspath('../'))
-path = dirname(abspath(__file__))
-sys.path.append(path)
+# path = dirname(abspath(__file__))
+# sys.path.append(path)
 
 # -- Project information -----------------------------------------------------
 
@@ -22,16 +22,9 @@ author = 'mraniki'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
-    'sphinx.ext.intersphinx', 
-    'sphinx.ext.viewcode',  
-    'sphinx_autodoc_typehints', 
     'sphinx.ext.napoleon',
-    'sphinx_copybutton',
-    'myst_parser',
+    'sphinx.ext.viewcode',  
     'sphinxext.remoteliteralinclude',
-    'sphinx_togglebutton',
-    'sphinx_design',
-    'notfound.extension'
 ]
 
 # intersphinx_mapping = {
@@ -48,7 +41,6 @@ set_type_checking_flag = True
 autodoc_member_order = 'bysource'
 add_module_names = True
 
-
 master_doc = 'index'
 source_suffix = ['.rst', '.md']
 templates_path = ["_templates"]
@@ -58,8 +50,6 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 # -- Options for HTML output -------------------------------------------------
 
 html_theme = "bootstrap"
-
-
 
 
 html_theme_options = {
@@ -98,6 +88,6 @@ html_favicon = '_static/favicon.ico'
 # html_copy_source = False
 # html_show_sourcelink = False
 
-def setup(app):
-    app.add_css_file("custom.css")
+# def setup(app):
+#     app.add_css_file("custom.css")
 
