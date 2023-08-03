@@ -17,7 +17,3 @@ Iamlistening
    Module  <_autosummary/iamlistening>
    
 
-
-.. raw:: html
-
-   <hr>
