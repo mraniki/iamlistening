@@ -17,8 +17,16 @@ Contents
 
    IAL_01_install
    IAL_02_settings
-   IAL_03_module
+
    
+More Info
+=========
+
+.. toctree::
+   :maxdepth: 4
+
+   IAL_03_module
+
 
 
 .. raw:: html
