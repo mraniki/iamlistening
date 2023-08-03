@@ -16,7 +16,7 @@ Table of Contents
 
    01_setup
    02_config
-   
+   03_module
 
 
 .. raw:: html
