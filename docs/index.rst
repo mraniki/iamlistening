@@ -21,39 +21,36 @@ Documentation
 .. toctree::
    :maxdepth: 2
    
-   iamlistening:_iamlistening_index
+   iamlistening:00_index_iamlistening
+
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
 
-*  iamlistening:_iamlistening_index
+  * :doc:`IamListening <https://talky.readthedocs.io/projects/imalistening/00_index_iamlistening>`
 
 
-* :doc:`IamListening <iamlistening:_iamlistening_index>`
+* :doc:`IamListening <https://talky.readthedocs.io/projects/imalistening/00_index_iamlistening>`
 
 
-* :doc:`IamListening <iamlistening:00_index_iamlistening>`
+- :ref:`sphinx:ref-role`
+- :ref:`:ref: role <sphinx:ref-role>`
+- :doc:`sphinx:usage/extensions/intersphinx`
+- :doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`     
 
-
-* :doc:`IamListening <https://talky.readthedocs.io/projects/imalistening/>`
-
-
-* :doc:`findmyorder <findmyorder:index>`
-
-
-* :doc:`Talkytrader <talkytrader:index>`
-
-
-Online Resources
-----------------
-
-* `Sourcecode repository on GitHub <https://github.com/mraniki/tt/>`_
-
-
-
-      
 .. raw:: html
 
-   <br><br><br><br>
+   <br><br>
+   <br>
+  <p align="left">
+  <a href="https://talkytrader.github.io/wiki/"><img src="https://img.shields.io/badge/Wiki-%23000000.svg?style=for-the-badge&logo=wikipedia&logoColor=white"></a><br>
+  <a href="https://github.com/mraniki/tt/"><img src="https://img.shields.io/badge/github-%23000000.svg?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://hub.docker.com/r/mraniki/tt"><img src="https://img.shields.io/docker/pulls/mraniki/tt?style=for-the-badge"></a><br>
+  <a href="https://coindrop.to/mraniki"><img src="https://img.shields.io/badge/tips-000000?style=for-the-badge&logo=buymeacoffee&logoColor=white"></a>
+  <a href="https://t.me/TTTalkyTraderChat/1"><img src="https://img.shields.io/badge/talky-blue?style=for-the-badge&logo=telegram&logoColor=white"></a>
+  <a href="https://discord.gg/gMNERs5M9"><img src="https://img.shields.io/discord/1049307055867035648?style=for-the-badge&logo=discord&logoColor=white&label=%20%20&color=blue"></a>
+  <br><br>
+  </p>
+  <br><br>

@@ -48,6 +48,7 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 intersphinx_mapping = {
     "python": ("http://docs.python.org/", None),
+    "sphinx": ("https://www.sphinx-doc.org/en/master/", None),
     "talkytrader": ("https://talky.readthedocs.io", None),
     "findmyorder": ("https://findmyorder.readthedocs.io", None),
     "dxsp": ("https://dxsp.readthedocs.io", None),
@@ -66,6 +67,7 @@ html_favicon = '_static/favicon.ico'
 html_css_files = [
     "custom.css",
 ]
+html_show_sphinx = False
 html_theme_options = {
     'navbar_title': " ",
     'navbar_site_name': "Talky",
@@ -83,16 +85,16 @@ html_theme_options = {
     'navbar_links': [
         ("TalkyTrader", "https://talkytrader.github.io/wiki/",True),
         ("_menu",  "🗿 Talky",[
-            ("🪙 Get started",  "https://talky.rtfd.io",True),
-            ("⚙️ Config",  "https://talky.rtfd.io",True),
+            ("🪙 Get started",  "https://talky.rtfd.io/01_start",True),
+            ("⚙️ Config",  "https://talky.rtfd.io/01_config",True),
         ]),
         ("_menu",  "🔌 Plugins",[
-            ("👂 IamListening",  "https://iamlistening.rtfd.io/00_index_iamlistening"),
-            ("🔎 FindMyOrder",  "https://iamlistening.rtfd.io/_iamlistening_index"),
-            ("⛓️ DXSP",  "https://talky.readthedocs.io/projects/dxsp/",True),
+            ("👂 IamListening",  "https://iamlistening.rtfd.io/00_index_iamlistening",True),
+            ("🔎 FindMyOrder",  "https://findmyorder.rtfd.io/00_index_findmyorder",True),
+            ("⛓️ DXSP", "https://dxsp.rtfd.io/00_index_dxsp", True),
             ("💱 CEX",  "index",True),
             ("💁 Helper",  "index",True),
-            ("📰 Talkytrend",  "https://talky.readthedocs.io/projects/talkytrend/",True),
+            ("📰 Talkytrend",  "https://talkytrend.rtfd.io/00_index_talkytrend", True),
         ]),
         ("_menu",  "➕ More",[
             ("🆕 What's new?",  "https://github.com/mraniki/tt",True),
@@ -101,7 +103,7 @@ html_theme_options = {
     ]
 
 }
-html_show_sphinx = False
+
 
 
 
