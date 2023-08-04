@@ -26,8 +26,12 @@
     a code {
       color: #ffcc00;
     }
-  
-    pre {
+
+    dt {
+background-color: transparent;
+      
+    }
+    /* pre {
       color: #E2E8E4;
       font-weight: bold;
-    }
+    } */
