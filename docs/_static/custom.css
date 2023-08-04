@@ -20,9 +20,9 @@
       color: #ffcc00;
   }
     
-    /* a {
+    a {
       color: #ffcc00;
-    } */
+    }
     a:hover {
       color: #ffcc00; ;
     }
@@ -35,3 +35,5 @@
 background-color: transparent;
       
     }
+
+    
