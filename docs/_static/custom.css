@@ -16,7 +16,7 @@
       background-color: #222222;
       
     }
-    .navbar-nav .nav-link:hover {
+    .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
       color: #ffcc00;
   }
     
