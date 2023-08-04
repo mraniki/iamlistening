@@ -20,14 +20,14 @@
       color: #ffcc00;
   }
     
-    a {
+    /* a {
       color: #ffcc00;
-    }
+    } */
     a:hover {
       color: #ffcc00; ;
     }
   
-    a code {
+    a:hover code {
       color: #ffcc00;
     }
 
