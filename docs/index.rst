@@ -14,6 +14,7 @@
    01_start
    02_config
    03_module
+   README
 
 
 .. raw:: html
