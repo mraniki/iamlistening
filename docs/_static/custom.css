@@ -14,8 +14,12 @@
   
   .navbar-inverse, .navbar-collapse,  .navbar-brand:hover, .navbar-default, .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
       background-color: #222222;
+      
     }
-  
+    .navbar-nav .nav-link:hover {
+      color: #ffcc00;
+  }
+    
     a {
       color: #ffcc00;
     }
@@ -31,7 +35,3 @@
 background-color: transparent;
       
     }
-    /* pre {
-      color: #E2E8E4;
-      font-weight: bold;
-    } */
