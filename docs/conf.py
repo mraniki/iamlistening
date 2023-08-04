@@ -63,7 +63,7 @@ html_theme_options = {
     'globaltoc_includehidden': "true",
     'navbar_class': "navbar",
     'navbar_fixed_top': "true",
-    'source_link_position': "nav",
+    'source_link_position': "none",
 
     'bootswatch_theme': "darkly",
     'bootstrap_version': "3",
