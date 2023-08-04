@@ -31,7 +31,7 @@
       color: #ffcc00;
     }
 
-    dt {
+    dt:target, span.highlighted {
 background-color: transparent;
       
     }
