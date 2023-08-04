@@ -8,15 +8,13 @@
 | Supported platforms are listed under clients
 
 
-:ref:`README`
-
 .. toctree::
    :maxdepth: 4
    
    01_start
    02_config
    03_module
-   
+   README
 
 
 .. raw:: html
