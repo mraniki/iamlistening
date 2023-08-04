@@ -2,6 +2,71 @@
 
 
 
+## v3.1.1 (2023-08-04)
+
+### :memo:
+
+* :memo: RTD (#96) ([`74d7691`](https://github.com/mraniki/iamlistening/commit/74d7691af1d570c8d240aa5749fb1c84df79853f))
+
+* :memo: RTD ([`7b74cc7`](https://github.com/mraniki/iamlistening/commit/7b74cc77e96236c7c3cd3ed7bc2c5e5267109e0d))
+
+### Update
+
+* Update Requirements ([`4d7e1b7`](https://github.com/mraniki/iamlistening/commit/4d7e1b7bbe55e9b452bb42447db2592be6f58866))
+
+### 🐛
+
+* 🐛 ([`e6e8fa6`](https://github.com/mraniki/iamlistening/commit/e6e8fa6532bf903a0be87575a9f55d455a1698ef))
+
+### 📝
+
+* 📝 ([`f3ecb32`](https://github.com/mraniki/iamlistening/commit/f3ecb329a6af64ea7ff08829c3b1b7989d4de46a))
+
+* 📝 ([`ca29b61`](https://github.com/mraniki/iamlistening/commit/ca29b6115aa52de6834851f8666715db6d33afda))
+
+* 📝 testing integrating readme ([`d0fbddf`](https://github.com/mraniki/iamlistening/commit/d0fbddf210d983d407288696e9d5dccec3a1a6ca))
+
+* 📝 ([`142f058`](https://github.com/mraniki/iamlistening/commit/142f058593c75d7d42895c8015fa8386b0528573))
+
+* 📝 ([`16e55d8`](https://github.com/mraniki/iamlistening/commit/16e55d892085e91bebd8c2f831da779c2622e72e))
+
+* 📝 ([`9cc1a1a`](https://github.com/mraniki/iamlistening/commit/9cc1a1a82443f36a7d457ce3d0935b36c261a0a2))
+
+* 📝 ([`86b4180`](https://github.com/mraniki/iamlistening/commit/86b418008302778eefdac92e87e9ba4a2552bb5e))
+
+* 📝 ([`bdf97ef`](https://github.com/mraniki/iamlistening/commit/bdf97ef4c1444a5eef108f448863f75ab6bb77bb))
+
+* 📝 ([`40e0f70`](https://github.com/mraniki/iamlistening/commit/40e0f70200664da04a82c2bc2e0e916caaecc028))
+
+* 📝 ([`c93ebae`](https://github.com/mraniki/iamlistening/commit/c93ebae7d8a9301224d4f4f2adcc6886ffb77d68))
+
+* 📝 ([`2c403ce`](https://github.com/mraniki/iamlistening/commit/2c403ce2bcd220634996ac470ab7ac4995b65c6e))
+
+* 📝 ([`ad84571`](https://github.com/mraniki/iamlistening/commit/ad84571a546f1e352ef43ac1c11f368f2dfb6361))
+
+* 📝 ([`02c2921`](https://github.com/mraniki/iamlistening/commit/02c29214753cdbecb00b37e01f3518d731705236))
+
+* 📝 ([`58d0fa0`](https://github.com/mraniki/iamlistening/commit/58d0fa0a67eff478107ce60c3ddf5e3cd9c4c705))
+
+* 📝 ([`b98fd75`](https://github.com/mraniki/iamlistening/commit/b98fd757de8774a4e3d74ed406543fdd4fd6483a))
+
+* 📝 navbar ([`81c4baf`](https://github.com/mraniki/iamlistening/commit/81c4baff606746e34bc536815bf7994d2a78dfec))
+
+* 📝 ([`25d704b`](https://github.com/mraniki/iamlistening/commit/25d704b32de7af2d78cac89e587c04a72448c3ab))
+
+* 📝 ([`9071284`](https://github.com/mraniki/iamlistening/commit/90712849dc2e906d61d4b645c517c246e7cefa6c))
+
+* 📝 navbar ([`ceb0ae6`](https://github.com/mraniki/iamlistening/commit/ceb0ae69c9e41228142088abdc86bb43e79851ed))
+
+* 📝 ([`de2b148`](https://github.com/mraniki/iamlistening/commit/de2b14855f2f8eb36a897d3e7610acb3d27e7476))
+
+* 📝 navbar ([`95e32e0`](https://github.com/mraniki/iamlistening/commit/95e32e0e1d9aea48dff333537b82fedd4b6e8d98))
+
+### 🔧
+
+* 🔧 ([`2187a87`](https://github.com/mraniki/iamlistening/commit/2187a87932c82723e99af1cecc9a8cd71b9bf1cd))
+
+
 ## v3.1.0 (2023-08-03)
 
 ### :bug:
