@@ -1,5 +1,5 @@
 <div id="navbar" class="{{ theme_navbar_class }} navbar-default {% if theme_navbar_fixed_top|tobool -%} navbar-fixed-top{%- endif -%}">
-    <div class="container">
+    <div class="container"> 
       <div class="navbar-header">
         <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
@@ -21,19 +21,19 @@
   
       <div class="collapse navbar-collapse nav-collapse">
         <ul class="navbar-nav">
-          <li class="nav-item">
+          <li class="dropdown nav-item">
             <a class="nav-link" href="https://talkytrader.github.io/wiki/">TalkyTrader</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown multi-level">
             <a class="nav-link dropdown-toggle" href="#" id="menu1" data-toggle="dropdown">🗿 Talky</a>
-            <div class="dropdown-menu" aria-labelledby="menu1">
+            <div class="dropdown-menu dropdown-submenu" aria-labelledby="menu1">
               <a class="dropdown-item" href="https://talky.rtfd.io/01_start">🪙 Get started</a>
               <a class="dropdown-item" href="https://talky.rtfd.io/02_config">⚙️ Config</a>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="menu2" data-toggle="dropdown">🔌 Plugins</a>
-            <div class="dropdown-menu" aria-labelledby="menu2">
+            <div class="dropdown-menu dropdown-submenu" aria-labelledby="menu2">
               <a class="dropdown-item" href="https://iamlistening.rtfd.io/">👂 IamListening</a>
               <a class="dropdown-item" href="https://findmyorder.rtfd.io/">🔎 FindMyOrder</a>
               <a class="dropdown-item" href="https://dxsp.rtfd.io/">⛓️ DXSP</a>
@@ -43,8 +43,8 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="menu3" data-toggle="dropdown">➕ More</a>
-            <div class="dropdown-menu" aria-labelledby="menu3">
+            <a class="nav-link dropdown-toggle " href="#" id="menu3" data-toggle="dropdown">➕ More</a>
+            <div class="dropdown-menu dropdown-submenu" aria-labelledby="menu3">
               <a class="dropdown-item" href="https://github.com/mraniki/tt">🆕 What's new?</a>
               <a class="dropdown-item" href="https://talky.rtfd.io">💬 Connect</a>
             </div>
