@@ -67,6 +67,12 @@ hoverxref_intersphinx = [
     'sphinx',
     'python',
     'talky',
+    'findmyorder',
+    'dxsp',
+    'iamlistening',
+    'talkytrend',
+    'myllm',
+
 ]
 
 # -- autoapi -------------------
