@@ -36,9 +36,11 @@ intersphinx_mapping = {
     "python": ("https://docs.python.org/3", None),
     "talky": ("https://talky.readthedocs.io/en/latest/", None),
     "talky-dev": ("https://talky.readthedocs.io/en/dev/", None),
-    "findmyorder": ("https://talky.readthedocs.io/projects/findmyorder/en/latest", None),
+    "findmyorder": (
+        "https://talky.readthedocs.io/projects/findmyorder/en/latest", None),
     "dxsp": ("https://talky.readthedocs.io/projects/dxsp/en/latest", None),
-    "iamlistening": ("https://talky.readthedocs.io/projects/iamlistening/en/latest", None),
+    "iamlistening": (
+        "https://talky.readthedocs.io/projects/iamlistening/en/latest", None),
     "talkytrend": ("https://talky.readthedocs.io/projects/talkytrend/en/latest", None),
     "myllm": ("https://talky.readthedocs.io/projects/myllm/en/latest", None),
 }
