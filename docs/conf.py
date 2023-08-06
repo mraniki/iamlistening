@@ -122,8 +122,6 @@ if not os.environ.get("READTHEDOCS"):
     sitemap_locales = [None]
     sitemap_url_scheme = "{link}"
 
-# -- Internationalization -----------
-
 
 
 # -- Options for HTML output --------
@@ -136,13 +134,13 @@ html_show_copyright = False
 
 html_theme = "pydata_sphinx_theme"
 html_theme_options = {
-    "external_links": [
-        {"name": "Talky", "url": "https://talky.readthedocs.io"},
-    ],
+    # "external_links": [
+    #     {"name": "Talky", "url": "https://talky.readthedocs.io"},
+    # ],
     "icon_links": [
         {
             "name": "GitHub",
-            "url": "https://github.com/mraniki/tt/discussions",
+            "url": "https://github.com/mraniki/tt/",
             "icon": "fa-brands fa-github",
             "type": "fontawesome",
         },
@@ -153,8 +151,13 @@ html_theme_options = {
         },
         {
             "name": "Mastodon",
-            "url": "https://<your-host>@<your-handle>",
+            "url": "https://mastodon.social/@MrAniki",
             "icon": "fa-brands fa-mastodon",
+        },
+        {
+            "name": "Tips",
+            "url": "https://coindrop.to/mraniki",
+            "icon": "fa-solid fa-burger",
         },
         ],
 
