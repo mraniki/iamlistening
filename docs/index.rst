@@ -5,7 +5,11 @@
 =============
 
 | Python module to connect to instant messaging platforms and listen to messages.
-| Supported platforms are listed under clients
+| Supported platforms are listed under clients. 
+
+
+- :doc:`sphinx:usage/extensions/intersphinx`
+
 
 
 .. toctree::
@@ -14,7 +18,6 @@
    01_start
    02_config
    03_module
-   README
 
 
 .. raw:: html
