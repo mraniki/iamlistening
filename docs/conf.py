@@ -66,6 +66,7 @@ hoverxref_intersphinx = [
     'readthedocs',
     'sphinx',
     'python',
+    'talky',
 ]
 
 # -- autoapi -------------------
@@ -135,7 +136,7 @@ html_theme_options = {
     "icon_links": [
         {
             "name": "GitHub",
-            "url": "https://github.com/mraniki/tt",
+            "url": "https://github.com/mraniki/tt/discussions",
             "icon": "fa-brands fa-github",
             "type": "fontawesome",
         },
