@@ -24,7 +24,11 @@ extensions = [
     'sphinx.ext.viewcode',
     "sphinx.ext.intersphinx",
     "hoverxref.extension",
-
+    "sphinx.ext.extlinks",
+    "sphinx_design",
+    "myst_parser",
+    "sphinx_copybutton",
+    "notfound.extension",
 ]
 
 
