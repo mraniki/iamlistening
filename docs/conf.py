@@ -63,7 +63,7 @@ intersphinx_disabled_reftypes = ["*"]
 
 # -- hoverxref ----------------
 
-hoverxref_auto_ref = True
+# hoverxref_auto_ref = True
 hoverxref_intersphinx = [
     'readthedocs',
     'sphinx',
