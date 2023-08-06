@@ -2,6 +2,17 @@
 
 
 
+## v3.1.2 (2023-08-06)
+
+### Update
+
+* Update README.md ([`8d6bf53`](https://github.com/mraniki/iamlistening/commit/8d6bf5373f020df350219cd5206aa1d982675fcb))
+
+* Update Requirements ([`7b3130d`](https://github.com/mraniki/iamlistening/commit/7b3130dee107c606979ad9a383213defe392d41f))
+
+* Update README.md ([`8fc20ba`](https://github.com/mraniki/iamlistening/commit/8fc20ba850ec9598d57322833dee8de009ec10f0))
+
+
 ## v3.1.1 (2023-08-04)
 
 ### :memo:
