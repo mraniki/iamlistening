@@ -24,9 +24,6 @@ User Guide
 Platforms Supported
 ===================
 
-:py:mod:`iamlistening.platform.clients`
-
-
 
 .. automodule:: iamlistening.platform.clients
    :members:

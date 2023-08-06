@@ -1,5 +1,0 @@
-===========
-TalkyTrader
-===========
-
-- :doc:`talky:index`
