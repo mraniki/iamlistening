@@ -28,7 +28,9 @@ Platforms Supported
 
 
 .. automodule:: iamlistening.platform.clients
+   :imported-members:
    :members:
+   :undoc-members:
    :show-inheritance:
 
 
