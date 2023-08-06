@@ -132,7 +132,8 @@ html_logo = '_static/favicon.png'
 html_favicon = '_static/favicon.ico'
 html_show_sphinx = False
 html_show_copyright = False
-html_show_sourcelink: False
+html_show_theme_version = False
+# html_show_sourcelink: False
 html_theme = "pydata_sphinx_theme"
 html_theme_options = {
 
@@ -162,8 +163,6 @@ html_theme_options = {
 
 }
 html_context = {
-   # ...
-   "github_user": "mraniki",
    "default_mode": "dark",
 
 }
