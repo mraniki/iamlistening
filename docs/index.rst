@@ -14,12 +14,14 @@
 | Supported platforms are listed under clients. 
 
 
+.. toctree::
+   :hidden:
 
+   00_talky
 
 .. toctree::
    :maxdepth: 4
 
-   00_talky
    01_start
    02_config
    03_module
