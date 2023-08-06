@@ -16,17 +16,15 @@
 
 - :doc:`talky:index`
 
-- :doc:`sphinx:usage/extensions/intersphinx`
-
 
 .. toctree::
    :maxdepth: 4
 
-   :doc:`talky:index`
+   talky:index
    01_start
    02_config
    03_module
-
+   00_talky
 
 .. raw:: html
 
