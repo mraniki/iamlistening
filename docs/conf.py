@@ -22,7 +22,8 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.napoleon',
     'sphinx.ext.viewcode',
-    "sphinx.ext.intersphinx", 
+    "sphinx.ext.intersphinx",
+    "hoverxref.extension",
 
 ]
 
@@ -47,6 +48,12 @@ intersphinx_mapping = {
 
 intersphinx_disabled_reftypes = ["*"]
 
+hoverxref_auto_ref = True
+hoverxref_intersphinx = [
+    'readthedocs',
+    'sphinx',
+    'python',
+]
 napoleon_google_docstring = True
 autosummary_generate = True
 autoclass_content = 'both'
@@ -83,7 +90,6 @@ html_theme_options = {
     'navbar_class': "navbar",
     'navbar_fixed_top': "true",
     'source_link_position': "none",
-
     'bootswatch_theme': "darkly",
     'bootstrap_version': "3",
 
