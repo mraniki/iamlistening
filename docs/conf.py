@@ -124,7 +124,7 @@ if not os.environ.get("READTHEDOCS"):
 
 html_static_path = ["_static"]
 html_css_files = ["custom.css"]
-html_logo = '_static/favicon.png'
+html_logo = '_static/logo.png'
 html_favicon = '_static/favicon.ico'
 html_show_sphinx = False
 html_show_copyright = False

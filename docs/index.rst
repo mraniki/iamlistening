@@ -24,10 +24,10 @@ User Guide
 Platforms Supported
 ===================
 
-.. toctree::
-   :maxdepth: 2
+:py:mod:`iamlistening.platform.clients`
 
-   iamlistening.platform.clients
+
+.. automodule:: iamlistening.platform.clients
 
 
 Module Reference
