@@ -134,7 +134,7 @@ html_show_sphinx = False
 html_show_copyright = False
 html_theme = "pydata_sphinx_theme"
 html_theme_options = {
-
+    "secondary_sidebar_items": ["page-toc"],
     "icon_links": [
         {
             "name": "GitHub",
