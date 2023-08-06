@@ -127,13 +127,11 @@ if not os.environ.get("READTHEDOCS"):
 # -- Options for HTML output --------
 
 html_static_path = ["_static"]
-# html_css_files = ["custom.css"]
+html_css_files = ["custom.css"]
 html_logo = '_static/favicon.png'
 html_favicon = '_static/favicon.ico'
 html_show_sphinx = False
 html_show_copyright = False
-html_show_theme_version = False
-html_show_sourcelink: False
 html_theme = "pydata_sphinx_theme"
 html_theme_options = {
 
