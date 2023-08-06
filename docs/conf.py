@@ -35,6 +35,7 @@ extensions = [
     "myst_parser",
     "sphinx_copybutton",
     "notfound.extension",
+    # "autoapi.extension",
 ]
 
 # -- Extension configuration ---------------------------------------------------
@@ -75,10 +76,18 @@ hoverxref_intersphinx = [
 
 ]
 
+# -- autodoc --------------------
+
+autoclass_content = 'both'
+autodoc_inherit_docstrings = True 
+set_type_checking_flag = True 
+autodoc_member_order = 'bysource'
+add_module_names = True
+
 # -- autoapi -------------------
 
 # autoapi_type = "python"
-# autoapi_dirs = ["../src/pydata_sphinx_theme"]
+# autoapi_dirs = ['../iamlistening']
 # autoapi_keep_files = True
 # autoapi_root = "api"
 # autoapi_member_order = "groupwise"
@@ -88,16 +97,6 @@ hoverxref_intersphinx = [
 
 napoleon_google_docstring = True
 
-
-# -- autodoc --------------------
-
-autoclass_content = 'both'
-autodoc_inherit_docstrings = True 
-set_type_checking_flag = True 
-autodoc_member_order = 'bysource'
-add_module_names = True
-
-
 # -- MyST options -----------------
 
 # This allows us to use ::: to denote directives, useful for admonitions
@@ -105,12 +104,10 @@ myst_enable_extensions = ["colon_fence", "linkify", "substitution"]
 myst_heading_anchors = 2
 myst_substitutions = {"rtd": "[Read the Docs](https://readthedocs.org/)"}
 
-
 master_doc = 'index'
 source_suffix = ['.rst', '.md']
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
-
 
 # -- Sitemap ----------------------
 
@@ -121,7 +118,6 @@ if not os.environ.get("READTHEDOCS"):
     html_baseurl = os.environ.get("SITEMAP_URL_BASE", "http://127.0.0.1:8000/")
     sitemap_locales = [None]
     sitemap_url_scheme = "{link}"
-
 
 
 # -- Options for HTML output --------

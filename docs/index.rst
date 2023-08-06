@@ -21,10 +21,12 @@ IamListening
 
 
 Platforms Supported
+===================
 
-.. automodule:: iamlistening.platform.clients
+.. automodule:: 
    :members:
 
+   iamlistening.platform.clients
 
 .. raw:: html
 
