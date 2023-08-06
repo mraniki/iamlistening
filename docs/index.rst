@@ -13,11 +13,16 @@
 | Python module to connect to instant messaging platforms and listen to messages.
 | Supported platforms are listed under clients. 
 
+- :doc:`talky:Getting Started`
 
 - :doc:`talky:01_start`
+
 - :doc:`talky`
+
 - :doc:`talky:latest`
+
 - :doc:`talky:latest/index`
+
 - :doc:`sphinx:usage/extensions/intersphinx`
 
 
