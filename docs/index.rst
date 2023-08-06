@@ -28,7 +28,9 @@ Platforms Supported
 
 
 .. automodule:: iamlistening.platform.clients
-
+   :members:
+   :show-inheritance:
+   
 
 Module Reference
 ================
