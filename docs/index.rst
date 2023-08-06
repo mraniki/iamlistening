@@ -27,7 +27,7 @@ Platforms Supported
 
 
 
-.. automodule:: iamlistening.platform.clients
+.. autoclass:: iamlistening.platform.clients
    :imported-members:
    :members:
    :undoc-members:
