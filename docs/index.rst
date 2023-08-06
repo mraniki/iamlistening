@@ -38,12 +38,7 @@ Platforms Supported
    :show-inheritance:
 
 
-.. autosummary::
-   :toctree: _autosummary
-   :template: custom-module-template.rst
-   :recursive:
-
-   iamlistening.platform.clients
+ 
 
 
 Module Reference
