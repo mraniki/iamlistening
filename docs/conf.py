@@ -19,7 +19,7 @@ sys.path.insert(0, os.path.abspath('../'))
 project = 'iamlistening'
 copyright = '2023, mraniki'
 author = 'mraniki'
-
+language = "en"
 
 # -- General configuration ---------------------------------------------------
 
@@ -36,7 +36,6 @@ extensions = [
     "sphinx_copybutton",
     "notfound.extension",
 ]
-
 
 # -- Extension configuration ---------------------------------------------------
 
@@ -63,14 +62,11 @@ intersphinx_disabled_reftypes = ["*"]
 
 # -- hoverxref ----------------
 
-# hoverxref_auto_ref = True
 hoverxref_intersphinx = [
     'readthedocs',
     'sphinx',
     'python',
-    'dynaconf',
 ]
-
 
 # -- autoapi -------------------
 
@@ -109,7 +105,6 @@ templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 
-
 # -- Sitemap ----------------------
 
 # ReadTheDocs has its own way of generating sitemaps, etc.
@@ -122,9 +117,6 @@ if not os.environ.get("READTHEDOCS"):
 
 # -- Internationalization -----------
 
-# specifying the natural language populates some key tags
-language = "en"
-
 
 
 # -- Options for HTML output --------
@@ -136,67 +128,31 @@ html_show_sphinx = False
 html_show_copyright = False
 
 html_theme = "pydata_sphinx_theme"
+html_theme_options = {
+    "external_links": [
+        {"name": "Talky", "url": "https://talky.readthedocs.io"},
+    ],
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/mraniki/tt",
+            "icon": "fa-brands fa-github",
+            "type": "fontawesome",
+        },
+        {
+            "name": "Telegram",
+            "url": "https://t.me/TTTalkyTraderChat/1",
+            "icon": "fa-brands fa-telegram",
+        },
+        {
+            "name": "Mastodon",
+            "url": "https://<your-host>@<your-handle>",
+            "icon": "fa-brands fa-mastodon",
+        },
+        ],
 
+}
 html_context = {
    # ...
-   "default_mode": "dark"
+   "default_mode": "dark",
 }
-
-# html_css_files = ["custom.css"]
-# html_theme_options = {
-#     'navbar_title': " ",
-#     'navbar_site_name': "Talky",
-#     'navbar_sidebarrel': False,
-#     'navbar_pagenav': False,
-#     'globaltoc_depth': 4,
-#     'globaltoc_includehidden': "true",
-#     'navbar_class': "navbar",
-#     'navbar_fixed_top': "true",
-#     'source_link_position': "none",
-#     'bootswatch_theme': "darkly",
-#     'bootstrap_version': "3",
-
-# }
-
-
-# -- application setup -------------------------------------------------------
-
-# def setup_to_main(
-#     app: Sphinx, pagename: str, templatename: str, context, doctree
-# ) -> None:
-#     """Add a function that jinja can access
-#      for returning an "edit this page" link pointing to `main`.
-#      """
-
-#     def to_main(link: str) -> str:
-#         """
-#         Transform "edit on github" links and make sure 
-#         they always point to the main branch.
-
-#         Args:
-#             link: the link to the github edit interface
-
-#         Returns:
-#             the link to the tip of the main branch for the same file
-#         """
-#         links = link.split("/")
-#         idx = links.index("edit")
-#         return "/".join(links[: idx + 1]) + "/main/" + "/".join(links[idx + 2 :])
-
-#     context["to_main"] = to_main
-
-
-# def setup(app: Sphinx) -> Dict[str, Any]:
-#     """Add custom configuration to sphinx app.
-
-#     Args:
-#         app: the Sphinx application
-#     Returns:
-#         the 2 parallel parameters set to ``True``.
-#     """
-#     app.connect("html-page-context", setup_to_main)
-
-#     return {
-#         "parallel_read_safe": True,
-#         "parallel_write_safe": True,
-#     }
