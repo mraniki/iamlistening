@@ -2,6 +2,13 @@
 
 
 
+## v3.1.3 (2023-08-06)
+
+### Update
+
+* Update README.md ([`722fe39`](https://github.com/mraniki/iamlistening/commit/722fe39be863481085aaceba173a3757220d70d1))
+
+
 ## v3.1.2 (2023-08-06)
 
 ### Update
