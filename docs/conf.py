@@ -68,6 +68,7 @@ hoverxref_intersphinx = [
     'readthedocs',
     'sphinx',
     'python',
+    'dynaconf',
 ]
 
 
