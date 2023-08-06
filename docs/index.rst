@@ -13,13 +13,8 @@
 | Python module to connect to instant messaging platforms and listen to messages.
 | Supported platforms are listed under clients. 
 
-- :doc:`talky-dev`
 
-- :doc:`talky-dev:01_start`
-
-- :doc:`talky-dev:index`
-
-- :doc:`talky:01_start`
+- :doc:`talky:index`
 
 - :doc:`sphinx:usage/extensions/intersphinx`
 
