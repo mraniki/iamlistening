@@ -25,7 +25,8 @@ Platforms Supported
 ===================
 
 
-.. autofunction:: iamlistening.platform.chat_manager.ChatManager.get_handler
+.. autofunction:: iamlistening.platform.ChatManager.get_handler
+    :members:
 
 
 Module Reference
