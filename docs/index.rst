@@ -13,11 +13,6 @@ IamListening
 
 
 .. toctree::
-   :hidden:
-
-   00_talky
-
-.. toctree::
    :maxdepth: 4
 
    01_start
