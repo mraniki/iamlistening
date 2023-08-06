@@ -27,10 +27,27 @@ Platforms Supported
 :py:mod:`iamlistening.platform.clients`
 
 
+
 .. automodule:: iamlistening.platform.clients
    :members:
    :show-inheritance:
    
+
+
+.. automodule:: iamlistening.platform.clients
+   :imported-members:
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+.. autosummary::
+   :toctree: _autosummary
+   :template: custom-module-template.rst
+   :recursive:
+
+   iamlistening.platform.clients
+
 
 Module Reference
 ================
