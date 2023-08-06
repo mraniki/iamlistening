@@ -14,17 +14,16 @@
 | Supported platforms are listed under clients. 
 
 
-- :doc:`talky:index`
 
 
 .. toctree::
    :maxdepth: 4
 
-   talky:index
+   00_talky
    01_start
    02_config
    03_module
-   00_talky
+
 
 .. raw:: html
 
