@@ -25,6 +25,12 @@ IamListening
    03_module
 
 
+Platforms Supported
+
+.. automodule:: iamlistening.platform.clients
+   :members:
+
+
 .. raw:: html
 
    <br><br>
