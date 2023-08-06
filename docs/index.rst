@@ -1,16 +1,6 @@
-.. _iamlistening_index:
-
----
-myst:
-  html_meta:
-    "description lang=en": |
-      Top-level documentation for iamlistening package
-show_prev_next: false
----
-
-=============
- IamListening
-=============
+============
+IamListening
+============
 
 .. image:: ../docs/_static/logo-full.png
   :width: 200

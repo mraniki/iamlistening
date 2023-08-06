@@ -1,6 +1,5 @@
-=======
-🗿Talky
-=======
-
+===========
+TalkyTrader
+===========
 
 - :doc:`talky:index`
