@@ -23,10 +23,12 @@ IamListening
 Platforms Supported
 ===================
 
-.. automodule:: 
-   :members:
-
+.. toctree::
+   :maxdepth: 2
+   
    iamlistening.platform.clients
+
+
 
 .. raw:: html
 
