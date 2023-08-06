@@ -46,7 +46,7 @@ intersphinx_mapping = {
     # - :doc:`sphinx:usage/extensions/intersphinx`
     "dynaconf": ("https://www.dynaconf.com", None),
     "python": ("https://docs.python.org/3", None),
-    "talky": ("https://talky.readthedocs.io", None),
+    "talky": ("https://talky.readthedocs.io/en/latest", None),
     "talky-dev": ("https://talky.readthedocs.io/en/dev/", None),
     "findmyorder": (
         "https://talky.readthedocs.io/projects/findmyorder/en/latest", None),
