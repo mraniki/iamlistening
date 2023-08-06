@@ -1,9 +1,15 @@
 # Configuration file for the Sphinx documentation builder.
 
+
+# -- Path setup --------------------------------------------------------------
+
 import os
 import sys
+from pathlib import Path
+from typing import Any, Dict
 
-import sphinx_bootstrap_theme
+import pydata_sphinx_theme
+from sphinx.application import Sphinx
 
 sys.path.insert(0, os.path.abspath('../'))
 
@@ -34,6 +40,8 @@ extensions = [
 
 # -- Extension configuration ---------------------------------------------------
 
+# -- intersphinx ------------
+
 intersphinx_mapping = {
     "sphinx": ("https://www.sphinx-doc.org/en/master/", None),
     # - :doc:`sphinx:usage/extensions/intersphinx`
@@ -52,57 +60,139 @@ intersphinx_mapping = {
 
 intersphinx_disabled_reftypes = ["*"]
 
+
+# -- hoverxref ----------------
+
 hoverxref_auto_ref = True
 hoverxref_intersphinx = [
     'readthedocs',
     'sphinx',
     'python',
 ]
+
+
+# -- autoapi -------------------
+
+# autoapi_type = "python"
+# autoapi_dirs = ["../src/pydata_sphinx_theme"]
+# autoapi_keep_files = True
+# autoapi_root = "api"
+# autoapi_member_order = "groupwise"
+
+
+# -- napoleon -------------------
+
 napoleon_google_docstring = True
-autosummary_generate = True
+
+
+# -- autodoc --------------------
+
 autoclass_content = 'both'
 autodoc_inherit_docstrings = True 
 set_type_checking_flag = True 
 autodoc_member_order = 'bysource'
 add_module_names = True
 
+
+# -- MyST options -----------------
+
+# This allows us to use ::: to denote directives, useful for admonitions
+myst_enable_extensions = ["colon_fence", "linkify", "substitution"]
+myst_heading_anchors = 2
+myst_substitutions = {"rtd": "[Read the Docs](https://readthedocs.org/)"}
+
+
 master_doc = 'index'
 source_suffix = ['.rst', '.md']
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
-# -- Options for HTML output -------------------------------------------------
 
-html_theme = "bootstrap"
 
-html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
+# -- Sitemap ----------------------
+
+# ReadTheDocs has its own way of generating sitemaps, etc.
+if not os.environ.get("READTHEDOCS"):
+    extensions += ["sphinx_sitemap"]
+
+    html_baseurl = os.environ.get("SITEMAP_URL_BASE", "http://127.0.0.1:8000/")
+    sitemap_locales = [None]
+    sitemap_url_scheme = "{link}"
+
+# -- Internationalization -----------
+
+# specifying the natural language populates some key tags
+language = "en"
+
+
+
+# -- Options for HTML output --------
+
 html_static_path = ["_static"]
 html_logo = '_static/favicon.png'
 html_favicon = '_static/favicon.ico'
-html_css_files = [
-    "custom.css",
-]
 html_show_sphinx = False
 html_show_copyright = False
-html_theme_options = {
-    'navbar_title': " ",
-    'navbar_site_name': "Talky",
-    'navbar_sidebarrel': False,
-    'navbar_pagenav': False,
-    'globaltoc_depth': 4,
-    'globaltoc_includehidden': "true",
-    'navbar_class': "navbar",
-    'navbar_fixed_top': "true",
-    'source_link_position': "none",
-    'bootswatch_theme': "darkly",
-    'bootstrap_version': "3",
+
+# html_css_files = ["custom.css"]
+
+html_theme = "pydata_sphinx_theme"
 
 
-}
+# html_theme_options = {
+#     'navbar_title': " ",
+#     'navbar_site_name': "Talky",
+#     'navbar_sidebarrel': False,
+#     'navbar_pagenav': False,
+#     'globaltoc_depth': 4,
+#     'globaltoc_includehidden': "true",
+#     'navbar_class': "navbar",
+#     'navbar_fixed_top': "true",
+#     'source_link_position': "none",
+#     'bootswatch_theme': "darkly",
+#     'bootstrap_version': "3",
+
+# }
 
 
+# -- application setup -------------------------------------------------------
+
+def setup_to_main(
+    app: Sphinx, pagename: str, templatename: str, context, doctree
+) -> None:
+    """Add a function that jinja can access
+     for returning an "edit this page" link pointing to `main`.
+     """
+
+    def to_main(link: str) -> str:
+        """
+        Transform "edit on github" links and make sure 
+        they always point to the main branch.
+
+        Args:
+            link: the link to the github edit interface
+
+        Returns:
+            the link to the tip of the main branch for the same file
+        """
+        links = link.split("/")
+        idx = links.index("edit")
+        return "/".join(links[: idx + 1]) + "/main/" + "/".join(links[idx + 2 :])
+
+    context["to_main"] = to_main
 
 
-def setup(app):
-    app.add_css_file("custom.css")
+def setup(app: Sphinx) -> Dict[str, Any]:
+    """Add custom configuration to sphinx app.
 
+    Args:
+        app: the Sphinx application
+    Returns:
+        the 2 parallel parameters set to ``True``.
+    """
+    app.connect("html-page-context", setup_to_main)
+
+    return {
+        "parallel_read_safe": True,
+        "parallel_write_safe": True,
+    }
