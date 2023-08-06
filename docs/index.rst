@@ -27,8 +27,9 @@ Platforms Supported
 
 
 
-.. automodule:: iamlistening.platform.clients
+.. autoclass:: iamlistening.platform.clients
    :members:
+   
 
 
  
