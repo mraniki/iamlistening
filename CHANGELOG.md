@@ -2,6 +2,19 @@
 
 
 
+## v3.1.4 (2023-08-06)
+
+### 📝
+
+* 📝 intersphinx setup (#100) ([`6948aa3`](https://github.com/mraniki/iamlistening/commit/6948aa3c733a1b04c3e414c61aadaadc6c8cbc35))
+
+* 📝 intersphinx setup ([`a83d810`](https://github.com/mraniki/iamlistening/commit/a83d810091246c8a9c7776a6dd3ef196335dd16d))
+
+### 🚨
+
+* 🚨 ([`68e1c4e`](https://github.com/mraniki/iamlistening/commit/68e1c4e6c19bcab17e237d30e5c4c502fa834f52))
+
+
 ## v3.1.3 (2023-08-06)
 
 ### Update
