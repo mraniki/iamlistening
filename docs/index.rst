@@ -8,8 +8,8 @@
 | Supported platforms are listed under clients. 
 
 
+- :doc:`talky:index`
 - :doc:`sphinx:usage/extensions/intersphinx`
-
 
 
 .. toctree::
