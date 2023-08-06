@@ -25,16 +25,10 @@ Platforms Supported
 ===================
 
 
-.. automodule:: iamlistening.platform.clients
-   :members:
-   :show-inheritance:
-   
 
 
-.. automodule:: iamlistening.platform.clients
-   :imported-members:
+.. autoclass:: iamlistening.platform.clients
    :members:
-   :undoc-members:
    :show-inheritance:
 
 
