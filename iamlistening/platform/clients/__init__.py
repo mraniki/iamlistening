@@ -1,11 +1,4 @@
 """
-Supported Platforms
-
-    Telegram
-    Matrix
-    Discord
-    Guilded
-    Mastodon
-
+Telegram, Matrix, Discord, Guilded and Mastodon
 
 """
