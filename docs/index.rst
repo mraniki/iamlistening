@@ -1,22 +1,38 @@
-.. _iamlistening_index:
+============
+IamListening
+============
 
-=============
- IamListening
-=============
+.. image:: ../docs/_static/logo-full.png
+  :width: 200
+  :alt: logo
+  :align: right
 
 | Python module to connect to instant messaging platforms and listen to messages.
 | Supported platforms are listed under clients. 
 
 
-- :doc:`sphinx:usage/extensions/intersphinx`
-
-
+User Guide
+==========
 
 .. toctree::
    :maxdepth: 4
-   
+
    01_start
    02_config
+
+
+Platforms Supported
+===================
+
+.. automodule:: iamlistening.platform.clients
+
+
+Module Reference
+================
+
+.. toctree::
+   :maxdepth: 4
+
    03_module
 
 

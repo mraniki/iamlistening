@@ -35,6 +35,7 @@ class ChatManager():
         Returns:
             PlatformHandler
 
+
         """
         handler = None
         if platform == "telegram":
