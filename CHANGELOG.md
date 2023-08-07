@@ -2,6 +2,35 @@
 
 
 
+## v3.2.0 (2023-08-07)
+
+### ♻️
+
+* ♻️ ([`7e2a85e`](https://github.com/mraniki/iamlistening/commit/7e2a85e01d623e01c493e3e9eeaef21fff85b58b))
+
+### ✨
+
+* ✨ added lemmy 🐭 (#103) ([`64e2e62`](https://github.com/mraniki/iamlistening/commit/64e2e624677e8c7561639abeff813beca5839046))
+
+* ✨ added lemmy 🐭 ([`02db399`](https://github.com/mraniki/iamlistening/commit/02db399d09836bef99fef1dde9b99ff3419db816))
+
+### ⬆️
+
+* ⬆️ dep issue ([`e4439f6`](https://github.com/mraniki/iamlistening/commit/e4439f6f9ff932fbc88f10d55f060fcc238ac81b))
+
+* ⬆️ ([`2987e5c`](https://github.com/mraniki/iamlistening/commit/2987e5cac08afba8f211688c5071632f55295197))
+
+* ⬆️ ([`80fda4d`](https://github.com/mraniki/iamlistening/commit/80fda4d75bddec30b58723fede85e4585ce4eeea))
+
+### 📝
+
+* 📝 ([`7351780`](https://github.com/mraniki/iamlistening/commit/735178061acb2297b5ff3402c5f9de57f9669f8c))
+
+* 📝 ([`31b9d19`](https://github.com/mraniki/iamlistening/commit/31b9d19c902e151ba69982e1858b442e98aef8da))
+
+* 📝 ([`496870e`](https://github.com/mraniki/iamlistening/commit/496870e6e1c0ecd5e96d77cec982875320fb82ab))
+
+
 ## v3.1.6 (2023-08-07)
 
 ### 📝
