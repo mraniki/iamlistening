@@ -28,13 +28,6 @@ class ChatManager():
     def get_handler(platform=None):
         """
         Get platform handler.
-        Supported Platforms by IAmListening:
-
-            Telegram
-            Matrix
-            Discord
-            Guilded
-            Mastodon
 
         Args:
             platform (str): The platform to use
