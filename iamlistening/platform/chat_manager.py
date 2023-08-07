@@ -1,4 +1,3 @@
-
 import asyncio
 
 from loguru import logger
@@ -6,7 +5,7 @@ from loguru import logger
 from iamlistening.config import settings
 
 
-class ChatManager():
+class ChatManager:
     """
     Chat manager
 
@@ -21,9 +20,10 @@ class ChatManager():
     Methods:
         start(self)
         get_handler(self)
-        
+
 
     """
+
     @staticmethod
     def get_handler(platform=None):
         """
@@ -40,23 +40,31 @@ class ChatManager():
         handler = None
         if platform == "telegram":
             from .clients.telegram import TelegramHandler
+
             handler = TelegramHandler()
         elif platform == "discord":
             from .clients.discord import DiscordHandler
+
             handler = DiscordHandler()
         if platform == "matrix":
             from .clients.matrix import MatrixHandler
+
             handler = MatrixHandler()
         elif platform == "guilded":
             from .clients.guilded import GuildedHandler
+
             handler = GuildedHandler()
         elif platform == "mastodon":
             from .clients.mastodon import MastodonHandler
-            handler = MastodonHandler()
 
+            handler = MastodonHandler()
+        elif platform == "lemmy":
+            from .clients.lemmy import LemmyHandler
+
+            handler = LemmyHandler()
+            
         return handler
 
-    
     def __init__(self):
         """
         Initialize the chat manager.
@@ -69,9 +77,8 @@ class ChatManager():
         self.iteration_limit = settings.iteration_limit or -1
         self.iteration_count = 0
 
-
     async def start(self):
-        """ 
+        """
         Start the chat manager.
         Specific to the client platform
         """
@@ -104,7 +111,6 @@ class ChatManager():
 
         await asyncio.sleep(0.1)
 
-
     async def handle_message(self, message_content):
         """
         Handle a new message.
@@ -129,7 +135,6 @@ class ChatManager():
             await self.disconnected()
 
         return
-
 
     async def disconnected(self):
         """

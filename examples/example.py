@@ -11,7 +11,7 @@ from loguru import logger
 from iamlistening import Listener
 
 logger.remove()
-logger.add(sys.stderr, level="DEBUG")
+logger.add(sys.stderr, level="DEBUG") 
 
 
 async def main():
@@ -51,4 +51,3 @@ def health_check():
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8015)
-
