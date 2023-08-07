@@ -2,6 +2,145 @@
 
 
 
+## v3.1.5 (2023-08-07)
+
+### :memo:
+
+* :memo: ([`8475603`](https://github.com/mraniki/iamlistening/commit/847560375f1356eb6aab8b919befc0253e496321))
+
+* :memo: ([`9d3c718`](https://github.com/mraniki/iamlistening/commit/9d3c718a97c12d9694f48c6314055ec8c6bff8de))
+
+* :memo: ([`d7a822d`](https://github.com/mraniki/iamlistening/commit/d7a822d2409b375bb1baecd58302586e49f35b3c))
+
+* :memo: ([`43bba9d`](https://github.com/mraniki/iamlistening/commit/43bba9df87407f53921dd9a11661db88b8fbb2bc))
+
+* :memo: ([`4b459ae`](https://github.com/mraniki/iamlistening/commit/4b459ae279872305e83256dc0220d1608bdb941b))
+
+* :memo: ([`4fed3bc`](https://github.com/mraniki/iamlistening/commit/4fed3bc6afa39aa1b4df29bb45d20ba6c56232b8))
+
+* :memo: ([`3fd1257`](https://github.com/mraniki/iamlistening/commit/3fd12572e48a7307d089e42f5b3fac754f5ffb92))
+
+* :memo: ([`aef5c90`](https://github.com/mraniki/iamlistening/commit/aef5c90e270db62348bce5ef0814c88e2d83f32a))
+
+* :memo: ([`608bff7`](https://github.com/mraniki/iamlistening/commit/608bff74f5f83fb1862dd0bcfb8f4cba7803a574))
+
+* :memo: ([`8130706`](https://github.com/mraniki/iamlistening/commit/81307064b57f000de87fd30c48c8d31714bfbc0c))
+
+* :memo: ([`3ae9560`](https://github.com/mraniki/iamlistening/commit/3ae95606f3775d936a041290f2569f57178fb9d3))
+
+* :memo: ([`723a831`](https://github.com/mraniki/iamlistening/commit/723a831081b5614bbeffa0237a918da0e041f927))
+
+* :memo: ([`98b0d3f`](https://github.com/mraniki/iamlistening/commit/98b0d3fc1afe4977a732fab4df916f0afa80af23))
+
+* :memo: ([`f84a3c5`](https://github.com/mraniki/iamlistening/commit/f84a3c55916b70d4618e45fe54ecae4bfd3d9e0d))
+
+### Other
+
+* Merge branch &#39;dev&#39; of git@github.com:mraniki/iamlistening.git ([`321f023`](https://github.com/mraniki/iamlistening/commit/321f0231ac917a10a3630d45be67e626dfed8cab))
+
+### Update
+
+* Update Requirements ([`ae8b707`](https://github.com/mraniki/iamlistening/commit/ae8b70722a0246921948c314ab3ff796d888e22b))
+
+### 🎨
+
+* 🎨 ([`65913fa`](https://github.com/mraniki/iamlistening/commit/65913fad0022d46f8e0dc246409b282b38b7c5d8))
+
+* 🎨 improve docs with hovering ([`46322b0`](https://github.com/mraniki/iamlistening/commit/46322b0932876dac6610c22a49cc68ded31df0a7))
+
+### 💬
+
+* 💬 readme update ([`6866175`](https://github.com/mraniki/iamlistening/commit/686617581040b7a4a02351c23f31a0347acb6d16))
+
+* 💬 intersphinx testing ([`5bbcf3c`](https://github.com/mraniki/iamlistening/commit/5bbcf3c81c3f72bf4754733f78d5199ec2dbd9f6))
+
+### 📝
+
+* 📝  sphinx.ext.extlinks (#101) ([`66009ae`](https://github.com/mraniki/iamlistening/commit/66009ae3cd0e24492e88808af7d043b0ce6054b0))
+
+* 📝 update ([`37ce3a2`](https://github.com/mraniki/iamlistening/commit/37ce3a28b34224da9c3ede87080ca9666f47204b))
+
+* 📝 updating docs template and sphinx ([`c22428b`](https://github.com/mraniki/iamlistening/commit/c22428b70b663f77f778346a144b0e5c517c77bf))
+
+* 📝 ([`efb4025`](https://github.com/mraniki/iamlistening/commit/efb402521e7cb4b6b5abc356d3ba662c7672a985))
+
+* 📝 ([`0c57d28`](https://github.com/mraniki/iamlistening/commit/0c57d28bc27dcac08775366d98368d974a6b993a))
+
+* 📝 ([`ff01efb`](https://github.com/mraniki/iamlistening/commit/ff01efb093c7773af155b31b268e024034b6b08c))
+
+* 📝 ([`d34eccc`](https://github.com/mraniki/iamlistening/commit/d34ecccd95d80f7d14ca3bd889772d00b163e9fa))
+
+* 📝 ([`420a5b2`](https://github.com/mraniki/iamlistening/commit/420a5b257f3f7c9c7334fe35111ea7d8884e1ea1))
+
+* 📝 ([`1e4d457`](https://github.com/mraniki/iamlistening/commit/1e4d45724843356b9019830d1bdd19e10ea3f9c1))
+
+* 📝 ([`dec874a`](https://github.com/mraniki/iamlistening/commit/dec874aa3a7609d1b09ff41d335b0b8ec947b695))
+
+* 📝 ([`991e287`](https://github.com/mraniki/iamlistening/commit/991e28728fba46b1cdfed5f0042e8f2219c38e67))
+
+* 📝 ([`1904973`](https://github.com/mraniki/iamlistening/commit/190497321cd3b0a0f1fc92958ee8e3bc44dac8ba))
+
+* 📝 ([`bf37d5c`](https://github.com/mraniki/iamlistening/commit/bf37d5cbc9e40ae4201d804c2fc81d0d76a49ea2))
+
+* 📝 ([`1f69d58`](https://github.com/mraniki/iamlistening/commit/1f69d58f516cf8fb696316cbc14cf4711bcc5ee7))
+
+* 📝 ([`4a5da60`](https://github.com/mraniki/iamlistening/commit/4a5da60f4a5f1a7dbdaa8753f43ce095eb680337))
+
+* 📝 ([`37834d9`](https://github.com/mraniki/iamlistening/commit/37834d98fe30da237c089da5d751d8b60fc43d94))
+
+* 📝 ([`ba0682a`](https://github.com/mraniki/iamlistening/commit/ba0682ab79991ff96f5322a090afde40fd33a959))
+
+* 📝 ([`b5ec812`](https://github.com/mraniki/iamlistening/commit/b5ec812fe7deff633105a09dc241da802bbcf80a))
+
+* 📝 ([`1a93f07`](https://github.com/mraniki/iamlistening/commit/1a93f076ef27f7aa9d9f5b220cace00422434918))
+
+* 📝 ([`7163bc9`](https://github.com/mraniki/iamlistening/commit/7163bc9d4db35c4c925c12b6c78869a8e695177f))
+
+* 📝 ([`935edf1`](https://github.com/mraniki/iamlistening/commit/935edf1ecb1eea5e341f06df974b4b40773d2063))
+
+* 📝 footer ([`e90e09f`](https://github.com/mraniki/iamlistening/commit/e90e09ffd40018f4637e23f3233a0f851f91292f))
+
+* 📝 ([`a73aaae`](https://github.com/mraniki/iamlistening/commit/a73aaaeb789c8978df71691bbb168656bae00ee5))
+
+* 📝 ([`4486b42`](https://github.com/mraniki/iamlistening/commit/4486b423d960bde342ecc45e2ce6d02850d6a2a0))
+
+* 📝 ([`0544f35`](https://github.com/mraniki/iamlistening/commit/0544f35b360338e3a401d545709917cbab959a15))
+
+* 📝 ([`8e8e02a`](https://github.com/mraniki/iamlistening/commit/8e8e02a52ca556e46314e94cb15f4265dba31bd6))
+
+* 📝 ([`d132565`](https://github.com/mraniki/iamlistening/commit/d13256586ecb1de895debb38997e81b2a2af0c96))
+
+* 📝 updated intersphinx mapping ([`a9bb69b`](https://github.com/mraniki/iamlistening/commit/a9bb69b290bfc765807953b3d23b56164237ca38))
+
+* 📝 ([`fbd3e74`](https://github.com/mraniki/iamlistening/commit/fbd3e74c11e91dd6fcd3c5d965e80dabb8acf958))
+
+* 📝 ([`f5c566c`](https://github.com/mraniki/iamlistening/commit/f5c566c72d63f1ca11a87fe7d2c1d2cefbfcb9a5))
+
+* 📝 intersphinx test ([`9dc4f81`](https://github.com/mraniki/iamlistening/commit/9dc4f81d9135dee3732a2c51cafc7911e43c2e71))
+
+* 📝 intersphinx ([`a95aca8`](https://github.com/mraniki/iamlistening/commit/a95aca880c8199dd1c899293b2f38e57dd026a72))
+
+* 📝 ([`758defc`](https://github.com/mraniki/iamlistening/commit/758defcda7186c326b23e388a17f39e18f75734e))
+
+* 📝 ([`00dd8c7`](https://github.com/mraniki/iamlistening/commit/00dd8c76790a4b8cbb30e063fe51ff7abf9c1a8a))
+
+* 📝 ([`3a78fab`](https://github.com/mraniki/iamlistening/commit/3a78fab5c315147ffbcf088ec221c6fff16f5bce))
+
+* 📝 ([`042002f`](https://github.com/mraniki/iamlistening/commit/042002feac57c177f3d6761a500d0f7355aea9e6))
+
+* 📝 intersphinx test ([`bc66127`](https://github.com/mraniki/iamlistening/commit/bc6612783ee12176bb3018d44a51da4c097eb144))
+
+* 📝 ([`aba18bd`](https://github.com/mraniki/iamlistening/commit/aba18bd3834f9f8510a60079e50d4233efa6cc8e))
+
+* 📝 testing pydata-sphinx-theme ([`50e4159`](https://github.com/mraniki/iamlistening/commit/50e41595c18cc905c24a6de1a840f2c099e84b4f))
+
+* 📝  sphinx.ext.extlinks ([`eef8e38`](https://github.com/mraniki/iamlistening/commit/eef8e389929b346cd7825c555a9c43a5d4332548))
+
+### 🔥
+
+* 🔥 removing hoverxref_auto_ref ([`f88a7a1`](https://github.com/mraniki/iamlistening/commit/f88a7a1b5300d3439dedf993f19774fe3382821a))
+
+
 ## v3.1.4 (2023-08-06)
 
 ### 📝
