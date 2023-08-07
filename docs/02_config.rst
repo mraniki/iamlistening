@@ -42,7 +42,7 @@ Mastodon
 Lemmy
 -----
 
-- Use the your user name, user passworld and lemmy instance url
+- Use your user name, user password and lemmy instance url
 
 example:
 
@@ -59,4 +59,27 @@ example:
     bot_hostname = "https://lemmy.world"
     bot_user = "1234"
     bot_pass = "1234"
+    bot_auth_token = ""
+
+
+Twitch
+-----
+
+- Use https://twitchtokengenerator.com to get your bot token
+
+example:
+
+.. code-block:: toml
+
+    VALUE = "On Testing Twitch"
+    chat_platform="twitch"
+    iteration_enabled = true
+    iteration_limit = 0
+    bot_token = "1233435"
+    bot_channel_id = ""
+    bot_api_id = ""
+    bot_api_hash = ""
+    bot_hostname = ""
+    bot_user = ""
+    bot_pass = ""
     bot_auth_token = ""
