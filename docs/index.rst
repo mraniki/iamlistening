@@ -24,8 +24,10 @@ User Guide
 Platforms Supported
 ===================
 
+.. automodule:: iamlistening.platform.clients
 
-.. autoclass:: iamlistening.platform.ChatManager
+
+.. autoclass:: iamlistening.platform.clients
 
 
 
@@ -34,6 +36,7 @@ Platforms Supported
    :show-inheritance:
    
 
+
 .. automodule:: iamlistening.platform.clients
    :imported-members:
    :members:
@@ -41,10 +44,12 @@ Platforms Supported
    :show-inheritance:
 
 
+
 .. toctree::
    :maxdepth: 1
 
    iamlistening.platform.clients
+
 
 
 
