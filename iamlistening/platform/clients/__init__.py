@@ -1,4 +1,6 @@
 """
-Telegram, Matrix, Discord, Guilded and Mastodon
+
+Telegram, Matrix, Discord, Guilded, Mastodon
+Lemmy
 
 """
