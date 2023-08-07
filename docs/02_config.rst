@@ -39,3 +39,24 @@ Mastodon
 
 - Create your bot token via Mastodon Dev Portal
 
+Lemmy
+-----
+
+- Use the your user name, user passworld and lemmy instance url
+
+example:
+
+.. code-block:: toml
+
+    VALUE = "On Testing Lemmy"
+    chat_platform="lemmy"
+    iteration_enabled = true
+    iteration_limit = 0
+    bot_token = ""
+    bot_channel_id = "lemmyworld"
+    bot_api_id = ""
+    bot_api_hash = ""
+    bot_hostname = "https://lemmy.world"
+    bot_user = "1234"
+    bot_pass = "1234"
+    bot_auth_token = ""
