@@ -39,7 +39,7 @@ rocketchat-API= "^1.30.0"
 tinode_grpc = "^0.22.3"
 "revolt.py" = "^0.1.11"
 pythorhead = {version ="^0.15.4", python = ">=3.10,<3.12"}
-
+twitchio = "^2.6.0"
 
 [tool.poetry.group.dev.dependencies]
 python-semantic-release = "^8.0.4"
