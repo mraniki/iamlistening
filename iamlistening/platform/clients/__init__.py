@@ -1,5 +1,5 @@
 """
-Supported Platforms by IAmListening
+Supported Platforms
 
     Telegram
     Matrix

@@ -24,36 +24,7 @@ User Guide
 Platforms Supported
 ===================
 
-.. autofunction:: iamlistening.platform.chat_manager.ChatManager.get_handler
-
-
 .. automodule:: iamlistening.platform.clients
-
-
-.. autoclass:: iamlistening.platform.clients
-
-
-
-.. automodule:: iamlistening.platform.clients
-   :members:
-   :show-inheritance:
-   
-
-
-.. automodule:: iamlistening.platform.clients
-   :imported-members:
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-
-
-.. toctree::
-   :maxdepth: 1
-
-   iamlistening.platform.clients
-
-
 
 
 Module Reference
@@ -67,4 +38,4 @@ Module Reference
 
 .. raw:: html
 
-   <br><br>
+   <br>
