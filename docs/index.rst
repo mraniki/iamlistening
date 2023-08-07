@@ -24,6 +24,9 @@ User Guide
 Platforms Supported
 ===================
 
+.. autofunction:: iamlistening.platform.chat_manager.ChatManager.get_handler
+
+
 .. automodule:: iamlistening.platform.clients
 
 
@@ -50,15 +53,6 @@ Platforms Supported
 
    iamlistening.platform.clients
 
-
-
-
-.. autosummary::
-   :toctree: _autosummary
-   :template: custom-module-template.rst
-   :recursive:
-
-   iamlistening.platform.clients
 
 
 
