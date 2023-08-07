@@ -40,7 +40,7 @@ def message():
 
 
 def test_handler(listener, handler):
-    assert listener.platform == "discord"
+    assert listener.platform == "twitch"
     assert handler is not None
 
 
@@ -62,7 +62,7 @@ async def test_listener_start(message):
     msg = await listener.handler.get_latest_message()
     assert listener.handler is not None
     assert listener.handler.connected is not None
-    assert listener.platform == "discord"
+    assert listener.platform == "twitch"
     handle_iteration_limit.assert_awaited
     check_connected.assert_awaited
     assert msg == message
