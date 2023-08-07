@@ -28,6 +28,35 @@ Platforms Supported
 .. autoclass:: iamlistening.platform.ChatManager
 
 
+
+.. automodule:: iamlistening.platform.clients
+   :members:
+   :show-inheritance:
+   
+
+.. automodule:: iamlistening.platform.clients
+   :imported-members:
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+.. toctree::
+   :maxdepth: 1
+
+   iamlistening.platform.clients
+
+
+
+.. autosummary::
+   :toctree: _autosummary
+   :template: custom-module-template.rst
+   :recursive:
+
+   iamlistening.platform.clients
+
+
+
 Module Reference
 ================
 
