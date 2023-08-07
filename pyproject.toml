@@ -38,7 +38,7 @@ rocketchat-API= "^1.30.0"
 "guilded.py" = "^1.9.1"
 tinode_grpc = "^0.22.3"
 "revolt.py" = "^0.1.11"
-pythorhead = {version ="^0.15.4", python = "^3.10", markers = "python_version >= '3.10'"}
+pythorhead = {version ="^0.15.4", python = ">=3.10,<3.12"}
 
 
 [tool.poetry.group.dev.dependencies]
