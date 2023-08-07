@@ -2,6 +2,27 @@
 
 
 
+## v3.3.0 (2023-08-07)
+
+### :white_check_mark:
+
+* :white_check_mark: ([`8e54775`](https://github.com/mraniki/iamlistening/commit/8e54775e4daf019f95dab3342ba8bf93e0fa2b98))
+
+### Update
+
+* Update Requirements ([`c03c77f`](https://github.com/mraniki/iamlistening/commit/c03c77f5c5315dd425ef3195134990f289648ff2))
+
+### ⬆️
+
+* ⬆️ ([`ed998d0`](https://github.com/mraniki/iamlistening/commit/ed998d07adcb19c58babe1049bc724cecd1ed70a))
+
+### 🥚
+
+* 🥚 twitch  (#105) ([`fb83b06`](https://github.com/mraniki/iamlistening/commit/fb83b06483ba385ae9211a4a54aa6a9c2782b231))
+
+* 🥚 twitch to be tested ([`71875f7`](https://github.com/mraniki/iamlistening/commit/71875f7ad359747396723156c00f1368102e1af1))
+
+
 ## v3.2.0 (2023-08-07)
 
 ### ♻️
