@@ -62,7 +62,10 @@ class ChatManager:
             from .clients.lemmy import LemmyHandler
 
             handler = LemmyHandler()
-            
+        elif platform == "twitch":
+            from .clients.twitch import TwitchHandler
+
+            handler = TwitchHandler()
         return handler
 
     def __init__(self):
