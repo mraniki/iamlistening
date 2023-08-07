@@ -2,6 +2,15 @@
 
 
 
+## v3.1.6 (2023-08-07)
+
+### 📝
+
+* 📝 conf update for intersphinx (#102) ([`92e2348`](https://github.com/mraniki/iamlistening/commit/92e2348618e0588cfa1a21f38229616fc307367c))
+
+* 📝 conf update for intersphinx ([`8c32bbb`](https://github.com/mraniki/iamlistening/commit/8c32bbbc6610feb9da1a7fd652f45a615f6bb677))
+
+
 ## v3.1.5 (2023-08-07)
 
 ### :memo:
