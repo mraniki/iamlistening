@@ -3,16 +3,13 @@
 Config
 ======
 
-
 Setting available via settings.toml or .env
 
 .. literalinclude:: ../iamlistening/default_settings.toml
 
 
-
 Chat Platform Credentials
 =========================
-
 
 
 Telegram
@@ -25,16 +22,20 @@ Telegram
 Discord
 -------
 
+- Create your bot token via Discord Dev Portal
 
 Matrix
 ------
 
+- Create your bot token, server, and user via Matrix Dev Portal
 
 Guilded
 -------
 
+- Create your bot token via Guilded Dev Portal
 
 Mastodon
 --------
 
+- Create your bot token via Mastodon Dev Portal
 
