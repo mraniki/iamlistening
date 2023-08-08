@@ -66,10 +66,10 @@ class ChatManager:
             from .clients.twitch import TwitchHandler
 
             handler = TwitchHandler()
-        elif platform == "revolt":
-            from .clients.revolt import RevoltHandler
+        # elif platform == "revolt":
+        #     from .clients.revolt import RevoltHandler
 
-            handler = RevoltHandler()
+        #     handler = RevoltHandler()
 
         return handler
 
