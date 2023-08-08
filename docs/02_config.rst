@@ -69,8 +69,7 @@ example:
 
 .. code-block:: toml
 
-    VALUE = "On Testing Lemmy"
-    chat_platform="lemmy"
+    chat_platform="matrix"
     iteration_enabled = false
     iteration_limit = -1
     bot_token = "12345"
@@ -117,8 +116,7 @@ example:
 
 .. code-block:: toml
 
-    VALUE = "On Testing Lemmy"
-    chat_platform="lemmy"
+    chat_platform="mastodon"
     iteration_enabled = false
     iteration_limit = -1
     bot_token = ""
@@ -142,7 +140,6 @@ example:
 
 .. code-block:: toml
 
-    VALUE = "On Testing Lemmy"
     chat_platform="lemmy"
     iteration_enabled = false
     iteration_limit = -1
@@ -166,7 +163,6 @@ example:
 
 .. code-block:: toml
 
-    VALUE = "On Testing Twitch"
     chat_platform="twitch"
     iteration_enabled = false
     iteration_limit = -1
