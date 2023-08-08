@@ -12,13 +12,21 @@
 # [default]
 # iamlistening_enabled = false
 
-
 [default]
+# settings load verification
 VALUE = "On Default"
+
+# settings to enable or 
+# disable iamlistening
 iamlistening_enabled = true
+
+# chat_platform is used to launch 
+# the specific handler
+# for the chat platform. Value can be
+# telegram, discord, matrix, etc.
 chat_platform = ""
-iteration_enabled = false
-iteration_limit = -1
+
+# bot credentials
 bot_token = ""
 bot_channel_id = ""
 bot_api_id = ""
@@ -28,36 +36,19 @@ bot_user = ""
 bot_pass = ""
 bot_auth_token = ""
 
-
+# Iteration settings used for testing
+# if you need the bot to run 
+# for a long time
+# set iteration_enabled to false
+# if you need the bot to run 
+# for a short time
+# set iteration_enabled to true
+# iteration_limit is the number 
+# of iterations
+# the bot will run for.
+iteration_enabled = false
+iteration_limit = -1
 
 ########################################
 ###     END OF DEFAULT SETTINGS      ###
 ########################################
-
-
-
-
-
-                                        
-# _   _                           _   ___  
-#| | | |                         | | |__ \ 
-#| |_| |__   ___    ___ _ __   __| |    )|
-#| __| '_ \ / _ \  / _ \ '_ \ / _` |   / / 
-#| |_| | | |  __/ |  __/ | | | (_| |  |_|  
-# \__|_| |_|\___|  \___|_| |_|\__,_|  (_)  
-########################################     
-#
-#
-#
-#
-#         __     __       
-#         \ \   / /       
-#          \ \_/ /__  ___ 
-#           \   / _ \/ __|
-#            | |  __/\__ \
-#            |_|\___||___/
-#
-#
-#
-#                   
-########################################     
