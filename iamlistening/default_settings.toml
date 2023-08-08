@@ -16,8 +16,7 @@
 # settings load verification
 VALUE = "On Default"
 
-# settings to enable or 
-# disable iamlistening
+# Module Enable/Disable
 iamlistening_enabled = true
 
 # chat_platform is used to launch 
