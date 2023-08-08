@@ -2,6 +2,25 @@
 
 
 
+## v3.3.1 (2023-08-08)
+
+### ♻️
+
+* ♻️ ([`611d40f`](https://github.com/mraniki/iamlistening/commit/611d40f719da7db0171e718325231c96758f0a89))
+
+### 📝
+
+* 📝 added documentation for credentials (#106) ([`55759c2`](https://github.com/mraniki/iamlistening/commit/55759c2fc8e94ffc297c089dec5dbabc4834cedc))
+
+* 📝 ([`c2d0286`](https://github.com/mraniki/iamlistening/commit/c2d02869bd4373791e9e4883e449e449fc1894f8))
+
+* 📝 added documentation for credentials ([`33fb5e3`](https://github.com/mraniki/iamlistening/commit/33fb5e3eb7da87b6993224c0f1348769180c09de))
+
+* 📝 udpatd credentials ([`862594d`](https://github.com/mraniki/iamlistening/commit/862594d8b98c85aeb8417fbdc5d9fc7744dd2ab6))
+
+* 📝 ([`1a6aed2`](https://github.com/mraniki/iamlistening/commit/1a6aed25597c5f07b698c7d56df62413c6d19f07))
+
+
 ## v3.3.0 (2023-08-07)
 
 ### :white_check_mark:
