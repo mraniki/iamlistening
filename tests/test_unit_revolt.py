@@ -1,6 +1,6 @@
-"""
-Revolt Unit Testing
-"""
+# """
+# Revolt Testing
+# """
 
 # import asyncio
 # from unittest.mock import AsyncMock
@@ -16,7 +16,35 @@ Revolt Unit Testing
 # def set_test_settings():
 #     settings.configure(FORCE_ENV_FOR_DYNACONF="testingrevolt")
 
-# @pytest.mark.asyncio 
+
+# @pytest.mark.asyncio
 # async def test_fixture():
 #     assert settings.VALUE == "On Testing Revolt"
+#     assert settings.chat_platform == "revolt"
+#     assert settings.bot_token is not None
+
+# @pytest.fixture(name="listener")
+# def listener():
+#     return Listener()
+
+
+# @pytest.fixture(name="message")
+# def message():
+#     return "hello"
+
+
+# @pytest.mark.asyncio
+# async def test_listener_start(message):
+#     handle_iteration_limit = AsyncMock()
+#     check_connected = AsyncMock()
+#     listener = Listener()
+#     await listener.start()
+#     assert listener.handler is not None
+#     await listener.handler.handle_message(message)
+#     msg = await listener.handler.get_latest_message()
+#     assert listener.handler.connected is not None
+#     assert listener.platform == "revolt"
+#     handle_iteration_limit.assert_awaited
+#     check_connected.assert_awaited
+#     assert msg == message
 
