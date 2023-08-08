@@ -1,36 +1,36 @@
-# """
-# Revolt Testing
-# """
+"""
+Revolt Testing
+"""
 
-# import asyncio
-# from unittest.mock import AsyncMock
+import asyncio
+from unittest.mock import AsyncMock
 
-# import pytest
+import pytest
 
-# from iamlistening import Listener
-# from iamlistening.config import settings
-# from iamlistening.platform.chat_manager import ChatManager
-
-
-# @pytest.fixture(scope="session", autouse=True)
-# def set_test_settings():
-#     settings.configure(FORCE_ENV_FOR_DYNACONF="testingrevolt")
+from iamlistening import Listener
+from iamlistening.config import settings
+from iamlistening.platform.chat_manager import ChatManager
 
 
-# @pytest.mark.asyncio
-# async def test_fixture():
-#     assert settings.VALUE == "On Testing Revolt"
-#     assert settings.chat_platform == "revolt"
-#     assert settings.bot_token is not None
-
-# @pytest.fixture(name="listener")
-# def listener():
-#     return Listener()
+@pytest.fixture(scope="session", autouse=True)
+def set_test_settings():
+    settings.configure(FORCE_ENV_FOR_DYNACONF="testingrevolt")
 
 
-# @pytest.fixture(name="message")
-# def message():
-#     return "hello"
+@pytest.mark.asyncio
+async def test_fixture():
+    assert settings.VALUE == "On Testing Revolt"
+    assert settings.chat_platform == "revolt"
+    assert settings.bot_token is not None
+
+@pytest.fixture(name="listener")
+def listener():
+    return Listener()
+
+
+@pytest.fixture(name="message")
+def message():
+    return "hello"
 
 
 # @pytest.mark.asyncio

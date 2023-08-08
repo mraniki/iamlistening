@@ -66,6 +66,10 @@ class ChatManager:
             from .clients.twitch import TwitchHandler
 
             handler = TwitchHandler()
+        elif platform == "revolt":
+            from .clients.revolt import RevoltHandler
+
+            handler = RevoltHandler()
 
         return handler
 
@@ -89,7 +93,8 @@ class ChatManager:
 
     def connected(self):
         """
-        Asynchronously checks if the listener is connected.
+        Asynchronously checks if 
+        the listener is connected.
 
         Returns:
             None
