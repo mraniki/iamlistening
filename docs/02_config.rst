@@ -15,24 +15,24 @@ Chat Platform Credentials
 Telegram
 --------
 
-- Create your bot token via Telegram @BotFather 
-- Telegram portal to create an API key
+- Create your bot token via Telegram @BotFather https://core.telegram.org/bots#how-do-i-create-a-bot 
+- Telegram portal to create an API key via https://core.telegram.org/api/obtaining_api_id
 
 
 Discord
 -------
 
-- Create your bot token via Discord Dev Portal
+- Create your bot token via Discord Dev Portal https://discord.com/developers/docs/intro
 
 Matrix
 ------
 
-- Create your bot token, server, and user via Matrix Dev Portal
+- Create your bot token, server, and user via https://app.element.io/#/register
 
 Guilded
 -------
 
-- Create your bot token via Guilded Dev Portal
+- Create your bot token via Guilded Dev Portal https://support.guilded.gg/hc/en-us/articles/1500009005861-How-to-make-a-bot
 
 Mastodon
 --------
