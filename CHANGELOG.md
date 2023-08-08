@@ -2,6 +2,23 @@
 
 
 
+## v3.3.2 (2023-08-08)
+
+### ♻️
+
+* ♻️ (#107) ([`83da220`](https://github.com/mraniki/iamlistening/commit/83da220bddf60c2ab499168d5b41c45b457da2c3))
+
+* ♻️ ([`a56af18`](https://github.com/mraniki/iamlistening/commit/a56af18833ac7602d19b81fe44571fabba70d66a))
+
+### 📝
+
+* 📝 ([`af448d6`](https://github.com/mraniki/iamlistening/commit/af448d6c2745784a72b85fb7be4ec7492a47c6e2))
+
+### 🔧
+
+* 🔧 ([`efe7689`](https://github.com/mraniki/iamlistening/commit/efe7689bdf8a54e2060f3c2c05f153a0c8ec822a))
+
+
 ## v3.3.1 (2023-08-08)
 
 ### ♻️
