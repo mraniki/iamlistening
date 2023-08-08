@@ -17,32 +17,38 @@ Telegram
 
 - Create your bot token via Telegram @BotFather https://core.telegram.org/bots#how-do-i-create-a-bot 
 - Telegram portal to create an API key via https://core.telegram.org/api/obtaining_api_id
+- check https://docs.telethon.dev/en/stable/ for more info
 
 
 Discord
 -------
 
 - Create your bot token via Discord Dev Portal https://discord.com/developers/docs/intro
+- check https://pycord.readthedocs.io for more info
 
 Matrix
 ------
 
 - Create your bot token, server, and user via https://app.element.io/#/register
+- check https://simple-matrix-bot-lib.readthedocs.io for more info
 
 Guilded
 -------
 
 - Create your bot token via Guilded Dev Portal https://support.guilded.gg/hc/en-us/articles/1500009005861-How-to-make-a-bot
+- Check https://guildedpy.readthedocs.io/en/stable/
 
 Mastodon
 --------
 
 - Create your bot token via Mastodon Dev Portal
+- check https://Mastodonpy.readthedocs.io/en/stable/
 
 Lemmy
 -----
 
 - Use your user name, user password and lemmy instance url
+- check https://github.com/db0/pythorhead
 
 example:
 
@@ -66,6 +72,7 @@ Twitch
 -----
 
 - Use https://twitchtokengenerator.com to get your bot token
+- check https://twitchio.dev/en/latest/ 
 
 example:
 
