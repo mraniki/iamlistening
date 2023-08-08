@@ -66,6 +66,7 @@ class ChatManager:
             from .clients.twitch import TwitchHandler
 
             handler = TwitchHandler()
+
         return handler
 
     def __init__(self):
