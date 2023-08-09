@@ -2,6 +2,15 @@
 
 
 
+## v3.3.3 (2023-08-09)
+
+### ⬆️
+
+* ⬆️(deps): update dependency ruff to ^0.0.283 (#108) ([`cbcf0fd`](https://github.com/mraniki/iamlistening/commit/cbcf0fd97f930b66ea6ea4f65d1c1f314af5735e))
+
+* ⬆️(deps): update dependency ruff to ^0.0.283 ([`2ce01df`](https://github.com/mraniki/iamlistening/commit/2ce01dfa60cf2463f32f68ccb7a482a41c304520))
+
+
 ## v3.3.2 (2023-08-08)
 
 ### ♻️
