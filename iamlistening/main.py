@@ -58,13 +58,15 @@ class Listener:
             None
         """
 
-
+        self.logger.debug("listener starting")
         self.handler = self.chat_manager.get_handler(self.platform)
 
         if self.handler:
+            self.logger.debug("listener handler is starting")
             task = asyncio.create_task(self.handler.start())
             if not self.handler.is_connected:
                 task.cancel()
+                self.logger.debug("listener handler stopped")
                 self.handler = None
                 self.is_connected = False
 

@@ -34,6 +34,7 @@ class TwitchHandler(ChatManager):
 
         @self.bot.event
         async def event_message(self, message):
+            logger.debug("new message received")
             await self.handle_message(message.content)
 
         self.bot.run()

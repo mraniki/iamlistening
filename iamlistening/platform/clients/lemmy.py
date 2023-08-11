@@ -21,7 +21,10 @@ class LemmyHandler(ChatManager):
         super().__init__()
         logger.info("Lemmy setup")
         self.bot = Lemmy(settings.bot_hostname)
-        self.bot.log_in(settings.bot_user, settings.bot_pass,)
+        self.bot.log_in(
+            settings.bot_user,
+            settings.bot_pass,
+        )
 
         if self.bot:
             self.connected()
@@ -33,7 +36,8 @@ class LemmyHandler(ChatManager):
         """
 
         # getting the first post id
-        latest_post = self.bot.post.list(
-            community_name=settings.bot_channel_id)[0]["post"]["body"]
-        print("latest post: ", latest_post)
+        latest_post = self.bot.post.list(community_name=settings.bot_channel_id)[0][
+            "post"
+        ]["body"]
+        logger.debug("latest post: ", latest_post)
         await self.handle_message(latest_post)
