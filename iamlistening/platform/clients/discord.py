@@ -11,19 +11,18 @@ from iamlistening.platform.chat_manager import ChatManager
 
 
 class DiscordHandler(ChatManager):
-
     def __init__(self):
         """
         Initialize the Discord handler.
 
- 
+
         """
         super().__init__()
 
     async def start(self):
         """
         Start the Discord handler.
-        
+
         """
 
         logger.debug("Discord setup")
@@ -38,5 +37,5 @@ class DiscordHandler(ChatManager):
         @self.bot.event
         async def on_message(message: discord.Message):
             await self.handle_message(message.content)
-    
+
         await self.bot.start(settings.bot_token)
