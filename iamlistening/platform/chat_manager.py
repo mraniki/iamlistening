@@ -77,7 +77,7 @@ class ChatManager:
         """
         Initialize the chat manager.
         """
-        self.platform = None
+        self.platform = settings.chat_platform
         self.bot = None
         self.is_connected = True
         self.latest_message = None
@@ -99,7 +99,8 @@ class ChatManager:
         Returns:
             None
         """
-        logger.info("listener handler is online")
+        logger.info(
+            "listener handler is online on {}", self.platform)
         self.is_connected = True
 
     async def get_latest_message(self):

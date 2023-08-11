@@ -40,6 +40,7 @@ class MatrixHandler(ChatManager):
 
         @self.bot.listener.on_message_event
         async def on_matrix_message(room, message):
+            logger.debug("new message received")
             await self.handle_message(message.body)
         await self.bot.api.login()
         self.bot.api.async_client.callbacks = botlib.Callbacks(

@@ -11,7 +11,6 @@ from iamlistening.platform.chat_manager import ChatManager
 
 
 class GuildedHandler(ChatManager):
-
     def __init__(self):
         """
         Initialize the Guilded handler.
@@ -31,6 +30,7 @@ class GuildedHandler(ChatManager):
 
         @self.bot.event
         async def on_message(message):
+            logger.debug("new message received")
             await self.handle_message(message.content)
 
         self.bot.run(settings.bot_token)

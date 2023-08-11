@@ -36,6 +36,7 @@ class DiscordHandler(ChatManager):
 
         @self.bot.event
         async def on_message(message: discord.Message):
+            logger.debug("new message received")
             await self.handle_message(message.content)
 
         await self.bot.start(settings.bot_token)

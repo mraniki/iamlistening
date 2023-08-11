@@ -46,6 +46,7 @@ class TelegramHandler(ChatManager):
         """
         Handle new messages
         """
+        logger.debug("new message received")
         await self.handle_message(event.message.message)
 
  
