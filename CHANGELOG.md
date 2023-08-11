@@ -2,6 +2,27 @@
 
 
 
+## v3.3.4 (2023-08-11)
+
+### Update
+
+* Update Requirements ([`e577aa9`](https://github.com/mraniki/iamlistening/commit/e577aa99699bde79b26eba4cf8ec35a7c76fb55f))
+
+### 🎨
+
+* 🎨 ([`7c27364`](https://github.com/mraniki/iamlistening/commit/7c27364749b41884d0762ce3a014e0c6da169bab))
+
+### 👷
+
+* 👷🔊 added better debug logging (#111) ([`4d704e0`](https://github.com/mraniki/iamlistening/commit/4d704e0908531e97ae65570788f2cfdfdc2edcbd))
+
+* 👷 CI Change ([`1aaf8f8`](https://github.com/mraniki/iamlistening/commit/1aaf8f83bb1021591b04c7b97440d7df432a5ec4))
+
+### 🔊
+
+* 🔊 added better debug logging ([`a1f0d6a`](https://github.com/mraniki/iamlistening/commit/a1f0d6a5284d267016d232e197c51ebd7a8ff24c))
+
+
 ## v3.3.3 (2023-08-09)
 
 ### ⬆️
