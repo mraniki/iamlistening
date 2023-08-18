@@ -2,6 +2,15 @@
 
 
 
+## v3.3.6 (2023-08-18)
+
+### ⬆️
+
+* ⬆️(deps): update dependency ruff to ^0.0.285 (#114) ([`64a7244`](https://github.com/mraniki/iamlistening/commit/64a7244509be36b11fa0a53e4e234d24c5b3af1a))
+
+* ⬆️(deps): update dependency ruff to ^0.0.285 ([`09165da`](https://github.com/mraniki/iamlistening/commit/09165dad0711718cb4f380d9f3d8470ec7395e91))
+
+
 ## v3.3.5 (2023-08-18)
 
 ### :recycle:
