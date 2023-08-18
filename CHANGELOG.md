@@ -2,6 +2,19 @@
 
 
 
+## v3.3.5 (2023-08-18)
+
+### :recycle:
+
+* :recycle::arrow_up:dep downgrade (#112) ([`9e3d61b`](https://github.com/mraniki/iamlistening/commit/9e3d61b24b87fe89d0d30b52932f6955e54bc860))
+
+* :recycle::arrow_up:dep downgrade ([`fec860c`](https://github.com/mraniki/iamlistening/commit/fec860c34f7cf31f3c7620434cc0ebb9a4aaae4f))
+
+### Update
+
+* Update Requirements ([`2d5a7f6`](https://github.com/mraniki/iamlistening/commit/2d5a7f635c2a4955091791d9047fad427c902dfc))
+
+
 ## v3.3.4 (2023-08-11)
 
 ### Update
