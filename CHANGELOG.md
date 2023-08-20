@@ -2,6 +2,13 @@
 
 
 
+## v3.3.8 (2023-08-20)
+
+### Update
+
+* Update renovate.json ([`b92e207`](https://github.com/mraniki/iamlistening/commit/b92e2076ef4118f837f4914e82390c54e5202212))
+
+
 ## v3.3.7 (2023-08-20)
 
 ### Update
