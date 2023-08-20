@@ -2,6 +2,13 @@
 
 
 
+## v3.3.7 (2023-08-20)
+
+### Update
+
+* Update pyproject.toml ([`b84dbf7`](https://github.com/mraniki/iamlistening/commit/b84dbf77899adcb03cf3c03f897db7aa4afd5720))
+
+
 ## v3.3.6 (2023-08-18)
 
 ### ⬆️
