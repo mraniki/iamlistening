@@ -2,6 +2,21 @@
 
 
 
+## v3.3.9 (2023-08-21)
+
+### Other
+
+* :construction_worker_man:Flow.yml ([`f4f57ca`](https://github.com/mraniki/iamlistening/commit/f4f57ca4941382e7dbfae150aac2b018da8af633))
+
+### Update
+
+* Update Requirements ([`64d4775`](https://github.com/mraniki/iamlistening/commit/64d4775cc0558bee6e706f5b7f7549f2faf32f02))
+
+### 👷
+
+* 👷‍♂️Flow.yml (#117) ([`7ef5b6e`](https://github.com/mraniki/iamlistening/commit/7ef5b6eaa0e359a2a9da0dcd6ee2acffbabac4b5))
+
+
 ## v3.3.8 (2023-08-20)
 
 ### Update
