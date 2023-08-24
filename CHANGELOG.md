@@ -2,6 +2,19 @@
 
 
 
+## v3.3.10 (2023-08-24)
+
+### 👷
+
+* 👷 CI cleanup ([`d40da93`](https://github.com/mraniki/iamlistening/commit/d40da935a1ceb2012dcfe58369d3c4be95864378))
+
+### 🔥
+
+* 🔥 cleanup (#120) ([`b9ccded`](https://github.com/mraniki/iamlistening/commit/b9ccded0668a9925b51d1debdba0daa0d7d3be3b))
+
+* 🔥 cleanup ([`d10e059`](https://github.com/mraniki/iamlistening/commit/d10e059ccf46ff39ba1f728e1e425d9ab0c15476))
+
+
 ## v3.3.9 (2023-08-21)
 
 ### Other
