@@ -1,6 +1,6 @@
 """
 
 Telegram, Matrix, Discord, Guilded, Mastodon
-Lemmy, Twitch
+Lemmy, Twitch, Revolt
 
 """

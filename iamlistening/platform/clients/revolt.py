@@ -12,26 +12,26 @@ from iamlistening.platform.chat_manager import ChatManager
 
 
 class RevoltHandler(ChatManager):
-    pass
-    # def __init__(self):
-    #     """
-    #     Initialize the Revolt handler.
-    #     """
-    #     super().__init__()
-    #     session = aiohttp.ClientSession()
-    #     self.bot = revolt.Client(session, settings.bot_token)
-    #     logger.debug(self.bot.api_info)
-    #     self.connected()
+  #  pass
+    def __init__(self):
+        """
+        Initialize the Revolt handler.
+        """
+        super().__init__()
+        session = aiohttp.ClientSession()
+        self.bot = revolt.Client(session, settings.bot_token)
+        logger.debug(self.bot.api_info)
+        self.connected()
 
-    # async def start(self):
-    #     """
-    #     Start the Revolt handler.
-    #     """
-    #     logger.debug("Revolt setup")
+    async def start(self):
+        """
+        Start the Revolt handler.
+        """
+        logger.debug("Revolt setup")
 
-    #     await self.bot.start()
+        await self.bot.start()
 
-    #     @self.bot.event
-    #     async def on_message(self, message: revolt.Message):
-    # logger.debug("new message received")
-    #         await self.handle_message(message.content)
+        @self.bot.event
+        async def on_message(self, message: revolt.Message):
+    logger.debug("new message received")
+            await self.handle_message(message.content)

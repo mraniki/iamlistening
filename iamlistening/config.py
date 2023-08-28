@@ -16,9 +16,9 @@ settings = Dynaconf(
     # Load the default settings file
     settings_files=[
         os.path.join(ROOT, "default_settings.toml"),
-        'talky_settings.toml',
-        'settings.toml',
-        '.secrets.toml'
+       # 'talky_settings.toml',
+       # 'settings.toml',
+      #  '.secrets.toml'
     ],
     # Load the.env file
     load_dotenv=True,
