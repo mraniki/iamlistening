@@ -33,5 +33,5 @@ class RevoltHandler(ChatManager):
 
         @self.bot.event
         async def on_message(self, message: revolt.Message):
-    logger.debug("new message received")
+            logger.debug("new message received")
             await self.handle_message(message.content)
