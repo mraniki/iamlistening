@@ -2,6 +2,42 @@
 
 
 
+## v3.3.11 (2023-08-28)
+
+### Update
+
+* ⬆️ 🤖 Dependencies: Update ruff requirement from ^0.0.285 to &gt;=0.0.285,&lt;0.0.287 (#123) ([`a2db99a`](https://github.com/mraniki/iamlistening/commit/a2db99ac71ff29702d11cb0beb5e8f329f6208e5))
+
+* Update Requirements ([`486079f`](https://github.com/mraniki/iamlistening/commit/486079f4c35cf8b0e266e37e08bbca5737277d11))
+
+* :arrow_up: 🤖 Dependencies: Update ruff requirement
+
+Updates the requirements on [ruff](https://github.com/astral-sh/ruff) to permit the latest version.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/BREAKING_CHANGES.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/v0.0.285...v0.0.286)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:development
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://github.com/mraniki/iamlistening/commit/b06f0e1085b26c9f0d57a0beba610010242b1669))
+
+### ⬆️
+
+* ⬆️ 🤖 Dependencies (#125) ([`783c41f`](https://github.com/mraniki/iamlistening/commit/783c41fa57df4dbe5be29681c0286faefa2dc56f))
+
+### 🐛
+
+* 🐛 📝  extension error ([`f8720c1`](https://github.com/mraniki/iamlistening/commit/f8720c1e531a710e320b8c7349f45d196f1a2b8a))
+
+### 📝
+
+* 📝 ([`f8ac9a0`](https://github.com/mraniki/iamlistening/commit/f8ac9a022b526d95613e179f48361633cfd2e90f))
+
+
 ## v3.3.10 (2023-08-24)
 
 ### 👷
