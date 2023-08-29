@@ -20,7 +20,6 @@ class RevoltHandler(ChatManager):
         super().__init__()
         session = aiohttp.ClientSession()
         self.bot = revolt.Client(session, settings.bot_token)
-        logger.debug(self.bot.api_info)
         self.connected()
 
     async def start(self):
