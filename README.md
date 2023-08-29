@@ -19,7 +19,7 @@
     </td>
     <td align="left"> 
        A python package to listen to messaging platforms,<br>
-       such as discord, telegram, matrix, guilded, mastodon, lemmy.
+       such as discord, telegram, matrix, guilded, mastodon, lemmy, revolt.
     </td>
      
   </tr>
