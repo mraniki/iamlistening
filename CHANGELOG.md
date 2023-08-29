@@ -2,6 +2,39 @@
 
 
 
+## v3.4.0 (2023-08-29)
+
+### :rotating_light:
+
+* :rotating_light: ([`5b811e4`](https://github.com/mraniki/iamlistening/commit/5b811e4ae829f0af53c80f4c1a93f1009c346054))
+
+### :white_check_mark:
+
+* :white_check_mark: ([`2f8e92a`](https://github.com/mraniki/iamlistening/commit/2f8e92a76aa9f3f648aa44df593a777d6ee7151c))
+
+### Other
+
+* Delete tinode.py ([`1d5f7ca`](https://github.com/mraniki/iamlistening/commit/1d5f7ca5d2aa0d82d962e296d8e7a0c68a74c268))
+
+* retrying revolt ([`d570a19`](https://github.com/mraniki/iamlistening/commit/d570a191d68a1f4cc93399012350938a30498097))
+
+### Update
+
+* Update config.py ([`dd4eb2b`](https://github.com/mraniki/iamlistening/commit/dd4eb2b829ce348725be08a23890bcbdf8856f2d))
+
+* Update README.md ([`b412562`](https://github.com/mraniki/iamlistening/commit/b412562f837bb2fdfac7ad297120b764b0a6b20d))
+
+* Update revolt.py ([`c4f49d3`](https://github.com/mraniki/iamlistening/commit/c4f49d33644529779e0546663e09e182fe3c3e50))
+
+### ✨
+
+* ✨ revolt (#126) ([`ea62c90`](https://github.com/mraniki/iamlistening/commit/ea62c907b31aefe9af6b04e057cfaba99dfbd579))
+
+### 🔧
+
+* 🔧 ([`3c104b8`](https://github.com/mraniki/iamlistening/commit/3c104b8faa2729e7dbf9a4eb571e05355ba70048))
+
+
 ## v3.3.11 (2023-08-28)
 
 ### Update
