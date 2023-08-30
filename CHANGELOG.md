@@ -2,6 +2,13 @@
 
 
 
+## v3.4.1 (2023-08-30)
+
+### Update
+
+* Update README.md ([`7e6f3ec`](https://github.com/mraniki/iamlistening/commit/7e6f3ecb5925082aa9f5e60114224a4c156c1de3))
+
+
 ## v3.4.0 (2023-08-29)
 
 ### :rotating_light:
