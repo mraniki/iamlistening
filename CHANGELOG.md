@@ -2,6 +2,15 @@
 
 
 
+## v3.4.2 (2023-08-31)
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency sphinx to v7.2.5 (#128) ([`5de027a`](https://github.com/mraniki/iamlistening/commit/5de027a2e2b869574b560bd8f4d3049b34106f64))
+
+* ⬆️ 🛠️(deps): update dependency sphinx to v7.2.5 ([`70a0108`](https://github.com/mraniki/iamlistening/commit/70a010874e681dfdba750a4b654a8451f670b409))
+
+
 ## v3.4.1 (2023-08-30)
 
 ### Update
