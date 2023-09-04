@@ -43,7 +43,7 @@ twitchio = "^2.6.0"
 
 [tool.poetry.group.dev.dependencies]
 python-semantic-release = "^8.0.4"
-ruff = ">=0.0.285,<0.0.287"
+ruff = ">=0.0.285,<0.0.288"
 
 
 
