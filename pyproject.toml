@@ -12,7 +12,7 @@ license = "MIT License"
 readme = "README.md"
 keywords = [
     "bot","messaging",
-    "discord", "telegram","matrix","rocket chat",
+    "discord", "telegram","matrix",
     ]
 packages = [
     {include = "iamlistening"}
@@ -24,27 +24,24 @@ packages = [
 "Issues" =  "https://github.com/mraniki/iamlistening/issues"
 
 
-
 [tool.poetry.dependencies]
 python = "^3.10"
 dynaconf = "^3.1.12"
 loguru = "^0.6.0"
-beautifulsoup4 = "^4.12.2"
-telethon= "^1.28.5"
+telethon= "^1.29.3"
 py-cord= "^2.4.1"
-simplematrixbotlib= "^2.9.0"
+simplematrixbotlib= "^2.10.0"
 rocketchat-API= "^1.30.0"
 "Mastodon.py" = "^1.8.1"
+beautifulsoup4 = "^4.12.2"
 "guilded.py" = "^1.9.1"
-tinode_grpc = "^0.22.3"
 "revolt.py" = "^0.1.11"
-pythorhead = {version ="^0.15.4", python = ">=3.10,<3.12"}
+pythorhead = {version ="^0.15.6", python = ">=3.10,<3.12"}
 twitchio = "^2.6.0"
 
 [tool.poetry.group.dev.dependencies]
-python-semantic-release = "^8.0.4"
-ruff = ">=0.0.285,<0.0.287"
-
+python-semantic-release = "^8.0.7"
+ruff = "*"
 
 
 [tool.ruff]

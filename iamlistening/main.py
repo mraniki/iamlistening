@@ -69,4 +69,3 @@ class Listener:
                 self.logger.debug("listener handler stopped")
                 self.handler = None
                 self.is_connected = False
-
