@@ -2,6 +2,37 @@
 
 
 
+## v3.4.3 (2023-09-07)
+
+### Update
+
+* Update README.md ([`e131672`](https://github.com/mraniki/iamlistening/commit/e131672369e90f2fe60a3672d9d018f472b5b216))
+
+* Update Requirements ([`453b2b2`](https://github.com/mraniki/iamlistening/commit/453b2b2582a2f15de314461094c43683ce1b54a7))
+
+* Update Requirements ([`176ab86`](https://github.com/mraniki/iamlistening/commit/176ab86aa41163a6092035e8ae31fafeae412a90))
+
+### ⬆️
+
+* ⬆️ (#133) (#134) (#135) (#136) (#137) ([`9d406bf`](https://github.com/mraniki/iamlistening/commit/9d406bf0dbb06355acecd2e31943fd1a9eeae1ab))
+
+* ⬆️ (#133) (#134) (#135) (#136) ([`06f252a`](https://github.com/mraniki/iamlistening/commit/06f252a7dbf8e203e79417ef31df59cdc2ded292))
+
+* ⬆️ (#133) (#134) (#135) ([`eba05b0`](https://github.com/mraniki/iamlistening/commit/eba05b03870efc5117ca4b201e38f73d56313af9))
+
+* ⬆️ (#133) (#134) ([`385e793`](https://github.com/mraniki/iamlistening/commit/385e79333019c313210ca130876f6fbc7db779b6))
+
+* ⬆️ (#133) ([`32a4af9`](https://github.com/mraniki/iamlistening/commit/32a4af9a909cc6e1a7d152c8f234e16fb82b3c89))
+
+* ⬆️ ([`3b373e9`](https://github.com/mraniki/iamlistening/commit/3b373e9ee5911aac24e476b552cd1c36e4646140))
+
+* ⬆️ ([`131aec5`](https://github.com/mraniki/iamlistening/commit/131aec5b02736ff415f2c9fcdeefb286aeaec2ca))
+
+### 🔥
+
+* 🔥 ([`8e7c14d`](https://github.com/mraniki/iamlistening/commit/8e7c14da1125bf5c2ba17065ac0a75a288f5d458))
+
+
 ## v3.4.2 (2023-08-31)
 
 ### ⬆️
