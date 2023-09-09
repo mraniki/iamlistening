@@ -2,6 +2,19 @@
 
 
 
+## v3.4.4 (2023-09-09)
+
+### Update
+
+* Update Requirements ([`d960ab3`](https://github.com/mraniki/iamlistening/commit/d960ab3ccd610eb8daf0378f25fda2a5a5e46d7e))
+
+### 👷
+
+* 👷 CI Change (#138) ([`6788c56`](https://github.com/mraniki/iamlistening/commit/6788c563e2f261f14801df4926507659ea72c555))
+
+* 👷 CI Change ([`c52bc72`](https://github.com/mraniki/iamlistening/commit/c52bc7236eff229ab9cc3d4d9c47f5f2edcc037f))
+
+
 ## v3.4.3 (2023-09-07)
 
 ### Update
