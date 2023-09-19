@@ -23,7 +23,7 @@ class TelegramHandler(ChatManager):
         :return: Initialize the Telegram handler
         """
         super().__init__()
- 
+
     async def start(self):
         """
         Start the Telegram handler
@@ -32,14 +32,10 @@ class TelegramHandler(ChatManager):
 
         logger.debug("Telegram setup")
         self.bot = await TelegramClient(
-                    None,
-                    settings.bot_api_id,
-                    settings.bot_api_hash
-                    ).start(bot_token=settings.bot_token)
+            None, settings.bot_api_id, settings.bot_api_hash
+        ).start(bot_token=settings.bot_token)
         self.connected()
-        self.bot.add_event_handler(
-            self.handle_telegram_message,
-            events.NewMessage)
+        self.bot.add_event_handler(self.handle_telegram_message, events.NewMessage)
         await self.bot.run_until_disconnected()
 
     async def handle_telegram_message(self, event):
@@ -48,5 +44,3 @@ class TelegramHandler(ChatManager):
         """
         logger.debug("new message received")
         await self.handle_message(event.message.message)
-
- 

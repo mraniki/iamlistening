@@ -12,7 +12,6 @@ from iamlistening.platform.chat_manager import ChatManager
 
 
 class RevoltHandler(ChatManager):
-  #  pass
     def __init__(self):
         """
         Initialize the Revolt handler.

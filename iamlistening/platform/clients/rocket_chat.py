@@ -18,7 +18,7 @@
 #         Initialize the RocketChat handler.
 #         """
 #         super().__init__()
-        
+
 
 #     async def start(self):
 #         """
@@ -26,8 +26,8 @@
 #         """
 #         self.logger.debug("RocketChat setup")
 #         self.bot = RocketChat(
-#             user_id=settings.bot_user, 
-#             auth_token=settings.bot_auth_token, 
+#             user_id=settings.bot_user,
+#             auth_token=settings.bot_auth_token,
 #             server_url=settings.bot_hostname
 #             )
 #         info = self.bot.info()
