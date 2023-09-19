@@ -2,6 +2,17 @@
 
 
 
+## v3.4.5 (2023-09-19)
+
+### ⬆️
+
+* ⬆️ 🛠️(deps) (#144) ([`b65e0fb`](https://github.com/mraniki/iamlistening/commit/b65e0fbbb36ccb8b57c30ff8d515a92a246fb92e))
+
+* ⬆️ 🛠️(deps): update dependency pydata-sphinx-theme to ^0.14.0 (#141) ([`6291a07`](https://github.com/mraniki/iamlistening/commit/6291a075ba2878dce447128057318ad839098ce4))
+
+* ⬆️ 🛠️(deps): update dependency pydata-sphinx-theme to ^0.14.0 ([`c7f7234`](https://github.com/mraniki/iamlistening/commit/c7f7234548c92a23446d42e17d24905acc7afa89))
+
+
 ## v3.4.4 (2023-09-09)
 
 ### Update
