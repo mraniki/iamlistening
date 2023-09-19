@@ -2,9 +2,24 @@
 
 
 
+## v3.4.6 (2023-09-19)
+
+### Other
+
+* Merge branch &#39;main&#39; into dev ([`78e393d`](https://github.com/mraniki/iamlistening/commit/78e393dccb2f3f9c6c3fd1242ed71a50e9612199))
+
+### 🚨
+
+* 🚨 linter (#145) ([`a75b57e`](https://github.com/mraniki/iamlistening/commit/a75b57e45bcf783ccea0b12e332e5346770a7030))
+
+* 🚨 linter ([`5c17cba`](https://github.com/mraniki/iamlistening/commit/5c17cba621abb37f6693dd9e4a94f8e98f6c970a))
+
+
 ## v3.4.5 (2023-09-19)
 
 ### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency sphinx to v7.2.6 ([`ebeb224`](https://github.com/mraniki/iamlistening/commit/ebeb224d21aaf74a6b4016207228ad9883ef4db1))
 
 * ⬆️ 🛠️(deps) (#144) ([`b65e0fb`](https://github.com/mraniki/iamlistening/commit/b65e0fbbb36ccb8b57c30ff8d515a92a246fb92e))
 
