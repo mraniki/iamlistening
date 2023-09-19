@@ -20,7 +20,7 @@ def set_test_settings():
     settings.configure(FORCE_ENV_FOR_DYNACONF="testingtelegram")
 
 
-@pytest.mark.asyncio 
+@pytest.mark.asyncio
 async def test_fixture():
     assert settings.VALUE == "On Testing"
 
@@ -28,6 +28,7 @@ async def test_fixture():
 @pytest.fixture(name="listener")
 def listener():
     return Listener()
+
 
 @pytest.fixture(name="message")
 def message():
@@ -58,4 +59,3 @@ async def test_listener_start(message):
     check_connected.assert_awaited
     connected.assert_called
     assert msg == message
-
