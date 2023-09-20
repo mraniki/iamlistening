@@ -45,6 +45,9 @@ class ChatManager:
         bot_user=None,
         bot_pass=None,
         bot_auth_token=None,
+        iteration_enabled = True,
+        iteration_limit = -1,
+        iteration_count =0
     ):
         """
         Initialize the chat manager.
@@ -58,13 +61,14 @@ class ChatManager:
         self.bot_user = bot_user
         self.bot_pass = bot_pass
         self.bot_auth_token = bot_auth_token
+        self.iteration_enabled = iteration_enabled
+        self.iteration_limit = settings.iteration_limit or -1
+        self.iteration_count = 0
         self.bot = None
         self.is_connected = True
         self.latest_message = None
         self.lock = asyncio.Lock()
-        self.iteration_enabled = iteration_enabled
-        self.iteration_limit = settings.iteration_limit or -1
-        self.iteration_count = 0
+        
 
         self.handler = self.get_handler()
 

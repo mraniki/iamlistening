@@ -20,6 +20,9 @@ class ChatClient:
         bot_user=None,
         bot_pass=None,
         bot_auth_token=None,
+        iteration_enabled = True,
+        iteration_limit = -1,
+        iteration_count =0
     ):
         """
         Initialize the chat client.
@@ -38,7 +41,7 @@ class ChatClient:
         self.latest_message = None
         self.lock = asyncio.Lock()
         self.iteration_enabled = iteration_enabled
-        self.iteration_limit = settings.iteration_limit or -1
+        self.iteration_limit = iteration_limit or -1
         self.iteration_count = 0
 
     async def start(self):
