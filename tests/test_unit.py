@@ -97,10 +97,9 @@ async def test_listener_start(listener, message):
     # Check if the handler has been called for each platform
     for platform_info in listener.platform_info:
         assert platform_info.handler.handle_message.called
-        assert (
-            isinstance(platform_info.handler, DiscordHandler)
-            or isinstance(platform_info.handler, TelegramHandler)
-            or isinstance(platform_info.handler, MatrixHandler)
+        assert isinstance(
+            platform_info.handler,
+            (DiscordHandler, TelegramHandler, MatrixHandler),
         )
 
         msg = await listener.platform_info.handler.get_latest_message()
