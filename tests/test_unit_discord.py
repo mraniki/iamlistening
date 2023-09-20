@@ -16,7 +16,7 @@ from iamlistening.platform.chat_manager import ChatManager
 
 @pytest.fixture(scope="session", autouse=True)
 def set_test_settings():
-    settings.configure(FORCE_ENV_FOR_DYNACONF="testingdiscord")
+    settings.configure(FORCE_ENV_FOR_DYNACONF="ial")
 
 @pytest.mark.asyncio
 async def test_fixture():
