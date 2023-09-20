@@ -62,8 +62,8 @@ class ChatManager:
         self.bot_pass = bot_pass
         self.bot_auth_token = bot_auth_token
         self.iteration_enabled = iteration_enabled
-        self.iteration_limit = settings.iteration_limit or -1
-        self.iteration_count = 0
+        self.iteration_limit = iteration_limit
+        self.iteration_count
         self.bot = None
         self.is_connected = True
         self.latest_message = None
