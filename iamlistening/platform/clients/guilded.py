@@ -7,10 +7,11 @@ import guilded
 from loguru import logger
 
 from iamlistening.config import settings
-from iamlistening.platform.chat_manager import ChatManager
+
+from .client import ChatClient
 
 
-class GuildedHandler(ChatManager):
+class GuildedHandler(ChatClient):
     def __init__(self):
         """
         Initialize the Guilded handler.
@@ -33,4 +34,4 @@ class GuildedHandler(ChatManager):
             logger.debug("new message received")
             await self.handle_message(message.content)
 
-        self.bot.run(settings.bot_token)
+        self.bot.run(self.bot_token)

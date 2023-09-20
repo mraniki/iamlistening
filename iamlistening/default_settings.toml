@@ -23,9 +23,19 @@ iamlistening_enabled = true
 # the specific handler
 # for the chat platform. Value can be
 # telegram, discord, matrix, etc.
-chat_platform = ""
 
-# bot credentials
+[default.platform.telegram]
+platform = ""
+bot_token = ""
+bot_channel_id = ""
+bot_api_id = ""
+bot_api_hash = ""
+bot_hostname = ""
+bot_user = ""
+bot_pass = ""
+bot_auth_token = ""
+
+[default.platform.backup]
 bot_token = ""
 bot_channel_id = ""
 bot_api_id = ""

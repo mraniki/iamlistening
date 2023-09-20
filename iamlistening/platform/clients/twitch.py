@@ -6,11 +6,10 @@ import asyncio
 from loguru import logger
 from twitchio.ext import commands
 
-from iamlistening.config import settings
-from iamlistening.platform.chat_manager import ChatManager
+from .client import ChatClient
 
 
-class TwitchHandler(ChatManager):
+class TwitchHandler(ChatClient):
     def __init__(self):
         """
         Initialize the Twitch handler.
@@ -18,7 +17,7 @@ class TwitchHandler(ChatManager):
         """
 
         super().__init__()
-        self.bot = commands.Bot(token=settings.bot_token, prefix="?")
+        self.bot = commands.Bot(token=self.bot_token, prefix="?")
 
     async def start(self):
         """

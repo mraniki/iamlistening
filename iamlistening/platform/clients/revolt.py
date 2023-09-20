@@ -7,18 +7,17 @@ import aiohttp
 import revolt
 from loguru import logger
 
-from iamlistening.config import settings
-from iamlistening.platform.chat_manager import ChatManager
+from .client import ChatClient
 
 
-class RevoltHandler(ChatManager):
+class RevoltHandler(ChatClient):
     def __init__(self):
         """
         Initialize the Revolt handler.
         """
         super().__init__()
         session = aiohttp.ClientSession()
-        self.bot = revolt.Client(session, settings.bot_token)
+        self.bot = revolt.Client(session, self.bot_token)
         self.connected()
 
     async def start(self):
