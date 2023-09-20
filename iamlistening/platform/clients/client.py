@@ -37,6 +37,7 @@ class ChatClient:
         self.is_connected = True
         self.latest_message = None
         self.lock = asyncio.Lock()
+        self.iteration_enabled = iteration_enabled
         self.iteration_limit = settings.iteration_limit or -1
         self.iteration_count = 0
 
