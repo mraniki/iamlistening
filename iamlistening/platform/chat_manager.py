@@ -47,7 +47,7 @@ class ChatManager:
         bot_auth_token=None,
         iteration_enabled = True,
         iteration_limit = -1,
-        iteration_count =0
+        iteration_count = 0
     ):
         """
         Initialize the chat manager.
@@ -63,7 +63,7 @@ class ChatManager:
         self.bot_auth_token = bot_auth_token
         self.iteration_enabled = iteration_enabled
         self.iteration_limit = iteration_limit
-        self.iteration_count
+        self.iteration_count = iteration_count
         self.bot = None
         self.is_connected = True
         self.latest_message = None
