@@ -11,7 +11,9 @@ from .client import ChatClient
 
 
 class MastodonHandler(ChatClient):
-    def __init__(self):
+    def __init__(
+        self,
+        bot_hostname=None, bot_auth_token=None):
         """
         Initialize the Mastodon handler.
         """

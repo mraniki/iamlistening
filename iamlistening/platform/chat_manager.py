@@ -70,6 +70,7 @@ class ChatManager:
         self.latest_message = None
         self.lock = asyncio.Lock()
         self.handler = self.get_handler()
+        logger.debug("init {} with handler {}", self.platform, self.handler)
 
     async def start(self):
         """
@@ -77,12 +78,11 @@ class ChatManager:
         Connect to the platform and handle messages.
         """
         try:
-            # Connect to the platform
+            logger.debug("start {}", self.platform)
             await self.handler.start()
-
-            # Start listening for messages
+            logger.debug("start listening {}", self.platform)
             await self.handler.listen(self.handle_message)
-            
+
         except Exception as e:
             logger.error("Error starting {}: {}", self.platform, e)
 
@@ -95,21 +95,36 @@ class ChatManager:
         """
         logger.debug("get handler {}", self.platform)
         if self.platform == "telegram":
-            return TelegramHandler()
+            return TelegramHandler(
+                bot_api_id=self.bot_api_id,
+                bot_api_hash=self.bot_api_hash,
+                bot_token=self.bot_token,
+            )
         elif self.platform == "discord":
-            return DiscordHandler()
+            return DiscordHandler(bot_token=self.bot_token)
         elif self.platform == "matrix":
-            return MatrixHandler()
+            return MatrixHandler(
+                bot_hostname=self.bot_hostname,
+                bot_user=self.bot_user,
+                bot_pass=self.bot_pass,
+            )
         elif self.platform == "guilded":
-            return GuildedHandler()
+            return GuildedHandler(bot_token=self.bot_token)
         elif self.platform == "mastodon":
-            return MastodonHandler()
+            return MastodonHandler(
+                bot_hostname=self.bot_hostname, bot_auth_token=self.bot_auth_token
+            )
         elif self.platform == "lemmy":
-            return LemmyHandler()
+            return LemmyHandler(
+                bot_hostname=self.bot_hostname,
+                bot_user=self.bot_user,
+                bot_pass=self.bot_pass,
+                bot_channel_id=self.bot_channel_id,
+            )
         elif self.platform == "twitch":
-            return TwitchHandler()
+            return TwitchHandler(bot_token=self.bot_token)
         elif self.platform == "revolt":
-            return RevoltHandler()
+            return RevoltHandler(bot_token=self.bot_token)
         else:
             logger.error("Invalid platform specified {}", self.platform)
             # raise ValueError("Invalid platform specified")

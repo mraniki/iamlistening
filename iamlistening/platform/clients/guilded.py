@@ -12,7 +12,7 @@ from .client import ChatClient
 
 
 class GuildedHandler(ChatClient):
-    def __init__(self):
+    def __init__(self,bot_token=None):
         """
         Initialize the Guilded handler.
         """

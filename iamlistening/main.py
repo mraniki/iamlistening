@@ -35,7 +35,8 @@ class Listener:
             self.platform_info.append(client)
 
             if client.platform == "":
-                raise Exception("Platform missing")
+                logger.warning("Platform missing {}", platform)
+                # raise Exception("Platform missing")
         logger.debug("init completed {}", self.platform_info)
 
     async def start(self):

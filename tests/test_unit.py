@@ -15,7 +15,7 @@ from iamlistening.config import settings
 from iamlistening.platform.chat_manager import ChatManager
 from iamlistening.platform.clients import (
     DiscordHandler,
-    # GuildedHandler,
+    GuildedHandler,
     # LemmyHandler,
     # MastodonHandler,
     MatrixHandler,
@@ -86,20 +86,24 @@ async def test_listener_fixture(listener):
     assert listener.platform_info[0].bot_auth_token is not None
 
 
-
 @pytest.mark.asyncio
 async def test_listener_start(listener, message):
     # handle_iteration_limit = AsyncMock()
-    #connected = AsyncMock()
-    #connected = MagicMock()
+    # connected = AsyncMock()
+    # connected = MagicMock()
     await listener.start()
 
     # Check if the handler has been called for each platform
     for platform in listener.platform_info:
-        #assert platform_info.handler.handle_message.called
+        # assert platform_info.handler.handle_message.called
         assert isinstance(
             platform.handler,
-            (DiscordHandler, TelegramHandler, MatrixHandler),
+            (
+                DiscordHandler,
+                TelegramHandler,
+                MatrixHandler,
+                GuildedHandler,
+            ),
         )
 
         await platform.handler.handle_message(message)
@@ -108,6 +112,6 @@ async def test_listener_start(listener, message):
         assert platform.handler.is_connected is not None
         assert platform is not None
         # handle_iteration_limit.assert_awaited
-        #platform.handler.connected.assert_awaited
-        #connected.assert_called
+        # platform.handler.connected.assert_awaited
+        # connected.assert_called
         assert msg == message

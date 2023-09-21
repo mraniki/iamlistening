@@ -10,7 +10,7 @@ from .client import ChatClient
 
 
 class TwitchHandler(ChatClient):
-    def __init__(self):
+    def __init__(self,bot_token=None):
         """
         Initialize the Twitch handler.
 

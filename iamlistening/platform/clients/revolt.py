@@ -1,7 +1,6 @@
 """
 Revolt  🇷
 """
-import asyncio
 
 import aiohttp
 import revolt
@@ -11,7 +10,7 @@ from .client import ChatClient
 
 
 class RevoltHandler(ChatClient):
-    def __init__(self):
+    def __init__(self, bot_token=None):
         """
         Initialize the Revolt handler.
         """

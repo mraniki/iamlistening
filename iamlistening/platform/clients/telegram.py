@@ -14,7 +14,11 @@ class TelegramHandler(ChatClient):
 
     """
 
-    def __init__(self):
+    def __init__(
+        self,
+        bot_token=None,
+        bot_api_id=None,
+        bot_api_hash=None,):
         """
         Initialize the Telegram handler.
 
