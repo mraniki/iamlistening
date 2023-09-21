@@ -79,7 +79,7 @@ class ChatManager:
         Connect to the platform and handle messages.
         """
         # Connect to the platform
-        await self.handler.connect()
+        await self.handler.start()
 
         # Start listening for messages
         await self.handler.listen(self.handle_message)
