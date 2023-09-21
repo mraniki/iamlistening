@@ -28,6 +28,7 @@ class Listener:
         """
         self.platform_info = []
         platforms = settings.platform
+        logger.debug("platforms {}", platforms)
         for platform in platforms:
             platform_config = platforms[platform]
             client = ChatManager(**platform_config)
@@ -35,6 +36,7 @@ class Listener:
 
             if client.platform == "":
                 raise Exception("Platform missing")
+        logger.debug("init completed {}", self.platform_info)
 
     async def start(self):
         """

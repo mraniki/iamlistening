@@ -107,8 +107,8 @@ class ChatManager:
         elif self.platform == "revolt":
             return RevoltHandler()
         else:
-            logger.error(self.platform)
-            raise ValueError("Invalid platform specified")
+            logger.error("Invalid platform specified {}", self.platform)
+            # raise ValueError("Invalid platform specified")
 
     async def handle_message(self, message_content):
         """
