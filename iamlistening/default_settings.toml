@@ -14,7 +14,7 @@
 
 [default]
 # settings load verification
-VALUE = "On Default"
+# VALUE = "On Default"
 
 # Module Enable/Disable
 iamlistening_enabled = true
@@ -24,27 +24,27 @@ iamlistening_enabled = true
 # for the chat platform. Value can be
 # telegram, discord, matrix, etc.
 
-[default.platform.telegram]
-platform = ""
-bot_token = ""
-bot_channel_id = ""
-bot_api_id = ""
-bot_api_hash = ""
-bot_hostname = ""
-bot_user = ""
-bot_pass = ""
-bot_auth_token = ""
+# [default.platform.telegram]
+# platform = ""
+# bot_token = ""
+# bot_channel_id = ""
+# bot_api_id = ""
+# bot_api_hash = ""
+# bot_hostname = ""
+# bot_user = ""
+# bot_pass = ""
+# bot_auth_token = ""
 
-[default.platform.backup]
-platform = ""
-bot_token = ""
-bot_channel_id = ""
-bot_api_id = ""
-bot_api_hash = ""
-bot_hostname = ""
-bot_user = ""
-bot_pass = ""
-bot_auth_token = ""
+# [default.platform.backup]
+# platform = ""
+# bot_token = ""
+# bot_channel_id = ""
+# bot_api_id = ""
+# bot_api_hash = ""
+# bot_hostname = ""
+# bot_user = ""
+# bot_pass = ""
+# bot_auth_token = ""
 
 # Iteration settings used for testing
 # if you need the bot to run 
@@ -58,6 +58,7 @@ bot_auth_token = ""
 # the bot will run for.
 iteration_enabled = false
 iteration_limit = -1
+iteration_count = 0
 
 ########################################
 ###     END OF DEFAULT SETTINGS      ###
