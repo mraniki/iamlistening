@@ -13,59 +13,56 @@ from iamlistening.platform.chat_manager import ChatManager
 
 
 class Listener:
-
     """
     Listener Class for IAmListening.
 
     """
 
-    def __init__(self, chat_platform=None):
+    def __init__(self):
         """
         Initialize the listener.
-
-        Args:
-            chat_platform (str): The platform to use
 
         Raises:
             Exception: Platform missing
 
         """
+        self.platform_info = []
+        platforms = settings.platform
+        logger.debug("platforms {}", platforms)
+        for platform in platforms:
+            platform_config = platforms[platform]
+            client = ChatManager(**platform_config)
+            self.platform_info.append(client)
 
-        self.logger = logger
-        self.version = __version__
-        self.platform = chat_platform or settings.chat_platform
-        self.chat_manager = ChatManager()
-        self.is_connected = True
-
-        if self.platform == "":
-            raise Exception("Platform missing")
+            if client.platform == "":
+                raise Exception("Platform missing")
+        logger.debug("init completed {}", self.platform_info)
 
     async def start(self):
         """
-        Asynchronously starts the function.
+        Asynchronously start the listener.
 
-        This function sets the `handler` attribute using the 
-        `get_handler` method of the `chat_manager` instance. 
-        If a handler is found, it starts the handler using the `start` method. 
-        If the handler is not connected, the task is cancelled, 
-        the `handler` attribute is set to `None`, 
-        and the `is_connected` attribute is set to `False`.
+        This method starts the chat managers for each platform
+        and logs the status.
 
-        Parameters:
-            None
-
-        Returns:
-            None
         """
+        logger.debug("Listener starting")
 
-        self.logger.debug("listener starting")
-        self.handler = self.chat_manager.get_handler(self.platform)
+        tasks = [platform.start() for platform in self.platform_info]
+        await asyncio.gather(*tasks)
 
-        if self.handler:
-            self.logger.debug("listener handler is starting")
-            task = asyncio.create_task(self.handler.start())
-            if not self.handler.is_connected:
-                task.cancel()
-                self.logger.debug("listener handler stopped")
-                self.handler = None
-                self.is_connected = False
+        logger.debug("Listener started")
+
+    def stop(self):
+        """
+        Stop the listener.
+
+        This method stops the chat managers for each platform.
+
+        """
+        logger.debug("Listener stopping")
+
+        for platform in self.platform_info:
+            platform.stop()
+
+        logger.debug("Listener stopped")

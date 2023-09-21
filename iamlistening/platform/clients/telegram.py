@@ -5,11 +5,10 @@ Telegram 🔵
 from loguru import logger
 from telethon import TelegramClient, events
 
-from iamlistening.config import settings
-from iamlistening.platform.chat_manager import ChatManager
+from .client import ChatClient
 
 
-class TelegramHandler(ChatManager):
+class TelegramHandler(ChatClient):
     """
     Telegram Handler
 
@@ -23,6 +22,7 @@ class TelegramHandler(ChatManager):
         :return: Initialize the Telegram handler
         """
         super().__init__()
+        logger.debug("Telegram setup")
 
     async def start(self):
         """
@@ -30,10 +30,10 @@ class TelegramHandler(ChatManager):
         using Telethon.
         """
 
-        logger.debug("Telegram setup")
+        logger.debug("Telegram start")
         self.bot = await TelegramClient(
-            None, settings.bot_api_id, settings.bot_api_hash
-        ).start(bot_token=settings.bot_token)
+            session=None, api_id=self.bot_api_id, api_hash=self.bot_api_hash
+        ).start(bot_token=self.bot_token)
         self.connected()
         self.bot.add_event_handler(self.handle_telegram_message, events.NewMessage)
         await self.bot.run_until_disconnected()

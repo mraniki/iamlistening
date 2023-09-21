@@ -6,12 +6,10 @@
 
 # from loguru import logger
 # from rocketchat_API.rocketchat import RocketChat
-
-# from iamlistening.config import settings
-# from iamlistening.platform.chat_manager import ChatManager
+# from .client import ChatClient
 
 
-# class RocketChatHandler(ChatManager):
+# class RocketChatHandler(ChatClient):
 
 #     def __init__(self):
 #         """
@@ -26,9 +24,9 @@
 #         """
 #         self.logger.debug("RocketChat setup")
 #         self.bot = RocketChat(
-#             user_id=settings.bot_user,
-#             auth_token=settings.bot_auth_token,
-#             server_url=settings.bot_hostname
+#             user_id=self.bot_user,
+#             auth_token=self.bot_auth_token,
+#             server_url=self.bot_hostname
 #             )
 #         info = self.bot.info()
 #         self.logger.debug(info)

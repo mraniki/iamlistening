@@ -3,6 +3,16 @@ import asyncio
 from loguru import logger
 
 from iamlistening.config import settings
+from iamlistening.platform.clients import (
+    DiscordHandler,
+    GuildedHandler,
+    LemmyHandler,
+    MastodonHandler,
+    MatrixHandler,
+    RevoltHandler,
+    TelegramHandler,
+    TwitchHandler,
+)
 
 
 class ChatManager:
@@ -24,102 +34,85 @@ class ChatManager:
 
     """
 
-    @staticmethod
-    def get_handler(platform=None):
-        """
-        Get platform handler.
-
-        Args:
-            platform (str): The platform to use
-
-        Returns:
-            PlatformHandler
-
-
-        """
-        handler = None
-        if platform == "telegram":
-            from .clients.telegram import TelegramHandler
-
-            handler = TelegramHandler()
-        elif platform == "discord":
-            from .clients.discord import DiscordHandler
-
-            handler = DiscordHandler()
-        if platform == "matrix":
-            from .clients.matrix import MatrixHandler
-
-            handler = MatrixHandler()
-        elif platform == "guilded":
-            from .clients.guilded import GuildedHandler
-
-            handler = GuildedHandler()
-        elif platform == "mastodon":
-            from .clients.mastodon import MastodonHandler
-
-            handler = MastodonHandler()
-        elif platform == "lemmy":
-            from .clients.lemmy import LemmyHandler
-
-            handler = LemmyHandler()
-        elif platform == "twitch":
-            from .clients.twitch import TwitchHandler
-
-            handler = TwitchHandler()
-        elif platform == "revolt":
-            from .clients.revolt import RevoltHandler
-
-            handler = RevoltHandler()
-
-        return handler
-
-    def __init__(self):
+    def __init__(
+        self,
+        platform=None,
+        bot_token=None,
+        bot_channel_id=None,
+        bot_api_id=None,
+        bot_api_hash=None,
+        bot_hostname=None,
+        bot_user=None,
+        bot_pass=None,
+        bot_auth_token=None,
+        iteration_enabled=True,
+        iteration_limit=-1,
+        iteration_count=0,
+    ):
         """
         Initialize the chat manager.
         """
-        self.platform = settings.chat_platform
+        logger.debug("init {}", platform)
+        self.platform = platform
+        self.bot_token = bot_token
+        self.bot_channel_id = bot_channel_id
+        self.bot_api_id = bot_api_id
+        self.bot_api_hash = bot_api_hash
+        self.bot_hostname = bot_hostname
+        self.bot_user = bot_user
+        self.bot_pass = bot_pass
+        self.bot_auth_token = bot_auth_token
+        self.iteration_enabled = iteration_enabled
+        self.iteration_limit = iteration_limit
+        self.iteration_count = iteration_count
         self.bot = None
         self.is_connected = True
         self.latest_message = None
         self.lock = asyncio.Lock()
-        self.iteration_limit = settings.iteration_limit or -1
-        self.iteration_count = 0
+        self.handler = self.get_handler()
 
     async def start(self):
         """
         Start the chat manager.
-        Specific to the client platform
+        Connect to the platform and handle messages.
         """
+        try:
+            # Connect to the platform
+            await self.handler.start()
 
-    def connected(self):
+            # Start listening for messages
+            await self.handler.listen(self.handle_message)
+            
+        except Exception as e:
+            logger.error("Error starting {}: {}", self.platform, e)
+
+    def get_handler(self):
         """
-        Asynchronously checks if 
-        the listener is connected.
+        Get the handler object based on the specified platform.
 
         Returns:
-            None
+            object: The handler object.
         """
-        logger.info(
-            "listener handler is online on {}", self.platform)
-        self.is_connected = True
-
-    async def get_latest_message(self):
-        """
-        Return the latest message.
-
-        Args:
-            None
-
-        Returns:
-            str: The latest message.
-        """
-        async with self.lock:
-            if self.latest_message:
-                msg = self.latest_message
-                self.latest_message = None
-                return msg
-
-        await asyncio.sleep(0.1)
+        logger.debug("get handler {}", self.platform)
+        if self.platform == "telegram":
+            return TelegramHandler()
+        elif self.platform == "discord":
+            return DiscordHandler()
+        elif self.platform == "matrix":
+            return MatrixHandler()
+        elif self.platform == "guilded":
+            return GuildedHandler()
+        elif self.platform == "mastodon":
+            return MastodonHandler()
+        elif self.platform == "lemmy":
+            return LemmyHandler()
+        elif self.platform == "twitch":
+            return TwitchHandler()
+        elif self.platform == "revolt":
+            return RevoltHandler()
+        else:
+            logger.error("Invalid platform specified {}", self.platform)
+            # raise ValueError("Invalid platform specified")
 
     async def handle_message(self, message_content):
         """
@@ -128,29 +121,4 @@ class ChatManager:
         Args:
             message_content (str): The content of the message.
         """
-
         self.latest_message = message_content
-
-    async def handle_iteration_limit(self):
-        """
-        Handle the iteration limit logic.
-
-        Returns:
-            None
-        """
-        if self.iteration_count != self.iteration_limit:
-            await asyncio.sleep(0.1)
-            self.iteration_count += 1
-        else:
-            await self.disconnected()
-
-        return
-
-    async def disconnected(self):
-        """
-        Asynchronously disconnect the listener.
-
-        Returns:
-            None
-        """
-        self.is_connected = False

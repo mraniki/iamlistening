@@ -6,11 +6,10 @@ import asyncio
 import simplematrixbotlib as botlib
 from loguru import logger
 
-from iamlistening.config import settings
-from iamlistening.platform.chat_manager import ChatManager
+from .client import ChatClient
 
 
-class MatrixHandler(ChatManager):
+class MatrixHandler(ChatClient):
     def __init__(self):
         """
         Initialize the Matrix handler.
@@ -26,9 +25,7 @@ class MatrixHandler(ChatManager):
         config.emoji_verify = True
         config.ignore_unverified_devices = True
         config.store_path = "./config/matrix/"
-        creds = botlib.Creds(
-            settings.bot_hostname, settings.bot_user, settings.bot_pass
-        )
+        creds = botlib.Creds(self.bot_hostname, self.bot_user, self.bot_pass)
         self.bot = botlib.Bot(creds, config)
 
         @self.bot.listener.on_startup

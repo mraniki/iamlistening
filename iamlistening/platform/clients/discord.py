@@ -6,11 +6,10 @@ import asyncio
 import discord
 from loguru import logger
 
-from iamlistening.config import settings
-from iamlistening.platform.chat_manager import ChatManager
+from .client import ChatClient
 
 
-class DiscordHandler(ChatManager):
+class DiscordHandler(ChatClient):
     def __init__(self):
         """
         Initialize the Discord handler.
@@ -39,4 +38,4 @@ class DiscordHandler(ChatManager):
             logger.debug("new message received")
             await self.handle_message(message.content)
 
-        await self.bot.start(settings.bot_token)
+        await self.bot.start(self.bot_token)

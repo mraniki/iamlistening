@@ -7,11 +7,10 @@ from bs4 import BeautifulSoup
 from loguru import logger
 from mastodon import Mastodon, StreamListener
 
-from iamlistening.config import settings
-from iamlistening.platform.chat_manager import ChatManager
+from .client import ChatClient
 
 
-class MastodonHandler(ChatManager):
+class MastodonHandler(ChatClient):
     def __init__(self):
         """
         Initialize the Mastodon handler.
@@ -19,7 +18,7 @@ class MastodonHandler(ChatManager):
         super().__init__()
         logger.debug("Mastodon setup")
         self.bot = Mastodon(
-            api_base_url=settings.bot_hostname, access_token=settings.bot_auth_token
+            api_base_url=self.bot_hostname, access_token=self.bot_auth_token
         )
 
     async def start(self):
