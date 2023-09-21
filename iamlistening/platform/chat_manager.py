@@ -76,11 +76,15 @@ class ChatManager:
         Start the chat manager.
         Connect to the platform and handle messages.
         """
-        # Connect to the platform
-        await self.handler.start()
+        try:
+            # Connect to the platform
+            await self.handler.start()
 
-        # Start listening for messages
-        await self.handler.listen(self.handle_message)
+            # Start listening for messages
+            await self.handler.listen(self.handle_message)
+            
+        except Exception as e:
+            logger.error("Error starting {}: {}", self.platform, e)
 
     def get_handler(self):
         """
