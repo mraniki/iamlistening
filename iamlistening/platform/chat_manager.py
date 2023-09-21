@@ -45,9 +45,9 @@ class ChatManager:
         bot_user=None,
         bot_pass=None,
         bot_auth_token=None,
-        iteration_enabled = True,
-        iteration_limit = -1,
-        iteration_count = 0
+        iteration_enabled=True,
+        iteration_limit=-1,
+        iteration_count=0,
     ):
         """
         Initialize the chat manager.
@@ -69,8 +69,6 @@ class ChatManager:
         self.is_connected = True
         self.latest_message = None
         self.lock = asyncio.Lock()
-        
-
         self.handler = self.get_handler()
 
     async def start(self):
@@ -91,6 +89,7 @@ class ChatManager:
         Returns:
             object: The handler object.
         """
+        logger.debug("get handler {}", self.platform)
         if self.platform == "telegram":
             return TelegramHandler()
         elif self.platform == "discord":
