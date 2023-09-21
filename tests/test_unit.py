@@ -102,6 +102,7 @@ async def test_listener_start(listener, message):
             (DiscordHandler, TelegramHandler, MatrixHandler),
         )
 
+        await platform.handler.handle_message(message)
         msg = await platform.handler.get_latest_message()
         assert platform.handler is not None
         assert platform.handler.is_connected is not None
