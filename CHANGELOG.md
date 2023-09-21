@@ -2,6 +2,37 @@
 
 
 
+## v4.0.1 (2023-09-21)
+
+### :recycle:
+
+* :recycle: ([`93a289b`](https://github.com/mraniki/iamlistening/commit/93a289bc219b8490013b84cf324af551ac819e2e))
+
+### Fix
+
+* 🚑 hotfix (#148) ([`a1c3be8`](https://github.com/mraniki/iamlistening/commit/a1c3be826999ff7dbe85762775989cbd1ae43eeb))
+
+* :bug:fix handler init ([`9214d4f`](https://github.com/mraniki/iamlistening/commit/9214d4f83b9fae69484b4e96fc959a077bf7e0cb))
+
+### Other
+
+* Remove platform attribute from ChatManager class ([`e8c3f0c`](https://github.com/mraniki/iamlistening/commit/e8c3f0c5b311681824bc90378a548993cdffbe36))
+
+### ♻️
+
+* ♻️ ([`a9c67b7`](https://github.com/mraniki/iamlistening/commit/a9c67b7d44a3cae55afcc4048c0ba71f5aa9305d))
+
+* ♻️ ([`fb4bffb`](https://github.com/mraniki/iamlistening/commit/fb4bffbe51c4363f20383e2c42f6d3259875d9f7))
+
+### 🔧
+
+* 🔧 ([`bb5bdc4`](https://github.com/mraniki/iamlistening/commit/bb5bdc48b0561a1d76f34a9fbef61b6771029b41))
+
+### 🚑
+
+* 🚑 missing chat manager config ([`2a18e40`](https://github.com/mraniki/iamlistening/commit/2a18e4031aadfb0ab3f5ff173ffb1af913723470))
+
+
 ## v4.0.0 (2023-09-21)
 
 ### :white_check_mark:
