@@ -96,7 +96,6 @@ class ChatManager:
         logger.debug("get handler {}", self.platform)
         if self.platform == "telegram":
             return TelegramHandler(
-                platform=self.platform,
                 bot_api_id=self.bot_api_id,
                 bot_api_hash=self.bot_api_hash,
                 bot_token=self.bot_token,
