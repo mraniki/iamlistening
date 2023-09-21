@@ -88,9 +88,9 @@ async def test_listener_fixture(listener):
 
 @pytest.mark.asyncio
 async def test_listener_start(listener, message):
-    handle_iteration_limit = AsyncMock()
+    # handle_iteration_limit = AsyncMock()
     check_connected = AsyncMock()
-    connected = MagicMock()
+    # connected = MagicMock()
     await listener.start()
 
     # Check if the handler has been called for each platform
@@ -105,7 +105,7 @@ async def test_listener_start(listener, message):
         assert listener.platform_info.handler is not None
         assert listener.platform_info.handler.connected is not None
         assert listener.platform_info.platform is not None
-        handle_iteration_limit.assert_awaited
+        # handle_iteration_limit.assert_awaited
         check_connected.assert_awaited
-        connected.assert_called
+        # connected.assert_called
         assert msg == message
