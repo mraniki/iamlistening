@@ -2,6 +2,88 @@
 
 
 
+## v4.0.0 (2023-09-21)
+
+### :white_check_mark:
+
+* :white_check_mark: ([`0cf3d04`](https://github.com/mraniki/iamlistening/commit/0cf3d04ad8a81b9c9f39e688f9c185b5022b41bb))
+
+* :white_check_mark: ([`12bab68`](https://github.com/mraniki/iamlistening/commit/12bab686c55d7f14b7294ff052280d6e476511db))
+
+* :white_check_mark: ([`6a61032`](https://github.com/mraniki/iamlistening/commit/6a61032dbd583ea9e61e19ba859cb57f87a3f5a2))
+
+* :white_check_mark: ([`3560dc7`](https://github.com/mraniki/iamlistening/commit/3560dc7c4301babd5da64fab56f7e58eb2d5a059))
+
+* :white_check_mark: ([`e99c083`](https://github.com/mraniki/iamlistening/commit/e99c083ef8efa28d96cc93fdabcc4db3d104545b))
+
+* :white_check_mark: ([`3119512`](https://github.com/mraniki/iamlistening/commit/311951231fecd78a97619eb422c843aedf31469e))
+
+* :white_check_mark: ([`005cea5`](https://github.com/mraniki/iamlistening/commit/005cea5553051246921f3b06a3d5fcc6fab48b7e))
+
+### Other
+
+* Merge ; commit &#39;1ee76a09eca25511448c0560339043fc8522c756&#39;
+
+Conflicts:
+	tests/test_unit.py ([`90ca566`](https://github.com/mraniki/iamlistening/commit/90ca5667f7d25e30e7975994c3d651285ea2d0d0))
+
+* Refactor test_unit.py ([`20c8b56`](https://github.com/mraniki/iamlistening/commit/20c8b56797ad13ebad7542ac7f6acb0baa636a6b))
+
+* Merge branch &#39;dev&#39; of git@github.com:mraniki/iamlistening.git ([`264d4f0`](https://github.com/mraniki/iamlistening/commit/264d4f080192a59fba2d08409638889c86c06f22))
+
+* Refactor chat_manager.py for improved connection handling ([`0232a36`](https://github.com/mraniki/iamlistening/commit/0232a3696283ee1021ba5fe75afc08796395fd8d))
+
+* Refactor ChatManager class and add logging statements. ([`27b01da`](https://github.com/mraniki/iamlistening/commit/27b01da0a755dfbc2756f297f367d98999a8c053))
+
+* Fix iteration_count assignment in ChatManager and ChatClient classes ([`331d95c`](https://github.com/mraniki/iamlistening/commit/331d95c2841cc414f14789f94402f9289bda5f4d))
+
+* Refactor iteration limit assignment in ChatManager and ChatClient ([`b6eeac6`](https://github.com/mraniki/iamlistening/commit/b6eeac67c313799835eaa0b3e6447423e0990eee))
+
+* Refactor iteration settings in ChatManager and ChatClient ([`35bdf12`](https://github.com/mraniki/iamlistening/commit/35bdf12a0b6440e595564f8a40d30d71d67e6192))
+
+* Add iteration_enabled attribute to ChatClient class ([`d629341`](https://github.com/mraniki/iamlistening/commit/d6293413028f3b0d210ea70d1a88741e170cf305))
+
+* Add iteration_enabled attribute to ChatManager ([`9a32f5b`](https://github.com/mraniki/iamlistening/commit/9a32f5b7c88722a494c36b83e858339cfba0b378))
+
+* Refactor test_unit_discord.py file ([`0eea73a`](https://github.com/mraniki/iamlistening/commit/0eea73a0e7165c8c6aa32f5912044b3df4d47e59))
+
+* Add platform field to default_settings.toml ([`e1ea018`](https://github.com/mraniki/iamlistening/commit/e1ea018f99d9d90ba1bcd0ca666e554a56ea5864))
+
+* &#39;Refactored by Sourcery&#39; ([`fb3680a`](https://github.com/mraniki/iamlistening/commit/fb3680a496379c43fb51639c0b75e738c623f48a))
+
+### ♻️
+
+* ♻️ ([`0d6d8ae`](https://github.com/mraniki/iamlistening/commit/0d6d8ae13609f42b7e674d65c6c100477437b39d))
+
+* ♻️ ([`fd81bce`](https://github.com/mraniki/iamlistening/commit/fd81bce74e02f2eda2f6dee8f5b1883f5f79ee67))
+
+* ♻️ ([`75dd607`](https://github.com/mraniki/iamlistening/commit/75dd60739b3cdfc43ea0cb4f91b5f2e240016885))
+
+### ✅
+
+* ✅ Unit Test ([`e4922ba`](https://github.com/mraniki/iamlistening/commit/e4922ba4a61e35d7819925e46eddc33768c3fa67))
+
+* ✅ Unit Test ([`4ee4015`](https://github.com/mraniki/iamlistening/commit/4ee4015c6b213d5a49aaae36e05ced1332c19b93))
+
+### 💥
+
+* 💥 breaking : multi listener platform support (#146) ([`9c4451f`](https://github.com/mraniki/iamlistening/commit/9c4451f3bb29b357524091ca3f1d545cbd976077))
+
+* 💥 breaking : multi listener platform support (Sourcery refactored) (#147) ([`1fc4529`](https://github.com/mraniki/iamlistening/commit/1fc452952b40f41e9423a52834dc3cbae423ab43))
+
+* 💥 breaking : multi listener platform support ([`d973595`](https://github.com/mraniki/iamlistening/commit/d97359539c3e997695f4f9722435b1600809375d))
+
+### 🔊
+
+* 🔊 ([`1ee76a0`](https://github.com/mraniki/iamlistening/commit/1ee76a09eca25511448c0560339043fc8522c756))
+
+### 🔧
+
+* 🔊 🔧 ([`a407a67`](https://github.com/mraniki/iamlistening/commit/a407a6762ada5fa01bf8658926f6ac4b749bda4a))
+
+* 🔧 ([`6b24b64`](https://github.com/mraniki/iamlistening/commit/6b24b64d99a8ed94b9202149d1e7ff3ef2b025e9))
+
+
 ## v3.4.6 (2023-09-19)
 
 ### Other
