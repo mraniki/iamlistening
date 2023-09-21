@@ -2,6 +2,15 @@
 
 
 
+## v4.0.2 (2023-09-21)
+
+### Fix
+
+* :ambulance: hotfix (#149) ([`e3c45f4`](https://github.com/mraniki/iamlistening/commit/e3c45f4e85968af1e90a41741652411b1d01c128))
+
+* :ambulance: hotfix ([`8e015e3`](https://github.com/mraniki/iamlistening/commit/8e015e3d41833b283a6466d8bb68187fd4a4f397))
+
+
 ## v4.0.1 (2023-09-21)
 
 ### :recycle:
