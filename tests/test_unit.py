@@ -107,6 +107,6 @@ async def test_listener_start(listener, message):
         assert platform.handler.connected is not None
         assert platform is not None
         # handle_iteration_limit.assert_awaited
-        platform.check_connected.assert_awaited
+        platform.handler.check_connected.assert_awaited
         #connected.assert_called
         assert msg == message
