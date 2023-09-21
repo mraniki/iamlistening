@@ -11,7 +11,12 @@ from .client import ChatClient
 
 
 class LemmyHandler(ChatClient):
-    def __init__(self):
+    def __init__(
+        self,
+        bot_hostname=None,
+        bot_user=None,
+        bot_pass=None,
+        bot_channel_id=None):
         """
         Initialize the Lemmy handler.
 
