@@ -86,6 +86,7 @@ async def test_listener_fixture(listener):
     assert listener.platform_info[0].bot_auth_token is not None
 
 
+
 @pytest.mark.asyncio
 async def test_listener_start(listener, message):
     # handle_iteration_limit = AsyncMock()
