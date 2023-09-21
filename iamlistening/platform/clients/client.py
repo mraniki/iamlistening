@@ -2,8 +2,6 @@ import asyncio
 
 from loguru import logger
 
-from iamlistening.config import settings
-
 
 class ChatClient:
 
@@ -20,9 +18,9 @@ class ChatClient:
         bot_user=None,
         bot_pass=None,
         bot_auth_token=None,
-        iteration_enabled = True,
-        iteration_limit = -1,
-        iteration_count =0
+        iteration_enabled=True,
+        iteration_limit=-1,
+        iteration_count=0,
     ):
         """
         Initialize the chat client.

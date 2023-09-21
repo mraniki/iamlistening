@@ -15,13 +15,12 @@ from iamlistening.config import settings
 from iamlistening.platform.chat_manager import ChatManager
 from iamlistening.platform.clients import (
     DiscordHandler,
-    GuildedHandler,
-    LemmyHandler,
-    MastodonHandler,
+    # GuildedHandler,
+    # LemmyHandler,
+    # MastodonHandler,
     MatrixHandler,
-    RevoltHandler,
+    # RevoltHandler,
     TelegramHandler,
-    TwitchHandler,
 )
 
 
