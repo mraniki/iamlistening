@@ -52,6 +52,7 @@ class ChatManager:
         """
         Initialize the chat manager.
         """
+        logger.debug("init {}", platform)
         self.platform = platform
         self.bot_token = bot_token
         self.bot_channel_id = bot_channel_id
@@ -107,6 +108,7 @@ class ChatManager:
         elif self.platform == "revolt":
             return RevoltHandler()
         else:
+            logger.error(self.platform)
             raise ValueError("Invalid platform specified")
 
     async def handle_message(self, message_content):
