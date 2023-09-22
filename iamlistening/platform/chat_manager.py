@@ -131,6 +131,7 @@ class ChatManager:
             logger.error("Invalid platform specified {}", self.platform)
             # raise ValueError("Invalid platform specified")
 
+            
     async def handle_message(self, message_content):
         """
         Handle a new message.
