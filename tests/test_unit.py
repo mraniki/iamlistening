@@ -2,21 +2,14 @@
 iamlistening Unit Testing
 """
 
-import asyncio
-from unittest.mock import AsyncMock, MagicMock
 
 import pytest
-from loguru import logger
 
-import iamlistening
 from iamlistening import Listener
 from iamlistening.clients import (
     DiscordHandler,
     GuildedHandler,
-    LemmyHandler,
-    MastodonHandler,
     MatrixHandler,
-    RevoltHandler,
     TelegramHandler,
 )
 from iamlistening.config import settings
