@@ -12,7 +12,8 @@ from loguru import logger
 import iamlistening
 from iamlistening import Listener
 from iamlistening.config import settings
-from iamlistening.platform.chat_manager import ChatManager
+
+# from iamlistening.platform.chat_manager import ChatManager
 from iamlistening.platform.clients import (
     DiscordHandler,
     GuildedHandler,
