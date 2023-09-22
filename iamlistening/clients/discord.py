@@ -1,7 +1,6 @@
 """
 Discord  🟣
 """
-import asyncio
 
 import discord
 from loguru import logger
@@ -10,7 +9,6 @@ from .client import ChatClient
 
 
 class DiscordHandler(ChatClient):
-
     async def start(self):
         """
         Start the Discord handler.

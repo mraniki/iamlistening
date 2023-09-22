@@ -2,7 +2,6 @@
 Lemmy  🐭
 
 """
-import asyncio
 
 from loguru import logger
 from pythorhead import Lemmy
@@ -11,7 +10,6 @@ from .client import ChatClient
 
 
 class LemmyHandler(ChatClient):
-
     async def start(self):
         """
         Start the Lemmy handler.

@@ -16,13 +16,14 @@ async def main():
     """Run a listener example."""
     listener = Listener()
     await listener.start()
-    for platform in listener.platform_info:
-        logger.debug("platform {}", platform)
-        while platform.handler.connected:
-            msg = await platform.handler.get_latest_message()
-            if msg:
-                logger.info(f"Frasier👂: {msg}")
-                await platform.handler.handle_iteration_limit()
+    # INFO     | iamlistening.clients.client:connected:64 - listener handler is online on telegram
+    # INFO     | iamlistening.clients.client:connected:64 - listener handler is online on discord
+    # DEBUG    | iamlistening.clients.discord:on_message:29 - new message received
+    # DEBUG    | iamlistening.clients.client:handle_message:95 - Frasier👂 on discord: test
+    # DEBUG    | iamlistening.clients.client:handle_iteration_limit:108 - iteration count: 1
+    # DEBUG    | iamlistening.clients.telegram:handle_telegram_message:36 - new message received
+    # DEBUG    | iamlistening.clients.client:handle_message:95 - Frasier👂 on telegram: test 2
+    # DEBUG    | iamlistening.clients.client:handle_iteration_limit:108 - iteration count: 1
 
 
 app = FastAPI()

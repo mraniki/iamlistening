@@ -1,7 +1,6 @@
 """
 Matrix ⚫
 """
-import asyncio
 
 import simplematrixbotlib as botlib
 from loguru import logger

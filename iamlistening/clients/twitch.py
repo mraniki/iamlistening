@@ -1,7 +1,6 @@
 """
 Twitch  🟣
 """
-import asyncio
 
 from loguru import logger
 from twitchio.ext import commands
@@ -10,8 +9,6 @@ from .client import ChatClient
 
 
 class TwitchHandler(ChatClient):
-
-
     async def start(self):
         """
         Start the Twitch handler.

@@ -8,9 +8,9 @@ import pytest
 from iamlistening import Listener
 from iamlistening.clients import (
     DiscordHandler,
+    GuildedHandler,
     MatrixHandler,
     TelegramHandler,
-    GuildedHandler
 )
 from iamlistening.config import settings
 
@@ -41,11 +41,9 @@ async def test_listener_fixture(listener):
 
 @pytest.mark.asyncio
 async def test_listener_start(listener, message):
-    #await listener.start()
-
     for client in listener.platform_info:
         assert isinstance(
-            client.handler,
+            client,
             (
                 DiscordHandler,
                 TelegramHandler,

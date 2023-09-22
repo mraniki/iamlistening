@@ -92,8 +92,8 @@ class ChatClient:
 
         if self.is_connected:
             self.latest_message = message_content
-            self.handle_iteration_limit()
-        logger.debug("Not Connected")
+            logger.debug("Frasier👂 on {}: {}", self.platform, message_content)
+            await self.handle_iteration_limit()
 
     async def handle_iteration_limit(self):
         """
@@ -105,7 +105,9 @@ class ChatClient:
         if self.iteration_count != self.iteration_limit:
             await asyncio.sleep(0.1)
             self.iteration_count += 1
+            logger.debug("iteration count: {}", self.iteration_count)
         else:
+            logger.debug("iteration limit reached for {}", self.platform)
             await self.disconnected()
 
         return
@@ -117,4 +119,5 @@ class ChatClient:
         Returns:
             None
         """
+        logger.debug("{} Disconnected", self.platform)
         self.is_connected = False
