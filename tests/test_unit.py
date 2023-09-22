@@ -4,7 +4,7 @@ iamlistening Unit Testing
 
 
 import pytest
-
+import asyncio
 from iamlistening import Listener
 from iamlistening.clients import (
     DiscordHandler,
@@ -43,6 +43,7 @@ async def test_listener_fixture(listener):
 async def test_listener_start(listener, message):
     loop = asyncio.get_running_loop()
     loop.create_task(listener.start())
+    iteration = 0
     for client in listener.platform_info:
         assert isinstance(
             client,
