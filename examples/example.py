@@ -21,13 +21,13 @@ async def main():
 
     listener = Listener()
     await listener.start()
-    for platform in listener.platform_info:
-        if platform:
-            while platform.handler.connected:
-                msg = await platform.handler.get_latest_message()
-                if msg:
-                    logger.info(f"Frasier👂: {msg}")
-                    await platform.handler.handle_iteration_limit()
+    # for platform in listener.platform_info:
+    #     logger.debug("platform {}", platform)
+    #     while platform.handler.connected:
+    #         msg = await platform.handler.get_latest_message()
+    #         if msg:
+    #             logger.info(f"Frasier👂: {msg}")
+    #             await platform.handler.handle_iteration_limit()
 
 
 app = FastAPI()

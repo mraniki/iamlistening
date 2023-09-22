@@ -11,12 +11,6 @@
 
 # class RocketChatHandler(ChatClient):
 
-#     def __init__(self):
-#         """
-#         Initialize the RocketChat handler.
-#         """
-#         super().__init__()
-
 
 #     async def start(self):
 #         """

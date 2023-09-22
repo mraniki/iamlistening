@@ -44,7 +44,13 @@ class ChatClient:
 
     async def start(self):
         """
-        Start the chat manager.
+        Start the chat client.
+        Specific to the client platform
+        """
+
+    async def stop(self):
+        """
+        Stop the chat client.
         Specific to the client platform
         """
 

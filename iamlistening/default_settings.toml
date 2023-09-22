@@ -56,9 +56,9 @@ bot_auth_token = ""
 # iteration_limit is the number 
 # of iterations
 # the bot will run for.
-# iteration_enabled = false
-# iteration_limit = -1
-# iteration_count = 0
+iteration_enabled = false
+iteration_limit = -1
+iteration_count = 0
 
 ########################################
 ###     END OF DEFAULT SETTINGS      ###
