@@ -11,7 +11,7 @@ from loguru import logger
 from iamlistening import Listener
 
 logger.remove()
-logger.add(sys.stderr, level="DEBUG") 
+logger.add(sys.stderr, level="DEBUG")
 
 
 async def main():
@@ -21,11 +21,13 @@ async def main():
 
     listener = Listener()
     await listener.start()
-    while listener.handler.connected:
-        msg = await listener.handler.get_latest_message()
-        if msg:
-            logger.info(f"Frasier👂: {msg}")
-            await listener.handler.handle_iteration_limit()
+    for platform in listener.platform_info:
+        if platform:
+            while platform.handler.connected:
+                msg = await platform.handler.get_latest_message()
+                if msg:
+                    logger.info(f"Frasier👂: {msg}")
+                    await platform.handler.handle_iteration_limit()
 
 
 app = FastAPI()
