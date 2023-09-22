@@ -95,10 +95,10 @@ async def test_listener_start(listener, message):
     await listener.start()
 
     # Check if the handler has been called for each platform
-    for platform in listener.platform_info:
+    for client in listener.platform_info:
         # assert platform_info.handler.handle_message.called
         assert isinstance(
-            platform.handler,
+            client.handler,
             (
                 DiscordHandler,
                 TelegramHandler,
@@ -107,11 +107,10 @@ async def test_listener_start(listener, message):
             ),
         )
 
-        await platform.handler.handle_message(message)
-        msg = await platform.handler.get_latest_message()
-        assert platform.handler is not None
-        assert platform.handler.is_connected is not None
-        assert platform is not None
+        await client.handle_message(message)
+        msg = await client.get_latest_message()
+        assert client.is_connected is not None
+        assert client is not None
         # handle_iteration_limit.assert_awaited
         # platform.handler.connected.assert_awaited
         # connected.assert_called
