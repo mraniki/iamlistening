@@ -10,16 +10,16 @@ from loguru import logger
 
 import iamlistening
 from iamlistening import Listener
-from iamlistening.config import settings
-from iamlistening.platform.clients import (
+from iamlistening.clients import (
     DiscordHandler,
     GuildedHandler,
-    # LemmyHandler,
-    # MastodonHandler,
+    LemmyHandler,
+    MastodonHandler,
     MatrixHandler,
-    # RevoltHandler,
+    RevoltHandler,
     TelegramHandler,
 )
+from iamlistening.config import settings
 
 
 @pytest.fixture(scope="session", autouse=True)

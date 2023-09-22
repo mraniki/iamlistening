@@ -13,7 +13,7 @@ from iamlistening.clients import (
     LemmyHandler,
     MastodonHandler,
     MatrixHandler,
-    # RevoltHandler,
+    RevoltHandler,
     TelegramHandler,
     TwitchHandler,
 )
@@ -114,8 +114,8 @@ class Listener:
             return LemmyHandler(**kwargs)
         elif platform == "twitch":
             return TwitchHandler(**kwargs)
-        # elif platform == "revolt":
-        #     return RevoltHandler(**kwargs)
+        elif platform == "revolt":
+            return RevoltHandler(**kwargs)
         else:
             logger.error("Invalid platform specified {}", platform)
             # raise ValueError("Invalid platform specified")

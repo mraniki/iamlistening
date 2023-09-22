@@ -10,7 +10,6 @@ from .guilded import GuildedHandler
 from .lemmy import LemmyHandler
 from .mastodon import MastodonHandler
 from .matrix import MatrixHandler
-
-# from .revolt import RevoltHandler
+from .revolt import RevoltHandler
 from .telegram import TelegramHandler
 from .twitch import TwitchHandler
