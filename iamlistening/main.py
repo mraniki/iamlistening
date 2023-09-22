@@ -32,11 +32,12 @@ class Listener:
         for platform in platforms:
             platform_config = platforms[platform]
             client = ChatManager(**platform_config)
+            logger.debug("client {}", client)
             self.platform_info.append(client)
 
             if client.platform == "":
                 logger.warning("Platform missing {}", platform)
-                # raise Exception("Platform missing")
+
         logger.debug("init completed {}", self.platform_info)
 
     async def start(self):
@@ -48,7 +49,7 @@ class Listener:
 
         """
         logger.debug("Listener starting")
-
+        logger.debug("Platform info {}", self.platform_info)
         tasks = [platform.start() for platform in self.platform_info]
         await asyncio.gather(*tasks)
 

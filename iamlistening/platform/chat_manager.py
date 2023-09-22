@@ -9,7 +9,7 @@ from iamlistening.platform.clients import (
     LemmyHandler,
     MastodonHandler,
     MatrixHandler,
-    RevoltHandler,
+    # RevoltHandler,
     TelegramHandler,
     TwitchHandler,
 )
@@ -95,6 +95,8 @@ class ChatManager:
         """
         logger.debug("get handler {}", self.platform)
         if self.platform == "telegram":
+            logger.debug("get telegram handler")
+            logger.debug("get telegram handler {}", self.bot_token)
             return TelegramHandler(
                 bot_api_id=self.bot_api_id,
                 bot_api_hash=self.bot_api_hash,
@@ -123,8 +125,8 @@ class ChatManager:
             )
         elif self.platform == "twitch":
             return TwitchHandler(bot_token=self.bot_token)
-        elif self.platform == "revolt":
-            return RevoltHandler(bot_token=self.bot_token)
+        # elif self.platform == "revolt":
+        #     return RevoltHandler(bot_token=self.bot_token)
         else:
             logger.error("Invalid platform specified {}", self.platform)
             # raise ValueError("Invalid platform specified")

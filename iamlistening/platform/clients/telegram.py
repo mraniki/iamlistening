@@ -18,7 +18,8 @@ class TelegramHandler(ChatClient):
         self,
         bot_token=None,
         bot_api_id=None,
-        bot_api_hash=None,):
+        bot_api_hash=None,
+    ):
         """
         Initialize the Telegram handler.
 
@@ -35,6 +36,9 @@ class TelegramHandler(ChatClient):
         """
 
         logger.debug("Telegram start")
+        logger.debug(
+            "Api id: {}, Api hash: {}".format(self.bot_api_id, self.bot_api_hash)
+        )
         self.bot = await TelegramClient(
             session=None, api_id=self.bot_api_id, api_hash=self.bot_api_hash
         ).start(bot_token=self.bot_token)
