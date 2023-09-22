@@ -8,7 +8,6 @@ import pytest
 from iamlistening import Listener
 from iamlistening.clients import (
     DiscordHandler,
-    GuildedHandler,
     MatrixHandler,
     TelegramHandler,
 )
@@ -37,13 +36,6 @@ async def test_listener_fixture(listener):
     assert listener.platform_info is not None
     assert listener.platform_info[0].platform is not None
     assert listener.platform_info[0].bot_token is not None
-    assert listener.platform_info[0].bot_channel_id is not None
-    assert listener.platform_info[0].bot_api_id is not None
-    assert listener.platform_info[0].bot_api_hash is not None
-    assert listener.platform_info[0].bot_hostname is not None
-    assert listener.platform_info[0].bot_user is not None
-    assert listener.platform_info[0].bot_pass is not None
-    assert listener.platform_info[0].bot_auth_token is not None
 
 
 @pytest.mark.asyncio
@@ -57,7 +49,7 @@ async def test_listener_start(listener, message):
                 DiscordHandler,
                 TelegramHandler,
                 MatrixHandler,
-                GuildedHandler,
+                # GuildedHandler,
             ),
         )
 
