@@ -1,7 +1,6 @@
 """
 Matrix ⚫
 """
-import asyncio
 
 import simplematrixbotlib as botlib
 from loguru import logger
@@ -10,16 +9,6 @@ from .client import ChatClient
 
 
 class MatrixHandler(ChatClient):
-    def __init__(
-        self,
-        bot_hostname=None,
-        bot_user=None,
-        bot_pass=None):
-        """
-        Initialize the Matrix handler.
-        """
-        super().__init__()
-
     async def start(self):
         """
         Start the Matrix handler.

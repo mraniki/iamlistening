@@ -2,7 +2,6 @@
 Lemmy  🐭
 
 """
-import asyncio
 
 from loguru import logger
 from pythorhead import Lemmy
@@ -11,18 +10,11 @@ from .client import ChatClient
 
 
 class LemmyHandler(ChatClient):
-    def __init__(
-        self,
-        bot_hostname=None,
-        bot_user=None,
-        bot_pass=None,
-        bot_channel_id=None):
+    async def start(self):
         """
-        Initialize the Lemmy handler.
-
+        Start the Lemmy handler.
 
         """
-        super().__init__()
         logger.info("Lemmy setup")
         self.bot = Lemmy(self.bot_hostname)
         self.bot.log_in(
@@ -32,13 +24,6 @@ class LemmyHandler(ChatClient):
 
         if self.bot:
             self.connected()
-
-    async def start(self):
-        """
-        Start the Lemmy handler.
-
-        """
-
         # getting the first post id
         latest_post = self.bot.post.list(community_name=self.bot_channel_id)[0]["post"][
             "body"

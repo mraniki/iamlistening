@@ -14,21 +14,6 @@ class TelegramHandler(ChatClient):
 
     """
 
-    def __init__(
-        self,
-        bot_token=None,
-        bot_api_id=None,
-        bot_api_hash=None,
-    ):
-        """
-        Initialize the Telegram handler.
-
-        :param arg: No arguments
-        :return: Initialize the Telegram handler
-        """
-        super().__init__()
-        logger.debug("Telegram setup")
-
     async def start(self):
         """
         Start the Telegram handler

@@ -29,10 +29,6 @@
 <code>
     listener = Listener()
     await listener.start()
-    while listener.handler.connected:
-        msg = await listener.handler.get_latest_message()
-        if msg:
-            logger.info(f"Frasier👂: {msg}")
 
 </code>
 </pre>

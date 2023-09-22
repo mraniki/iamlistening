@@ -10,21 +10,15 @@
 
 
 # class RevoltHandler(ChatClient):
-#     def __init__(self, bot_token=None):
-#         """
-#         Initialize the Revolt handler.
-#         """
-#         super().__init__()
-#         session = aiohttp.ClientSession()
-#         self.bot = revolt.Client(session, self.bot_token)
-#         self.connected()
 
 #     async def start(self):
 #         """
 #         Start the Revolt handler.
 #         """
 #         logger.debug("Revolt setup")
-
+#         session = aiohttp.ClientSession()
+#         self.bot = revolt.Client(session, self.bot_token)
+#         self.connected()
 #         await self.bot.start()
 
 #         @self.bot.event

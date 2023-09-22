@@ -24,16 +24,18 @@ iamlistening_enabled = true
 # for the chat platform. Value can be
 # telegram, discord, matrix, etc.
 
-[default.platform.main]
-platform = ""
-bot_token = ""
-bot_channel_id = ""
-bot_api_id = ""
-bot_api_hash = ""
-bot_hostname = ""
-bot_user = ""
-bot_pass = ""
-bot_auth_token = ""
+# [default.platform.main]
+# platform = ""
+# bot_token = ""
+# bot_channel_id = ""
+# bot_api_id = ""
+# bot_api_hash = ""
+# bot_hostname = ""
+# bot_user = ""
+# bot_pass = ""
+# bot_auth_token = ""
+# iteration_enabled = false
+# iteration_limit = -1
 
 # [default.platform.backup]
 # platform = ""
@@ -45,6 +47,8 @@ bot_auth_token = ""
 # bot_user = ""
 # bot_pass = ""
 # bot_auth_token = ""
+# iteration_enabled = false
+# iteration_limit = -1
 
 # Iteration settings used for testing
 # if you need the bot to run 
@@ -55,10 +59,10 @@ bot_auth_token = ""
 # set iteration_enabled to true
 # iteration_limit is the number 
 # of iterations
-# the bot will run for.
-# iteration_enabled = false
-# iteration_limit = -1
-# iteration_count = 0
+# the bot will run for 
+# iteration_enabled = true
+# iteration_limit = 1
+
 
 ########################################
 ###     END OF DEFAULT SETTINGS      ###

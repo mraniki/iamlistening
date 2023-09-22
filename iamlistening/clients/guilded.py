@@ -1,23 +1,14 @@
 """
 Guilded  🟡
 """
-import asyncio
 
 import guilded
 from loguru import logger
-
-from iamlistening.config import settings
 
 from .client import ChatClient
 
 
 class GuildedHandler(ChatClient):
-    def __init__(self,bot_token=None):
-        """
-        Initialize the Guilded handler.
-        """
-        super().__init__()
-
     async def start(self):
         """
         Start the Guilded handler.
