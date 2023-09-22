@@ -90,7 +90,10 @@ class ChatClient:
             message_content (str): The content of the message.
         """
 
-        self.latest_message = message_content
+        if self.is_connected:
+            self.latest_message = message_content
+            self.handle_iteration_limit()
+        logger.debug("Not Connected")
 
     async def handle_iteration_limit(self):
         """
