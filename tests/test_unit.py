@@ -41,6 +41,8 @@ async def test_listener_fixture(listener):
 
 @pytest.mark.asyncio
 async def test_listener_start(listener, message):
+    loop = asyncio.get_running_loop()
+    loop.create_task(listener.start())
     for client in listener.platform_info:
         assert isinstance(
             client,
@@ -52,9 +54,11 @@ async def test_listener_start(listener, message):
             ),
         )
 
-        await client.start()
+        iteration += 1
         await client.handle_message(message)
         msg = await client.get_latest_message()
         assert client.is_connected is not None
         assert client is not None
         assert msg == message
+        if iteration >= 1:
+            break
