@@ -10,6 +10,7 @@ from iamlistening.clients import (
     DiscordHandler,
     MatrixHandler,
     TelegramHandler,
+    GuildedHandler
 )
 from iamlistening.config import settings
 
@@ -40,7 +41,7 @@ async def test_listener_fixture(listener):
 
 @pytest.mark.asyncio
 async def test_listener_start(listener, message):
-    await listener.start()
+    #await listener.start()
 
     for client in listener.platform_info:
         assert isinstance(
@@ -49,10 +50,11 @@ async def test_listener_start(listener, message):
                 DiscordHandler,
                 TelegramHandler,
                 MatrixHandler,
-                # GuildedHandler,
+                GuildedHandler,
             ),
         )
 
+        await client.start()
         await client.handle_message(message)
         msg = await client.get_latest_message()
         assert client.is_connected is not None
