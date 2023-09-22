@@ -55,7 +55,6 @@ class Listener:
             )
             logger.debug("client {} created", client)
             self.platform_info.append(client)
-
         logger.debug("init completed {}", self.platform_info)
 
     async def start(self):
@@ -70,8 +69,6 @@ class Listener:
         logger.debug("Platform info {}", self.platform_info)
         tasks = [client.start() for client in self.platform_info]
         await asyncio.gather(*tasks)
-
-        logger.debug("Listener started")
 
     def stop(self):
         """

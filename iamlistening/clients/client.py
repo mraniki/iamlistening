@@ -61,7 +61,7 @@ class ChatClient:
         Returns:
             None
         """
-        logger.info("listener handler is online on {}", self.platform)
+        logger.info("client is online on {}", self.platform)
         self.is_connected = True
 
     async def get_latest_message(self):
@@ -77,6 +77,7 @@ class ChatClient:
         async with self.lock:
             if self.latest_message:
                 msg = self.latest_message
+                logger.debug("Latest message {}: {}", self.platform, msg)
                 self.latest_message = None
                 return msg
 
