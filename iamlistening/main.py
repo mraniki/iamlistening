@@ -6,7 +6,6 @@ import asyncio
 
 from loguru import logger
 
-from iamlistening import __version__
 from iamlistening.clients import (
     DiscordHandler,
     GuildedHandler,
@@ -54,7 +53,6 @@ class Listener:
                 bot_auth_token=platforms[client]["bot_auth_token"] or None,
                 iteration_enabled=platforms[client]["iteration_enabled"] or True,
                 iteration_limit=platforms[client]["iteration_limit"] or -1,
-                iteration_count=platforms[client]["iteration_count"] or 0,
             )
             logger.debug("client {} created", client)
             self.platform_info.append(client)
