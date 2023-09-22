@@ -45,13 +45,13 @@ ruff = "*"
 
 
 [tool.ruff]
-select = ["ALL"]
-# select = [
-#   "E",  # pycodestyle
-#   "F",  # pyflakes
-#   "I",  # isort
-#   "W"
-# ]
+# select = ["ALL"]
+select = [
+  "E",  # pycodestyle
+  "F",  # pyflakes
+  "I",  # isort
+  "W"
+]
 exclude = [
   ".github/*",
 ]

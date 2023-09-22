@@ -1,6 +1,4 @@
-"""
-Provides example for iamlistening package
-"""
+"""Provides example for iamlistening package."""
 import asyncio
 import sys
 
@@ -15,19 +13,16 @@ logger.add(sys.stderr, level="DEBUG")
 
 
 async def main():
-    """
-    Run a listener example
-    """
-
+    """Run a listener example."""
     listener = Listener()
     await listener.start()
-    # for platform in listener.platform_info:
-    #     logger.debug("platform {}", platform)
-    #     while platform.handler.connected:
-    #         msg = await platform.handler.get_latest_message()
-    #         if msg:
-    #             logger.info(f"Frasier👂: {msg}")
-    #             await platform.handler.handle_iteration_limit()
+    for platform in listener.platform_info:
+        logger.debug("platform {}", platform)
+        while platform.handler.connected:
+            msg = await platform.handler.get_latest_message()
+            if msg:
+                logger.info(f"Frasier👂: {msg}")
+                await platform.handler.handle_iteration_limit()
 
 
 app = FastAPI()
@@ -35,19 +30,19 @@ app = FastAPI()
 
 @app.on_event("startup")
 async def start():
-    """startup"""
+    """Startup."""
     asyncio.create_task(main())
 
 
 @app.get("/")
 def read_root():
-    """root"""
+    """Root."""
     return {"online"}
 
 
 @app.get("/health")
 def health_check():
-    """healthcheck"""
+    """Healthcheck."""
     return {"online"}
 
 
