@@ -37,24 +37,24 @@ class Listener:
         logger.debug("platforms {}", platforms)
         for client in platforms:
             logger.debug("platform {}", client)
-            if platforms[client]["platform"] == "":
-                logger.warning("Platform missing")
-                continue
-            client = self._create_client(
-                platform=platforms[client]["platform"],
-                bot_token=platforms[client]["bot_token"] or None,
-                bot_channel_id=platforms[client]["bot_channel_id"] or None,
-                bot_api_id=platforms[client]["bot_api_id"] or None,
-                bot_api_hash=platforms[client]["bot_api_hash"] or None,
-                bot_hostname=platforms[client]["bot_hostname"] or None,
-                bot_user=platforms[client]["bot_user"] or None,
-                bot_pass=platforms[client]["bot_pass"] or None,
-                bot_auth_token=platforms[client]["bot_auth_token"] or None,
-                iteration_enabled=platforms[client]["iteration_enabled"] or True,
-                iteration_limit=platforms[client]["iteration_limit"] or -1,
-            )
-            logger.debug("client {} created", client)
-            self.platform_info.append(client)
+            if platforms[client]["platform"] != "":
+                # logger.warning("Platform missing")
+                # continue
+                client = self._create_client(
+                    platform=platforms[client]["platform"],
+                    bot_token=platforms[client]["bot_token"] or None,
+                    bot_channel_id=platforms[client]["bot_channel_id"] or None,
+                    bot_api_id=platforms[client]["bot_api_id"] or None,
+                    bot_api_hash=platforms[client]["bot_api_hash"] or None,
+                    bot_hostname=platforms[client]["bot_hostname"] or None,
+                    bot_user=platforms[client]["bot_user"] or None,
+                    bot_pass=platforms[client]["bot_pass"] or None,
+                    bot_auth_token=platforms[client]["bot_auth_token"] or None,
+                    iteration_enabled=platforms[client]["iteration_enabled"] or True,
+                    iteration_limit=platforms[client]["iteration_limit"] or -1,
+                )
+                logger.debug("client {} created", client)
+                self.platform_info.append(client)
         logger.debug("init completed {}", self.platform_info)
 
     async def start(self):
