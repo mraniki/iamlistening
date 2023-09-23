@@ -2,6 +2,19 @@
 
 
 
+## v4.1.1 (2023-09-23)
+
+### Update
+
+* Update default_settings.toml file (#153) ([`585a3bf`](https://github.com/mraniki/iamlistening/commit/585a3bfbaf17807c4864793fdd6088db15d7d823))
+
+* Update default_settings.toml file ([`d861b0b`](https://github.com/mraniki/iamlistening/commit/d861b0bb098df98661313bab3b2f4cc0fc0e249a))
+
+### 🔧
+
+* 🔧 ([`71eed2f`](https://github.com/mraniki/iamlistening/commit/71eed2f3f9b8da62291a43e3a363fc78f1c1bec4))
+
+
 ## v4.1.0 (2023-09-22)
 
 ### :recycle:
