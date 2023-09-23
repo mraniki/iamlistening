@@ -2,6 +2,13 @@
 
 
 
+## v4.1.2 (2023-09-23)
+
+### Update
+
+* Update default_settings.toml ([`079c79b`](https://github.com/mraniki/iamlistening/commit/079c79b8d3b32039fde241d101f770e43f36c3e4))
+
+
 ## v4.1.1 (2023-09-23)
 
 ### Update
