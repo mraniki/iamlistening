@@ -21,7 +21,7 @@ class TelegramHandler(ChatClient):
         """
 
         logger.debug("Telegram start")
-        logger.debug(f"Api id: {self.bot_api_id}, Api hash: {self.bot_api_hash}")
+        # logger.debug(f"Api id: {self.bot_api_id}, Api hash: {self.bot_api_hash}")
         self.bot = await TelegramClient(
             session=None, api_id=self.bot_api_id, api_hash=self.bot_api_hash
         ).start(bot_token=self.bot_token)
@@ -33,5 +33,5 @@ class TelegramHandler(ChatClient):
         """
         Handle new messages
         """
-        logger.debug("new message received")
+        logger.debug("Telegram - new message received")
         await self.handle_message(event.message.message)
