@@ -20,7 +20,7 @@ __all__ = [
     "LemmyHandler",
     "MastodonHandler",
     "MatrixHandler",
-    "RevoltHandler"
+    "RevoltHandler",
     "TelegramHandler",
     "TwitchHandler",
 ]
