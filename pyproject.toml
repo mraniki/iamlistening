@@ -36,7 +36,7 @@ rocketchat-API= "1.30.0"
 beautifulsoup4 = "4.12.2"
 "guilded.py" = "1.10.0"
 "revolt.py" = "0.1.11"
-pythorhead = {version ="4.1.6", python = ">=3.10,<3.12"}
+pythorhead = {version ="0.15.6", python = ">=3.10,<3.12"}
 twitchio = "2.8.1"
 
 [tool.poetry.group.dev.dependencies]
@@ -110,9 +110,13 @@ exclude_dirs = ["tests"]
 
 [tool.semantic_release]
 upload_to_vcs_release = true
-version_variables = ["pyproject.toml:version","iamlistening/__init__.py:__version__"]
+version_variables = ["iamlistening/__init__.py:__version__"]
 build_command = "pip install poetry && poetry build"
 commit_parser = "emoji"
+version_toml = [
+   "pyproject.toml:tool.poetry.version",
+   ]
+
 
 [tool.semantic_release.commit_parser_options]
 major_tags = [
