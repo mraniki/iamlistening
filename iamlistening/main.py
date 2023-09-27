@@ -34,12 +34,8 @@ class Listener:
         """
         self.platform_info = []
         platforms = settings.platform
-        logger.debug("platforms {}", platforms)
         for client in platforms:
-            logger.debug("platform {}", client)
             if platforms[client]["platform"] != "":
-                # logger.warning("Platform missing")
-                # continue
                 client = self._create_client(
                     platform=platforms[client]["platform"],
                     bot_token=platforms[client]["bot_token"] or None,
@@ -53,9 +49,8 @@ class Listener:
                     iteration_enabled=platforms[client]["iteration_enabled"] or True,
                     iteration_limit=platforms[client]["iteration_limit"] or -1,
                 )
-                logger.debug("client {} created", client)
                 self.platform_info.append(client)
-        logger.debug("init completed {}", self.platform_info)
+
 
     async def start(self):
         """
@@ -66,7 +61,6 @@ class Listener:
 
         """
         logger.debug("Listener starting")
-        logger.debug("Platform info {}", self.platform_info)
         tasks = [client.start() for client in self.platform_info]
         await asyncio.gather(*tasks)
 
@@ -77,12 +71,8 @@ class Listener:
         This method stops the chat managers for each platform.
 
         """
-        logger.debug("Listener stopping")
-
         for client in self.platform_info:
             client.stop()
-
-        logger.debug("Listener stopped")
 
     def _create_client(self, **kwargs):
         """
