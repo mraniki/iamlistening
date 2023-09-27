@@ -2,6 +2,21 @@
 
 
 
+## v4.1.7 (2023-09-27)
+
+### ♻️
+
+* ♻️ ([`134bbc0`](https://github.com/mraniki/iamlistening/commit/134bbc0737b4094e4178b2b825a4557a48c893e0))
+
+* ♻️ ([`cefe45a`](https://github.com/mraniki/iamlistening/commit/cefe45a1dd410c991d96348765b509d8402a9a9a))
+
+### 👷
+
+* 👷 CI Change (#162) ([`1556916`](https://github.com/mraniki/iamlistening/commit/15569163506b14712ae5b8a42501b081036e11b8))
+
+* 👷 CI Change ([`c1a7f02`](https://github.com/mraniki/iamlistening/commit/c1a7f0285f0ca8b51e5c64ae183b36e81b2dc300))
+
+
 ## v4.1.6 (2023-09-27)
 
 ### :rotating_light:
