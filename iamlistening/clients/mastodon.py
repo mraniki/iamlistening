@@ -32,7 +32,6 @@ class MastodonHandler(ChatClient):
 
     async def broadcast_message(self, status):
         content = self.remove_html_tags(status)
-        logger.debug("new message received")
         await self.handle_message(content)
 
     def remove_html_tags(self, text):

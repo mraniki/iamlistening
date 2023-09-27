@@ -22,7 +22,6 @@ class GuildedHandler(ChatClient):
 
         @self.bot.event
         async def on_message(message):
-            logger.debug("new message received")
             await self.handle_message(message.content)
 
         self.bot.run(self.bot_token)
