@@ -3,14 +3,19 @@ iamlistening Unit Testing
 """
 
 
-import pytest
 import asyncio
+
+import pytest
+
 from iamlistening import Listener
 from iamlistening.clients import (
     DiscordHandler,
     GuildedHandler,
+    LemmyHandler,
+    MastodonHandler,
     MatrixHandler,
     TelegramHandler,
+    TwitchHandler,
 )
 from iamlistening.config import settings
 
@@ -52,12 +57,24 @@ async def test_listener_start(listener, message):
                 TelegramHandler,
                 MatrixHandler,
                 GuildedHandler,
+                MastodonHandler,
+                LemmyHandler,
+                TwitchHandler,
             ),
         )
 
         iteration += 1
         await client.handle_message(message)
         msg = await client.get_latest_message()
+        assert callable(listener.start)
+        assert callable(listener.stop)
+        assert callable(listener.connected)
+        assert callable(listener.get_latest_message)
+        assert callable(listener.handle_message)
+        assert callable(listener.handle_iteration_limit)
+        assert callable(listener.disconnected)
+
+
         assert client.is_connected is not None
         assert client is not None
         assert msg == message
