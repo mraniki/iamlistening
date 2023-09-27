@@ -11,20 +11,14 @@ from .client import ChatClient
 
 
 class MastodonHandler(ChatClient):
-    def __init__(self, bot_hostname=None, bot_auth_token=None):
-        """
-        Initialize the Mastodon handler.
-        """
-        super().__init__()
-        logger.debug("Mastodon setup")
-        self.bot = Mastodon(
-            api_base_url=self.bot_hostname, access_token=self.bot_auth_token
-        )
-
     async def start(self):
         """
         Start the Mastodon handler.
         """
+        logger.debug("Mastodon setup")
+        self.bot = Mastodon(
+            api_base_url=self.bot_hostname, access_token=self.bot_auth_token
+        )
         self.connected()
         self.streamer = self.bot.stream_public(
             MastoListener(self.broadcast_message), run_async=True
