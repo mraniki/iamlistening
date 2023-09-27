@@ -2,15 +2,20 @@
 iamlistening Unit Testing
 """
 
+import asyncio
+from unittest.mock import AsyncMock, MagicMock
 
 import pytest
-import asyncio
+
 from iamlistening import Listener
 from iamlistening.clients import (
     DiscordHandler,
     GuildedHandler,
+    LemmyHandler,
+    MastodonHandler,
     MatrixHandler,
     TelegramHandler,
+    TwitchHandler,
 )
 from iamlistening.config import settings
 
@@ -45,6 +50,7 @@ async def test_listener_start(listener, message):
     loop.create_task(listener.start())
     iteration = 0
     for client in listener.platform_info:
+        client.connected = MagicMock()
         assert isinstance(
             client,
             (
@@ -52,14 +58,33 @@ async def test_listener_start(listener, message):
                 TelegramHandler,
                 MatrixHandler,
                 GuildedHandler,
+                MastodonHandler,
+                LemmyHandler,
+                TwitchHandler,
             ),
         )
 
         iteration += 1
         await client.handle_message(message)
         msg = await client.get_latest_message()
+        assert callable(client.start)
+        assert callable(client.stop)
+        assert callable(client.connected)
+        assert callable(client.get_latest_message)
+        assert callable(client.handle_message)
+        assert callable(client.handle_iteration_limit)
+        assert callable(client.disconnected)
+        assert client.connected.called_once
         assert client.is_connected is not None
         assert client is not None
         assert msg == message
         if iteration >= 1:
             break
+
+        if isinstance(client, TelegramHandler):
+            handle_message = AsyncMock()
+            assert callable(client.connected)
+            assert callable(client.bot.add_event_handler)
+            assert callable(client.handle_message)
+            assert client.connected.called_once
+            handle_message.assert_awaited_once()
