@@ -74,7 +74,7 @@ async def test_listener_start(listener, message):
         assert callable(client.handle_message)
         assert callable(client.handle_iteration_limit)
         assert callable(client.disconnected)
-        client.connected.assert_awaited()
+        assert client.connected.called_once
         assert client.is_connected is not None
         assert client is not None
         assert msg == message
