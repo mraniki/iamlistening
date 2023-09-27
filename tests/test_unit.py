@@ -2,8 +2,8 @@
 iamlistening Unit Testing
 """
 
-
 import asyncio
+from unittest.mock import MagicMock
 
 import pytest
 
@@ -50,6 +50,7 @@ async def test_listener_start(listener, message):
     loop.create_task(listener.start())
     iteration = 0
     for client in listener.platform_info:
+        client.connected = MagicMock()
         assert isinstance(
             client,
             (
@@ -73,7 +74,7 @@ async def test_listener_start(listener, message):
         assert callable(client.handle_message)
         assert callable(client.handle_iteration_limit)
         assert callable(client.disconnected)
-
+        client.connected.assert_awaited()
         assert client.is_connected is not None
         assert client is not None
         assert msg == message
