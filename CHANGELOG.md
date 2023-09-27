@@ -2,6 +2,67 @@
 
 
 
+## v4.1.5 (2023-09-27)
+
+### :recycle:
+
+* :recycle:revolt ([`a0f6c36`](https://github.com/mraniki/iamlistening/commit/a0f6c361635992b7a354803441040ccd596d58f8))
+
+### ♻️
+
+* ♻️ Revolt ([`bed31b4`](https://github.com/mraniki/iamlistening/commit/bed31b4b9c16739d80f6047bc8a4250448777cd7))
+
+* ♻️ ([`d6319aa`](https://github.com/mraniki/iamlistening/commit/d6319aa5e63cb0b4331416d7eccc490ab6666555))
+
+### ✅
+
+* ✅ Unit Test Coverage (#156) ([`355e7c5`](https://github.com/mraniki/iamlistening/commit/355e7c5a3941301355750a4a9c654dd84b00bd0f))
+
+* ✅ Unit Test ([`ad12eef`](https://github.com/mraniki/iamlistening/commit/ad12eef5645f6669e12515771d221c6f92f8d74f))
+
+* ✅ Unit Test ([`f3a0c2d`](https://github.com/mraniki/iamlistening/commit/f3a0c2da16c832b9cdb2ffa5f4932bab601a7db6))
+
+* ✅ Unit Test ([`19c935d`](https://github.com/mraniki/iamlistening/commit/19c935dbced0c72ef94a10212fa2618699ddea06))
+
+* ✅ Unit Test ([`b9aed35`](https://github.com/mraniki/iamlistening/commit/b9aed35169ecb095822d52de886589ffdbe36445))
+
+* ✅ Unit Test Coverage ([`95059c6`](https://github.com/mraniki/iamlistening/commit/95059c6ff9c29215ce87ad092cafeac002540304))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency twitchio to v2.8.1 (#160) ([`ba360fc`](https://github.com/mraniki/iamlistening/commit/ba360fc290b24bf6d0fca39fc482b4644c5d016e))
+
+* ⬆️ 🛠️(deps): update dependency twitchio to v2.8.1 ([`7004c24`](https://github.com/mraniki/iamlistening/commit/7004c2442149d4292cc8269acb9d1d7e53814476))
+
+* ⬆️ 🛠️(deps): update dependency telethon to v1.30.3 (#159) ([`21d53b2`](https://github.com/mraniki/iamlistening/commit/21d53b2fa0ceda17ad03911343e6fae70549daa1))
+
+* ⬆️ 🛠️(deps): update dependency telethon to v1.30.3 ([`aa863e6`](https://github.com/mraniki/iamlistening/commit/aa863e683cde14f404378ee9bfa2422ce4935bc3))
+
+* ⬆️ ([`48fc22b`](https://github.com/mraniki/iamlistening/commit/48fc22b0124cda6b67b52aad29b1466d0c142eeb))
+
+### 🐛
+
+* 🐛 Mastodon ([`d97f2ce`](https://github.com/mraniki/iamlistening/commit/d97f2ceeda92d05bd7cbeac88df4af29a60ce835))
+
+### 💬
+
+* 💬 added codacy badge ([`0cfa02b`](https://github.com/mraniki/iamlistening/commit/0cfa02b4018be41c18cdf52897f6506b98ad0990))
+
+### 🔇
+
+* 🔇 ([`5f18049`](https://github.com/mraniki/iamlistening/commit/5f18049f833b46b527d442413391729a080223f0))
+
+### 🔊
+
+* 🔊 ([`9c0e3e7`](https://github.com/mraniki/iamlistening/commit/9c0e3e7f1ad0dc9b62967c8ef06fdb263b60659b))
+
+* 🔊 ([`19fb360`](https://github.com/mraniki/iamlistening/commit/19fb3604874c477cc02e86f967cb7118da9b96e3))
+
+### 🚨
+
+* 🚨 ([`fe7ed24`](https://github.com/mraniki/iamlistening/commit/fe7ed24a56d752503851d9791cdcdd62fda31ee4))
+
+
 ## v4.1.4 (2023-09-23)
 
 ### 🥅
