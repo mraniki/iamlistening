@@ -3,7 +3,7 @@ iamlistening Unit Testing
 """
 
 import asyncio
-from unittest.mock import MagicMock
+from unittest.mock import AsyncMock, MagicMock
 
 import pytest
 
@@ -82,6 +82,9 @@ async def test_listener_start(listener, message):
             break
 
         if isinstance(client, TelegramHandler):
+            handle_message = AsyncMock()
             assert callable(client.connected)
             assert callable(client.bot.add_event_handler)
             assert callable(client.handle_message)
+            assert client.connected.called_once
+            handle_message.assert_awaited_once()
