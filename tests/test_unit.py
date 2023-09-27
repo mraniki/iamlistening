@@ -66,13 +66,13 @@ async def test_listener_start(listener, message):
         iteration += 1
         await client.handle_message(message)
         msg = await client.get_latest_message()
-        assert callable(listener.start)
-        assert callable(listener.stop)
-        assert callable(listener.connected)
-        assert callable(listener.get_latest_message)
-        assert callable(listener.handle_message)
-        assert callable(listener.handle_iteration_limit)
-        assert callable(listener.disconnected)
+        assert callable(client.start)
+        assert callable(client.stop)
+        assert callable(client.connected)
+        assert callable(client.get_latest_message)
+        assert callable(client.handle_message)
+        assert callable(client.handle_iteration_limit)
+        assert callable(client.disconnected)
 
 
         assert client.is_connected is not None
