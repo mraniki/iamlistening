@@ -106,7 +106,6 @@ class ChatClient:
         if self.iteration_count != self.iteration_limit:
             await asyncio.sleep(0.1)
             self.iteration_count += 1
-            # logger.debug("iteration count: {}", self.iteration_count)
         else:
             logger.debug("iteration limit reached for {}", self.platform)
             await self.disconnected()

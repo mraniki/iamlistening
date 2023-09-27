@@ -74,9 +74,13 @@ async def test_listener_start(listener, message):
         assert callable(client.handle_iteration_limit)
         assert callable(client.disconnected)
 
-
         assert client.is_connected is not None
         assert client is not None
         assert msg == message
         if iteration >= 1:
             break
+
+        if isinstance(client, TelegramHandler):
+            assert callable(client.connected)
+            assert callable(client.bot.add_event_handler)
+            assert callable(client.handle_message)
