@@ -2,6 +2,15 @@
 
 
 
+## v4.1.6 (2023-09-27)
+
+### :rotating_light:
+
+* :rotating_light: (#161) ([`7e51cee`](https://github.com/mraniki/iamlistening/commit/7e51ceeff670e80e7b0ecd786c4812b1c1f08c3a))
+
+* :rotating_light: ([`16b0c68`](https://github.com/mraniki/iamlistening/commit/16b0c68b17acfc852cc3aeedc94c886b4104ab92))
+
+
 ## v4.1.5 (2023-09-27)
 
 ### :recycle:
