@@ -34,7 +34,7 @@ simplematrixbotlib= "2.10.1"
 rocketchat-API= "1.30.0"
 "Mastodon.py" = "1.8.1"
 beautifulsoup4 = "4.12.2"
-"guilded.py" = "1.10.0"
+"guilded.py" = "1.11.0"
 "revolt.py" = "0.1.11"
 pythorhead = {version ="0.15.6", python = ">=3.10,<3.12"}
 twitchio = "2.8.1"
