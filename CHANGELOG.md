@@ -2,6 +2,27 @@
 
 
 
+## v4.1.8 (2023-10-02)
+
+### Update
+
+* Update Requirements ([`c2c2771`](https://github.com/mraniki/iamlistening/commit/c2c27718c6ec3cfb88aaa7e91fc626658d9881c9))
+
+* Update Requirements ([`dfee864`](https://github.com/mraniki/iamlistening/commit/dfee8648debe6427dc43922199f1c8ab470df002))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency guilded.py to v1.11.0 (#164) ([`1367a5d`](https://github.com/mraniki/iamlistening/commit/1367a5dd4a76401656ba614de5420a39edac31b6))
+
+* ⬆️ 🛠️(deps): update dependency guilded.py to v1.11.0 (#158) ([`7413360`](https://github.com/mraniki/iamlistening/commit/741336010be616b9a76188e8176e9b855df1d5f2))
+
+* ⬆️ 🛠️(deps): update dependency guilded.py to v1.11.0 ([`5e108ad`](https://github.com/mraniki/iamlistening/commit/5e108ad40bc17425e031dcd44be88076c6cd2383))
+
+### 👷
+
+* 👷 CI Change ([`e451407`](https://github.com/mraniki/iamlistening/commit/e451407a2f19750053757c2e056306113e2006ba))
+
+
 ## v4.1.7 (2023-09-27)
 
 ### ♻️
