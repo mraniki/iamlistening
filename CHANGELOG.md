@@ -2,6 +2,19 @@
 
 
 
+## v4.2.0 (2023-10-04)
+
+### Update
+
+* Update Requirements ([`c79b710`](https://github.com/mraniki/iamlistening/commit/c79b7107082ad0bf29ae65095281b6daba4195e4))
+
+### 🥚
+
+* 🥚Add support for .op.toml configuration file (#166) ([`7b83c1b`](https://github.com/mraniki/iamlistening/commit/7b83c1b73dfa4a47afa26031b1002f991396a497))
+
+* 🥚Add support for .op.toml configuration file ([`c02ba05`](https://github.com/mraniki/iamlistening/commit/c02ba05bc8c111fff9db6670031a864a3ec96dba))
+
+
 ## v4.1.8 (2023-10-02)
 
 ### Update
