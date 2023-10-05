@@ -2,6 +2,15 @@
 
 
 
+## v4.2.4 (2023-10-05)
+
+### ♻️
+
+* ♻️ (#171) ([`1dabbc8`](https://github.com/mraniki/iamlistening/commit/1dabbc89594cbb6b910e8c3b9e3fb9a7462f5552))
+
+* ♻️ ([`3e41aeb`](https://github.com/mraniki/iamlistening/commit/3e41aeb0d7e9502fbf7e0235abf6045762fb35b5))
+
+
 ## v4.2.3 (2023-10-05)
 
 ### 🥅
