@@ -88,3 +88,10 @@ async def test_listener_start(listener, message):
             assert callable(client.handle_message)
             assert client.connected.called_once
             handle_message.assert_awaited_once()
+        if isinstance(client, DiscordHandler):
+            handle_message = AsyncMock()
+            assert callable(client.connected)
+            #assert callable(client.bot.add_event_handler)
+            assert callable(client.handle_message)
+            assert client.connected.called_once
+            handle_message.assert_awaited_once()
