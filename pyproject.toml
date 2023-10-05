@@ -56,7 +56,7 @@ exclude = [
   ".github/*",
 ]
 # ignore = ["E401","F401","F811"]
-format = "github"
+#format = "github"
 fixable = ["ALL"]
 
 
