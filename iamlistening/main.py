@@ -39,21 +39,22 @@ class Listener:
             self.clients = []
             for item in config:
                 _config = config[item]
-                if item not in ["", "template"]:
-                    client = self._create_client(
-                        platform=_config.get("platform"),
-                        bot_token=_config.get("bot_token"),
-                        bot_channel_id=_config.get("bot_channel_id"),
-                        bot_api_id=_config.get("bot_api_id"),
-                        bot_api_hash=_config.get("bot_api_hash"),
-                        bot_hostname=_config.get("bot_hostname"),
-                        bot_user=_config.get("bot_user"),
-                        bot_pass=_config.get("bot_pass"),
-                        bot_auth_token=_config.get("bot_auth_token"),
-                        iteration_enabled=_config.get("iteration_enabled", True),
-                        iteration_limit=_config.get("iteration_limit", -1),
-                    )
-                    self.clients.append(client)
+                if item in ["", "template"]:
+                    continue
+                client = self._create_client(
+                    platform=_config.get("platform"),
+                    bot_token=_config.get("bot_token"),
+                    bot_channel_id=_config.get("bot_channel_id"),
+                    bot_api_id=_config.get("bot_api_id"),
+                    bot_api_hash=_config.get("bot_api_hash"),
+                    bot_hostname=_config.get("bot_hostname"),
+                    bot_user=_config.get("bot_user"),
+                    bot_pass=_config.get("bot_pass"),
+                    bot_auth_token=_config.get("bot_auth_token"),
+                    iteration_enabled=_config.get("iteration_enabled", True),
+                    iteration_limit=_config.get("iteration_limit", -1),
+                )
+                self.clients.append(client)
 
         except Exception as e:
             logger.error("init: {}", e)
@@ -120,7 +121,5 @@ class Listener:
         :rtype: str
         """
         version_info = f"{__version__}\n"
-        client_info = "".join(
-            f"💱 {client.platform}" for client in self.clients
-            )
+        client_info = "".join(f"💱 {client.platform}" for client in self.clients)
         return version_info + client_info.strip()
