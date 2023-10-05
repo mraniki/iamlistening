@@ -111,7 +111,7 @@ class Listener:
         else:
             logger.error("Invalid platform specified {}", platform)
 
-    async def get_info(self):
+    def get_info(self):
         """
         Retrieves information about the exchange
         and the account.
@@ -120,6 +120,6 @@ class Listener:
         the exchange name and the account information.
         :rtype: str
         """
-        version_info = f"{__version__}\n"
-        client_info = "".join(f"💱 {client.platform}" for client in self.clients)
+        version_info = f"ℹ️ {type(self).__name__} {__version__}\n"
+        client_info = "".join(f"👂 {client.platform}\n" for client in self.clients)
         return version_info + client_info.strip()
