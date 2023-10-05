@@ -31,7 +31,7 @@ async def main():
     loop = asyncio.get_running_loop()
     loop.create_task(listener.start())
     while True:
-        for client in listener.platform_info:
+        for client in listener.clients:
             msg = await client.get_latest_message()
             if msg:
                 logger.info(f"Frasier👂: {msg}")
