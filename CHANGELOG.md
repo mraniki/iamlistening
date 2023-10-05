@@ -2,6 +2,21 @@
 
 
 
+## v4.2.5 (2023-10-05)
+
+### Other
+
+* Add unit test for DiscordHandler&#39;s handle_message function ([`26abb8a`](https://github.com/mraniki/iamlistening/commit/26abb8a40f2210445a26ede7088a209e913ee181))
+
+### Update
+
+* Update Requirements ([`91803ea`](https://github.com/mraniki/iamlistening/commit/91803eac4242b23ba4f1b4378752615ede697c8e))
+
+### ✅
+
+* ✅  Unit Test (#172) ([`cf8376b`](https://github.com/mraniki/iamlistening/commit/cf8376baa646ce7e726e337447191fd1b0d46f56))
+
+
 ## v4.2.4 (2023-10-05)
 
 ### ♻️
