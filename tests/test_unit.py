@@ -39,9 +39,9 @@ def message():
 async def test_listener_fixture(listener):
     assert listener is not None
     assert isinstance(listener, Listener)
-    assert listener.platform_info is not None
-    assert listener.platform_info[0].platform is not None
-    assert listener.platform_info[0].bot_token is not None
+    assert listener.clients is not None
+    assert listener.clients[0].platform is not None
+    assert listener.clients[0].bot_token is not None
 
 
 @pytest.mark.asyncio
@@ -49,7 +49,7 @@ async def test_listener_start(listener, message):
     loop = asyncio.get_running_loop()
     loop.create_task(listener.start())
     iteration = 0
-    for client in listener.platform_info:
+    for client in listener.clients:
         client.connected = MagicMock()
         assert isinstance(
             client,

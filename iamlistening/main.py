@@ -6,6 +6,7 @@ import asyncio
 
 from loguru import logger
 
+from iamlistening import __version__
 from iamlistening.clients import (
     DiscordHandler,
     GuildedHandler,
@@ -33,24 +34,30 @@ class Listener:
             Exception: Platform missing
 
         """
-        self.platform_info = []
-        platforms = settings.platform
-        for client in platforms:
-            if platforms[client]["platform"] != "":
-                client = self._create_client(
-                    platform=platforms[client]["platform"],
-                    bot_token=platforms[client]["bot_token"] or None,
-                    bot_channel_id=platforms[client]["bot_channel_id"] or None,
-                    bot_api_id=platforms[client]["bot_api_id"] or None,
-                    bot_api_hash=platforms[client]["bot_api_hash"] or None,
-                    bot_hostname=platforms[client]["bot_hostname"] or None,
-                    bot_user=platforms[client]["bot_user"] or None,
-                    bot_pass=platforms[client]["bot_pass"] or None,
-                    bot_auth_token=platforms[client]["bot_auth_token"] or None,
-                    iteration_enabled=platforms[client]["iteration_enabled"] or True,
-                    iteration_limit=platforms[client]["iteration_limit"] or -1,
-                )
-                self.platform_info.append(client)
+        try:
+            config = settings.platform
+            self.clients = []
+            for item in config:
+                _config = config[item]
+                if item not in ["", "template"]:
+                    client = self._create_client(
+                        platform=_config.get("platform"),
+                        bot_token=_config.get("bot_token"),
+                        bot_channel_id=_config.get("bot_channel_id"),
+                        bot_api_id=_config.get("bot_api_id"),
+                        bot_api_hash=_config.get("bot_api_hash"),
+                        bot_hostname=_config.get("bot_hostname"),
+                        bot_user=_config.get("bot_user"),
+                        bot_pass=_config.get("bot_pass"),
+                        bot_auth_token=_config.get("bot_auth_token"),
+                        iteration_enabled=_config.get("iteration_enabled", True),
+                        iteration_limit=_config.get("iteration_limit", -1),
+                    )
+                    self.clients.append(client)
+
+        except Exception as e:
+            logger.error("init: {}", e)
+            raise e
 
     async def start(self):
         """
@@ -61,7 +68,7 @@ class Listener:
 
         """
         logger.debug("Listener starting")
-        tasks = [client.start() for client in self.platform_info]
+        tasks = [client.start() for client in self.clients]
         await asyncio.gather(*tasks)
 
     def stop(self):
@@ -71,7 +78,7 @@ class Listener:
         This method stops the chat managers for each platform.
 
         """
-        for client in self.platform_info:
+        for client in self.clients:
             client.stop()
 
     def _create_client(self, **kwargs):
@@ -102,3 +109,18 @@ class Listener:
             return RevoltHandler(**kwargs)
         else:
             logger.error("Invalid platform specified {}", platform)
+
+    async def get_info(self):
+        """
+        Retrieves information about the exchange
+        and the account.
+
+        :return: A formatted string containing
+        the exchange name and the account information.
+        :rtype: str
+        """
+        version_info = f"{__version__}\n"
+        client_info = "".join(
+            f"💱 {client.platform}" for client in self.clients
+            )
+        return version_info + client_info.strip()
