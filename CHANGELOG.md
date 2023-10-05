@@ -2,13 +2,34 @@
 
 
 
+## v4.2.2 (2023-10-05)
+
+### Other
+
+* Dev (#169) ([`e2f08cb`](https://github.com/mraniki/iamlistening/commit/e2f08cbc0eedb086c2951ba6a3a1b3bb226e118f))
+
+* Merge branch &#39;main&#39; into dev ([`a32c71a`](https://github.com/mraniki/iamlistening/commit/a32c71a390659728d2e30d57a2869dfe90ff7542))
+
+
 ## v4.2.1 (2023-10-05)
+
+### Other
+
+* Merge branch &#39;main&#39; into dev ([`c7d0852`](https://github.com/mraniki/iamlistening/commit/c7d0852ffeb729a9aeef7e3e7bd2849dabc5140b))
+
+* Merge branch &#39;dev&#39; into renovate/pytest-loguru-0.x ([`eaeadb4`](https://github.com/mraniki/iamlistening/commit/eaeadb41b542ba7a13140989e7e2880b4820381f))
 
 ### ♻️
 
 * ♻️ (#168) ([`102c69c`](https://github.com/mraniki/iamlistening/commit/102c69c22f8e4810fd5e23337ab206fc6c68f197))
 
 * ♻️ ([`20389df`](https://github.com/mraniki/iamlistening/commit/20389dfe28f894043c68a76afec2150a4b5eaf5b))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency pytest-loguru to ^0.3.0 (#167) ([`a831e98`](https://github.com/mraniki/iamlistening/commit/a831e984f0f0ca1d04034557ffcb1c7615939238))
+
+* ⬆️ 🛠️(deps): update dependency pytest-loguru to ^0.3.0 ([`bccea06`](https://github.com/mraniki/iamlistening/commit/bccea06f0ec2aac1aea6fda9f5a482ac57d9a346))
 
 
 ## v4.2.0 (2023-10-04)
