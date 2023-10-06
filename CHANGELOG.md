@@ -2,6 +2,19 @@
 
 
 
+## v4.2.6 (2023-10-06)
+
+### Update
+
+* Update format in pyproject.toml ([`90edabc`](https://github.com/mraniki/iamlistening/commit/90edabc39e55259d5b7fb1e42151bc3c93dd5637))
+
+### 🚨
+
+* 🚨 (#173) ([`bf0fa74`](https://github.com/mraniki/iamlistening/commit/bf0fa746c9ffbc78e69a2237a566ddc2c34c4ede))
+
+* 🚨 ([`ee65bd0`](https://github.com/mraniki/iamlistening/commit/ee65bd0fb11e75dbe027b435aded736bdc5476de))
+
+
 ## v4.2.5 (2023-10-05)
 
 ### Other
