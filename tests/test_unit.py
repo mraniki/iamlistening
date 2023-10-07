@@ -98,7 +98,7 @@ async def test_listener_start(listener, message):
 
         if isinstance(client, TelegramHandler):
             handle_message = AsyncMock()
-            run_until_disconnected() = AsyncMock()
+            run_until_disconnected = AsyncMock()
             assert callable(client.connected)
             assert callable(client.bot.add_event_handler)
             assert callable(client.handle_message)
