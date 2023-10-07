@@ -27,7 +27,7 @@ def set_test_settings():
 
 @pytest.fixture(name="listener")
 def listener():
-    #settings.setenv('ial')
+    settings.setenv('ial')
     return Listener()
 
 
@@ -49,8 +49,6 @@ def test_listener_init_raises_exception():
     with pytest.raises(Exception):
         with settings.setenv('exception'):
             listener = Listener()
-            print(listener)
-        
 
 
 @pytest.mark.asyncio
