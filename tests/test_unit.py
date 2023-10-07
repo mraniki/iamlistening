@@ -93,9 +93,9 @@ async def test_listener_start(listener, message,caplog):
         
             
         assert "Latest message telegram" in caplog.text
-        assert "Frasier" in caplog.text
+        assert "been registered as an event" in caplog.text
         assert "client is online on revolt" in caplog.text
-        assert "client is online on telegram" in caplog.text
+        assert "Frasier👂 on telegram:" in caplog.text
         if iteration >= 1:
             break
             
