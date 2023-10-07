@@ -64,7 +64,6 @@ async def test_listener_start(listener, message,caplog):
     iteration = 0
     for client in listener.clients:
         client.connected = MagicMock()
-        handle_telegram_message= AsyncMock()
         assert isinstance(
             client,
             (
@@ -92,11 +91,10 @@ async def test_listener_start(listener, message,caplog):
         assert client.connected.called_once
         assert client.is_connected is True
         
-        
-        if isinstance(client, TelegramHandler):
-            handle_telegram_message.assert_awaited_once()
             
-            assert "Latest message telegram" in caplog.text
+        assert "Latest message telegram" in caplog.text
+        
+        assert "client is online on revolt" in caplog.text
         
         if iteration >= 1:
             break
