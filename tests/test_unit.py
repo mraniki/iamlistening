@@ -94,7 +94,7 @@ async def test_listener_start(listener, message):
         
         if isinstance(client, TelegramHandler):
             client.bot.run_until_disconnected = AsyncMock()
-            run_until_disconnected.assert_awaited
+            client.bot.run_until_disconnected.assert_awaited
         
         if iteration >= 1:
             break
