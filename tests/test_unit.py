@@ -49,8 +49,8 @@ async def test_listener_exception():
         return Listener("123")
 
 @pytest.mark.asyncio
-async def test_listener_fixture(listener):
-    result = await listener.get_info
+async def test_get_info(listener):
+    result = listener.get_info()
     assert result is not None
     assert "👂" in result
 
