@@ -91,30 +91,9 @@ async def test_listener_start(listener, message,caplog):
         assert client.connected.called_once
         assert client.is_connected is True
         
-            
-        #assert "Latest message telegram" in caplog.text
-        
         assert "client is online on revolt" in caplog.text
         
         if iteration >= 1:
             break
             
 
-        # if isinstance(client, DiscordHandler):
-        #     handle_message = AsyncMock()
-        #     assert callable(client.connected)
-        #     assert callable(client.handle_message)
-        #     assert client.connected.called_once
-        #     handle_message.assert_awaited_once()
-
-# @pytest.mark.asyncio
-# async def test_handle_message(listener, message):
-#     loop = asyncio.get_running_loop()
-#     loop.create_task(listener.start())
-#     iteration = 0
-#     for client in listener.clients:
-#         client.connected = MagicMock()
-#         client.handle_message = AsyncMock()
-#         client.handle_message.assert_awaited
-#     if iteration >= 1:
-#         break
