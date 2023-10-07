@@ -27,6 +27,7 @@ def set_test_settings():
 
 @pytest.fixture(name="listener")
 def listener():
+    settings.setenv('ial')
     return Listener()
 
 
@@ -44,8 +45,20 @@ async def test_listener_fixture(listener):
     assert listener.clients[0].bot_token is not None
 
 
+def test_listener_init_raises_exception():
+    with pytest.raises(Exception):
+        with settings.setenv('exception'):
+            listener = Listener()
+
+
 @pytest.mark.asyncio
-async def test_listener_start(listener, message):
+async def test_get_info(listener):
+    result = listener.get_info()
+    assert result is not None
+    assert "ℹ️" in result
+
+@pytest.mark.asyncio
+async def test_listener_start(listener, message,caplog):
     loop = asyncio.get_running_loop()
     loop.create_task(listener.start())
     iteration = 0
@@ -67,6 +80,7 @@ async def test_listener_start(listener, message):
         iteration += 1
         await client.handle_message(message)
         msg = await client.get_latest_message()
+        assert msg == message
         assert callable(client.start)
         assert callable(client.stop)
         assert callable(client.connected)
@@ -75,22 +89,13 @@ async def test_listener_start(listener, message):
         assert callable(client.handle_iteration_limit)
         assert callable(client.disconnected)
         assert client.connected.called_once
-        assert client.is_connected is not None
-        assert client is not None
-        assert msg == message
+        assert client.is_connected is True
+        
+            
+        assert "Latest message telegram" in caplog.text
+        #assert "been registered as an event" in caplog.text
+        assert "client is online on revolt" in caplog.text
+        assert "Frasier👂 on telegram:" in caplog.text
         if iteration >= 1:
             break
-
-        if isinstance(client, TelegramHandler):
-            handle_message = AsyncMock()
-            assert callable(client.connected)
-            assert callable(client.bot.add_event_handler)
-            assert callable(client.handle_message)
-            assert client.connected.called_once
-            handle_message.assert_awaited_once()
-        if isinstance(client, DiscordHandler):
-            handle_message = AsyncMock()
-            assert callable(client.connected)
-            assert callable(client.handle_message)
-            assert client.connected.called_once
-            handle_message.assert_awaited_once()
+            
