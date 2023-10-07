@@ -54,7 +54,7 @@ def test_listener_init_raises_exception():
 async def test_get_info(listener):
     result = listener.get_info()
     assert result is not None
-    assert "👂" in result
+    assert "ℹ️" in result
 
 @pytest.mark.asyncio
 async def test_listener_start(listener, message):
