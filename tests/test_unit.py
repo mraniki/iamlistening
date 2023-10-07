@@ -89,6 +89,8 @@ async def test_listener_start(listener, message):
         assert callable(client.disconnected)
         assert client.connected.called_once
         assert client.is_connected is not None
+        assert client.connected.called_once
+        client.handle_message.assert_awaited
         assert client is not None
         assert msg == message
         if iteration >= 1:
@@ -96,11 +98,13 @@ async def test_listener_start(listener, message):
 
         if isinstance(client, TelegramHandler):
             handle_message = AsyncMock()
+            run_until_disconnected() = AsyncMock()
             assert callable(client.connected)
             assert callable(client.bot.add_event_handler)
             assert callable(client.handle_message)
-            assert client.connected.called_once
+            run_until_disconnected.assert_awaited
             handle_message.assert_awaited_once()
+
         if isinstance(client, DiscordHandler):
             handle_message = AsyncMock()
             assert callable(client.connected)
