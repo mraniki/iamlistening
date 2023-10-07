@@ -20,13 +20,14 @@ from iamlistening.clients import (
 from iamlistening.config import settings
 
 
-@pytest.fixture(scope="session", autouse=True)
-def set_test_settings():
-    settings.configure(FORCE_ENV_FOR_DYNACONF="ial")
+# @pytest.fixture(scope="session", autouse=True)
+# def set_test_settings():
+#     settings.configure(FORCE_ENV_FOR_DYNACONF="ial")
 
 
 @pytest.fixture(name="listener")
 def listener():
+    settings.setenv('ial')
     return Listener()
 
 
