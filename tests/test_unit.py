@@ -58,12 +58,13 @@ async def test_get_info(listener):
     assert "ℹ️" in result
 
 @pytest.mark.asyncio
-async def test_listener_start(listener, message):
+async def test_listener_start(listener, message,caplog):
     loop = asyncio.get_running_loop()
     loop.create_task(listener.start())
     iteration = 0
     for client in listener.clients:
         client.connected = MagicMock()
+        handle_telegram_message= AsyncMock()
         assert isinstance(
             client,
             (
@@ -93,8 +94,9 @@ async def test_listener_start(listener, message):
         
         
         if isinstance(client, TelegramHandler):
-            client.bot.run_until_disconnected = AsyncMock()
-            client.bot.run_until_disconnected.assert_awaited
+            handle_telegram_message.assert_awaited_once()
+            
+            assert "Latest message telegram" in caplog.text
         
         if iteration >= 1:
             break
