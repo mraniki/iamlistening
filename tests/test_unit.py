@@ -64,7 +64,7 @@ async def test_listener_start(listener, message):
     iteration = 0
     for client in listener.clients:
         client.connected = MagicMock()
-        client.handle_message = AsyncMock()
+        #client.handle_message = AsyncMock()
         assert isinstance(
             client,
             (
@@ -81,6 +81,7 @@ async def test_listener_start(listener, message):
         iteration += 1
         await client.handle_message(message)
         msg = await client.get_latest_message()
+        assert msg == message
         assert callable(client.start)
         assert callable(client.stop)
         assert callable(client.connected)
@@ -90,10 +91,8 @@ async def test_listener_start(listener, message):
         assert callable(client.disconnected)
         assert client.connected.called_once
         assert client.is_connected is not None
-        assert client.connected.called_once
-        client.handle_message.assert_awaited
         assert client is not None
-        assert msg == message
+        
         if iteration >= 1:
             break
 
@@ -108,3 +107,15 @@ async def test_listener_start(listener, message):
         #     assert callable(client.handle_message)
         #     assert client.connected.called_once
         #     handle_message.assert_awaited_once()
+
+# @pytest.mark.asyncio
+# async def test_handle_message(listener, message):
+#     loop = asyncio.get_running_loop()
+#     loop.create_task(listener.start())
+#     iteration = 0
+#     for client in listener.clients:
+#         client.connected = MagicMock()
+#         client.handle_message = AsyncMock()
+#         client.handle_message.assert_awaited
+#     if iteration >= 1:
+#         break
