@@ -90,16 +90,17 @@ async def test_listener_start(listener, message):
         assert callable(client.handle_iteration_limit)
         assert callable(client.disconnected)
         assert client.connected.called_once
-        assert client.is_connected is not None
-        assert client is not None
+        assert client.is_connected is True
         
-        if iteration >= 1:
-            break
-
+        
         if isinstance(client, TelegramHandler):
             
             run_until_disconnected = AsyncMock()
             run_until_disconnected.assert_awaited
+        
+        if iteration >= 1:
+            break
+            
 
         # if isinstance(client, DiscordHandler):
         #     handle_message = AsyncMock()

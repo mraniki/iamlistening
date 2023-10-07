@@ -58,7 +58,6 @@ class Listener:
 
         except Exception as e:
             logger.error("init: {}", e)
-            raise e
 
     async def start(self):
         """
