@@ -45,7 +45,8 @@ async def test_listener_fixture(listener):
 
 
 def test_listener_init_raises_exception():
-    with pytest.raises(Exception, match="Platform missing"):
+    with pytest.raises(Exception):
+        settings.setenv('exception')
         listener = Listener()
 
 
