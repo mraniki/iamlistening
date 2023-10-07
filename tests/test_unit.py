@@ -63,8 +63,7 @@ async def test_listener_start(listener, message):
     loop.create_task(listener.start())
     iteration = 0
     for client in listener.clients:
-        connected = MagicMock()
-        run_until_disconnected = AsyncMock()
+        client.connected = MagicMock()
         assert isinstance(
             client,
             (
@@ -89,11 +88,12 @@ async def test_listener_start(listener, message):
         assert callable(client.handle_message)
         assert callable(client.handle_iteration_limit)
         assert callable(client.disconnected)
-        assert connected.called_once
+        assert client.connected.called_once
         assert client.is_connected is True
         
         
         if isinstance(client, TelegramHandler):
+            client.bot.run_until_disconnected = AsyncMock()
             run_until_disconnected.assert_awaited
         
         if iteration >= 1:
