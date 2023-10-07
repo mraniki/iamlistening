@@ -43,10 +43,11 @@ async def test_listener_fixture(listener):
     assert listener.clients[0].platform is not None
     assert listener.clients[0].bot_token is not None
 
-@pytest.mark.asyncio
-async def test_listener_exception():
-    with pytest.raises(Exception):
-        return Listener("123")
+
+def test_listener_init_raises_exception():
+    with pytest.raises(Exception, match="Platform missing"):
+        listener = Listener()
+
 
 @pytest.mark.asyncio
 async def test_get_info(listener):
