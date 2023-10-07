@@ -2,6 +2,140 @@
 
 
 
+## v4.2.7 (2023-10-07)
+
+### Fix
+
+* ✅ Add unit tests for listener fixture and exception handling (#174) ([`7ffefba`](https://github.com/mraniki/iamlistening/commit/7ffefba4b42960c53879150f6090c7292ac5d760))
+
+* Refactor code and fix test assertions ([`b462d83`](https://github.com/mraniki/iamlistening/commit/b462d8300fb7d345c32131d0ead6ccfb953a9b39))
+
+* Refactor test_unit.py fixture and listener function
+
+The test_unit.py fixture and listener function were refactored to improv
+e code readability and maintainability.
+
+- Removed the set_test_settings fixture.
+- Added a comment to the set_test_settings fixture.
+- Modified the listener function to use the settings.setenv method.
+
+These changes ensure that the code follows best practices and is
+easier
+to understand. ([`041242a`](https://github.com/mraniki/iamlistening/commit/041242afa8f27ec0c6a3e366f73497f9cc6ee045))
+
+* Refactor test_listener_fixture to test_get_info ([`19e5e9f`](https://github.com/mraniki/iamlistening/commit/19e5e9f18de7e4492f9b5fe0c3b547cabc2354f1))
+
+* Fix listener fixture test ([`2ea2127`](https://github.com/mraniki/iamlistening/commit/2ea2127f214487a3a3fb3111c69d00a8e5b65dd4))
+
+* Add unit tests for listener fixture and exception handling ([`7abb790`](https://github.com/mraniki/iamlistening/commit/7abb790d55573ad835d6f76a6fa5276cdf5a5e55))
+
+### Other
+
+* Refactor test_unit.py assertions
+
+- Refactored the assertions in test_listener_start function in test_unit
+.py
+- Updated the assertion for &#34;Frasier&#34; to &#34;been registered as an event&#34;
+- Updated the assertion for &#34;client is online on telegram&#34; to
+&#34;Frasier:ear:
+on telegram: ([`633e9a2`](https://github.com/mraniki/iamlistening/commit/633e9a2303ff3ffd43847c7f9d123a27407d603e))
+
+* Refactor test_unit.py assertions
+
+- Refactored the assertions in test_listener_start function in test_unit
+.py
+- Updated the assertion for &#34;Frasier&#34; to &#34;been registered as an event&#34;
+- Updated the assertion for &#34;client is online on telegram&#34; to
+&#34;Frasier:ear:
+on telegram: ([`4bcfe09`](https://github.com/mraniki/iamlistening/commit/4bcfe09f49ea4ba338c70219fe458f33bac4a33c))
+
+* Refactor test_unit.py: assert &#34;Disconnected&#34; to assert &#34;Frasier&#34; in caplog.text ([`95b4d27`](https://github.com/mraniki/iamlistening/commit/95b4d27d68c5e1ed42e91ac4728b4db593715791))
+
+* Add test for listener start ([`21ba774`](https://github.com/mraniki/iamlistening/commit/21ba774299307541d356a4341f978db52b2bbbd5))
+
+* Fix listener start test in test_unit.py ([`5ccb51c`](https://github.com/mraniki/iamlistening/commit/5ccb51c5e0da68aa794cc4dd85bfec7c1574fffb))
+
+* Fix client online assertion in test_listener_start ([`e9d406f`](https://github.com/mraniki/iamlistening/commit/e9d406f72168fcc58baad5e99cee0419a1fbba4e))
+
+* Refactor test_unit.py
+
+- Remove unnecessary assert statement
+- Add new assert statement for latest message in caplog ([`9d0f0f4`](https://github.com/mraniki/iamlistening/commit/9d0f0f473318201a75b0a0fb9d04a1016d027fb2))
+
+* Remove unnecessary commented out code and assertions in test_unit.py ([`16c0dac`](https://github.com/mraniki/iamlistening/commit/16c0dac465397af22924c288d274a89c3a65be53))
+
+* Fix client online assertion ([`ff9e609`](https://github.com/mraniki/iamlistening/commit/ff9e609e8707b1a3da8ce149836017ea14aa46ce))
+
+* Refactor test_unit.py
+
+- Remove handle_telegram_message= AsyncMock()
+- Remove if isinstance(client, TelegramHandler)
+- Add assert &#34;client is online on revolt&#34; in caplog.text ([`aa142da`](https://github.com/mraniki/iamlistening/commit/aa142da6d6c81491d0087a9a90d74a67fe73625e))
+
+* Refactor test_unit.py
+
+- Remove handle_telegram_message= AsyncMock()
+- Remove if isinstance(client, TelegramHandler)
+- Add assert &#34;client is online on revolt&#34; in caplog.text ([`f956df8`](https://github.com/mraniki/iamlistening/commit/f956df8f465c54a55af57f91b085869a191f1655))
+
+* Refactor test_unit.py to include caplog in test_listener_start ([`4b6664c`](https://github.com/mraniki/iamlistening/commit/4b6664cf4a81e92f080a3fa7ee482ab2566cb8e0))
+
+* Refactor test_unit.py: update run_until_disconnected call ([`769c117`](https://github.com/mraniki/iamlistening/commit/769c117b1624de93137956a5ebcbafe1ada33bd0))
+
+* Refactor test_unit.py for better readability and maintainability
+
+- Remove unused variables
+- Update method calls to use client object directly
+
+Co-authored-by: [Your Name] &lt;[your-email@example.com]&gt; ([`e123e2c`](https://github.com/mraniki/iamlistening/commit/e123e2c1f36383383be4f1d3d5e324c5d5593cfd))
+
+* Refactor test_unit.py for better readability and maintainability
+
+- Remove unnecessary commented out code
+- Rename client.connected to connected for clarity
+- Remove unused run_until_disconnected variable ([`3408d1b`](https://github.com/mraniki/iamlistening/commit/3408d1b7b19a4ff798b4c49745fe3af525c39c1c))
+
+* Refactor test_unit.py for listener start and handle message ([`323f722`](https://github.com/mraniki/iamlistening/commit/323f7227e039637aad5a8adf5013e7be2379ca87))
+
+* Refactor test_unit.py
+
+- Removed unnecessary lines of code
+- Commented out unused code for future reference ([`df1d233`](https://github.com/mraniki/iamlistening/commit/df1d233bf9d99d6484b3fb623e6b5bcb72307b0c))
+
+* Fix run_until_disconnected assignment ([`e7da10b`](https://github.com/mraniki/iamlistening/commit/e7da10b5a61c046b4dbe2e8d33031aa30f6f0bbc))
+
+* Add and modify tests for listener start ([`427b2c5`](https://github.com/mraniki/iamlistening/commit/427b2c52a379b53807fe411587eff821336f6dcc))
+
+* Fix listener initialization in test_unit.py ([`a6ecada`](https://github.com/mraniki/iamlistening/commit/a6ecadaf02e4f50ae57bdab5ebf7f916ca4539e9))
+
+* Refactor test_unit.py and add test for listener initialization
+
+- Refactored test_unit.py to remove commented out code and add a new tes
+t for listener initialization.
+- Added a test case to ensure that an exception is raised when the
+envir
+onment is set to &#39;exception&#39;.
+- Modified the listener initialization test to use a context manager
+for
+setting the environment and added a print statement for debugging
+purpo
+ses. ([`de53a67`](https://github.com/mraniki/iamlistening/commit/de53a67f8b2764cb2eae6580f29f38a72ced98dd))
+
+* Refactor test_get_info function in test_unit.py
+
+- Remove unnecessary assert statement ([`3e329cd`](https://github.com/mraniki/iamlistening/commit/3e329cdc9900e05dbaf70c671a15ece60810eb60))
+
+* Refactor test_unit.py to remove unnecessary match argument in pytest.raises() ([`dc27a79`](https://github.com/mraniki/iamlistening/commit/dc27a795be8f98d4546915fa9211d6924c9801ad))
+
+* Merge branch &#39;dev&#39; of git@github.com:mraniki/iamlistening.git ([`4ca609b`](https://github.com/mraniki/iamlistening/commit/4ca609b44fcf3580d2f7f3839048e406a150efce))
+
+* Fix listener test and add exception handling ([`c2e6a01`](https://github.com/mraniki/iamlistening/commit/c2e6a01ac8dc664274ae56572e95731e34078a30))
+
+### Update
+
+* Update Requirements ([`e23d447`](https://github.com/mraniki/iamlistening/commit/e23d4478786a47a64dab5aac738a52de12d9b98e))
+
+
 ## v4.2.6 (2023-10-06)
 
 ### Update
