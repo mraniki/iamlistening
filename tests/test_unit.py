@@ -43,6 +43,16 @@ async def test_listener_fixture(listener):
     assert listener.clients[0].platform is not None
     assert listener.clients[0].bot_token is not None
 
+@pytest.mark.asyncio
+async def test_listener_exception():
+    with pytest.raises(Exception):
+        return Listener("123")
+
+@pytest.mark.asyncio
+async def test_listener_fixture(listener):
+    result = await listener.get_info
+    assert result is not None
+    assert 👂 in result
 
 @pytest.mark.asyncio
 async def test_listener_start(listener, message):
