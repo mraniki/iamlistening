@@ -37,7 +37,7 @@ beautifulsoup4 = "4.12.2"
 "guilded.py" = "1.11.0"
 "revolt.py" = "0.1.11"
 pythorhead = {version ="0.15.6", python = ">=3.10,<3.12"}
-twitchio = "2.8.1"
+twitchio = "2.8.2"
 
 [tool.poetry.group.dev.dependencies]
 python-semantic-release = "^8.1.1"
