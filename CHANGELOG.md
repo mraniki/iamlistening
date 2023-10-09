@@ -2,6 +2,21 @@
 
 
 
+## v4.2.8 (2023-10-09)
+
+### Update
+
+* Update Requirements ([`9fe7ce8`](https://github.com/mraniki/iamlistening/commit/9fe7ce8ec40947b23689f226f7d085a79c4f05f0))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency twitchio to v2.8.2 (#176) ([`b01aa86`](https://github.com/mraniki/iamlistening/commit/b01aa86c904bbc33edb6120d303a77d2e6cc4c5d))
+
+* ⬆️ 🛠️(deps): update dependency twitchio to v2.8.2 (#175) ([`d719635`](https://github.com/mraniki/iamlistening/commit/d719635475b4bb639b26a83b012112b8bead254e))
+
+* ⬆️ 🛠️(deps): update dependency twitchio to v2.8.2 ([`029df56`](https://github.com/mraniki/iamlistening/commit/029df56576985e13ee42f38f67dec9c3fd2904ba))
+
+
 ## v4.2.7 (2023-10-07)
 
 ### Fix
