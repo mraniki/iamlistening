@@ -41,7 +41,7 @@ twitchio = "2.8.2"
 
 [tool.poetry.group.dev.dependencies]
 python-semantic-release = ">=8.0.8"
-ruff = "^0.0.265"
+ruff = "^0.0.292"
 black = "^23.3.0"
 pre-commit = "^3.3.1"
 
@@ -130,9 +130,7 @@ omit = [
 
 [tool.bandit]
 exclude_dirs = ["tests","docs"]
-
-[tool.bandit.assert_used]
-skips = ["*_test.py", "test_*.py"]
+skips = ["B101","B104"]
 
 [tool.semantic_release]
 upload_to_vcs_release = true
