@@ -2,6 +2,31 @@
 
 
 
+## v4.2.10 (2023-10-10)
+
+### Other
+
+* Add automatic merge on approval rule to .mergify.yml ([`0cd2e92`](https://github.com/mraniki/iamlistening/commit/0cd2e92d027bd3d4f5d364b099e0025032804651))
+
+### Update
+
+* Update pyproject.toml  (#179) ([`4bd875b`](https://github.com/mraniki/iamlistening/commit/4bd875bd704251cb20b157d22c7a018bd290c457))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency ruff to ^0.0.292 (#177) ([`bd02a42`](https://github.com/mraniki/iamlistening/commit/bd02a428163d5e90c4b9f30825ec18e2c8ef68bc))
+
+### 👷
+
+* 👷 CI Change with precommit ([`ac1951f`](https://github.com/mraniki/iamlistening/commit/ac1951f5c7aab87e8274c3f3051b5f99a71d16dd))
+
+### 🔒
+
+* 🔒 ([`0b57848`](https://github.com/mraniki/iamlistening/commit/0b57848d9b25162f30f5331abe48893844ed8edc))
+
+* 🔒 bandit ([`113c356`](https://github.com/mraniki/iamlistening/commit/113c3567b7998c1c3cdb316bbb238714b0a18616))
+
+
 ## v4.2.9 (2023-10-10)
 
 ### ♻️
@@ -9,6 +34,10 @@
 * ♻️ pyproject update (#178) ([`85b7a87`](https://github.com/mraniki/iamlistening/commit/85b7a87cd535cd8de33ad1a9f26533d9ea3a1804))
 
 * ♻️ pyproject update ([`29e50bf`](https://github.com/mraniki/iamlistening/commit/29e50bf77c4cd2be28710c41d27b3201bd6c9d93))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency ruff to ^0.0.292 ([`103c900`](https://github.com/mraniki/iamlistening/commit/103c9001146baa7295b1458c125070cc122a767a))
 
 
 ## v4.2.8 (2023-10-09)
