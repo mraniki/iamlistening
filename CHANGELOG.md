@@ -2,6 +2,15 @@
 
 
 
+## v4.2.9 (2023-10-10)
+
+### ♻️
+
+* ♻️ pyproject update (#178) ([`85b7a87`](https://github.com/mraniki/iamlistening/commit/85b7a87cd535cd8de33ad1a9f26533d9ea3a1804))
+
+* ♻️ pyproject update ([`29e50bf`](https://github.com/mraniki/iamlistening/commit/29e50bf77c4cd2be28710c41d27b3201bd6c9d93))
+
+
 ## v4.2.8 (2023-10-09)
 
 ### Update
