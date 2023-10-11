@@ -2,6 +2,23 @@
 
 
 
+## v4.2.13 (2023-10-11)
+
+### Other
+
+* ci(Mergify): configuration update (#182) ([`9e08fdb`](https://github.com/mraniki/iamlistening/commit/9e08fdb204521ff9d8321bc9f99eb35b29e85caf))
+
+* ci(Mergify): configuration update
+
+Signed-off-by: null &lt;null&gt; ([`c3d2289`](https://github.com/mraniki/iamlistening/commit/c3d2289b1eddf79eab356e691235671af7c93a39))
+
+### 👷
+
+* 👷 CI Change (#183) ([`1ba4175`](https://github.com/mraniki/iamlistening/commit/1ba417564f0b350923e1ca1079fc86ca8d074365))
+
+* 👷 CI Change ([`e9de828`](https://github.com/mraniki/iamlistening/commit/e9de8285f5f096fe46621b4947d03f257b1afb1d))
+
+
 ## v4.2.12 (2023-10-11)
 
 ### 👷
