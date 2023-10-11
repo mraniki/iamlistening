@@ -2,6 +2,15 @@
 
 
 
+## v4.2.12 (2023-10-11)
+
+### 👷
+
+* 👷 CI Change (#181) ([`eb0d512`](https://github.com/mraniki/iamlistening/commit/eb0d51241b418ea2e32e138adbe029e3f3d42c0f))
+
+* 👷 CI Change ([`9da822b`](https://github.com/mraniki/iamlistening/commit/9da822b60dd5c09ec8eb56cda647999e18f2e4aa))
+
+
 ## v4.2.11 (2023-10-11)
 
 ### 👷
