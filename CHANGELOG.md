@@ -2,6 +2,27 @@
 
 
 
+## v4.2.14 (2023-10-13)
+
+### Other
+
+* :construction_worker_man: CI Change (#184) ([`bbf0451`](https://github.com/mraniki/iamlistening/commit/bbf04519fe7b08cc575fa70569ee955166d1582f))
+
+* :construction_worker_man: CI Change ([`1edbf2f`](https://github.com/mraniki/iamlistening/commit/1edbf2f92b0c4c1aaf66ab69421ea44a3e04674a))
+
+### Update
+
+* Update Requirements ([`0b7af4b`](https://github.com/mraniki/iamlistening/commit/0b7af4bc0ba306bdd22bcadb94d753f2b9122d8d))
+
+### ⬆️
+
+* ⬆️telethon (#186) ([`74b7136`](https://github.com/mraniki/iamlistening/commit/74b713622349f33802c533b0cc5561f2159c6857))
+
+* ⬆️ 🛠️(deps): update dependency telethon to v1.31.0 (#185) ([`d151eb0`](https://github.com/mraniki/iamlistening/commit/d151eb0037268cb30f8b9c368943c0e8cf91381a))
+
+* ⬆️ 🛠️(deps): update dependency telethon to v1.31.0 ([`3bcf630`](https://github.com/mraniki/iamlistening/commit/3bcf630378dd165e99cfdeaa63bc1d244df982c3))
+
+
 ## v4.2.13 (2023-10-11)
 
 ### Other
