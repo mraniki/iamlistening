@@ -129,6 +129,10 @@ filterwarnings = [
     " ignore:.*U.*mode is deprecated:DeprecationWarning",
     "ignore::DeprecationWarning",
 ]
+addopts = """
+-v
+--show-capture=stderr
+"""
 
 [tool.coverage.run]
 omit = [
