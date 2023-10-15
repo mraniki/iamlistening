@@ -2,6 +2,24 @@
 
 
 
+## v4.2.15 (2023-10-15)
+
+### Other
+
+* Merge branch &#39;dev&#39; of git@github.com:mraniki/iamlistening.git ([`d12f4f5`](https://github.com/mraniki/iamlistening/commit/d12f4f52042f7daa58378892308baf02d0caa796))
+
+* :construction_worker_man: Refactor Git configuration
+
+- Removed `.github/mergify.yml` file
+- Updated `.github/renovate.json` to include additional ignored authors ([`9285370`](https://github.com/mraniki/iamlistening/commit/9285370040827d39547c399807a77fbfa738922e))
+
+### 👷
+
+* 👷‍♂️ Refactor CI (#187) ([`3ae6a9d`](https://github.com/mraniki/iamlistening/commit/3ae6a9de2244a2da8ca52214f2f351ae98bf28fe))
+
+* 👷 CI Change ([`3745224`](https://github.com/mraniki/iamlistening/commit/3745224a059760ea864c6463fa58e9e9d62d644d))
+
+
 ## v4.2.14 (2023-10-13)
 
 ### Other
