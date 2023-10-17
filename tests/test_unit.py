@@ -3,7 +3,7 @@ iamlistening Unit Testing
 """
 
 import asyncio
-from unittest.mock import AsyncMock, MagicMock
+from unittest.mock import MagicMock
 
 import pytest
 
@@ -27,7 +27,7 @@ def set_test_settings():
 
 @pytest.fixture(name="listener")
 def listener():
-    settings.setenv('ial')
+    settings.setenv("ial")
     return Listener()
 
 
@@ -47,8 +47,8 @@ async def test_listener_fixture(listener):
 
 def test_listener_init_raises_exception():
     with pytest.raises(Exception):
-        with settings.setenv('exception'):
-            listener = Listener()
+        with settings.setenv("exception"):
+            Listener()
 
 
 @pytest.mark.asyncio
@@ -57,8 +57,9 @@ async def test_get_info(listener):
     assert result is not None
     assert "ℹ️" in result
 
+
 @pytest.mark.asyncio
-async def test_listener_start(listener, message,caplog):
+async def test_listener_start(listener, message, caplog):
     loop = asyncio.get_running_loop()
     loop.create_task(listener.start())
     iteration = 0
@@ -90,12 +91,10 @@ async def test_listener_start(listener, message,caplog):
         assert callable(client.disconnected)
         assert client.connected.called_once
         assert client.is_connected is True
-        
-            
+
         assert "Latest message telegram" in caplog.text
-        #assert "been registered as an event" in caplog.text
+        # assert "been registered as an event" in caplog.text
         assert "client is online on revolt" in caplog.text
         assert "Frasier👂 on telegram:" in caplog.text
         if iteration >= 1:
             break
-            
