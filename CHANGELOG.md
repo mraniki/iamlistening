@@ -2,7 +2,28 @@
 
 
 
+## v4.2.17 (2023-10-18)
+
+### Other
+
+* Dev (#191) ([`1434f03`](https://github.com/mraniki/iamlistening/commit/1434f0377d19b0ed11a6935ead882bc898dabb1a))
+
+### Update
+
+* Update Requirements ([`b1b4f70`](https://github.com/mraniki/iamlistening/commit/b1b4f70e72836380fe0ae746414a0bb00e470282))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency ruff to ^0.1.0 (#188) ([`9326049`](https://github.com/mraniki/iamlistening/commit/932604966758273b05a4c80ce54f4f1f20a56076))
+
+* ⬆️ 🛠️(deps): update dependency telethon to v1.31.1 ([`7d6e9d6`](https://github.com/mraniki/iamlistening/commit/7d6e9d65aa31a01c27e02a35f34040b127c4b321))
+
+
 ## v4.2.16 (2023-10-17)
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency ruff to ^0.1.0 ([`ca39917`](https://github.com/mraniki/iamlistening/commit/ca39917c99dd919f481ce945430bf3e9f368babb))
 
 ### 🚨
 
