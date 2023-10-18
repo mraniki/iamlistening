@@ -28,7 +28,7 @@ packages = [
 python = "^3.10"
 dynaconf = ">=3.1.12"
 loguru = ">=0.6.0"
-telethon= "1.31.0"
+telethon= "1.31.1"
 py-cord= "2.4.1"
 simplematrixbotlib= "2.10.1"
 rocketchat-API= "1.30.0"
@@ -41,7 +41,7 @@ twitchio = "2.8.2"
 
 [tool.poetry.group.dev.dependencies]
 python-semantic-release = ">=8.0.8"
-ruff = "^0.0.292"
+ruff = "^0.1.0"
 black = "^23.3.0"
 pre-commit = "^3.3.1"
 
