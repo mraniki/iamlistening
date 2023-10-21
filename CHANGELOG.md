@@ -2,6 +2,49 @@
 
 
 
+## v4.2.18 (2023-10-21)
+
+### Other
+
+* Merge branch &#39;main&#39; into dev ([`9596591`](https://github.com/mraniki/iamlistening/commit/9596591e5ac7a4f436926eb89a715a72d4d06b3b))
+
+* Dev (#194) ([`5c2c96a`](https://github.com/mraniki/iamlistening/commit/5c2c96adbd0c86198b48100d1ae6f795b45e325c))
+
+* Merge branch &#39;main&#39; into dev ([`92ec6b4`](https://github.com/mraniki/iamlistening/commit/92ec6b4f2ccc1a4c467465fc0338336d00330a8d))
+
+* CI change (#192) ([`b17ce1e`](https://github.com/mraniki/iamlistening/commit/b17ce1ee4b822488f3f7938d8a105c964e3b29cd))
+
+### Update
+
+* Update Requirements ([`425ea28`](https://github.com/mraniki/iamlistening/commit/425ea2833996cb419c5e4fcca74374faef52d301))
+
+* Update Requirements ([`64b264f`](https://github.com/mraniki/iamlistening/commit/64b264fcc07ed62bebd50ee618b97f195e2ea9c9))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency simplematrixbotlib to v2.10.2 (#197) ([`1ce76ce`](https://github.com/mraniki/iamlistening/commit/1ce76ce233fc43c91eaad41a5cbecb28e74a4457))
+
+* ⬆️ 🛠️(deps): update dependency simplematrixbotlib to v2.10.2 (#196) ([`cf68731`](https://github.com/mraniki/iamlistening/commit/cf687316e92f3254adca11dda86d082797208828))
+
+* ⬆️ 🛠️(deps): update dependency simplematrixbotlib to v2.10.2 ([`0d151de`](https://github.com/mraniki/iamlistening/commit/0d151de632b67fa5ce7ffb37d59b6b88261e4fa2))
+
+* ⬆️ 🛠️(deps): update dependency pythorhead to v0.16.0 (#193) ([`5786cc1`](https://github.com/mraniki/iamlistening/commit/5786cc1ab1f30fa6455d7980daebe94852135db7))
+
+* ⬆️ 🛠️(deps): update dependency pythorhead to v0.16.0 ([`5028812`](https://github.com/mraniki/iamlistening/commit/5028812b30471b64497316da734745bf327561ae))
+
+### 👷
+
+* 👷 CI Change (#195) ([`0166545`](https://github.com/mraniki/iamlistening/commit/0166545399d7f90a064ff33e6d810772d4e9fff1))
+
+* 👷 CI Change ([`89c6fda`](https://github.com/mraniki/iamlistening/commit/89c6fda801a14fdd431e6e6918043c1768c4b4b4))
+
+* 👷 CI Change ([`0aa11b1`](https://github.com/mraniki/iamlistening/commit/0aa11b186bceda58f50604ad2dc8ffcb402de86a))
+
+* 👷 CI Change ([`2f4762f`](https://github.com/mraniki/iamlistening/commit/2f4762f8c5f9d5a312339b44486a07f3ebb0aa0e))
+
+* 👷 CI Change ([`5e33e1b`](https://github.com/mraniki/iamlistening/commit/5e33e1ba46582d06ed2bac8647d87654a1d19112))
+
+
 ## v4.2.17 (2023-10-18)
 
 ### Other
