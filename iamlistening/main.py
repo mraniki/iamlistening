@@ -55,6 +55,10 @@ class Listener:
                     iteration_limit=_config.get("iteration_limit", -1),
                 )
                 self.clients.append(client)
+            if self.clients:
+                logger.info(f"Loaded {len(self.clients)} listeners")
+            else:
+                logger.warning("No listener loaded. Verify config")
 
         except Exception as e:
             logger.error("init: {}", e)
