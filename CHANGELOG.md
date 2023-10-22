@@ -2,6 +2,15 @@
 
 
 
+## v4.2.19 (2023-10-22)
+
+### 🥅
+
+* 🥅 better error handling for no config (#198) ([`27cac86`](https://github.com/mraniki/iamlistening/commit/27cac8623582d24bfe77f33cf70fcc6937b81fb1))
+
+* 🥅 better error handling for no config ([`499a46a`](https://github.com/mraniki/iamlistening/commit/499a46a359f3c56c95991fa93524a9d576691af9))
+
+
 ## v4.2.18 (2023-10-21)
 
 ### Other
