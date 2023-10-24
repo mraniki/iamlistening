@@ -58,7 +58,7 @@ class Listener:
             if self.clients:
                 logger.info(f"Loaded {len(self.clients)} listeners")
             else:
-                logger.warning("No listener loaded. Verify config")
+                logger.warning("No listener clients loaded. Verify config")
 
         except Exception as e:
             logger.error("init: {}", e)
