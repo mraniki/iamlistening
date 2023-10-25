@@ -2,6 +2,33 @@
 
 
 
+## v4.2.20 (2023-10-25)
+
+### Other
+
+* Auto ([`232cafe`](https://github.com/mraniki/iamlistening/commit/232cafe2cda75d4f5959902299bcbe545edc857a))
+
+* Auto ([`6cca659`](https://github.com/mraniki/iamlistening/commit/6cca6595f0a680b7e320789482d67c927555ac8a))
+
+### Update
+
+* Update Requirements ([`57947da`](https://github.com/mraniki/iamlistening/commit/57947daa7cbe5c803cdd79e5ad2463d3421259df))
+
+* Update Requirements ([`e17347f`](https://github.com/mraniki/iamlistening/commit/e17347f2555ff283b84833318a99c0c041591c91))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency pythorhead to v0.17.0 (#200) ([`35c662f`](https://github.com/mraniki/iamlistening/commit/35c662f97967d2a987a7f5180c0536a43962e645))
+
+* ⬆️ 🛠️(deps): update dependency pythorhead to v0.17.0 ([`15b3b29`](https://github.com/mraniki/iamlistening/commit/15b3b2956459508b9a8b40eb1c06cf06e8a7d4ed))
+
+* ⬆️ 🤖 - Auto Release (#199) ([`0591bca`](https://github.com/mraniki/iamlistening/commit/0591bca192e00245c3d4953d0b94e3c68184af61))
+
+### 💬
+
+* 💬 ([`81bf066`](https://github.com/mraniki/iamlistening/commit/81bf066c218418bdd3c6a478d52f2519cc67a367))
+
+
 ## v4.2.19 (2023-10-22)
 
 ### 🥅
