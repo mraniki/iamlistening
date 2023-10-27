@@ -36,7 +36,7 @@ rocketchat-API= "1.30.0"
 beautifulsoup4 = "4.12.2"
 "guilded.py" = "1.11.0"
 "revolt.py" = "0.1.11"
-pythorhead = {version ="0.17.0", python = ">=3.10,<3.12"}
+pythorhead = {version ="0.18.0", python = ">=3.10,<3.12"}
 twitchio = "2.8.2"
 
 [tool.poetry.group.dev.dependencies]
@@ -206,3 +206,17 @@ patch_tags = ["fix","bump","Update",
     "🔇",":mute:",
     "🔊",":loud:",
 ]
+
+[tool.semantic_release.changelog]
+# template_dir = "templates"
+changelog_file = "CHANGELOG.md"
+exclude_commit_patterns = []
+
+[tool.semantic_release.branches.main]
+match = "(main|master|dev)"
+prerelease_token = "rc"
+prerelease = false
+
+[tool.semantic_release.publish]
+dist_glob_patterns = ["dist/*"]
+upload_to_vcs_release = true
