@@ -2,6 +2,17 @@
 
 
 
+## v4.2.22 (2023-10-28)
+
+### Update
+
+* ⬆️ Update Requirements and Version ([`35dda57`](https://github.com/mraniki/iamlistening/commit/35dda5773c2fc4ce8f70d4479a85ea971da5fc25))
+
+### ⬆️
+
+* ⬆️ 🤖 - Auto Release (#205) ([`d338e6f`](https://github.com/mraniki/iamlistening/commit/d338e6f9523fa8c1e4bcea076da45f7758cce35d))
+
+
 ## v4.2.21 (2023-10-27)
 
 ### Other
