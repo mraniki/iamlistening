@@ -2,6 +2,17 @@
 
 
 
+## v4.2.24 (2023-10-29)
+
+### ⬆️
+
+* ⬆️ 🤖 - Caution breathing may be hazardous to your health (#208) ([`a48f3a8`](https://github.com/mraniki/iamlistening/commit/a48f3a8fe6f63173a9ffb1d1498f591811152b46))
+
+### 👷
+
+* 👷 CI Change ([`fe74fc9`](https://github.com/mraniki/iamlistening/commit/fe74fc9e27d1e196f0ee05de016ef02c3ed3a09d))
+
+
 ## v4.2.23 (2023-10-29)
 
 ### Other
