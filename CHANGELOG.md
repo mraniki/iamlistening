@@ -2,6 +2,23 @@
 
 
 
+## v4.2.23 (2023-10-29)
+
+### Other
+
+* Refactor GitHub workflow file ([`27dc7e8`](https://github.com/mraniki/iamlistening/commit/27dc7e86eeed9971beba5383f7a8df5b5c43c36b))
+
+### ⬆️
+
+* ⬆️ 🤖 - You are capable of planning your future (#207) ([`ed02ac7`](https://github.com/mraniki/iamlistening/commit/ed02ac72ca9968c963465fcb5979ec3e15452755))
+
+* ⬆️ 🤖 -  (#206) ([`513dc40`](https://github.com/mraniki/iamlistening/commit/513dc406a26db22aff219b52ce2f30267e61d172))
+
+### 👷
+
+* 👷 CI Change ([`01fb0db`](https://github.com/mraniki/iamlistening/commit/01fb0db048fb0e8b22a5f228e1e31d3d491c961f))
+
+
 ## v4.2.22 (2023-10-28)
 
 ### Update
