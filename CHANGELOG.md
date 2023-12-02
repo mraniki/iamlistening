@@ -2,6 +2,47 @@
 
 
 
+## v4.2.25 (2023-12-02)
+
+### Update
+
+* Update pyproject.toml ([`f231cfe`](https://github.com/mraniki/iamlistening/commit/f231cfe5e10ac5fb9ea74e660d2e6fc682fa19e8))
+
+### ♻️
+
+* ♻️ simplify example ([`d934fb4`](https://github.com/mraniki/iamlistening/commit/d934fb4cef973540c06d3cddc9f3dc746ab46de2))
+
+### ⬆️
+
+* ⬆️ 🤖 - You will triumph over your enemy (#221) ([`848e400`](https://github.com/mraniki/iamlistening/commit/848e400ee5ce5fc4c9774b48248ec288a62e669c))
+
+* ⬆️ 🛠️(deps): update dependency telethon to v1.33.0 ([`1ffd90c`](https://github.com/mraniki/iamlistening/commit/1ffd90c8198ed799ff72c5f26f3532c68050e0e2))
+
+* ⬆️ 🤖 - The very ink with which all history is written is merely fluid prejudice (#219) ([`e943750`](https://github.com/mraniki/iamlistening/commit/e943750ba527e48c538a4b1a3059f4327575a384))
+
+* ⬆️ 🛠️(deps): update dependency pythorhead to v0.19.2 ([`6f26ef8`](https://github.com/mraniki/iamlistening/commit/6f26ef8ad4ea5c51f372f4f84b056e8924ae24db))
+
+* ⬆️ 🤖 - Live in a world of your own but always welcome visitors (#217) ([`ef59d3e`](https://github.com/mraniki/iamlistening/commit/ef59d3eb059811f518e78ea6eb3c545ec60a8206))
+
+* ⬆️ 🛠️(deps): update dependency pythorhead to v0.19.1 ([`c370813`](https://github.com/mraniki/iamlistening/commit/c370813b74001df462104c1bad6e6740b4fd2cbe))
+
+* ⬆️ 🤖 - You will be recognized and honored as a community leader (#215) ([`a9fd31b`](https://github.com/mraniki/iamlistening/commit/a9fd31bb1a9e7c10b7cf2814aba9e62e223ec267))
+
+* ⬆️ 🛠️(deps): update dependency telethon to v1.32.1 ([`c23ff35`](https://github.com/mraniki/iamlistening/commit/c23ff35643241ae7a14d023e7750f08c924e02c5))
+
+* ⬆️ 🤖 - Be careful  Is it classified (#213) ([`2d61379`](https://github.com/mraniki/iamlistening/commit/2d6137922fc61f09de2f99cf67fb5d42abd6c3d3))
+
+* ⬆️ 🛠️(deps): update dependency rocketchat-api to v1.31.0 ([`eeeb0b1`](https://github.com/mraniki/iamlistening/commit/eeeb0b1a4085d6730a0f589b8dbfefe2932b7b28))
+
+* ⬆️ 🤖 - Increased knowledge will help you now  Have mates phone bugged (#211) ([`d16d855`](https://github.com/mraniki/iamlistening/commit/d16d855a44e393c0667d0590ed2814f79fe263b8))
+
+* ⬆️ 🛠️(deps): update dependency telethon to v1.32.0 ([`48df920`](https://github.com/mraniki/iamlistening/commit/48df920bbbb87bd482310a62a9ffbe5d145334ed))
+
+* ⬆️ 🛠️(deps): update dependency pytest-asyncio to ^0.22.0 (#209) ([`479345b`](https://github.com/mraniki/iamlistening/commit/479345b9c0b5fb31c98b75ecc6e386ca4aafebbc))
+
+* ⬆️ 🛠️(deps): update dependency pytest-asyncio to ^0.22.0 ([`65b9c81`](https://github.com/mraniki/iamlistening/commit/65b9c810b8da537aac05c42cf2911a5d8d35ce44))
+
+
 ## v4.2.24 (2023-10-29)
 
 ### ⬆️
