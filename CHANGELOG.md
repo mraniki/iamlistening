@@ -2,6 +2,15 @@
 
 
 
+## v4.2.26 (2023-12-07)
+
+### ⬆️
+
+* ⬆️ 🤖 - If one cannot enjoy reading a book over and over again there is no use (#225) ([`90f71a2`](https://github.com/mraniki/iamlistening/commit/90f71a24fc64636a1b1cec7d66f07d6f514f071a))
+
+* ⬆️ 🛠️(deps): update dependency guilded.py to v1.12.0 ([`1f8a9cd`](https://github.com/mraniki/iamlistening/commit/1f8a9cdd67aa2914e0b2f3cfeade0dc159a32036))
+
+
 ## v4.2.25 (2023-12-02)
 
 ### Update
