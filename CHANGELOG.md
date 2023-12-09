@@ -2,6 +2,15 @@
 
 
 
+## v4.2.27 (2023-12-09)
+
+### ⬆️
+
+* ⬆️ 🤖 - You are fighting for survival in your own sweet and gentle way (#227) ([`5d32e89`](https://github.com/mraniki/iamlistening/commit/5d32e891b0a6f70c086eca805de9b681dbed64ce))
+
+* ⬆️ 🛠️(deps): update dependency telethon to v1.33.1 ([`f893d75`](https://github.com/mraniki/iamlistening/commit/f893d7517a50362d2fe5dc04cd1a514d65e0907c))
+
+
 ## v4.2.26 (2023-12-07)
 
 ### ⬆️
