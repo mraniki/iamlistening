@@ -2,6 +2,15 @@
 
 
 
+## v4.2.28 (2023-12-10)
+
+### ⬆️
+
+* ⬆️ 🤖 - Do something unusual today  Pay a bill (#228) ([`dab3c77`](https://github.com/mraniki/iamlistening/commit/dab3c7743be0b9a650becbe0c621e74466749683))
+
+* ⬆️ 🛠️(deps): update dependency pytest-asyncio to ^0.23.0 ([`62eaa70`](https://github.com/mraniki/iamlistening/commit/62eaa70a12ae16886c16cc8c0186a811c195d0d4))
+
+
 ## v4.2.27 (2023-12-09)
 
 ### ⬆️
