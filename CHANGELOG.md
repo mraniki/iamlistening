@@ -2,6 +2,15 @@
 
 
 
+## v4.2.30 (2023-12-17)
+
+### Update
+
+* Update pyproject.toml (#231) ([`bdb20b6`](https://github.com/mraniki/iamlistening/commit/bdb20b69ae383d3dd32797b97cb33d3b974304e4))
+
+* Update pyproject.toml ([`1b04f42`](https://github.com/mraniki/iamlistening/commit/1b04f421c086cbb9bbf80abb68d413b8fe530597))
+
+
 ## v4.2.29 (2023-12-17)
 
 ### ⬆️
