@@ -2,6 +2,15 @@
 
 
 
+## v4.2.29 (2023-12-17)
+
+### ⬆️
+
+* ⬆️ 🤖 - I do desire we may be better strangers (#230) ([`2f79ba0`](https://github.com/mraniki/iamlistening/commit/2f79ba0c2a27ce13e00736d7f8fe6e1762295d0c))
+
+* ⬆️ 🛠️(deps): update dependency simplematrixbotlib to v2.10.3 ([`cd3bd6b`](https://github.com/mraniki/iamlistening/commit/cd3bd6b1b6c9d185d06cc04a2e89e5e9db4555e8))
+
+
 ## v4.2.28 (2023-12-10)
 
 ### ⬆️
