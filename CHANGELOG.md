@@ -2,6 +2,15 @@
 
 
 
+## v4.2.31 (2024-01-03)
+
+### ⬆️
+
+* ⬆️ 🤖 - You look like a million dollars  All green and wrinkled (#235) ([`2bdc18d`](https://github.com/mraniki/iamlistening/commit/2bdc18d326d0589ffd74edb27e754fc32a6e4af5))
+
+* ⬆️ 🛠️(deps): update dependency guilded.py to v1.12.1 ([`73d2671`](https://github.com/mraniki/iamlistening/commit/73d2671b0f54b663c8d36a5f8bbb37a3d97fa978))
+
+
 ## v4.2.30 (2023-12-17)
 
 ### Update
