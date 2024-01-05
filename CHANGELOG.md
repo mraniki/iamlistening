@@ -2,6 +2,21 @@
 
 
 
+## v4.2.32 (2024-01-05)
+
+### ⬆️
+
+* ⬆️ 🤖 - Look afar and see the end from the beginning (#237) ([`9580991`](https://github.com/mraniki/iamlistening/commit/9580991db67048bca17f846a07db93500f7f6972))
+
+* ⬆️ 🛠️(deps): update dependency pydata-sphinx-theme to ^0.15.0 (#236) ([`1fcf843`](https://github.com/mraniki/iamlistening/commit/1fcf8436721ea0f1132f9cd5721154cc5fbad0a9))
+
+* ⬆️ 🛠️(deps): update dependency pythorhead to v0.20.0 ([`cc7828b`](https://github.com/mraniki/iamlistening/commit/cc7828bd9c4e8e893380af497fd91b4aee7ba96c))
+
+* ⬆️ 🛠️(deps): update dependency pydata-sphinx-theme to ^0.15.0 ([`58b73ad`](https://github.com/mraniki/iamlistening/commit/58b73ad0fe0bfae48ce2a5a8500e7430c6eeec7f))
+
+* ⬆️ 🛠️(deps): update dependency pythorhead to v0.20.0 (#232) ([`76d6801`](https://github.com/mraniki/iamlistening/commit/76d68012ed3e0d85054ed451ec30a5e4313f2c51))
+
+
 ## v4.2.31 (2024-01-03)
 
 ### ⬆️
@@ -9,6 +24,8 @@
 * ⬆️ 🤖 - You look like a million dollars  All green and wrinkled (#235) ([`2bdc18d`](https://github.com/mraniki/iamlistening/commit/2bdc18d326d0589ffd74edb27e754fc32a6e4af5))
 
 * ⬆️ 🛠️(deps): update dependency guilded.py to v1.12.1 ([`73d2671`](https://github.com/mraniki/iamlistening/commit/73d2671b0f54b663c8d36a5f8bbb37a3d97fa978))
+
+* ⬆️ 🛠️(deps): update dependency pythorhead to v0.20.0 ([`2f56662`](https://github.com/mraniki/iamlistening/commit/2f56662cf0b98d418bc8079d35434689986d8d2a))
 
 
 ## v4.2.30 (2023-12-17)
