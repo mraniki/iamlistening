@@ -2,6 +2,15 @@
 
 
 
+## v4.2.33 (2024-01-13)
+
+### ⬆️
+
+* ⬆️ 🤖 - No violence gentlemen  no violence I beg of you  Consider the furniture (#239) ([`082db3d`](https://github.com/mraniki/iamlistening/commit/082db3d433e4a68110918ef461760cf5b4bc4a33))
+
+* ⬆️ 🛠️(deps): update dependency rocketchat-api to v1.32.0 ([`87bff80`](https://github.com/mraniki/iamlistening/commit/87bff80e47d53ada0437e4f972bab7c325668455))
+
+
 ## v4.2.32 (2024-01-05)
 
 ### ⬆️
