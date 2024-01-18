@@ -2,6 +2,15 @@
 
 
 
+## v4.2.35 (2024-01-18)
+
+### ⬆️
+
+* ⬆️ 🤖 - Its name is Public Opinion  It is held in reverence  It settles everything (#244) ([`faea189`](https://github.com/mraniki/iamlistening/commit/faea1896083a12dbb46abeab9a0990933abaaaaa))
+
+* ⬆️ 🛠️(deps): update dependency pythorhead to v0.20.1 ([`bef2596`](https://github.com/mraniki/iamlistening/commit/bef25960465d08ff23a825636bbcae2bf33e7c5c))
+
+
 ## v4.2.34 (2024-01-18)
 
 ### ⬆️
