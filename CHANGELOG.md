@@ -2,6 +2,15 @@
 
 
 
+## v4.2.34 (2024-01-18)
+
+### ⬆️
+
+* ⬆️ 🤖 - Q	What do agnostic insomniac dyslexics do at night (#243) ([`20289f3`](https://github.com/mraniki/iamlistening/commit/20289f32940a8253f77359d3ec07dd0d9a6da52e))
+
+* ⬆️ 🛠️(deps): update dependency beautifulsoup4 to v4.12.3 ([`794564b`](https://github.com/mraniki/iamlistening/commit/794564bb16e32c9230e24e394342035826498594))
+
+
 ## v4.2.33 (2024-01-13)
 
 ### ⬆️
