@@ -1,7 +1,7 @@
 """
  Versioning
 """
-__version__ = "4.2.35"
+__version__ = "4.2.36"
 
 from iamlistening.main import Listener
 

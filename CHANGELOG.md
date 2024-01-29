@@ -2,6 +2,15 @@
 
 
 
+## v4.2.36 (2024-01-29)
+
+### ⬆️
+
+* ⬆️ 🤖 - Kindness is a language which the deaf can hear and the blind can read (#246) ([`bfcd16b`](https://github.com/mraniki/iamlistening/commit/bfcd16b5f635d22b44ebbcf53446bf803b8390d5))
+
+* ⬆️ 🛠️(deps): update dependency pythorhead to v0.21.0 ([`971f8d2`](https://github.com/mraniki/iamlistening/commit/971f8d2a9e4c004bbad21805789956c84d1d62d1))
+
+
 ## v4.2.35 (2024-01-18)
 
 ### ⬆️
