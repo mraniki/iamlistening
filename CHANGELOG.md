@@ -2,6 +2,15 @@
 
 
 
+## v4.2.37 (2024-02-03)
+
+### ⬆️
+
+* ⬆️ 🤖 - Q	How many mathematicians does it take to screw in a light bulb (#251) ([`87861ee`](https://github.com/mraniki/iamlistening/commit/87861ee17612b839698f44f3555254ff7a962475))
+
+* ⬆️ 🛠️(deps): update dependency telethon to v1.34.0 ([`7dd0b45`](https://github.com/mraniki/iamlistening/commit/7dd0b45ac54e533150c4d402e32b3e205fa4cac8))
+
+
 ## v4.2.36 (2024-01-29)
 
 ### ⬆️
