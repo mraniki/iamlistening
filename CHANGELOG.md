@@ -2,6 +2,15 @@
 
 
 
+## v4.2.38 (2024-02-07)
+
+### ⬆️
+
+* ⬆️ 🤖 - Fine day for friends (#253) ([`03c7acc`](https://github.com/mraniki/iamlistening/commit/03c7accc26ee94cd21ac26734349f21288e49e8c))
+
+* ⬆️ 🛠️(deps): update dependency ruff to ^0.2.0 ([`14f23b7`](https://github.com/mraniki/iamlistening/commit/14f23b76c52682b8970af7ba60832f72f02354e1))
+
+
 ## v4.2.37 (2024-02-03)
 
 ### ⬆️
