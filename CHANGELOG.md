@@ -2,6 +2,15 @@
 
 
 
+## v4.2.39 (2024-02-12)
+
+### ⬆️
+
+* ⬆️ 🤖 - You have the power to influence all with whom you come in contact (#256) ([`fc0945b`](https://github.com/mraniki/iamlistening/commit/fc0945be1076b9ef3574f6b083649959e9627dc3))
+
+* ⬆️ 🛠️(deps): update dependency pythorhead to v0.22.0 ([`914746a`](https://github.com/mraniki/iamlistening/commit/914746aeb8c6333c0684a79492c804b78a5018a2))
+
+
 ## v4.2.38 (2024-02-07)
 
 ### ⬆️
