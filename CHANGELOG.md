@@ -2,6 +2,15 @@
 
 
 
+## v4.2.40 (2024-02-16)
+
+### ⬆️
+
+* ⬆️ 🤖 - You have a strong appeal for members of your own sex (#258) ([`6672f03`](https://github.com/mraniki/iamlistening/commit/6672f033f96e258b3d20d791e6db8eccd08ae59c))
+
+* ⬆️ 🛠️(deps): update dependency guilded.py to v1.13.0 ([`39ef3cc`](https://github.com/mraniki/iamlistening/commit/39ef3ccd26ae3889bef5fb628a51847102882aae))
+
+
 ## v4.2.39 (2024-02-12)
 
 ### ⬆️
