@@ -2,6 +2,19 @@
 
 
 
+## v4.2.41 (2024-02-24)
+
+### ⬆️
+
+* ⬆️ 🤖 - Dont look back the lemmings are gaining on you (#265) ([`9c182c9`](https://github.com/mraniki/iamlistening/commit/9c182c90eba28c0bc2a7aad3ac43e047d0a55dde))
+
+* ⬆️ 🛠️(deps): update dependency simplematrixbotlib to v2.11.0 ([`295947b`](https://github.com/mraniki/iamlistening/commit/295947b7538e2b2bec61b87a6a1f0741b1d681d5))
+
+### 🙈
+
+* 🙈 ([`cda4ea0`](https://github.com/mraniki/iamlistening/commit/cda4ea08b0289361152c98b731b0bce083c653ec))
+
+
 ## v4.2.40 (2024-02-16)
 
 ### ⬆️
