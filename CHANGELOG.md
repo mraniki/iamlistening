@@ -2,6 +2,17 @@
 
 
 
+## v4.2.42 (2024-02-26)
+
+### Other
+
+* Remove unnecessary whitespace in config.py ([`0fc2b53`](https://github.com/mraniki/iamlistening/commit/0fc2b530a62e6bb6411e2b095c4e38200dd34606))
+
+### ⬆️
+
+* ⬆️ 🤖 - You have the capacity to learn from mistakes  Youll learn a lot today (#267) ([`366c3ee`](https://github.com/mraniki/iamlistening/commit/366c3eece6f44795391e0bea9044b34a79bc3531))
+
+
 ## v4.2.41 (2024-02-24)
 
 ### ⬆️
