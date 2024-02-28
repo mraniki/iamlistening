@@ -35,14 +35,14 @@ rocketchat-API= "1.32.0"
 "Mastodon.py" = "1.8.1"
 beautifulsoup4 = "4.12.3"
 "guilded.py" = "1.13.0"
-"revolt.py" = "0.1.11"
+"revolt.py" = "0.2.0"
 pythorhead = {version ="0.22.0", python = ">=3.10,<3.12"}
 twitchio = "2.8.2"
 
 [tool.poetry.group.dev.dependencies]
 python-semantic-release = ">=8.0.8"
 ruff = "^0.2.0"
-black = "^23.3.0"
+black = "^24.0.0"
 pre-commit = "^3.3.1"
 
 
