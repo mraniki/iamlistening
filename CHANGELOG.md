@@ -2,6 +2,17 @@
 
 
 
+## v4.2.44 (2024-02-28)
+
+### ⬆️
+
+* ⬆️ 🤖 - Q	Are we not men (#271) ([`8fba8d9`](https://github.com/mraniki/iamlistening/commit/8fba8d9245be51a218304fb63c9e201057adfc0d))
+
+* ⬆️ 🛠️(deps): update dependency black to v24 ([`e9961b1`](https://github.com/mraniki/iamlistening/commit/e9961b19172cfd2fb09b3e15bd4ee7504b89a7b8))
+
+* ⬆️ 🛠️(deps): update dependency revolt.py to v0.2.0 ([`3ae550f`](https://github.com/mraniki/iamlistening/commit/3ae550f89ae1e18119fdc47a8728e64d0422aac4))
+
+
 ## v4.2.43 (2024-02-27)
 
 ### ⬆️
