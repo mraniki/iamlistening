@@ -2,6 +2,15 @@
 
 
 
+## v4.2.45 (2024-03-01)
+
+### ⬆️
+
+* ⬆️ 🤖 - Domestic happiness and faithful friends (#273) ([`4985fee`](https://github.com/mraniki/iamlistening/commit/4985fee43ccd3535108572dc3e64cec19bea5dc7))
+
+* ⬆️ 🛠️(deps): update dependency ruff to ^0.3.0 ([`f9c1037`](https://github.com/mraniki/iamlistening/commit/f9c1037a63b766756065f6c62d17d8a36274fe9f))
+
+
 ## v4.2.44 (2024-02-28)
 
 ### ⬆️
