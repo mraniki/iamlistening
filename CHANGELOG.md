@@ -2,6 +2,15 @@
 
 
 
+## v4.2.46 (2024-03-03)
+
+### ⬆️
+
+* ⬆️ 🤖 - Expect a letter from a friend who will ask a favor of you (#275) ([`c22f4b0`](https://github.com/mraniki/iamlistening/commit/c22f4b0df0e91abede7508d0864472d5d2389f90))
+
+* ⬆️ 🛠️(deps): update dependency py-cord to v2.5.0 ([`f6f8752`](https://github.com/mraniki/iamlistening/commit/f6f87524a6447d99b4182f750ab1002af4e39381))
+
+
 ## v4.2.45 (2024-03-01)
 
 ### ⬆️
