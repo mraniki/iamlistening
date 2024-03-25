@@ -66,7 +66,7 @@ class Listener:
         self.clients = []
 
         # Create a client for each client in settings.myllm
-        for name, client_config in settings.listener.items():
+        for name, client_config in settings.platform.items():
             # Skip template and empty string client names
             if name in ["", "template"] or not client_config.get("enabled"):
                 continue
