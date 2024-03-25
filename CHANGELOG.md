@@ -2,6 +2,49 @@
 
 
 
+## v5.0.0 (2024-03-25)
+
+### ♻️
+
+* ♻️ ([`3a87f8a`](https://github.com/mraniki/iamlistening/commit/3a87f8a53f3c86d615dc5ffd52f1fc689af9c467))
+
+* ♻️ ([`445aaae`](https://github.com/mraniki/iamlistening/commit/445aaaea3715ea63c87a78cccda513765f18c555))
+
+* ♻️ ([`76bd580`](https://github.com/mraniki/iamlistening/commit/76bd580450a378d81c78e199a12aedb980a16246))
+
+* ♻️ ([`90d693f`](https://github.com/mraniki/iamlistening/commit/90d693f08fb4b82263cac3ca28993c3891a8f7ce))
+
+### ✅
+
+* ✅ Unit Test ([`cb650b1`](https://github.com/mraniki/iamlistening/commit/cb650b13f080a3bebee091068314252afbaf8a95))
+
+* ✅ Unit Test ([`f880c3a`](https://github.com/mraniki/iamlistening/commit/f880c3ae3ecf51e82dc6e2b84096ca0274683e28))
+
+* ✅ Unit Test ([`4be9eb4`](https://github.com/mraniki/iamlistening/commit/4be9eb4953431f5e16faec391acac706452894a1))
+
+### 🐛
+
+* 🐛 ([`6d65c3c`](https://github.com/mraniki/iamlistening/commit/6d65c3c70479507734cb2ffc749947c3ea212749))
+
+### 💥
+
+* 💥 breaking Refactor Client (#282) ([`0442d65`](https://github.com/mraniki/iamlistening/commit/0442d6549b83857911572f3f2aacc57821ac3f87))
+
+* 💥 breaking setting change from platform to listener for the category ([`d21b240`](https://github.com/mraniki/iamlistening/commit/d21b24078f3b587df35c1ce620ef165baee5342c))
+
+* 💥 breaking Refactor Client ([`f2644ec`](https://github.com/mraniki/iamlistening/commit/f2644ecf10ecd6af8a719281968ceb4a5c98e271))
+
+### 🚑
+
+* 🚑 ([`f001811`](https://github.com/mraniki/iamlistening/commit/f0018116d5d6afb2a671c59309c3137b6d133825))
+
+* 🚑 ([`5ec2aed`](https://github.com/mraniki/iamlistening/commit/5ec2aed4a9e6dd68dfab243f368b468a5a630020))
+
+### 🚨
+
+* 🚨 Linter setup update ([`ff9f517`](https://github.com/mraniki/iamlistening/commit/ff9f517095095826c491bba22494936c6ef3ff43))
+
+
 ## v4.2.47 (2024-03-25)
 
 ### ⬆️
