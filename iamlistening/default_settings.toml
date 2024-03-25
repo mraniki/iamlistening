@@ -14,7 +14,7 @@
 
 [default]
 # settings load verification
-# VALUE = "On Default"
+VALUE = "On Default"
 
 # Module Enable/Disable
 iamlistening_enabled = true
