@@ -3,20 +3,11 @@
 """
 
 import asyncio
+import importlib
 
 from loguru import logger
 
 from iamlistening import __version__
-from iamlistening.clients import (
-    DiscordHandler,
-    GuildedHandler,
-    LemmyHandler,
-    MastodonHandler,
-    MatrixHandler,
-    RevoltHandler,
-    TelegramHandler,
-    TwitchHandler,
-)
 from iamlistening.config import settings
 
 
@@ -24,44 +15,151 @@ class Listener:
     """
     Listener Class for IAmListening.
 
+    This class provides methods for starting and stopping the listener
+    for each platform.
+
+    Methods:
+        _create_client(self, **kwargs)
+        get_all_client_classes(self)
+        get_info(self)
+        start(self)
+        stop(self)
+
     """
 
     def __init__(self):
         """
-        Initialize the listener.
+        Initializes the class instance by creating and appending clients
+        based on the configuration in `settings.platform`.
 
-        Raises:
-            Exception: Platform missing
+        Checks if the module is enabled by looking at `settings.iamlistening_enabled`.
+        If the module is disabled, no clients will be created.
+
+        Creates a mapping of library names to client classes.
+        This mapping is used to create new clients based on the configuration.
+
+        If a client's configuration exists in `settings.platform` and its "enabled"
+        key is truthy, it will be created.
+        Clients are not created if their name is "template" or empty string.
+
+        If a client is successfully created, it is appended to the `clients` list.
+
+        If a client fails to be created, a message is logged with the name of the
+        client and the error that occurred.
+
+        Parameters:
+            None
+
+        Returns:
+            None
+        """
+        # Check if the module is enabled
+        self.enabled = settings.iamlistening_enabled or True
+
+        # Create a mapping of library names to client classes
+        self.client_classes = self.get_all_client_classes()
+        logger.debug("client_classes available {}", self.client_classes)
+
+        if not self.enabled:
+            logger.info("Module is disabled. No clients will be created.")
+            return
+        self.clients = []
+        logger.debug("settings.platform {}", settings.platform)
+        # Create a client for each client in settings.myllm
+        for name, client_config in settings.platform.items():
+            # Skip template and empty string client names
+            if name in ["", "template"] or not client_config.get("enabled"):
+                continue
+            try:
+                # Create the client
+                logger.debug("Creating client {}", name)
+                client = self._create_client(**client_config, name=name)
+                # If the client has a valid client attribute, append it to the list
+                if client and getattr(client, "client", None):
+                    self.clients.append(client)
+            except Exception as e:
+                # Log the error if the client fails to be created
+                logger.error(f"Failed to create client {name}: {e}")
+
+        # Log the number of clients that were created
+        logger.info(f"Loaded {len(self.clients)} clients")
+
+    def _create_client(self, **kwargs):
+        """
+        Create a client based on the given protocol.
+
+        This function takes in a dictionary of keyword arguments, `kwargs`,
+        containing the necessary information to create a client. The required
+        key in `kwargs` is "library", which specifies the protocol to use for
+        communication with the LLM. The value of "platform" must match one of the
+        libraries supported by iamlistening.
+
+        This function retrieves the class used to create the client based on the
+        value of "library" from the mapping of library names to client classes
+        stored in `self.client_classes`. If the value of "library" does not
+        match any of the libraries supported, the function logs an error message
+        and returns None.
+
+        If the class used to create the client is found, the function creates a
+        new instance of the class using the keyword arguments in `kwargs` and
+        returns it.
+
+        The function returns a client object based on the specified protocol
+        or None if the library is not supported.
+
+        Parameters:
+            **kwargs (dict): A dictionary of keyword arguments containing the
+            necessary information for creating the client. The required key is
+            "platform".
+
+        Returns:
+            A client object based on the specified protocol or None if the
+            library is not supported.
 
         """
-        try:
-            config = settings.platform
-            self.clients = []
-            for item in config:
-                _config = config[item]
-                if item in ["", "template"]:
-                    continue
-                client = self._create_client(
-                    platform=_config.get("platform"),
-                    bot_token=_config.get("bot_token"),
-                    bot_channel_id=_config.get("bot_channel_id"),
-                    bot_api_id=_config.get("bot_api_id"),
-                    bot_api_hash=_config.get("bot_api_hash"),
-                    bot_hostname=_config.get("bot_hostname"),
-                    bot_user=_config.get("bot_user"),
-                    bot_pass=_config.get("bot_pass"),
-                    bot_auth_token=_config.get("bot_auth_token"),
-                    iteration_enabled=_config.get("iteration_enabled", True),
-                    iteration_limit=_config.get("iteration_limit", -1),
-                )
-                self.clients.append(client)
-            if self.clients:
-                logger.info(f"Loaded {len(self.clients)} listeners")
-            else:
-                logger.warning("No listener clients loaded. Verify config")
+        library = kwargs.get("platform")
+        client_class = self.client_classes.get(f"{library.capitalize()}Handler")
 
-        except Exception as e:
-            logger.error("init: {}", e)
+        if client_class is None:
+            logger.error(f"library {library} not supported")
+            return None
+
+        return client_class(**kwargs)
+
+    def get_all_client_classes(self):
+        """
+        Retrieves all client classes from the `iamlistening.protocol` module.
+
+        This function imports the `iamlistening.protocol` module and retrieves
+        all the classes defined in it.
+
+        The function returns a dictionary where the keys are the
+        names of the classes and the values are the corresponding
+        class objects.
+
+        Returns:
+            dict: A dictionary containing all the client classes
+            from the `iamlistening.protocol` module.
+        """
+        provider_module = importlib.import_module("iamlistening.protocol")
+        return {
+            name: cls
+            for name, cls in provider_module.__dict__.items()
+            if isinstance(cls, type)
+        }
+
+    async def get_info(self):
+        """
+        Retrieves information about the exchange
+        and the account.
+
+        :return: A formatted string containing
+        the exchange name and the account information.
+        :rtype: str
+        """
+        version_info = f"ℹ️ {type(self).__name__} {__version__}\n"
+        client_info = "".join(f"👂 {client.platform}\n" for client in self.clients)
+        return version_info + client_info.strip()
 
     async def start(self):
         """
@@ -84,45 +182,3 @@ class Listener:
         """
         for client in self.clients:
             client.stop()
-
-    def _create_client(self, **kwargs):
-        """
-        Get the handler object based on the specified platform.
-
-        Returns:
-            object: The handler object.
-        """
-        platform = kwargs["platform"]
-        logger.debug("get handler {}", platform)
-        if platform == "telegram":
-            logger.debug("get telegram handler")
-            return TelegramHandler(**kwargs)
-        elif platform == "discord":
-            return DiscordHandler(**kwargs)
-        elif platform == "matrix":
-            return MatrixHandler(**kwargs)
-        elif platform == "guilded":
-            return GuildedHandler(**kwargs)
-        elif platform == "mastodon":
-            return MastodonHandler(**kwargs)
-        elif platform == "lemmy":
-            return LemmyHandler(**kwargs)
-        elif platform == "twitch":
-            return TwitchHandler(**kwargs)
-        elif platform == "revolt":
-            return RevoltHandler(**kwargs)
-        else:
-            logger.error("Invalid platform specified {}", platform)
-
-    def get_info(self):
-        """
-        Retrieves information about the exchange
-        and the account.
-
-        :return: A formatted string containing
-        the exchange name and the account information.
-        :rtype: str
-        """
-        version_info = f"ℹ️ {type(self).__name__} {__version__}\n"
-        client_info = "".join(f"👂 {client.platform}\n" for client in self.clients)
-        return version_info + client_info.strip()

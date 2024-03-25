@@ -4,41 +4,44 @@ from loguru import logger
 
 
 class ChatClient:
+    """
+    Chat Client Base Class
 
-    """Chat Client Base Class"""
+    Args:
+        **kwargs:
 
-    def __init__(
-        self,
-        platform=None,
-        bot_token=None,
-        bot_channel_id=None,
-        bot_api_id=None,
-        bot_api_hash=None,
-        bot_hostname=None,
-        bot_user=None,
-        bot_pass=None,
-        bot_auth_token=None,
-        iteration_enabled=True,
-        iteration_limit=-1,
-    ):
+    Methods:
+        start(self)
+        stop(self)
+        connected(self)
+        disconnected(self)
+        get_latest_message(self)
+        handle_message(self, message_content)
+        handle_iteration_limit(self)
+        disconnect(self)
+
+    """
+
+    def __init__(self, **kwargs):
         """
         Initialize the chat client.
         """
-        self.platform = platform
-        self.bot_token = bot_token
-        self.bot_channel_id = bot_channel_id
-        self.bot_api_id = bot_api_id
-        self.bot_api_hash = bot_api_hash
-        self.bot_hostname = bot_hostname
-        self.bot_user = bot_user
-        self.bot_pass = bot_pass
-        self.bot_auth_token = bot_auth_token
+
+        self.platform = kwargs.get("platform", None)
+        self.bot_token = kwargs.get("bot_token", None)
+        self.bot_channel_id = kwargs.get("bot_channel_id", None)
+        self.bot_api_id = kwargs.get("bot_api_id", None)
+        self.bot_api_hash = kwargs.get("bot_api_hash", None)
+        self.bot_hostname = kwargs.get("bot_hostname", None)
+        self.bot_user = kwargs.get("bot_user", None)
+        self.bot_pass = kwargs.get("bot_pass", None)
+        self.bot_auth_token = kwargs.get("bot_auth_token", None)
         self.bot = None
         self.is_connected = True
         self.latest_message = None
         self.lock = asyncio.Lock()
-        self.iteration_enabled = iteration_enabled
-        self.iteration_limit = iteration_limit
+        self.iteration_enabled = kwargs.get("iteration_enabled", None)
+        self.iteration_limit = kwargs.get("iteration_limit", None)
         self.iteration_count = 0
 
     async def start(self):

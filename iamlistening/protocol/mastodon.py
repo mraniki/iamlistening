@@ -7,10 +7,18 @@ from bs4 import BeautifulSoup
 from loguru import logger
 from mastodon import Mastodon, StreamListener
 
-from .client import ChatClient
+from iamlistening.protocol.client import ChatClient
 
 
 class MastodonHandler(ChatClient):
+
+    def __init__(self, **kwargs):
+        """
+        Initialize the Handler object
+
+        """
+
+        super().__init__(**kwargs)
     async def start(self):
         """
         Start the Mastodon handler.

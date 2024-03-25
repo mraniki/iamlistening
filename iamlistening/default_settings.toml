@@ -14,7 +14,7 @@
 
 [default]
 # settings load verification
-# VALUE = "On Default"
+VALUE = "On Default"
 
 # Module Enable/Disable
 iamlistening_enabled = true
@@ -39,6 +39,7 @@ iamlistening_enabled = true
 
 [default.platform.template]
 platform = ""
+enabled=true
 bot_token = ""
 bot_channel_id = ""
 bot_api_id = ""
@@ -52,6 +53,7 @@ iteration_limit = -1
 
 # [default.platform.backup]
 # platform = ""
+# enabled=true
 # bot_token = ""
 # bot_channel_id = ""
 # bot_api_id = ""

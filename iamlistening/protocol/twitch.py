@@ -5,10 +5,19 @@ Twitch  🟣
 from loguru import logger
 from twitchio.ext import commands
 
-from .client import ChatClient
+from iamlistening.protocol.client import ChatClient
 
 
 class TwitchHandler(ChatClient):
+
+    def __init__(self, **kwargs):
+        """
+        Initialize the Handler object
+
+        """
+
+        super().__init__(**kwargs)
+
     async def start(self):
         """
         Start the Twitch handler.

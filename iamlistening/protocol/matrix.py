@@ -5,10 +5,19 @@ Matrix ⚫
 import simplematrixbotlib as botlib
 from loguru import logger
 
-from .client import ChatClient
+from iamlistening.protocol.client import ChatClient
 
 
 class MatrixHandler(ChatClient):
+
+    def __init__(self, **kwargs):
+        """
+        Initialize the Handler object
+
+        """
+
+        super().__init__(**kwargs)
+
     async def start(self):
         """
         Start the Matrix handler.

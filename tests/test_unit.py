@@ -8,7 +8,8 @@ from unittest.mock import MagicMock
 import pytest
 
 from iamlistening import Listener
-from iamlistening.clients import (
+from iamlistening.config import settings
+from iamlistening.protocol import (
     DiscordHandler,
     GuildedHandler,
     LemmyHandler,
@@ -17,7 +18,6 @@ from iamlistening.clients import (
     TelegramHandler,
     TwitchHandler,
 )
-from iamlistening.config import settings
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -25,9 +25,13 @@ def set_test_settings():
     settings.configure(FORCE_ENV_FOR_DYNACONF="ial")
 
 
+@pytest.mark.asyncio
+async def test_dynaconf():
+    assert settings.VALUE == "On Testing"
+
+
 @pytest.fixture(name="listener")
 def listener():
-    settings.setenv("ial")
     return Listener()
 
 
@@ -37,23 +41,9 @@ def message():
 
 
 @pytest.mark.asyncio
-async def test_listener_fixture(listener):
-    assert listener is not None
-    assert isinstance(listener, Listener)
-    assert listener.clients is not None
-    assert listener.clients[0].platform is not None
-    assert listener.clients[0].bot_token is not None
-
-
-def test_listener_init_raises_exception():
-    with pytest.raises(Exception):
-        with settings.setenv("exception"):
-            Listener()
-
-
-@pytest.mark.asyncio
-async def test_get_info(listener):
-    result = listener.get_info()
+async def test_get_myllm_info():
+    listener = Listener()
+    result = await listener.get_info()
     assert result is not None
     assert "ℹ️" in result
 
@@ -63,6 +53,8 @@ async def test_listener_start(listener, message, caplog):
     loop = asyncio.get_running_loop()
     loop.create_task(listener.start())
     iteration = 0
+    assert isinstance(listener, Listener)
+    assert listener.clients is not None
     for client in listener.clients:
         client.connected = MagicMock()
         assert isinstance(
@@ -78,6 +70,10 @@ async def test_listener_start(listener, message, caplog):
             ),
         )
 
+        assert client.platform is not None
+        assert client.bot_token is not None
+        assert client.bot_channel_id is not None
+        assert client.iteration_count == 0
         iteration += 1
         await client.handle_message(message)
         msg = await client.get_latest_message()
@@ -98,3 +94,9 @@ async def test_listener_start(listener, message, caplog):
         assert "Frasier👂 on telegram:" in caplog.text
         if iteration >= 1:
             break
+
+
+def test_listener_init_raises_exception():
+    with pytest.raises(Exception):
+        with settings.setenv("exception"):
+            Listener()
