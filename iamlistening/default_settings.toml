@@ -24,20 +24,7 @@ iamlistening_enabled = true
 # for the chat platform. Value can be
 # telegram, discord, matrix, etc.
 
-# [default.platform]
-# platform = ""
-# bot_token = ""
-# bot_channel_id = ""
-# bot_api_id = ""
-# bot_api_hash = ""
-# bot_hostname = ""
-# bot_user = ""
-# bot_pass = ""
-# bot_auth_token = ""
-# iteration_enabled = false
-# iteration_limit = -1
-
-[default.platform.template]
+[default.listener.template]
 platform = ""
 bot_token = ""
 bot_channel_id = ""
@@ -50,7 +37,7 @@ bot_auth_token = ""
 iteration_enabled = false
 iteration_limit = -1
 
-# [default.platform.backup]
+# [default.listener.backup]
 # platform = ""
 # bot_token = ""
 # bot_channel_id = ""
