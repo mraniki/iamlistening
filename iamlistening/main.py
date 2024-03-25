@@ -72,6 +72,7 @@ class Listener:
                 continue
             try:
                 # Create the client
+                logger.debug("Creating client {}", name)
                 client = self._create_client(**client_config, name=name)
                 # If the client has a valid client attribute, append it to the list
                 if client and getattr(client, "client", None):
