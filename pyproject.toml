@@ -36,8 +36,8 @@ rocketchat-API= "1.32.0"
 beautifulsoup4 = "4.12.3"
 "guilded.py" = "1.13.0"
 "revolt.py" = "0.2.0"
-pythorhead = {version ="0.22.0", python = ">=3.10,<3.12"}
-twitchio = "2.8.2"
+pythorhead = {version ="0.23.1", python = ">=3.10,<3.12"}
+twitchio = "2.9.1"
 
 [tool.poetry.group.dev.dependencies]
 python-semantic-release = ">=8.0.8"
@@ -120,7 +120,7 @@ pytest = "^8.0.0"
 pytest-cov = "^4.1"
 pytest-asyncio = "^0.23.0"
 pytest-mock = "^3.11.1"
-pytest-loguru = "^0.3.0"
+pytest-loguru = "^0.4.0"
 
 
 
