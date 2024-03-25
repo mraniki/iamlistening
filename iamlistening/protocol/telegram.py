@@ -12,6 +12,13 @@ class TelegramHandler(ChatClient):
     Telegram Handler
 
     """
+    def __init__(self, **kwargs):
+        """
+        Initialize the Handler object
+
+        """
+
+        super().__init__(**kwargs)
 
     async def start(self):
         """

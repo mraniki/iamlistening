@@ -11,6 +11,14 @@ from iamlistening.protocol.client import ChatClient
 
 
 class MastodonHandler(ChatClient):
+
+    def __init__(self, **kwargs):
+        """
+        Initialize the Handler object
+
+        """
+
+        super().__init__(**kwargs)
     async def start(self):
         """
         Start the Mastodon handler.

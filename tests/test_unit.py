@@ -41,7 +41,8 @@ def message():
 
 
 @pytest.mark.asyncio
-async def test_get_myllm_info(listener):
+async def test_get_myllm_info():
+    listener = Listener()
     result = await listener.get_info()
     assert result is not None
     assert "ℹ️" in result

@@ -9,6 +9,16 @@ from iamlistening.protocol.client import ChatClient
 
 
 class GuildedHandler(ChatClient):
+
+
+    def __init__(self, **kwargs):
+        """
+        Initialize the Handler object
+
+        """
+
+        super().__init__(**kwargs)
+
     async def start(self):
         """
         Start the Guilded handler.
