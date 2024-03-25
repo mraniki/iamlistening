@@ -148,7 +148,7 @@ class Listener:
             if isinstance(cls, type)
         }
 
-    def get_info(self):
+    async def get_info(self):
         """
         Retrieves information about the exchange
         and the account.
