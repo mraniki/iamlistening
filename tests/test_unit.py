@@ -42,6 +42,7 @@ async def test_listener_fixture(listener):
     assert isinstance(listener, Listener)
     assert listener.clients is not None
 
+
 def test_listener_init_raises_exception():
     with pytest.raises(Exception):
         with settings.setenv("exception"):
@@ -75,6 +76,10 @@ async def test_listener_start(listener, message, caplog):
             ),
         )
 
+        assert client.platform is not None
+        assert client.bot_token is not None
+        assert client.bot_channel_id is not None
+        assert client.iteration_count == 0
         iteration += 1
         await client.handle_message(message)
         msg = await client.get_latest_message()
