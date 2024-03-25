@@ -15,20 +15,30 @@ class Listener:
     """
     Listener Class for IAmListening.
 
+    This class provides methods for starting and stopping the listener
+    for each platform.
+
+    Methods:
+        _create_client(self, **kwargs)
+        get_all_client_classes(self)
+        get_info(self)
+        start(self)
+        stop(self)
+
     """
 
     def __init__(self):
         """
         Initializes the class instance by creating and appending clients
-        based on the configuration in `settings.myllm`.
+        based on the configuration in `settings.platform`.
 
-        Checks if the module is enabled by looking at `settings.myllm_enabled`.
+        Checks if the module is enabled by looking at `settings.iamlistening_enabled`.
         If the module is disabled, no clients will be created.
 
         Creates a mapping of library names to client classes.
         This mapping is used to create new clients based on the configuration.
 
-        If a client's configuration exists in `settings.myllm` and its "enabled"
+        If a client's configuration exists in `settings.platform` and its "enabled"
         key is truthy, it will be created.
         Clients are not created if their name is "template" or empty string.
 
@@ -80,8 +90,8 @@ class Listener:
         This function takes in a dictionary of keyword arguments, `kwargs`,
         containing the necessary information to create a client. The required
         key in `kwargs` is "library", which specifies the protocol to use for
-        communication with the LLM. The value of "library" must match one of the
-        libraries supported by MyLLM.
+        communication with the LLM. The value of "platform" must match one of the
+        libraries supported by iamlistening.
 
         This function retrieves the class used to create the client based on the
         value of "library" from the mapping of library names to client classes
@@ -99,14 +109,14 @@ class Listener:
         Parameters:
             **kwargs (dict): A dictionary of keyword arguments containing the
             necessary information for creating the client. The required key is
-            "library".
+            "platform".
 
         Returns:
             A client object based on the specified protocol or None if the
             library is not supported.
 
         """
-        library = kwargs.get("platform") or kwargs.get("library")
+        library = kwargs.get("platform")
         client_class = self.client_classes.get(f"{library.capitalize()}Handler")
 
         if client_class is None:
@@ -117,9 +127,9 @@ class Listener:
 
     def get_all_client_classes(self):
         """
-        Retrieves all client classes from the `myllm.provider` module.
+        Retrieves all client classes from the `iamlistening.protocol` module.
 
-        This function imports the `myllm.provider` module and retrieves
+        This function imports the `iamlistening.protocol` module and retrieves
         all the classes defined in it.
 
         The function returns a dictionary where the keys are the
@@ -128,7 +138,7 @@ class Listener:
 
         Returns:
             dict: A dictionary containing all the client classes
-            from the `myllm.provider` module.
+            from the `iamlistening.protocol` module.
         """
         provider_module = importlib.import_module("iamlistening.protocol")
         return {

@@ -27,7 +27,6 @@ def set_test_settings():
 
 @pytest.fixture(name="listener")
 def listener():
-    settings.setenv("ial")
     return Listener()
 
 
