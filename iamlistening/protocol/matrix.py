@@ -7,6 +7,7 @@ from loguru import logger
 
 from iamlistening.protocol.client import ChatClient
 
+
 class MatrixHandler(ChatClient):
     async def start(self):
         """
