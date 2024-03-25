@@ -6,7 +6,7 @@ import aiohttp
 import revolt
 from loguru import logger
 
-from .client import ChatClient
+from iamlistening.protocol.client import ChatClient
 
 
 class RevoltHandler(ChatClient):

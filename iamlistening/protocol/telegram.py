@@ -4,7 +4,7 @@ Telegram 🔵
 """
 from telethon import TelegramClient, events
 
-from .client import ChatClient
+from iamlistening.protocol.client import ChatClient
 
 
 class TelegramHandler(ChatClient):

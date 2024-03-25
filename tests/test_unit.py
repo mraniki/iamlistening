@@ -8,7 +8,8 @@ from unittest.mock import MagicMock
 import pytest
 
 from iamlistening import Listener
-from iamlistening.clients import (
+from iamlistening.config import settings
+from iamlistening.protocol import (
     DiscordHandler,
     GuildedHandler,
     LemmyHandler,
@@ -17,7 +18,6 @@ from iamlistening.clients import (
     TelegramHandler,
     TwitchHandler,
 )
-from iamlistening.config import settings
 
 
 @pytest.fixture(scope="session", autouse=True)
