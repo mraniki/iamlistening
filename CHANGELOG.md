@@ -2,6 +2,19 @@
 
 
 
+## v4.2.47 (2024-03-25)
+
+### ⬆️
+
+* ⬆️ 🤖 - Good day for a change of scene  Repaper the bedroom wall (#281) ([`af19a50`](https://github.com/mraniki/iamlistening/commit/af19a502fad31477b84b1726a0a998ef6bc0cee9))
+
+* ⬆️ 🛠️(deps): update dependency pythorhead to v0.23.1 ([`01da52c`](https://github.com/mraniki/iamlistening/commit/01da52c28fa4b1bf1888eb5521906e95e449f8a8))
+
+* ⬆️ 🛠️(deps): update dependency pytest-loguru to ^0.4.0 ([`a44dd4b`](https://github.com/mraniki/iamlistening/commit/a44dd4bf62d26155820cd90e70a67e2d5942cf90))
+
+* ⬆️ 🛠️(deps): update dependency twitchio to v2.9.1 ([`53154d2`](https://github.com/mraniki/iamlistening/commit/53154d2fa6e49d0b4f6300e81d7cc790cc80a7c0))
+
+
 ## v4.2.46 (2024-03-03)
 
 ### ⬆️
