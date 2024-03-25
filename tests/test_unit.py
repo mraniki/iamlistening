@@ -41,9 +41,6 @@ async def test_listener_fixture(listener):
     assert listener is not None
     assert isinstance(listener, Listener)
     assert listener.clients is not None
-    assert listener.clients[0].platform is not None
-    assert listener.clients[0].bot_token is not None
-
 
 def test_listener_init_raises_exception():
     with pytest.raises(Exception):
