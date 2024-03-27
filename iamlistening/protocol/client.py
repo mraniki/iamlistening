@@ -27,6 +27,8 @@ class ChatClient:
         Initialize the chat client.
         """
 
+        self.name = kwargs.get("name", None)
+        self.enabled = kwargs.get("enabled", None)
         self.platform = kwargs.get("platform", None)
         self.bot_token = kwargs.get("bot_token", None)
         self.bot_channel_id = kwargs.get("bot_channel_id", None)
