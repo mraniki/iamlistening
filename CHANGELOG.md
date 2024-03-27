@@ -2,6 +2,27 @@
 
 
 
+## v5.1.0 (2024-03-27)
+
+### :rotating_light:
+
+* :rotating_light: ([`8160561`](https://github.com/mraniki/iamlistening/commit/8160561934d8f4618c8f462ffd21ea7c4582c7e2))
+
+### ✅
+
+* ✅ Unit Test ([`9127fab`](https://github.com/mraniki/iamlistening/commit/9127fab8a34b681812c69f179ba30d2f9b0c378c))
+
+### 🚀
+
+* 🚀 ♻️ refactor Handler (#286) ([`d9e5eac`](https://github.com/mraniki/iamlistening/commit/d9e5eac3ccb63316507dda2e7fb6bb482327bd0a))
+
+* 🚀 ♻️ refactor Handler ([`338b6f5`](https://github.com/mraniki/iamlistening/commit/338b6f58092660f128abf6acb9f1a8e091635450))
+
+### 🥅
+
+* 🥅 improve error management in case of no client ([`ff76b20`](https://github.com/mraniki/iamlistening/commit/ff76b20a27d125fcc06db63b1372223f058f3b00))
+
+
 ## v5.0.3 (2024-03-27)
 
 ### :ambulance:
