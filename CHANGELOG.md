@@ -2,6 +2,15 @@
 
 
 
+## v5.0.2 (2024-03-27)
+
+### :ambulance:
+
+* :ambulance: (#284) ([`c245a86`](https://github.com/mraniki/iamlistening/commit/c245a860db453f8c3891236df6644599b892b839))
+
+* :ambulance: ([`f34a6f9`](https://github.com/mraniki/iamlistening/commit/f34a6f9de4349f914de9cdfa2650ab9c351239c3))
+
+
 ## v5.0.1 (2024-03-27)
 
 ### :ambulance:
