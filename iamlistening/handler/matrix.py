@@ -5,7 +5,7 @@ Matrix ⚫
 import simplematrixbotlib as botlib
 from loguru import logger
 
-from iamlistening.protocol.client import ChatClient
+from .client import ChatClient
 
 
 class MatrixHandler(ChatClient):

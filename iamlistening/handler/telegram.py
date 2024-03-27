@@ -2,9 +2,10 @@
 Telegram 🔵
 
 """
+
 from telethon import TelegramClient, events
 
-from iamlistening.protocol.client import ChatClient
+from .client import ChatClient
 
 
 class TelegramHandler(ChatClient):
@@ -12,6 +13,7 @@ class TelegramHandler(ChatClient):
     Telegram Handler
 
     """
+
     def __init__(self, **kwargs):
         """
         Initialize the Handler object

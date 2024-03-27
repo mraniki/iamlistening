@@ -6,7 +6,7 @@ Lemmy  🐭
 from loguru import logger
 from pythorhead import Lemmy
 
-from iamlistening.protocol.client import ChatClient
+from .client import ChatClient
 
 
 class LemmyHandler(ChatClient):

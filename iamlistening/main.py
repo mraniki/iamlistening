@@ -139,7 +139,7 @@ class Listener:
             dict: A dictionary containing all the client classes
             from the `iamlistening.protocol` module.
         """
-        provider_module = importlib.import_module("iamlistening.protocol")
+        provider_module = importlib.import_module("iamlistening.handler")
         return {
             name: cls
             for name, cls in provider_module.__dict__.items()
