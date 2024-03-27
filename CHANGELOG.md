@@ -2,6 +2,15 @@
 
 
 
+## v5.0.3 (2024-03-27)
+
+### :ambulance:
+
+* :ambulance: Add name and enabled attributes to ChatClient class. (#285) ([`b358510`](https://github.com/mraniki/iamlistening/commit/b358510a9df783cd5f21e83c54b103dc0131c744))
+
+* :ambulance: Add name and enabled attributes to ChatClient class. ([`544ad97`](https://github.com/mraniki/iamlistening/commit/544ad973ce7c761c8f249809e5cc7ec95200db2b))
+
+
 ## v5.0.2 (2024-03-27)
 
 ### :ambulance:
