@@ -43,6 +43,7 @@ class ChatClient:
         self.iteration_enabled = kwargs.get("iteration_enabled", None)
         self.iteration_limit = kwargs.get("iteration_limit", None)
         self.iteration_count = 0
+        self.client = self.name
 
     async def start(self):
         """

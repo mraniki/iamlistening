@@ -64,7 +64,6 @@ class Listener:
             logger.info("Module is disabled. No clients will be created.")
             return
         self.clients = []
-        logger.debug("settings.platform {}", settings.platform)
         # Create a client for each client in settings.myllm
         for name, client_config in settings.platform.items():
             # Skip template and empty string client names
