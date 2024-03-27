@@ -2,6 +2,13 @@
 
 
 
+## v5.0.1 (2024-03-27)
+
+### :ambulance:
+
+* :ambulance:Remove debug log and update client assignment in ChatClient class. ([`13cecae`](https://github.com/mraniki/iamlistening/commit/13cecae1596510325e6a6f8fa717c0afacb344cf))
+
+
 ## v5.0.0 (2024-03-25)
 
 ### ♻️
