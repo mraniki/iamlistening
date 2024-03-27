@@ -9,7 +9,7 @@ import pytest
 
 from iamlistening import Listener
 from iamlistening.config import settings
-from iamlistening.protocol import (
+from iamlistening.handler import (
     DiscordHandler,
     GuildedHandler,
     LemmyHandler,

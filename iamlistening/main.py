@@ -15,7 +15,8 @@ class Listener:
     """
     Listener Class for IAmListening.
 
-    This class provides methods for starting and stopping the listener
+    This class provides methods for
+    starting and stopping the listener
     for each platform.
 
     Methods:
@@ -139,7 +140,7 @@ class Listener:
             dict: A dictionary containing all the client classes
             from the `iamlistening.protocol` module.
         """
-        provider_module = importlib.import_module("iamlistening.protocol")
+        provider_module = importlib.import_module("iamlistening.handler")
         return {
             name: cls
             for name, cls in provider_module.__dict__.items()
@@ -168,6 +169,9 @@ class Listener:
 
         """
         logger.debug("Listener starting")
+        if not self.clients:
+            logger.warning("No clients to start")
+            return
         tasks = [client.start() for client in self.clients]
         await asyncio.gather(*tasks)
 

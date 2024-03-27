@@ -5,7 +5,7 @@ Twitch  🟣
 from loguru import logger
 from twitchio.ext import commands
 
-from iamlistening.protocol.client import ChatClient
+from .client import ChatClient
 
 
 class TwitchHandler(ChatClient):
