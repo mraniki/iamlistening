@@ -15,7 +15,8 @@ class Listener:
     """
     Listener Class for IAmListening.
 
-    This class provides methods for starting and stopping the listener
+    This class provides methods for
+    starting and stopping the listener
     for each platform.
 
     Methods:
@@ -168,6 +169,9 @@ class Listener:
 
         """
         logger.debug("Listener starting")
+        if not self.clients:
+            logger.warning("No clients to start")
+            return
         tasks = [client.start() for client in self.clients]
         await asyncio.gather(*tasks)
 
