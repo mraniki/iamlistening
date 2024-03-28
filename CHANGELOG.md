@@ -2,6 +2,15 @@
 
 
 
+## v5.1.1 (2024-03-28)
+
+### Update
+
+* Update readthedocs.yaml with new poetry installation method. (#287) ([`36851e6`](https://github.com/mraniki/iamlistening/commit/36851e68ae81e0deb9ff025e961409a4b58b6ff4))
+
+* Update readthedocs.yaml with new poetry installation method. ([`006d5a0`](https://github.com/mraniki/iamlistening/commit/006d5a0254d06a2cd1b2ac7b5587924e42a40a33))
+
+
 ## v5.1.0 (2024-03-27)
 
 ### :rotating_light:
