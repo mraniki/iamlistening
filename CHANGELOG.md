@@ -2,6 +2,39 @@
 
 
 
+## v5.1.3 (2024-03-29)
+
+### Fix
+
+* Update pytest-loguru version in pyproject.toml and remove caplog fixture from test_unit.py. ([`8dd3739`](https://github.com/mraniki/iamlistening/commit/8dd37394957a1fba5dd3a26c6a4f4b0eefc4fcde))
+
+* Add fixture for capturing logs in unit tests. ([`5991470`](https://github.com/mraniki/iamlistening/commit/5991470ec88d4c190dfa1c94ea10a99f05d94cb2))
+
+### Other
+
+* Remove stop method call in test_listener_start function ([`36e66a5`](https://github.com/mraniki/iamlistening/commit/36e66a5ad431daa6c00308c8286467c920239b92))
+
+* Refactor test_unit.py for improved caplog handling. ([`86a7765`](https://github.com/mraniki/iamlistening/commit/86a776543020629faedd9712ab28b7c3226559b3))
+
+* Add assertion for notalibrary support in test_listener_start ([`3325ce4`](https://github.com/mraniki/iamlistening/commit/3325ce4d488f650091e586cec424d30b39f76679))
+
+* Refactor test_listener_start function in test_unit.py ([`080e068`](https://github.com/mraniki/iamlistening/commit/080e0682bc91339e6d67d72dee2c5c4d13c9ca4f))
+
+* Remove pytest-loguru dependency from pyproject.toml ([`bc0c2ac`](https://github.com/mraniki/iamlistening/commit/bc0c2ac96e2482fb621779d9512d3aca34431e0d))
+
+* Refactor test_unit.py functions and add error message. ([`8a116c2`](https://github.com/mraniki/iamlistening/commit/8a116c200388f02ec7d076da01ad8d2dea9e9c57))
+
+### Update
+
+* Update caplog enqueue value to True in test_unit.py ([`5edd5cf`](https://github.com/mraniki/iamlistening/commit/5edd5cf3d66a07ab59847b0ac5840f9cfb048bce))
+
+### 🎨
+
+* 🎨 update main.py (#289) ([`2102d91`](https://github.com/mraniki/iamlistening/commit/2102d910d139b2a79d44f59cb21c67d2fbeb6b6b))
+
+* 🎨 update main.py ([`169c2ed`](https://github.com/mraniki/iamlistening/commit/169c2ede772981313c7bc1e53e84b6d5338372f9))
+
+
 ## v5.1.2 (2024-03-29)
 
 ### 🔇
