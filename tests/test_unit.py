@@ -7,6 +7,9 @@ from unittest.mock import MagicMock
 
 import pytest
 
+from loguru import logger
+from _pytest.logging import LogCaptureFixture
+
 from iamlistening import Listener
 from iamlistening.config import settings
 from iamlistening.handler import (
@@ -24,6 +27,18 @@ from iamlistening.handler import (
 def set_test_settings():
     settings.configure(FORCE_ENV_FOR_DYNACONF="ial")
 
+
+@pytest.fixture
+def caplog(caplog: LogCaptureFixture):
+    handler_id = logger.add(
+        caplog.handler,
+        format="{message}",
+        level=0,
+        filter=lambda record: record["level"].no >= caplog.handler.level,
+        enqueue=False,  # Set to 'True' if your test is spawning child processes.
+    )
+    yield caplog
+    logger.remove(handler_id)
 
 @pytest.mark.asyncio
 async def test_dynaconf():
