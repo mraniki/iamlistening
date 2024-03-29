@@ -174,7 +174,7 @@ class Listener:
         """
         logger.debug("Listener starting")
         if not self.clients:
-            logger.warning("No clients to start")
+            logger.warning("No client to start")
             return
         tasks = [client.start() for client in self.clients]
         await asyncio.gather(*tasks)
