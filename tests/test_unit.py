@@ -41,7 +41,7 @@ def message():
 
 
 @pytest.mark.asyncio
-async def test_get_myllm_info():
+async def test_get_info():
     listener = Listener()
     result = await listener.get_info()
     assert result is not None
@@ -55,6 +55,7 @@ async def test_listener_start(listener, message, caplog):
     iteration = 0
     assert isinstance(listener, Listener)
     assert listener.clients is not None
+    assert "notalibrary not supported" in caplog.text
     for client in listener.clients:
         client.connected = MagicMock()
         assert isinstance(
@@ -94,6 +95,7 @@ async def test_listener_start(listener, message, caplog):
         assert "Frasier👂 on telegram:" in caplog.text
         if iteration >= 1:
             break
+    await listener.stop()
 
 
 def test_listener_init_raises_exception():
