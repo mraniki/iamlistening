@@ -58,7 +58,6 @@ async def test_listener_start(listener, message, caplog):
     iteration = 0
     assert isinstance(listener, Listener)
     assert listener.clients is not None
-    assert "notalibrary not supported" in caplog.text
     for client in listener.clients:
         client.connected = MagicMock()
         assert isinstance(
@@ -96,6 +95,7 @@ async def test_listener_start(listener, message, caplog):
         # assert "been registered as an event" in caplog.text
         assert "client is online on revolt" in caplog.text
         assert "Frasier👂 on telegram:" in caplog.text
+        assert "notalibrary not supported" in caplog.text
         if iteration >= 1:
             break
     await listener.stop()
