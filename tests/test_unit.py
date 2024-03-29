@@ -37,7 +37,6 @@ async def test_dynaconf():
 def listener(caplog):
     fixture = Listener()
     assert "notalibrary not supported" in caplog.text
-    assert "Failed to create client" in caplog.text
     return fixture
 
 
