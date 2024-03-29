@@ -2,6 +2,19 @@
 
 
 
+## v5.1.2 (2024-03-29)
+
+### 🔇
+
+* 🔇 ([`27aaa4a`](https://github.com/mraniki/iamlistening/commit/27aaa4affdffeda7d0e6a8cc12114ca83c6e249f))
+
+### 🔊
+
+* 🔊 Improve log when no clients loaded (#288) ([`87effa1`](https://github.com/mraniki/iamlistening/commit/87effa1a031a18116982759bde90fae22cb7e3dd))
+
+* 🔊 Improve log when no clients loaded ([`fc86305`](https://github.com/mraniki/iamlistening/commit/fc86305b76dd36531e0e26b0844dc1a6882c0e4e))
+
+
 ## v5.1.1 (2024-03-28)
 
 ### Update
