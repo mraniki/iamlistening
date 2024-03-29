@@ -37,6 +37,7 @@ async def test_dynaconf():
 def listener(caplog):
     fixture = Listener()
     assert "notalibrary not supported" in caplog.text
+    assert "Failed to create client" in caplog.text
     return fixture
 
 
@@ -98,6 +99,8 @@ async def test_listener_start(listener, message, caplog):
         assert "Frasier👂 on telegram:" in caplog.text
         if iteration >= 1:
             break
+        assert "iteration limit reached" in caplog.text
+        assert "Disconnected" in caplog.text 
 
 
 def test_listener_init_raises_exception():
