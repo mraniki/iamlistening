@@ -98,7 +98,6 @@ async def test_listener_start(listener, message, caplog):
         assert "Frasier👂 on telegram:" in caplog.text
         if iteration >= 1:
             break
-    await listener.stop()
 
 
 def test_listener_init_raises_exception():
