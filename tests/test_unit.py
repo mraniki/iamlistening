@@ -7,6 +7,9 @@ from unittest.mock import MagicMock
 
 import pytest
 
+from loguru import logger
+from _pytest.logging import LogCaptureFixture
+
 from iamlistening import Listener
 from iamlistening.config import settings
 from iamlistening.handler import (
@@ -31,8 +34,10 @@ async def test_dynaconf():
 
 
 @pytest.fixture(name="listener")
-def listener():
-    return Listener()
+def listener(caplog):
+    fixture = Listener()
+    assert "notalibrary not supported" in caplog.text
+    return fixture
 
 
 @pytest.fixture(name="message")
@@ -41,7 +46,7 @@ def message():
 
 
 @pytest.mark.asyncio
-async def test_get_myllm_info():
+async def test_get_info():
     listener = Listener()
     result = await listener.get_info()
     assert result is not None
@@ -89,7 +94,6 @@ async def test_listener_start(listener, message, caplog):
         assert client.is_connected is True
 
         assert "Latest message telegram" in caplog.text
-        # assert "been registered as an event" in caplog.text
         assert "client is online on revolt" in caplog.text
         assert "Frasier👂 on telegram:" in caplog.text
         if iteration >= 1:
