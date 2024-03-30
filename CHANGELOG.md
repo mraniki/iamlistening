@@ -2,6 +2,29 @@
 
 
 
+## v5.1.4 (2024-03-30)
+
+### :white_check_mark:
+
+* :white_check_mark: Add error message checks in unit tests for listene… (#290) ([`64ba422`](https://github.com/mraniki/iamlistening/commit/64ba422dc58cd1583116594a6392686512b8eb57))
+
+* :white_check_mark: Add error message checks in unit tests for listener function. ([`418c9d6`](https://github.com/mraniki/iamlistening/commit/418c9d6bae978a256f1808c8b25b5e44f56b24d0))
+
+### Fix
+
+* fix test_listener_start function in test_unit.py ([`d3f5323`](https://github.com/mraniki/iamlistening/commit/d3f532340254faffa79894c1ddc0786f81e7e111))
+
+### Other
+
+* Fix assert statement in test_unit.py test_listener_start function. ([`a4f56ed`](https://github.com/mraniki/iamlistening/commit/a4f56edff8c75e86c59153e5c00e3eaff09772fd))
+
+* Refactor test_unit.py assertions for listener start function. ([`2fa4eef`](https://github.com/mraniki/iamlistening/commit/2fa4eef0bf12ae41ee6ab864d2d48458da662611))
+
+* Remove assertion for failed client creation in listener function ([`420f091`](https://github.com/mraniki/iamlistening/commit/420f091ed931d80478f1c2b79cb06bef82c1e8c6))
+
+* Refactor test_unit.py to handle iteration logic better. ([`4d7a52b`](https://github.com/mraniki/iamlistening/commit/4d7a52b3b48198f125812f133a61ae090a1c76a1))
+
+
 ## v5.1.3 (2024-03-29)
 
 ### Fix
