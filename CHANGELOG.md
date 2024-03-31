@@ -2,6 +2,17 @@
 
 
 
+## v5.1.5 (2024-03-31)
+
+### ⬆️
+
+* ⬆️ 🤖 - Q	Why should you always serve a Southern Carolina football man (#291) ([`e7c9fae`](https://github.com/mraniki/iamlistening/commit/e7c9fae031c5bd1177d10b9945f100c291cf7aca))
+
+### 🚨
+
+* 🚨 test: update test_unit.py ([`ba9eeb4`](https://github.com/mraniki/iamlistening/commit/ba9eeb4f6c4941549dacfe2df56f69f928dc92af))
+
+
 ## v5.1.4 (2024-03-30)
 
 ### :white_check_mark:
