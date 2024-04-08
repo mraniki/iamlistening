@@ -2,6 +2,15 @@
 
 
 
+## v5.1.7 (2024-04-08)
+
+### 🔇
+
+* 🔇 update client.py and test_unit.py (#294) ([`1fcdef7`](https://github.com/mraniki/iamlistening/commit/1fcdef7391becc47969540fe74f47d803726f8f1))
+
+* 🔇 update client.py and test_unit.py ([`0e42093`](https://github.com/mraniki/iamlistening/commit/0e42093a5df46a59222e8f091648511e846ab29a))
+
+
 ## v5.1.6 (2024-04-08)
 
 ### Other
