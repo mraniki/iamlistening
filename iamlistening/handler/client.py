@@ -84,7 +84,7 @@ class ChatClient:
         async with self.lock:
             if self.latest_message:
                 msg = self.latest_message
-                logger.debug("Latest message {}: {}", self.platform, msg)
+                # logger.debug("Latest message {}: {}", self.platform, msg)
                 self.latest_message = None
                 return msg
 
