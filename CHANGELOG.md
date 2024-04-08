@@ -2,6 +2,25 @@
 
 
 
+## v5.1.6 (2024-04-08)
+
+### Other
+
+* Merge branch &#39;main&#39; into dev ([`fe07600`](https://github.com/mraniki/iamlistening/commit/fe07600ee7b913caffd0c0254f39c077e71e576e))
+
+### ✅
+
+* ✅ Unit Test (#293) ([`80a062f`](https://github.com/mraniki/iamlistening/commit/80a062ff6a4aeba19b86d381cb6ce45dceee68a3))
+
+* ✅ Unit Test ([`df4f544`](https://github.com/mraniki/iamlistening/commit/df4f544c51397f1f5c192834e286fffc7559cc84))
+
+### 🔇
+
+* 🔇 update client.py (#292) ([`a400d96`](https://github.com/mraniki/iamlistening/commit/a400d96ee5771ac4ff91ef1fe0140d96e7a6c63a))
+
+* 🔇 update client.py ([`72aed5e`](https://github.com/mraniki/iamlistening/commit/72aed5ea35f4d8d51df03b31c9313592b1ab593a))
+
+
 ## v5.1.5 (2024-03-31)
 
 ### ⬆️
