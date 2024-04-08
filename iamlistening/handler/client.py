@@ -100,7 +100,7 @@ class ChatClient:
 
         if self.is_connected:
             self.latest_message = message_content
-            logger.debug("Frasier👂 on {}: {}", self.platform, message_content)
+            #logger.debug("Frasier👂 on {}: {}", self.platform, message_content)
             await self.handle_iteration_limit()
 
     async def handle_iteration_limit(self):
