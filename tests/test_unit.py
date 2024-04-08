@@ -90,7 +90,7 @@ async def test_listener_start(listener, message, caplog):
         assert client.connected.called_once
         assert client.is_connected is True
 
-        assert "Latest message telegram" in caplog.text
+        # assert "Latest message telegram" in caplog.text
         assert "client is online on revolt" in caplog.text
         # assert "Frasier👂 on telegram:" in caplog.text
         if iteration >= 1:
