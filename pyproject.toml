@@ -36,7 +36,7 @@ rocketchat-API= "1.32.0"
 beautifulsoup4 = "4.12.3"
 "guilded.py" = "1.13.0"
 "revolt.py" = "0.2.0"
-pythorhead = {version ="0.23.1", python = ">=3.10,<3.12"}
+pythorhead = {version ="0.24.0", python = ">=3.10,<3.12"}
 twitchio = "2.9.1"
 
 [tool.poetry.group.dev.dependencies]
