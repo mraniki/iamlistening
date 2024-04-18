@@ -2,6 +2,21 @@
 
 
 
+## v5.1.8 (2024-04-18)
+
+### ⬆️
+
+* ⬆️ 🤖 - You love peace (#299) ([`214b7ab`](https://github.com/mraniki/iamlistening/commit/214b7ab52e41fb1c3208da18bbbe041d80c2087f))
+
+* ⬆️ 🛠️(deps): update dependency sphinx to v7.3.6 ([`63db0e6`](https://github.com/mraniki/iamlistening/commit/63db0e62147714a53f050ca4f4e84ca1508beb66))
+
+* ⬆️ 🛠️(deps): update dependency pythorhead to v0.24.0 ([`7f9cdcd`](https://github.com/mraniki/iamlistening/commit/7f9cdcd74019beee065e65f7d1554b5256257459))
+
+* ⬆️ 🛠️(deps): update dependency sphinx to v7.3.5 ([`48f1f14`](https://github.com/mraniki/iamlistening/commit/48f1f148c21c0d5805bdb0b0912622e9bd956e2e))
+
+* ⬆️ 🛠️(deps): update dependency sphinx to v7.3.1 ([`b0fa8e5`](https://github.com/mraniki/iamlistening/commit/b0fa8e5dafbae54000346f7b3083f418014ad930))
+
+
 ## v5.1.7 (2024-04-08)
 
 ### 🔇
