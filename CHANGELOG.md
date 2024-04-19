@@ -2,6 +2,15 @@
 
 
 
+## v5.1.9 (2024-04-19)
+
+### ⬆️
+
+* ⬆️ 🤖 - Everything that you know is wrong but you can be straightened out (#301) ([`e0dea10`](https://github.com/mraniki/iamlistening/commit/e0dea107bf7b3e8f99d7a4a1e7976f4c80ae84f2))
+
+* ⬆️ 🛠️(deps): update dependency ruff to ^0.4.0 ([`8d498fd`](https://github.com/mraniki/iamlistening/commit/8d498fd7c811e83797c91b23fd19aeea5e188ef6))
+
+
 ## v5.1.8 (2024-04-18)
 
 ### ⬆️
