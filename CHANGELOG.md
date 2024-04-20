@@ -2,6 +2,15 @@
 
 
 
+## v5.1.10 (2024-04-20)
+
+### ⬆️
+
+* ⬆️ 🤖 - Things will be bright in PM  A cop will shine a light in your face (#303) ([`7e2ac8c`](https://github.com/mraniki/iamlistening/commit/7e2ac8c959c11503c5c7b99025a273eb34a8f649))
+
+* ⬆️ 🛠️(deps): update dependency sphinx to v7.3.7 ([`ad0d657`](https://github.com/mraniki/iamlistening/commit/ad0d6574f4bfd311006c0f992228c2d5213b9e24))
+
+
 ## v5.1.9 (2024-04-19)
 
 ### ⬆️
