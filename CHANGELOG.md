@@ -2,6 +2,15 @@
 
 
 
+## v5.1.11 (2024-04-24)
+
+### ⬆️
+
+* ⬆️ 🤖 - You will be Told about it Tomorrow  Go Home and Prepare Thyself (#305) ([`edef741`](https://github.com/mraniki/iamlistening/commit/edef741da27e2b9404e3df48d8c1ed1814341129))
+
+* ⬆️ 🛠️(deps): update dependency pytest-cov to v5 ([`527ca2b`](https://github.com/mraniki/iamlistening/commit/527ca2bb439e6f9c2eda1d36af68c81ce6dbcc1b))
+
+
 ## v5.1.10 (2024-04-20)
 
 ### ⬆️
