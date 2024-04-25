@@ -2,6 +2,15 @@
 
 
 
+## v5.1.12 (2024-04-25)
+
+### ⬆️
+
+* ⬆️ 🤖 - Beware the one behind you (#307) ([`fa8b086`](https://github.com/mraniki/iamlistening/commit/fa8b086ecdd22dbf24131278069440ff3234fbd5))
+
+* ⬆️ 🛠️(deps): update dependency telethon to v1.35.0 ([`af25f8b`](https://github.com/mraniki/iamlistening/commit/af25f8b0271f20c936056eed2512993c1aa37d65))
+
+
 ## v5.1.11 (2024-04-24)
 
 ### ⬆️
