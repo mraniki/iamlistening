@@ -2,6 +2,15 @@
 
 
 
+## v5.1.13 (2024-05-02)
+
+### ⬆️
+
+* ⬆️ 🤖 - Dont look now but the man in the moon is laughing at you (#310) ([`671a4e3`](https://github.com/mraniki/iamlistening/commit/671a4e3c4c0375ba017fbfd4e320aab55d85c250))
+
+* ⬆️ 🛠️(deps): update dependency guilded.py to v1.13.1 ([`9f16052`](https://github.com/mraniki/iamlistening/commit/9f16052d15a2cb87aae17f7d7852d52594c582c2))
+
+
 ## v5.1.12 (2024-04-25)
 
 ### ⬆️
