@@ -2,6 +2,15 @@
 
 
 
+## v5.1.14 (2024-05-04)
+
+### ⬆️
+
+* ⬆️ 🤖 - Work consists of whatever a body is obliged to do (#312) ([`979b33e`](https://github.com/mraniki/iamlistening/commit/979b33e9adfb6bb20d56ed185b665f546b358be0))
+
+* ⬆️ 🛠️(deps): update dependency pythorhead to v0.24.1 ([`6431808`](https://github.com/mraniki/iamlistening/commit/64318085978cccc885d22de5db283ebd9834dec4))
+
+
 ## v5.1.13 (2024-05-02)
 
 ### ⬆️
