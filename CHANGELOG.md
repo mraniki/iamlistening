@@ -2,6 +2,15 @@
 
 
 
+## v5.1.15 (2024-05-05)
+
+### ⬆️
+
+* ⬆️ 🤖 - Lay on MacDuff and cursd be him who first cries Hold enough (#314) ([`706f7f7`](https://github.com/mraniki/iamlistening/commit/706f7f74d8fe0d28cafb5d34b27e191beb2d2e68))
+
+* ⬆️ 🛠️(deps): update dependency pythorhead to v0.24.2 ([`2a2df2a`](https://github.com/mraniki/iamlistening/commit/2a2df2a7bad129354751dd41dba8d6a2c462b734))
+
+
 ## v5.1.14 (2024-05-04)
 
 ### ⬆️
