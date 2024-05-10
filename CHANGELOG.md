@@ -2,6 +2,15 @@
 
 
 
+## v5.1.16 (2024-05-10)
+
+### ⬆️
+
+* ⬆️ 🤖 - Next Friday will not be your lucky day  As a matter of fact you dont (#316) ([`3309f56`](https://github.com/mraniki/iamlistening/commit/3309f56397204cd4988ce5fa156a099cfb1434e2))
+
+* ⬆️ 🛠️(deps): update dependency guilded.py to v1.13.2 ([`3cc05a0`](https://github.com/mraniki/iamlistening/commit/3cc05a0966e7bdf94a5f18fb1f285daa1963f0cb))
+
+
 ## v5.1.15 (2024-05-05)
 
 ### ⬆️
