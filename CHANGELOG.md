@@ -2,6 +2,17 @@
 
 
 
+## v5.1.17 (2024-05-24)
+
+### ⬆️
+
+* ⬆️ 🤖 - FS Fitzgerald to Hemingway (#319) ([`0483cbc`](https://github.com/mraniki/iamlistening/commit/0483cbc3e8f0fc05253268d28cffcbc1c3900471))
+
+* ⬆️ 🛠️(deps): update dependency myst_parser to v3 ([`5c317b0`](https://github.com/mraniki/iamlistening/commit/5c317b0ea1a5efa84a6d3059485756cf9b12854b))
+
+* ⬆️ 🛠️(deps): update dependency sphinx_design to ^0.6.0 ([`2e4d4ef`](https://github.com/mraniki/iamlistening/commit/2e4d4ef3b147e378bdb26112643a191f2c2bae06))
+
+
 ## v5.1.16 (2024-05-10)
 
 ### ⬆️
