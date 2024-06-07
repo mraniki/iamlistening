@@ -1,4 +1,5 @@
 """Provides example for iamlistening package."""
+
 import asyncio
 
 from iamlistening import Listener
