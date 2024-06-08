@@ -2,6 +2,17 @@
 
 
 
+## v5.2.0 (2024-06-08)
+
+### Feat
+
+* ✨ feature: added TradingeconomicsHandler ([`4276186`](https://github.com/mraniki/iamlistening/commit/427618636bcdfce7593acc4a6407abfd015b0aa7))
+
+### ⬆️
+
+* ⬆️ 🤖 - Be different conform (#320) ([`e415775`](https://github.com/mraniki/iamlistening/commit/e4157756be4bd3bc52e6c6b7f4fe568cc6eae729))
+
+
 ## v5.1.17 (2024-05-24)
 
 ### ⬆️
