@@ -2,6 +2,15 @@
 
 
 
+## v5.2.1 (2024-06-10)
+
+### ⬆️
+
+* ⬆️ 🤖 - Day of inquiry  You will be subpoenaed (#322) ([`2a3d9b4`](https://github.com/mraniki/iamlistening/commit/2a3d9b45d3701f310cdc02a59c10ad672b522bc7))
+
+* ⬆️ 🛠️(deps): update dependency pythorhead to v0.25.0 ([`934c7d1`](https://github.com/mraniki/iamlistening/commit/934c7d1c8ddfd705b05d71ed3787a0f5a874fced))
+
+
 ## v5.2.0 (2024-06-08)
 
 ### Feat
