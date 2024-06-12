@@ -2,6 +2,15 @@
 
 
 
+## v5.2.2 (2024-06-12)
+
+### ⬆️
+
+* ⬆️ 🤖 - Your business will assume vast proportions (#324) ([`d450353`](https://github.com/mraniki/iamlistening/commit/d45035383af40d7a6419f8f957a0fdc093f26544))
+
+* ⬆️ 🛠️(deps): update dependency telethon to v1.36.0 ([`70b7e8d`](https://github.com/mraniki/iamlistening/commit/70b7e8d17985b96f40d2980cd173e96aaabf7c46))
+
+
 ## v5.2.1 (2024-06-10)
 
 ### ⬆️
