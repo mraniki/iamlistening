@@ -1,6 +1,12 @@
 # CHANGELOG
 
+## v5.2.3 (2024-06-24)
 
+### ⬆️
+
+* ⬆️ 🤖 - Let me put it this way today is going to be a learning experience (#326) ([`f9af0a4`](https://github.com/mraniki/iamlistening/commit/f9af0a4b7c5c7a571027975b81ef844c3b8bd0e9))
+
+* ⬆️ 🛠️(deps): update dependency pythorhead to v0.25.1 ([`bd5be14`](https://github.com/mraniki/iamlistening/commit/bd5be14ff9b1e672783834c2da1609561920cbbe))
 
 ## v5.2.2 (2024-06-12)
 
@@ -10,7 +16,6 @@
 
 * ⬆️ 🛠️(deps): update dependency telethon to v1.36.0 ([`70b7e8d`](https://github.com/mraniki/iamlistening/commit/70b7e8d17985b96f40d2980cd173e96aaabf7c46))
 
-
 ## v5.2.1 (2024-06-10)
 
 ### ⬆️
@@ -18,7 +23,6 @@
 * ⬆️ 🤖 - Day of inquiry  You will be subpoenaed (#322) ([`2a3d9b4`](https://github.com/mraniki/iamlistening/commit/2a3d9b45d3701f310cdc02a59c10ad672b522bc7))
 
 * ⬆️ 🛠️(deps): update dependency pythorhead to v0.25.0 ([`934c7d1`](https://github.com/mraniki/iamlistening/commit/934c7d1c8ddfd705b05d71ed3787a0f5a874fced))
-
 
 ## v5.2.0 (2024-06-08)
 
@@ -30,7 +34,6 @@
 
 * ⬆️ 🤖 - Be different conform (#320) ([`e415775`](https://github.com/mraniki/iamlistening/commit/e4157756be4bd3bc52e6c6b7f4fe568cc6eae729))
 
-
 ## v5.1.17 (2024-05-24)
 
 ### ⬆️
@@ -41,7 +44,6 @@
 
 * ⬆️ 🛠️(deps): update dependency sphinx_design to ^0.6.0 ([`2e4d4ef`](https://github.com/mraniki/iamlistening/commit/2e4d4ef3b147e378bdb26112643a191f2c2bae06))
 
-
 ## v5.1.16 (2024-05-10)
 
 ### ⬆️
@@ -49,7 +51,6 @@
 * ⬆️ 🤖 - Next Friday will not be your lucky day  As a matter of fact you dont (#316) ([`3309f56`](https://github.com/mraniki/iamlistening/commit/3309f56397204cd4988ce5fa156a099cfb1434e2))
 
 * ⬆️ 🛠️(deps): update dependency guilded.py to v1.13.2 ([`3cc05a0`](https://github.com/mraniki/iamlistening/commit/3cc05a0966e7bdf94a5f18fb1f285daa1963f0cb))
-
 
 ## v5.1.15 (2024-05-05)
 
@@ -59,7 +60,6 @@
 
 * ⬆️ 🛠️(deps): update dependency pythorhead to v0.24.2 ([`2a2df2a`](https://github.com/mraniki/iamlistening/commit/2a2df2a7bad129354751dd41dba8d6a2c462b734))
 
-
 ## v5.1.14 (2024-05-04)
 
 ### ⬆️
@@ -67,7 +67,6 @@
 * ⬆️ 🤖 - Work consists of whatever a body is obliged to do (#312) ([`979b33e`](https://github.com/mraniki/iamlistening/commit/979b33e9adfb6bb20d56ed185b665f546b358be0))
 
 * ⬆️ 🛠️(deps): update dependency pythorhead to v0.24.1 ([`6431808`](https://github.com/mraniki/iamlistening/commit/64318085978cccc885d22de5db283ebd9834dec4))
-
 
 ## v5.1.13 (2024-05-02)
 
@@ -77,7 +76,6 @@
 
 * ⬆️ 🛠️(deps): update dependency guilded.py to v1.13.1 ([`9f16052`](https://github.com/mraniki/iamlistening/commit/9f16052d15a2cb87aae17f7d7852d52594c582c2))
 
-
 ## v5.1.12 (2024-04-25)
 
 ### ⬆️
@@ -85,7 +83,6 @@
 * ⬆️ 🤖 - Beware the one behind you (#307) ([`fa8b086`](https://github.com/mraniki/iamlistening/commit/fa8b086ecdd22dbf24131278069440ff3234fbd5))
 
 * ⬆️ 🛠️(deps): update dependency telethon to v1.35.0 ([`af25f8b`](https://github.com/mraniki/iamlistening/commit/af25f8b0271f20c936056eed2512993c1aa37d65))
-
 
 ## v5.1.11 (2024-04-24)
 
@@ -95,7 +92,6 @@
 
 * ⬆️ 🛠️(deps): update dependency pytest-cov to v5 ([`527ca2b`](https://github.com/mraniki/iamlistening/commit/527ca2bb439e6f9c2eda1d36af68c81ce6dbcc1b))
 
-
 ## v5.1.10 (2024-04-20)
 
 ### ⬆️
@@ -104,7 +100,6 @@
 
 * ⬆️ 🛠️(deps): update dependency sphinx to v7.3.7 ([`ad0d657`](https://github.com/mraniki/iamlistening/commit/ad0d6574f4bfd311006c0f992228c2d5213b9e24))
 
-
 ## v5.1.9 (2024-04-19)
 
 ### ⬆️
@@ -112,7 +107,6 @@
 * ⬆️ 🤖 - Everything that you know is wrong but you can be straightened out (#301) ([`e0dea10`](https://github.com/mraniki/iamlistening/commit/e0dea107bf7b3e8f99d7a4a1e7976f4c80ae84f2))
 
 * ⬆️ 🛠️(deps): update dependency ruff to ^0.4.0 ([`8d498fd`](https://github.com/mraniki/iamlistening/commit/8d498fd7c811e83797c91b23fd19aeea5e188ef6))
-
 
 ## v5.1.8 (2024-04-18)
 
@@ -128,7 +122,6 @@
 
 * ⬆️ 🛠️(deps): update dependency sphinx to v7.3.1 ([`b0fa8e5`](https://github.com/mraniki/iamlistening/commit/b0fa8e5dafbae54000346f7b3083f418014ad930))
 
-
 ## v5.1.7 (2024-04-08)
 
 ### 🔇
@@ -136,7 +129,6 @@
 * 🔇 update client.py and test_unit.py (#294) ([`1fcdef7`](https://github.com/mraniki/iamlistening/commit/1fcdef7391becc47969540fe74f47d803726f8f1))
 
 * 🔇 update client.py and test_unit.py ([`0e42093`](https://github.com/mraniki/iamlistening/commit/0e42093a5df46a59222e8f091648511e846ab29a))
-
 
 ## v5.1.6 (2024-04-08)
 
@@ -156,7 +148,6 @@
 
 * 🔇 update client.py ([`72aed5e`](https://github.com/mraniki/iamlistening/commit/72aed5ea35f4d8d51df03b31c9313592b1ab593a))
 
-
 ## v5.1.5 (2024-03-31)
 
 ### ⬆️
@@ -166,7 +157,6 @@
 ### 🚨
 
 * 🚨 test: update test_unit.py ([`ba9eeb4`](https://github.com/mraniki/iamlistening/commit/ba9eeb4f6c4941549dacfe2df56f69f928dc92af))
-
 
 ## v5.1.4 (2024-03-30)
 
@@ -189,7 +179,6 @@
 * Remove assertion for failed client creation in listener function ([`420f091`](https://github.com/mraniki/iamlistening/commit/420f091ed931d80478f1c2b79cb06bef82c1e8c6))
 
 * Refactor test_unit.py to handle iteration logic better. ([`4d7a52b`](https://github.com/mraniki/iamlistening/commit/4d7a52b3b48198f125812f133a61ae090a1c76a1))
-
 
 ## v5.1.3 (2024-03-29)
 
@@ -223,7 +212,6 @@
 
 * 🎨 update main.py ([`169c2ed`](https://github.com/mraniki/iamlistening/commit/169c2ede772981313c7bc1e53e84b6d5338372f9))
 
-
 ## v5.1.2 (2024-03-29)
 
 ### 🔇
@@ -236,7 +224,6 @@
 
 * 🔊 Improve log when no clients loaded ([`fc86305`](https://github.com/mraniki/iamlistening/commit/fc86305b76dd36531e0e26b0844dc1a6882c0e4e))
 
-
 ## v5.1.1 (2024-03-28)
 
 ### Update
@@ -244,7 +231,6 @@
 * Update readthedocs.yaml with new poetry installation method. (#287) ([`36851e6`](https://github.com/mraniki/iamlistening/commit/36851e68ae81e0deb9ff025e961409a4b58b6ff4))
 
 * Update readthedocs.yaml with new poetry installation method. ([`006d5a0`](https://github.com/mraniki/iamlistening/commit/006d5a0254d06a2cd1b2ac7b5587924e42a40a33))
-
 
 ## v5.1.0 (2024-03-27)
 
@@ -266,7 +252,6 @@
 
 * 🥅 improve error management in case of no client ([`ff76b20`](https://github.com/mraniki/iamlistening/commit/ff76b20a27d125fcc06db63b1372223f058f3b00))
 
-
 ## v5.0.3 (2024-03-27)
 
 ### :ambulance:
@@ -274,7 +259,6 @@
 * :ambulance: Add name and enabled attributes to ChatClient class. (#285) ([`b358510`](https://github.com/mraniki/iamlistening/commit/b358510a9df783cd5f21e83c54b103dc0131c744))
 
 * :ambulance: Add name and enabled attributes to ChatClient class. ([`544ad97`](https://github.com/mraniki/iamlistening/commit/544ad973ce7c761c8f249809e5cc7ec95200db2b))
-
 
 ## v5.0.2 (2024-03-27)
 
@@ -284,13 +268,11 @@
 
 * :ambulance: ([`f34a6f9`](https://github.com/mraniki/iamlistening/commit/f34a6f9de4349f914de9cdfa2650ab9c351239c3))
 
-
 ## v5.0.1 (2024-03-27)
 
 ### :ambulance:
 
 * :ambulance:Remove debug log and update client assignment in ChatClient class. ([`13cecae`](https://github.com/mraniki/iamlistening/commit/13cecae1596510325e6a6f8fa717c0afacb344cf))
-
 
 ## v5.0.0 (2024-03-25)
 
@@ -334,7 +316,6 @@
 
 * 🚨 Linter setup update ([`ff9f517`](https://github.com/mraniki/iamlistening/commit/ff9f517095095826c491bba22494936c6ef3ff43))
 
-
 ## v4.2.47 (2024-03-25)
 
 ### ⬆️
@@ -347,7 +328,6 @@
 
 * ⬆️ 🛠️(deps): update dependency twitchio to v2.9.1 ([`53154d2`](https://github.com/mraniki/iamlistening/commit/53154d2fa6e49d0b4f6300e81d7cc790cc80a7c0))
 
-
 ## v4.2.46 (2024-03-03)
 
 ### ⬆️
@@ -356,7 +336,6 @@
 
 * ⬆️ 🛠️(deps): update dependency py-cord to v2.5.0 ([`f6f8752`](https://github.com/mraniki/iamlistening/commit/f6f87524a6447d99b4182f750ab1002af4e39381))
 
-
 ## v4.2.45 (2024-03-01)
 
 ### ⬆️
@@ -364,7 +343,6 @@
 * ⬆️ 🤖 - Domestic happiness and faithful friends (#273) ([`4985fee`](https://github.com/mraniki/iamlistening/commit/4985fee43ccd3535108572dc3e64cec19bea5dc7))
 
 * ⬆️ 🛠️(deps): update dependency ruff to ^0.3.0 ([`f9c1037`](https://github.com/mraniki/iamlistening/commit/f9c1037a63b766756065f6c62d17d8a36274fe9f))
-
 
 ## v4.2.44 (2024-02-28)
 
@@ -376,7 +354,6 @@
 
 * ⬆️ 🛠️(deps): update dependency revolt.py to v0.2.0 ([`3ae550f`](https://github.com/mraniki/iamlistening/commit/3ae550f89ae1e18119fdc47a8728e64d0422aac4))
 
-
 ## v4.2.43 (2024-02-27)
 
 ### ⬆️
@@ -384,7 +361,6 @@
 * ⬆️ (#270) ([`48c3456`](https://github.com/mraniki/iamlistening/commit/48c34565317573b88527eb83d81192efaa938093))
 
 * ⬆️ ([`6b50eae`](https://github.com/mraniki/iamlistening/commit/6b50eaeddb2c9dfae464c70552350237c4628963))
-
 
 ## v4.2.42 (2024-02-26)
 
@@ -395,7 +371,6 @@
 ### ⬆️
 
 * ⬆️ 🤖 - You have the capacity to learn from mistakes  Youll learn a lot today (#267) ([`366c3ee`](https://github.com/mraniki/iamlistening/commit/366c3eece6f44795391e0bea9044b34a79bc3531))
-
 
 ## v4.2.41 (2024-02-24)
 
@@ -409,7 +384,6 @@
 
 * 🙈 ([`cda4ea0`](https://github.com/mraniki/iamlistening/commit/cda4ea08b0289361152c98b731b0bce083c653ec))
 
-
 ## v4.2.40 (2024-02-16)
 
 ### ⬆️
@@ -417,7 +391,6 @@
 * ⬆️ 🤖 - You have a strong appeal for members of your own sex (#258) ([`6672f03`](https://github.com/mraniki/iamlistening/commit/6672f033f96e258b3d20d791e6db8eccd08ae59c))
 
 * ⬆️ 🛠️(deps): update dependency guilded.py to v1.13.0 ([`39ef3cc`](https://github.com/mraniki/iamlistening/commit/39ef3ccd26ae3889bef5fb628a51847102882aae))
-
 
 ## v4.2.39 (2024-02-12)
 
@@ -427,7 +400,6 @@
 
 * ⬆️ 🛠️(deps): update dependency pythorhead to v0.22.0 ([`914746a`](https://github.com/mraniki/iamlistening/commit/914746aeb8c6333c0684a79492c804b78a5018a2))
 
-
 ## v4.2.38 (2024-02-07)
 
 ### ⬆️
@@ -435,7 +407,6 @@
 * ⬆️ 🤖 - Fine day for friends (#253) ([`03c7acc`](https://github.com/mraniki/iamlistening/commit/03c7accc26ee94cd21ac26734349f21288e49e8c))
 
 * ⬆️ 🛠️(deps): update dependency ruff to ^0.2.0 ([`14f23b7`](https://github.com/mraniki/iamlistening/commit/14f23b76c52682b8970af7ba60832f72f02354e1))
-
 
 ## v4.2.37 (2024-02-03)
 
@@ -445,7 +416,6 @@
 
 * ⬆️ 🛠️(deps): update dependency telethon to v1.34.0 ([`7dd0b45`](https://github.com/mraniki/iamlistening/commit/7dd0b45ac54e533150c4d402e32b3e205fa4cac8))
 
-
 ## v4.2.36 (2024-01-29)
 
 ### ⬆️
@@ -453,7 +423,6 @@
 * ⬆️ 🤖 - Kindness is a language which the deaf can hear and the blind can read (#246) ([`bfcd16b`](https://github.com/mraniki/iamlistening/commit/bfcd16b5f635d22b44ebbcf53446bf803b8390d5))
 
 * ⬆️ 🛠️(deps): update dependency pythorhead to v0.21.0 ([`971f8d2`](https://github.com/mraniki/iamlistening/commit/971f8d2a9e4c004bbad21805789956c84d1d62d1))
-
 
 ## v4.2.35 (2024-01-18)
 
@@ -463,7 +432,6 @@
 
 * ⬆️ 🛠️(deps): update dependency pythorhead to v0.20.1 ([`bef2596`](https://github.com/mraniki/iamlistening/commit/bef25960465d08ff23a825636bbcae2bf33e7c5c))
 
-
 ## v4.2.34 (2024-01-18)
 
 ### ⬆️
@@ -472,7 +440,6 @@
 
 * ⬆️ 🛠️(deps): update dependency beautifulsoup4 to v4.12.3 ([`794564b`](https://github.com/mraniki/iamlistening/commit/794564bb16e32c9230e24e394342035826498594))
 
-
 ## v4.2.33 (2024-01-13)
 
 ### ⬆️
@@ -480,7 +447,6 @@
 * ⬆️ 🤖 - No violence gentlemen  no violence I beg of you  Consider the furniture (#239) ([`082db3d`](https://github.com/mraniki/iamlistening/commit/082db3d433e4a68110918ef461760cf5b4bc4a33))
 
 * ⬆️ 🛠️(deps): update dependency rocketchat-api to v1.32.0 ([`87bff80`](https://github.com/mraniki/iamlistening/commit/87bff80e47d53ada0437e4f972bab7c325668455))
-
 
 ## v4.2.32 (2024-01-05)
 
@@ -496,7 +462,6 @@
 
 * ⬆️ 🛠️(deps): update dependency pythorhead to v0.20.0 (#232) ([`76d6801`](https://github.com/mraniki/iamlistening/commit/76d68012ed3e0d85054ed451ec30a5e4313f2c51))
 
-
 ## v4.2.31 (2024-01-03)
 
 ### ⬆️
@@ -507,7 +472,6 @@
 
 * ⬆️ 🛠️(deps): update dependency pythorhead to v0.20.0 ([`2f56662`](https://github.com/mraniki/iamlistening/commit/2f56662cf0b98d418bc8079d35434689986d8d2a))
 
-
 ## v4.2.30 (2023-12-17)
 
 ### Update
@@ -515,7 +479,6 @@
 * Update pyproject.toml (#231) ([`bdb20b6`](https://github.com/mraniki/iamlistening/commit/bdb20b69ae383d3dd32797b97cb33d3b974304e4))
 
 * Update pyproject.toml ([`1b04f42`](https://github.com/mraniki/iamlistening/commit/1b04f421c086cbb9bbf80abb68d413b8fe530597))
-
 
 ## v4.2.29 (2023-12-17)
 
@@ -525,7 +488,6 @@
 
 * ⬆️ 🛠️(deps): update dependency simplematrixbotlib to v2.10.3 ([`cd3bd6b`](https://github.com/mraniki/iamlistening/commit/cd3bd6b1b6c9d185d06cc04a2e89e5e9db4555e8))
 
-
 ## v4.2.28 (2023-12-10)
 
 ### ⬆️
@@ -533,7 +495,6 @@
 * ⬆️ 🤖 - Do something unusual today  Pay a bill (#228) ([`dab3c77`](https://github.com/mraniki/iamlistening/commit/dab3c7743be0b9a650becbe0c621e74466749683))
 
 * ⬆️ 🛠️(deps): update dependency pytest-asyncio to ^0.23.0 ([`62eaa70`](https://github.com/mraniki/iamlistening/commit/62eaa70a12ae16886c16cc8c0186a811c195d0d4))
-
 
 ## v4.2.27 (2023-12-09)
 
@@ -543,7 +504,6 @@
 
 * ⬆️ 🛠️(deps): update dependency telethon to v1.33.1 ([`f893d75`](https://github.com/mraniki/iamlistening/commit/f893d7517a50362d2fe5dc04cd1a514d65e0907c))
 
-
 ## v4.2.26 (2023-12-07)
 
 ### ⬆️
@@ -551,7 +511,6 @@
 * ⬆️ 🤖 - If one cannot enjoy reading a book over and over again there is no use (#225) ([`90f71a2`](https://github.com/mraniki/iamlistening/commit/90f71a24fc64636a1b1cec7d66f07d6f514f071a))
 
 * ⬆️ 🛠️(deps): update dependency guilded.py to v1.12.0 ([`1f8a9cd`](https://github.com/mraniki/iamlistening/commit/1f8a9cdd67aa2914e0b2f3cfeade0dc159a32036))
-
 
 ## v4.2.25 (2023-12-02)
 
@@ -593,7 +552,6 @@
 
 * ⬆️ 🛠️(deps): update dependency pytest-asyncio to ^0.22.0 ([`65b9c81`](https://github.com/mraniki/iamlistening/commit/65b9c810b8da537aac05c42cf2911a5d8d35ce44))
 
-
 ## v4.2.24 (2023-10-29)
 
 ### ⬆️
@@ -603,7 +561,6 @@
 ### 👷
 
 * 👷 CI Change ([`fe74fc9`](https://github.com/mraniki/iamlistening/commit/fe74fc9e27d1e196f0ee05de016ef02c3ed3a09d))
-
 
 ## v4.2.23 (2023-10-29)
 
@@ -621,7 +578,6 @@
 
 * 👷 CI Change ([`01fb0db`](https://github.com/mraniki/iamlistening/commit/01fb0db048fb0e8b22a5f228e1e31d3d491c961f))
 
-
 ## v4.2.22 (2023-10-28)
 
 ### Update
@@ -631,7 +587,6 @@
 ### ⬆️
 
 * ⬆️ 🤖 - Auto Release (#205) ([`d338e6f`](https://github.com/mraniki/iamlistening/commit/d338e6f9523fa8c1e4bcea076da45f7758cce35d))
-
 
 ## v4.2.21 (2023-10-27)
 
@@ -661,7 +616,6 @@
 
 * 🔧 ([`3a67553`](https://github.com/mraniki/iamlistening/commit/3a67553d7328738e66740615c25498b837d04da1))
 
-
 ## v4.2.20 (2023-10-25)
 
 ### Other
@@ -688,7 +642,6 @@
 
 * 💬 ([`81bf066`](https://github.com/mraniki/iamlistening/commit/81bf066c218418bdd3c6a478d52f2519cc67a367))
 
-
 ## v4.2.19 (2023-10-22)
 
 ### 🥅
@@ -696,7 +649,6 @@
 * 🥅 better error handling for no config (#198) ([`27cac86`](https://github.com/mraniki/iamlistening/commit/27cac8623582d24bfe77f33cf70fcc6937b81fb1))
 
 * 🥅 better error handling for no config ([`499a46a`](https://github.com/mraniki/iamlistening/commit/499a46a359f3c56c95991fa93524a9d576691af9))
-
 
 ## v4.2.18 (2023-10-21)
 
@@ -740,7 +692,6 @@
 
 * 👷 CI Change ([`5e33e1b`](https://github.com/mraniki/iamlistening/commit/5e33e1ba46582d06ed2bac8647d87654a1d19112))
 
-
 ## v4.2.17 (2023-10-18)
 
 ### Other
@@ -757,7 +708,6 @@
 
 * ⬆️ 🛠️(deps): update dependency telethon to v1.31.1 ([`7d6e9d6`](https://github.com/mraniki/iamlistening/commit/7d6e9d65aa31a01c27e02a35f34040b127c4b321))
 
-
 ## v4.2.16 (2023-10-17)
 
 ### ⬆️
@@ -769,7 +719,6 @@
 * 🚨 (#189) ([`9fc106a`](https://github.com/mraniki/iamlistening/commit/9fc106a05d43c3322b3007ff0ef9f0f596df25d6))
 
 * 🚨 ([`b7aa15e`](https://github.com/mraniki/iamlistening/commit/b7aa15e0a5785baa39b7007c3daec91a4d0e88bd))
-
 
 ## v4.2.15 (2023-10-15)
 
@@ -787,7 +736,6 @@
 * 👷‍♂️ Refactor CI (#187) ([`3ae6a9d`](https://github.com/mraniki/iamlistening/commit/3ae6a9de2244a2da8ca52214f2f351ae98bf28fe))
 
 * 👷 CI Change ([`3745224`](https://github.com/mraniki/iamlistening/commit/3745224a059760ea864c6463fa58e9e9d62d644d))
-
 
 ## v4.2.14 (2023-10-13)
 
@@ -809,7 +757,6 @@
 
 * ⬆️ 🛠️(deps): update dependency telethon to v1.31.0 ([`3bcf630`](https://github.com/mraniki/iamlistening/commit/3bcf630378dd165e99cfdeaa63bc1d244df982c3))
 
-
 ## v4.2.13 (2023-10-11)
 
 ### Other
@@ -826,7 +773,6 @@ Signed-off-by: null &lt;null&gt; ([`c3d2289`](https://github.com/mraniki/iamlist
 
 * 👷 CI Change ([`e9de828`](https://github.com/mraniki/iamlistening/commit/e9de8285f5f096fe46621b4947d03f257b1afb1d))
 
-
 ## v4.2.12 (2023-10-11)
 
 ### 👷
@@ -835,7 +781,6 @@ Signed-off-by: null &lt;null&gt; ([`c3d2289`](https://github.com/mraniki/iamlist
 
 * 👷 CI Change ([`9da822b`](https://github.com/mraniki/iamlistening/commit/9da822b60dd5c09ec8eb56cda647999e18f2e4aa))
 
-
 ## v4.2.11 (2023-10-11)
 
 ### 👷
@@ -843,7 +788,6 @@ Signed-off-by: null &lt;null&gt; ([`c3d2289`](https://github.com/mraniki/iamlist
 * 👷 CI Change (#180) ([`af68d21`](https://github.com/mraniki/iamlistening/commit/af68d215a69d189013834dd4e873358a40cd529b))
 
 * 👷 CI Change ([`ceb3c5b`](https://github.com/mraniki/iamlistening/commit/ceb3c5b604963d3acceb26674076ea6b9e20fe95))
-
 
 ## v4.2.10 (2023-10-10)
 
@@ -869,7 +813,6 @@ Signed-off-by: null &lt;null&gt; ([`c3d2289`](https://github.com/mraniki/iamlist
 
 * 🔒 bandit ([`113c356`](https://github.com/mraniki/iamlistening/commit/113c3567b7998c1c3cdb316bbb238714b0a18616))
 
-
 ## v4.2.9 (2023-10-10)
 
 ### ♻️
@@ -881,7 +824,6 @@ Signed-off-by: null &lt;null&gt; ([`c3d2289`](https://github.com/mraniki/iamlist
 ### ⬆️
 
 * ⬆️ 🛠️(deps): update dependency ruff to ^0.0.292 ([`103c900`](https://github.com/mraniki/iamlistening/commit/103c9001146baa7295b1458c125070cc122a767a))
-
 
 ## v4.2.8 (2023-10-09)
 
@@ -896,7 +838,6 @@ Signed-off-by: null &lt;null&gt; ([`c3d2289`](https://github.com/mraniki/iamlist
 * ⬆️ 🛠️(deps): update dependency twitchio to v2.8.2 (#175) ([`d719635`](https://github.com/mraniki/iamlistening/commit/d719635475b4bb639b26a83b012112b8bead254e))
 
 * ⬆️ 🛠️(deps): update dependency twitchio to v2.8.2 ([`029df56`](https://github.com/mraniki/iamlistening/commit/029df56576985e13ee42f38f67dec9c3fd2904ba))
-
 
 ## v4.2.7 (2023-10-07)
 
@@ -1031,7 +972,6 @@ ses. ([`de53a67`](https://github.com/mraniki/iamlistening/commit/de53a67f8b2764c
 
 * Update Requirements ([`e23d447`](https://github.com/mraniki/iamlistening/commit/e23d4478786a47a64dab5aac738a52de12d9b98e))
 
-
 ## v4.2.6 (2023-10-06)
 
 ### Update
@@ -1043,7 +983,6 @@ ses. ([`de53a67`](https://github.com/mraniki/iamlistening/commit/de53a67f8b2764c
 * 🚨 (#173) ([`bf0fa74`](https://github.com/mraniki/iamlistening/commit/bf0fa746c9ffbc78e69a2237a566ddc2c34c4ede))
 
 * 🚨 ([`ee65bd0`](https://github.com/mraniki/iamlistening/commit/ee65bd0fb11e75dbe027b435aded736bdc5476de))
-
 
 ## v4.2.5 (2023-10-05)
 
@@ -1059,7 +998,6 @@ ses. ([`de53a67`](https://github.com/mraniki/iamlistening/commit/de53a67f8b2764c
 
 * ✅  Unit Test (#172) ([`cf8376b`](https://github.com/mraniki/iamlistening/commit/cf8376baa646ce7e726e337447191fd1b0d46f56))
 
-
 ## v4.2.4 (2023-10-05)
 
 ### ♻️
@@ -1067,7 +1005,6 @@ ses. ([`de53a67`](https://github.com/mraniki/iamlistening/commit/de53a67f8b2764c
 * ♻️ (#171) ([`1dabbc8`](https://github.com/mraniki/iamlistening/commit/1dabbc89594cbb6b910e8c3b9e3fb9a7462f5552))
 
 * ♻️ ([`3e41aeb`](https://github.com/mraniki/iamlistening/commit/3e41aeb0d7e9502fbf7e0235abf6045762fb35b5))
-
 
 ## v4.2.3 (2023-10-05)
 
@@ -1077,7 +1014,6 @@ ses. ([`de53a67`](https://github.com/mraniki/iamlistening/commit/de53a67f8b2764c
 
 * 🥅 ([`367bc7a`](https://github.com/mraniki/iamlistening/commit/367bc7a01b65c80090949862425cbd9a51637fc2))
 
-
 ## v4.2.2 (2023-10-05)
 
 ### Other
@@ -1085,7 +1021,6 @@ ses. ([`de53a67`](https://github.com/mraniki/iamlistening/commit/de53a67f8b2764c
 * Dev (#169) ([`e2f08cb`](https://github.com/mraniki/iamlistening/commit/e2f08cbc0eedb086c2951ba6a3a1b3bb226e118f))
 
 * Merge branch &#39;main&#39; into dev ([`a32c71a`](https://github.com/mraniki/iamlistening/commit/a32c71a390659728d2e30d57a2869dfe90ff7542))
-
 
 ## v4.2.1 (2023-10-05)
 
@@ -1107,7 +1042,6 @@ ses. ([`de53a67`](https://github.com/mraniki/iamlistening/commit/de53a67f8b2764c
 
 * ⬆️ 🛠️(deps): update dependency pytest-loguru to ^0.3.0 ([`bccea06`](https://github.com/mraniki/iamlistening/commit/bccea06f0ec2aac1aea6fda9f5a482ac57d9a346))
 
-
 ## v4.2.0 (2023-10-04)
 
 ### Update
@@ -1119,7 +1053,6 @@ ses. ([`de53a67`](https://github.com/mraniki/iamlistening/commit/de53a67f8b2764c
 * 🥚Add support for .op.toml configuration file (#166) ([`7b83c1b`](https://github.com/mraniki/iamlistening/commit/7b83c1b73dfa4a47afa26031b1002f991396a497))
 
 * 🥚Add support for .op.toml configuration file ([`c02ba05`](https://github.com/mraniki/iamlistening/commit/c02ba05bc8c111fff9db6670031a864a3ec96dba))
-
 
 ## v4.1.8 (2023-10-02)
 
@@ -1141,7 +1074,6 @@ ses. ([`de53a67`](https://github.com/mraniki/iamlistening/commit/de53a67f8b2764c
 
 * 👷 CI Change ([`e451407`](https://github.com/mraniki/iamlistening/commit/e451407a2f19750053757c2e056306113e2006ba))
 
-
 ## v4.1.7 (2023-09-27)
 
 ### ♻️
@@ -1156,7 +1088,6 @@ ses. ([`de53a67`](https://github.com/mraniki/iamlistening/commit/de53a67f8b2764c
 
 * 👷 CI Change ([`c1a7f02`](https://github.com/mraniki/iamlistening/commit/c1a7f0285f0ca8b51e5c64ae183b36e81b2dc300))
 
-
 ## v4.1.6 (2023-09-27)
 
 ### :rotating_light:
@@ -1164,7 +1095,6 @@ ses. ([`de53a67`](https://github.com/mraniki/iamlistening/commit/de53a67f8b2764c
 * :rotating_light: (#161) ([`7e51cee`](https://github.com/mraniki/iamlistening/commit/7e51ceeff670e80e7b0ecd786c4812b1c1f08c3a))
 
 * :rotating_light: ([`16b0c68`](https://github.com/mraniki/iamlistening/commit/16b0c68b17acfc852cc3aeedc94c886b4104ab92))
-
 
 ## v4.1.5 (2023-09-27)
 
@@ -1226,7 +1156,6 @@ ses. ([`de53a67`](https://github.com/mraniki/iamlistening/commit/de53a67f8b2764c
 
 * 🚨 ([`fe7ed24`](https://github.com/mraniki/iamlistening/commit/fe7ed24a56d752503851d9791cdcdd62fda31ee4))
 
-
 ## v4.1.4 (2023-09-23)
 
 ### 🥅
@@ -1234,7 +1163,6 @@ ses. ([`de53a67`](https://github.com/mraniki/iamlistening/commit/de53a67f8b2764c
 * 🥅 (#155) ([`7426f54`](https://github.com/mraniki/iamlistening/commit/7426f54cee26be1c9834a4c2440f971bb54bad2e))
 
 * 🥅 ([`d5e7294`](https://github.com/mraniki/iamlistening/commit/d5e72948c7b0f126c792153c983b7af7af7a27d5))
-
 
 ## v4.1.3 (2023-09-23)
 
@@ -1244,13 +1172,11 @@ ses. ([`de53a67`](https://github.com/mraniki/iamlistening/commit/de53a67f8b2764c
 
 * 🔧 ([`40f5148`](https://github.com/mraniki/iamlistening/commit/40f514836e97fca026fa317fe315b66cec0ece6a))
 
-
 ## v4.1.2 (2023-09-23)
 
 ### Update
 
 * Update default_settings.toml ([`079c79b`](https://github.com/mraniki/iamlistening/commit/079c79b8d3b32039fde241d101f770e43f36c3e4))
-
 
 ## v4.1.1 (2023-09-23)
 
@@ -1263,7 +1189,6 @@ ses. ([`de53a67`](https://github.com/mraniki/iamlistening/commit/de53a67f8b2764c
 ### 🔧
 
 * 🔧 ([`71eed2f`](https://github.com/mraniki/iamlistening/commit/71eed2f3f9b8da62291a43e3a363fc78f1c1bec4))
-
 
 ## v4.1.0 (2023-09-22)
 
@@ -1319,7 +1244,6 @@ ses. ([`de53a67`](https://github.com/mraniki/iamlistening/commit/de53a67f8b2764c
 
 * 🚨 ([`23c4952`](https://github.com/mraniki/iamlistening/commit/23c4952c5e68bda8586b176e909457813c0b8b38))
 
-
 ## v4.0.3 (2023-09-22)
 
 ### :ambulance:
@@ -1340,7 +1264,6 @@ ses. ([`de53a67`](https://github.com/mraniki/iamlistening/commit/de53a67f8b2764c
 
 * 🚑 ([`fd2b6f0`](https://github.com/mraniki/iamlistening/commit/fd2b6f011c7eb14699340a7a99f3884dc82940fb))
 
-
 ## v4.0.2 (2023-09-21)
 
 ### Fix
@@ -1348,7 +1271,6 @@ ses. ([`de53a67`](https://github.com/mraniki/iamlistening/commit/de53a67f8b2764c
 * :ambulance: hotfix (#149) ([`e3c45f4`](https://github.com/mraniki/iamlistening/commit/e3c45f4e85968af1e90a41741652411b1d01c128))
 
 * :ambulance: hotfix ([`8e015e3`](https://github.com/mraniki/iamlistening/commit/8e015e3d41833b283a6466d8bb68187fd4a4f397))
-
 
 ## v4.0.1 (2023-09-21)
 
@@ -1379,7 +1301,6 @@ ses. ([`de53a67`](https://github.com/mraniki/iamlistening/commit/de53a67f8b2764c
 ### 🚑
 
 * 🚑 missing chat manager config ([`2a18e40`](https://github.com/mraniki/iamlistening/commit/2a18e4031aadfb0ab3f5ff173ffb1af913723470))
-
 
 ## v4.0.0 (2023-09-21)
 
@@ -1462,7 +1383,6 @@ Conflicts:
 
 * 🔧 ([`6b24b64`](https://github.com/mraniki/iamlistening/commit/6b24b64d99a8ed94b9202149d1e7ff3ef2b025e9))
 
-
 ## v3.4.6 (2023-09-19)
 
 ### Other
@@ -1474,7 +1394,6 @@ Conflicts:
 * 🚨 linter (#145) ([`a75b57e`](https://github.com/mraniki/iamlistening/commit/a75b57e45bcf783ccea0b12e332e5346770a7030))
 
 * 🚨 linter ([`5c17cba`](https://github.com/mraniki/iamlistening/commit/5c17cba621abb37f6693dd9e4a94f8e98f6c970a))
-
 
 ## v3.4.5 (2023-09-19)
 
@@ -1488,7 +1407,6 @@ Conflicts:
 
 * ⬆️ 🛠️(deps): update dependency pydata-sphinx-theme to ^0.14.0 ([`c7f7234`](https://github.com/mraniki/iamlistening/commit/c7f7234548c92a23446d42e17d24905acc7afa89))
 
-
 ## v3.4.4 (2023-09-09)
 
 ### Update
@@ -1500,7 +1418,6 @@ Conflicts:
 * 👷 CI Change (#138) ([`6788c56`](https://github.com/mraniki/iamlistening/commit/6788c563e2f261f14801df4926507659ea72c555))
 
 * 👷 CI Change ([`c52bc72`](https://github.com/mraniki/iamlistening/commit/c52bc7236eff229ab9cc3d4d9c47f5f2edcc037f))
-
 
 ## v3.4.3 (2023-09-07)
 
@@ -1532,7 +1449,6 @@ Conflicts:
 
 * 🔥 ([`8e7c14d`](https://github.com/mraniki/iamlistening/commit/8e7c14da1125bf5c2ba17065ac0a75a288f5d458))
 
-
 ## v3.4.2 (2023-08-31)
 
 ### ⬆️
@@ -1541,13 +1457,11 @@ Conflicts:
 
 * ⬆️ 🛠️(deps): update dependency sphinx to v7.2.5 ([`70a0108`](https://github.com/mraniki/iamlistening/commit/70a010874e681dfdba750a4b654a8451f670b409))
 
-
 ## v3.4.1 (2023-08-30)
 
 ### Update
 
 * Update README.md ([`7e6f3ec`](https://github.com/mraniki/iamlistening/commit/7e6f3ecb5925082aa9f5e60114224a4c156c1de3))
-
 
 ## v3.4.0 (2023-08-29)
 
@@ -1580,7 +1494,6 @@ Conflicts:
 ### 🔧
 
 * 🔧 ([`3c104b8`](https://github.com/mraniki/iamlistening/commit/3c104b8faa2729e7dbf9a4eb571e05355ba70048))
-
 
 ## v3.3.11 (2023-08-28)
 
@@ -1617,7 +1530,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://g
 
 * 📝 ([`f8ac9a0`](https://github.com/mraniki/iamlistening/commit/f8ac9a022b526d95613e179f48361633cfd2e90f))
 
-
 ## v3.3.10 (2023-08-24)
 
 ### 👷
@@ -1629,7 +1541,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://g
 * 🔥 cleanup (#120) ([`b9ccded`](https://github.com/mraniki/iamlistening/commit/b9ccded0668a9925b51d1debdba0daa0d7d3be3b))
 
 * 🔥 cleanup ([`d10e059`](https://github.com/mraniki/iamlistening/commit/d10e059ccf46ff39ba1f728e1e425d9ab0c15476))
-
 
 ## v3.3.9 (2023-08-21)
 
@@ -1645,20 +1556,17 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://g
 
 * 👷‍♂️Flow.yml (#117) ([`7ef5b6e`](https://github.com/mraniki/iamlistening/commit/7ef5b6eaa0e359a2a9da0dcd6ee2acffbabac4b5))
 
-
 ## v3.3.8 (2023-08-20)
 
 ### Update
 
 * Update renovate.json ([`b92e207`](https://github.com/mraniki/iamlistening/commit/b92e2076ef4118f837f4914e82390c54e5202212))
 
-
 ## v3.3.7 (2023-08-20)
 
 ### Update
 
 * Update pyproject.toml ([`b84dbf7`](https://github.com/mraniki/iamlistening/commit/b84dbf77899adcb03cf3c03f897db7aa4afd5720))
-
 
 ## v3.3.6 (2023-08-18)
 
@@ -1667,7 +1575,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://g
 * ⬆️(deps): update dependency ruff to ^0.0.285 (#114) ([`64a7244`](https://github.com/mraniki/iamlistening/commit/64a7244509be36b11fa0a53e4e234d24c5b3af1a))
 
 * ⬆️(deps): update dependency ruff to ^0.0.285 ([`09165da`](https://github.com/mraniki/iamlistening/commit/09165dad0711718cb4f380d9f3d8470ec7395e91))
-
 
 ## v3.3.5 (2023-08-18)
 
@@ -1680,7 +1587,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://g
 ### Update
 
 * Update Requirements ([`2d5a7f6`](https://github.com/mraniki/iamlistening/commit/2d5a7f635c2a4955091791d9047fad427c902dfc))
-
 
 ## v3.3.4 (2023-08-11)
 
@@ -1702,7 +1608,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://g
 
 * 🔊 added better debug logging ([`a1f0d6a`](https://github.com/mraniki/iamlistening/commit/a1f0d6a5284d267016d232e197c51ebd7a8ff24c))
 
-
 ## v3.3.3 (2023-08-09)
 
 ### ⬆️
@@ -1710,7 +1615,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://g
 * ⬆️(deps): update dependency ruff to ^0.0.283 (#108) ([`cbcf0fd`](https://github.com/mraniki/iamlistening/commit/cbcf0fd97f930b66ea6ea4f65d1c1f314af5735e))
 
 * ⬆️(deps): update dependency ruff to ^0.0.283 ([`2ce01df`](https://github.com/mraniki/iamlistening/commit/2ce01dfa60cf2463f32f68ccb7a482a41c304520))
-
 
 ## v3.3.2 (2023-08-08)
 
@@ -1727,7 +1631,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://g
 ### 🔧
 
 * 🔧 ([`efe7689`](https://github.com/mraniki/iamlistening/commit/efe7689bdf8a54e2060f3c2c05f153a0c8ec822a))
-
 
 ## v3.3.1 (2023-08-08)
 
@@ -1746,7 +1649,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://g
 * 📝 udpatd credentials ([`862594d`](https://github.com/mraniki/iamlistening/commit/862594d8b98c85aeb8417fbdc5d9fc7744dd2ab6))
 
 * 📝 ([`1a6aed2`](https://github.com/mraniki/iamlistening/commit/1a6aed25597c5f07b698c7d56df62413c6d19f07))
-
 
 ## v3.3.0 (2023-08-07)
 
@@ -1767,7 +1669,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://g
 * 🥚 twitch  (#105) ([`fb83b06`](https://github.com/mraniki/iamlistening/commit/fb83b06483ba385ae9211a4a54aa6a9c2782b231))
 
 * 🥚 twitch to be tested ([`71875f7`](https://github.com/mraniki/iamlistening/commit/71875f7ad359747396723156c00f1368102e1af1))
-
 
 ## v3.2.0 (2023-08-07)
 
@@ -1797,7 +1698,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://g
 
 * 📝 ([`496870e`](https://github.com/mraniki/iamlistening/commit/496870e6e1c0ecd5e96d77cec982875320fb82ab))
 
-
 ## v3.1.6 (2023-08-07)
 
 ### 📝
@@ -1805,7 +1705,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://g
 * 📝 conf update for intersphinx (#102) ([`92e2348`](https://github.com/mraniki/iamlistening/commit/92e2348618e0588cfa1a21f38229616fc307367c))
 
 * 📝 conf update for intersphinx ([`8c32bbb`](https://github.com/mraniki/iamlistening/commit/8c32bbbc6610feb9da1a7fd652f45a615f6bb677))
-
 
 ## v3.1.5 (2023-08-07)
 
@@ -1945,7 +1844,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://g
 
 * 🔥 removing hoverxref_auto_ref ([`f88a7a1`](https://github.com/mraniki/iamlistening/commit/f88a7a1b5300d3439dedf993f19774fe3382821a))
 
-
 ## v3.1.4 (2023-08-06)
 
 ### 📝
@@ -1958,13 +1856,11 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://g
 
 * 🚨 ([`68e1c4e`](https://github.com/mraniki/iamlistening/commit/68e1c4e6c19bcab17e237d30e5c4c502fa834f52))
 
-
 ## v3.1.3 (2023-08-06)
 
 ### Update
 
 * Update README.md ([`722fe39`](https://github.com/mraniki/iamlistening/commit/722fe39be863481085aaceba173a3757220d70d1))
-
 
 ## v3.1.2 (2023-08-06)
 
@@ -1975,7 +1871,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://g
 * Update Requirements ([`7b3130d`](https://github.com/mraniki/iamlistening/commit/7b3130dee107c606979ad9a383213defe392d41f))
 
 * Update README.md ([`8fc20ba`](https://github.com/mraniki/iamlistening/commit/8fc20ba850ec9598d57322833dee8de009ec10f0))
-
 
 ## v3.1.1 (2023-08-04)
 
@@ -2040,7 +1935,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://g
 ### 🔧
 
 * 🔧 ([`2187a87`](https://github.com/mraniki/iamlistening/commit/2187a87932c82723e99af1cecc9a8cd71b9bf1cd))
-
 
 ## v3.1.0 (2023-08-03)
 
@@ -2756,7 +2650,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://g
 
 * 🧐 ([`2b799b8`](https://github.com/mraniki/iamlistening/commit/2b799b8675fa887e163cac2acf7166cdd36245f7))
 
-
 ## v3.0.2 (2023-07-25)
 
 ### Other
@@ -2789,13 +2682,11 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://g
 
 * 🩹 adding handler in initi of platform ([`974c3d2`](https://github.com/mraniki/iamlistening/commit/974c3d24da001462f64db8f3ab0530973099fa16))
 
-
 ## v3.0.1 (2023-07-24)
 
 ### Update
 
 * ⬆️ Dep: Update ruff requirement from ^0.0.278 to &gt;=0.0.278,&lt;0.0.281 (#78) ([`52563d0`](https://github.com/mraniki/iamlistening/commit/52563d060d2cf6a18d56b0b9b0ea57e847b97cb9))
-
 
 ## v3.0.0 (2023-07-24)
 
@@ -2852,7 +2743,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * 🔥 remove stopped flag ([`5b9861b`](https://github.com/mraniki/iamlistening/commit/5b9861bb254d7dd7a6a18581984ea6479e457d3f))
 
-
 ## v2.1.0 (2023-07-24)
 
 ### Update
@@ -2864,7 +2754,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 * 🥚 🔊 loguru implementation (#77) ([`09ffe14`](https://github.com/mraniki/iamlistening/commit/09ffe1431a575fb50f76daf7d9ba1800953de050))
 
 * 🥚 🔊 loguru implementation ([`7e35902`](https://github.com/mraniki/iamlistening/commit/7e35902624a1ddb327782baff60c5c8f9ff8b3ee))
-
 
 ## v2.0.0 (2023-07-23)
 
@@ -2952,7 +2841,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * 🥚 basic rocket chat integration ([`c831ab2`](https://github.com/mraniki/iamlistening/commit/c831ab27c64c7f8a153b7c545d6c4bb1c811b0ac))
 
-
 ## v1.1.7 (2023-07-20)
 
 ### Update
@@ -2965,7 +2853,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * 🔧  config alignment ([`f31a3b4`](https://github.com/mraniki/iamlistening/commit/f31a3b4e3e5287e162d17d7e28df300d56ec3a9c))
 
-
 ## v1.1.6 (2023-07-19)
 
 ### 💬
@@ -2973,7 +2860,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 * 💬  tags (#64) ([`cc9d59d`](https://github.com/mraniki/iamlistening/commit/cc9d59dbc4599aa2f1611f2184c50f6d54aefb75))
 
 * 💬  tags ([`1fb3233`](https://github.com/mraniki/iamlistening/commit/1fb3233b22e293db5147b27b043d5c51cec81e7b))
-
 
 ## v1.1.5 (2023-07-19)
 
@@ -2983,7 +2869,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * 👷 CI Change for semantic ([`ee15d9a`](https://github.com/mraniki/iamlistening/commit/ee15d9a6ead44c80021358682be1dc684e072377))
 
-
 ## v1.1.4 (2023-07-19)
 
 ### ⬆️
@@ -2991,7 +2876,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 * ⬆️ renovate exclude req (#62) ([`ae3f8c4`](https://github.com/mraniki/iamlistening/commit/ae3f8c41e1c8942d8c3e48adb0f7c6ace9e07410))
 
 * ⬆️ renovate exclude req ([`318212c`](https://github.com/mraniki/iamlistening/commit/318212c7fb8d112b587f4e1c030da12e3746bc4a))
-
 
 ## v1.1.3 (2023-07-19)
 
@@ -3005,7 +2889,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * 🚨 linter config ([`44395a6`](https://github.com/mraniki/iamlistening/commit/44395a6158034e0a7b29cf9065b5dd68bdf1831d))
 
-
 ## v1.1.2 (2023-07-18)
 
 ### :zap:
@@ -3013,7 +2896,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 * :zap: ci update (#60) ([`8ccc47e`](https://github.com/mraniki/iamlistening/commit/8ccc47e567140a962860bdb1909294e1aab6f6eb))
 
 * :zap: ci update ([`e9d8112`](https://github.com/mraniki/iamlistening/commit/e9d81125f07683829ab23072043b1820954476a1))
-
 
 ## v1.1.1 (2023-07-18)
 
@@ -3097,7 +2979,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * 🚨 linter sorting ([`8f98b75`](https://github.com/mraniki/iamlistening/commit/8f98b757270bb1eb8c864eb99d912cadbcaefdcd))
 
-
 ## v1.1.0 (2023-07-16)
 
 ### Other
@@ -3122,7 +3003,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * 🚨 linter ([`3b97f32`](https://github.com/mraniki/iamlistening/commit/3b97f32df9a5552504bcc5759ea824028c67bafc))
 
-
 ## v1.0.1 (2023-07-15)
 
 ### Update
@@ -3138,7 +3018,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 ### 🥚
 
 * 🥚help message ([`3b9fdd3`](https://github.com/mraniki/iamlistening/commit/3b9fdd3c0fc8f7b830b4d9dc80fa1ef107aac35d))
-
 
 ## v1.0.0 (2023-07-10)
 
@@ -3180,7 +3059,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * 📝 Documentation structure ([`25c3429`](https://github.com/mraniki/iamlistening/commit/25c342917e9265d485514edce207ee5d4a3e7539))
 
-
 ## v0.2.8 (2023-07-07)
 
 ### :memo:
@@ -3195,13 +3073,11 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * 📝 readmydocs updated config ([`d7090f8`](https://github.com/mraniki/iamlistening/commit/d7090f8ef2d62c202fad54df413ee5caf87141b0))
 
-
 ## v0.2.7 (2023-07-06)
 
 ### Update
 
 * Update README.md ([`460b636`](https://github.com/mraniki/iamlistening/commit/460b636a22ac523246182aab9ab7c9a78515d22a))
-
 
 ## v0.2.6 (2023-07-04)
 
@@ -3221,13 +3097,11 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * 📝  Doc config ([`19bca85`](https://github.com/mraniki/iamlistening/commit/19bca85f26c194520016c2eefa47d08b435deff2))
 
-
 ## v0.2.5 (2023-07-03)
 
 ### 👷
 
 * 👷 CI Change ([`5b72dae`](https://github.com/mraniki/iamlistening/commit/5b72dae994befc15df3493a424d57fc2c2729676))
-
 
 ## v0.2.4 (2023-07-03)
 
@@ -3235,13 +3109,11 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * 🔧  config cleanup ([`be5c1a3`](https://github.com/mraniki/iamlistening/commit/be5c1a3f36231fef15695e610d7f6cea132ed019))
 
-
 ## v0.2.3 (2023-06-26)
 
 ### Update
 
 * Update README.md ([`d798720`](https://github.com/mraniki/iamlistening/commit/d7987203e3d889a086f15bb6c79a3a92408273ec))
-
 
 ## v0.2.2 (2023-06-25)
 
@@ -3255,7 +3127,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * 👷‍♂️‍♂️Flow.yml (#39) ([`d474043`](https://github.com/mraniki/iamlistening/commit/d474043a912aba1fc5c82b6ad04b2d1262e927bd))
 
-
 ## v0.2.1 (2023-06-25)
 
 ### Fix
@@ -3264,13 +3135,11 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * Update dependabot.yml with commit message prefix ([`8aa5397`](https://github.com/mraniki/iamlistening/commit/8aa5397f6a2ac32340fcd290a70aa75f243ae388))
 
-
 ## v0.2.0 (2023-06-25)
 
 ### ✨
 
 * Update ✨Flow.yml ([`7b77fdf`](https://github.com/mraniki/iamlistening/commit/7b77fdff5f7fb62d5b66f3e310be47cf7f162565))
-
 
 ## v0.1.17 (2023-06-23)
 
@@ -3300,7 +3169,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * 📝 doc ([`ded5b24`](https://github.com/mraniki/iamlistening/commit/ded5b24c358e1d6f55683ae27a3b36598e673df9))
 
-
 ## v0.1.16 (2023-06-21)
 
 ### Update
@@ -3308,7 +3176,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 * ⬆️ Update pyproject.toml (#35) ([`320c51b`](https://github.com/mraniki/iamlistening/commit/320c51b0aff55562b9e2ef70a66034262c75a232))
 
 * Update pyproject.toml ([`d5b70a1`](https://github.com/mraniki/iamlistening/commit/d5b70a136b4262d24322988f42f4d7a1959a202a))
-
 
 ## v0.1.15 (2023-06-21)
 
@@ -3330,7 +3197,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * ✅ unit test ([`587c0f7`](https://github.com/mraniki/iamlistening/commit/587c0f775b9179eb474a564c8d397b7e441f6912))
 
-
 ## v0.1.14 (2023-06-16)
 
 ### ✅
@@ -3339,7 +3205,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * ✅ unit test ([`934c468`](https://github.com/mraniki/iamlistening/commit/934c468b4f49a36aab1cea5e5b9ca6f16a178071))
 
-
 ## v0.1.13 (2023-06-15)
 
 ### 🔧
@@ -3347,7 +3212,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 * 🔧 config org (#31) ([`671b9ac`](https://github.com/mraniki/iamlistening/commit/671b9ac5feb50ae5a983ce068da8faf9c6e6fe2c))
 
 * 🔧 config org ([`09396b6`](https://github.com/mraniki/iamlistening/commit/09396b64f29a3800a7a8bd6f3e44b2b89f918a39))
-
 
 ## v0.1.12 (2023-06-14)
 
@@ -3375,7 +3239,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * 🐳 dockerignore ([`ac39e03`](https://github.com/mraniki/iamlistening/commit/ac39e03074bafeb97382e3aad32b9c6df085d345))
 
-
 ## v0.1.11 (2023-06-11)
 
 ### :speech_balloon:
@@ -3389,7 +3252,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 * 🔧 config (#29) ([`aeaa471`](https://github.com/mraniki/iamlistening/commit/aeaa471eed9b970bb72cfece4480ac959dae14cc))
 
 * 🔧 config ([`0f837bc`](https://github.com/mraniki/iamlistening/commit/0f837bc9910bf40becd3441627cbeba2c2978580))
-
 
 ## v0.1.10 (2023-06-08)
 
@@ -3425,7 +3287,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * 👷 CI Change ([`3700f4d`](https://github.com/mraniki/iamlistening/commit/3700f4d812a3cd6ed0bdc70e4940bbde12e6b981))
 
-
 ## v0.1.9 (2023-06-05)
 
 ### :wrench:
@@ -3438,7 +3299,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * ⬆️ dependencies ([`5b06667`](https://github.com/mraniki/iamlistening/commit/5b0666750221a6fbbdecf2145e679d4bff14393f))
 
-
 ## v0.1.8 (2023-06-04)
 
 ### 🔧
@@ -3447,7 +3307,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * 🔧 config ([`b8bc0b9`](https://github.com/mraniki/iamlistening/commit/b8bc0b9d7332d014ae7411159d01aeee448471e3))
 
-
 ## v0.1.7 (2023-06-04)
 
 ### ⚗️
@@ -3455,7 +3314,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 * ⚗️ matrix and telegram verified (#19) ([`ab653f3`](https://github.com/mraniki/iamlistening/commit/ab653f3ab6271128119116957574ad899b315050))
 
 * ⚗️ matrix and telegram verified ([`4051251`](https://github.com/mraniki/iamlistening/commit/4051251a7e3df6e2868c67912b0883bd08923999))
-
 
 ## v0.1.6 (2023-06-03)
 
@@ -3489,7 +3347,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * 🔧 config ([`c44d44f`](https://github.com/mraniki/iamlistening/commit/c44d44fea507a39bd58cffdd90d19f9cd3a4036a))
 
-
 ## v0.1.5 (2023-06-03)
 
 ### :alembic:
@@ -3521,7 +3378,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 ### ⚗️
 
 * ⚗️ experiment ([`d83945b`](https://github.com/mraniki/iamlistening/commit/d83945bee2b6ca4506ea6c3fc56ef6f2a804dc5b))
-
 
 ## v0.1.4 (2023-06-02)
 
@@ -3555,7 +3411,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * ⚡ repeater ([`724b5ec`](https://github.com/mraniki/iamlistening/commit/724b5ece4e9aff04d539ad1984d968238492df79))
 
-
 ## v0.1.3 (2023-06-02)
 
 ### :bug:
@@ -3567,7 +3422,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 * 💬 Update README.md with new package description (#13) ([`178a40b`](https://github.com/mraniki/iamlistening/commit/178a40b30b291f19566787e6d5dfca89822edb03))
 
 * Update README.md with new package description ([`d8d6cde`](https://github.com/mraniki/iamlistening/commit/d8d6cde7e934fca10ba8af79c3ebb22271e8c3e1))
-
 
 ## v0.1.2 (2023-06-02)
 
@@ -3592,7 +3446,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 * 🚨 linter (#12) ([`88420a9`](https://github.com/mraniki/iamlistening/commit/88420a96d22fb25060a79ee601236c311d86ce0e))
 
 * 🚨 linter ([`541d228`](https://github.com/mraniki/iamlistening/commit/541d228c474ee30485f572520c8fd0f0550a8ed2))
-
 
 ## v0.1.1 (2023-06-02)
 
@@ -3631,7 +3484,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 ### 🎨
 
 * 🎨 code format ([`0c61b3a`](https://github.com/mraniki/iamlistening/commit/0c61b3a4848d3d72dfb76365ec8a32a64f551828))
-
 
 ## v0.1.0 (2023-06-02)
 
