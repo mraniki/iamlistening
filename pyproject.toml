@@ -37,7 +37,7 @@ beautifulsoup4 = "4.12.3"
 "guilded.py" = "1.13.2"
 "revolt.py" = "0.2.0"
 pythorhead = {version ="0.25.1", python = ">=3.10,<3.12"}
-twitchio = "2.9.1"
+twitchio = "2.10.0"
 tradingeconomics = "4.3.5"
 
 [tool.poetry.group.dev.dependencies]
