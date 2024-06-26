@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v5.2.4 (2024-06-26)
+
+### ⬆️
+
+* ⬆️ 🤖 - Q	Whats the difference between a duck and an elephant (#328) ([`78d9b4c`](https://github.com/mraniki/iamlistening/commit/78d9b4c2aa832e96f1c6a2f02d34ec6ab1d6295b))
+
+* ⬆️ 🛠️(deps): update dependency twitchio to v2.10.0 ([`2e4594c`](https://github.com/mraniki/iamlistening/commit/2e4594c8d1865711da3fd36184e0227adc32539e))
+
 ## v5.2.3 (2024-06-24)
 
 ### ⬆️
