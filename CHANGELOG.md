@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v5.2.5 (2024-06-28)
+
+### ⬆️
+
+* ⬆️ 🤖 - Q	How did you get into artificial intelligence (#331) ([`eb88437`](https://github.com/mraniki/iamlistening/commit/eb88437c501e8d96b159dea40e2a4dcd1385afbe))
+
+* ⬆️ 🛠️(deps): update dependency pythorhead to v0.25.2 ([`41a612d`](https://github.com/mraniki/iamlistening/commit/41a612d1cb18d9ebd14658c199eeffb1b441b032))
+
+* ⬆️ 🛠️(deps): update dependency ruff to ^0.5.0 ([`7ab2a10`](https://github.com/mraniki/iamlistening/commit/7ab2a10bfd58eadc7727a7717a92e28a1b0090ce))
+
 ## v5.2.4 (2024-06-26)
 
 ### ⬆️
