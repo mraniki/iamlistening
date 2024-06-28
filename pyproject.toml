@@ -36,13 +36,13 @@ rocketchat-API= "1.32.0"
 beautifulsoup4 = "4.12.3"
 "guilded.py" = "1.13.2"
 "revolt.py" = "0.2.0"
-pythorhead = {version ="0.25.1", python = ">=3.10,<3.12"}
+pythorhead = {version ="0.25.2", python = ">=3.10,<3.12"}
 twitchio = "2.10.0"
 tradingeconomics = "4.3.5"
 
 [tool.poetry.group.dev.dependencies]
 python-semantic-release = ">=8.0.8"
-ruff = "^0.4.0"
+ruff = "^0.5.0"
 black = "^24.0.0"
 pre-commit = "^3.3.1"
 
