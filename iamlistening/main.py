@@ -55,7 +55,7 @@ class Listener:
             None
         """
         # Check if the module is enabled
-        self.enabled = settings.iamlistening_enabled or True
+        self.enabled = settings.iamlistening_enabled
         # Create a mapping of library names to client classes
         self.client_classes = self.get_all_client_classes()
         # logger.debug("client_classes available {}", self.client_classes)
