@@ -120,7 +120,13 @@ class Listener:
             library is not supported.
 
         """
-        library = kwargs.get("platform") or kwargs.get("library") or "telegram"
+        library = (
+            kwargs.get("library")
+            or kwargs.get("platform")
+            or kwargs.get("protocol")
+            or kwargs.get("parser_library")
+            or "telegram"
+        )
         cls = self.client_classes.get((f"{library.capitalize()}Handler"))
         return None if cls is None else cls(**kwargs)
 
