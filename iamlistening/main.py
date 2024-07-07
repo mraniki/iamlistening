@@ -120,14 +120,9 @@ class Listener:
             library is not supported.
 
         """
-        library = kwargs.get("platform")
-        client_class = self.client_classes.get(f"{library.capitalize()}Handler")
-
-        if client_class is None:
-            logger.error(f"library {library} not supported")
-            return None
-
-        return client_class(**kwargs)
+        library = kwargs.get("platform") or kwargs.get("library") or "telegram"
+        cls = self.client_classes.get((f"{library.capitalize()}Handler"))
+        return None if cls is None else cls(**kwargs)
 
     def get_all_client_classes(self):
         """
