@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v5.2.6 (2024-07-07)
+
+### ⬆️
+
+* ⬆️ 🤖 - If you laid all of our laws end to end there would be no end (#333) ([`fcbfa9f`](https://github.com/mraniki/iamlistening/commit/fcbfa9f981ea5a62373b3e8ab1f53718c62f4660))
+
+* ⬆️ 🛠️(deps): update dependency tradingeconomics to v4.3.6 ([`b7fe1fc`](https://github.com/mraniki/iamlistening/commit/b7fe1fc589ae7c327da6fc6e4ba077c7d6561927))
+
 ## v5.2.5 (2024-06-28)
 
 ### ⬆️
