@@ -30,11 +30,11 @@ async def test_dynaconf():
     assert settings.VALUE == "On Testing"
 
 
-# @pytest.fixture(name="listener")
-# def listener(caplog):
-#     fixture = Listener()
-#     assert "notalibrary not supported" in caplog.text
-#     return fixture
+@pytest.fixture(name="listener")
+def listener():
+    return Listener()
+    # # assert "notalibrary not supported" in caplog.text
+    # return fixture
 
 
 @pytest.fixture(name="message")
