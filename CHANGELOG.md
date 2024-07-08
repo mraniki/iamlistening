@@ -1,5 +1,35 @@
 # CHANGELOG
 
+## v5.3.0 (2024-07-08)
+
+### Other
+
+* build(deps): update pyproject.toml ([`2fa2618`](https://github.com/mraniki/iamlistening/commit/2fa261820ae7fcb67c4b338bf21e0b2aed6ceae2))
+
+### ♻️
+
+* ♻️ ([`34968ba`](https://github.com/mraniki/iamlistening/commit/34968bac2e61b25e8c71a8f132b57a7ecdd3438b))
+
+* ♻️ ([`93e2f22`](https://github.com/mraniki/iamlistening/commit/93e2f22c5bab07a6783e1cc120323a311af45ef8))
+
+### ✅
+
+* ✅ Unit Test (#334) ([`83f88e6`](https://github.com/mraniki/iamlistening/commit/83f88e6d57f6face30e25155c39c6a95d72382d5))
+
+* ✅ Unit Test ([`5d3e101`](https://github.com/mraniki/iamlistening/commit/5d3e10176c8019b77c50057c2d1f654483524aae))
+
+* ✅ Unit Test ([`7e5987f`](https://github.com/mraniki/iamlistening/commit/7e5987f6873fc20fafddc5fc6e11196afbb9c7aa))
+
+* ✅ Unit Test ([`1f7ae42`](https://github.com/mraniki/iamlistening/commit/1f7ae42be3fed1fc2d88b8aed8bf25366ecfdd06))
+
+### 🐛
+
+* 🐛 ([`d0b4cf3`](https://github.com/mraniki/iamlistening/commit/d0b4cf352efc559a221bc08f7ef9d0cbfb748835))
+
+### 💄
+
+* 💄 _create_client update ([`b3ad7a2`](https://github.com/mraniki/iamlistening/commit/b3ad7a227bb63aa4d01c182fe8dcf3bddd446157))
+
 ## v5.2.6 (2024-07-07)
 
 ### ⬆️
