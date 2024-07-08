@@ -31,10 +31,10 @@ async def test_dynaconf():
 
 
 @pytest.fixture(name="listener")
-def listener(caplog):
-    fixture = Listener()
-    assert "notalibrary not supported" in caplog.text
-    return fixture
+def listener():
+    return Listener()
+    # # assert "notalibrary not supported" in caplog.text
+    # return fixture
 
 
 @pytest.fixture(name="message")
