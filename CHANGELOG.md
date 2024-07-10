@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v5.3.1 (2024-07-10)
+
+### ⬆️
+
+* ⬆️ 🤖 - You will remember something that you should not have forgotten (#336) ([`3e2fda8`](https://github.com/mraniki/iamlistening/commit/3e2fda877891a35f678924a9e163d541b42aa504))
+
+* ⬆️ 🛠️(deps): update dependency py-cord to v2.6.0 ([`c934700`](https://github.com/mraniki/iamlistening/commit/c9347007613c7a40115a33250c01501159153c85))
+
+### 🔧
+
+* 🔧 ([`f196027`](https://github.com/mraniki/iamlistening/commit/f19602701fa505c978816234198158263fc42bb3))
+
 ## v5.3.0 (2024-07-08)
 
 ### Other
@@ -512,11 +524,13 @@
 
 * ⬆️ 🛠️(deps): update dependency pydata-sphinx-theme to ^0.15.0 (#236) ([`1fcf843`](https://github.com/mraniki/iamlistening/commit/1fcf8436721ea0f1132f9cd5721154cc5fbad0a9))
 
-* ⬆️ 🛠️(deps): update dependency pythorhead to v0.20.0 ([`cc7828b`](https://github.com/mraniki/iamlistening/commit/cc7828bd9c4e8e893380af497fd91b4aee7ba96c))
-
 * ⬆️ 🛠️(deps): update dependency pydata-sphinx-theme to ^0.15.0 ([`58b73ad`](https://github.com/mraniki/iamlistening/commit/58b73ad0fe0bfae48ce2a5a8500e7430c6eeec7f))
 
 * ⬆️ 🛠️(deps): update dependency pythorhead to v0.20.0 (#232) ([`76d6801`](https://github.com/mraniki/iamlistening/commit/76d68012ed3e0d85054ed451ec30a5e4313f2c51))
+
+* ⬆️ 🛠️(deps): update dependency pythorhead to v0.20.0 ([`2f56662`](https://github.com/mraniki/iamlistening/commit/2f56662cf0b98d418bc8079d35434689986d8d2a))
+
+* ⬆️ 🛠️(deps): update dependency pythorhead to v0.20.0 ([`cc7828b`](https://github.com/mraniki/iamlistening/commit/cc7828bd9c4e8e893380af497fd91b4aee7ba96c))
 
 ## v4.2.31 (2024-01-03)
 
@@ -525,8 +539,6 @@
 * ⬆️ 🤖 - You look like a million dollars  All green and wrinkled (#235) ([`2bdc18d`](https://github.com/mraniki/iamlistening/commit/2bdc18d326d0589ffd74edb27e754fc32a6e4af5))
 
 * ⬆️ 🛠️(deps): update dependency guilded.py to v1.12.1 ([`73d2671`](https://github.com/mraniki/iamlistening/commit/73d2671b0f54b663c8d36a5f8bbb37a3d97fa978))
-
-* ⬆️ 🛠️(deps): update dependency pythorhead to v0.20.0 ([`2f56662`](https://github.com/mraniki/iamlistening/commit/2f56662cf0b98d418bc8079d35434689986d8d2a))
 
 ## v4.2.30 (2023-12-17)
 
@@ -762,13 +774,11 @@
 
 * ⬆️ 🛠️(deps): update dependency ruff to ^0.1.0 (#188) ([`9326049`](https://github.com/mraniki/iamlistening/commit/932604966758273b05a4c80ce54f4f1f20a56076))
 
+* ⬆️ 🛠️(deps): update dependency ruff to ^0.1.0 ([`ca39917`](https://github.com/mraniki/iamlistening/commit/ca39917c99dd919f481ce945430bf3e9f368babb))
+
 * ⬆️ 🛠️(deps): update dependency telethon to v1.31.1 ([`7d6e9d6`](https://github.com/mraniki/iamlistening/commit/7d6e9d65aa31a01c27e02a35f34040b127c4b321))
 
 ## v4.2.16 (2023-10-17)
-
-### ⬆️
-
-* ⬆️ 🛠️(deps): update dependency ruff to ^0.1.0 ([`ca39917`](https://github.com/mraniki/iamlistening/commit/ca39917c99dd919f481ce945430bf3e9f368babb))
 
 ### 🚨
 
@@ -782,11 +792,6 @@
 
 * Merge branch &#39;dev&#39; of git@github.com:mraniki/iamlistening.git ([`d12f4f5`](https://github.com/mraniki/iamlistening/commit/d12f4f52042f7daa58378892308baf02d0caa796))
 
-* :construction_worker_man: Refactor Git configuration
-
-- Removed `.github/mergify.yml` file
-- Updated `.github/renovate.json` to include additional ignored authors ([`9285370`](https://github.com/mraniki/iamlistening/commit/9285370040827d39547c399807a77fbfa738922e))
-
 ### 👷
 
 * 👷‍♂️ Refactor CI (#187) ([`3ae6a9d`](https://github.com/mraniki/iamlistening/commit/3ae6a9de2244a2da8ca52214f2f351ae98bf28fe))
@@ -796,6 +801,11 @@
 ## v4.2.14 (2023-10-13)
 
 ### Other
+
+* :construction_worker_man: Refactor Git configuration
+
+- Removed `.github/mergify.yml` file
+- Updated `.github/renovate.json` to include additional ignored authors ([`9285370`](https://github.com/mraniki/iamlistening/commit/9285370040827d39547c399807a77fbfa738922e))
 
 * :construction_worker_man: CI Change (#184) ([`bbf0451`](https://github.com/mraniki/iamlistening/commit/bbf04519fe7b08cc575fa70569ee955166d1582f))
 
@@ -859,6 +869,8 @@ Signed-off-by: null &lt;null&gt; ([`c3d2289`](https://github.com/mraniki/iamlist
 
 * ⬆️ 🛠️(deps): update dependency ruff to ^0.0.292 (#177) ([`bd02a42`](https://github.com/mraniki/iamlistening/commit/bd02a428163d5e90c4b9f30825ec18e2c8ef68bc))
 
+* ⬆️ 🛠️(deps): update dependency ruff to ^0.0.292 ([`103c900`](https://github.com/mraniki/iamlistening/commit/103c9001146baa7295b1458c125070cc122a767a))
+
 ### 👷
 
 * 👷 CI Change with precommit ([`ac1951f`](https://github.com/mraniki/iamlistening/commit/ac1951f5c7aab87e8274c3f3051b5f99a71d16dd))
@@ -876,10 +888,6 @@ Signed-off-by: null &lt;null&gt; ([`c3d2289`](https://github.com/mraniki/iamlist
 * ♻️ pyproject update (#178) ([`85b7a87`](https://github.com/mraniki/iamlistening/commit/85b7a87cd535cd8de33ad1a9f26533d9ea3a1804))
 
 * ♻️ pyproject update ([`29e50bf`](https://github.com/mraniki/iamlistening/commit/29e50bf77c4cd2be28710c41d27b3201bd6c9d93))
-
-### ⬆️
-
-* ⬆️ 🛠️(deps): update dependency ruff to ^0.0.292 ([`103c900`](https://github.com/mraniki/iamlistening/commit/103c9001146baa7295b1458c125070cc122a767a))
 
 ## v4.2.8 (2023-10-09)
 
@@ -2718,9 +2726,9 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://g
 
 * Update Requirements ([`7fe22e5`](https://github.com/mraniki/iamlistening/commit/7fe22e5031db73c80bc62ad3a1123a336aea2f79))
 
-* Update pull_request_template.md ([`b89d806`](https://github.com/mraniki/iamlistening/commit/b89d806e5931e0b5d05b4fb09e69312fe493b481))
-
 * Update Requirements ([`5776e18`](https://github.com/mraniki/iamlistening/commit/5776e18a7c4e93a9d70464b94a2924e1f05249ab))
+
+* Update pull_request_template.md ([`b89d806`](https://github.com/mraniki/iamlistening/commit/b89d806e5931e0b5d05b4fb09e69312fe493b481))
 
 ### ⚡
 
@@ -2744,6 +2752,21 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://g
 
 * ⬆️ Dep: Update ruff requirement from ^0.0.278 to &gt;=0.0.278,&lt;0.0.281 (#78) ([`52563d0`](https://github.com/mraniki/iamlistening/commit/52563d060d2cf6a18d56b0b9b0ea57e847b97cb9))
 
+* :arrow_up: Dep: Update ruff requirement
+
+Updates the requirements on [ruff](https://github.com/astral-sh/ruff) to permit the latest version.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/BREAKING_CHANGES.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/v0.0.278...v0.0.280)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:development
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://github.com/mraniki/iamlistening/commit/819b3bcd9958408af7993e9120215d9ec0043b19))
+
 ## v3.0.0 (2023-07-24)
 
 ### :fire:
@@ -2759,21 +2782,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b06f0e1`](https://g
 ### Update
 
 * Update Requirements ([`fd039a1`](https://github.com/mraniki/iamlistening/commit/fd039a1b8f3f5d8547a37dadd2b39e696d630144))
-
-* :arrow_up: Dep: Update ruff requirement
-
-Updates the requirements on [ruff](https://github.com/astral-sh/ruff) to permit the latest version.
-- [Release notes](https://github.com/astral-sh/ruff/releases)
-- [Changelog](https://github.com/astral-sh/ruff/blob/main/BREAKING_CHANGES.md)
-- [Commits](https://github.com/astral-sh/ruff/compare/v0.0.278...v0.0.280)
-
----
-updated-dependencies:
-- dependency-name: ruff
-  dependency-type: direct:development
-...
-
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://github.com/mraniki/iamlistening/commit/819b3bcd9958408af7993e9120215d9ec0043b19))
 
 ### ♻️
 
@@ -2965,9 +2973,9 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * :bug:  release test ([`4a6f107`](https://github.com/mraniki/iamlistening/commit/4a6f107556da3d30e3da49855b3a57b64efea4e5))
 
-* :bug: release test ([`30ed6a0`](https://github.com/mraniki/iamlistening/commit/30ed6a0c77deb98ae9253ddb72d9aeb751b96389))
-
 * :bug: release test (#56) ([`1d5b526`](https://github.com/mraniki/iamlistening/commit/1d5b526aa9297e8d9cf11a83944a92e20b40fe82))
+
+* :bug: release test ([`30ed6a0`](https://github.com/mraniki/iamlistening/commit/30ed6a0c77deb98ae9253ddb72d9aeb751b96389))
 
 * :bug: release test ([`04b741f`](https://github.com/mraniki/iamlistening/commit/04b741f1ae27499e6a04283da060fd01668fc7a3))
 
@@ -3049,12 +3057,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * ✅ cleanup ([`047b08f`](https://github.com/mraniki/iamlistening/commit/047b08ff267e17891708d6a5888753cebf5bffb3))
 
-* ✅  increase unit test coverage ([`210097b`](https://github.com/mraniki/iamlistening/commit/210097b96776021f95e9995bd821d7215f1c33f6))
-
-* ✅ updated setting usage and unit test ([`5ba1f7b`](https://github.com/mraniki/iamlistening/commit/5ba1f7b7ab9bfc12534ad589dea941b9208239b6))
-
-* ✅  unit test ([`e5110e6`](https://github.com/mraniki/iamlistening/commit/e5110e673300149785f930b1a1dbbe9b2c0a0e69))
-
 ### 🚨
 
 * 🚨 linter ([`3b97f32`](https://github.com/mraniki/iamlistening/commit/3b97f32df9a5552504bcc5759ea824028c67bafc))
@@ -3066,6 +3068,12 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 * Update main.py ([`4528e27`](https://github.com/mraniki/iamlistening/commit/4528e276f8d8f88775ef2ac11ce6675c96172019))
 
 ### ✅
+
+* ✅  increase unit test coverage ([`210097b`](https://github.com/mraniki/iamlistening/commit/210097b96776021f95e9995bd821d7215f1c33f6))
+
+* ✅ updated setting usage and unit test ([`5ba1f7b`](https://github.com/mraniki/iamlistening/commit/5ba1f7b7ab9bfc12534ad589dea941b9208239b6))
+
+* ✅  unit test ([`e5110e6`](https://github.com/mraniki/iamlistening/commit/e5110e673300149785f930b1a1dbbe9b2c0a0e69))
 
 * ✅ added unit test ([`8651539`](https://github.com/mraniki/iamlistening/commit/8651539da10cc61f7a63852f55143fcd21fc3b2e))
 
@@ -3177,8 +3185,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * Merge branch &#39;dev&#39; of git@github.com:mraniki/iamlistening.git ([`be4c385`](https://github.com/mraniki/iamlistening/commit/be4c385cae22a02ae1426455275fb31778763d40))
 
-* :construction_worker_man:‍♂️Flow.yml ([`0662bfa`](https://github.com/mraniki/iamlistening/commit/0662bfaefacb35ba88ec8f85c8927b88b3447c28))
-
 ### 👷
 
 * 👷‍♂️‍♂️Flow.yml (#39) ([`d474043`](https://github.com/mraniki/iamlistening/commit/d474043a912aba1fc5c82b6ad04b2d1262e927bd))
@@ -3190,6 +3196,10 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 * Update dependabot.yml with commit message prefix (#38) ([`871f55e`](https://github.com/mraniki/iamlistening/commit/871f55ec2c9e3934ad0b8e88c83b3f8323ba4179))
 
 * Update dependabot.yml with commit message prefix ([`8aa5397`](https://github.com/mraniki/iamlistening/commit/8aa5397f6a2ac32340fcd290a70aa75f243ae388))
+
+### Other
+
+* :construction_worker_man:‍♂️Flow.yml ([`0662bfa`](https://github.com/mraniki/iamlistening/commit/0662bfaefacb35ba88ec8f85c8927b88b3447c28))
 
 ## v0.2.0 (2023-06-25)
 
@@ -3413,8 +3423,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 * :fire: Remove sleep function call in main function. ([`31c9baf`](https://github.com/mraniki/iamlistening/commit/31c9baf3f26dec02625525e2cd117be3775fd700))
 
-* :fire: Remove version variable in main.py. ([`5f5a04d`](https://github.com/mraniki/iamlistening/commit/5f5a04dbd05700e224daa08a0e8fc9d3535ffc9c))
-
 ### :recycle:
 
 * :recycle: refactor ([`b5febc3`](https://github.com/mraniki/iamlistening/commit/b5febc3d614f2de211728fb14053fd65c348b36e))
@@ -3437,9 +3445,9 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 ## v0.1.4 (2023-06-02)
 
-### :bug:
+### :fire:
 
-* :bug: Refactor logger.error to print in example.py. ([`b4831ef`](https://github.com/mraniki/iamlistening/commit/b4831efdd006e9fd03213f982533d130d88e320a))
+* :fire: Remove version variable in main.py. ([`5f5a04d`](https://github.com/mraniki/iamlistening/commit/5f5a04dbd05700e224daa08a0e8fc9d3535ffc9c))
 
 ### Other
 
@@ -3471,6 +3479,8 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 
 ### :bug:
 
+* :bug: Refactor logger.error to print in example.py. ([`b4831ef`](https://github.com/mraniki/iamlistening/commit/b4831efdd006e9fd03213f982533d130d88e320a))
+
 * :bug: Fix bot start function in example.py file. ([`d1ae078`](https://github.com/mraniki/iamlistening/commit/d1ae078b96de91715fbb462210b815e2ee20c7fb))
 
 ### Update
@@ -3486,10 +3496,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 * :bug: Refactor logger in Listener class. ([`2d1c7ae`](https://github.com/mraniki/iamlistening/commit/2d1c7aeb1584fa81ff688f19b953e6f0e3763f1a))
 
 * :bug: Refactor logger in Listener class. ([`d07a6cd`](https://github.com/mraniki/iamlistening/commit/d07a6cdf928ed3988b17c327bc9c30b6d1895402))
-
-### :white_check_mark:
-
-* :white_check_mark: test ([`6565d47`](https://github.com/mraniki/iamlistening/commit/6565d47081b242e39cab39bc6056281c3832f2cf))
 
 ### Other
 
@@ -3514,6 +3520,8 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`819b3bc`](https://g
 * :recycle:Refactor Listener class to use bot_channel_id instead of channel. ([`86b67cf`](https://github.com/mraniki/iamlistening/commit/86b67cfd06fd5f1359c6cbac1999cbf3db698782))
 
 ### :white_check_mark:
+
+* :white_check_mark: test ([`6565d47`](https://github.com/mraniki/iamlistening/commit/6565d47081b242e39cab39bc6056281c3832f2cf))
 
 * :white_check_mark: Add assertion to bot initialization test. ([`cdafd65`](https://github.com/mraniki/iamlistening/commit/cdafd651c8fc269d7ab3ec3398be0ccb5b26d8ed))
 
@@ -3583,15 +3591,15 @@ Update python Docker tag to v3.11 ([`023b2cd`](https://github.com/mraniki/iamlis
 
 * Merge branch &#39;dev&#39; of git@github.com:mraniki/iamlistening.git ([`b2d4409`](https://github.com/mraniki/iamlistening/commit/b2d44094a88cb971ed691cf7260bd548197921de))
 
-* Merge pull request #1 from mraniki/renovate/configure
-
-Configure Renovate ([`b53913b`](https://github.com/mraniki/iamlistening/commit/b53913bdfffc07fded74fbec75df5dfd66573a12))
-
 * Merge pull request #3 from mraniki/sourcery/dev
 
 :boom: initial commit (Sourcery refactored) ([`6f875f7`](https://github.com/mraniki/iamlistening/commit/6f875f703fd1f9c25cba2880de4b572a24f2bce2))
 
 * &#39;Refactored by Sourcery&#39; ([`69e698b`](https://github.com/mraniki/iamlistening/commit/69e698b26dfeb6ab0d251903eeea717f74024f16))
+
+* Merge pull request #1 from mraniki/renovate/configure
+
+Configure Renovate ([`b53913b`](https://github.com/mraniki/iamlistening/commit/b53913bdfffc07fded74fbec75df5dfd66573a12))
 
 * Add renovate.json ([`a2516de`](https://github.com/mraniki/iamlistening/commit/a2516dedf6e9eae8eb9c83d8162141b352574d50))
 
