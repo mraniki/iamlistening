@@ -38,7 +38,7 @@ beautifulsoup4 = "4.12.3"
 "revolt.py" = "0.2.0"
 pythorhead = {version ="0.25.2", python = ">=3.10,<3.12"}
 twitchio = "2.10.0"
-tradingeconomics = "4.3.6"
+tradingeconomics = "4.3.7"
 
 [tool.poetry.group.dev.dependencies]
 python-semantic-release = ">=8.0.8"
