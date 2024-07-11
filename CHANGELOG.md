@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v5.3.2 (2024-07-11)
+
+### ⬆️
+
+* ⬆️ 🤖 - Beware of Bigfoot (#338) ([`d956f49`](https://github.com/mraniki/iamlistening/commit/d956f492afdea89b850cf6a37e417d71dd449d29))
+
+* ⬆️ 🛠️(deps): update dependency tradingeconomics to v4.3.7 ([`e3eada8`](https://github.com/mraniki/iamlistening/commit/e3eada8ee55ad4df7d3bd70f416d8d19e3651107))
+
 ## v5.3.1 (2024-07-10)
 
 ### ⬆️
