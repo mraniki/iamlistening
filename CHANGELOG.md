@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v5.3.3 (2024-07-16)
+
+### ⬆️
+
+* ⬆️ 🤖 - You may my glories and my state dispose (#343) ([`4b2cfb4`](https://github.com/mraniki/iamlistening/commit/4b2cfb4f0871a5e8ab14319bfd1d3b0db59f301e))
+
+* ⬆️ 🛠️(deps): update dependency sphinx to v7.4.4 ([`74b7bfc`](https://github.com/mraniki/iamlistening/commit/74b7bfc9970f47b0a5a4ba748fab41851d6867f3))
+
+* ⬆️ 🛠️(deps): update dependency sphinx to v7.4.3 ([`ea0ec49`](https://github.com/mraniki/iamlistening/commit/ea0ec49cd42fab79278104d4a72fd4e322b958c0))
+
+* ⬆️ 🛠️(deps): update dependency sphinx to v7.4.0 ([`2a5a42c`](https://github.com/mraniki/iamlistening/commit/2a5a42c2c3d01c71044f8b1f3295db3ad60a8797))
+
 ## v5.3.2 (2024-07-11)
 
 ### ⬆️
