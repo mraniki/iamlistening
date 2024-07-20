@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v5.3.5 (2024-07-20)
+
+### ⬆️
+
+* ⬆️ 🤖 - If you tell the truth you dont have to remember anything (#347) ([`65f2f88`](https://github.com/mraniki/iamlistening/commit/65f2f888f0c2fca1e01e0a739eb08cc90ac82c2e))
+
+* ⬆️ 🛠️(deps): update dependency sphinx to v7.4.6 ([`3368fa0`](https://github.com/mraniki/iamlistening/commit/3368fa07bcf6fbf40c6bc53e2eff1cd822a70a3a))
+
 ## v5.3.4 (2024-07-17)
 
 ### ⬆️
