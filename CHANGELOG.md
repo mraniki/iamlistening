@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v5.3.6 (2024-07-21)
+
+### ⬆️
+
+* ⬆️ 🤖 - Bridge ahead  Pay troll (#349) ([`acf4d5f`](https://github.com/mraniki/iamlistening/commit/acf4d5ff3ab912968395628df9c70d18e5564213))
+
+* ⬆️ 🛠️(deps): update dependency sphinx to v7.4.7 ([`b87d90c`](https://github.com/mraniki/iamlistening/commit/b87d90cdda45171c8bdf20db16e03ff6c05222f5))
+
 ## v5.3.5 (2024-07-20)
 
 ### ⬆️
