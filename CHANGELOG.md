@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v5.3.7 (2024-08-13)
+
+### Update
+
+* Update simplematrixbotlib version to 2.10.3 (#367) ([`3e3e146`](https://github.com/mraniki/iamlistening/commit/3e3e146a49fc498b901e0aa4dd62fa1b4c94d7f6))
+
+* Update simplematrixbotlib version to 2.10.3 ([`2b15994`](https://github.com/mraniki/iamlistening/commit/2b1599414202a6772fe57e67b658addb79b034ea))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency simplematrixbotlib to v2.12.0 ([`3570692`](https://github.com/mraniki/iamlistening/commit/3570692f1d799d1f52a00808471ea20a6763c88a))
+
 ## v5.3.6 (2024-07-21)
 
 ### ⬆️
