@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v5.3.8 (2024-08-16)
+
+### ⬆️
+
+* ⬆️ 🤖 - Another good night not to sleep in a eucalyptus tree (#369) ([`3f9b1b3`](https://github.com/mraniki/iamlistening/commit/3f9b1b37095a18a1e0359ba68cb341e03d781ff3))
+
+* ⬆️ 🛠️(deps): update dependency ruff to ^0.6.0 ([`85ef7b5`](https://github.com/mraniki/iamlistening/commit/85ef7b5567581927c586e7aaffc992c38eda77fd))
+
 ## v5.3.7 (2024-08-13)
 
 ### Update
