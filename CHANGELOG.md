@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v5.3.9 (2024-08-23)
+
+### ⬆️
+
+* ⬆️ 🤖 - If two people love each other there can be no happy end to it (#372) ([`26e428a`](https://github.com/mraniki/iamlistening/commit/26e428af51c3268215d09afb10879d12d13c23c2))
+
+* ⬆️ 🛠️(deps): update dependency pytest-asyncio to ^0.24.0 ([`4c7c4e0`](https://github.com/mraniki/iamlistening/commit/4c7c4e028e51c5e722bbefb6461676e6d4935424))
+
 ## v5.3.8 (2024-08-16)
 
 ### ⬆️
