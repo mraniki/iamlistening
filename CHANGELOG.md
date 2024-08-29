@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v5.3.10 (2024-08-29)
+
+### ⬆️
+
+* ⬆️ 🤖 - There was a phone call for you (#375) ([`82855bc`](https://github.com/mraniki/iamlistening/commit/82855bc8e686a055cf6c561464e4a9e3fc0d4019))
+
+* ⬆️ 🛠️(deps): update dependency tradingeconomics to v4.3.8 ([`3bff875`](https://github.com/mraniki/iamlistening/commit/3bff875a92e8fe516793e28c85ffc0950d146f2e))
+
 ## v5.3.9 (2024-08-23)
 
 ### ⬆️
