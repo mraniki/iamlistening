@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v5.3.11 (2024-09-03)
+
+### ⬆️
+
+* ⬆️ 🤖 - Zounds  I was never so bethumped with words (#377) ([`23e363f`](https://github.com/mraniki/iamlistening/commit/23e363f276dd5eaaf8740fd4aebb80df958bc369))
+
+* ⬆️ 🛠️(deps): update dependency tradingeconomics to v4.3.9 ([`864ff43`](https://github.com/mraniki/iamlistening/commit/864ff433ee81c11a1de4bd94055c566331077adb))
+
 ## v5.3.10 (2024-08-29)
 
 ### ⬆️
