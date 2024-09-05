@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v5.3.12 (2024-09-05)
+
+### ⬆️
+
+* ⬆️ 🤖 - If you stand on your head you will get footprints in your hair (#379) ([`1b9dba1`](https://github.com/mraniki/iamlistening/commit/1b9dba18b199132647f1c085eebd5ad86d344575))
+
+* ⬆️ 🛠️(deps): update dependency myst_parser to v4 ([`00d9fb4`](https://github.com/mraniki/iamlistening/commit/00d9fb4fa582a016f1f09b43a75c592fccec3b98))
+
 ## v5.3.11 (2024-09-03)
 
 ### ⬆️
