@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v5.3.13 (2024-09-17)
+
+### ⬆️
+
+* ⬆️ 🤖 - A gift of a flower will soon be made to you (#382) ([`159e06a`](https://github.com/mraniki/iamlistening/commit/159e06a991a54da7dc34a149b1790cd97bef17a8))
+
+* ⬆️ 🛠️(deps): update dependency py-cord to v2.6.1 ([`f448a53`](https://github.com/mraniki/iamlistening/commit/f448a53076182cdc13bdd0e96acdccd34dbabf40))
+
 ## v5.3.12 (2024-09-05)
 
 ### ⬆️
