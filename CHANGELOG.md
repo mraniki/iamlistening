@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v5.3.14 (2024-10-01)
+
+### ⬆️
+
+* ⬆️ 🤖 - You had some happiness once but your parents moved away and you had to (#386) ([`6f3f56d`](https://github.com/mraniki/iamlistening/commit/6f3f56dfa0591205a3b8e90e82f22965dba8fde3))
+
+* ⬆️ 🛠️(deps): update dependency tradingeconomics to v4.3.10 ([`3b09746`](https://github.com/mraniki/iamlistening/commit/3b09746953e5e029d15669e0a38a025ebb32299e))
+
+* ⬆️ 🤖 - Q	How many college football players does it take to screw in a light bulb (#384) ([`2f4983f`](https://github.com/mraniki/iamlistening/commit/2f4983f300ca5ab0bd33982f318890a5edf55abb))
+
+* ⬆️ 🛠️(deps): update dependency telethon to v1.37.0 ([`45e6d96`](https://github.com/mraniki/iamlistening/commit/45e6d969fca536c2e988c0eb73492ffc87a55754))
+
 ## v5.3.13 (2024-09-17)
 
 ### ⬆️
