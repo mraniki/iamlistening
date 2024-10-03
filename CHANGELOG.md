@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v5.3.15 (2024-10-03)
+
+### ⬆️
+
+* ⬆️ 🤖 - Kindness is a language which the deaf can hear and the blind can read (#388) ([`1051c25`](https://github.com/mraniki/iamlistening/commit/1051c25deffa4e8bea2ba3b6170c8bd5fac8f942))
+
+* ⬆️ 🛠️(deps): update dependency tradingeconomics to v4.3.11 ([`828a8cc`](https://github.com/mraniki/iamlistening/commit/828a8cc24b86a4f19591ef0548b10b20e105e177))
+
 ## v5.3.14 (2024-10-01)
 
 ### ⬆️
