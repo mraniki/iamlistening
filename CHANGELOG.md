@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v5.3.16 (2024-10-05)
+
+### ⬆️
+
+* ⬆️ 🤖 - You too can wear a nose mitten (#390) ([`35ffecb`](https://github.com/mraniki/iamlistening/commit/35ffecb436003f310f0ef29ad87775c789a3a5c8))
+
+* ⬆️ 🛠️(deps): update dependency rocketchat-api to v1.33.0 ([`73a1de2`](https://github.com/mraniki/iamlistening/commit/73a1de2be15bb92d84e1edf5d1779d64dfefc69f))
+
 ## v5.3.15 (2024-10-03)
 
 ### ⬆️
