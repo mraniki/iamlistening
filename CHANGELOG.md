@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v5.3.17 (2024-10-09)
+
+### ⬆️
+
+* ⬆️ 🤖 - Q	How many Marxists does it take to screw in a light bulb (#393) ([`5c1dd43`](https://github.com/mraniki/iamlistening/commit/5c1dd439f08a08e55e1326660f0bf0b9fc39a669))
+
+* ⬆️ 🛠️(deps): update python docker tag to v3.13 ([`69c1c42`](https://github.com/mraniki/iamlistening/commit/69c1c423b37c0b3ee5879f67511d31e60878b8e0))
+
 ## v5.3.16 (2024-10-05)
 
 ### ⬆️
