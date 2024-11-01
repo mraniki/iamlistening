@@ -30,21 +30,21 @@ class ChatClient:
         self.name = get("name", None)
         self.enabled = kwargs.get("enabled", None)
 
-        self.platform = get("library") or get("platform", None)
-        self.bot_token = kwargs.get("bot_token", None)
-        self.bot_channel_id = kwargs.get("bot_channel_id", None)
-        self.bot_api_id = kwargs.get("bot_api_id", None)
-        self.bot_api_hash = kwargs.get("bot_api_hash", None)
-        self.bot_hostname = kwargs.get("bot_hostname", None)
-        self.bot_user = kwargs.get("bot_user", None)
-        self.bot_pass = kwargs.get("bot_pass", None)
-        self.bot_auth_token = kwargs.get("bot_auth_token", None)
+        self.platform = get("library") or get("platform") or None
+        self.bot_token = get("bot_token", None)
+        self.bot_channel_id = get("bot_channel_id", None)
+        self.bot_api_id = get("bot_api_id", None)
+        self.bot_api_hash = get("bot_api_hash", None)
+        self.bot_hostname = get("bot_hostname", None)
+        self.bot_user = get("bot_user", None)
+        self.bot_pass = get("bot_pass", None)
+        self.bot_auth_token = get("bot_auth_token", None)
         self.bot = None
         self.is_connected = True
         self.latest_message = None
         self.lock = asyncio.Lock()
-        self.iteration_enabled = kwargs.get("iteration_enabled", None)
-        self.iteration_limit = kwargs.get("iteration_limit", None)
+        self.iteration_enabled = get("iteration_enabled", None)
+        self.iteration_limit = get("iteration_limit", None)
         self.iteration_count = 0
         self.client = self.name
 
