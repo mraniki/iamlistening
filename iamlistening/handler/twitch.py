@@ -5,7 +5,7 @@ Twitch  🟣
 from loguru import logger
 from twitchio.ext import commands
 
-from .client import ChatClient
+from ._client import ChatClient
 
 
 class TwitchHandler(ChatClient):

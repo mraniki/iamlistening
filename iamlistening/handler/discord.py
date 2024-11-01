@@ -5,7 +5,7 @@ Discord  🟣
 import discord
 from loguru import logger
 
-from .client import ChatClient
+from ._client import ChatClient
 
 
 class DiscordHandler(ChatClient):

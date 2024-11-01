@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 from loguru import logger
 from mastodon import Mastodon, StreamListener
 
-from .client import ChatClient
+from ._client import ChatClient
 
 
 class MastodonHandler(ChatClient):
