@@ -1,6 +1,17 @@
 # CHANGELOG
 
 
+## v5.3.20 (2024-11-01)
+
+### Other
+
+* build(deps): update pyproject.toml ([`4f74169`](https://github.com/mraniki/iamlistening/commit/4f74169083df0005577b5c9494b29e7d8baa2a95))
+
+### ⬆️
+
+* ⬆️ 🤖 - Life is to you a dashing and bold adventure (#402) ([`6229cd7`](https://github.com/mraniki/iamlistening/commit/6229cd7653fda31fadb96cecd03a89c0085e35fb))
+
+
 ## v5.3.19 (2024-10-27)
 
 ### Fix
