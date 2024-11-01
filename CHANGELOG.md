@@ -1,6 +1,15 @@
 # CHANGELOG
 
 
+## v5.3.22 (2024-11-01)
+
+### ♻️
+
+* ♻️ refactor client structure (#404) ([`a827400`](https://github.com/mraniki/iamlistening/commit/a82740055ed21d7fdf2ec63c51c84d5215dc5526))
+
+* ♻️ refactor client structure ([`1585f5b`](https://github.com/mraniki/iamlistening/commit/1585f5b0afb4ac2e5810f7cbd5a7145b8aa439d2))
+
+
 ## v5.3.21 (2024-11-01)
 
 ### :recycle:
