@@ -9,7 +9,7 @@ import threading
 import tradingeconomics as te
 from loguru import logger
 
-from .client import ChatClient
+from ._client import ChatClient
 
 
 class TradingeconomicsHandler(ChatClient):
@@ -55,12 +55,4 @@ class NewsSubscriber:
         thread.start()
 
     def filter_news(self, latest_news):
-        if latest_news.get("topic") == "keepalive":
-            return False
-        # if latest_news.get('importance') != 3:
-        #     return False
-        # if latest_news.get('category') != "Government Bond 10Y":
-        #     return False
-        # if latest_news.get('country') != "US":
-        #     return False
-        return True
+        return latest_news.get("topic") != "keepalive"

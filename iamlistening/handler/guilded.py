@@ -5,7 +5,7 @@ Guilded  🟡
 import guilded
 from loguru import logger
 
-from .client import ChatClient
+from ._client import ChatClient
 
 
 class GuildedHandler(ChatClient):

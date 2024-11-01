@@ -5,7 +5,7 @@ Telegram 🔵
 
 from telethon import TelegramClient, events
 
-from .client import ChatClient
+from ._client import ChatClient
 
 
 class TelegramHandler(ChatClient):
