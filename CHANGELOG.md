@@ -1,6 +1,25 @@
 # CHANGELOG
 
 
+## v5.3.21 (2024-11-01)
+
+### :recycle:
+
+* :recycle:Refactor kwargs access in ChatClient initializer ([`98404e0`](https://github.com/mraniki/iamlistening/commit/98404e0e1ce705757e935d6c5acbcc5605526aff))
+
+### Other
+
+* Refactor bot configuration retrieval in ChatClient class ([`9933dc5`](https://github.com/mraniki/iamlistening/commit/9933dc5b1fca7ffe5f73af9d03a949494afdaa19))
+
+### ♻️
+
+* ♻️Refactor kwargs access in ChatClient initializer (#403) ([`0f17375`](https://github.com/mraniki/iamlistening/commit/0f17375705aa5503afcb4d36570e5012e7b5c722))
+
+### 🔥
+
+* 🔥 black ([`3bd466f`](https://github.com/mraniki/iamlistening/commit/3bd466f60bfd7dae7e6cdf8c64d1669853bbda46))
+
+
 ## v5.3.20 (2024-11-01)
 
 ### Other
