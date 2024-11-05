@@ -1,6 +1,15 @@
 # CHANGELOG
 
 
+## v5.3.23 (2024-11-05)
+
+### ⬆️
+
+* ⬆️ 🤖 - Q	Whats the difference between Bell Labs and the Boy Scouts of America (#407) ([`1cd32d8`](https://github.com/mraniki/iamlistening/commit/1cd32d8eba1baddbfd7edb9ebfb653f9e2ded2e2))
+
+* ⬆️ 🛠️(deps): update dependency pre-commit to v4 ([`a736dea`](https://github.com/mraniki/iamlistening/commit/a736dea584ad923139988a626d8c8a5e5d297bd6))
+
+
 ## v5.3.22 (2024-11-01)
 
 ### ♻️
