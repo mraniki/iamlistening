@@ -1,6 +1,21 @@
 # CHANGELOG
 
 
+## v5.3.24 (2024-11-19)
+
+### ⬆️
+
+* ⬆️ 🤖 - You have the power to influence all with whom you come in contact (#410) ([`e6cb6dc`](https://github.com/mraniki/iamlistening/commit/e6cb6dcb93dfc3aa2b98168cb5d3a52e6b7b4271))
+
+* ⬆️ 🛠️(deps): update dependency telethon to v1.38.1 (#409)
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com> ([`8e78c17`](https://github.com/mraniki/iamlistening/commit/8e78c17e684baed3fc14ce7e4b45e550f881e4fb))
+
+* ⬆️ 🛠️(deps): update dependency telethon to v1.38.0 (#408)
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com> ([`f0be37d`](https://github.com/mraniki/iamlistening/commit/f0be37d6e712a9269bf4ce7930f9b1d0f5552518))
+
+
 ## v5.3.23 (2024-11-05)
 
 ### ⬆️
