@@ -1,6 +1,15 @@
 # CHANGELOG
 
 
+## v5.3.25 (2024-11-23)
+
+### ⬆️
+
+* ⬆️ 🤖 - Your lucky color has faded (#412) ([`73517de`](https://github.com/mraniki/iamlistening/commit/73517def7e8017090761ac98872ce904d8760b78))
+
+* ⬆️ 🛠️(deps): update dependency ruff to ^0.8.0 ([`b9fa380`](https://github.com/mraniki/iamlistening/commit/b9fa380d0db41a2de1b614eddc3ebfa149d46b7f))
+
+
 ## v5.3.24 (2024-11-19)
 
 ### ⬆️
