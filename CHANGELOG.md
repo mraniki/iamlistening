@@ -1,6 +1,27 @@
 # CHANGELOG
 
 
+## v5.3.27 (2024-12-06)
+
+### ⬆️
+
+- ⬆️ 🤖 - You are destined to become the commandant of the fighting men of the
+  ([#417](https://github.com/mraniki/iamlistening/pull/417),
+  [`6aabf66`](https://github.com/mraniki/iamlistening/commit/6aabf666dd603257374c759d320f5fd73791dd7b))
+
+- ⬆️ 🛠️(deps): update dependency rocketchat-api to v1.34.0
+  ([#416](https://github.com/mraniki/iamlistening/pull/416),
+  [`b1a26f6`](https://github.com/mraniki/iamlistening/commit/b1a26f6644430842e4fdc82378889abf1dd908f7))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- ⬆️ 🛠️(deps): update dependency rocketchat-api to v1.33.2
+  ([#415](https://github.com/mraniki/iamlistening/pull/415),
+  [`0760b25`](https://github.com/mraniki/iamlistening/commit/0760b25596b9a68a9ed905e20242bcc187ab6892))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+
 ## v5.3.26 (2024-11-30)
 
 ### ⬆️
