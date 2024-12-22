@@ -1,6 +1,18 @@
 # CHANGELOG
 
 
+## v5.3.29 (2024-12-22)
+
+### ⬆️
+
+- ⬆️ 🛠️(deps): update dependency pythorhead to v0.27.3
+  ([`8bb35cd`](https://github.com/mraniki/iamlistening/commit/8bb35cd4b754e719d22e1a319e1bc0964e21d756))
+
+- ⬆️ 🤖 - You have the power to influence all with whom you come in contact
+  ([#426](https://github.com/mraniki/iamlistening/pull/426),
+  [`dffb95f`](https://github.com/mraniki/iamlistening/commit/dffb95f3f46e6ea97c7a46cd2f8994befd5374c3))
+
+
 ## v5.3.28 (2024-12-19)
 
 ### :arrow_up:
