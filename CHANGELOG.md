@@ -1,6 +1,18 @@
 # CHANGELOG
 
 
+## v5.3.30 (2025-01-11)
+
+### ⬆️
+
+- ⬆️ 🛠️(deps): update dependency ruff to ^0.9.0
+  ([`64da87a`](https://github.com/mraniki/iamlistening/commit/64da87a6daf58686ebeae9b394d23ced4129e0ef))
+
+- ⬆️ 🤖 - Excellent time to become a missing person
+  ([#428](https://github.com/mraniki/iamlistening/pull/428),
+  [`1a61fee`](https://github.com/mraniki/iamlistening/commit/1a61fee5499eeb0e151d223700bbfdce3a44d60a))
+
+
 ## v5.3.29 (2024-12-22)
 
 ### ⬆️
