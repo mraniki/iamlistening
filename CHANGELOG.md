@@ -1,7 +1,23 @@
 # CHANGELOG
 
 
+## v5.3.31 (2025-01-11)
+
+### Other
+
+- Dev ([#435](https://github.com/mraniki/iamlistening/pull/435),
+  [`de7cb9e`](https://github.com/mraniki/iamlistening/commit/de7cb9ebb62eb6149ff0b7ed0b3e6f373e224dde))
+
+- Merge branch 'dev' of git@github.com:mraniki/iamlistening.git
+  ([`5d4fc4b`](https://github.com/mraniki/iamlistening/commit/5d4fc4b84bfba8722909974a100af822909ab4a6))
+
+
 ## v5.3.30 (2025-01-11)
+
+### Update
+
+- Update dependabot configuration for commit messages
+  ([`0035d2d`](https://github.com/mraniki/iamlistening/commit/0035d2dfd12c4603eed2bc6d9dc9db3a1a360e9c))
 
 ### ⬆️
 
