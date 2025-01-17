@@ -1,6 +1,25 @@
 # CHANGELOG
 
 
+## v5.3.32 (2025-01-17)
+
+### ⬆️
+
+- ⬆️ 🛠️(deps): update dependency pythorhead to v0.28.0
+  ([`6893cd6`](https://github.com/mraniki/iamlistening/commit/6893cd631e97c97ec79254c6123764f0cd50b834))
+
+- ⬆️ 🛠️(deps): update dependency pythorhead to v0.29.0
+  ([`d263471`](https://github.com/mraniki/iamlistening/commit/d26347181b9c8c818664816630dd43b8029cdc68))
+
+- ⬆️ 🛠️(deps): update dependency pythorhead to v0.29.0
+  ([#438](https://github.com/mraniki/iamlistening/pull/438),
+  [`c29bbdd`](https://github.com/mraniki/iamlistening/commit/c29bbddbc66ea42bfbeedbd2ff93a1c9a29d0aa9))
+
+- ⬆️ 🤖 - Is that really YOU that is reading this
+  ([#437](https://github.com/mraniki/iamlistening/pull/437),
+  [`06c8490`](https://github.com/mraniki/iamlistening/commit/06c849031adee72d8bf24006e297636573999676))
+
+
 ## v5.3.31 (2025-01-11)
 
 ### Other
