@@ -1,6 +1,38 @@
 # CHANGELOG
 
 
+## v5.3.33 (2025-01-26)
+
+### Update
+
+- Update simplematrixbotlib version in pyproject.toml
+  ([`c8b5fbe`](https://github.com/mraniki/iamlistening/commit/c8b5fbe566c0bca41ab14d1135225b09e9c2c420))
+
+### ⬆️
+
+- ⬆️ 🛠️(deps): update dependency pythorhead to v0.31.0
+  ([`c9489e5`](https://github.com/mraniki/iamlistening/commit/c9489e501a5ad342ca0ded19a002d291d90b3da5))
+
+- ⬆️ 🛠️(deps): update dependency pythorhead to v0.31.0
+  ([#444](https://github.com/mraniki/iamlistening/pull/444),
+  [`6470ee6`](https://github.com/mraniki/iamlistening/commit/6470ee60540cb68659eba3f6babc396893c4f2c1))
+
+- ⬆️ 🛠️(deps): update dependency rocketchat-api to v1.35.0
+  ([#443](https://github.com/mraniki/iamlistening/pull/443),
+  [`2f48eaf`](https://github.com/mraniki/iamlistening/commit/2f48eaff8ff20da376042b79f722973e3b63938a))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- ⬆️ 🛠️(deps): update dependency simplematrixbotlib to v2.12.2
+  ([#439](https://github.com/mraniki/iamlistening/pull/439),
+  [`53b38d4`](https://github.com/mraniki/iamlistening/commit/53b38d424b601a3b1c01d3fdfd00300c20ee76f6))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- ⬆️ 🤖 - Fine day for friends ([#442](https://github.com/mraniki/iamlistening/pull/442),
+  [`f8843f5`](https://github.com/mraniki/iamlistening/commit/f8843f5e092972456da60a482dc916d3ad58ae90))
+
+
 ## v5.3.32 (2025-01-17)
 
 ### ⬆️
