@@ -1,6 +1,21 @@
 # CHANGELOG
 
 
+## v5.3.35 (2025-02-03)
+
+### ⬆️
+
+- ⬆️ 🛠️(deps): update dependency beautifulsoup4 to v4.13.0
+  ([#449](https://github.com/mraniki/iamlistening/pull/449),
+  [`ab7ab0b`](https://github.com/mraniki/iamlistening/commit/ab7ab0b817a73ddf4842455abc7be69bae9c85fc))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- ⬆️ 🤖 - You have had a longterm stimulation relative to business
+  ([#450](https://github.com/mraniki/iamlistening/pull/450),
+  [`c7817fe`](https://github.com/mraniki/iamlistening/commit/c7817feacfe3505c75d43ebbedf04b60d2b85f2d))
+
+
 ## v5.3.34 (2025-01-29)
 
 ### ⬆️
