@@ -1,6 +1,27 @@
 # CHANGELOG
 
 
+## v5.3.36 (2025-02-04)
+
+### ⬆️
+
+- ⬆️ 🛠️(deps): update dependency beautifulsoup4 to v4.13.1
+  ([#451](https://github.com/mraniki/iamlistening/pull/451),
+  [`fb5b5e5`](https://github.com/mraniki/iamlistening/commit/fb5b5e5496ef6efc665dc02a5f52a14d939871ba))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- ⬆️ 🛠️(deps): update dependency beautifulsoup4 to v4.13.2
+  ([#453](https://github.com/mraniki/iamlistening/pull/453),
+  [`878e3c6`](https://github.com/mraniki/iamlistening/commit/878e3c6417296328c998eb7cfef11afdb7bfe1f8))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- ⬆️ 🤖 - Perilous to all of us are the devices of an art deeper than we ourselves
+  ([#452](https://github.com/mraniki/iamlistening/pull/452),
+  [`2c98a6f`](https://github.com/mraniki/iamlistening/commit/2c98a6fd3fb926f321422427751b626913dbad4e))
+
+
 ## v5.3.35 (2025-02-03)
 
 ### ⬆️
