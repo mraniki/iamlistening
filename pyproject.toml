@@ -33,7 +33,7 @@ py-cord= "2.6.1"
 simplematrixbotlib= "2.10.3"
 rocketchat-API= "1.35.0"
 "Mastodon.py" = "1.8.1"
-beautifulsoup4 = "4.13.0"
+beautifulsoup4 = "4.13.2"
 "guilded.py" = "1.13.2"
 "revolt.py" = "0.2.0"
 pythorhead = {version ="0.31.1", python = ">=3.10,<3.12"}
