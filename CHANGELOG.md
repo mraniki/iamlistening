@@ -1,6 +1,20 @@
 # CHANGELOG
 
 
+## v5.3.37 (2025-02-05)
+
+### ⬆️
+
+- ⬆️ 🛠️(deps): update dependency beautifulsoup4 to v4.13.3
+  ([#454](https://github.com/mraniki/iamlistening/pull/454),
+  [`d7142a4`](https://github.com/mraniki/iamlistening/commit/d7142a416910c510a72a8a27ef7c73f49844d22f))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- ⬆️ 🤖 - Questionable day ([#455](https://github.com/mraniki/iamlistening/pull/455),
+  [`ed8b71d`](https://github.com/mraniki/iamlistening/commit/ed8b71d6dc216053a03e384f31415597233bab5a))
+
+
 ## v5.3.36 (2025-02-04)
 
 ### ⬆️
