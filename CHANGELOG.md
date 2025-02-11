@@ -1,6 +1,28 @@
 # CHANGELOG
 
 
+## v5.3.38 (2025-02-11)
+
+### Other
+
+- Revert "⬆️ 🛠️(deps): update dependency simplematrixbotlib to v2.12.3 (#456)"
+  ([`0f347b6`](https://github.com/mraniki/iamlistening/commit/0f347b6f0dbe9417e44966287ebf22de3ed12772))
+
+This reverts commit 10257ca18803fe54000509a65e0ae31758a614b8.
+
+### ⬆️
+
+- ⬆️ 🛠️(deps): update dependency simplematrixbotlib to v2.12.3
+  ([#456](https://github.com/mraniki/iamlistening/pull/456),
+  [`10257ca`](https://github.com/mraniki/iamlistening/commit/10257ca18803fe54000509a65e0ae31758a614b8))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- ⬆️ 🤖 - Youre currently going through a difficult transition period called Life
+  ([#460](https://github.com/mraniki/iamlistening/pull/460),
+  [`0cb9812`](https://github.com/mraniki/iamlistening/commit/0cb98127131157aad54250bb95fada8d8c8964fd))
+
+
 ## v5.3.37 (2025-02-05)
 
 ### ⬆️
@@ -897,15 +919,13 @@ Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
 
 ## v5.1.3 (2024-03-29)
 
-### Fix
-
-- Add fixture for capturing logs in unit tests.
-  ([`5991470`](https://github.com/mraniki/iamlistening/commit/5991470ec88d4c190dfa1c94ea10a99f05d94cb2))
-
 ### Other
 
 - Add assertion for notalibrary support in test_listener_start
   ([`3325ce4`](https://github.com/mraniki/iamlistening/commit/3325ce4d488f650091e586cec424d30b39f76679))
+
+- Add fixture for capturing logs in unit tests.
+  ([`5991470`](https://github.com/mraniki/iamlistening/commit/5991470ec88d4c190dfa1c94ea10a99f05d94cb2))
 
 - Refactor test_listener_start function in test_unit.py
   ([`080e068`](https://github.com/mraniki/iamlistening/commit/080e0682bc91339e6d67d72dee2c5c4d13c9ca4f))
@@ -1826,31 +1846,6 @@ Signed-off-by: null <null>
 
 ## v4.2.7 (2023-10-07)
 
-### Fix
-
-- Add unit tests for listener fixture and exception handling
-  ([`7abb790`](https://github.com/mraniki/iamlistening/commit/7abb790d55573ad835d6f76a6fa5276cdf5a5e55))
-
-- Fix listener fixture test
-  ([`2ea2127`](https://github.com/mraniki/iamlistening/commit/2ea2127f214487a3a3fb3111c69d00a8e5b65dd4))
-
-- Refactor code and fix test assertions
-  ([`b462d83`](https://github.com/mraniki/iamlistening/commit/b462d8300fb7d345c32131d0ead6ccfb953a9b39))
-
-- Refactor test_listener_fixture to test_get_info
-  ([`19e5e9f`](https://github.com/mraniki/iamlistening/commit/19e5e9f18de7e4492f9b5fe0c3b547cabc2354f1))
-
-- Refactor test_unit.py fixture and listener function
-  ([`041242a`](https://github.com/mraniki/iamlistening/commit/041242afa8f27ec0c6a3e366f73497f9cc6ee045))
-
-The test_unit.py fixture and listener function were refactored to improv e code readability and
-  maintainability.
-
-- Removed the set_test_settings fixture. - Added a comment to the set_test_settings fixture. -
-  Modified the listener function to use the settings.setenv method.
-
-These changes ensure that the code follows best practices and is easier to understand.
-
 ### Other
 
 - Add and modify tests for listener start
@@ -1859,11 +1854,17 @@ These changes ensure that the code follows best practices and is easier to under
 - Add test for listener start
   ([`21ba774`](https://github.com/mraniki/iamlistening/commit/21ba774299307541d356a4341f978db52b2bbbd5))
 
+- Add unit tests for listener fixture and exception handling
+  ([`7abb790`](https://github.com/mraniki/iamlistening/commit/7abb790d55573ad835d6f76a6fa5276cdf5a5e55))
+
 - Fix client online assertion
   ([`ff9e609`](https://github.com/mraniki/iamlistening/commit/ff9e609e8707b1a3da8ce149836017ea14aa46ce))
 
 - Fix client online assertion in test_listener_start
   ([`e9d406f`](https://github.com/mraniki/iamlistening/commit/e9d406f72168fcc58baad5e99cee0419a1fbba4e))
+
+- Fix listener fixture test
+  ([`2ea2127`](https://github.com/mraniki/iamlistening/commit/2ea2127f214487a3a3fb3111c69d00a8e5b65dd4))
 
 - Fix listener initialization in test_unit.py
   ([`a6ecada`](https://github.com/mraniki/iamlistening/commit/a6ecadaf02e4f50ae57bdab5ebf7f916ca4539e9))
@@ -1880,10 +1881,16 @@ These changes ensure that the code follows best practices and is easier to under
 - Merge branch 'dev' of git@github.com:mraniki/iamlistening.git
   ([`4ca609b`](https://github.com/mraniki/iamlistening/commit/4ca609b44fcf3580d2f7f3839048e406a150efce))
 
+- Refactor code and fix test assertions
+  ([`b462d83`](https://github.com/mraniki/iamlistening/commit/b462d8300fb7d345c32131d0ead6ccfb953a9b39))
+
 - Refactor test_get_info function in test_unit.py
   ([`3e329cd`](https://github.com/mraniki/iamlistening/commit/3e329cdc9900e05dbaf70c671a15ece60810eb60))
 
 - Remove unnecessary assert statement
+
+- Refactor test_listener_fixture to test_get_info
+  ([`19e5e9f`](https://github.com/mraniki/iamlistening/commit/19e5e9f18de7e4492f9b5fe0c3b547cabc2354f1))
 
 - Refactor test_unit.py
   ([`9d0f0f4`](https://github.com/mraniki/iamlistening/commit/9d0f0f473318201a75b0a0fb9d04a1016d027fb2))
@@ -1928,6 +1935,17 @@ These changes ensure that the code follows best practices and is easier to under
 - Refactored the assertions in test_listener_start function in test_unit .py - Updated the assertion
   for "Frasier" to "been registered as an event" - Updated the assertion for "client is online on
   telegram" to "Frasier:ear: on telegram:
+
+- Refactor test_unit.py fixture and listener function
+  ([`041242a`](https://github.com/mraniki/iamlistening/commit/041242afa8f27ec0c6a3e366f73497f9cc6ee045))
+
+The test_unit.py fixture and listener function were refactored to improv e code readability and
+  maintainability.
+
+- Removed the set_test_settings fixture. - Added a comment to the set_test_settings fixture. -
+  Modified the listener function to use the settings.setenv method.
+
+These changes ensure that the code follows best practices and is easier to understand.
 
 - Refactor test_unit.py for better readability and maintainability
   ([`e123e2c`](https://github.com/mraniki/iamlistening/commit/e123e2c1f36383383be4f1d3d5e324c5d5593cfd))
@@ -2788,10 +2806,10 @@ Signed-off-by: dependabot[bot] <support@github.com>
 
 ### ⬆️
 
-- ⬆️(deps): update dependency ruff to ^0.0.285
+- **deps**: ⬆️(deps): update dependency ruff to ^0.0.285
   ([`09165da`](https://github.com/mraniki/iamlistening/commit/09165dad0711718cb4f380d9f3d8470ec7395e91))
 
-- ⬆️(deps): update dependency ruff to ^0.0.285
+- **deps**: ⬆️(deps): update dependency ruff to ^0.0.285
   ([#114](https://github.com/mraniki/iamlistening/pull/114),
   [`64a7244`](https://github.com/mraniki/iamlistening/commit/64a7244509be36b11fa0a53e4e234d24c5b3af1a))
 
@@ -2842,10 +2860,10 @@ Signed-off-by: dependabot[bot] <support@github.com>
 
 ### ⬆️
 
-- ⬆️(deps): update dependency ruff to ^0.0.283
+- **deps**: ⬆️(deps): update dependency ruff to ^0.0.283
   ([`2ce01df`](https://github.com/mraniki/iamlistening/commit/2ce01dfa60cf2463f32f68ccb7a482a41c304520))
 
-- ⬆️(deps): update dependency ruff to ^0.0.283
+- **deps**: ⬆️(deps): update dependency ruff to ^0.0.283
   ([#108](https://github.com/mraniki/iamlistening/pull/108),
   [`cbcf0fd`](https://github.com/mraniki/iamlistening/commit/cbcf0fd97f930b66ea6ea4f65d1c1f314af5735e))
 
@@ -5460,6 +5478,12 @@ Automatically generated by python-semantic-release
 
 ### Other
 
+- :construction_worker_man:‍♂️update
+  ([`8c06b86`](https://github.com/mraniki/iamlistening/commit/8c06b86da9f01a1b54a98992e58ee540e3f56715))
+
+- :construction_worker_man:‍♂️update
+  ([`177b887`](https://github.com/mraniki/iamlistening/commit/177b887cd7435874c8a65bd2d08a9b2d01a5bf43))
+
 - Add logging to main.py
   ([`b782b3d`](https://github.com/mraniki/iamlistening/commit/b782b3def47359d32970a9c8a9e745484e6bc1fc))
 
@@ -5475,14 +5499,6 @@ Automatically generated by python-semantic-release
   ([`d97eee0`](https://github.com/mraniki/iamlistening/commit/d97eee036f42c5f779f6b2a718638fb8f55ca4d2))
 
 :white_check_mark: Add assertion to bot initialization test.
-
-### Update
-
-- :construction_worker_man:‍♂️update
-  ([`8c06b86`](https://github.com/mraniki/iamlistening/commit/8c06b86da9f01a1b54a98992e58ee540e3f56715))
-
-- :construction_worker_man:‍♂️update
-  ([`177b887`](https://github.com/mraniki/iamlistening/commit/177b887cd7435874c8a65bd2d08a9b2d01a5bf43))
 
 ### 🎨
 
