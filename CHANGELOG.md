@@ -1,6 +1,18 @@
 # CHANGELOG
 
 
+## v5.3.39 (2025-02-20)
+
+### ⬆️
+
+- ⬆️ 🛠️(deps): update dependency pythorhead to v0.31.2
+  ([`9fb0f3b`](https://github.com/mraniki/iamlistening/commit/9fb0f3bd472d4e7cf129a5d892b873796bc39bce))
+
+- ⬆️ 🤖 - Today is the last day of your life so far
+  ([#464](https://github.com/mraniki/iamlistening/pull/464),
+  [`8412f9b`](https://github.com/mraniki/iamlistening/commit/8412f9b6191ab6926d668601079d93e6965957cb))
+
+
 ## v5.3.38 (2025-02-11)
 
 ### Other
