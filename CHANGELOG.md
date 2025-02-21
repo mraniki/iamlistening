@@ -1,6 +1,21 @@
 # CHANGELOG
 
 
+## v5.3.40 (2025-02-21)
+
+### ⬆️
+
+- ⬆️ 🛠️(deps): update dependency telethon to v1.39.0
+  ([#465](https://github.com/mraniki/iamlistening/pull/465),
+  [`f6bd940`](https://github.com/mraniki/iamlistening/commit/f6bd940237496d87b3256fa5720314932200bf7e))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- ⬆️ 🤖 - Let me put it this way today is going to be a learning experience
+  ([#466](https://github.com/mraniki/iamlistening/pull/466),
+  [`f5d4d38`](https://github.com/mraniki/iamlistening/commit/f5d4d38717fbf7947555060a4fdcf139bbc6138f))
+
+
 ## v5.3.39 (2025-02-20)
 
 ### ⬆️
