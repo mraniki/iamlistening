@@ -1,6 +1,18 @@
 # CHANGELOG
 
 
+## v5.3.41 (2025-03-05)
+
+### ⬆️
+
+- ⬆️ 🛠️(deps): update dependency pythorhead to v0.32.0
+  ([`d509eeb`](https://github.com/mraniki/iamlistening/commit/d509eebfc5f8cb15d5d6596e0eabf48b76a60c91))
+
+- ⬆️ 🤖 - You get along very well with everyone except animals and people
+  ([#469](https://github.com/mraniki/iamlistening/pull/469),
+  [`a28a654`](https://github.com/mraniki/iamlistening/commit/a28a654107eae0d724329eabeb982e957deeee26))
+
+
 ## v5.3.40 (2025-02-21)
 
 ### ⬆️
@@ -2748,9 +2760,7 @@ Updates the requirements on [ruff](https://github.com/astral-sh/ruff) to permit 
   [Changelog](https://github.com/astral-sh/ruff/blob/main/BREAKING_CHANGES.md) -
   [Commits](https://github.com/astral-sh/ruff/compare/v0.0.285...v0.0.286)
 
---- updated-dependencies: - dependency-name: ruff dependency-type: direct:development
-
-...
+--- updated-dependencies: - dependency-name: ruff dependency-type: direct:development ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4447,9 +4457,7 @@ Updates the requirements on [ruff](https://github.com/astral-sh/ruff) to permit 
   [Changelog](https://github.com/astral-sh/ruff/blob/main/BREAKING_CHANGES.md) -
   [Commits](https://github.com/astral-sh/ruff/compare/v0.0.278...v0.0.280)
 
---- updated-dependencies: - dependency-name: ruff dependency-type: direct:development
-
-...
+--- updated-dependencies: - dependency-name: ruff dependency-type: direct:development ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
