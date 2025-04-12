@@ -32,7 +32,7 @@ telethon= "1.39.0"
 py-cord= "2.6.1"
 simplematrixbotlib= "2.10.3"
 rocketchat-API= "1.35.0"
-"Mastodon.py" = "1.8.1"
+"Mastodon.py" = "2.0.1"
 beautifulsoup4 = "4.13.3"
 "guilded.py" = "1.13.2"
 "revolt.py" = "0.2.0"
@@ -189,7 +189,7 @@ overgeneral-exceptions = [
 [tool.poetry.group.test.dependencies]
 pytest = "^8.0.0"
 pytest-cov = "^6.0.0"
-pytest-asyncio = "^0.25.0"
+pytest-asyncio = "^0.26.0"
 pytest-mock = "^3.11.1"
 pytest-loguru = "^0.4.0"
 
