@@ -1,6 +1,94 @@
 # CHANGELOG
 
 
+## v5.3.42 (2025-04-26)
+
+### Other
+
+- Build(deps): update pyproject.toml
+  ([`ce29b3c`](https://github.com/mraniki/iamlistening/commit/ce29b3c6ac42eaf0754bcb36a1b055228fcfdc23))
+
+### ⬆️
+
+- ⬆️ 🛠️(deps): update dependency beautifulsoup4 to v4.13.4
+  ([#482](https://github.com/mraniki/iamlistening/pull/482),
+  [`19b7ace`](https://github.com/mraniki/iamlistening/commit/19b7ace29346f9b99d36d2896cfafefc78a50b33))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- ⬆️ 🛠️(deps): update dependency mastodon.py to v2
+  ([`20e3c32`](https://github.com/mraniki/iamlistening/commit/20e3c32b19e71d041d712fd82e2d02fdf5b928ad))
+
+- ⬆️ 🛠️(deps): update dependency mastodon.py to v2
+  ([`cb8c31b`](https://github.com/mraniki/iamlistening/commit/cb8c31b348f9524dccec301ccd23303f0899ff51))
+
+- ⬆️ 🛠️(deps): update dependency mastodon.py to v2
+  ([#480](https://github.com/mraniki/iamlistening/pull/480),
+  [`c8b4b28`](https://github.com/mraniki/iamlistening/commit/c8b4b28bac6d16bfb0696d89fb177426cd81a148))
+
+- ⬆️ 🛠️(deps): update dependency mastodon.py to v2.0.1
+  ([#474](https://github.com/mraniki/iamlistening/pull/474),
+  [`2b93790`](https://github.com/mraniki/iamlistening/commit/2b937903e364e77bb815846909fdf1df962843d3))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- ⬆️ 🛠️(deps): update dependency pytest-asyncio to ^0.26.0
+  ([`89f20de`](https://github.com/mraniki/iamlistening/commit/89f20de9c9f7badf5244a6affae4cfca8c2a79a9))
+
+- ⬆️ 🛠️(deps): update dependency pytest-asyncio to ^0.26.0
+  ([`2098c2c`](https://github.com/mraniki/iamlistening/commit/2098c2ccc7657dc7bb2c5a369e4ddb162d537c4b))
+
+- ⬆️ 🛠️(deps): update dependency pytest-asyncio to ^0.26.0
+  ([#479](https://github.com/mraniki/iamlistening/pull/479),
+  [`0dbc438`](https://github.com/mraniki/iamlistening/commit/0dbc438accc542fec16d700b29811d6dde61f1ae))
+
+- ⬆️ 🛠️(deps): update dependency pythorhead to v0.32.1
+  ([`e693dd7`](https://github.com/mraniki/iamlistening/commit/e693dd7f2792bf59b06f8e8723cb8b6f396f0be4))
+
+- ⬆️ 🛠️(deps): update dependency ruff to ^0.10.0
+  ([`b6f472c`](https://github.com/mraniki/iamlistening/commit/b6f472cc7e0158295af797552ae59903abac1356))
+
+- ⬆️ 🛠️(deps): update dependency ruff to ^0.11.0
+  ([`d94fc4c`](https://github.com/mraniki/iamlistening/commit/d94fc4c01dd98d159ae87d18eab63d2869d14899))
+
+- ⬆️ 🛠️(deps): update dependency ruff to ^0.11.0
+  ([#472](https://github.com/mraniki/iamlistening/pull/472),
+  [`c87930a`](https://github.com/mraniki/iamlistening/commit/c87930acc540cc68721966f82420f917ad4d5c4f))
+
+- ⬆️ 🛠️(deps): update dependency telethon to v1.40.0
+  ([#484](https://github.com/mraniki/iamlistening/pull/484),
+  [`840c06e`](https://github.com/mraniki/iamlistening/commit/840c06ebef2336955214276c2c931f69366d0100))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- ⬆️ 🛠️(deps): update python to >=3.13,<3.14
+  ([#487](https://github.com/mraniki/iamlistening/pull/487),
+  [`7c0d952`](https://github.com/mraniki/iamlistening/commit/7c0d9521b66649b1b331f982c55f0533349add7d))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- ⬆️ 🤖 - For courage mounteth with occasion
+  ([#485](https://github.com/mraniki/iamlistening/pull/485),
+  [`14cb59e`](https://github.com/mraniki/iamlistening/commit/14cb59eebecf8a504c8730ae59808998ac048cca))
+
+- ⬆️ 🤖 - Many pages make a thick book except for pocket Bibles which are on very
+  ([#471](https://github.com/mraniki/iamlistening/pull/471),
+  [`46eb3a0`](https://github.com/mraniki/iamlistening/commit/46eb3a0d2cec008246b66901c5af9189286d10e9))
+
+- ⬆️ 🤖 - Someone is speaking well of you ([#478](https://github.com/mraniki/iamlistening/pull/478),
+  [`e5068d7`](https://github.com/mraniki/iamlistening/commit/e5068d7549866e6b30e313538c0d20ff74e2e12e))
+
+### 🚑
+
+- 🚑
+  ([`faad807`](https://github.com/mraniki/iamlistening/commit/faad80747510499090cd167d409014935140265b))
+
+### 🚨
+
+- 🚨
+  ([`b5175cc`](https://github.com/mraniki/iamlistening/commit/b5175cc3653f180e19bb64deee812ac94605e211))
+
+
 ## v5.3.41 (2025-03-05)
 
 ### ⬆️
