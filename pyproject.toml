@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "iamlistening"
-version = "5.3.42"
+version = "5.4.0"
 description = "A python package to interact with messaging platform."
 authors = [
   { name = "mraniki", email = "8766259+mraniki@users.noreply.github.com" },
