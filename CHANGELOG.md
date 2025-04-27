@@ -1,6 +1,27 @@
 # CHANGELOG
 
 
+## v6.0.0 (2025-04-27)
+
+### Other
+
+- Update config.py
+  ([`02c9d80`](https://github.com/mraniki/iamlistening/commit/02c9d8068e0a86813c3316e65f537559a3ba3561))
+
+### 💥
+
+- 💥 breaking update config.py and main.py
+  ([`8b17304`](https://github.com/mraniki/iamlistening/commit/8b1730419dc72dfd307f65e4402be1df4be2b798))
+
+- 💥 breaking update config.py and main.py ([#490](https://github.com/mraniki/iamlistening/pull/490),
+  [`22b4272`](https://github.com/mraniki/iamlistening/commit/22b42720491677f917f1a1a42011036d20d67951))
+
+### 🚨
+
+- 🚨 update config.py
+  ([`c18b6c8`](https://github.com/mraniki/iamlistening/commit/c18b6c829d3dd71cf9107e50376c33274bfb76ab))
+
+
 ## v5.4.0 (2025-04-27)
 
 ### 🚀
