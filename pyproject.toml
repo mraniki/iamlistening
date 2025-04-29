@@ -67,9 +67,10 @@ docs = [
   "sphinx_design~=0.6",
 ]
 
-[tool.setuptools]
-packages = ["iamlistening"]
-
+[tool.setuptools.packages.find]
+where = ["."] 
+include = ["iamlistening*"] 
+exclude = ["tests*", "docs*", "examples*"]
 
 [tool.ruff]
 exclude = [
