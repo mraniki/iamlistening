@@ -1,6 +1,17 @@
 # CHANGELOG
 
 
+## v6.0.2 (2025-04-29)
+
+### 🐛
+
+- 🐛 update main.py
+  ([`0894762`](https://github.com/mraniki/iamlistening/commit/08947623a08617597c43df65556d40bc75df9f7d))
+
+- 🐛 update main.py ([#494](https://github.com/mraniki/iamlistening/pull/494),
+  [`f0e3d1a`](https://github.com/mraniki/iamlistening/commit/f0e3d1ad8ade5e1fcc1a48cb94ce4103bb494606))
+
+
 ## v6.0.1 (2025-04-29)
 
 ### 🚑
