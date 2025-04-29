@@ -1,6 +1,17 @@
 # CHANGELOG
 
 
+## v6.0.1 (2025-04-29)
+
+### 🚑
+
+- 🚑 build(deps): update pyproject.toml
+  ([`7a9e2f7`](https://github.com/mraniki/iamlistening/commit/7a9e2f7dc4e7f739c78940be6ddc0a74915782c2))
+
+- 🚑 build(deps): update pyproject.toml ([#493](https://github.com/mraniki/iamlistening/pull/493),
+  [`bba8a8c`](https://github.com/mraniki/iamlistening/commit/bba8a8cbb36c4c306aa310ef2c76732ceb11cef3))
+
+
 ## v6.0.0 (2025-04-27)
 
 ### Other
