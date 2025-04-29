@@ -64,8 +64,12 @@ class Listener:
             logger.info("Module is disabled. No Client will be created.")
             return
         self.clients = []
-        # Create a client for each client in settings.iamlistening
-        for name, client_config in settings.platform.items():
+        # Use .get() for safer access to the nested table
+        platform_config_table = settings.get('platform', {})
+        if not platform_config_table:
+             logger.warning("No 'platform' configuration table found in settings.")
+        # Create a client for each client in the retrieved table
+        for name, client_config in platform_config_table.items():
             if (
                 # Skip empty client configs
                 client_config is None
