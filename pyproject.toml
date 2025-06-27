@@ -27,7 +27,7 @@ dependencies = [
   "telethon==1.40.0",
   "py-cord==2.6.1",
   "simplematrixbotlib==2.10.3",
-  "rocketchat-API==1.35.0",
+  "rocketchat-API==1.35.1",
   "Mastodon.py==2.0.1",
   "beautifulsoup4==4.13.4",
   "guilded.py==1.13.2",
